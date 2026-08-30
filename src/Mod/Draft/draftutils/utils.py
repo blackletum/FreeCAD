@@ -795,7 +795,7 @@ def get_rgb(color, testbw=True):
     ----------
     color : list or tuple with RGB values
         The values must be in the 0.0-1.0 range.
-    testwb : bool (default = True)
+    testbw : bool (default = True)
         Pure white will be converted into pure black.
     """
     r = str(hex(int(color[0] * 255)))[2:].zfill(2)
@@ -873,6 +873,8 @@ def _modifiers_process_subselection(sels, copy):
             if copy and "Vertex" in sub:
                 continue
             obj = sel.Object.getSubObject(sub, 1)
+            if get_type(obj) != "Wire":
+                continue
             pla = sel.Object.getSubObject(sub, 3)
             if "Vertex" in sub:
                 vert_idx = int(sub.rpartition("Vertex")[2]) - 1

@@ -70,6 +70,8 @@ public:
     void setDisplayName(DisplayName);
     void OnChange(Base::Subject<const char*>& rCaller, const char* rcReason) override;
 
+    void updateInputHints();
+
     const char* getName() const override
     {
         return "EditorView";
@@ -113,9 +115,6 @@ private Q_SLOTS:
     void undoAvailable(bool);
     void redoAvailable(bool);
 
-Q_SIGNALS:
-    void changeFileName(const QString&);
-
 private:
     void setCurrentFileName(const QString& fileName);
     bool saveFile();
@@ -141,13 +140,8 @@ public:
 
 public Q_SLOTS:
     void executeScript();
-    void startDebug();
-    void toggleBreakpoint();
-    void showDebugMarker(int line);
-    void hideDebugMarker();
 
 private:
-    PythonEditor* _pye;
     PythonTracingWatcher* watcher;
 };
 
@@ -159,6 +153,7 @@ public:
     explicit SearchBar(QWidget* parent = nullptr);
 
     void setEditor(QPlainTextEdit* textEdit);
+    QString getSearchText() const;
 
 protected:
     void keyPressEvent(QKeyEvent*) override;
@@ -170,6 +165,9 @@ public Q_SLOTS:
     void findPrevious();
     void findNext();
     void findCurrent();
+
+Q_SIGNALS:
+    void textChanged(const QString& text);
 
 private:
     void retranslateUi();

@@ -44,6 +44,7 @@
 #include "EditorView.h"
 #include "Application.h"
 #include "FileDialog.h"
+#include "InputHint.h"
 #include "Macro.h"
 #include "MainWindow.h"
 #include "PythonEditor.h"
@@ -135,6 +136,13 @@ EditorView::EditorView(TextEdit* editor, QWidget* parent)
     setCurrentFileName(QString());
     d->textEdit->setFocus();
 
+    connect(d->textEdit, &QPlainTextEdit::cursorPositionChanged, this, &EditorView::updateInputHints);
+    connect(d->textEdit, &QPlainTextEdit::selectionChanged, this, &EditorView::updateInputHints);
+    connect(qApp, &QApplication::focusChanged, this, [this](QWidget*, QWidget*) {
+        updateInputHints();
+    });
+    connect(d->searchBar, &SearchBar::textChanged, this, &EditorView::updateInputHints);
+
     setWindowIcon(d->textEdit->windowIcon());
 
     ParameterGrp::handle hPrefGrp = getWindowParameter();
@@ -160,6 +168,8 @@ EditorView::EditorView(TextEdit* editor, QWidget* parent)
 /** Destroys the object and frees any allocated resources */
 EditorView::~EditorView()
 {
+    Gui::getMainWindow()->hideHints();
+
     d->activityTimer->stop();
     // to avoid the assert introduced a debug version of Qt >6.3. See QTBUG-105473
     for (auto conn : connectionList) {  // NOLINT(performance-for-range-copy)
@@ -179,11 +189,16 @@ void EditorView::showEvent(QShowEvent* event)
 {
     Gui::MainWindow* mw = Gui::getMainWindow();
     mw->updateEditorActions();
+
+    updateInputHints();
+
     MDIView::showEvent(event);
 }
 
 void EditorView::hideEvent(QHideEvent* event)
 {
+    Gui::getMainWindow()->hideHints();
+
     MDIView::hideEvent(event);
 }
 
@@ -293,12 +308,6 @@ bool EditorView::onHasMsg(const char* pMsg) const
         return false;
     }
     if (strcmp(pMsg, "Run") == 0) {
-        return true;
-    }
-    if (strcmp(pMsg, "DebugStart") == 0) {
-        return true;
-    }
-    if (strcmp(pMsg, "DebugStop") == 0) {
         return true;
     }
     if (strcmp(pMsg, "SaveAs") == 0) {
@@ -532,7 +541,6 @@ void EditorView::printPdf()
 void EditorView::setCurrentFileName(const QString& fileName)
 {
     d->fileName = fileName;
-    Q_EMIT changeFileName(d->fileName);
     d->textEdit->document()->setModified(false);
 
     QString name;
@@ -641,12 +649,85 @@ QStringList EditorView::undoActions() const
 QStringList EditorView::redoActions() const
 {
     return d->redos;
-    ;
 }
 
 void EditorView::focusInEvent(QFocusEvent*)
 {
     d->textEdit->setFocus();
+}
+
+/**
+ * Somewhat contextual Input Hints in Status Bar.
+ */
+void EditorView::updateInputHints()
+{
+    auto* mw = Gui::getMainWindow();
+    if (!mw) {
+        return;
+    }
+
+    if (mw->activeWindow() != this) {
+        mw->hideHints();
+        return;
+    }
+
+    using enum Gui::InputHint::UserInput;
+
+    std::list<Gui::InputHint> hints;
+
+    QWidget* fw = QApplication::focusWidget();
+
+    bool editorFocus = fw && (fw == d->textEdit || d->textEdit->isAncestorOf(fw));
+    bool searchFocus = fw && (fw == d->searchBar || d->searchBar->isAncestorOf(fw));
+
+    QTextCursor cursor = d->textEdit->textCursor();
+    bool hasSelection = cursor.hasSelection();
+
+    if (editorFocus) {
+
+        hints.push_back({.message = tr("%1 search"), .sequences = {{ModifierCtrl, KeyF}}});
+
+        hints.push_back({.message = tr("%1 toggle breakpoint"), .sequences = {{KeyF9}}});
+
+        hints.push_back(
+            {.message = tr("(%1) %2 (un)indent"), .sequences = {{ModifierShift}, {KeyTab}}}
+        );
+
+        if (hasSelection) {
+            hints.push_back(
+                {.message = tr("%1 / %2 (un)comment"), .sequences = {{ModifierAlt, KeyC}, {KeyU}}}
+            );
+
+            hints.push_back(
+                {.message = tr("%1 execute selection"),
+                 .sequences = {{ModifierAlt, ModifierShift, KeyP}}}
+            );
+        }
+
+        if (d->textEdit->hasCompletion()) {
+            hints.push_back(
+                {.message = tr("%1 auto-complete"), .sequences = {{ModifierCtrl, KeySpace}}}
+            );
+        }
+    }
+
+    else if (searchFocus) {
+
+        bool hasText = !d->searchBar->getSearchText().isEmpty();
+
+        if (hasText) {
+            hints.push_back({.message = tr("%1 next result"), .sequences = {{KeyReturn}}});
+        }
+
+        hints.push_back({.message = tr("%1 close search"), .sequences = {{KeyEscape}}});
+    }
+
+    else {
+        mw->hideHints();
+        return;
+    }
+
+    mw->showHints(hints);
 }
 
 // ---------------------------------------------------------
@@ -655,32 +736,19 @@ TYPESYSTEM_SOURCE_ABSTRACT(Gui::PythonEditorView, Gui::EditorView)
 
 PythonEditorView::PythonEditorView(PythonEditor* editor, QWidget* parent)
     : EditorView(editor, parent)
-    , _pye(editor)
-{
-    connect(this, &PythonEditorView::changeFileName, editor, &PythonEditor::setFileName);
-    watcher = new PythonTracingWatcher(this);
-}
+    , watcher(new PythonTracingWatcher(this))
+{}
 
 PythonEditorView::~PythonEditorView()
 {
     delete watcher;
 }
 
-/**
- * Runs the action specified by \a pMsg.
- */
+/// Runs the action specified by \a pMsg.
 bool PythonEditorView::onMsg(const char* pMsg)
 {
     if (strcmp(pMsg, "Run") == 0) {
         executeScript();
-        return true;
-    }
-    else if (strcmp(pMsg, "StartDebug") == 0) {
-        QTimer::singleShot(300, this, &PythonEditorView::startDebug);
-        return true;
-    }
-    else if (strcmp(pMsg, "ToggleBreakpoint") == 0) {
-        toggleBreakpoint();
         return true;
     }
     return EditorView::onMsg(pMsg);
@@ -695,18 +763,10 @@ bool PythonEditorView::onHasMsg(const char* pMsg) const
     if (strcmp(pMsg, "Run") == 0) {
         return true;
     }
-    if (strcmp(pMsg, "StartDebug") == 0) {
-        return true;
-    }
-    if (strcmp(pMsg, "ToggleBreakpoint") == 0) {
-        return true;
-    }
     return EditorView::onHasMsg(pMsg);
 }
 
-/**
- * Runs the opened script in the macro manager.
- */
+/// Runs the opened script in the macro manager.
 void PythonEditorView::executeScript()
 {
     // always save the macro when it is modified
@@ -728,26 +788,6 @@ void PythonEditorView::executeScript()
     }
 }
 
-void PythonEditorView::startDebug()
-{
-    _pye->startDebug();
-}
-
-void PythonEditorView::toggleBreakpoint()
-{
-    _pye->toggleBreakpoint();
-}
-
-void PythonEditorView::showDebugMarker(int line)
-{
-    _pye->showDebugMarker(line);
-}
-
-void PythonEditorView::hideDebugMarker()
-{
-    _pye->hideDebugMarker();
-}
-
 // ----------------------------------------------------------------------------
 
 SearchBar::SearchBar(QWidget* parent)
@@ -766,6 +806,7 @@ SearchBar::SearchBar(QWidget* parent)
 
     searchText = new QLineEdit(this);
     searchText->setClearButtonEnabled(true);
+    searchText->setPlaceholderText(tr("Find in document..."));
     horizontalLayout->addWidget(searchText);
     connect(searchText, &QLineEdit::returnPressed, this, &SearchBar::findNext);
     connect(searchText, &QLineEdit::textChanged, this, [this]() {
@@ -774,6 +815,7 @@ SearchBar::SearchBar(QWidget* parent)
         }
     });
     connect(searchText, &QLineEdit::textChanged, this, &SearchBar::updateButtons);
+    connect(searchText, &QLineEdit::textChanged, this, &SearchBar::textChanged);
 
     resultLabel = new QLabel(this);
     resultLabel->setMinimumWidth(60);
@@ -1093,6 +1135,11 @@ void SearchBar::changeEvent(QEvent* event)
     }
 
     QWidget::changeEvent(event);
+}
+
+QString SearchBar::getSearchText() const
+{
+    return searchText->text();
 }
 
 #include "moc_EditorView.cpp"

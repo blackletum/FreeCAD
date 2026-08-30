@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: LGPL-2.1-or-later
+# SPD-License-Identifier: LGPL-2.1-or-later
 # SPDX-FileCopyrightText: 2014 Yorik van Havre <yorik@uncreated.net>
 # SPDX-FileCopyrightText: 2014 sliptonic <shopinthewoods@gmail.com>
 # SPDX-FileCopyrightText: 2022 - 2025 Larry Woestman <LarryWoestman2@gmail.com>
@@ -30,6 +30,7 @@ import importlib.util
 import json
 import os
 import sys
+import itertools
 from typing import Any, Dict, List, Optional, Tuple, Union
 import datetime
 from contextlib import contextmanager
@@ -44,6 +45,9 @@ from Path.Post import PostList
 import Path.Post.Utils as PostUtils
 from Path.Post.PostList import Postable
 from Path.Post.DrillCycleExpander import DrillCycleExpander
+from Path.Post.CAMErrors import CAMError, CAMValueError, CAMAttributeError
+from Path.Post.UtilsParse import format_command_line
+from Path.Post.PathOptimizationUtils import modal_gcode, modal_axis
 from Path.Base.MachineState import MachineState
 from Machine.models.machine import MachineFactory, OutputUnits
 
@@ -244,7 +248,7 @@ class PostProcessorFactory:
 
                 except (FileNotFoundError, ImportError, ModuleNotFoundError) as e:
                     Path.Log.debug(f"Failed to load {module_path}: {e}")
-                    continue
+                    continue  # with other paths
 
                 try:
                     PostClass = getattr(module, class_name)
@@ -270,14 +274,16 @@ class PostProcessorFactory:
                             # Return a mock instance that can be used for schema inspection
                             return PostClass.__new__(PostClass)
                         except:
-                            pass
+                            pass  # try other paths
                     raise
 
         Path.Log.warning(
             f"Post processor '{postname}' not found in any search path. "
             f"Searched for '{module_name}.py' in {len(paths)} paths."
         )
-        return None
+        return CAMError(
+            f"Post processor '{postname}', '{module_name}.py' not found in any search path: {paths}"
+        )
 
 
 def needsTcOp(oldTc, newTc):
@@ -307,7 +313,7 @@ class PostProcessor:
             + Constants.GCODE_NON_CONFORMING
         )
 
-        return [
+        return [  # FIXME: this list does not match _merge_machine_config(), nor machine_editor.py
             {
                 "name": "file_extension",
                 "type": "string",
@@ -485,16 +491,6 @@ class PostProcessor:
                 ),
             },
             {
-                "name": "translate_drill_cycles",
-                "type": "bool",
-                "label": translate("CAM", "Expand drill-cycles"),
-                "default": False,
-                "help": translate(
-                    "CAM",
-                    "Expand drill-cycles (cf. 'Drill Cycles to Translate') to moves",
-                ),
-            },
-            {
                 "name": "tool_change",
                 "type": "bool",
                 "label": translate("CAM", "Allow tool-change"),
@@ -517,7 +513,7 @@ class PostProcessor:
             {
                 "name": "axis_precision",
                 "type": "int",
-                "label": translate("CAM", "Axis precision in ouptput"),
+                "label": translate("CAM", "Axis precision in output"),
                 "default": 2,  # degrees
                 "help": translate(
                     "CAM",
@@ -527,7 +523,7 @@ class PostProcessor:
             {
                 "name": "feed_precision",
                 "type": "int",
-                "label": translate("CAM", "Feedrate precision in ouptput"),
+                "label": translate("CAM", "Feedrate precision in output"),
                 "default": 3,
                 "help": translate(
                     "CAM",
@@ -537,11 +533,21 @@ class PostProcessor:
             {
                 "name": "spindle_decimals",
                 "type": "int",
-                "label": translate("CAM", "Spindle-speed precision in ouptput"),
+                "label": translate("CAM", "Spindle-speed precision in output"),
                 "default": 1,  # rpm
                 "help": translate(
                     "CAM",
                     "Decimals of precision for spindle-speed",
+                ),
+            },
+            {
+                "name": "f_for_rapid_moves",
+                "type": "bool",
+                "label": translate("CAM", "Output F parameter for G0 (rapid)"),
+                "default": False,
+                "help": translate(
+                    "CAM",
+                    "Whether to output the F parameter for G0 (rapid moves)",
                 ),
             },
         ]
@@ -595,27 +601,37 @@ class PostProcessor:
         self._kwargs = kwargs
         self._optimize_start = None
         self._bcnc_postamble_commands = None
+        self._operation = None
+
+        # Reset this to None when not in-use (e.g. _convert_job_sections)
+        # Use `with self.use_machine_state():`
+        self.machine_state = None
 
         # Handle job: can be single job or list of jobs
         if isinstance(job, list):
             self._jobs = job
             if len(self._jobs) == 0:
-                raise ValueError("At least one job must be provided")
-            # Validate all jobs have the same machine (if Machine attribute exists)
-            if hasattr(self._jobs[0], "Machine"):
-                machine_name = self._jobs[0].Machine
-                for job in self._jobs[1:]:
-                    if hasattr(job, "Machine") and job.Machine != machine_name:
-                        raise ValueError("All jobs must have the same machine")
+                raise CAMAttributeError("At least one job must be provided")
+
             # For now, only single job supported
             if len(self._jobs) > 1:
-                raise NotImplementedError(
+                raise CAMNotImplementedError(
                     "Multiple jobs are not yet supported. Please process one job at a time."
                 )
             self._job = self._jobs[0]  # For backward compatibility
+
+            # Validate all jobs have the same machine (if Machine attribute exists)
+            if hasattr(self._jobs[0], "Machine"):
+                machine_name = self._jobs[0].Machine
+                for my_job in self._jobs[1:]:
+                    if hasattr(my_job, "Machine") and my_job.Machine != machine_name:
+                        raise CAMAttributeError(
+                            f"All jobs must have the same machine '{machine_name}' (as in <{self._jobs[0].Label}>), saw '{my_job.Machine}'",
+                            job=my_job,
+                        )
         else:
             self._jobs = [job]
-            self._job = job
+            self._job = job  # FIXME: MS move to the loop
 
         # Get machine
         if self._job is None:
@@ -633,6 +649,7 @@ class PostProcessor:
                     self._machine = machine
             except FileNotFoundError as e:
                 # Machine not found in factory - allow manual assignment later (e.g., in tests)
+                # FIXME: if this is only for tests, remove it
                 Path.Log.warning(
                     f"Machine '{self._job.Machine}' not found: {e}. Machine can be set manually."
                 )
@@ -640,19 +657,6 @@ class PostProcessor:
         else:
             # Job doesn't have Machine attribute yet (e.g., MockJob or legacy job)
             self._machine = None
-        self._modal_state = {
-            "X": None,
-            "Y": None,
-            "Z": None,
-            "A": None,
-            "B": None,
-            "C": None,
-            "U": None,
-            "V": None,
-            "W": None,
-            "F": None,
-            "S": None,
-        }
         self.reinitialize()
 
         self._operations = []
@@ -673,7 +677,9 @@ class PostProcessor:
     @property
     def tooltip(self):
         """Get the tooltip text for the post processor."""
-        raise NotImplementedError("Subclass must implement abstract method")
+        raise CAMNotImplementedError(
+            "Post-processor must implement abstract method", pp=self.__class__.__name__
+        )
 
     @property
     def tooltipArgs(self) -> FormatHelp:
@@ -823,14 +829,12 @@ class PostProcessor:
         self.values["OUTPUT_DOUBLES"] = getattr(duplicates, "parameters", False)
 
         # Processing options
-        self.values["SPLIT_ARCS"] = self._machine.processing.split_arcs
-        self.values["TRANSLATE_RAPID_MOVES"] = self._machine.processing.translate_rapid_moves
-        self.values["TRANSLATE_DRILL_CYCLES"] = self._machine.processing.translate_drill_cycles
-        self.values["TOOL_CHANGE"] = self._machine.processing.tool_change  # boolean
-        self.values["XY_BEFORE_Z_AFTER_TOOL_CHANGE"] = (
-            self._machine.processing.xy_before_z_after_tool_change
-        )
-        self.values["FILTER_INEFFICIENT_MOVES"] = self._machine.processing.filter_inefficient_moves
+        for (
+            option
+        ) in "split_arcs f_for_rapid_moves translate_rapid_moves translate_drill_cycles tool_change xy_before_z_after_tool_change filter_inefficient_moves".split(
+            " "
+        ):
+            self.values[option.upper()] = getattr(self._machine.processing, option)
 
     def _apply_schema_defaults(self):
         """Populate postprocessor_properties with schema defaults for missing keys.
@@ -847,7 +851,7 @@ class PostProcessor:
         postprocessor_properties.
         """
         if not self._machine:
-            return
+            raise Exception("Internal: We must have a ._machine by now")
 
         schema = self.get_full_property_schema()
         for prop in schema:
@@ -879,16 +883,16 @@ class PostProcessor:
         Returns:
             dict: The final postprocessor property bundle.
         """
-        schema = self.get_full_property_schema()
-        schema_keys = {x["name"] for x in schema}
-        # HACK: not really schema-keys, but no-where else to deal with
-        schema_keys |= set("comment selected_fixtures job_author".split(" "))
-
         # Stage 1 — machine postprocessor_properties
         bundle = {}
         bundle.update(self._machine.postprocessor_properties)
 
         # Stage 2 — schema defaults for missing keys
+        schema = self.get_full_property_schema()
+        schema_keys = {x["name"] for x in schema}
+        # HACK: not really schema-keys, but no-where else to deal with
+        schema_keys |= set("comment selected_fixtures job_author".split(" "))
+
         for prop in schema:
             name = prop.get("name", "")
             if name and name not in bundle:
@@ -930,6 +934,9 @@ class PostProcessor:
         """
         self.values = {}
 
+        if overrides is None:
+            overrides = self._read_job_overrides()
+
         bundle = self.build_configuration_bundle(overrides)
 
         # Write back to machine postprocessor_properties
@@ -943,6 +950,15 @@ class PostProcessor:
         # IF they weren't already set (by _merge_machine_config)
         for key, value in bundle.items():
             if key.upper() not in self.values:
+                self.values[key.upper()] = value
+
+        # Explicit overrides (job dialog / caller-supplied) are documented as
+        # highest priority, so they must win even over values already set by
+        # _merge_machine_config() straight from the live machine model —
+        # otherwise a per-job override of e.g. f_for_rapid_moves/tool_change
+        # is silently discarded in favor of the machine-level setting.
+        for key, value in overrides.items():
+            if key in bundle:
                 self.values[key.upper()] = value
 
         Path.Log.debug(f"Configuration bundle applied — " f"bundle: {bundle}")
@@ -963,8 +979,10 @@ class PostProcessor:
         try:
             overrides = json.loads(overrides_str)
         except (json.JSONDecodeError, TypeError) as e:
-            Path.Log.warning(f"Invalid PostProcessorPropertyOverrides JSON: {e}")
-            return {}
+            # It would surprise the user if there settings silently were ignored because of a JSON error
+            raise CAMValueError(
+                f"Invalid PostProcessorPropertyOverrides JSON: {e} in\n{overrides_str}"
+            )
 
         if not isinstance(overrides, dict):
             Path.Log.warning("PostProcessorPropertyOverrides is not a dict, ignoring")
@@ -1058,6 +1076,57 @@ class PostProcessor:
 
         return gcodeheader
 
+    def _add_line_numbers(self, postables):
+        """Add N word if we are line-numbering
+        Subclasses are expected to render N as line-number (if present)
+            the default _convert_move() will do that
+        Numbering does not know about the subclass inserting/removing commands/lines,
+            so is NOT the physical line-number.
+
+        Subclasses can override to customize.
+        """
+        if not self.values["OUTPUT_LINE_NUMBERS"]:
+            return
+
+        Path.Log.track("Line numbering")
+
+        start = self.values["LINE_NUMBER_START"]
+        increment = self.values["LINE_INCREMENT"]
+
+        for section_name, sublist in postables:
+            # per section
+            line_number = itertools.count(start, increment)
+
+            for item in sublist:
+
+                # count 'str' lines, because it might be gcode/commands
+                if item.item_type == "str":
+                    str_lines = item.data["str"].count("\n")
+                    if item.data["str"] != "" and not item.data["str"].endswith("\n"):
+                        # count last line
+                        str_lines += 1
+                    for _ in range(0, str_lines):
+                        next(line_number)
+
+                # number Path.Command's
+                elif item.Path:
+                    new_commands = []
+                    for command in item.Path.Commands:
+
+                        # don't count comments
+                        if command.Name.startswith("("):
+                            new_commands.append(command)
+                            continue
+
+                        # Have to remake, because we change Parameters
+                        # _convert_move() does the LINE_NUMBER_PREFIX
+                        new_params = {"N": next(line_number)}
+                        new_params.update(command.Parameters)
+                        new_commands.append(
+                            Path.Command(command.Name, new_params, command.Annotations)
+                        )
+                    item.path = Path.Path(new_commands)
+
     def _expand_canned_cycles(self, postables):
         """Terminate canned drill cycles in postable paths.
 
@@ -1114,8 +1183,6 @@ class PostProcessor:
 
         Subclasses can override to customize spindle wait behavior.
         """
-        if not self._machine:
-            return
 
         spindle = self._machine.get_spindle_by_index(0)  # FIXME: should be an annotation
         if not (spindle and spindle.spindle_wait > 0):
@@ -1141,9 +1208,6 @@ class PostProcessor:
 
         Subclasses can override to customize coolant delay behavior.
         """
-        if not self._machine:
-            return
-
         spindle = self._machine.get_spindle_by_index(0)  # FIXME: needs to be in .values
         if not (spindle and spindle.coolant_delay > 0):
             return
@@ -1195,8 +1259,8 @@ class PostProcessor:
             Path.Log.debug("Drill cycle translation disabled")
             return
 
-        with self.use_machine_state():
-            for section_name, sublist in postables:
+        for section_name, sublist in postables:
+            with self.use_machine_state():
                 for item in sublist:
                     Path.Log.track(f"Processing item: {item.label}")
                     if item.path:
@@ -1208,7 +1272,10 @@ class PostProcessor:
                             Path.Log.debug(f"Translating drill cycles for {item.label}")
                             expander = DrillCycleExpander(self.machine_state)
                             item.path = expander.expand_path(item.path)
+                            # DrillCycleExpander tracks it's commands: machine_state.addCommands(...)
+
                         else:
+                            # track a normal command
                             self.machine_state.addCommands(item.path.Commands)
 
     @contextmanager
@@ -1308,7 +1375,9 @@ class PostProcessor:
                             # Not the first move or not a move command
                             new_commands.append(cmd)
 
-                    if len(new_commands) != len(item.path.Commands):
+                    if len(new_commands) != len(
+                        item.path.Commands
+                    ):  # FIXME: if ! changed, or just do always
                         item.path = Path.Path(new_commands)
                         Path.Log.debug(f"Updated path for {item.label}")
 
@@ -1346,9 +1415,9 @@ class PostProcessor:
                             Path.Command("(Block-enable: 1)", {}, {"bcnc": "block_meta"}),
                         ],
                     )
-                    return (1, [new_postable])
+                    return 1, [new_postable]
                 else:
-                    return (None, None)
+                    return None, None
 
             # Create bCNC postamble commands
             # Store bCNC postamble commands for later insertion
@@ -1396,18 +1465,18 @@ class PostProcessor:
             # suppress
             if not output_tool_length_offset:
                 if cmd.Name in Constants.GCODE_TOOL_LENGTH_OFFSET:
-                    return (0, [Path.Command(f"(TLO suppressed {cmd.toGCode()})")])
+                    return 0, [Path.Command(f"(TLO suppressed {cmd.toGCode()})")]
                 else:
-                    return (None, None)
+                    return None, None
 
             # add
             else:
                 if cmd.Name in Constants.MCODE_TOOL_CHANGE and "T" in cmd.Parameters:
                     tool_num = cmd.Parameters["T"]
                     Path.Log.debug(f"Added G43 H{tool_num} after M6 in operation {item.label}")
-                    return (1, [Path.Command("G43", {"H": tool_num}, {"tool_length_offset": True})])
+                    return 1, [Path.Command("G43", {"H": tool_num}, {"tool_length_offset": True})]
                 else:
-                    return (None, None)
+                    return None, None
 
         self._edit_command_list(postables, edit)
 
@@ -1459,7 +1528,9 @@ class PostProcessor:
         elif self.values["OUTPUT_UNITS"] == OutputUnits.IMPERIAL:
             return Path.Command("G20")
         else:
-            return None  # FIXME: Is this an error?
+            raise CAMAttributeError(
+                f"Must have _machine.output.units (in {self._machine.name}) as one of [{OutputUnits.METRIC},{OutputUnits.IMPERIAL}], someone replaced the default with: {self.values['OUTPUT_UNITS'].__class__.__name__} {self.values['OUTPUT_UNITS']}"
+            )
 
     def _expand_pre_job(self, postables):
         """Prefix pre-job lines to each job
@@ -1471,9 +1542,9 @@ class PostProcessor:
 
             def prepend(section_name: str, item, section_state: dict):
                 if item.item_type == "job":
-                    return (-1, pre_job)
+                    return -1, pre_job
                 else:
-                    return (None, None)
+                    return None, None
 
             return self._edit_postable_list(postables, prepend)
 
@@ -1503,18 +1574,18 @@ class PostProcessor:
                     )
 
                 elif lines := self.values["PRE_TOOL_CHANGE"]:
-                    return (-1, [self._make_postable("Post: pre_tool_change", lines)])
+                    return -1, [self._make_postable("Post: pre_tool_change", lines)]
                 else:
-                    return (None, None)
+                    return None, None
 
             elif item.item_type == "fixture" and (lines := self.values["PRE_FIXTURE_CHANGE"]):
-                return (-1, [self._make_postable("Post: pre_fixture_change", lines)])
+                return -1, [self._make_postable("Post: pre_fixture_change", lines)]
 
             elif item.item_type == "operation" and (lines := self.values["PRE_OPERATION"]):
-                return (-1, [self._make_postable("Post: pre_operation", lines)])
+                return -1, [self._make_postable("Post: pre_operation", lines)]
 
             else:
-                return (None, None)
+                return None, None
 
         return self._edit_postable_list(postables, prepend)
 
@@ -1556,10 +1627,10 @@ class PostProcessor:
                         )
                     else:
                         new_items.append(self._make_postable("Post: non-rotary", list(commands)))
-                return (0, new_items)
+                return 0, new_items
 
             else:
-                return (None, None)
+                return None, None
 
         self._edit_item_list(postables, wrap_rotary)
 
@@ -1581,12 +1652,12 @@ class PostProcessor:
                         else:
                             new_commands.append(cmd)
                     item.Path = Path.Path(new_commands)
-                return (None, None)
+                return None, None
             else:
-                return (None, None)
+                return None, None
 
         if self.values["TOOL_CHANGE"]:
-            return
+            return  # no suppress
 
         self._edit_item_list(postables, suppress_m6)
 
@@ -1603,24 +1674,40 @@ class PostProcessor:
 
         if item.item_type == "str":
             # append the output & done
-            str_lines = item.data["str"].rstrip("\n").split("\n")
+            str_lines = [line for line in item.data["str"].split("\n") if line != ""]
             # no empty
             if str_lines:
                 gcode_lines.extend(str_lines)
+
+            # could be "gcode" in the block, so MachineState is now invalid
+            self.machine_state.setState(None)
             return
 
         if not item.path:
-            Path.Log.debug(f"Item (!str) w/o path: {item.item_type}:{item.label} {item}")
-            return
+            raise AttributeError(
+                f"Internal: expected item.type=='str' or item.path, saw {item.item_type}:{item.label} {item}",
+                job=self._job,
+                operation=self._operation,
+            )
 
         for cmd in item.path.Commands:
+            # Update the MachineState before the PP converts it
+            # So, `machine_state` reflects where we end up.
+            # And, so `machine_state` reflects the intended location for the next command
+            # (we can't update on the result of the PP's convert).
+            # `.previous` is where we were before the cmd (often useful)
+            # If the MachineState won't be right after the PP's convert,
+            # then the PP must fix MachineState.
+            self.machine_state.addCommand(cmd)
+
             try:
+
                 gcode = self.convert_command_to_gcode(cmd)
 
                 if gcode is not None and gcode.strip():
                     gcode_lines.extend(gcode.split("\n"))
 
-            except (ValueError, AttributeError) as e:
+            except (ValueError, AttributeError) as e:  # FIXCAME
                 Path.Log.error(f"Failed to convert a command to output {cmd.Name}: {e}")
                 raise e
 
@@ -1648,7 +1735,7 @@ class PostProcessor:
                         lines,
                     )
                 else:
-                    return None
+                    return None  # empty
 
             # our per-section state
             if "_expand_post_item" not in section_state:
@@ -1657,13 +1744,13 @@ class PostProcessor:
 
             # item -> 'str' Postable's
             if item.item_type == "tool_controller":
-                return (1, [pblock("POST_TOOL_CHANGE"), pblock("TOOL_RETURN")])
+                return 1, [pblock("POST_TOOL_CHANGE"), pblock("TOOL_RETURN")]
             elif item.item_type == "fixture":
-                return (1, [pblock("POST_FIXTURE_CHANGE")])
+                return 1, [pblock("POST_FIXTURE_CHANGE")]
             elif item.item_type == "operation":
-                return (1, [pblock("POST_OPERATION")])
+                return 1, [pblock("POST_OPERATION")]
             else:
-                return (None, None)
+                return None, None
 
         return self._edit_postable_list(postables, append)
 
@@ -1699,29 +1786,34 @@ class PostProcessor:
                 "source": None,
             }
         else:
-            raise Exception(
-                f"Can't smartly make a Postable for label '{label}'\n\tfor contents: {contents}"
+            # not a user-level CAM error
+            raise ValueError(
+                f"Internal: Can't smartly make a Postable for label '{label}'\n\tfor contents: {contents.__class__.__name__}: {contents}"
             )
 
         args["data"].update(extra_data)
         return Postable(label=label, **args)
 
-    def _edit_command_list(self, postables: list[Postable], edit_fn):
+    def _edit_command_list(self, postables: list[Postable], edit_fn, all_postables=False):
         """in place edit commands in each item.Path in postables
         edit_fn(section_name, item, command, section_state) is called for each item
             section_state is a dict for you, you have to initialize your sub-state:
                 # e.g.
                 # section_state is reset to {} for each section
                 if "myfnname" not in section_state:
-                section_state["myfnname"] = { mystate:x }
-             return:
-            ( editflag, [items] )
+                    section_state["myfnname"] = { mystate:x }
+             return: ( editflag, [items] )
                 editflag:
                 -1  insert before
                  0  replace
                  1  insert after
                 None    no action
             eliding None commands in the list
+        If all_postables==False, edit_fn() only gets called for a postable with .path (each .Path.Commands)
+        If all_postables==True, it's called like this (once per postable):
+            # Treat `item` as readonly, no edits allowed
+            _,_ = edit_fn(section_name, item, None, section_state)
+            # this let's you see other postables go by, and check their annotations and type
         """
         for section_name, sublist in postables:
             section_state = {}
@@ -1757,11 +1849,16 @@ class PostProcessor:
                             new_commands.extend(rez)
 
                         else:
+                            # Not a user-level CAM error
                             raise ValueError(
-                                f"Expected -1|0|1|None from edit_fn, saw {editflag.__class__.__name__} {editflag}"
+                                f"Internal: Expected -1|0|1|None from edit_fn, saw {editflag.__class__.__name__} {editflag}"
                             )
                     if new_commands:
                         item.path = Path.Path(new_commands)
+
+                elif all_postables:
+                    # let edit_fn() see it, but no edits
+                    edit_fn(section_name, item, None, section_state)
 
     def _edit_item_list(self, postables: list[Postable], edit_fn):
         """in place edit items in postables
@@ -1771,8 +1868,7 @@ class PostProcessor:
                 # section_state is reset to {} for each section
                 if "myfnname" not in section_state:
                 section_state["myfnname"] = { mystate:x }
-             return:
-            ( editflag, [items] )
+             return: ( editflag, [items] )
                 editflag:
                 -1  insert before
                  0  replace
@@ -1808,8 +1904,9 @@ class PostProcessor:
                     sublist.extend(rez)
 
                 else:
+                    # not a user-level CAM error
                     raise ValueError(
-                        f"Expected -1|0|1|None from edit_fn, saw {editflag.__class__.__name__} {editflag}"
+                        f"Internal: Expected -1|0|1|None from edit_fn, saw {editflag.__class__.__name__} {editflag}"
                     )
             if new_sublist:
                 sublist[0:] = new_sublist  # in-place
@@ -1824,8 +1921,7 @@ class PostProcessor:
                 # section_state is reset to {} for each section
                 if "myfnname" not in section_state:
                     section_state["myfnname"] = { mystate:x }
-            return:
-            ( editflag, [Postable,...] )
+            return: ( editflag, [Postable,...] )
                 editflag:
                 -1  insert before
                  0  replace
@@ -1861,50 +1957,64 @@ class PostProcessor:
             new_sections.append((section_name, new_sublist))
         return new_sections
 
-    def _optimize_gcode(self, gcode_lines) -> str:
-        """Apply G-code optimizations and produce a final string.
-        Starting at self._optimize_start line (to skip prefix material)
-
-        Separates header comments from body, applies deduplication,
-        redundant-axis suppression, inefficient-move filtering, and
-        line numbering to the body only, then reassembles with the
-        configured line ending.
+    def _optimize_duplicates_doubles(self, postables):
+        """Remove the .Name if duplicate
+        Remove a .Parameter if duplicate
         """
-        from Path.Post.GcodeProcessingUtils import (
-            deduplicate_repeated_commands,
-            suppress_redundant_axes_words,
-            filter_inefficient_moves,
-            insert_line_numbers,
-        )
 
-        if not gcode_lines:
-            return ""
+        def edit(section_name, item, cmd, section_state):
 
-        num_header_lines = self._optimize_start
-        if num_header_lines is None:
-            raise Exception(
-                "Internal: expected self._optimize_start, set by an item w/ {optimizable:True}"
-            )
+            # "previous" crosses postables, but not sections
+            if "previous" not in section_state:
+                section_state["previous"] = None
 
-        header_part = gcode_lines[:num_header_lines]
-        body_part = gcode_lines[num_header_lines:]
+            # A non-path.command postable: is a dedup barrier
+            if cmd is None:
+                section_state["previous"] = None
+                return None, None  # no-edit, result not used
 
-        if body_part:
-            if not self.values["OUTPUT_DUPLICATE_COMMANDS"]:
-                body_part = deduplicate_repeated_commands(body_part)
-            if not self.values["OUTPUT_DOUBLES"]:
-                body_part = suppress_redundant_axes_words(body_part)
+            else:
 
-        if body_part and self.values["FILTER_INEFFICIENT_MOVES"]:
-            body_part = filter_inefficient_moves(body_part)
+                # Modal GCode
+                if not self.values["OUTPUT_DUPLICATE_COMMANDS"]:
+                    next_previous, new_command = modal_gcode(cmd, section_state["previous"])
+                else:
+                    new_command = cmd
+                    next_previous = cmd
 
-        if body_part and self.values["OUTPUT_LINE_NUMBERS"]:
-            start = self.values["LINE_NUMBER_START"]
-            increment = self.values["LINE_INCREMENT"]
-            body_part = insert_line_numbers(body_part, start=start, increment=increment)
+                # Modal Axis
+                if not self.values["OUTPUT_DOUBLES"]:
+                    next_previous, new_command = modal_axis(new_command, section_state["previous"])
 
-        final_lines = header_part + body_part
-        return final_lines
+                section_state["previous"] = next_previous
+
+                # we always replace, even if we didn't edit the command
+                # can elide when new_command is None
+                return 0, [new_command]
+
+        self._edit_command_list(postables, edit, all_postables=True)
+
+    def _optimize_g0(self, postables):
+        """Collapse g0 chains, conservatively"""
+
+        def edit(section_name, item, section_state):
+            if not item.path:
+                return None, None
+
+            # "previous" crosses postables, but not sections
+            if "previous" not in section_state:
+                section_state["previous"] = None
+
+            # A non-path.command postable: is a dedup barrier
+            if cmd is None:
+                section_state["previous"] = None
+                return None, None  # no-edit, not used
+
+            else:
+                item.Path = Path.Path(list(collapse_g0(item.path.Commands)))
+                return None, None  # updated item.Path, in place
+
+        self._edit_item_list(self, postables, edit)
 
     def _expand_trailing_lines(self, postables) -> None:
         """Append post_job and postamble lines, to each section."""
@@ -1933,44 +2043,45 @@ class PostProcessor:
         else:
             Path.Log.debug("No bCNC postamble commands to process")
 
+    def _convert_start_section(self, section_name, sublist):
+        """Override if your PP needs to notice when each section (file) starts"""
+        pass
+
     def _convert_job_sections(self, postables):
         """Convert each section to output-code"""
 
         job_sections = []
+
         for section_name, sublist in postables:
-            gcode_lines = []
-            self._optimize_start = None
 
-            for item in sublist:
-                self._convert_item_commands(item, gcode_lines)
+            # MachineState per file (section)
+            with self.use_machine_state():
+                gcode_lines = []
 
-            # ===== STAGE 4: G-CODE OPTIMIZATION =====
-            gcode_string = self._optimize_gcode(gcode_lines)
+                # For _optimize_gcode, FIXME: do annotations on Postables instead
+                self._optimize_start = None
 
-            if gcode_string:
-                # one place for end-of-line_chars
-                gcode_string = "\n".join(gcode_string)
-                line_ending = self.values.get("END_OF_LINE_CHARS", "\n")
-                if line_ending != "\n":
-                    gcode_string = gcode_string.replace("\n", line_ending)
+                self._convert_start_section(section_name, sublist)
 
-                job_sections.append((section_name, gcode_string))
+                for item in sublist:
+                    # for error context
+                    if item.item_type == "operation":
+                        self._operation = item.source
+
+                    self._convert_item_commands(item, gcode_lines)
+
+                    self._operation = None  # operation `item` is over
+
+                if gcode_lines:
+                    # one place for end-of-line_chars
+                    gcode_string = "\n".join(gcode_lines)
+                    line_ending = self.values.get("END_OF_LINE_CHARS", "\n")
+                    if line_ending != "\n":
+                        gcode_string = gcode_string.replace("\n", line_ending)
+
+                    job_sections.append((section_name, gcode_string))
 
         return job_sections
-
-    def dump_sections(self, msg, sections):
-        """Print the sections
-        for development/debugging
-        """
-        print(f"## proc DUMP {msg}")
-        for si, (sn, postables) in enumerate(sections):
-            print(f"Section[{si}] '{sn}'")
-            for pi, p in enumerate(postables):
-                print(f"  Postable[{pi}] {p.item_type}:'{p.Name}'")
-                print(f"    {p}")
-                if p.Path:
-                    for i, c in enumerate(p.Path.Commands):
-                        print(f"        [{i}] {c.toGCode()}")
 
     def export2(self) -> Union[None, GCodeSections]:
         """
@@ -2023,8 +2134,15 @@ class PostProcessor:
         self._expand_tool_change(postables)
         self._expand_rotary_move(postables)
 
-        # must be last
+        # must be last expansion
         self._expand_bcnc_postamble(postables)
+
+        # must be after all expansions
+        self._optimize_duplicates_doubles(postables)
+
+        # Add line-numbers to all Path.Command's (if option is on)
+        # must be last
+        self._add_line_numbers(postables)
 
         Path.Log.debug(postables)
 
@@ -2044,6 +2162,8 @@ class PostProcessor:
         try:
             self.remote_post(all_job_sections)
         except Exception as e:
+            # Our output still might be interesting, so continue
+            # FIXME: can we make the user notice this situation?
             Path.Log.error(f"Remote posting failed: {e}")
 
         return all_job_sections
@@ -2152,7 +2272,7 @@ class PostProcessor:
         # processing the arguments) or a string containing the argument list formatted
         # for output.  Either way the calling routine will need to handle the args value.
         #
-        return (flag, args)
+        return flag, args
 
     def process_postables(self) -> GCodeSections:
         """Postprocess the 'postables' in the job to g code sections."""
@@ -2193,6 +2313,8 @@ class PostProcessor:
         self.parser: Parser = self.init_arguments(
             self.values, self.argument_defaults, self.arguments_visible
         )
+        self.machine_state = None
+
         #
         # Create another parser just to get a list of all possible arguments
         # that may be output using --output_all_arguments.
@@ -2293,8 +2415,6 @@ class PostProcessor:
         Returns:
             dict: Squawk dictionary compatible with CAMSanity
         """
-        from datetime import datetime
-
         # Map to same icons used by CAMSanity
         icon_map = {
             "TIP": "Sanity_Bulb",
@@ -2304,7 +2424,7 @@ class PostProcessor:
         }
 
         return {
-            "Date": datetime.now().strftime("%c"),
+            "Date": datetime.datetime.now().strftime("%c"),
             "Operator": self.__class__.__name__,
             "Note": note,
             "squawkType": squawk_type,
@@ -2356,8 +2476,15 @@ class PostProcessor:
             command.Name not in supported
             and not command.Name.startswith("(")
             and not command.Name.startswith("T")
+            and not command.Annotations.get(Constants.ANNOT_ALLOW_UNSUPPORTED, False)
         ):
-            raise ValueError(f"Unsupported command: {command.Name}")
+            raise CAMValueError(
+                f"Unsupported command: {command.Name}",
+                job=self._job,
+                operation=self._operation,
+                command=command,
+                pp=self.values["MACHINE_NAME"],
+            )
 
         # Dispatch to appropriate hook method based on command type
         command_name = command.Name
@@ -2558,11 +2685,10 @@ class PostProcessor:
 
     def _convert_move(self, command: Path.Command) -> str:
         """
-        Converts a rapid move command to gcode.
+        Converts a generic move command to gcode.
 
         This method can be overridden by derived postprocessors to customize rapid move handling.
         """
-        from Path.Post.UtilsParse import format_command_line
 
         # Extract command components
         command_name = command.Name
@@ -2574,6 +2700,12 @@ class PostProcessor:
 
         # Build command line
         command_line = []
+
+        # line numbers as prefix
+        if params.get("N", None) is not None:
+            prefix = self.values["LINE_NUMBER_PREFIX"]
+            command_line.append(f"{prefix}{ int(params['N']):d}")
+
         command_line.append(command_name)
 
         # Format parameters with clean, stateless implementation
@@ -2583,29 +2715,38 @@ class PostProcessor:
             ["X", "Y", "Z", "A", "B", "C", "F", "I", "J", "K", "R", "Q", "P", "S", "T"],
         )
 
-        for parameter in parameter_order:
-            if parameter in params:
-                # Check if we should suppress duplicate parameters
-                if not self.values["OUTPUT_DOUBLES"]:
-                    # Suppress parameters that haven't changed
-                    current_value = params[parameter]
-                    if (
-                        parameter in self._modal_state
-                        and self._modal_state[parameter] == current_value
-                    ):
-                        continue  # Skip this parameter
-
-                formatted_value = self.format_parameter(parameter, params[parameter])
-                command_line.append(f"{parameter}{formatted_value}")
-
-                self._modal_state[parameter] = params[parameter]
-
         # Suppress commands where all parameters were removed by duplicate suppression
         # or parameter_order exclusion (e.g., Z suppression for wire EDM).
         # A bare move (G0, G1, G2, G3) or dwell (G4) with no parameters is meaningless.
-        if params and len(command_line) == 1:
-            Path.Log.debug(f"### suppressed BARE {command} -> '{command_line}'")
-            return None
+        if (
+            command_name
+            in Constants.GCODE_MOVE_LINE + Constants.GCODE_MOVE_ARC + Constants.GCODE_DWELL
+        ):
+            non_N_params = {**params}
+            non_N_params.pop("N", None)
+            if len(non_N_params) == 0:
+                return None
+
+        for parameter in parameter_order:
+            if parameter in params:
+                # Check if we should suppress duplicate parameters
+                current_value = params[parameter]
+                if not self.values["OUTPUT_DOUBLES"]:
+                    # Suppress parameters that haven't changed
+                    if (
+                        parameter in self.machine_state.Tracked
+                        and self.machine_state.previous[parameter] == current_value
+                    ):
+                        continue  # Skip this parameter
+                elif (
+                    parameter == "F"
+                    and command_name in Constants.GCODE_MOVE_RAPID
+                    and (not self.values["F_FOR_RAPID_MOVES"] or current_value == 0.0)
+                ):
+                    continue  # no F for G0, or the F is 0.0 which should be skipped too
+
+                formatted_value = self.format_parameter(parameter, current_value)
+                command_line.append(f"{parameter}{formatted_value}")
 
         # Format the command line
         formatted_line = format_command_line(self.values, command_line)
@@ -2658,7 +2799,7 @@ class PostProcessor:
         return self._convert_move(command)
 
     def _convert_probe_open(self, command: Path.Command) -> str:
-        """Probe sequence is starting, do your prefix
+        """Probe sequence is starting, do your prefix/setup
             command is a comment, already processed as a comment.
             command.Annotations["probe_open"] has the filename from the operation
                 if the filename is "", generate something from the section_name, Postable.Name, "probe", and count
@@ -2692,8 +2833,7 @@ class PostProcessor:
         result = self._convert_move(command)
         # Reset modal state after tool change so that subsequent commands
         # (M3 S..., G4 P..., G0 X... etc.) are not suppressed as duplicates.
-        for key in self._modal_state:
-            self._modal_state[key] = None
+        self.machine_state.setState(None)
         return result
 
     def _convert_spindle_command(self, command: Path.Command) -> str:
@@ -2779,7 +2919,7 @@ class WrapperPost(PostProcessor):
         Path.Log.debug(f"postables count: {len(postables)}")
 
         g_code_sections = []
-        for idx, section in enumerate(postables):
+        for section in postables:
             partname, sublist = section
 
             gcode = self.script_module.export(sublist, "-", self._job.PostProcessorArgs)

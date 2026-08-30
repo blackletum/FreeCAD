@@ -69,6 +69,8 @@ else:
 
 translate = FreeCAD.Qt.translate
 
+ADAPTIVE_GENERATOR_VERSION = "1.0.3"
+
 
 def convertTo2d(pathArray):
     output = []
@@ -306,7 +308,9 @@ def GenerateGCode(op, obj, adaptiveResults):
                         if z != lz:
                             op.commandlist.append(Path.Command("G0", {"Z": z}))
 
-                        op.commandlist.append(Path.Command("G0", {"X": x, "Y": y}))
+                        cmd = Path.Command("G0", {"X": x, "Y": y})
+                        cmd.Annotations = {Constants.ANNOT_NO_ENGAGEMENT_FEED: "True"}
+                        op.commandlist.append(cmd)
 
                     elif motionType == area.AdaptiveMotionType.LinkNotClear:
                         z = obj.ClearanceHeight.Value
@@ -419,7 +423,7 @@ def Execute(op, obj):
             "keepToolDownRatio": keepToolDownRatio,
             "stockToLeave": float(obj.StockToLeave),
             "modelAwareExperiment": obj.ModelAwareExperiment,
-            "adaptiveGeneratorVersion": "1.0.1",
+            "adaptiveGeneratorVersion": ADAPTIVE_GENERATOR_VERSION,
         }
 
         inputStateChanged = False
@@ -631,6 +635,7 @@ def ExecuteModelAware(op, obj):
             "stockToLeave": obj.StockToLeave.Value,
             "zStockToLeave": obj.ZStockToLeave.Value,
             "orderCutsByRegion": obj.OrderCutsByRegion,
+            "adaptiveGeneratorVersion": ADAPTIVE_GENERATOR_VERSION,
         }
 
         insideInputStateObject = {
@@ -654,7 +659,7 @@ def ExecuteModelAware(op, obj):
             "zStockToLeave": obj.ZStockToLeave.Value,
             "orderCutsByRegion": obj.OrderCutsByRegion,
             "modelAwareExperiment": obj.ModelAwareExperiment,
-            "adaptiveGeneratorVersion": "1.0.1",
+            "adaptiveGeneratorVersion": ADAPTIVE_GENERATOR_VERSION,
         }
 
         inputStateObject = [outsideInputStateObject, insideInputStateObject]
@@ -1594,7 +1599,7 @@ class PathAdaptive(PathOp.ObjectOp):
             "Adaptive",
             QT_TRANSLATE_NOOP(
                 "App::Property",
-                "How much stock to leave in the XY plane (eg for finishing operation)",
+                "Set how much stock to leave on the walls for the operation.",
             ),
         )
         obj.addProperty(
@@ -1603,7 +1608,7 @@ class PathAdaptive(PathOp.ObjectOp):
             "Adaptive",
             QT_TRANSLATE_NOOP(
                 "App::Property",
-                "How much stock to leave along the Z axis (eg for finishing operation). This property is only used if the ModelAwareExperiment is enabled.",
+                "Set how much stock to leave on the floor for the operation. This property is only used if the ModelAwareExperiment is enabled.",
             ),
         )
         obj.addProperty(
@@ -1624,6 +1629,7 @@ class PathAdaptive(PathOp.ObjectOp):
                 "To take a finishing profile path at the end",
             ),
         )
+        obj.setEditorMode("FinishingProfile", 2)  # hide this property
         obj.addProperty(
             "App::PropertyBool",
             "Stopped",
@@ -1860,7 +1866,7 @@ class PathAdaptive(PathOp.ObjectOp):
                 "Adaptive",
                 QT_TRANSLATE_NOOP(
                     "App::Property",
-                    "How much stock to leave along the Z axis (eg for finishing operation)",
+                    "Set how much stock to leave on the floor for the operation.",
                 ),
             )
 
