@@ -676,7 +676,7 @@ För ämnen från basobjektets avgränsningsruta innebär det det extra material
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="257"/>
       <source>If checked, the path is constrained by the solid. Otherwise the volume of the solid describes a &apos;keep out&apos; zone</source>
-      <translation>Om markerat begränsas banan till solidens insida. Annars anger solidens volym ett område som verktyget måste hålla sig utanför</translation>
+      <translation>Om alternativet är markerat begränsas banan av soliden. Annars anger solidens volym ett område som verktyget måste hålla sig utanför</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="43"/>
@@ -709,10 +709,10 @@ För ämnen från basobjektets avgränsningsruta innebär det det extra material
       <translation>Alla objekt kommer att behandlas med samma operationsegenskaper</translation>
     </message>
     <message>
-      <location filename="../panels/PropertyBag.ui" line="62"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="43"/>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="72"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="157"/>
+      <location filename="../panels/PropertyBag.ui" line="62"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="43"/>
       <source>Add</source>
       <translation>Lägg till</translation>
     </message>
@@ -722,10 +722,10 @@ För ämnen från basobjektets avgränsningsruta innebär det det extra material
       <translation>Lista över operationer med basgeometri i det aktuella jobbet</translation>
     </message>
     <message>
-      <location filename="../panels/PropertyBag.ui" line="48"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="53"/>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="82"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="167"/>
+      <location filename="../panels/PropertyBag.ui" line="48"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="53"/>
       <source>Remove</source>
       <translation>Ta bort</translation>
     </message>
@@ -734,6 +734,17 @@ För ämnen från basobjektets avgränsningsruta innebär det det extra material
       <location filename="../panels/PageBaseGeometryEdit.ui" line="92"/>
       <source>Clear</source>
       <translation>Rensa</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="124"/>
+      <source>Feature</source>
+      <translation>Formelement</translation>
+    </message>
+    <message>
+      <location filename="../panels/ToolEditor.ui" line="96"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="129"/>
+      <source>Diameter</source>
+      <translation>Diameter</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="62"/>
@@ -762,17 +773,6 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="119"/>
       <source>#</source>
       <translation>#</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="124"/>
-      <source>Feature</source>
-      <translation>Formelement</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="129"/>
-      <location filename="../panels/ToolEditor.ui" line="96"/>
-      <source>Diameter</source>
-      <translation>Diameter</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="144"/>
@@ -815,16 +815,16 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
       <translation>Lista över positioner som ska bearbetas</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProbeEdit.ui" line="26"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="24"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="134"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="24"/>
+      <location filename="../panels/PageOpProbeEdit.ui" line="26"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProbeEdit.ui" line="43"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="29"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="139"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="29"/>
+      <location filename="../panels/PageOpProbeEdit.ui" line="43"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
@@ -854,8 +854,8 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
       <translation>Redigera</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="36"/>
       <location filename="../panels/PageDepthsEdit.ui" line="39"/>
+      <location filename="../panels/SetupGlobal.ui" line="36"/>
       <source>Start depth</source>
       <translation>Startdjup</translation>
     </message>
@@ -872,8 +872,8 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
       <translation>Använd det markerade formelementets Z-värde som operationens startdjup</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="52"/>
       <location filename="../panels/PageDepthsEdit.ui" line="85"/>
+      <location filename="../panels/SetupGlobal.ui" line="52"/>
       <source>Final depth</source>
       <translation>Slutdjup</translation>
     </message>
@@ -889,46 +889,6 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
       <translation>Använd det markerade formelementets Z-värde som operationens slutdjup</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="68"/>
-      <location filename="../panels/PageDepthsEdit.ui" line="131"/>
-      <location filename="../panels/PageHeightsEdit.ui" line="190"/>
-      <source>Step down</source>
-      <translation>Djupsteg</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDepthsEdit.ui" line="138"/>
-      <location filename="../panels/PageHeightsEdit.ui" line="197"/>
-      <source>The depth in Z-axis the operation moves downwards between layers. This value depends on the tool being used, the material to be cut, available cooling and many other factors. Consult the tool manufacturers data sheets for the proper value.</source>
-      <translation>Det djup i Z-axeln som operationen rör sig nedåt mellan skikten. Detta värde beror på vilket verktyg som används, vilket material som ska bearbetas, tillgänglig kylning och många andra faktorer. Se verktygstillverkarens datablad för korrekt värde.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDepthsEdit.ui" line="163"/>
-      <location filename="../panels/PageHeightsEdit.ui" line="222"/>
-      <source>Finish step down</source>
-      <translation>Sista djupsteg</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDepthsEdit.ui" line="170"/>
-      <source>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</source>
-      <translation>Skärdjupet för operationens sista passering. Kan användas för att få en finare yta.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDiametersEdit.ui" line="20"/>
-      <source>Min Diameter</source>
-      <translation>Min diameter</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="318"/>
-      <location filename="../panels/PageDiametersEdit.ui" line="54"/>
-      <source>Max diameter</source>
-      <translation>Max diameter</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDiametersEdit.ui" line="74"/>
-      <source>Transfer the Z value of the selected feature as the final depth for the operation.</source>
-      <translation>Använd det markerade formelementets Z-värde som operationens slutdjup.</translation>
-    </message>
-    <message>
       <location filename="../panels/PageHeightsEdit.ui" line="26"/>
       <source>Work plane</source>
       <translation>Arbetsplan</translation>
@@ -936,12 +896,7 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="33"/>
       <source>The frame this operation works in. Heights and depths are measured in it, so changing it makes manually entered values stale.</source>
-      <translation>Referensramen som åtgärden arbetar i. Höjder och djup mäts i den, så om den ändras blir manuellt angivna värden inaktuella.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageHeightsEdit.ui" line="119"/>
-      <source>The height above which it is safe to move the tool bit with rapid movements. Below this height all lateral and downward movements are performed with feed rate speeds.</source>
-      <translation>Den höjd över vilken verktyget säkert kan göra snabbförflyttningar. Under denna höjd sker alla rörelser i sidled och nedåt med matningshastighet.</translation>
+      <translation>Referensramen som operationen arbetar i. Höjder och djup mäts i den, så manuellt angivna värden blir inaktuella om den ändras.</translation>
     </message>
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="144"/>
@@ -957,6 +912,25 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
       <location filename="../panels/PageHeightsEdit.ui" line="164"/>
       <source>Transfer the Z value of the selected feature as the start height for the operation</source>
       <translation>Överför Z-värdet för det valda formelementet som operationens starthöjd</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="190"/>
+      <location filename="../panels/PageDepthsEdit.ui" line="131"/>
+      <location filename="../panels/SetupGlobal.ui" line="68"/>
+      <source>Step down</source>
+      <translation>Djupsteg</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="197"/>
+      <location filename="../panels/PageDepthsEdit.ui" line="138"/>
+      <source>The depth in Z-axis the operation moves downwards between layers. This value depends on the tool being used, the material to be cut, available cooling and many other factors. Consult the tool manufacturers data sheets for the proper value.</source>
+      <translation>Det djup i Z-axeln som operationen rör sig nedåt mellan skikten. Detta värde beror på vilket verktyg som används, vilket material som ska bearbetas, tillgänglig kylning och många andra faktorer. Se verktygstillverkarens datablad för korrekt värde.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="222"/>
+      <location filename="../panels/PageDepthsEdit.ui" line="163"/>
+      <source>Finish step down</source>
+      <translation>Sista djupsteg</translation>
     </message>
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="229"/>
@@ -981,7 +955,7 @@ Lägg till formelement för bearbetning genom att välja dem och sedan trycka p�
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="320"/>
       <source>Recompute all heights and depths from this operation&apos;s work plane, stock and model. Discards manual edits to these fields.</source>
-      <translation>Beräkna om alla höjder och djup utifrån den här åtgärdens arbetsplan, råmaterial och modell. Förkastar manuella redigeringar av dessa fält.</translation>
+      <translation>Beräkna om alla höjder och djup utifrån operationens arbetsplan, ämne och modell. Manuella ändringar i dessa fält förkastas.</translation>
     </message>
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="323"/>
@@ -1026,6 +1000,32 @@ Verktygsform: säkrast – kontrollerar frigången med verktygsformens tvärsnit
       <location filename="../panels/PageHeightsEdit.ui" line="366"/>
       <source>Minimum clearance distance between the tool and any solid during linking moves. Applies to all linking modes.</source>
       <translation>Minsta frigång mellan verktyget och en solid under länkningsrörelser. Gäller alla länkningslägen.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDepthsEdit.ui" line="170"/>
+      <source>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</source>
+      <translation>Skärdjupet för operationens sista passering. Kan användas för att få en finare yta.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDiametersEdit.ui" line="20"/>
+      <source>Min Diameter</source>
+      <translation>Min diameter</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDiametersEdit.ui" line="54"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="318"/>
+      <source>Max diameter</source>
+      <translation>Max diameter</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDiametersEdit.ui" line="74"/>
+      <source>Transfer the Z value of the selected feature as the final depth for the operation.</source>
+      <translation>Använd det markerade formelementets Z-värde som operationens slutdjup.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="119"/>
+      <source>The height above which it is safe to move the tool bit with rapid movements. Below this height all lateral and downward movements are performed with feed rate speeds.</source>
+      <translation>Den höjd över vilken verktyget säkert kan göra snabbförflyttningar. Under denna höjd sker alla rörelser i sidled och nedåt med matningshastighet.</translation>
     </message>
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="87"/>
@@ -1087,11 +1087,6 @@ Större värden (längre till höger) ger snabbare beräkningar; mindre värden 
       <translation>Verktygsstyrning</translation>
     </message>
     <message>
-      <location filename="../panels/PageToolControllerEdit.ui" line="54"/>
-      <source>The coolant mode to be used for this operation</source>
-      <translation>Det kylvätskeläge som ska användas för operationen</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="38"/>
       <source>Accuracy vs performance</source>
       <translation>Noggrannhet kontra prestanda</translation>
@@ -1107,19 +1102,6 @@ Större värden (längre till höger) ger snabbare beräkningar; mindre värden 
       <translation>Det avstånd i sidled som skärverktyget flyttas mellan på varandra följande passeringar, i procent av verktygets diameter.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="113"/>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="337"/>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="366"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="160"/>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="185"/>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="95"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="338"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="553"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="121"/>
-      <source>%</source>
-      <translation>%</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="135"/>
       <source>Step over (distance)</source>
       <translation>Sidsteg (avstånd)</translation>
@@ -1130,30 +1112,14 @@ Större värden (längre till höger) ger snabbare beräkningar; mindre värden 
       <translation>Det avstånd i sidled som skärverktyget flyttas mellan på varandra följande passeringar.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="169"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="193"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="75"/>
-      <source>Retract threshold</source>
-      <translation>Gräns för tillbakadragning</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="189"/>
       <source>Toggle keep tool down ratio between 0 and tool diameter</source>
       <translation>Växla värdet för att hålla verktyget nere mellan 0 och verktygsdiametern</translation>
     </message>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="204"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="68"/>
       <source>How much stock to leave on the walls for this operation</source>
       <translation>Hur stor bearbetningsmån som ska lämnas på väggarna för operationen</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="214"/>
-      <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="155"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="179"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="61"/>
-      <source>Radial stock to leave</source>
-      <translation>Radiell bearbetningsmån</translation>
     </message>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="227"/>
@@ -1166,32 +1132,14 @@ Större värden (längre till höger) ger snabbare beräkningar; mindre värden 
       <translation>&lt;b&gt;Helixparametrar&lt;/b&gt;</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="267"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="86"/>
-      <source>Max pitch</source>
-      <translation>Största stigning</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="274"/>
       <source>The maximum allowable descent in a single revolution of the helix. Set to zero to disable limitation by pitch.</source>
       <translation>Största tillåtna sänkning under ett enda helixvarv. Ställ in noll för att inaktivera begränsning efter stigning.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="284"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="100"/>
-      <source>Max ramp angle</source>
-      <translation>Största rampvinkel</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="291"/>
       <source>The maximum allowable angle of the helix ramp entry. Set to zero to disable limitation by ramp angle.</source>
       <translation>Största tillåtna rampvinkel för den helixformade ingången. Ange noll för att inaktivera begränsningen av rampvinkeln.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="301"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="160"/>
-      <source>Cone angle</source>
-      <translation>Konvinkel</translation>
     </message>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="325"/>
@@ -1359,8 +1307,8 @@ Påverkar inte punktavståndet för verktygsbanan (samplingsintervall).</transla
       <translation>Typ av operation</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="152"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="486"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="152"/>
       <source>Lift distance</source>
       <translation>Lyftavstånd</translation>
     </message>
@@ -1380,8 +1328,8 @@ Påverkar inte punktavståndet för verktygsbanan (samplingsintervall).</transla
       <translation>Stoppa</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="33"/>
       <location filename="../panels/PageOpDeburrEdit.ui" line="49"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="42"/>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="140"/>
       <source>Direction</source>
       <translation>Riktning</translation>
@@ -1478,12 +1426,12 @@ Påverkar inte punktavståndet för verktygsbanan (samplingsintervall).</transla
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="135"/>
       <source>Peck depth</source>
-      <translation>Hackdjup</translation>
+      <translation>Stegborrningsdjup</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="145"/>
       <source>Peck retract</source>
-      <translation>Hackåterdragning</translation>
+      <translation>Tillbakadragning vid stegborrning</translation>
     </message>
     <message>
       <location filename="../panels/PageOpTappingEdit.ui" line="65"/>
@@ -1567,6 +1515,31 @@ Påverkar inte punktavståndet för verktygsbanan (samplingsintervall).</transla
       <translation>Skärläge</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="86"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="267"/>
+      <source>Max pitch</source>
+      <translation>Största stigning</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="100"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="284"/>
+      <source>Max ramp angle</source>
+      <translation>Största rampvinkel</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="121"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="338"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="553"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="113"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="337"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="366"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="112"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="185"/>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="95"/>
+      <source>%</source>
+      <translation>%</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpHelixEdit.ui" line="140"/>
       <source>Radial stock to leave (outer)</source>
       <translation>Radiell bearbetningsmån (yttre)</translation>
@@ -1574,7 +1547,13 @@ Påverkar inte punktavståndet för verktygsbanan (samplingsintervall).</transla
     <message>
       <location filename="../panels/PageOpHelixEdit.ui" line="150"/>
       <source>Radial stock to leave (inner)</source>
-      <translation>Radiellt bearbetningsmån att lämna kvar (inre)</translation>
+      <translation>Radiell bearbetningsmån (inre)</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="160"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="301"/>
+      <source>Cone angle</source>
+      <translation>Konvinkel</translation>
     </message>
     <message>
       <location filename="../panels/PageOpHelixEdit.ui" line="173"/>
@@ -1682,17 +1661,19 @@ Påverkar inte punktavståndet för verktygsbanan (samplingsintervall).</transla
       <translation>Avgränsande form</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="30"/>
-      <source>Specify if the facing should be restricted by the actual shape of the selected face (or the part if no face is selected), or if the bounding box should be faced off.
-
-The latter can be used to face of the entire stock area to ensure uniform heights for the following operations.</source>
-      <translation>Ange om fasningen ska begränsas av den faktiska formen på den markerade ytan (eller delen om ingen yta är markerad), eller om avgränsningsrutan ska fasas av.
-
-Det senare kan användas för att platta av hela ämnesområdet för att säkerställa enhetliga höjder för följande operationer.</translation>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="86"/>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="62"/>
+      <source>°</source>
+      <translation>°</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="207"/>
+      <source>Ignore holes</source>
+      <translation>Ignorera hål</translation>
     </message>
     <message>
       <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="29"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="45"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="39"/>
       <location filename="../panels/PageOpMillFacingEdit.ui" line="45"/>
       <source>Cut Mode</source>
       <translation>Skärläge</translation>
@@ -1783,6 +1764,14 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Vinkelsteg för samplingen längs bearbetningsriktningen (grader). Mindre värden ger jämnare ytor men mer G-kod. 5–15° är vanligt.</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="155"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="63"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="214"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="158"/>
+      <source>Radial stock to leave</source>
+      <translation>Radiell bearbetningsmån</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="162"/>
       <source>How much stock to leave on the walls for this operation. Use a small positive value for a finish allowance; 0 cuts directly to the surface.</source>
       <translation>Hur stor bearbetningsmån som ska lämnas på väggarna för operationen. Använd ett litet positivt värde som finbearbetningsmån; 0 skär direkt till ytan.</translation>
@@ -1808,19 +1797,17 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Om markerat begränsas verktygsbanan till de markerade ytornas projicerade område i axial- och vinkelled. Annars täcker banan hela området Start X … Slut X / Startvinkel … Slutvinkel.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="56"/>
       <location filename="../panels/PageOpHelixEdit.ui" line="73"/>
       <source>Climb</source>
       <translation>Medfräsning</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="61"/>
       <location filename="../panels/PageOpHelixEdit.ui" line="78"/>
       <source>Conventional</source>
       <translation>Motfräsning</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="69"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="49"/>
       <source>Pattern</source>
       <translation>Mönster</translation>
     </message>
@@ -1830,132 +1817,43 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Det verktyg och dess inställningar som ska användas för denna operation</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="261"/>
       <location filename="../panels/PageToolControllerEdit.ui" line="47"/>
+      <location filename="../panels/SetupGlobal.ui" line="261"/>
       <source>Coolant mode</source>
       <translation>Kylvätskeläge</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="52"/>
-      <source>The cutting mode assumes that the cut on one side of the tool bit represents the resulting part and the other side is either already milled away or will be removed later on. Climb mode is when the tool bit is moved into the cut on each rotation, whereas in conventional mode the tool bit&apos;s rotation and the tool&apos;s lateral movement are in the same direction</source>
-      <translation>Skärläget förutsätter att ena sidan av verktygsbanan avgränsar den färdiga detaljen och att materialet på den andra sidan redan har frästs bort eller ska tas bort senare. Vid medfräsning går skärets rörelse i ingreppet i arbetsstyckets matningsriktning; vid motfräsning går den åt motsatt håll</translation>
+      <location filename="../panels/PageToolControllerEdit.ui" line="54"/>
+      <source>The coolant mode to be used for this operation</source>
+      <translation>Det kylvätskeläge som ska användas för operationen</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="76"/>
-      <source>Pattern the tool bit is moved in to clear the material</source>
-      <translation>Det mönster som verktyget följer för att avverka materialet</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="83"/>
-      <source>ZigZag</source>
-      <translation>Sicksack</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="93"/>
-      <source>Spiral</source>
-      <translation>Spiral</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="98"/>
-      <source>ZigZagOffset</source>
-      <translation>Sicksack-förskjutning</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="103"/>
-      <source>Line</source>
-      <translation>Rad</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="108"/>
-      <source>Grid</source>
-      <translation>Rutnät</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="113"/>
-      <source>Triangle</source>
-      <translation>Triangel</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="121"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="79"/>
       <location filename="../panels/PageOpMillFacingEdit.ui" line="55"/>
       <source>Angle</source>
       <translation>Vinkel</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="128"/>
-      <source>Angle in which the pattern is applied</source>
-      <translation>Vinkel i vilken mönstret appliceras</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="131"/>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="62"/>
-      <source>°</source>
-      <translation>°</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="157"/>
-      <source>The sideways distance* the cutting tool moves between successive passes (*a percentage of the tool&apos;s diameter).</source>
-      <translation>Det avstånd i sidled* som skärverktyget flyttas mellan på varandra följande passeringar (*i procent av verktygets diameter).</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="268"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="197"/>
-      <source>Set picked point as start point</source>
-      <translation>Ange vald punkt som startpunkt</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="186"/>
-      <source>The amount of material that should be left by this operation in relation to the target shape</source>
-      <translation>Den mängd material som ska lämnas kvar av denna operation i förhållande till målformen</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="200"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="82"/>
-      <source>Distance which will attempts to avoid unnecessary retractions</source>
-      <translation>Avstånd som används för att försöka undvika onödiga tillbakadragningar</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="210"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="92"/>
-      <source>Toggle retract threshold between 0 and tool diameter</source>
-      <translation>Växla gränsen för tillbakadragning mellan 0 och verktygsdiametern</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="231"/>
-      <source>If selected the operation uses the outline of the selected base geometry and ignores all holes</source>
-      <translation>Om detta väljs använder operationen konturen för den valda basgeometrin och ignorerar alla hål</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="234"/>
-      <source>Ignore holes</source>
-      <translation>Ignorera hål</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="258"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="228"/>
       <source>Specify if this operation uses a starting point</source>
       <translation>Ange om denna operation använder en startpunkt</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="261"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="190"/>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="224"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="204"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="415"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="231"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="224"/>
       <source>Use start point</source>
       <translation>Använd startpunkt</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="241"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="214"/>
       <source>Clear edges</source>
       <translation>Fräs rent kanter</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="248"/>
-      <source>Check to skip machining regions that have already been cleared by previous operations</source>
-      <translation>Markera för att hoppa över områden som redan har frästs ur av tidigare operationer</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="241"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="251"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="221"/>
       <source>Use rest machining</source>
       <translation>Använd restbearbetning</translation>
     </message>
@@ -2000,14 +1898,7 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>ProbePoints.txt</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="34"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="53"/>
-      <source>PLACEHOLDER</source>
-      <translation>PLATSHÅLLARE</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="56"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="49"/>
       <source>The direction in which the profile is performed, clockwise or counterclockwise</source>
       <translation>Den riktning i vilken profilen utförs, medurs eller moturs</translation>
     </message>
@@ -2017,74 +1908,89 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Bearbetningssida</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="30"/>
-      <source>Specify if the profile should be performed inside or outside the base geometry features. This only matters if &apos;Use compensation&apos; is checked (the default).</source>
-      <translation>Ange om profilbearbetningen ska göras innanför eller utanför basgeometrins formelement. Detta har bara betydelse om Använd kompensering är markerat (standard).</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="107"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="102"/>
       <source>Number of passes</source>
       <translation>Antal passeringar</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="120"/>
-      <source>The number of passes to do. If more than one, requires a non-zero value for &apos;Pass stepover&apos;.</source>
-      <translation>Antalet passeringar som ska göras. Fler än en kräver ett värde som inte är noll för Sidsteg mellan passeringar.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="127"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="119"/>
       <source>Pass stepover</source>
       <translation>Sidsteg mellan passeringar</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="134"/>
-      <source>If doing multiple passes, the extra offset of each additional pass</source>
-      <translation>Den extra förskjutningen för varje ytterligare passering när flera passeringar används</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="187"/>
-      <source>Check if this operation should use a starting point</source>
-      <translation>Markera om operationen ska använda en startpunkt</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="147"/>
-      <source>Check if this profile operation should also process holes in the base geometry. Found holes are automatically offset on the opposite cut side and performed in the opposite direction as perimeters. Note that this does not include cylindrical holes, the assumption being that they will get drilled</source>
-      <translation>Markera om profiloperationen även ska bearbeta hål i basgeometrin. Hålen förskjuts automatiskt till motsatt bearbetningssida och bearbetas i motsatt riktning mot ytterkonturerna. Detta omfattar inte cylindriska hål, som antas bli borrade</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="150"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="169"/>
       <source>Process holes</source>
       <translation>Bearbeta hål</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="157"/>
-      <source>If checked, the profile operation is offset by the tool radius. The offset direction is determined by &apos;Cut side&apos;.</source>
-      <translation>Om markerat förskjuts profilbearbetningen med verktygsradien. Förskjutningens riktning bestäms av Bearbetningssida.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="167"/>
-      <source>Check if you want this profile operation to also be applied to cylindrical holes, which normally get drilled. This can be useful if no drill of adequate size is available or the number of holes don&apos;t warrant a tool change. Note that the cut side and direction is reversed in respect to the specified values.</source>
-      <translation>Markera om profiloperationen även ska bearbeta cylindriska hål, som normalt borras. Detta kan vara användbart om det saknas en borr i lämplig storlek eller om antalet hål inte motiverar ett verktygsbyte. Bearbetningssidan och riktningen vänds i förhållande till de angivna värdena.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="170"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="183"/>
       <source>Process circles</source>
       <translation>Bearbeta cirklar</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="177"/>
-      <source>Check if this profile operation should also process the outside perimeter of the base geometry shapes</source>
-      <translation>Markera om profiloperationen även ska bearbeta basgeometrins ytterkonturer</translation>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="43"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="59"/>
+      <source>Start at</source>
+      <translation>Börja vid</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="160"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="53"/>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="44"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="31"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="69"/>
+      <source>Sorting</source>
+      <translation>Sortering</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="73"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="169"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="168"/>
+      <source>Retract threshold</source>
+      <translation>Gräns för tillbakadragning</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="87"/>
+      <source>Toggle retract threshold between 0 and tool diameter</source>
+      <translation>Växla gränsen för tillbakadragning mellan 0 och verktygsdiametern</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="129"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="131"/>
+      <source>Finishing passes</source>
+      <translation>Finbearbetningspass</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="146"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="148"/>
+      <source>Finishing offset</source>
+      <translation>Finbearbetningsförskjutning</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="162"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="200"/>
+      <source>Finishing one step down</source>
+      <translation>Finbearbeta ett steg nedåt</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="176"/>
       <source>Use Compensation</source>
       <translation>Använd kompensering</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="180"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="190"/>
       <source>Process Perimeter</source>
       <translation>Bearbeta ytterkontur</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="197"/>
+      <source>Use longest edge</source>
+      <translation>Använd längsta kanten</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="211"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="238"/>
+      <source>Set picked point as start point</source>
+      <translation>Ange vald punkt som startpunkt</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="88"/>
@@ -2172,17 +2078,29 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Förläng banans början</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpSlotEdit.ui" line="306"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="59"/>
+      <location filename="../panels/PageOpWaterlineEdit.ui" line="62"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="51"/>
+      <source>Layer mode</source>
+      <translation>Lagerläge</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="313"/>
       <source>Set the cut pattern for the operation</source>
       <translation>Ange operationens bearbetningsmönster</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpWaterlineEdit.ui" line="62"/>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="51"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="59"/>
-      <location filename="../panels/PageOpSlotEdit.ui" line="306"/>
-      <source>Layer mode</source>
-      <translation>Lagerläge</translation>
+      <location filename="../panels/PageOpSlotEdit.ui" line="317"/>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="36"/>
+      <source>Directional</source>
+      <translation>Riktat</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpSlotEdit.ui" line="322"/>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="31"/>
+      <source>Bidirectional</source>
+      <translation>Dubbelriktad</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="330"/>
@@ -2263,53 +2181,12 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Plan: plan skanning av en 3D-yta. Roterande: skanning med rotation kring den fjärde axeln.</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="39"/>
       <location filename="../panels/PageOpEngraveEdit.ui" line="23"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="81"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="65"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="39"/>
       <source>Cut pattern</source>
       <translation>Bearbetningsmönster</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="31"/>
-      <location filename="../panels/PageOpSlotEdit.ui" line="322"/>
-      <source>Bidirectional</source>
-      <translation>Dubbelriktad</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="36"/>
-      <location filename="../panels/PageOpSlotEdit.ui" line="317"/>
-      <source>Directional</source>
-      <translation>Riktat</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="44"/>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="31"/>
-      <source>Sorting</source>
-      <translation>Sortering</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="52"/>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="39"/>
-      <source>Automatic</source>
-      <translation>Automatisk</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="57"/>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="44"/>
-      <source>Manual</source>
-      <translation>Manuellt</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="79"/>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="81"/>
-      <source>Reverse</source>
-      <translation>Omvänd</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="86"/>
-      <source>Approximation</source>
-      <translation>Approximation</translation>
     </message>
     <message>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="93"/>
@@ -2318,8 +2195,8 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Ange det geometriska mönster som ska användas för urfräsningen</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="79"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="357"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="79"/>
       <source>Profile edges</source>
       <translation>Profilfräs kanter</translation>
     </message>
@@ -2329,8 +2206,8 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Profilera kanterna på markering</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="93"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="286"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="93"/>
       <source>Avoid last X faces</source>
       <translation>Undvik sista X-ytor</translation>
     </message>
@@ -2381,9 +2258,9 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Ange True om en startpunkt används</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="447"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="188"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="234"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="447"/>
       <source>Optimize linear paths</source>
       <translation>Optimera linjära banor</translation>
     </message>
@@ -2427,7 +2304,7 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
     <message>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="254"/>
       <source>Enable separate optimization of transitions between, and breaks within, each step over path.</source>
-      <translation>Möjliggör separat optimering av övergångar mellan och avbrott inom varje stepover-bana.</translation>
+      <translation>Aktivera separat optimering av övergångar mellan och avbrott inom varje bana med sidsteg.</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="158"/>
@@ -2435,18 +2312,18 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <translation>Förskjutning i djup</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpWaterlineEdit.ui" line="106"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="226"/>
+      <location filename="../panels/PageOpWaterlineEdit.ui" line="106"/>
       <source>Boundary adjustment</source>
       <translation>Justering av gränser</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="150"/>
+      <location filename="../panels/PageOpHelixEdit.ui" line="114"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="331"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="123"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="105"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="175"/>
       <location filename="../panels/PageOpMillFacingEdit.ui" line="88"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="331"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="114"/>
       <source>Step over</source>
       <translation>Stega över</translation>
     </message>
@@ -2455,14 +2332,14 @@ Det senare kan användas för att platta av hela ämnesområdet för att säkers
       <source>The amount by which the tool is laterally displaced on each cycle of the pattern, specified in percent of the tool diameter.
 
 A step over of 100% results in no overlap between two different cycles.</source>
-      <translation>Det mått med vilket verktyget förskjuts i sidled vid varje cykel i mönstret, angivet i procent av verktygets diameter.
+      <translation>Det avstånd som verktyget förskjuts i sidled vid varje cykel i mönstret, angivet i procent av verktygets diameter.
 
-En stepover på 100 % innebär ingen överlappning mellan två cykler.</translation>
+Ett sidsteg på 100 % innebär att två cykler inte överlappar varandra.</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="154"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="151"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="204"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="154"/>
       <source>Sample interval</source>
       <translation>Samplingsintervall</translation>
     </message>
@@ -2519,8 +2396,8 @@ Standardvärde: OpToolDiameter</translation>
       <translation>Förskjutning</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="113"/>
       <location filename="../panels/PageHeightsEdit.ui" line="80"/>
+      <location filename="../panels/SetupGlobal.ui" line="113"/>
       <source>Clearance</source>
       <translation>Frigång</translation>
     </message>
@@ -2601,8 +2478,8 @@ Standardvärde: 3 mm</translation>
       <translation>Orientering</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpThreadMillingEdit.ui" line="40"/>
       <location filename="../panels/ToolEditor.ui" line="43"/>
+      <location filename="../panels/PageOpThreadMillingEdit.ui" line="40"/>
       <source>Type</source>
       <translation>Typ</translation>
     </message>
@@ -2637,8 +2514,8 @@ Standardvärde: 3 mm</translation>
       <translation>TPI</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="24"/>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="120"/>
+      <location filename="../panels/SetupGlobal.ui" line="24"/>
       <source>Operation</source>
       <translation>Operation</translation>
     </message>
@@ -2861,29 +2738,32 @@ Om radien är större än vad hållbryggans form medger blir den resulterande fo
       <translation>Taggenerering</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="52"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="39"/>
+      <source>Automatic</source>
+      <translation>Automatisk</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="57"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="44"/>
+      <source>Manual</source>
+      <translation>Manuellt</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpEngraveEdit.ui" line="65"/>
       <source>Start at vertex</source>
       <translation>Börja vid hörnpunkt</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="35"/>
-      <source>Clearing Pattern</source>
-      <translation>Urfräsningsmönster</translation>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="79"/>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="81"/>
+      <source>Reverse</source>
+      <translation>Omvänd</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="117"/>
-      <source>Pass Extension</source>
-      <translation>Förlängning av passering</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="134"/>
-      <source>Stock Extension</source>
-      <translation>Ämnesutvidgning</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="151"/>
-      <source>Axial stock to leave</source>
-      <translation>Axiell bearbetningsmån</translation>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="86"/>
+      <source>Approximation</source>
+      <translation>Approximation</translation>
     </message>
     <message>
       <location filename="../panels/PageOpCustomEdit.ui" line="20"/>
@@ -3049,6 +2929,26 @@ Använd ! i början av raden för att inaktivera postprocessning på just den ra
       <source>Flip Start</source>
       <translation>Vänd start</translation>
     </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="35"/>
+      <source>Clearing Pattern</source>
+      <translation>Urfräsningsmönster</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="117"/>
+      <source>Pass Extension</source>
+      <translation>Förlängning av passering</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="134"/>
+      <source>Stock Extension</source>
+      <translation>Ämnesutvidgning</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="151"/>
+      <source>Axial stock to leave</source>
+      <translation>Axiell bearbetningsmån</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgSettingsPath</name>
@@ -3196,7 +3096,7 @@ Se policyn för filsparande nedan för hantering av namnkonflikter.</translation
     <message>
       <location filename="../preferences/PathJob.ui" line="96"/>
       <source>Default value for new jobs, used for computing Paths. Smaller increases accuracy, but slows down computation</source>
-      <translation>Standardvärde för nya jobb, används för att beräkna banor. Mindre ökar noggrannheten, men saktar ner beräkningen</translation>
+      <translation>Standardvärde för nya jobb, används för att beräkna banor. Ett mindre värde ökar noggrannheten men gör beräkningen långsammare</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="109"/>
@@ -3558,7 +3458,7 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
     <message>
       <location filename="../preferences/Advanced.ui" line="26"/>
       <source>Suppress all warnings about setting speed rates for accurate cycle time calculation</source>
-      <translation>Ta bort alla varningar om att ställa in hastigheter för korrekt beräkning av cykeltid</translation>
+      <translation>Dölj alla varningar om att hastigheter behöver anges för korrekt beräkning av cykeltiden</translation>
     </message>
     <message>
       <location filename="../preferences/Advanced.ui" line="29"/>
@@ -3640,15 +3540,15 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
       <translation>Banmodifiering för axelmappning</translation>
     </message>
     <message>
-      <location filename="../panels/AxisMapEdit.ui" line="20"/>
-      <location filename="../panels/HoldingTagsEdit.ui" line="288"/>
-      <source>Radius</source>
-      <translation>Radie</translation>
-    </message>
-    <message>
       <location filename="../panels/AxisMapEdit.ui" line="40"/>
       <source>Invert Direction</source>
       <translation>Invertera riktning</translation>
+    </message>
+    <message>
+      <location filename="../panels/HoldingTagsEdit.ui" line="288"/>
+      <location filename="../panels/AxisMapEdit.ui" line="20"/>
+      <source>Radius</source>
+      <translation>Radie</translation>
     </message>
     <message>
       <location filename="../panels/AxisMapEdit.ui" line="30"/>
@@ -3661,8 +3561,8 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
       <translation>Hörnurtag</translation>
     </message>
     <message>
-      <location filename="../panels/ZCorrectEdit.ui" line="35"/>
       <location filename="../panels/DogboneEdit.ui" line="35"/>
+      <location filename="../panels/ZCorrectEdit.ui" line="35"/>
       <source>Dressup</source>
       <translation>Försköning</translation>
     </message>
@@ -3754,7 +3654,7 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="155"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;List of bone locations (with all bones at that location) that are part of this dressup. The list is determined by the corners in the profile and the selected &lt;span style=&quot; font-weight:600;&quot;&gt;Side&lt;/span&gt; for the bones. &lt;/p&gt;&lt;p&gt;You can &lt;span style=&quot; font-weight:600;&quot;&gt;un-check&lt;/span&gt; the bones you don&apos;t want to be dressed up.&lt;/p&gt;&lt;p&gt;If a bone is &lt;span style=&quot; font-weight:600;&quot;&gt;grayed out&lt;/span&gt; it means that it is already dressed up by a previous dressup. Or put another way, if you dress up this dogbone dressup again you will only be able to select the bones that are un-checked here.&lt;/p&gt;&lt;p&gt;If this list is empty it probably means you&apos;re trying to create bones on the wrong side of the profile.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lista över benpositioner (med alla ben på den platsen) som ingår i den här dressyren. Listan bestäms av hörnen i profilen och den valda &lt;span style=&quot; font-weight:600;&quot;&gt;Side&lt;/span&gt; för benen. &lt;/p&gt;&lt;p&gt;Du kan &lt;span style=&quot; font-weight:600;&quot;&gt;avmarkera&lt;/span&gt; de ben som du inte vill ska vara uppklädda.&lt;/p&gt;&lt;p&gt;Om ett ben är &lt;span style=&quot; font-weight:600;&quot;&gt;greyed out&lt;/span&gt; betyder det att det redan är uppklätt av en tidigare uppklädning. Eller uttryckt på ett annat sätt, om du klär upp det här hundbenet igen kommer du bara att kunna välja de ben som inte är markerade här.&lt;/p&gt;&lt;p&gt;Om den här listan är tom betyder det förmodligen att du försöker skapa ben på fel sida av profilen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lista över positioner för hörnurtag som ingår i denna banmodifiering. Listan bestäms av profilens hörn och den valda &lt;span style=&quot; font-weight:600;&quot;&gt;Sida&lt;/span&gt; för urtagen.&lt;/p&gt;&lt;p&gt;Du kan &lt;span style=&quot; font-weight:600;&quot;&gt;avmarkera&lt;/span&gt; de urtag som du inte vill modifiera.&lt;/p&gt;&lt;p&gt;Om ett urtag är &lt;span style=&quot; font-weight:600;&quot;&gt;nedtonat&lt;/span&gt; har det redan modifierats av en tidigare banmodifiering. Om du modifierar denna banmodifiering igen kan du bara välja de urtag som är avmarkerade här.&lt;/p&gt;&lt;p&gt;Om listan är tom försöker du förmodligen skapa urtag på fel sida av profilen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="165"/>
@@ -3959,35 +3859,45 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="54"/>
       <source>Enter the filename containing the probe data</source>
-      <translation>Ange filnamnet som innehåller probdata</translation>
+      <translation>Ange namnet på filen som innehåller probdata</translation>
     </message>
   </context>
   <context>
     <name>TaskPathSimulator</name>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="14"/>
       <location filename="../panels/TaskPathCamoticsSim.ui" line="14"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="14"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="14"/>
       <source>Path Simulator</source>
       <translation>Bansimulator</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="229"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="31"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="229"/>
       <source>Accuracy</source>
       <translation>Noggrannhet</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="278"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="86"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="278"/>
       <source>Job</source>
       <translation>Jobb</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="55"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="103"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="55"/>
       <source>Activate/resume simulation</source>
       <translation>Aktivera/återuppta simulering</translation>
+    </message>
+    <message>
+      <location filename="../panels/TaskCAMSimulator.ui" line="127"/>
+      <source>Set default state in accordance with operations visibility</source>
+      <translation>Ange standardtillstånd enligt operationernas synlighet</translation>
+    </message>
+    <message>
+      <location filename="../panels/TaskCAMSimulator.ui" line="130"/>
+      <source>Follow operations visibility</source>
+      <translation>Följ operationernas synlighet</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="35"/>
@@ -4000,8 +3910,8 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
       <translation>Stoppa</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="58"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="106"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="58"/>
       <source>Play</source>
       <translation>Spela</translation>
     </message>
@@ -4028,7 +3938,7 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="115"/>
       <source>Run the simulation until it ends without an animation</source>
-      <translation>Kör simuleringen tills den slutar utan animation</translation>
+      <translation>Kör simuleringen till slutet utan animation</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="180"/>
@@ -4064,16 +3974,6 @@ Ange 0 för att inaktivera syntaxmarkering av G-kod.</translation>
       <location filename="../panels/TaskPathCamoticsSim.ui" line="75"/>
       <source>New CAMotics File</source>
       <translation>Ny CAMotics-fil</translation>
-    </message>
-    <message>
-      <location filename="../panels/TaskCAMSimulator.ui" line="127"/>
-      <source>Set default state in accordance with operations visibility</source>
-      <translation>Ange standardtillstånd enligt operationernas synlighet</translation>
-    </message>
-    <message>
-      <location filename="../panels/TaskCAMSimulator.ui" line="130"/>
-      <source>Follow operations visibility</source>
-      <translation>Följ operationernas synlighet</translation>
     </message>
   </context>
   <context>
@@ -4708,7 +4608,7 @@ Standardvärde: OpFinalDepth</translation>
       <source>Expression set as the StepDown of a newly created operation.
 
 Default: OpToolDiameter</source>
-      <translation>Uttrycket anges som StepDown för en nyskapad operation.
+      <translation>Uttryck som anges som StepDown för en nyskapad operation.
 
 Standardvärde: OpToolDiameter</translation>
     </message>
@@ -5008,7 +4908,7 @@ Standardvärde: 3 mm</translation>
     <message>
       <location filename="../../../Path/Op/Util.py" line="732"/>
       <source>Selected tool has no TipAngle, treating as 0</source>
-      <translation>Det valda verktyget saknar TipAngle och behandlas som 0</translation>
+      <translation>Det valda verktyget saknar TipAngle; värdet antas vara 0</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Util.py" line="739"/>
@@ -5049,32 +4949,32 @@ Standardvärde: 3 mm</translation>
       <translation>ytan %s hanteras inte, antar att den inte är vertikal</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="244"/>
+      <location filename="../../../Path/Geom.py" line="249"/>
       <source>edge %s not handled, assuming not vertical</source>
-      <translation>kant %s inte hanterad, antar att den inte är vertikal</translation>
+      <translation>kanten %s hanteras inte, antar att den inte är vertikal</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="248"/>
+      <location filename="../../../Path/Geom.py" line="253"/>
       <source>isVertical(%s) not supported</source>
       <translation>isVertical(%s) stöds inte</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="278"/>
+      <location filename="../../../Path/Geom.py" line="283"/>
       <source>isHorizontal(%s) not supported</source>
       <translation>isHorizontal(%s) stöds inte</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="863"/>
+      <location filename="../../../Path/Geom.py" line="868"/>
       <source>%s not supported for flipping</source>
       <translation>%s stöds inte för vändning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="933"/>
+      <location filename="../../../Path/Geom.py" line="938"/>
       <source>combineHorizontalFaces: Zero working area to process</source>
-      <translation>combineHorizontalFaces: Noll arbetsområde att bearbeta</translation>
+      <translation>combineHorizontalFaces: Inget arbetsområde att bearbeta</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="955"/>
+      <location filename="../../../Path/Geom.py" line="961"/>
       <source>Can not restore order of faces.</source>
       <translation>Det går inte att återställa ytornas ordning.</translation>
     </message>
@@ -5085,6 +4985,7 @@ Standardvärde: 3 mm</translation>
       <location filename="../../../Path/Base/PropertyBag.py" line="77"/>
       <location filename="../../../Path/Base/PropertyBag.py" line="114"/>
       <source>List of custom property groups</source>
+      <extracomment>float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=None) bool = field(default=False) str = field(default=&quot;G54&quot;) str = field(default=&quot;off&quot;) str = Z|R for G98/G99, for drill cycles float = field(default=None) int = field(default=0) int = field(default=None)</extracomment>
       <translation>Lista över anpassade egenskapsgrupper</translation>
     </message>
     <message>
@@ -5151,8 +5052,8 @@ Standardvärde: 3 mm</translation>
       <translation>Standardstrategi för kollisionsundvikande i nya operationer.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Boundary.py" line="63"/>
       <location filename="../../../Path/Dressup/Tags.py" line="895"/>
+      <location filename="../../../Path/Dressup/Boundary.py" line="63"/>
       <location filename="../../../Path/Dressup/Gui/AxisMap.py" line="56"/>
       <source>The base path to modify</source>
       <translation>Den basbana som ska modifieras</translation>
@@ -5166,14 +5067,6 @@ Standardvärde: 3 mm</translation>
       <location filename="../../../Path/Dressup/Boundary.py" line="84"/>
       <source>Determines if Boundary describes an inclusion or exclusion mask.</source>
       <translation>Avgör om Boundary beskriver en inkluderings- eller exkluderingsmask.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Boundary.py" line="94"/>
-      <location filename="../../../Path/Dressup/Boundary.py" line="145"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="194"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="358"/>
-      <source>Set distance which will attempts to avoid unnecessary retractions.</source>
-      <translation>Ange avståndet som ska försöka undvika onödiga tillbakadragningar.</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Boundary.py" line="103"/>
@@ -5225,7 +5118,7 @@ Ett värde som inte är noll begränsar även den maximala adaptiva längden</tr
     <message>
       <location filename="../../../Path/Dressup/DogboneII.py" line="264"/>
       <source>Bones that aren&apos;t dressed up</source>
-      <translation>Ben som inte är uppklädda</translation>
+      <translation>Hörnurtag som inte modifieras</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/DogboneII.py" line="275"/>
@@ -5296,11 +5189,11 @@ Påverkar endast Path-representationen i 3D-vyn.</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Array.py" line="43"/>
-      <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="62"/>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="49"/>
       <location filename="../../../Path/Dressup/Gui/Dragknife.py" line="60"/>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="74"/>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="49"/>
       <location filename="../../../Path/Dressup/Gui/RampEntry.py" line="49"/>
+      <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="62"/>
       <source>The base toolpath to modify</source>
       <translation>Den grundläggande verktygsbanan att modifiera</translation>
     </message>
@@ -5330,34 +5223,12 @@ Påverkar endast Path-representationen i 3D-vyn.</translation>
       <translation>Ändra utledning till verktygsbana</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="55"/>
-      <source>Shape to limit toolpath</source>
-      <translation>Form för att begränsa verktygsbanan</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="61"/>
-      <source>Keep path inside or outside the shape</source>
-      <translation>Håll banan innanför eller utanför formen</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="70"/>
+      <location filename="../../../Path/Op/Profile.py" line="202"/>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="94"/>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="358"/>
-      <location filename="../../../Path/Op/Profile.py" line="193"/>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="70"/>
       <source>Set distance which will attempts to avoid unnecessary retractions</source>
       <translation>Ställ in avstånd som försöker undvika onödiga tillbakadragningar</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="81"/>
-      <source>Apply boundary to Rest Machining
-Does not affects to current path, but can be used by other operations with Rest Machining feature</source>
-      <translation>Tillämpa gräns på restbearbetning
-Påverkar inte den aktuella banan, men kan användas av andra åtgärder med funktionen restbearbetning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="87"/>
-      <source>Apply offset to boundary shape</source>
-      <translation>Tillämpa förskjutning på gränsformen</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="100"/>
@@ -5450,7 +5321,6 @@ Endast för typerna: Båge, Linje, Vinkelrät och Tangent</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Gui/RampEntry.py" line="55"/>
-      <location filename="../../../Path/Op/Profile.py" line="249"/>
       <source>Angle of ramp</source>
       <translation>Vinkel på rampen</translation>
     </message>
@@ -5538,7 +5408,7 @@ Ovanför detta djup skapas inga ramper, utan rörelsekommandona skickas vidare o
     <message>
       <location filename="../../../Path/Main/Job.py" line="348"/>
       <source>For computing Paths; smaller increases accuracy, but slows down computation</source>
-      <translation>För beräkning av banor; mindre ökar noggrannheten, men gör beräkningen långsammare</translation>
+      <translation>Används för beräkning av banor. Ett mindre värde ökar noggrannheten men gör beräkningen långsammare</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Job.py" line="355"/>
@@ -5590,7 +5460,7 @@ Ovanför detta djup skapas inga ramper, utan rörelsekommandona skickas vidare o
     <message>
       <location filename="../../../Path/Main/Job.py" line="508"/>
       <source>Group of named work planes the Operations can share</source>
-      <translation>Grupp med namngivna arbetsplan som åtgärderna kan dela</translation>
+      <translation>Grupp med namngivna arbetsplan som operationerna kan dela</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Job.py" line="544"/>
@@ -5613,9 +5483,9 @@ Ovanför detta djup skapas inga ramper, utan rörelsekommandona skickas vidare o
       <translation>Länkarna till modeller som har tagits bort från jobbet, för när de läggs tillbaka</translation>
     </message>
     <message>
+      <location filename="../../../Path/Main/Job.py" line="811"/>
       <location filename="../../../Path/Op/Base.py" line="313"/>
       <location filename="../../../Path/Op/Base.py" line="672"/>
-      <location filename="../../../Path/Main/Job.py" line="811"/>
       <source>Operations Cycle Time Estimation</source>
       <translation>Uppskattning av operationernas cykeltid</translation>
     </message>
@@ -5701,166 +5571,88 @@ Ovanför detta djup skapas inga ramper, utan rörelsekommandona skickas vidare o
       <translation>Fixturförskjutningens nummer</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Base.py" line="287"/>
       <location filename="../../../Path/Main/Gui/Fixture.py" line="64"/>
+      <location filename="../../../Path/Op/Base.py" line="287"/>
       <source>Make False, to prevent operation from generating code</source>
       <translation>Ange False för att förhindra att operationen genererar kod</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1552"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1557"/>
       <source>Side of selected faces that tool should cut</source>
       <translation>Sida av valda ytor som verktyget ska skära</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1561"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1566"/>
       <source>Type of adaptive operation</source>
       <translation>Typ av adaptiv operation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="133"/>
-      <source>The direction of the circular cuts, ClockWise (CW) or CounterClockWise (CCW)</source>
-      <translation>De cirkulära skärpassens riktning: medurs (CW) eller moturs (CCW)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="151"/>
-      <location filename="../../../Path/Op/Helix.py" line="571"/>
-      <source>The direction of the circular cuts</source>
-      <translation>De cirkulära skärpassens riktning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="160"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="173"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1579"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1964"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1584"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1969"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="171"/>
+      <location filename="../../../Path/Op/Helix.py" line="162"/>
       <source>Percent of cutter diameter to step over on each pass</source>
       <translation>Sidsteg vid varje passering, i procent av fräsens diameter</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="172"/>
-      <source>Set how much stock to leave on the inner wall for the operation.
-Default inner radius for Internal profile is Tool radius, and can not be less than (-ToolRadius)
-For External profile - profile radius</source>
-      <translation>Ange hur stor bearbetningsmån som ska lämnas på innerväggen för operationen.
-Standardradien för en invändig profil är verktygsradien och får inte vara mindre än (-ToolRadius).
-För en utvändig profil används profilradien</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1593"/>
+      <location filename="../../../Path/Op/PlanarSurface.py" line="564"/>
+      <source>Lift distance for rapid moves</source>
+      <translation>Lyftavstånd för snabbförflyttningar</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="181"/>
-      <location filename="../../../Path/Op/Helix.py" line="420"/>
-      <source>Set how much stock to leave on the outer wall for the operation.</source>
-      <translation>Ange hur stor bearbetningsmån som ska lämnas på ytterväggen för operationen.</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1602"/>
+      <source>Max length of keep tool down path compared to direct distance between points</source>
+      <translation>Längsta tillåtna bana med verktyget nere, i förhållande till det raka avståndet mellan punkterna</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="190"/>
-      <location filename="../../../Path/Op/Helix.py" line="475"/>
-      <source>Cone angle of the Helix</source>
-      <translation>Helixens konvinkel</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1620"/>
+      <source>Set how much stock to leave on the floor for the operation. This property is only used if the ModelAwareExperiment is enabled.</source>
+      <translation>Ange hur stor bearbetningsmån som ska lämnas på botten för operationen. Egenskapen används endast om ModelAwareExperiment är aktiverat.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="199"/>
-      <location filename="../../../Path/Op/Helix.py" line="433"/>
-      <source>Create only one Helix</source>
-      <translation>Skapa endast en helix</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1686"/>
+      <location filename="../../../Path/Op/PlanarSurface.py" line="603"/>
+      <source>The maximum allowable helix ramp entry angle (degrees)
+Set to zero to disable limitation by ramp angle</source>
+      <translation>Största tillåtna rampvinkel för den helixformade ingången (grader)
+Ange noll för att inaktivera begränsningen av rampvinkeln</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="208"/>
-      <location filename="../../../Path/Op/Helix.py" line="443"/>
-      <source>Create spiral mill</source>
-      <translation>Skapa spiralfräsning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="217"/>
-      <location filename="../../../Path/Op/Helix.py" line="453"/>
-      <source>Create finish full circle for helix</source>
-      <translation>Skapa avslutande hel cirkel för helix</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="226"/>
-      <location filename="../../../Path/Op/Helix.py" line="464"/>
-      <source>Create finish full circle for spiral</source>
-      <translation>Skapa avslutande hel cirkel för spiral</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="235"/>
-      <location filename="../../../Path/Op/Helix.py" line="485"/>
-      <source>Side of profile on which create Path</source>
-      <translation>Den sida av profilen där banan ska skapas</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="244"/>
-      <location filename="../../../Path/Op/Helix.py" line="496"/>
-      <source>Move from wall while retract if there is free space</source>
-      <translation>Flytta bort från väggen vid tillbakadragning om det finns fritt utrymme</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="253"/>
-      <location filename="../../../Path/Op/Helix.py" line="507"/>
-      <source>Override arcs feed rate to get constant tool cutting speed</source>
-      <translation>Justera matningshastigheten längs bågar för att få konstant matningshastighet vid skärkontakten</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="263"/>
-      <location filename="../../../Path/Op/Helix.py" line="518"/>
-      <source>Replace profiles diameter to get identical size of the holes
-This value can not be less than tool diameter</source>
-      <translation>Ersätt profilernas diameter för att få hål med identisk storlek
-Värdet får inte vara mindre än verktygsdiametern</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="274"/>
-      <location filename="../../../Path/Op/Helix.py" line="530"/>
-      <source>Determine position of the start and end point
-Angle 0 means start and end points located along axis X
-Set -1 to calculate optimal angle automatically</source>
-      <translation>Bestäm start- och slutpunktens position
-Vinkeln 0 placerar start- och slutpunkterna längs X-axeln
-Ange -1 för att beräkna den optimala vinkeln automatiskt</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="284"/>
-      <location filename="../../../Path/Op/Helix.py" line="544"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1691"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1696"/>
+      <location filename="../../../Path/Op/Helix.py" line="286"/>
+      <location filename="../../../Path/Op/Helix.py" line="546"/>
       <source>The maximum allowable descent in a single revolution of the helix
 Set to zero to disable limitation by pitch</source>
       <translation>Största tillåtna sänkning under ett enda helixvarv
 Ställ in noll för att inaktivera begränsning efter stigning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="294"/>
-      <location filename="../../../Path/Op/Helix.py" line="561"/>
-      <source>The maximum allowable ramp entry angle
-Set to zero to disable limitation by ramp angle</source>
-      <translation>Största tillåtna rampingångsvinkel
-Ställ in noll för att inaktivera begränsning efter rampvinkel</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1714"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1908"/>
+      <location filename="../../../Path/Op/PlanarSurface.py" line="612"/>
+      <source>Maximum (and nominal) helix entry diameter, as a percentage of the tool diameter</source>
+      <translation>Största och nominella diameter för den helixformade ingången, i procent av verktygsdiametern</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="303"/>
-      <location filename="../../../Path/Op/Helix.py" line="589"/>
-      <source>Allows to process cone helix from bottom to top</source>
-      <translation>Möjliggör bearbetning av en konisk helix nedifrån och upp</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1723"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1917"/>
+      <source>Minimum acceptable helix entry diameter, as a percentage of the tool diameter</source>
+      <translation>Minsta godtagbara diameter för den helixformade ingången, i procent av verktygsdiametern</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="407"/>
-      <source>Set how much stock to leave on the inner wall for the operation.
-Default inner radius is Tool radius and can not be less than (-ToolRadius)
-For External profile - profile radius</source>
-      <translation>Ange hur stor bearbetningsmån som ska lämnas på innerväggen för operationen.
-Standardradien är verktygsradien och får inte vara mindre än (-ToolRadius).
-För en utvändig profil används profilradien</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1878"/>
+      <location filename="../../../Path/Op/MillFacing.py" line="170"/>
+      <source>Set how much stock to leave on the floor for the operation.</source>
+      <translation>Ange hur stor bearbetningsmån som ska lämnas på botten för operationen.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1588"/>
-      <location filename="../../../Path/Op/PlanarSurface.py" line="564"/>
-      <source>Lift distance for rapid moves</source>
-      <translation>Lyftavstånd för snabbförflyttningar</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1939"/>
+      <source>The maximum allowable descent in a single revolution of the helix. Set to 0 to disable the pitch limit.</source>
+      <translation>Största tillåtna sänkning under ett enda helixvarv. Ställ in 0 för att inaktivera stigningsgränsen.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1597"/>
-      <source>Max length of keep tool down path compared to direct distance between points</source>
-      <translation>Längsta tillåtna bana med verktyget nere, i förhållande till det raka avståndet mellan punkterna</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1570"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1575"/>
       <source>Influences calculation performance vs stability and accuracy.
 
 Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
@@ -5869,105 +5661,63 @@ Larger values (further to the right) will calculate faster; smaller values (furt
 Större värden (längre till höger) ger snabbare beräkningar; mindre värden (längre till vänster) ger mer exakta verktygsbanor.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1615"/>
-      <source>Set how much stock to leave on the floor for the operation. This property is only used if the ModelAwareExperiment is enabled.</source>
-      <translation>Ange hur stor bearbetningsmån som ska lämnas på botten för operationen. Egenskapen används endast om ModelAwareExperiment är aktiverat.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1624"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1629"/>
       <location filename="../../../Path/Op/PlanarSurface.py" line="584"/>
       <source>Force plunging into material inside and clearing towards the edges</source>
       <translation>Tvinga nedmatning inne i materialet och urfräsning ut mot kanterna</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1633"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1638"/>
       <location filename="../../../Path/Op/PlanarSurface.py" line="593"/>
       <source>To take a finishing profile path at the end</source>
       <translation>Lägg till en profilbana för finbearbetning i slutet</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1640"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1650"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1645"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
       <source>Stop processing</source>
       <translation>Stoppa bearbetningen</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1681"/>
-      <location filename="../../../Path/Op/PlanarSurface.py" line="603"/>
-      <source>The maximum allowable helix ramp entry angle (degrees)
-Set to zero to disable limitation by ramp angle</source>
-      <translation>Största tillåtna rampvinkel för den helixformade ingången (grader)
-Ange noll för att inaktivera begränsningen av rampvinkeln</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1709"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1903"/>
-      <location filename="../../../Path/Op/PlanarSurface.py" line="612"/>
-      <source>Maximum (and nominal) helix entry diameter, as a percentage of the tool diameter</source>
-      <translation>Största och nominella diameter för den helixformade ingången, i procent av verktygsdiametern</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1718"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1912"/>
-      <source>Minimum acceptable helix entry diameter, as a percentage of the tool diameter</source>
-      <translation>Minsta godtagbara diameter för den helixformade ingången, i procent av verktygsdiametern</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1745"/>
-      <source>Orders cuts by region instead of depth. This property is only used if the ModelAwareExperiment is enabled.</source>
-      <translation>Ordnar skärpassen efter område istället för djup. Egenskapen används endast om ModelAwareExperiment är aktiverat.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1760"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1884"/>
-      <source>Enable the experimental model awareness feature to respect 3D geometry and prevent cutting under overhangs</source>
-      <translation>Aktivera den experimentella funktionen som tar hänsyn till modellens 3D-geometri och förhindrar bearbetning under överhäng</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1873"/>
-      <location filename="../../../Path/Op/MillFacing.py" line="170"/>
-      <source>Set how much stock to leave on the floor for the operation.</source>
-      <translation>Ange hur stor bearbetningsmån som ska lämnas på botten för operationen.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1934"/>
-      <source>The maximum allowable descent in a single revolution of the helix. Set to 0 to disable the pitch limit.</source>
-      <translation>Största tillåtna sänkning under ett enda helixvarv. Ställ in 0 för att inaktivera stigningsgränsen.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1660"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1665"/>
       <source>Internal input state</source>
       <translation>Status för intern ingång</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1669"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1674"/>
       <source>Internal output state</source>
       <translation>Internt utgångstillstånd</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1700"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1705"/>
       <source>Helix cone angle (degrees)</source>
       <translation>Helixens konvinkel (grader)</translation>
     </message>
     <message>
+      <location filename="../../../Path/Op/Adaptive.py" line="1732"/>
       <location filename="../../../Path/Op/PocketShape.py" line="78"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1727"/>
       <source>Uses the outline of the base geometry.</source>
       <translation>Använder konturen av basgeometrin.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketShape.py" line="90"/>
-      <source>Close open area formed by edges or vertical faces by straight line.</source>
-      <translation>Slut en öppen yta som bildats av kanter eller vertikala ytor med en rak linje.</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1750"/>
+      <source>Orders cuts by region instead of depth. This property is only used if the ModelAwareExperiment is enabled.</source>
+      <translation>Ordnar skärpassen efter område istället för djup. Egenskapen används endast om ModelAwareExperiment är aktiverat.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1862"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1765"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1889"/>
+      <source>Enable the experimental model awareness feature to respect 3D geometry and prevent cutting under overhangs</source>
+      <translation>Aktivera den experimentella funktionen som tar hänsyn till modellens 3D-geometri och förhindrar bearbetning under överhäng</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Adaptive.py" line="1867"/>
       <source>Orders cuts by region instead of depth.</source>
       <translation>Ordnar skärpassen efter område istället för djup.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Area.py" line="95"/>
-      <location filename="../../../Path/Op/Area.py" line="146"/>
+      <location filename="../../../Path/Op/Area.py" line="93"/>
+      <location filename="../../../Path/Op/Area.py" line="144"/>
       <source>Split Arcs into discrete segments</source>
       <translation>Dela upp cirkelbågar i diskreta segment</translation>
     </message>
@@ -6099,9 +5849,9 @@ Verktygsform: säkrast – kontrollerar frigången med verktygsformens tvärsnit
       <translation>Banans startpunkt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Base.py" line="433"/>
       <location filename="../../../Path/Op/Surface.py" line="418"/>
       <location filename="../../../Path/Op/Slot.py" line="223"/>
+      <location filename="../../../Path/Op/Base.py" line="433"/>
       <location filename="../../../Path/Op/PlanarSurface.py" line="544"/>
       <location filename="../../../Path/Op/Waterline.py" line="463"/>
       <source>Make True, if specifying a Start Point</source>
@@ -6120,7 +5870,7 @@ Verktygsform: säkrast – kontrollerar frigången med verktygsformens tvärsnit
     <message>
       <location filename="../../../Path/Op/Base.py" line="538"/>
       <source>The named work plane this operation works in, shared with other operations of the Job. Its local +Z is the tool axis. Empty means the Job&apos;s own XY, which is ordinary Z-up milling.</source>
-      <translation>Den namngivna arbetsplan som den här åtgärden arbetar i och delar med jobbets andra åtgärder. Dess lokala +Z är verktygsaxeln. Tomt innebär jobbets egna XY, vilket är vanlig Z-upp-fräsning.</translation>
+      <translation>Det namngivna arbetsplan som operationen använder och delar med jobbets andra operationer. Dess lokala +Z är verktygsaxeln. Om fältet är tomt används jobbets eget XY-plan för vanlig fräsning med Z uppåt.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Base.py" line="652"/>
@@ -6129,31 +5879,31 @@ Verktygsform: säkrast – kontrollerar frigången med verktygsformens tvärsnit
       <translation>Alternativ för kylvätska för denna operation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="84"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="87"/>
       <source>List of disabled features</source>
       <translation>Lista över inaktiverade formelement</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="91"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="300"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="94"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="308"/>
       <source>Manual or Automatic mode sorting of holes</source>
       <translation>Manuell eller automatisk sortering av hål</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="102"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="314"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="105"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="322"/>
       <source>Start point for automatic sorting (x,y used, z ignored)</source>
       <translation>Startpunkt för automatisk sortering (x och y används, z ignoreras)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="109"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="323"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="112"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="331"/>
       <source>Enable to use end point for automatic sorting</source>
       <translation>Aktivera användning av slutpunkt vid automatisk sortering</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="118"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="335"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="121"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="343"/>
       <source>End point for automatic sorting (x,y used, z ignored)</source>
       <translation>Slutpunkt för automatisk sortering (x och y används, z ignoreras)</translation>
     </message>
@@ -6221,8 +5971,8 @@ Verktygsform: säkrast – kontrollerar frigången med verktygsformens tvärsnit
       <location filename="../../../Path/Op/Drilling.py" line="316"/>
       <source>R value: height the tool retracts to between pecks and at the end of each canned cycle.
 Not the same as the job&apos;s Retract Height.</source>
-      <translation>R-värde: höjden som verktyget dras tillbaka till mellan hack och i slutet av varje fast cykel.
-Inte samma som jobbets återdragningshöjd.</translation>
+      <translation>R-värde: höjden som verktyget dras tillbaka till mellan borrstegen och i slutet av varje fast cykel.
+Det är inte samma höjd som jobbets återdragningshöjd.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Drilling.py" line="206"/>
@@ -6232,23 +5982,22 @@ Inte samma som jobbets återdragningshöjd.</translation>
 instead of fully retracting like G98.
 With Clearance Height or Retract Height collision avoidance, a Peck Retract
 below Retract Height is overridden by a climb to Retract Height.</source>
-      <translation>G99: mellan hål, dra endast tillbaka till hackåterdragningen
-(eller åtgärdens återdragningshöjd om hackning inte används)
-i stället för fullständig återdragning som G98.
-Med kollisionsundvikande för frigångshöjd eller återdragningshöjd åsidosätts en hackåterdragning
-under återdragningshöjden av en uppstigning till återdragningshöjden.</translation>
+      <translation>G99: Dra mellan hålen tillbaka endast till återdragningshöjden för stegborrning
+(eller operationens återdragningshöjd om stegborrning inte används)
+i stället för att dra tillbaka helt som med G98.
+Vid kollisionsundvikande med frigångshöjd eller återdragningshöjd ersätts en lägre återdragningshöjd för stegborrning med operationens återdragningshöjd.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Drilling.py" line="268"/>
       <source>Q value: incremental drill depth per peck before retracting to clear chips</source>
-      <translation>Q-värde: inkrementellt borrdjup per hack före återdragning för att rensa spån</translation>
+      <translation>Q-värde: borrdjup per steg före tillbakadragning för att rensa spån</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Drilling.py" line="278"/>
       <source>G73/G83: retract partially between passes to clear chips,
 instead of drilling the full depth in one pass</source>
-      <translation>G73/G83: dra delvis tillbaka mellan pass för att rensa spån,
-i stället för att borra hela djupet i ett pass</translation>
+      <translation>G73/G83: dra tillbaka mellan borrstegen för att rensa spån,
+i stället för att borra hela djupet i ett steg</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Drilling.py" line="297"/>
@@ -6276,8 +6025,8 @@ i stället för att borra hela djupet i ett pass</translation>
       <translation>Beräkna spetsens längd och subtrahera från det slutliga djupet</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Vcarve.py" line="409"/>
       <location filename="../../../Path/Op/Engrave.py" line="108"/>
+      <location filename="../../../Path/Op/Vcarve.py" line="409"/>
       <source>Additional base objects to be engraved</source>
       <translation>Ytterligare basobjekt som ska graveras</translation>
     </message>
@@ -6350,9 +6099,124 @@ Automatisk – sorterar trådarna med närmaste-granne-metoden, vidare förbätt
       <translation>När detta är aktiverat kombineras anslutna förlängningskanter till trådar.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="142"/>
+      <location filename="../../../Path/Op/Helix.py" line="135"/>
+      <source>The direction of the circular cuts, ClockWise (CW) or CounterClockWise (CCW)</source>
+      <translation>De cirkulära skärpassens riktning: medurs (CW) eller moturs (CCW)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="144"/>
       <source>Start cutting from the inside or outside</source>
       <translation>Börja skära från insidan eller utsidan</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="153"/>
+      <location filename="../../../Path/Op/Helix.py" line="573"/>
+      <source>The direction of the circular cuts</source>
+      <translation>De cirkulära skärpassens riktning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="174"/>
+      <source>Set how much stock to leave on the inner wall for the operation.
+Default inner radius for Internal profile is Tool radius, and can not be less than (-ToolRadius)
+For External profile - profile radius</source>
+      <translation>Ange hur stor bearbetningsmån som ska lämnas på innerväggen för operationen.
+Standardradien för en invändig profil är verktygsradien och får inte vara mindre än (-ToolRadius).
+För en utvändig profil används profilradien</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="183"/>
+      <location filename="../../../Path/Op/Helix.py" line="422"/>
+      <source>Set how much stock to leave on the outer wall for the operation.</source>
+      <translation>Ange hur stor bearbetningsmån som ska lämnas på ytterväggen för operationen.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="192"/>
+      <location filename="../../../Path/Op/Helix.py" line="477"/>
+      <source>Cone angle of the Helix</source>
+      <translation>Helixens konvinkel</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="201"/>
+      <location filename="../../../Path/Op/Helix.py" line="435"/>
+      <source>Create only one Helix</source>
+      <translation>Skapa endast en helix</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="210"/>
+      <location filename="../../../Path/Op/Helix.py" line="445"/>
+      <source>Create spiral mill</source>
+      <translation>Skapa spiralfräsning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="219"/>
+      <location filename="../../../Path/Op/Helix.py" line="455"/>
+      <source>Create finish full circle for helix</source>
+      <translation>Skapa avslutande hel cirkel för helix</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="228"/>
+      <location filename="../../../Path/Op/Helix.py" line="466"/>
+      <source>Create finish full circle for spiral</source>
+      <translation>Skapa avslutande hel cirkel för spiral</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="237"/>
+      <location filename="../../../Path/Op/Helix.py" line="487"/>
+      <source>Side of profile on which create Path</source>
+      <translation>Den sida av profilen där banan ska skapas</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="246"/>
+      <location filename="../../../Path/Op/Helix.py" line="498"/>
+      <source>Move from wall while retract if there is free space</source>
+      <translation>Flytta bort från väggen vid tillbakadragning om det finns fritt utrymme</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="255"/>
+      <location filename="../../../Path/Op/Helix.py" line="509"/>
+      <source>Override arcs feed rate to get constant tool cutting speed</source>
+      <translation>Justera matningshastigheten längs bågar för att få konstant matningshastighet vid skärkontakten</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="265"/>
+      <location filename="../../../Path/Op/Helix.py" line="520"/>
+      <source>Replace profiles diameter to get identical size of the holes
+This value can not be less than tool diameter</source>
+      <translation>Ersätt profilernas diameter för att få hål med identisk storlek
+Värdet får inte vara mindre än verktygsdiametern</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="276"/>
+      <location filename="../../../Path/Op/Helix.py" line="532"/>
+      <source>Determine position of the start and end point
+Angle 0 means start and end points located along axis X
+Set -1 to calculate optimal angle automatically</source>
+      <translation>Bestäm start- och slutpunktens position
+Vinkeln 0 placerar start- och slutpunkterna längs X-axeln
+Ange -1 för att beräkna den optimala vinkeln automatiskt</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="296"/>
+      <location filename="../../../Path/Op/Helix.py" line="563"/>
+      <source>The maximum allowable ramp entry angle
+Set to zero to disable limitation by ramp angle</source>
+      <translation>Största tillåtna rampingångsvinkel
+Ställ in noll för att inaktivera begränsning efter rampvinkel</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="305"/>
+      <location filename="../../../Path/Op/Helix.py" line="591"/>
+      <source>Allows to process cone helix from bottom to top</source>
+      <translation>Möjliggör bearbetning av en konisk helix nedifrån och upp</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="409"/>
+      <source>Set how much stock to leave on the inner wall for the operation.
+Default inner radius is Tool radius and can not be less than (-ToolRadius)
+For External profile - profile radius</source>
+      <translation>Ange hur stor bearbetningsmån som ska lämnas på innerväggen för operationen.
+Standardradien är verktygsradien och får inte vara mindre än (-ToolRadius).
+För en utvändig profil används profilradien</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/MillFace.py" line="108"/>
@@ -6394,48 +6258,50 @@ Automatisk – sorterar trådarna med närmaste-granne-metoden, vidare förbätt
       <translation>Bearbeta modellen och ämnet i en operation utan att någon basgeometri har valts.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="159"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="157"/>
       <source>Extra offset to apply to the operation. Direction is operation dependent.</source>
       <translation>Extra förskjutning för operationen. Riktningen beror på operationstypen.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="165"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="163"/>
       <source>Start pocketing at center or boundary</source>
       <translation>Börja fickfräsningen i mitten eller vid gränsen</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="179"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="177"/>
       <source>Angle of the grid, line and zigzag patterns</source>
       <translation>Vinkeln för rutnäts-, linje- och sicksackmönster</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="223"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="348"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="192"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="347"/>
+      <location filename="../../../Path/Dressup/Boundary.py" line="94"/>
+      <location filename="../../../Path/Dressup/Boundary.py" line="145"/>
+      <source>Set distance which will attempts to avoid unnecessary retractions.</source>
+      <translation>Ange avståndet som används för att undvika onödiga tillbakadragningar.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/PocketBase.py" line="221"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="337"/>
       <source>Force maximum stepover even if not all area is cleared. Without this flag set, the stepover may be reduced (for large stepover, &gt;50%) to ensure full area coverage.</source>
       <translation>Tvinga största sidsteg även om inte hela området fräses ur. Annars kan sidsteget minskas när det är stort (&gt;50 %) för att säkerställa att hela området bearbetas.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="251"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="408"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="249"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="397"/>
       <source>Finishing pass will processing with one step down at final depth</source>
-      <translation>Finbearbetningspasset bearbetar med ett steg ned vid slutdjupet</translation>
+      <translation>Utför finbearbetningspasset i ett djupsteg vid slutdjupet</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="260"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="432"/>
-      <source>Create helix ramp for finishing pass</source>
-      <translation>Skapa helixramp för finbearbetningspasset</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="185"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="183"/>
       <source>Clearing pattern to use</source>
       <translation>Urfräsningsmönster som ska användas</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="203"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="338"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1736"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1851"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1741"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1856"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="201"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="327"/>
       <source>Skips machining regions that have already been cleared by previous operations.</source>
       <translation>Hoppar över områden som redan har frästs ur av tidigare operationer.</translation>
     </message>
@@ -6472,56 +6338,69 @@ Automatisk – sorterar trådarna med närmaste-granne-metoden, vidare förbätt
     </message>
     <message>
       <location filename="../../../Path/Op/Profile.py" line="105"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="150"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="148"/>
       <source>The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</source>
       <translation>Verktygsbanans riktning runt detaljen: medurs (CW) eller moturs (CCW)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="129"/>
-      <source>Profile holes as well as the outline</source>
-      <translation>Profilfräs både hål och ytterkontur</translation>
+      <location filename="../../../Path/Op/Profile.py" line="123"/>
+      <location filename="../../../Path/Op/RotarySurface.py" line="172"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1611"/>
+      <source>Set how much stock to leave on the walls for the operation.</source>
+      <translation>Ange hur stor bearbetningsmån som ska lämnas på väggarna för operationen.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="135"/>
-      <source>Profile the outline</source>
-      <translation>Profilfräs ytterkonturen</translation>
+      <location filename="../../../Path/Op/Profile.py" line="132"/>
+      <source>Profile holes as well as the outline.
+Only with horizontal faces.</source>
+      <translation>Profilera hål liksom konturen.
+Endast med horisontella ytor.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Profile.py" line="141"/>
-      <source>Profile round holes</source>
-      <translation>Profilfräs runda hål</translation>
+      <source>Profile the outline.
+Only with horizontal faces.</source>
+      <translation>Profilera konturen.
+Endast med horisontella ytor.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="147"/>
+      <location filename="../../../Path/Op/Profile.py" line="150"/>
+      <source>Profile round holes.
+Only with horizontal faces.</source>
+      <translation>Profilera runda hål.
+Endast med horisontella ytor.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Profile.py" line="156"/>
       <source>Side of edge that tool should cut</source>
       <translation>Den sida av kanten som verktyget ska skära</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="155"/>
+      <location filename="../../../Path/Op/Profile.py" line="164"/>
       <source>Make True, if using Cutter Radius Compensation</source>
       <translation>Ange True för att använda verktygsradiekompensering</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="164"/>
+      <location filename="../../../Path/Op/Profile.py" line="173"/>
       <source>The number of passes to do. If more than one, requires a non-zero value for Stepover</source>
       <translation>Antalet passeringar som ska göras. Fler än en kräver ett värde som inte är noll för Stepover</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="173"/>
+      <location filename="../../../Path/Op/Profile.py" line="182"/>
       <source>If doing multiple passes, the extra offset of each additional pass</source>
       <translation>Den extra förskjutningen för varje ytterligare passering när flera passeringar används</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="184"/>
+      <location filename="../../../Path/Op/Profile.py" line="193"/>
       <source>Override start point
 Shoud be used only with Individually HandleMultipleFeaturesand disabled UseStartPoint</source>
       <translation>Åsidosätt startpunkten
 Använd endast när HandleMultipleFeatures är Individually och UseStartPoint är inaktiverat</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="204"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="214"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="370"/>
+      <location filename="../../../Path/Op/Profile.py" line="213"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="212"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="359"/>
       <source>Order processing of the shapes
 Automatic: uses nearest neighbour algorithm to sort shapes
 Manual: uses order of shapes selection</source>
@@ -6530,33 +6409,26 @@ Automatisk: använder närmaste-granne-algoritmen för att sortera former
 Manuell: använder ordningen som formerna valdes i</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="213"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="232"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="396"/>
+      <location filename="../../../Path/Op/Profile.py" line="222"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="230"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="385"/>
       <source>Distance between roughing and finishing passes</source>
       <translation>Avstånd mellan grov- och finbearbetningspass</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="222"/>
+      <location filename="../../../Path/Op/Profile.py" line="231"/>
       <source>Finish pass will processing with one step down at final depth</source>
-      <translation>Finbearbetningspasset bearbetar med ett steg ned vid slutdjupet</translation>
+      <translation>Utför finbearbetningspasset i ett djupsteg vid slutdjupet</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="231"/>
+      <location filename="../../../Path/Op/Profile.py" line="240"/>
       <source>Start multiple profile from edge or out of edge</source>
       <translation>Starta flera profiler från kanten eller utanför kanten</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="240"/>
-      <source>Create helix ramp for closed path
-Helix pitch limits by &apos;Step Down&apos;</source>
-      <translation>Skapa helixramp för sluten bana
-Helixstigningen begränsas av ”Step Down”</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="259"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="242"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="419"/>
+      <location filename="../../../Path/Op/Profile.py" line="250"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="240"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="408"/>
       <source>Adds an additional finishing pass that clears the stock left over from tool deflection</source>
       <translation>Lägger till ett extra finbearbetningspass som avlägsnar material som lämnats kvar på grund av verktygsavböjning</translation>
     </message>
@@ -6634,7 +6506,7 @@ Helixstigningen begränsas av ”Step Down”</translation>
     <message>
       <location filename="../../../Path/Op/Slot.py" line="208"/>
       <source>Enable to reverse the cut direction of the slot toolpath.</source>
-      <translation>Gör det möjligt att vända skärriktningen för spårverktygsbanan.</translation>
+      <translation>Aktivera för att vända skärriktningen för spårverktygsbanan.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Slot.py" line="217"/>
@@ -6807,7 +6679,7 @@ Helixstigningen begränsas av ”Step Down”</translation>
       <location filename="../../../Path/Op/Surface.py" line="376"/>
       <location filename="../../../Path/Op/Waterline.py" line="430"/>
       <source>Enable separate optimization of transitions between, and breaks within, each step over path.</source>
-      <translation>Möjliggör separat optimering av övergångar mellan och avbrott inom varje stepover-bana.</translation>
+      <translation>Aktivera separat optimering av övergångar mellan och avbrott inom varje bana med sidsteg.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Surface.py" line="385"/>
@@ -6949,10 +6821,60 @@ Helixstigningen begränsas av ”Step Down”</translation>
       <translation>Ignorera yttre vattenlinjer över denna höjd.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Array.py" line="49"/>
       <location filename="../../../Path/Op/Gui/Array.py" line="78"/>
+      <location filename="../../../Path/Dressup/Array.py" line="49"/>
       <source>Pattern method</source>
       <translation>Mönstermetod</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="132"/>
+      <source>Make copies in X direction before Y in Linear 2D pattern</source>
+      <translation>Gör kopior i X-riktning före Y i linjärt 2D-mönster</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="103"/>
+      <location filename="../../../Path/Dressup/Array.py" line="66"/>
+      <source>The number of copies in X-direction in linear pattern</source>
+      <translation>Antalet kopior i X-riktning i linjärt mönster</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="111"/>
+      <location filename="../../../Path/Dressup/Array.py" line="74"/>
+      <source>The number of copies in Y-direction in linear pattern</source>
+      <translation>Antalet kopior i Y-riktning i linjärt mönster</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Array.py" line="103"/>
+      <source>Make copies in X-direction before Y in linear 2D pattern</source>
+      <translation>Gör kopior i X-riktning före Y i linjärt 2D-mönster</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Array.py" line="109"/>
+      <source>Percent of copies to randomly offset</source>
+      <translation>Procentandel av kopiorna som ska förskjutas slumpmässigt</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="176"/>
+      <location filename="../../../Path/Dressup/Array.py" line="115"/>
+      <source>Maximum random offset of copies</source>
+      <translation>Maximal slumpmässig förskjutning av kopior</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="182"/>
+      <location filename="../../../Path/Op/Gui/Array.py" line="272"/>
+      <source>Use randomly offset</source>
+      <translation>Använd slumpmässig förskjutning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="188"/>
+      <location filename="../../../Path/Dressup/Array.py" line="121"/>
+      <source>Seed value for jitter randomness</source>
+      <translation>Slumpfrö för den slumpmässiga förskjutningen</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="55"/>
+      <source>The toolpaths to array</source>
+      <translation>Verktygsbanorna till array</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="70"/>
@@ -6967,9 +6889,16 @@ Bör vara identisk för alla basoperationer</translation>
       <translation>Antalet kopior i mönstren Linjär 1D och Polärt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Array.py" line="132"/>
-      <source>Make copies in X direction before Y in Linear 2D pattern</source>
-      <translation>Gör kopior i X-riktning före Y i linjärt 2D-mönster</translation>
+      <location filename="../../../Path/Op/Gui/Array.py" line="95"/>
+      <location filename="../../../Path/Dressup/Array.py" line="58"/>
+      <source>The spacing between the array copies in linear pattern</source>
+      <translation>Avståndet mellan matrisens kopior i linjärt mönster</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="117"/>
+      <location filename="../../../Path/Dressup/Array.py" line="80"/>
+      <source>Total angle in polar pattern</source>
+      <translation>Total vinkel i polarmönstret</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="141"/>
@@ -7004,67 +6933,10 @@ Vid markering utan delelement:
       <translation>Sorteringsläge</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Array.py" line="182"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="272"/>
-      <source>Use randomly offset</source>
-      <translation>Använd slumpmässig förskjutning</translation>
-    </message>
-    <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="194"/>
       <location filename="../../../Path/Op/Gui/Array.py" line="265"/>
       <source>Max angle of rotation for jitter randomness</source>
       <translation>Största rotationsvinkel för slumpmässig variation</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="66"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="103"/>
-      <source>The number of copies in X-direction in linear pattern</source>
-      <translation>Antalet kopior i X-riktning i linjärt mönster</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="74"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="111"/>
-      <source>The number of copies in Y-direction in linear pattern</source>
-      <translation>Antalet kopior i Y-riktning i linjärt mönster</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="103"/>
-      <source>Make copies in X-direction before Y in linear 2D pattern</source>
-      <translation>Gör kopior i X-riktning före Y i linjärt 2D-mönster</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="109"/>
-      <source>Percent of copies to randomly offset</source>
-      <translation>Procentandel av kopiorna som ska förskjutas slumpmässigt</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="115"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="176"/>
-      <source>Maximum random offset of copies</source>
-      <translation>Maximal slumpmässig förskjutning av kopior</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="121"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="188"/>
-      <source>Seed value for jitter randomness</source>
-      <translation>Slumpfrö för den slumpmässiga förskjutningen</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/Array.py" line="55"/>
-      <source>The toolpaths to array</source>
-      <translation>Verktygsbanorna till array</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="58"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="95"/>
-      <source>The spacing between the array copies in linear pattern</source>
-      <translation>Avståndet mellan matrisens kopior i linjärt mönster</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="80"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="117"/>
-      <source>Total angle in polar pattern</source>
-      <translation>Total vinkel i polarmönstret</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Array.py" line="88"/>
@@ -7072,8 +6944,8 @@ Vid markering utan delelement:
       <translation>Antalet kopior i linjärt 1D- och polärt mönster</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Array.py" line="94"/>
       <location filename="../../../Path/Op/Gui/Array.py" line="123"/>
+      <location filename="../../../Path/Dressup/Array.py" line="94"/>
       <source>The centre of rotation in polar pattern</source>
       <translation>Rotationscentrum i polärt mönster</translation>
     </message>
@@ -7312,8 +7184,7 @@ When return from last retraction,
 this gives the pause of the next move</source>
       <translation>Återgångshöjd
 
-Vid återgång efter den senaste tillbakadragningen anger detta
-stophöjden i förhållande till nästa rörelses Z-värde</translation>
+Vid återgång efter den senaste tillbakadragningen anger detta pausen före nästa rörelse</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Comment.py" line="42"/>
@@ -7464,92 +7335,9 @@ stophöjden i förhållande till nästa rörelses Z-värde</translation>
       <translation>Matning per tand</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="42"/>
-      <source>The base path for mirroring</source>
-      <translation>Basbanan för spegling</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="48"/>
-      <source>The mirroring axis</source>
-      <translation>Speglingsaxeln</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="54"/>
-      <source>Offset for the mirroring axis </source>
-      <translation>Förskjutning för speglingsaxeln </translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="60"/>
-      <source>Mirroring at the center of base model</source>
-      <translation>Spegling vid basmodellens mitt</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="66"/>
-      <source>Add path from base operation</source>
-      <translation>Lägg till bana från basoperation</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="72"/>
-      <source>Center point of selected shape defines offset</source>
-      <translation>Mittpunkten i den valda formen definierar förskjutningen</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="44"/>
-      <source>The base path</source>
-      <translation>Basbanan</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="50"/>
-      <source>Distance between passes</source>
-      <translation>Avstånd mellan passeringar</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="59"/>
-      <source>Use drilling cycles instead of G1 moves</source>
-      <translation>Använd borrningscykler i stället för G1-rörelser</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="67"/>
-      <source>Use chipbreaking
-Can be used only if Peck Depth not a zero</source>
-      <translation>Använd spånbrytning
-Kan endast användas om borrdjupet per steg inte är noll</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="77"/>
-      <source>Incremental Drill depth before retracting to clear chips
-Set 0 to disable pecking</source>
-      <translation>Borrdjup per steg innan verktyget dras tillbaka för att avlägsna spån
-Ange 0 för att inaktivera stegvis borrning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="83"/>
-      <source>R value: height the tool retracts between pecks</source>
-      <translation>R-värde: höjd som verktyget dras tillbaka till mellan borrstegen</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="94"/>
-      <source>The time to dwell between peck cycles
-Set 0 to disable dwell
-Can be used only if Peck Depth is zero</source>
-      <translation>Uppehållstid mellan borrstegen
-Ange 0 för att inaktivera uppehåll
-Kan endast användas om borrdjupet per steg är noll</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="74"/>
-      <source>Hint indicating which op category this TC is intended for</source>
-      <translation>Tips som anger vilken operationskategori denna verktygsstyrning är avsedd för</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="86"/>
-      <source>Per-field provenance: which source set HorizFeed/VertFeed/SpindleSpeed</source>
-      <translation>Ursprung per fält: vilken källa som angav HorizFeed/VertFeed/SpindleSpeed</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/FeedsSpeeds/presets.py" line="104"/>
-      <source>JSON-encoded list of feeds &amp; speeds presets</source>
-      <translation>JSON-kodad lista över förinställningar för matningar och varvtal</translation>
+      <location filename="../../../Path/Main/Workplane.py" line="180"/>
+      <source>Work coordinate system (G54-G59.9, G54.1 Pn) selected while operations on this plane run. Empty: the Job&apos;s own fixture.</source>
+      <translation>Arbetskoordinatsystem (G54–G59.9, G54.1 Pn) som används medan operationer på detta plan körs. Tomt: jobbets egen fixtur.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/RotarySurface.py" line="126"/>
@@ -7580,13 +7368,6 @@ Kan endast användas om borrdjupet per steg är noll</translation>
       <location filename="../../../Path/Op/RotarySurface.py" line="164"/>
       <source>Angular spacing between sampled toolpath points (degrees).</source>
       <translation>Vinkelavstånd mellan samplade verktygsbanepunkter (grader).</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/RotarySurface.py" line="172"/>
-      <location filename="../../../Path/Op/Profile.py" line="123"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1606"/>
-      <source>Set how much stock to leave on the walls for the operation.</source>
-      <translation>Ange hur stor bearbetningsmån som ska lämnas på väggarna för operationen.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/RotarySurface.py" line="180"/>
@@ -7622,6 +7403,46 @@ Kan endast användas om borrdjupet per steg är noll</translation>
       <location filename="../../../Path/Op/RotarySurface.py" line="234"/>
       <source>Tessellation angular deflection. Smaller = finer mesh.</source>
       <translation>Vinkelavvikelse vid tessellering. Mindre värde ger finare nät.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="134"/>
+      <source>Set the cut mode for the operation.</source>
+      <translation>Ange skärläget för operationen.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="143"/>
+      <source>Set the clearing pattern for the operation.</source>
+      <translation>Ange urfräsningsmönstret för operationen.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="152"/>
+      <source>Set the angle for the operation.</source>
+      <translation>Ange vinkeln för operationen.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="161"/>
+      <source>Set the stepover percentage of tool diameter.</source>
+      <translation>Ange sidsteget i procent av verktygsdiametern.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="179"/>
+      <source>Distance to extend cuts beyond polygon boundary for tool disengagement.</source>
+      <translation>Avstånd som skärpassen ska förlängas utanför polygongränsen så att verktyget kan lämna ingreppet.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="188"/>
+      <source>Extends the boundary in both direction.</source>
+      <translation>Utvidgar gränsen i båda riktningarna.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="197"/>
+      <source>Reverse the cutting direction for the selected pattern.</source>
+      <translation>Vänd skärriktningen för det valda mönstret.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/PocketShape.py" line="90"/>
+      <source>Close open area formed by edges or vertical faces by straight line.</source>
+      <translation>Slut en öppen yta som bildats av kanter eller vertikala ytor med en rak linje.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Flute.py" line="1438"/>
@@ -7782,8 +7603,8 @@ Kan endast användas om borrdjupet per steg är noll</translation>
       <location filename="../../../Path/Op/PlanarSurface.py" line="555"/>
       <source>Influences calculation performance vs stability and accuracy.
 Larger values will calculate faster; Smaller values will result in more accurate toolpaths.</source>
-      <translation>Påverkar beräkningsprestanda jämfört med stabilitet och noggrannhet.
-Större värden beräknas snabbare; mindre värden ger mer exakta verktygsbanor.</translation>
+      <translation>Påverkar beräkningsprestanda i förhållande till stabilitet och noggrannhet.
+Större värden ger snabbare beräkningar; mindre värden ger mer exakta verktygsbanor.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/PlanarSurface.py" line="575"/>
@@ -7796,49 +7617,119 @@ Större värden beräknas snabbare; mindre värden ger mer exakta verktygsbanor.
       <translation>VARNING: Om du inaktiverar detta kan Adaptive2d-algoritmen gå utanför ämnets gräns i öppna fickor. Det kan orsaka oregelbundna nedmatningar, oförutsägbara verktygsbanor och maskinhaverier! Fortsätt med yttersta försiktighet.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="134"/>
-      <source>Set the cut mode for the operation.</source>
-      <translation>Ange skärläget för operationen.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="143"/>
-      <source>Set the clearing pattern for the operation.</source>
-      <translation>Ange urfräsningsmönstret för operationen.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="152"/>
-      <source>Set the angle for the operation.</source>
-      <translation>Ange vinkeln för operationen.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="161"/>
-      <source>Set the stepover percentage of tool diameter.</source>
-      <translation>Ange sidsteget i procent av verktygsdiametern.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="179"/>
-      <source>Distance to extend cuts beyond polygon boundary for tool disengagement.</source>
-      <translation>Avstånd som skärpassen ska förlängas utanför polygongränsen så att verktyget kan lämna ingreppet.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="188"/>
-      <source>Extends the boundary in both direction.</source>
-      <translation>Utvidgar gränsen i båda riktningarna.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="197"/>
-      <source>Reverse the cutting direction for the selected pattern.</source>
-      <translation>Vänd skärriktningen för det valda mönstret.</translation>
-    </message>
-    <message>
       <location filename="../../../Path/Op/Gui/Drilling.py" line="244"/>
       <source>Apply G99 retraction: only retract to StartDepth between holes in this operation</source>
       <translation>Tillämpa G99-retur: dra endast tillbaka till StartDepth mellan hålen i operationen</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Workplane.py" line="180"/>
-      <source>Work coordinate system (G54-G59.9, G54.1 Pn) selected while operations on this plane run. Empty: the Job&apos;s own fixture.</source>
-      <translation>Arbetskoordinatsystem (G54–G59.9, G54.1 Pn) som används medan åtgärder på detta plan körs. Tomt: jobbets egen uppspänning.</translation>
+      <location filename="../../../Path/Tool/FeedsSpeeds/presets.py" line="104"/>
+      <source>JSON-encoded list of feeds &amp; speeds presets</source>
+      <translation>JSON-kodad lista över förinställningar för matningar och varvtal</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="74"/>
+      <source>Hint indicating which op category this TC is intended for</source>
+      <translation>Anvisning om vilken operationskategori denna verktygsstyrning är avsedd för</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="86"/>
+      <source>Per-field provenance: which source set HorizFeed/VertFeed/SpindleSpeed</source>
+      <translation>Ursprung per fält: vilken källa som angav HorizFeed/VertFeed/SpindleSpeed</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="42"/>
+      <source>The base path for mirroring</source>
+      <translation>Basbanan för spegling</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="48"/>
+      <source>The mirroring axis</source>
+      <translation>Speglingsaxeln</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="54"/>
+      <source>Offset for the mirroring axis </source>
+      <translation>Förskjutning för speglingsaxeln </translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="60"/>
+      <source>Mirroring at the center of base model</source>
+      <translation>Spegling vid basmodellens mitt</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="66"/>
+      <source>Add path from base operation</source>
+      <translation>Lägg till bana från basoperation</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="72"/>
+      <source>Center point of selected shape defines offset</source>
+      <translation>Mittpunkten i den valda formen definierar förskjutningen</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="44"/>
+      <source>The base path</source>
+      <translation>Basbanan</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="50"/>
+      <source>Distance between passes</source>
+      <translation>Avstånd mellan passeringar</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="59"/>
+      <source>Use drilling cycles instead of G1 moves</source>
+      <translation>Använd borrningscykler i stället för G1-rörelser</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="67"/>
+      <source>Use chipbreaking
+Can be used only if Peck Depth not a zero</source>
+      <translation>Använd spånbrytning
+Kan endast användas om borrdjupet per steg inte är noll</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="77"/>
+      <source>Incremental Drill depth before retracting to clear chips
+Set 0 to disable pecking</source>
+      <translation>Borrdjup per steg innan verktyget dras tillbaka för att avlägsna spån
+Ange 0 för att inaktivera stegvis borrning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="83"/>
+      <source>R value: height the tool retracts between pecks</source>
+      <translation>R-värde: höjd som verktyget dras tillbaka till mellan borrstegen</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="94"/>
+      <source>The time to dwell between peck cycles
+Set 0 to disable dwell
+Can be used only if Peck Depth is zero</source>
+      <translation>Uppehållstid mellan borrstegen
+Ange 0 för att inaktivera uppehåll
+Kan endast användas om borrdjupet per steg är noll</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="55"/>
+      <source>Shape to limit toolpath</source>
+      <translation>Form för att begränsa verktygsbanan</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="61"/>
+      <source>Keep path inside or outside the shape</source>
+      <translation>Håll banan innanför eller utanför formen</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="81"/>
+      <source>Apply boundary to Rest Machining
+Does not affects to current path, but can be used by other operations with Rest Machining feature</source>
+      <translation>Tillämpa gränsen på restbearbetning
+Påverkar inte den aktuella banan men kan användas av andra operationer med restbearbetning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="87"/>
+      <source>Apply offset to boundary shape</source>
+      <translation>Tillämpa förskjutning på gränsformen</translation>
     </message>
   </context>
   <context>
@@ -7895,19 +7786,14 @@ Större värden beräknas snabbare; mindre värden ger mer exakta verktygsbanor.
   <context>
     <name>PathAreaOp</name>
     <message>
-      <location filename="../../../Path/Op/Area.py" line="116"/>
+      <location filename="../../../Path/Op/Area.py" line="114"/>
       <source>job %s has no Base.</source>
       <translation>jobb %s har ingen bas.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Area.py" line="118"/>
+      <location filename="../../../Path/Op/Area.py" line="116"/>
       <source>no job for operation %s found.</source>
       <translation>inget jobb för operation %s hittades.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Area.py" line="294"/>
-      <source>%s: ramp method &apos;%s&apos; needs a ramp angle, plunging</source>
-      <translation>%s: rampmetoden ”%s” kräver en rampvinkel, nedsänkning</translation>
     </message>
   </context>
   <context>
@@ -7933,87 +7819,62 @@ Större värden beräknas snabbare; mindre värden ger mer exakta verktygsbanor.
   <context>
     <name>PathProfile</name>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="285"/>
+      <location filename="../../../Path/Op/Profile.py" line="276"/>
       <source>Outside</source>
       <translation>Utanför</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="286"/>
+      <location filename="../../../Path/Op/Profile.py" line="277"/>
       <source>Inside</source>
       <translation>Inuti</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="277"/>
+      <location filename="../../../Path/Op/Profile.py" line="268"/>
       <source>CW</source>
       <translation>Medurs</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="278"/>
+      <location filename="../../../Path/Op/Profile.py" line="269"/>
       <source>CCW</source>
       <translation>Moturs</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="281"/>
+      <location filename="../../../Path/Op/Profile.py" line="272"/>
       <source>Collectively</source>
       <translation>Gemensamt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="282"/>
+      <location filename="../../../Path/Op/Profile.py" line="273"/>
       <source>Individually</source>
       <translation>Individuellt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="289"/>
+      <location filename="../../../Path/Op/Profile.py" line="280"/>
       <source>Automatic</source>
       <translation>Automatisk</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="290"/>
+      <location filename="../../../Path/Op/Profile.py" line="281"/>
       <source>Manual</source>
       <translation>Manuellt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="293"/>
-      <source>OutOfEdge</source>
-      <translation>Utanför kant</translation>
+      <location filename="../../../Path/Op/Profile.py" line="284"/>
+      <source>Out of edge</source>
+      <translation>Utanför kanten</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="294"/>
+      <location filename="../../../Path/Op/Profile.py" line="285"/>
       <source>Edge</source>
       <translation>Kant</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="297"/>
-      <source>None</source>
-      <translation>Inget</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="298"/>
-      <source>Helix</source>
-      <translation>Helix</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="299"/>
-      <source>Method 1</source>
-      <translation>Metod 1</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="300"/>
-      <source>Method 2</source>
-      <translation>Metod 2</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="301"/>
-      <source>Method 3</source>
-      <translation>Metod 3</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="488"/>
+      <location filename="../../../Path/Op/Profile.py" line="479"/>
       <source>The selected edge(s) are inaccessible. If multiple, re-ordering selection might work.</source>
       <translation>Den/de valda kanten/kanterna är otillgängliga. Om det finns flera, kan det fungera att omorganisera markeringen.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="634"/>
+      <location filename="../../../Path/Op/Profile.py" line="625"/>
       <source>Unable to create path for face(s).</source>
       <translation>Det går inte att skapa sökväg för ytor.</translation>
     </message>
@@ -8386,7 +8247,7 @@ Större värden beräknas snabbare; mindre värden ger mer exakta verktygsbanor.
     <message>
       <location filename="../../../Path/Op/Gui/Base.py" line="351"/>
       <source>Select a planar face to set a work plane from.</source>
-      <translation>Välj en plan yta för att ange en arbetsplan.</translation>
+      <translation>Välj en plan yta som arbetsplanet ska utgå från.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Base.py" line="365"/>
@@ -8404,66 +8265,66 @@ Större värden beräknas snabbare; mindre värden ger mer exakta verktygsbanor.
       <translation>u26a0 Föråldrad: {}</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="850"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="853"/>
       <source>Base Geometry</source>
       <translation>Basgeometri</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="970"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="973"/>
       <source>Multiple operations are labeled as</source>
       <translation>Flera operationer betecknas som</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1044"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1047"/>
       <source>Base Location</source>
       <translation>Basposition</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1272"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1275"/>
       <source>Heights</source>
       <translation>Höjder</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1435"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1438"/>
       <source>Tool Controller</source>
       <translation>Verktygsstyrning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1189"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1192"/>
       <source>FinalDepth cannot be modified for this operation.
 If it is necessary to set the FinalDepth manually please select a different operation.</source>
       <translation>FinalDepth kan inte ändras för denna operation.
 Om det är nödvändigt att ställa in FinalDepth manuellt, välj en annan operation.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1472"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1475"/>
       <source>Diameters</source>
       <translation>Diametrar</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1504"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1507"/>
       <source>AreaOp Operation</source>
       <translation>AreaOp-operation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1571"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1574"/>
       <source>Operation</source>
       <translation>Operation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1667"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1670"/>
       <source>Uncreate AreaOp Operation</source>
       <translation>Ångra skapandet av AreaOp-operation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1882"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1885"/>
       <source>No suitable tool controller found.
 Aborting op creation</source>
       <translation>Ingen lämplig verktygsstyrning hittades.
 Avbryter skapandet av operationen</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1886"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1889"/>
       <source>No tool controller, aborting op creation</source>
       <translation>Ingen verktygsstyrning, avbryter skapandet av operationen</translation>
     </message>
@@ -8508,7 +8369,7 @@ Avbryter skapandet av operationen</translation>
     <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="414"/>
       <source>Arrays not compatible with coolant modes.</source>
-      <translation>Matriser är inte kompatibla med kylmedelslägen.</translation>
+      <translation>Matriser är inte kompatibla med kylvätskelägen.</translation>
     </message>
   </context>
   <context>
@@ -9018,7 +8879,7 @@ Utan val av delelement:
     <message>
       <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="210"/>
       <source>Z correction needs a work plane parallel to the table; path left unchanged</source>
-      <translation>Z-korrigering kräver en arbetsplan parallell med bordet; banan lämnas oförändrad</translation>
+      <translation>Z-korrigering kräver ett arbetsplan parallellt med bordet; banan lämnas oförändrad</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="263"/>
@@ -9044,67 +8905,10 @@ Utan val av delelement:
       <translation>Fixtur</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="58"/>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="78"/>
-      <source>Presets</source>
-      <translation>Förinställningar</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="60"/>
-      <source>Geometry</source>
-      <translation>Geometri</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="120"/>
-      <source>Tool Updates Available</source>
-      <translation>Verktygsuppdateringar är tillgängliga</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="144"/>
-      <source>&apos;{}&apos; has tools that differ from the library (newer presets, changed dimensions - e.g. a regrind - or both). Updating replaces the whole tool with the current library version and recomputes the document - expand a row to review before applying.</source>
-      <translation>&apos;{}&apos; innehåller verktyg som skiljer sig från biblioteket (nyare förinställningar, ändrade mått – till exempel efter en omslipning – eller både och). Vid uppdatering ersätts hela verktyget med den aktuella versionen i biblioteket och dokumentet beräknas om. Fäll ut en rad för att granska ändringarna innan de tillämpas.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="155"/>
-      <source>Job</source>
-      <translation>Jobb</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="156"/>
-      <source>Tool #</source>
-      <translation>Verktygsnr</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="157"/>
       <location filename="../../../Path/Main/Job.py" line="453"/>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="157"/>
       <source>Tool</source>
       <translation>Verktyg</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="158"/>
-      <source>Changes</source>
-      <translation>Ändringar</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="206"/>
-      <source>Select all</source>
-      <translation>Markera alla</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="225"/>
-      <source>Update</source>
-      <translation>Uppdatera</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="346"/>
-      <location filename="../../../Path/Main/Gui/Job.py" line="372"/>
-      <source>Update Tools from Library</source>
-      <translation>Uppdatera verktyg från biblioteket</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="347"/>
-      <source>This job has no tool updates available.</source>
-      <translation>Det finns inga verktygsuppdateringar för det här jobbet.</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Job.py" line="454"/>
@@ -9136,6 +8940,12 @@ Utan val av delelement:
       <location filename="../../../Path/Main/Gui/Job.py" line="368"/>
       <source>Edit</source>
       <translation>Redigera</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Main/Gui/Job.py" line="372"/>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="346"/>
+      <source>Update Tools from Library</source>
+      <translation>Uppdatera verktyg från biblioteket</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Gui/Job.py" line="388"/>
@@ -9296,6 +9106,57 @@ Ta bort den?</translation>
       <source>Creates a CAM job</source>
       <translation>Skapar ett CAM-jobb</translation>
     </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="58"/>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="78"/>
+      <source>Presets</source>
+      <translation>Förinställningar</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="60"/>
+      <source>Geometry</source>
+      <translation>Geometri</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="120"/>
+      <source>Tool Updates Available</source>
+      <translation>Verktygsuppdateringar är tillgängliga</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="144"/>
+      <source>&apos;{}&apos; has tools that differ from the library (newer presets, changed dimensions - e.g. a regrind - or both). Updating replaces the whole tool with the current library version and recomputes the document - expand a row to review before applying.</source>
+      <translation>&apos;{}&apos; innehåller verktyg som skiljer sig från biblioteket (nyare förinställningar, ändrade mått – till exempel efter en omslipning – eller både och). Vid uppdatering ersätts hela verktyget med den aktuella versionen i biblioteket och dokumentet beräknas om. Fäll ut en rad för att granska ändringarna innan de tillämpas.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="155"/>
+      <source>Job</source>
+      <translation>Jobb</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="156"/>
+      <source>Tool #</source>
+      <translation>Verktygsnr</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="158"/>
+      <source>Changes</source>
+      <translation>Ändringar</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="206"/>
+      <source>Select all</source>
+      <translation>Markera alla</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="225"/>
+      <source>Update</source>
+      <translation>Uppdatera</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="347"/>
+      <source>This job has no tool updates available.</source>
+      <translation>Det finns inga verktygsuppdateringar för det här jobbet.</translation>
+    </message>
   </context>
   <context>
     <name>CAM_Fixture</name>
@@ -9320,7 +9181,7 @@ Ta bort den?</translation>
     <message>
       <location filename="../../../Path/Main/Gui/Inspect.py" line="130"/>
       <source>Raw shows the commands exactly as the operation stored them: no rounding, no unit conversion, and no Placement applied. An operation on a work plane stores its path in the plane&apos;s own frame.</source>
-      <translation>Raw visar kommandona exakt som åtgärden lagrade dem: ingen avrundning, ingen enhetsomvandling och ingen placering tillämpas. En åtgärd på en arbetsplan lagrar sin bana i planets egen referensram.</translation>
+      <translation>Rå visar kommandona exakt som operationen lagrade dem: ingen avrundning, enhetsomvandling eller placering tillämpas. En operation på ett arbetsplan lagrar sin bana i planets egen referensram.</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Gui/Inspect.py" line="137"/>
@@ -9343,7 +9204,7 @@ G-koden under markören definierar verktygsformens placering</translation>
     <message>
       <location filename="../../../Path/Main/Gui/Inspect.py" line="339"/>
       <source>&lt;br&gt;&lt;b&gt;Raw&lt;/b&gt;: as stored, in the operation&apos;s own frame; the frame&apos;s origin (%.3f, %.3f, %.3f) and rotation are not applied.</source>
-      <translation>&lt;br&gt;&lt;b&gt;Rådata&lt;/b&gt;: som lagrad, i åtgärdens egen referensram; referensramens origo (%.3f, %.3f, %.3f) och rotation tillämpas inte.</translation>
+      <translation>&lt;br&gt;&lt;b&gt;Rå&lt;/b&gt;: som lagrat i operationens egen referensram; referensramens origo (%.3f, %.3f, %.3f) och rotation tillämpas inte.</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Gui/Inspect.py" line="368"/>
@@ -9752,17 +9613,17 @@ G-koden under markören definierar verktygsformens placering</translation>
   <context>
     <name>CAM_Simulator</name>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="313"/>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="314"/>
       <source>High</source>
       <translation>Hög</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="315"/>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="316"/>
       <source>Low</source>
       <translation>Låg</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="317"/>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="318"/>
       <source>Medium</source>
       <translation>Medel</translation>
     </message>
@@ -9780,22 +9641,22 @@ G-koden under markören definierar verktygsformens placering</translation>
   <context>
     <name>CAM_Adaptive</name>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1519"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1524"/>
       <source>Outside</source>
       <translation>Utanför</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1520"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1525"/>
       <source>Inside</source>
       <translation>Inuti</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1523"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1528"/>
       <source>Clearing</source>
       <translation>Urfräsning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1524"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1529"/>
       <source>Profiling</source>
       <translation>Profilfräsning</translation>
     </message>
@@ -9830,7 +9691,7 @@ G-koden under markören definierar verktygsformens placering</translation>
     <message>
       <location filename="../../../Path/Op/Base.py" line="1031"/>
       <source>No parent job found for operation</source>
-      <translation>Inget överordnat jobb hittades för åtgärden</translation>
+      <translation>Inget överordnat jobb hittades för operationen</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Base.py" line="1037"/>
@@ -9860,7 +9721,7 @@ G-koden under markören definierar verktygsformens placering</translation>
     <message>
       <location filename="../../../Path/Op/Base.py" line="1538"/>
       <source>Base object %s.%s rejected by operation</source>
-      <translation>Basobjektet %s.%s avvisades av åtgärden</translation>
+      <translation>Basobjektet %s.%s avvisades av operationen</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Base.py" line="657"/>
@@ -9883,7 +9744,7 @@ G-koden under markören definierar verktygsformens placering</translation>
       <translation>Den här verktygsstyrningen används av {0} andra operationer.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1243"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1246"/>
       <source>None (Job XY)</source>
       <translation>Ingen (jobbets XY)</translation>
     </message>
@@ -9893,7 +9754,7 @@ G-koden under markören definierar verktygsformens placering</translation>
     <message>
       <location filename="../../../Path/Op/Base.py" line="1023"/>
       <source>%s: FinalDepth (%.3f) is outside the stock in this work plane (%.3f to %.3f). Heights and depths set before the work plane was assigned do not carry over - use Reset to defaults on the Heights page.</source>
-      <translation>%s: FinalDepth (%.3f) ligger utanför råmaterialet i denna arbetsplan (%.3f till %.3f). Höjder och djup som angavs innan arbetsplanet tilldelades följer inte med – använd Återställ till standardvärden på sidan Höjder.</translation>
+      <translation>%s: FinalDepth (%.3f) ligger utanför ämnet i detta arbetsplan (%.3f till %.3f). Höjder och djup som angavs innan arbetsplanet tilldelades följer inte med – använd Återställ till standardvärden på sidan Höjder.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Base.py" line="1370"/>
@@ -9936,19 +9797,19 @@ G-koden under markören definierar verktygsformens placering</translation>
       <translation>Cykeltidsfel</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="163"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="168"/>
       <source>Hole diameter may be inaccurate due to tessellation on face. Consider selecting hole edge.</source>
       <translation>Håldiametern kan vara felaktig på grund av tessellering på ytan. Överväg att välja hålets kant.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="198"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="203"/>
       <source>Feature %s.%s cannot be processed as a circular hole - please remove from Base geometry list.</source>
       <translation>Funktionen %s.%s kan inte bearbetas som ett cirkulärt hål - ta bort från basgeometrilistan.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Pocket.py" line="190"/>
       <source>Final depth set below ZMin of face(s) selected.</source>
-      <translation>Slutligt djup under ZMin för vald(a) yta(r).</translation>
+      <translation>Slutdjupet är under ZMin för de valda ytorna.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Pocket.py" line="322"/>
@@ -9962,9 +9823,9 @@ G-koden under markören definierar verktygsformens placering</translation>
       <translation>Den icke-plana adaptiva starten är inte heller tillgänglig.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/ThreadMilling.py" line="78"/>
-      <location filename="../../../Path/Op/Gui/Vcarve.py" line="124"/>
       <location filename="../../../Path/Op/Gui/Probe.py" line="59"/>
+      <location filename="../../../Path/Op/Gui/Vcarve.py" line="124"/>
+      <location filename="../../../Path/Op/Gui/ThreadMilling.py" line="78"/>
       <source>No valid toolcontroller</source>
       <translation>Ingen giltig verktygsstyrning</translation>
     </message>
@@ -9974,8 +9835,8 @@ G-koden under markören definierar verktygsformens placering</translation>
       <translation>Denna operation kräver en verktygsstyrning med en V-fräs</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Vcarve.py" line="65"/>
       <location filename="../../../Path/Op/Gui/Engrave.py" line="70"/>
+      <location filename="../../../Path/Op/Gui/Vcarve.py" line="65"/>
       <source>Base shape %s already in the list</source>
       <translation>Basform %s finns redan i listan</translation>
     </message>
@@ -10167,9 +10028,9 @@ This will not delete the toolbits contained within it.</source>
 Detta kommer inte att radera verktygsbitarna som finns i det.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/toolbit/ui/browser.py" line="289"/>
       <location filename="../../../Path/Tool/library/ui/editor.py" line="430"/>
       <location filename="../../../Path/Tool/library/ui/editor.py" line="470"/>
+      <location filename="../../../Path/Tool/toolbit/ui/browser.py" line="289"/>
       <source>Error</source>
       <translation>Fel</translation>
     </message>
@@ -10267,25 +10128,19 @@ Detta kommer inte att radera verktygsbitarna som finns i det.</translation>
       <translation>Gängtapp, diameter {diameter}, stigning {pitch}, rotationsriktning {rotation}, {flutes} skär, skärlängd {cutting_edge_length}</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Utils.py" line="221"/>
-      <source>CAM Export Gcode</source>
-      <translation>CAM-export av G-kod</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="106"/>
+      <source>No Job found to add a work plane to.</source>
+      <translation>Inget jobb hittades att lägga till ett arbetsplan i.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Utils.py" line="231"/>
-      <source>Save With Changes</source>
-      <translation>Spara med ändringar</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="137"/>
+      <source>Created %s at the Job origin. Select a planar face before the command to derive one from the model.</source>
+      <translation>Skapade %s vid jobbets origo. Välj en plan yta före kommandot för att härleda ett från modellen.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Utils.py" line="238"/>
-      <location filename="../../../Path/Post/Utils.py" line="241"/>
-      <source>Save Without Changes</source>
-      <translation>Spara utan ändringar</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Utils.py" line="239"/>
-      <source>Abort</source>
-      <translation>Avbryt</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="380"/>
+      <source>Adaptive operation couldn&apos;t determine the boundary wire. Did you select base geometry?</source>
+      <translation>Den adaptiva operationen kunde inte fastställa gränstråden. Har du valt basgeometri?</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Processor.py" line="436"/>
@@ -10606,7 +10461,7 @@ Detta kommer inte att radera verktygsbitarna som finns i det.</translation>
     <message>
       <location filename="../../../Path/Post/Processor.py" line="775"/>
       <source>Certain G0&apos;s become G1 for operations that have &quot;No-Engagement Feedrate&quot;</source>
-      <translation>Vissa G0 blir G1 för åtgärder med ”matningshastighet utan ingrepp”</translation>
+      <translation>Vissa G0-kommandon blir G1 för operationer med ”matningshastighet utan ingrepp”</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Processor.py" line="1939"/>
@@ -10634,150 +10489,295 @@ Detta kommer inte att radera verktygsbitarna som finns i det.</translation>
       <translation>{op} är på ett lutat arbetsplan och denna postprocessor kan inte generera den strategi {strategy} som maskinen '{machine}' anger.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="2121"/>
+      <location filename="../../../Path/Post/Processor.py" line="2133"/>
       <source>{op} is on work plane &apos;{plane}&apos;, which machine &apos;{machine}&apos; cannot index to: {reason}. Its rotary limits are {limits}.</source>
       <translation>{op} är på arbetsplanet '{plane}', som maskinen '{machine}' inte kan indexera till: {reason}. Dess rotationsgränser är {limits}.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="2164"/>
+      <location filename="../../../Path/Post/Processor.py" line="2176"/>
       <source>Work plane &apos;{plane}&apos; names &apos;{fixture}&apos; as its fixture, which is not a work coordinate system (G54-G59.9, or G54.1 Pn).</source>
       <translation>Arbetsplanet '{plane}' anger '{fixture}' som sin uppspänning, vilket inte är ett arbetskoordinatsystem (G54-G59.9 eller G54.1 Pn).</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3306"/>
+      <location filename="../../../Path/Post/Processor.py" line="3324"/>
       <source>The rotary axes move between operations and the Pre-Rotary Move property of machine &apos;{machine}&apos; is empty. Put the moves that bring the tool clear of the part there, in machine coordinates (for example G53 G0 Z0).</source>
       <translation>Rotationsaxlarna flyttas mellan operationer och egenskapen Pre-Rotary Move för maskinen '{machine}' är tom. Ange där rörelserna som för verktyget fritt från detaljen, i maskinkoordinater (till exempel G53 G0 Z0).</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3331"/>
+      <location filename="../../../Path/Post/Processor.py" line="3349"/>
       <source>Work plane &apos;{plane}&apos; names &apos;{fixture}&apos; as its fixture, which is not a work coordinate system (G54-G59.9, or G54.1 Pn). The post will refuse it.</source>
       <translation>Arbetsplanet '{plane}' anger '{fixture}' som sin uppspänning, vilket inte är ett arbetskoordinatsystem (G54-G59.9 eller G54.1 Pn). Postprocessorn kommer att neka den.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3343"/>
+      <location filename="../../../Path/Post/Processor.py" line="3361"/>
       <source>Work plane &apos;{plane}&apos; selects {fixture}, which is also one of the fixtures the Job repeats its program for. Inside each repetition the plane&apos;s selection wins.</source>
       <translation>Arbetsplanet '{plane}' väljer {fixture}, som också är en av uppspänningarna som jobbet upprepar programmet för. Inom varje repetition gäller planets val.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3488"/>
+      <location filename="../../../Path/Post/Processor.py" line="3506"/>
       <source> (in the Custom op, uncheck Post Process Output, or put &apos;!&apos; in front of specific command)</source>
       <translation> (avmarkera Postprocessa utdata i den anpassade operationen eller sätt ”!” framför ett visst kommando)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3833"/>
+      <location filename="../../../Path/Post/Processor.py" line="3851"/>
       <source>S parameter is required for a tapping operation</source>
       <translation>S-parametern krävs för en gängningsoperation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3841"/>
+      <location filename="../../../Path/Post/Processor.py" line="3859"/>
       <source>S parameter must be &gt; 0 for a tapping operation</source>
       <translation>S-parametern måste vara &gt; 0 för en gängningsoperation</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="4026"/>
+      <location filename="../../../Path/Post/Processor.py" line="4044"/>
       <source>{op} is on a tilted work plane. Legacy post-processor &apos;{post}&apos; cannot position a rotary machine; select a post-processor of the current kind.</source>
       <translation>{op} är på ett lutat arbetsplan. Den äldre postprocessorn '{post}' kan inte positionera en rotationsmaskin. Välj en postprocessor av aktuell typ.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="180"/>
-      <location filename="../../../Path/Post/scripts/dynapath_post.py" line="156"/>
-      <source>Program Name</source>
-      <translation>Programnamn</translation>
+      <location filename="../../../Path/Post/Utils.py" line="221"/>
+      <source>CAM Export Gcode</source>
+      <translation>CAM-export av G-kod</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="187"/>
-      <source>Name written in the BEGIN PGM and END PGM blocks. Leave empty to derive it from the job label. Characters other than letters, digits and underscore are replaced.</source>
-      <translation>Namnet som skrivs i blocken BEGIN PGM och END PGM. Lämna tomt för att härleda det från jobbets etikett. Andra tecken än bokstäver, siffror och understreck ersätts.</translation>
+      <location filename="../../../Path/Post/Utils.py" line="231"/>
+      <source>Save With Changes</source>
+      <translation>Spara med ändringar</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="193"/>
-      <source>Tool Axis</source>
-      <translation>Verktygsaxel</translation>
+      <location filename="../../../Path/Post/Utils.py" line="238"/>
+      <location filename="../../../Path/Post/Utils.py" line="241"/>
+      <source>Save Without Changes</source>
+      <translation>Spara utan ändringar</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="200"/>
-      <source>Spindle axis written in TOOL CALL and BLK FORM. Arcs are always output in the XY plane.</source>
-      <translation>Spindelaxeln skrivs i TOOL CALL och BLK FORM. Bågar skrivs alltid i XY-planet.</translation>
+      <location filename="../../../Path/Post/Utils.py" line="239"/>
+      <source>Abort</source>
+      <translation>Avbryt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="206"/>
-      <source>Rapid Feed Rate (0 = FMAX)</source>
-      <translation>Matningshastighet för snabbförflyttning (0 = FMAX)</translation>
+      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="81"/>
+      <source>Use Alternative Tool Change</source>
+      <translation>Använd alternativt verktygsbyte</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="215"/>
-      <source>Feed rate in mm/min written on rapid blocks instead of FMAX. Older controls do not accept FMAX. 0 writes FMAX.</source>
-      <translation>Matningshastighet i mm/min som skrivs i snabbförflyttningsblock i stället för FMAX. Äldre styrsystem accepterar inte FMAX. 0 skriver FMAX.</translation>
+      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="83"/>
+      <source>Use M0 instead of M6 for tool changes</source>
+      <translation>Använd M0 i stället för M6 vid verktygsbyte</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="221"/>
-      <source>Drill Cycle Format</source>
-      <translation>Format för borrningscykel</translation>
+      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="90"/>
+      <source>Estlcam post processor</source>
+      <translation>Estlcam-postprocessor</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="230"/>
-      <source>q_parameter: CYCL DEF 200/202/203/207 with Q parameters (TNC 4xx and newer). legacy: CYCL DEF 1.x PECKING and 17.x RIGID TAPPING for controls without Q-parameter cycles.</source>
-      <translation>q_parameter: CYCL DEF 200/202/203/207 med Q-parametrar (TNC 4xx och nyare). legacy: CYCL DEF 1.x PECKING och 17.x RIGID TAPPING för styrsystem utan cykler med Q-parametrar.</translation>
+      <location filename="../../../Path/Post/scripts/marlin_post.py" line="85"/>
+      <source>Marlin post processor</source>
+      <translation>Marlin-postprocessor</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="236"/>
-      <source>Drill Cycle Set-Up Clearance</source>
-      <translation>Inställningsfrigång för borrningscykel</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="246"/>
-      <source>Set-up clearance (Q200) in mm. The cycle&apos;s surface coordinate is placed this far below the operation&apos;s retract height so that feed motion starts at the retract height, as in the G-code cycle.</source>
-      <translation>Inställningsfrigång (Q200) i mm. Cyklens ytekoordinat placeras så långt under operationens återdragningshöjd att matningsrörelsen börjar vid återdragningshöjden, som i G-kodcykeln.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="252"/>
-      <source>Chip Breaking Retract</source>
-      <translation>Återdragning för spånbrytning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="261"/>
-      <source>Retraction distance (Q256) in mm used for G73 chip breaking in CYCL DEF 203.</source>
-      <translation>Återdragningsavstånd (Q256) i mm som används för G73-spånbrytning i CYCL DEF 203.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="267"/>
-      <source>Fixture Output</source>
-      <translation>Utdata för uppspänning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="275"/>
-      <source>preset: CYCL DEF 247 PRESETTING selects a preset table entry. datum: CYCL DEF 7 DATUM SHIFT selects a datum table entry. none: fixture commands are not output.</source>
-      <translation>preset: CYCL DEF 247 PRESETTING väljer en post i förinställningstabellen. datum: CYCL DEF 7 DATUM SHIFT väljer en post i nollpunktstabellen. none: uppspänningskommandon skrivs inte.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="281"/>
-      <source>Fixture Number for G54</source>
-      <translation>Uppspänningsnummer för G54</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="288"/>
-      <source>Preset or datum number selected for G54. G55 selects the next one, and so on.</source>
-      <translation>Förinställnings- eller nollpunktsnumret för G54. G55 väljer nästa och så vidare.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="294"/>
-      <source>Output BLK FORM</source>
-      <translation>Skriv BLK FORM</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="300"/>
-      <source>Write the stock bounding box as BLK FORM 0.1 / 0.2 blocks after BEGIN PGM for graphic simulation on the control.</source>
-      <translation>Skriv råmaterialets begränsningslåda som BLK FORM 0.1 / 0.2-block efter BEGIN PGM för grafisk simulering i styrsystemet.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="311"/>
-      <source>Heidenhain Klartext post processor</source>
-      <translation>Heidenhain Klartext-postprocessor</translation>
+      <location filename="../../../Path/Post/scripts/centroid_post.py" line="87"/>
+      <source>Centroid post processor</source>
+      <translation>Centroid-postprocessor</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/mach3_mach4_post.py" line="59"/>
       <source>Mach3_Mach4 post processor</source>
       <translation>Mach3_Mach4-postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/masso_g3_post.py" line="61"/>
+      <source>Masso G3 post processor</source>
+      <translation>Masso G3-postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/grbl_post.py" line="64"/>
+      <source>Grbl post processor</source>
+      <translation>Grbl-postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="138"/>
+      <source>G-code inserted before the rotary axes move, and before a tilted work plane is aligned to with G53.1. Put the moves that bring the tool clear of the part here, in machine coordinates: G53 G0 Z0 lifts the tool to machine Z zero; G91 G28 Z0 followed by G90 references it. Left empty, nothing clears the part before the table turns, and the sanity check says so.</source>
+      <translation>G-kod som infogas innan rotationsaxlarna flyttas och innan ett lutat arbetsplan riktas in med G53.1. Ange här rörelserna som för verktyget fritt från detaljen, i maskinkoordinater: G53 G0 Z0 lyfter verktyget till maskinens Z-nollpunkt; G91 G28 Z0 följt av G90 referenskör det. Om fältet lämnas tomt förs verktyget inte fritt från detaljen innan bordet vrids, vilket rimlighetskontrollen påpekar.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="146"/>
+      <source>G-code inserted after the rotary axes have moved. Under the DWO rotation strategy this is where the control&apos;s dynamic fixture offset is selected: G54.2 P1 on a Fanuc with that option. Under TWP the plane command handles the rotation and this block is usually empty.</source>
+      <translation>G-kod som infogas efter att rotationsaxlarna har flyttats. Med rotationsstrategin DWO väljs här styrsystemets dynamiska uppspänningsförskjutning: G54.2 P1 på en Fanuc med det tillvalet. Med TWP hanterar plankommandot rotationen och detta block är normalt tomt.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="155"/>
+      <source>The line that points the tool along a declared plane&apos;s normal. Empty is G53.1, which positions the rotary axes for the plane declared by G68.2. 30i-class controls with the option accept G53.6 to keep the tool tip in place while the rotaries move.</source>
+      <translation>Raden som riktar verktyget längs normalen till ett deklarerat plan. Tomt innebär G53.1, som positionerar rotationsaxlarna för planet som deklareras av G68.2. Styrsystem i 30i-klassen med tillvalet accepterar G53.6 för att behålla verktygsspetsens läge medan rotationsaxlarna flyttas.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="165"/>
+      <source>Program Number</source>
+      <translation>Programnummer</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="174"/>
+      <source>The O number written after the leading % mark, zero-padded to four digits. 0 writes no O line. The control files the program under this number when it is loaded.</source>
+      <translation>O-numret som skrivs efter det inledande %-tecknet, nollutfyllt till fyra siffror. 0 skriver ingen O-rad. Styrsystemet lagrar programmet under detta nummer när det läses in.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="180"/>
+      <source>Tape Marks (%)</source>
+      <translation>Bandmarkeringar (%)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="185"/>
+      <source>Write % as the first and last line, as tape-format DNC expects.</source>
+      <translation>Skriv % som första och sista rad, som DNC i bandformat förväntar sig.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="191"/>
+      <source>Upper-Case Output</source>
+      <translation>Utdata med versaler</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="197"/>
+      <source>Write the whole program in upper case, comments included. Older controls read nothing else.</source>
+      <translation>Skriv hela programmet med versaler, även kommentarer. Äldre styrsystem läser inget annat.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="203"/>
+      <source>Dwell in Milliseconds</source>
+      <translation>Väntetid i millisekunder</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="210"/>
+      <source>Write the P word of G4 and of the dwelling canned cycles as an integer number of milliseconds, the Fanuc default (parameter DWL = 0). Off, P is written in seconds with decimals, for a control set to read it that way.</source>
+      <translation>Skriv P-ordet i G4 och cyklerna med väntetid som ett helt antal millisekunder, Fanucs standard (parametern DWL = 0). Av innebär att P skrivs i sekunder med decimaler för ett styrsystem som är inställt på att läsa det så.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="216"/>
+      <source>Rigid Tapping (M29)</source>
+      <translation>Rigid gängning (M29)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="224"/>
+      <source>Write M29 S&lt;rpm&gt; immediately before every G84 or G74 block, so the control synchronises the spindle with the feed. Off, the cycle runs with a floating tap holder. The feed is pitch times spindle speed in either case.</source>
+      <translation>Skriv M29 S&lt;rpm&gt; omedelbart före varje G84- eller G74-block, så att styrsystemet synkroniserar spindeln med matningen. Av innebär att cykeln körs med flytande gängtappshållare. Matningen är i båda fallen stigningen gånger spindelhastigheten.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="230"/>
+      <source>Parametric Tool Length Offset</source>
+      <translation>Parametrisk verktygslängdkompensering</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="237"/>
+      <source>After a tool change write G91 G0 G43 G54 Z-[#[2000+#4120]] H#4120 and G90 instead of G43 H&lt;n&gt;. For shops whose offset table keeps the negated length of tool n in #[2000+n]; #4120 is the active T code.</source>
+      <translation>Skriv G91 G0 G43 G54 Z-[#[2000+#4120]] H#4120 och G90 efter ett verktygsbyte i stället för G43 H&lt;n&gt;. För verkstäder vars offsettabell behåller den negerade längden för verktyg n i #[2000+n]. #4120 är den aktiva T-koden.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="243"/>
+      <source>Park Empty Spindle at End</source>
+      <translation>Parkera tom spindel vid slutet</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="250"/>
+      <source>Before the postamble stop the spindle, retract, and write M6 T0 so the last tool goes back to the magazine. Not every control accepts T0; leave this off unless yours does.</source>
+      <translation>Stoppa spindeln, dra tillbaka verktyget och skriv M6 T0 före avslutningen så att det sista verktyget återgår till magasinet. Alla styrsystem accepterar inte T0. Lämna detta av om ditt inte gör det.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="256"/>
+      <source>Empty-Spindle Retract</source>
+      <translation>Återdragning med tom spindel</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="262"/>
+      <source>The retract written between M05 and M6 T0 when the empty-spindle park is on.</source>
+      <translation>Återdragningen som skrivs mellan M05 och M6 T0 när parkering med tom spindel är aktiverad.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="273"/>
+      <source>Fanuc post processor</source>
+      <translation>Fanuc-postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="347"/>
+      <source>Rigid tapping needs a spindle speed: {op} taps with {cmd} and no S has been commanded</source>
+      <translation>Rigid gängning kräver en spindelhastighet: {op} gängar med {cmd} och inget S har angivits</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="508"/>
+      <source>&apos;{op}&apos; taps with {cmd} but commands no spindle speed; rigid tapping (M29) needs one</source>
+      <translation>'{op}' gängar med {cmd} men anger ingen spindelhastighet. Rigid gängning (M29) kräver en</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="108"/>
+      <source>G-code inserted before the rotary axes move, and before a tilted work plane is aligned to with G53.1. Put the moves that bring the tool clear of the part here, in machine coordinates: G53 G0 Z0 lifts the tool tip to machine Z zero; on the kinematics of LinuxCNC pull request #4374, G53.5 G0 Z0 parks the Z slide whatever the head is doing. Left empty, nothing clears the part before the table turns, and the sanity check says so.</source>
+      <translation>G-kod som infogas innan rotationsaxlarna flyttas och innan ett lutat arbetsplan riktas in med G53.1. Lägg de förflyttningar som för verktyget fritt från detaljen här, i maskinkoordinater: G53 G0 Z0 lyfter verktygsspetsen till maskinens Z-nollpunkt; med kinematiken i ändringsförslag #4374 för LinuxCNC parkerar G53.5 G0 Z0 Z-axelns glid oavsett vad huvudet gör. Om fältet lämnas tomt frigörs inte detaljen innan bordet vrids och rimlighetskontrollen meddelar det.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="117"/>
+      <source>The line that points the tool along a declared plane&apos;s normal. Empty is G53.1, which moves the rotaries alone and lets the tool tip swing: G53.1 P1 or P2 names which of the two poses, Q1 lets the table take part. G53.6 keeps the tool center point where it is instead.</source>
+      <translation>Raden som riktar verktyget längs normalriktningen för ett angivet plan. Tomt betyder G53.1, som enbart flyttar rotationsaxlarna och låter verktygsspetsen svänga: G53.1 P1 eller P2 anger vilken av de två positionerna, Q1 låter bordet medverka. G53.6 behåller i stället verktygscentrumet där det är.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="127"/>
+      <source>Path Blending Mode</source>
+      <translation>Läge för banutjämning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="134"/>
+      <source>Path blending mode: EXACT_PATH (G61) stops at each point, EXACT_STOP (G61.1) stops at path ends, BLEND (G64) allows smooth motion</source>
+      <translation>Banutjämningsläge: EXACT_PATH (G61) följer den programmerade banan exakt, EXACT_STOP (G61.1) stannar vid slutet av varje programmerat segment och BLEND (G64) tillåter mjuk rörelse</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="140"/>
+      <source>Blend Tolerance</source>
+      <translation>Tolerans för banutjämning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="149"/>
+      <source>Tolerance for BLEND mode (P value): 0 = no tolerance (G64), &gt;0 = tolerance (G64 P-), in current units</source>
+      <translation>Tolerans för BLEND-läge (P-värde): 0 = ingen angiven tolerans (G64), &gt;0 = angiven tolerans (G64 P-), i aktuella enheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="155"/>
+      <source>Tilted work plane: kinematics select</source>
+      <translation>Lutat arbetsplan: val av kinematik</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="163"/>
+      <source>A line emitted after the preamble when the job has an operation on a tilted work plane. G53.1 needs a kinematics type whose frames describe the machine; on a switchable module that starts in identity kinematics this is where G12.1 P1 goes.</source>
+      <translation>En rad som genereras efter inledningen när jobbet har en operation på ett lutat arbetsplan. G53.1 behöver en kinematiktyp vars referensramar beskriver maskinen. I en växlingsbar modul som börjar med identitetskinematik ska G12.1 P1 placeras här.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="170"/>
+      <source>LinuxCNC post processor</source>
+      <translation>LinuxCNC-postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/test_post.py" line="57"/>
+      <source>Test post processor</source>
+      <translation>Testpostprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="170"/>
+      <source>Automatic Tool Changer</source>
+      <translation>Automatisk verktygsväxlare</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="176"/>
+      <source>Enable if machine has automatic tool changer. If disabled, tool changes will pause for manual intervention.</source>
+      <translation>Aktivera om maskinen har en automatisk verktygsväxlare. Om detta är inaktiverat pausas verktygsbyten för manuell åtgärd.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="182"/>
+      <source>Automatic Spindle Control</source>
+      <translation>Automatisk spindelstyrning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="188"/>
+      <source>Enable if machine has automatic spindle speed control. If disabled, spindle commands will prompt for manual adjustment.</source>
+      <translation>Aktivera om maskinen har automatisk styrning av spindelvarvtalet. Om detta är inaktiverat leder spindelkommandon till uppmaningar om manuell justering.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="195"/>
+      <source>OpenSBP post processor for ShopBot controllers</source>
+      <translation>OpenSBP-postprocessor för ShopBot-styrenheter</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="105"/>
@@ -10869,229 +10869,100 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
       <translation>Generisk postprocessor för plåtskärning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="170"/>
-      <source>Automatic Tool Changer</source>
-      <translation>Automatisk verktygsväxlare</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="180"/>
+      <location filename="../../../Path/Post/scripts/dynapath_post.py" line="156"/>
+      <source>Program Name</source>
+      <translation>Programnamn</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="176"/>
-      <source>Enable if machine has automatic tool changer. If disabled, tool changes will pause for manual intervention.</source>
-      <translation>Aktivera om maskinen har en automatisk verktygsväxlare. Om detta är inaktiverat pausas verktygsbyten för manuell åtgärd.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="187"/>
+      <source>Name written in the BEGIN PGM and END PGM blocks. Leave empty to derive it from the job label. Characters other than letters, digits and underscore are replaced.</source>
+      <translation>Namnet som skrivs i blocken BEGIN PGM och END PGM. Lämna tomt för att härleda det från jobbets etikett. Andra tecken än bokstäver, siffror och understreck ersätts.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="182"/>
-      <source>Automatic Spindle Control</source>
-      <translation>Automatisk spindelstyrning</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="193"/>
+      <source>Tool Axis</source>
+      <translation>Verktygsaxel</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="188"/>
-      <source>Enable if machine has automatic spindle speed control. If disabled, spindle commands will prompt for manual adjustment.</source>
-      <translation>Aktivera om maskinen har automatisk styrning av spindelvarvtalet. Om detta är inaktiverat leder spindelkommandon till uppmaningar om manuell justering.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="200"/>
+      <source>Spindle axis written in TOOL CALL and BLK FORM. Arcs are always output in the XY plane.</source>
+      <translation>Spindelaxeln skrivs i TOOL CALL och BLK FORM. Bågar skrivs alltid i XY-planet.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="195"/>
-      <source>OpenSBP post processor for ShopBot controllers</source>
-      <translation>OpenSBP-postprocessor för ShopBot-styrenheter</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="206"/>
+      <source>Rapid Feed Rate (0 = FMAX)</source>
+      <translation>Matningshastighet för snabbförflyttning (0 = FMAX)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="108"/>
-      <source>G-code inserted before the rotary axes move, and before a tilted work plane is aligned to with G53.1. Put the moves that bring the tool clear of the part here, in machine coordinates: G53 G0 Z0 lifts the tool tip to machine Z zero; on the kinematics of LinuxCNC pull request #4374, G53.5 G0 Z0 parks the Z slide whatever the head is doing. Left empty, nothing clears the part before the table turns, and the sanity check says so.</source>
-      <translation>G-kod som infogas innan rotationsaxlarna flyttas och innan ett lutat arbetsplan riktas in med G53.1. Lägg de förflyttningar som för verktyget fritt från detaljen här, i maskinkoordinater: G53 G0 Z0 lyfter verktygsspetsen till maskinens Z-nollpunkt; med kinematiken i ändringsförslag #4374 för LinuxCNC parkerar G53.5 G0 Z0 Z-axelns glid oavsett vad huvudet gör. Om fältet lämnas tomt frigörs inte detaljen innan bordet vrids och rimlighetskontrollen meddelar det.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="215"/>
+      <source>Feed rate in mm/min written on rapid blocks instead of FMAX. Older controls do not accept FMAX. 0 writes FMAX.</source>
+      <translation>Matningshastighet i mm/min som skrivs i snabbförflyttningsblock i stället för FMAX. Äldre styrsystem accepterar inte FMAX. 0 skriver FMAX.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="117"/>
-      <source>The line that points the tool along a declared plane&apos;s normal. Empty is G53.1, which moves the rotaries alone and lets the tool tip swing: G53.1 P1 or P2 names which of the two poses, Q1 lets the table take part. G53.6 keeps the tool center point where it is instead.</source>
-      <translation>Raden som riktar verktyget längs normalriktningen för ett angivet plan. Tomt betyder G53.1, som enbart flyttar rotationsaxlarna och låter verktygsspetsen svänga: G53.1 P1 eller P2 anger vilken av de två positionerna, Q1 låter bordet medverka. G53.6 behåller i stället verktygscentrumet där det är.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="221"/>
+      <source>Drill Cycle Format</source>
+      <translation>Format för borrningscykel</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="127"/>
-      <source>Path Blending Mode</source>
-      <translation>Läge för banutjämning</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="230"/>
+      <source>q_parameter: CYCL DEF 200/202/203/207 with Q parameters (TNC 4xx and newer). legacy: CYCL DEF 1.x PECKING and 17.x RIGID TAPPING for controls without Q-parameter cycles.</source>
+      <translation>q_parameter: CYCL DEF 200/202/203/207 med Q-parametrar (TNC 4xx och nyare). legacy: CYCL DEF 1.x PECKING och 17.x RIGID TAPPING för styrsystem utan cykler med Q-parametrar.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="134"/>
-      <source>Path blending mode: EXACT_PATH (G61) stops at each point, EXACT_STOP (G61.1) stops at path ends, BLEND (G64) allows smooth motion</source>
-      <translation>Banutjämningsläge: EXACT_PATH (G61) följer den programmerade banan exakt, EXACT_STOP (G61.1) stannar vid slutet av varje programmerat segment och BLEND (G64) tillåter mjuk rörelse</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="236"/>
+      <source>Drill Cycle Set-Up Clearance</source>
+      <translation>Inställningsfrigång för borrningscykel</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="140"/>
-      <source>Blend Tolerance</source>
-      <translation>Tolerans för banutjämning</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="246"/>
+      <source>Set-up clearance (Q200) in mm. The cycle&apos;s surface coordinate is placed this far below the operation&apos;s retract height so that feed motion starts at the retract height, as in the G-code cycle.</source>
+      <translation>Inställningsfrigång (Q200) i mm. Cyklens ytekoordinat placeras så långt under operationens återdragningshöjd att matningsrörelsen börjar vid återdragningshöjden, som i G-kodcykeln.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="149"/>
-      <source>Tolerance for BLEND mode (P value): 0 = no tolerance (G64), &gt;0 = tolerance (G64 P-), in current units</source>
-      <translation>Tolerans för BLEND-läge (P-värde): 0 = ingen angiven tolerans (G64), &gt;0 = angiven tolerans (G64 P-), i aktuella enheter</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="252"/>
+      <source>Chip Breaking Retract</source>
+      <translation>Återdragning för spånbrytning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="155"/>
-      <source>Tilted work plane: kinematics select</source>
-      <translation>Lutat arbetsplan: val av kinematik</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="261"/>
+      <source>Retraction distance (Q256) in mm used for G73 chip breaking in CYCL DEF 203.</source>
+      <translation>Återdragningsavstånd (Q256) i mm som används för G73-spånbrytning i CYCL DEF 203.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="163"/>
-      <source>A line emitted after the preamble when the job has an operation on a tilted work plane. G53.1 needs a kinematics type whose frames describe the machine; on a switchable module that starts in identity kinematics this is where G12.1 P1 goes.</source>
-      <translation>En rad som genereras efter preambeln när jobbet har en operation på ett lutat arbetsplan. G53.1 behöver en kinematiktyp vars ramar beskriver maskinen. I en växlingsbar modul som börjar med identitetskinematik ska G12.1 P1 placeras här.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="267"/>
+      <source>Fixture Output</source>
+      <translation>Utdata för uppspänning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="170"/>
-      <source>LinuxCNC post processor</source>
-      <translation>LinuxCNC-postprocessor</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="275"/>
+      <source>preset: CYCL DEF 247 PRESETTING selects a preset table entry. datum: CYCL DEF 7 DATUM SHIFT selects a datum table entry. none: fixture commands are not output.</source>
+      <translation>preset: CYCL DEF 247 PRESETTING väljer en post i förinställningstabellen. datum: CYCL DEF 7 DATUM SHIFT väljer en post i nollpunktstabellen. none: uppspänningskommandon skrivs inte.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/marlin_post.py" line="85"/>
-      <source>Marlin post processor</source>
-      <translation>Marlin-postprocessor</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="281"/>
+      <source>Fixture Number for G54</source>
+      <translation>Uppspänningsnummer för G54</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="138"/>
-      <source>G-code inserted before the rotary axes move, and before a tilted work plane is aligned to with G53.1. Put the moves that bring the tool clear of the part here, in machine coordinates: G53 G0 Z0 lifts the tool to machine Z zero; G91 G28 Z0 followed by G90 references it. Left empty, nothing clears the part before the table turns, and the sanity check says so.</source>
-      <translation>G-kod som infogas innan rotationsaxlarna flyttas och innan ett lutat arbetsplan riktas in med G53.1. Ange här rörelserna som för verktyget fritt från detaljen, i maskinkoordinater: G53 G0 Z0 lyfter verktyget till maskinens Z-nollpunkt; G91 G28 Z0 följt av G90 referenskör det. Om fältet lämnas tomt frikopplas inget från detaljen innan bordet vrids och förnuftskontrollen anger det.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="288"/>
+      <source>Preset or datum number selected for G54. G55 selects the next one, and so on.</source>
+      <translation>Förinställnings- eller nollpunktsnumret för G54. G55 väljer nästa och så vidare.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="146"/>
-      <source>G-code inserted after the rotary axes have moved. Under the DWO rotation strategy this is where the control&apos;s dynamic fixture offset is selected: G54.2 P1 on a Fanuc with that option. Under TWP the plane command handles the rotation and this block is usually empty.</source>
-      <translation>G-kod som infogas efter att rotationsaxlarna har flyttats. Med rotationsstrategin DWO väljs här styrsystemets dynamiska uppspänningsförskjutning: G54.2 P1 på en Fanuc med det tillvalet. Med TWP hanterar plankommandot rotationen och detta block är normalt tomt.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="294"/>
+      <source>Output BLK FORM</source>
+      <translation>Skriv BLK FORM</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="155"/>
-      <source>The line that points the tool along a declared plane&apos;s normal. Empty is G53.1, which positions the rotary axes for the plane declared by G68.2. 30i-class controls with the option accept G53.6 to keep the tool tip in place while the rotaries move.</source>
-      <translation>Raden som riktar verktyget längs normalen till ett deklarerat plan. Tomt innebär G53.1, som positionerar rotationsaxlarna för planet som deklareras av G68.2. Styrsystem i 30i-klassen med tillvalet accepterar G53.6 för att behålla verktygsspetsens läge medan rotationsaxlarna flyttas.</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="300"/>
+      <source>Write the stock bounding box as BLK FORM 0.1 / 0.2 blocks after BEGIN PGM for graphic simulation on the control.</source>
+      <translation>Skriv ämnets avgränsningsruta som BLK FORM 0.1 / 0.2-block efter BEGIN PGM för grafisk simulering i styrsystemet.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="165"/>
-      <source>Program Number</source>
-      <translation>Programnummer</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="174"/>
-      <source>The O number written after the leading % mark, zero-padded to four digits. 0 writes no O line. The control files the program under this number when it is loaded.</source>
-      <translation>O-numret som skrivs efter det inledande %-tecknet, nollutfyllt till fyra siffror. 0 skriver ingen O-rad. Styrsystemet lagrar programmet under detta nummer när det läses in.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="180"/>
-      <source>Tape Marks (%)</source>
-      <translation>Bandmarkeringar (%)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="185"/>
-      <source>Write % as the first and last line, as tape-format DNC expects.</source>
-      <translation>Skriv % som första och sista rad, som DNC i bandformat förväntar sig.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="191"/>
-      <source>Upper-Case Output</source>
-      <translation>Utdata med versaler</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="197"/>
-      <source>Write the whole program in upper case, comments included. Older controls read nothing else.</source>
-      <translation>Skriv hela programmet med versaler, även kommentarer. Äldre styrsystem läser inget annat.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="203"/>
-      <source>Dwell in Milliseconds</source>
-      <translation>Väntetid i millisekunder</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="210"/>
-      <source>Write the P word of G4 and of the dwelling canned cycles as an integer number of milliseconds, the Fanuc default (parameter DWL = 0). Off, P is written in seconds with decimals, for a control set to read it that way.</source>
-      <translation>Skriv P-ordet i G4 och cyklerna med väntetid som ett helt antal millisekunder, Fanucs standard (parametern DWL = 0). Av innebär att P skrivs i sekunder med decimaler för ett styrsystem som är inställt på att läsa det så.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="216"/>
-      <source>Rigid Tapping (M29)</source>
-      <translation>Rigid gängning (M29)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="224"/>
-      <source>Write M29 S&lt;rpm&gt; immediately before every G84 or G74 block, so the control synchronises the spindle with the feed. Off, the cycle runs with a floating tap holder. The feed is pitch times spindle speed in either case.</source>
-      <translation>Skriv M29 S&lt;rpm&gt; omedelbart före varje G84- eller G74-block, så att styrsystemet synkroniserar spindeln med matningen. Av innebär att cykeln körs med flytande gängtappshållare. Matningen är i båda fallen stigningen gånger spindelhastigheten.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="230"/>
-      <source>Parametric Tool Length Offset</source>
-      <translation>Parametrisk verktygslängdkompensering</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="237"/>
-      <source>After a tool change write G91 G0 G43 G54 Z-[#[2000+#4120]] H#4120 and G90 instead of G43 H&lt;n&gt;. For shops whose offset table keeps the negated length of tool n in #[2000+n]; #4120 is the active T code.</source>
-      <translation>Skriv G91 G0 G43 G54 Z-[#[2000+#4120]] H#4120 och G90 efter ett verktygsbyte i stället för G43 H&lt;n&gt;. För verkstäder vars offsettabell behåller den negerade längden för verktyg n i #[2000+n]. #4120 är den aktiva T-koden.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="243"/>
-      <source>Park Empty Spindle at End</source>
-      <translation>Parkera tom spindel vid slutet</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="250"/>
-      <source>Before the postamble stop the spindle, retract, and write M6 T0 so the last tool goes back to the magazine. Not every control accepts T0; leave this off unless yours does.</source>
-      <translation>Stoppa spindeln, dra tillbaka och skriv M6 T0 före postamblen så att det sista verktyget återgår till magasinet. Alla styrsystem accepterar inte T0. Lämna detta av om ditt inte gör det.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="256"/>
-      <source>Empty-Spindle Retract</source>
-      <translation>Återdragning med tom spindel</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="262"/>
-      <source>The retract written between M05 and M6 T0 when the empty-spindle park is on.</source>
-      <translation>Återdragningen som skrivs mellan M05 och M6 T0 när parkering med tom spindel är aktiverad.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="273"/>
-      <source>Fanuc post processor</source>
-      <translation>Fanuc-postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="347"/>
-      <source>Rigid tapping needs a spindle speed: {op} taps with {cmd} and no S has been commanded</source>
-      <translation>Rigid gängning kräver en spindelhastighet: {op} gängar med {cmd} och inget S har angivits</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/fanuc_post.py" line="508"/>
-      <source>&apos;{op}&apos; taps with {cmd} but commands no spindle speed; rigid tapping (M29) needs one</source>
-      <translation>'{op}' gängar med {cmd} men anger ingen spindelhastighet. Rigid gängning (M29) kräver en</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/smoothie_post.py" line="64"/>
-      <source>Refactored SmoothieBoard post processor</source>
-      <translation>Omstrukturerad SmoothieBoard-postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/test_post.py" line="57"/>
-      <source>Test post processor</source>
-      <translation>Testpostprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/masso_g3_post.py" line="61"/>
-      <source>Masso G3 post processor</source>
-      <translation>Masso G3-postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="81"/>
-      <source>Use Alternative Tool Change</source>
-      <translation>Använd alternativt verktygsbyte</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="83"/>
-      <source>Use M0 instead of M6 for tool changes</source>
-      <translation>Använd M0 i stället för M6 vid verktygsbyte</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="90"/>
-      <source>Estlcam post processor</source>
-      <translation>Estlcam-postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/centroid_post.py" line="87"/>
-      <source>Centroid post processor</source>
-      <translation>Centroid-postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/grbl_post.py" line="64"/>
-      <source>Grbl post processor</source>
-      <translation>Grbl-postprocessor</translation>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="311"/>
+      <source>Heidenhain Klartext post processor</source>
+      <translation>Heidenhain Klartext-postprocessor</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/dynapath_post.py" line="139"/>
@@ -11131,7 +11002,7 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
     <message>
       <location filename="../../../Path/Post/scripts/dynapath_post.py" line="201"/>
       <source>Write the operation&apos;s clearance height as the O word of every quill cycle: the absolute Z the tool returns to before the rapid to the next hole, so it clears a clamp the R plane would not. Off, the cycle retracts to R between holes.</source>
-      <translation>Skriv operationens frigångshöjd som O-ordet för varje dubbcykel: det absoluta Z som verktyget återgår till före snabbrörelsen till nästa hål, så att det går fritt från en klämma som R-planet inte skulle undvika. När avstängt dras cykeln tillbaka till R mellan hålen.</translation>
+      <translation>Skriv operationens frigångshöjd som O-ordet för varje borrspindelcykel: den absoluta Z-koordinat som verktyget återgår till före snabbförflyttningen till nästa hål, så att det går fritt från en klämma som R-planet inte skulle undvika. När funktionen är avstängd dras verktyget tillbaka till R mellan hålen.</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/dynapath_post.py" line="207"/>
@@ -11164,6 +11035,16 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
       <translation>Sekvensnummer skulle nå N{last}, men en Dynapath stannar vid N{max}. Stäng av radnummer, minska steget eller dela upp utdata.</translation>
     </message>
     <message>
+      <location filename="../../../Path/Post/scripts/smoothie_post.py" line="64"/>
+      <source>Refactored SmoothieBoard post processor</source>
+      <translation>Omstrukturerad SmoothieBoard-postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/models/taperedballnose.py" line="53"/>
+      <source>{diameter} tip, {taper_angle} taper, {flutes}-flute tapered ball nose, {cutting_edge_height} cutting edge</source>
+      <translation>Konisk kulfräs med spetsdiameter {diameter}, konvinkel {taper_angle}, {flutes} skär och skärlängd {cutting_edge_height}</translation>
+    </message>
+    <message>
       <location filename="../../../Path/Base/Generator/leadinout.py" line="950"/>
       <source>Exceeded length in cutTravelEnd</source>
       <translation>Längden överskreds i cutTravelEnd</translation>
@@ -11172,26 +11053,6 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
       <location filename="../../../Path/Base/Generator/leadinout.py" line="971"/>
       <source>Exceeded length in cutTravelBegin</source>
       <translation>Längden överskreds i cutTravelBegin</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/models/taperedballnose.py" line="53"/>
-      <source>{diameter} tip, {taper_angle} taper, {flutes}-flute tapered ball nose, {cutting_edge_height} cutting edge</source>
-      <translation>Konisk kulfräs med spetsdiameter {diameter}, konvinkel {taper_angle}, {flutes} skär och skärlängd {cutting_edge_height}</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="380"/>
-      <source>Adaptive operation couldn&apos;t determine the boundary wire. Did you select base geometry?</source>
-      <translation>Den adaptiva operationen kunde inte fastställa gränstråden. Har du valt basgeometri?</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="106"/>
-      <source>No Job found to add a work plane to.</source>
-      <translation>Inget jobb hittades att lägga till ett arbetsplan i.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="137"/>
-      <source>Created %s at the Job origin. Select a planar face before the command to derive one from the model.</source>
-      <translation>Skapade %s vid jobbets origo. Välj en plan yta före kommandot för att härleda ett från modellen.</translation>
     </message>
   </context>
   <context>
@@ -11256,49 +11117,49 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
       <translation>Skapar en helixformad verktygsbana från formelementen i ett basobjekt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="89"/>
+      <location filename="../../../Path/Op/Helix.py" line="91"/>
       <source>CW</source>
       <translation>Medurs</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="90"/>
+      <location filename="../../../Path/Op/Helix.py" line="92"/>
       <source>CCW</source>
       <translation>Moturs</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="93"/>
-      <location filename="../../../Path/Op/Helix.py" line="101"/>
+      <location filename="../../../Path/Op/Helix.py" line="95"/>
+      <location filename="../../../Path/Op/Helix.py" line="103"/>
       <source>Inside</source>
       <translation>Inuti</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="94"/>
-      <location filename="../../../Path/Op/Helix.py" line="102"/>
+      <location filename="../../../Path/Op/Helix.py" line="96"/>
+      <location filename="../../../Path/Op/Helix.py" line="104"/>
       <source>Outside</source>
       <translation>Utanför</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="97"/>
+      <location filename="../../../Path/Op/Helix.py" line="99"/>
       <source>Climb</source>
       <translation>Medfräsning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="98"/>
+      <location filename="../../../Path/Op/Helix.py" line="100"/>
       <source>Conventional</source>
       <translation>Motfräsning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="332"/>
+      <location filename="../../../Path/Op/Helix.py" line="334"/>
       <source>Faces Cone angle is not identical</source>
       <translation>Ytornas konvinkel är inte identisk</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="339"/>
+      <location filename="../../../Path/Op/Helix.py" line="341"/>
       <source>Automatic cone angle definition allowed only for cone faces</source>
       <translation>Automatisk definition av konvinkel tillåts endast för koniska ytor</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="761"/>
+      <location filename="../../../Path/Op/Helix.py" line="777"/>
       <source>Skipped hole at position %s</source>
       <translation>Hoppade över hål vid position %s</translation>
     </message>
@@ -11366,32 +11227,27 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
       <translation>Förskjutning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="73"/>
-      <source>Helix</source>
-      <translation>Helix</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="76"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="75"/>
       <source>No clearing</source>
       <translation>Ingen rensning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="79"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="78"/>
       <source>Automatic</source>
       <translation>Automatisk</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="80"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="79"/>
       <source>Manual</source>
       <translation>Manuellt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="74"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="73"/>
       <source>Line</source>
       <translation>Rad</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="75"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="74"/>
       <source>Grid</source>
       <translation>Rutnät</translation>
     </message>
@@ -11416,7 +11272,7 @@ Spindle_Control: Alla M3/M5-kommandon skickas ut oförändrade.</translation>
       <translation>Förlängningar</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/PocketBase.py" line="189"/>
+      <location filename="../../../Path/Op/Gui/PocketBase.py" line="239"/>
       <source>Set start point: %s, %s</source>
       <translation>Ange startpunkt: %s, %s</translation>
     </message>
@@ -11940,7 +11796,7 @@ Endast följande markeringar från en och samma modell tillåts:
     <message>
       <location filename="../../../Path/Op/Gui/Copy.py" line="95"/>
       <source>Creates a linked copy of another toolpath</source>
-      <translation>Skapar en länkad kopia av en annan verktygsbana</translation>
+      <translation>Skapa ett anpassat G-kodavsnitt</translation>
     </message>
   </context>
   <context>
@@ -12012,12 +11868,12 @@ Endast följande markeringar från en och samma modell tillåts:
   <context>
     <name>CAM_MillFace</name>
     <message>
-      <location filename="../../../Path/Op/Gui/MillFace.py" line="74"/>
+      <location filename="../../../Path/Op/Gui/MillFace.py" line="76"/>
       <source>Face</source>
       <translation>Ansikte</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/MillFace.py" line="75"/>
+      <location filename="../../../Path/Op/Gui/MillFace.py" line="77"/>
       <source>Create a Facing Operation from a model or face</source>
       <translation>Skapa en ytoperation från en modell eller en yta</translation>
     </message>
@@ -12070,7 +11926,7 @@ Endast följande markeringar från en och samma modell tillåts:
       <source>Creates a non-parametric copy of another toolpath
 Several operations can be used with identical tool controller and coolant mode</source>
       <translation>Skapar en icke-parametrisk kopia av en annan verktygsbana
-Flera operationer kan användas med identisk verktygsstyrning och identiskt kylmedelsläge</translation>
+Flera operationer kan användas med identisk verktygsstyrning och identiskt kylvätskeläge</translation>
     </message>
   </context>
   <context>
@@ -12122,26 +11978,32 @@ Flera operationer kan användas med identisk verktygsstyrning och identiskt kylm
       <translation>Postprocessar det valda jobbet</translation>
     </message>
     <message>
+      <location filename="../../../Path/Main/Gui/Job.py" line="1542"/>
+      <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="176"/>
+      <source>(Legacy post-processor)</source>
+      <translation>(Äldre postprocessor)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/Processor.py" line="3230"/>
+      <source>&apos;{}&apos; commands spindle speed {} rpm, below the machine minimum of {} rpm</source>
+      <translation>'{}' anger spindelhastigheten {} rpm, under maskinens lägsta värde {} rpm</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/Processor.py" line="3242"/>
+      <source>&apos;{}&apos; commands spindle speed {} rpm, above the machine maximum of {} rpm</source>
+      <translation>'{}' anger spindelhastigheten {} rpm, över maskinens högsta värde {} rpm</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/Processor.py" line="3266"/>
+      <source>Machine defines {} toolheads; spindle speed was not checked against their limits</source>
+      <translation>Maskinen definierar {} verktygshuvuden. Spindelhastigheten kontrollerades inte mot deras gränser</translation>
+    </message>
+    <message>
       <location filename="../../../Path/Post/Utils.py" line="197"/>
       <source>The %T, %t, %W and %O substitutions name the section of a split output. The job is not splitting its output, so they are ignored.
 </source>
       <translation>%T-, %t-, %W- och %O-ersättningarna namnger avsnittet i en delad utdata. Jobbet delar inte utdata, så de ignoreras.
 </translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Processor.py" line="3212"/>
-      <source>&apos;{}&apos; commands spindle speed {} rpm, below the machine minimum of {} rpm</source>
-      <translation>'{}' anger spindelhastigheten {} rpm, under maskinens lägsta värde {} rpm</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Processor.py" line="3224"/>
-      <source>&apos;{}&apos; commands spindle speed {} rpm, above the machine maximum of {} rpm</source>
-      <translation>'{}' anger spindelhastigheten {} rpm, över maskinens högsta värde {} rpm</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Processor.py" line="3248"/>
-      <source>Machine defines {} toolheads; spindle speed was not checked against their limits</source>
-      <translation>Maskinen definierar {} verktygshuvuden. Spindelhastigheten kontrollerades inte mot deras gränser</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="127"/>
@@ -12158,12 +12020,6 @@ Flera operationer kan användas med identisk verktygsstyrning och identiskt kylm
       <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="169"/>
       <source>Post Processing - Job: {}</source>
       <translation>Postprocessning – jobb: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="176"/>
-      <location filename="../../../Path/Main/Gui/Job.py" line="1542"/>
-      <source>(Legacy post-processor)</source>
-      <translation>(Äldre postprocessor)</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="338"/>
@@ -12396,17 +12252,17 @@ Verktygsnummer för {}:</translation>
   <context>
     <name>CAM_Profile</name>
     <message>
-      <location filename="../../../Path/Op/Gui/Profile.py" line="186"/>
+      <location filename="../../../Path/Op/Gui/Profile.py" line="212"/>
       <source>Set start point: %s, %s</source>
       <translation>Ange startpunkt: %s, %s</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Profile.py" line="209"/>
+      <location filename="../../../Path/Op/Gui/Profile.py" line="235"/>
       <source>Profile</source>
       <translation>Profilfräsning</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Profile.py" line="210"/>
+      <location filename="../../../Path/Op/Gui/Profile.py" line="236"/>
       <source>Profile entire model, selected face(s) or selected edge(s)</source>
       <translation>Profilfräs hela modellen, valda ytor eller valda kanter</translation>
     </message>
@@ -12566,7 +12422,6 @@ Verktygsnummer för {}:</translation>
     <message>
       <location filename="../../../Path/Base/Gui/PropertyBag.py" line="428"/>
       <source>Property Bag</source>
-      <extracomment>float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=None) bool = field(default=False) str = field(default=&quot;G54&quot;) str = field(default=&quot;off&quot;) str = Z|R for G98/G99, for drill cycles float = field(default=None) int = field(default=0) int = field(default=None)</extracomment>
       <translation>Egenskapssamling</translation>
     </message>
     <message>
@@ -12679,96 +12534,81 @@ Verktygsnummer för {}:</translation>
   <context>
     <name>ToolBitShape</name>
     <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="34"/>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="46"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="36"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="36"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="36"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="42"/>
       <location filename="../../../Path/Tool/shape/models/endmill.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="34"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="42"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="46"/>
       <source>Cutting edge height</source>
       <translation>Skärlängd</translation>
     </message>
     <message>
+      <location filename="../../../Path/Tool/shape/models/endmill.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="48"/>
       <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="38"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="46"/>
       <location filename="../../../Path/Tool/shape/models/drill.py" line="36"/>
       <location filename="../../../Path/Tool/shape/models/chamfer.py" line="50"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="46"/>
-      <location filename="../../../Path/Tool/shape/models/endmill.py" line="40"/>
       <source>Diameter</source>
       <translation>Diameter</translation>
     </message>
     <message>
+      <location filename="../../../Path/Tool/shape/models/endmill.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="52"/>
       <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="42"/>
+      <location filename="../../../Path/Tool/shape/models/tap.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="50"/>
       <location filename="../../../Path/Tool/shape/models/drill.py" line="40"/>
       <location filename="../../../Path/Tool/shape/models/chamfer.py" line="54"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/tap.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="50"/>
-      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/endmill.py" line="44"/>
       <source>Flutes</source>
       <translation>Antal skär</translation>
     </message>
     <message>
+      <location filename="../../../Path/Tool/shape/models/endmill.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="56"/>
       <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="46"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="54"/>
       <location filename="../../../Path/Tool/shape/models/drill.py" line="44"/>
       <location filename="../../../Path/Tool/shape/models/chamfer.py" line="58"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="54"/>
-      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/endmill.py" line="48"/>
       <source>Overall tool length</source>
       <translation>Verktygets totala längd</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="50"/>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="62"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="60"/>
-      <location filename="../../../Path/Tool/shape/models/tap.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="68"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="60"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="48"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="68"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="50"/>
+      <location filename="../../../Path/Tool/shape/models/tap.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="62"/>
       <source>Shank diameter</source>
       <translation>Skaftets diameter</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="54"/>
-      <source>Included Taper angle</source>
-      <translation>Full konvinkel</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="58"/>
-      <source>Diameter at top of Taper</source>
-      <translation>Diameter vid konans övre ände</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="66"/>
-      <source>Tapered Ball Nose</source>
-      <translation>Konisk kulfräs</translation>
     </message>
     <message>
       <location filename="../../../Path/Tool/shape/models/ballend.py" line="60"/>
@@ -12776,15 +12616,15 @@ Verktygsnummer för {}:</translation>
       <translation>Halvklot</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="42"/>
       <location filename="../../../Path/Tool/shape/models/vbit.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="42"/>
       <source>Cutting edge angle</source>
       <translation>Vinkel på skäregg</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="66"/>
       <location filename="../../../Path/Tool/shape/models/radius.py" line="60"/>
       <location filename="../../../Path/Tool/shape/models/vbit.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="66"/>
       <source>Tip diameter</source>
       <translation>Spetsdiameter</translation>
     </message>
@@ -12799,14 +12639,19 @@ Verktygsnummer för {}:</translation>
       <translation>Okänd anpassad form</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="36"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="36"/>
       <source>Crest height</source>
       <translation>Krönhöjd</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="40"/>
+      <source>Cutting diameter</source>
+      <translation>Skärdiameter</translation>
+    </message>
+    <message>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="64"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="40"/>
       <source>Cutting angle</source>
       <translation>Skärvinkel</translation>
     </message>
@@ -12821,14 +12666,14 @@ Verktygsnummer för {}:</translation>
       <translation>Största diameter</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="60"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="60"/>
       <source>Neck diameter</source>
       <translation>Halsdiameter</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="64"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="64"/>
       <source>Neck length</source>
       <translation>Halslängd</translation>
     </message>
@@ -12838,8 +12683,8 @@ Verktygsnummer för {}:</translation>
       <translation>Laxstjärt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/drill.py" line="48"/>
       <location filename="../../../Path/Tool/shape/models/tap.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/drill.py" line="48"/>
       <source>Tip angle</source>
       <translation>Spetsvinkel</translation>
     </message>
@@ -12919,11 +12764,6 @@ Verktygsnummer för {}:</translation>
       <translation>Gängtapp</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="40"/>
-      <source>Cutting diameter</source>
-      <translation>Skärdiameter</translation>
-    </message>
-    <message>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="72"/>
       <source>Thread Mill</source>
       <translation>Gängfräs</translation>
@@ -12953,12 +12793,27 @@ Verktygsnummer för {}:</translation>
       <source>Radius Mill</source>
       <translation>Radiefräs</translation>
     </message>
+    <message>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="54"/>
+      <source>Included Taper angle</source>
+      <translation>Full konvinkel</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="58"/>
+      <source>Diameter at top of Taper</source>
+      <translation>Diameter vid konans övre ände</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="66"/>
+      <source>Tapered Ball Nose</source>
+      <translation>Konisk kulfräs</translation>
+    </message>
   </context>
   <context>
     <name>ToolBitToolBitShapeShapeEndMill</name>
     <message>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="58"/>
       <location filename="../../../Path/Tool/shape/models/endmill.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="58"/>
       <source>Shank diameter</source>
       <translation>Skaftets diameter</translation>
     </message>
@@ -13124,1542 +12979,48 @@ Verktygsnummer för {}:</translation>
     </message>
   </context>
   <context>
-    <name>CAM_MachineImport</name>
+    <name>CAM_QuickValidate</name>
     <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="106"/>
-      <source>Imported:</source>
-      <translation>Importerat:</translation>
+      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="127"/>
+      <source>Quick Validate</source>
+      <translation>Snabbvalidera</translation>
     </message>
     <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="109"/>
-      <source>Assumed (please review):</source>
-      <translation>Antaget (granska):</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="112"/>
-      <source>Not imported:</source>
-      <translation>Inte importerat:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="321"/>
-      <source>Rotary axes wired as a {label} configuration; the probe does not describe rotary mounting. Review roles and chain order.</source>
-      <translation>Rotationsaxlarna har kopplats ihop till en {label}-konfiguration. Probe-dokumentet beskriver inte hur rotationsaxlarna är monterade. Granska roller och kedjeordning.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="332"/>
-      <source>Rotary axis {letter} assumed to be a table rotary. Review its role.</source>
-      <translation>Rotationsaxeln {letter} antas vara en bordsrotationsaxel. Granska dess roll.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="340"/>
-      <source>Rotary axes {letters} have no default chain wiring; assign roles and parents in the editor.</source>
-      <translation>Rotationsaxlarna {letters} saknar standardkoppling i kedjan. Tilldela roller och överordnade axlar i redigeraren.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="388"/>
-      <source>Imported from MTConnect probe</source>
-      <translation>Importerad från MTConnects probe-dokument</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="410"/>
-      <source>Linear component &apos;{name}&apos; is not a recognized axis.</source>
-      <translation>Den linjära komponenten ”{name}” är inte en känd axel.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="430"/>
-      <source>Linear axis {letter}{detail}</source>
-      <translation>Linjär axel {letter}{detail}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="441"/>
-      <source>Rotary component &apos;{name}&apos; is neither an A/B/C axis nor a spindle.</source>
-      <translation>Den roterande komponenten ”{name}” är varken en A/B/C-axel eller en spindel.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="455"/>
-      <source>Rotary axis {letter}{detail}</source>
-      <translation>Rotationsaxel {letter}{detail}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="485"/>
-      <source>Spindle{detail}</source>
-      <translation>Spindel{detail}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="492"/>
-      <source>Additional spindles found; only the first was imported.</source>
-      <translation>Fler spindlar hittades; endast den första importerades.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="499"/>
-      <source>No spindle described by the probe; a default rotary toolhead was added.</source>
-      <translation>Probe-dokumentet beskriver ingen spindel. Ett roterande verktygshuvud med standardinställningar lades till.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="508"/>
-      <source>Axis velocities are not published by this machine; defaults were used.</source>
-      <translation>Maskinen publicerar inte axelhastigheter; standardvärden användes.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="512"/>
-      <source>Import assumptions:</source>
-      <translation>Antaganden vid import:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="77"/>
-      <source>Only http and https URLs are supported.</source>
-      <translation>Endast HTTP- och HTTPS-URL:er stöds.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="88"/>
-      <source>Import Machine from MTConnect</source>
-      <translation>Importera maskin från MTConnect</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="100"/>
-      <source>Enter the URL of the machine&apos;s MTConnect agent (for example http://machine:5000/probe) or select a saved probe XML file.</source>
-      <translation>Ange URL:en till maskinens MTConnect-agent (till exempel http://machine:5000/probe) eller välj en sparad XML-fil med maskinbeskrivning (probe).</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="110"/>
-      <source>Select a probe XML file</source>
-      <translation>Välj en XML-fil med maskinbeskrivning (probe)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="116"/>
-      <source>Import</source>
-      <translation>Importera</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="126"/>
-      <source>Select Probe XML File</source>
-      <translation>Välj XML-fil med maskinbeskrivning (probe)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="128"/>
-      <source>XML files (*.xml);;All files (*)</source>
-      <translation>XML-filer (*.xml);;Alla filer (*)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="145"/>
-      <source>Select Device</source>
-      <translation>Välj enhet</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="146"/>
-      <source>This agent describes several machines:</source>
-      <translation>Den här agenten beskriver flera maskiner:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="159"/>
-      <source>Import Failed</source>
-      <translation>Importen misslyckades</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="174"/>
-      <source>Machine Imported</source>
-      <translation>Maskinen har importerats</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="178"/>
-      <source>The machine was imported. Review it in the editor.
-
-{summary}</source>
-      <translation>Maskinen importerades. Granska den i redigeraren.
-
-{summary}</translation>
+      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="132"/>
+      <source>Validates the CAM job for common issues without generating a full report</source>
+      <translation>Validerar CAM-jobbet för vanliga problem utan att skapa en fullständig rapport</translation>
     </message>
   </context>
   <context>
-    <name>CAM_MachineEditor</name>
+    <name>CAM_Workplane</name>
     <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="118"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="177"/>
-      <source>Include Blank Lines</source>
-      <translation>Inkludera tomma rader</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="80"/>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="121"/>
+      <source>Work Plane</source>
+      <translation>Arbetsplan</translation>
     </message>
     <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="119"/>
-      <source>Path Labels</source>
-      <translation>Banetiketter</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="85"/>
+      <source>Create a named work plane on the Job, from a selected planar face or at the Job origin. Operations can share one work plane.</source>
+      <translation>Skapa ett namngivet arbetsplan i jobbet, från en vald plan yta eller vid jobbets origo. Operationer kan dela ett arbetsplan.</translation>
     </message>
     <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="120"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="168"/>
-      <source>Include Machine Name</source>
-      <translation>Inkludera maskinnamn</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="121"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="122"/>
-      <source>Output Duplicate Axis Values</source>
-      <translation>Mata ut duplicerade axelvärden</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="123"/>
-      <source>Adaptive Output</source>
-      <translation>Adaptiva utdata</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="124"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="187"/>
-      <source>Axis Precision</source>
-      <translation>Axelprecision</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="125"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="188"/>
-      <source>Feed Precision</source>
-      <translation>Matningsprecision</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="126"/>
-      <source>Toolhead Decimals</source>
-      <translation>Decimaler för verktygshuvud</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="127"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="175"/>
-      <source>Comment Symbol</source>
-      <translation>Kommentarsymbol</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="128"/>
-      <source>Modal Output (Suppress Repeats)</source>
-      <translation>Modal utmatning (undertryck upprepningar)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="129"/>
-      <source>Translate Drill Cycles</source>
-      <translation>Omvandla borrningscykler</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="130"/>
-      <source>Translate Rapid Moves</source>
-      <translation>Omvandla snabbförflyttningar</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="131"/>
-      <source>Split Arcs</source>
-      <translation>Dela bågar</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="134"/>
-      <source>XY Before Z After Tool Change</source>
-      <translation>XY före Z efter verktygsbyte</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="135"/>
-      <source>Show Editor After Generation</source>
-      <translation>Visa redigeraren efter generering</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="136"/>
-      <source>List Tools in Preamble</source>
-      <translation>Lista verktyg i inledningen</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="137"/>
-      <source>Show Machine Units</source>
-      <translation>Visa maskinenheter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="138"/>
-      <source>Show Operation Labels</source>
-      <translation>Visa operationsetiketter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="139"/>
-      <source>Output T Before M6</source>
-      <translation>Mata ut T före M6</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="140"/>
-      <source>Chipbreaking Amount (mm)</source>
-      <translation>Spånbrytningssträcka (mm)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="141"/>
-      <source>Toolhead Wait Time (seconds)</source>
-      <translation>Väntetid för verktygshuvud (sekunder)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="142"/>
-      <source>Post Processor</source>
-      <translation>Postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="143"/>
-      <source>Post Processor Arguments</source>
-      <translation>Postprocessorargument</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="144"/>
-      <source>Use Tool Length Offset</source>
-      <translation>Använd verktygslängdskompensering</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="147"/>
-      <source>Output Tool Length Offset (G43)</source>
-      <translation>Mata ut verktygslängdskompensering (G43)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="148"/>
-      <source>Enable Remote Posting</source>
-      <translation>Aktivera fjärröverföring</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="151"/>
-      <source>Stop Toolhead for Tool Change</source>
-      <translation>Stoppa verktygshuvudet vid verktygsbyte</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="152"/>
-      <source>Enable Coolant</source>
-      <translation>Aktivera kylmedel</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="155"/>
-      <source>Enable Machine-Specific Commands</source>
-      <translation>Aktivera maskinspecifika kommandon</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="157"/>
-      <source>Output Units</source>
-      <translation>Utdataenheter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="158"/>
-      <source>Header Options</source>
-      <translation>Rubrikalternativ</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="159"/>
-      <source>Comment Options</source>
-      <translation>Kommentarsalternativ</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="160"/>
-      <source>Formatting Options</source>
-      <translation>Formateringsalternativ</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="161"/>
-      <source>Precision Options</source>
-      <translation>Precisionsalternativ</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="162"/>
-      <source>Duplicate Output Options</source>
-      <translation>Alternativ för duplicerade utdata</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="163"/>
-      <source>Output Header</source>
-      <translation>Mata ut rubrik</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="165"/>
-      <source>Include Date</source>
-      <translation>Inkludera datum</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="166"/>
-      <source>Include Description</source>
-      <translation>Inkludera beskrivning</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="167"/>
-      <source>Include Document Name</source>
-      <translation>Inkludera dokumentnamn</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="169"/>
-      <source>Include Project File</source>
-      <translation>Inkludera projektfil</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="170"/>
-      <source>Include Units</source>
-      <translation>Inkludera enheter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="171"/>
-      <source>Include Tool List</source>
-      <translation>Inkludera verktygslista</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="172"/>
-      <source>Include Fixture List</source>
-      <translation>Inkludera fixturlista</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="174"/>
-      <source>Enable Comments</source>
-      <translation>Aktivera kommentarer</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="176"/>
-      <source>Include Operation Labels</source>
-      <translation>Inkludera operationsetiketter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="178"/>
-      <source>Output bCNC Comments</source>
-      <translation>Mata ut bCNC-kommentarer</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="180"/>
-      <source>Line Numbers</source>
-      <translation>Radnummer</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="181"/>
-      <source>Line Number Start</source>
-      <translation>Startnummer för rader</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="182"/>
-      <source>Line Number Prefix</source>
-      <translation>Prefix för radnummer</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="183"/>
-      <source>Line Increment</source>
-      <translation>Radsteg</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="184"/>
-      <source>Command Space</source>
-      <translation>Mellanslag mellan kommandon</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="185"/>
-      <source>End of Line Chars</source>
-      <translation>Radslutstecken</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="189"/>
-      <source>Toolhead Precision</source>
-      <translation>Precision för verktygshuvud</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="191"/>
-      <source>Duplicate Commands</source>
-      <translation>Duplicera kommandon</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="192"/>
-      <source>Duplicate Parameters</source>
-      <translation>Duplicera parametrar</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="194"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1144"/>
-      <source>Kinematics</source>
-      <translation>Kinematik</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="195"/>
-      <source>Base Frame</source>
-      <translation>Baskoordinatsystem</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="196"/>
-      <source>Origin</source>
-      <translation>Origo</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="197"/>
-      <source>Orientation Quaternion</source>
-      <translation>Orienteringskvaternion</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="198"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1153"/>
-      <source>TCP Supported</source>
-      <translation>TCP stöds</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="199"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1184"/>
-      <source>Rotation Strategy</source>
-      <translation>Rotationsstrategi</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="200"/>
-      <source>Kinematics Notes</source>
-      <translation>Kinematikanmärkningar</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="202"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1338"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1487"/>
-      <source>Role</source>
-      <translation>Roll</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="203"/>
-      <source>Parent Axis</source>
-      <translation>Överordnad axel</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="204"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1362"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1511"/>
-      <source>Sequence</source>
-      <translation>Sekvens</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="205"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1449"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1591"/>
-      <source>Joint Origin</source>
-      <translation>Ledens origo</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="206"/>
-      <source>Joint Axis</source>
-      <translation>Ledaxel</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="207"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1604"/>
-      <source>Solution Preference</source>
-      <translation>Föredragen lösning</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="208"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1612"/>
-      <source>Allow Flip</source>
-      <translation>Tillåt vändning</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="209"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1634"/>
-      <source>Wrap Strategy</source>
-      <translation>Hantering av vinkelomslag</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="376"/>
-      <source>Custom Machine</source>
-      <translation>Anpassad maskin</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="381"/>
-      <source>2-Axis Lathe (X, Z)</source>
-      <translation>2-axlig svarv (X, Z)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="386"/>
-      <source>3-Axis Mill (XYZ)</source>
-      <translation>3-axlig fräs (XYZ)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="391"/>
-      <source>4-Axis Mill (XYZ + A)</source>
-      <translation>4-axlig fräs (XYZ + A)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="396"/>
-      <source>4-Axis Mill (XYZ + B)</source>
-      <translation>4-axlig fräs (XYZ + B)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="401"/>
-      <source>5-Axis Mill (XYZ + A, C)</source>
-      <translation>5-axlig fräs (XYZ + A, C)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="406"/>
-      <source>5-Axis Mill (XYZ + B, C)</source>
-      <translation>5-axlig fräs (XYZ + B, C)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="447"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="662"/>
-      <source>Machine Editor</source>
-      <translation>Maskinredigerare</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="463"/>
-      <source>Machine</source>
-      <translation>Maskin</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="468"/>
-      <source>Toolheads</source>
-      <translation>Verktygshuvuden</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="473"/>
-      <source>Postprocessor</source>
-      <translation>Postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="478"/>
-      <source>Options</source>
-      <translation>Alternativ</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="505"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2428"/>
-      <source>Edit as Text</source>
-      <translation>Redigera som text</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="509"/>
-      <source>Validate</source>
-      <translation>Validera</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="516"/>
-      <source>Check this machine for problems that would stop it loading or would silently drop settings</source>
-      <translation>Kontrollera maskinen för problem som hindrar den från att läsas in eller gör att inställningar ignoreras utan meddelande</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="526"/>
-      <source>Save</source>
-      <translation>Spara</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="529"/>
-      <source>Close</source>
-      <translation>Stäng</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="831"/>
-      <source>Remove Toolhead</source>
-      <translation>Ta bort verktygshuvud</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="832"/>
-      <source>Remove toolhead? This action cannot be undone.</source>
-      <translation>Ta bort verktygshuvudet? Åtgärden kan inte ångras.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="891"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1025"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1108"/>
-      <source>Custom</source>
-      <translation>Anpassad</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="939"/>
-      <source>Community-maintained machine definitions are available in the Machines addon.</source>
-      <translation>Maskindefinitioner som underhålls av gemenskapen finns i tillägget Machines.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="940"/>
-      <source>Open Addon Manager</source>
-      <translation>Öppna tilläggshanteraren</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="941"/>
-      <source>Do not show again</source>
-      <translation>Visa inte igen</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1033"/>
-      <source>Template Load Error</source>
-      <translation>Fel vid inläsning av mall</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1034"/>
-      <source>Could not load template</source>
-      <translation>Kunde inte läsa in mallen</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1091"/>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="122"/>
       <source>Name</source>
       <translation>Namn</translation>
     </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1114"/>
-      <source>Load settings from an existing machine template</source>
-      <translation>Läs in inställningar från en befintlig maskinmall</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1115"/>
-      <source>Template</source>
-      <translation>Mall</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1125"/>
-      <source>Manufacturer</source>
-      <translation>Tillverkare</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1129"/>
-      <source>Description</source>
-      <translation>Beskrivning</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1132"/>
-      <source>Metric</source>
-      <translation>Metriska</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1133"/>
-      <source>Imperial</source>
-      <translation>Brittiska måttenheter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1135"/>
-      <source>Units</source>
-      <translation>Enheter</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1141"/>
-      <source>Type</source>
-      <translation>Typ</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1159"/>
-      <source>Not declared</source>
-      <translation>Inte deklarerad</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1160"/>
-      <source>Dynamic work offset (DWO)</source>
-      <translation>Dynamisk arbetsförskjutning (DWO)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1161"/>
-      <source>Tilted work plane (TWP)</source>
-      <translation>Lutat arbetsplan (TWP)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1164"/>
-      <source>Post transform (not available yet)</source>
-      <translation>Eftertransformering (inte tillgängligt ännu)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1177"/>
-      <source>How the control runs an operation on a tilted work plane. DWO: the post commands the rotary axes and the control applies its pivot offsets. TWP: the post declares the plane and the control positions the rotary axes. A machine with rotary axes and no strategy cannot post such an operation. The command the plane is declared with comes from the post-processor.</source>
-      <translation>Hur styrsystemet kör en operation på ett lutat arbetsplan. DWO: postprocessorn styr rotationsaxlarna och styrsystemet tillämpar sina pivotförskjutningar. TWP: postprocessorn deklarerar planet och styrsystemet positionerar rotationsaxlarna. En maskin med rotationsaxlar utan strategi kan inte postprocessa en sådan operation. Kommandot som används för att deklarera planet kommer från postprocessorn.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1193"/>
-      <source>Notes</source>
-      <translation>Anteckningar</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1199"/>
-      <source>Axes</source>
-      <translation>Axlar</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1227"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1228"/>
-      <source>Add Toolhead</source>
-      <translation>Lägg till verktygshuvud</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1353"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1502"/>
-      <source>Parent</source>
-      <translation>Överordnad</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1380"/>
-      <source>Direction</source>
-      <translation>Riktning</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1391"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1519"/>
-      <source>Min Limit</source>
-      <translation>Nedre gräns</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1401"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1526"/>
-      <source>Max Limit</source>
-      <translation>Övre gräns</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1411"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1535"/>
-      <source>Max Velocity</source>
-      <translation>Maximal hastighet</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1553"/>
-      <source>Rotation Axis</source>
-      <translation>Rotationsaxel</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1622"/>
-      <source>Prefer Positive</source>
-      <translation>Föredra positivt</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2002"/>
-      <source>Postprocessor Selection</source>
-      <translation>Val av postprocessor</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2012"/>
-      <source>Select the postprocessor file for this machine</source>
-      <translation>Välj postprocessorfil för maskinen</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2038"/>
-      <source>Post Processor:</source>
-      <translation>Postprocessor:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2044"/>
-      <source>Postprocessor Configuration</source>
-      <translation>Postprocessorkonfiguration</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2433"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2595"/>
-      <source>JSON Error</source>
-      <translation>JSON-fel</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2434"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2491"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2596"/>
-      <source>Invalid JSON: {}</source>
-      <translation>Ogiltig JSON: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2439"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2458"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2602"/>
-      <source>Error</source>
-      <translation>Fel</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2440"/>
-      <source>Failed to parse data: {}</source>
-      <translation>Det gick inte att tolka data: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2453"/>
-      <source>Edit as Form</source>
-      <translation>Redigera som formulär</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2459"/>
-      <source>Failed to generate JSON: {}</source>
-      <translation>Kunde inte generera JSON: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2490"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2497"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2513"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2529"/>
-      <source>Validation</source>
-      <translation>Validering</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2498"/>
-      <source>This machine does not load: {}</source>
-      <translation>Maskinen kan inte läsas in: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2514"/>
-      <source>No problems found.</source>
-      <translation>Inga problem hittades.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2520"/>
-      <source>{} error(s) and {} warning(s) found.</source>
-      <translation>{} fel och {} varningar hittades.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2525"/>
-      <source>{} warning(s) found.</source>
-      <translation>{} varningar hittades.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2569"/>
-      <source>Duplicate Machine Name</source>
-      <translation>Maskinnamnet används redan</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2573"/>
-      <source>A machine with the name &apos;{}&apos; already exists. Please choose a different name.</source>
-      <translation>Det finns redan en maskin med namnet &apos;{}&apos;. Välj ett annat namn.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2603"/>
-      <source>Failed to save: {}</source>
-      <translation>Kunde inte spara: {}</translation>
-    </message>
   </context>
   <context>
-    <name>FeedsSpeedsPresetEdit</name>
+    <name>CAM_SimulatorGL</name>
     <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="14"/>
-      <source>Edit preset</source>
-      <translation>Redigera förinställning</translation>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="366"/>
+      <source>CAM Simulator</source>
+      <translation>CAM-simulator</translation>
     </message>
     <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="22"/>
-      <source>Name:</source>
-      <translation>Namn:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="32"/>
-      <source>Material:</source>
-      <translation>Material:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="41"/>
-      <source>(none)</source>
-      <translation>(ingen)</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="48"/>
-      <source>Browse…</source>
-      <translation>Bläddra…</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="55"/>
-      <source>Generic (any material)</source>
-      <translation>Generiskt (valfritt material)</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="64"/>
-      <source>Op type:</source>
-      <translation>Operationstyp:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="74"/>
-      <source>Surface speed:</source>
-      <translation>Skärhastighet:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="91"/>
-      <source>Chipload (per tooth):</source>
-      <translation>Matning per tand:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="111"/>
-      <source>Vert feed ratio:</source>
-      <translation>Förhållande för vertikal matning:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="136"/>
-      <source>Direct feed and speed</source>
-      <translation>Direkt matning och varvtal</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="142"/>
-      <source>Horiz feed:</source>
-      <translation>Horisontell matning:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="162"/>
-      <source>Spindle speed:</source>
-      <translation>Spindelvarvtal:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="185"/>
-      <source>Notes</source>
-      <translation>Anteckningar</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="201"/>
-      <source>Tool diameter and/or flute count missing — surface speed and chipload won&apos;t auto-sync with direct feed/speed.</source>
-      <translation>Verktygsdiameter och/eller antal skär saknas. Skärhastighet och matning per tand synkroniseras inte automatiskt med direkt angiven matning och varvtal.</translation>
-    </message>
-  </context>
-  <context>
-    <name>DlgPostProcess</name>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="14"/>
-      <source>Post Processing</source>
-      <translation>Postprocessning</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="29"/>
-      <source>Post Processing - Job: (unknown)</source>
-      <translation>Postprocessning – jobb: (okänt)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="40"/>
-      <source>Overview</source>
-      <translation>Översikt</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="46"/>
-      <location filename="../panels/DlgPostProcess.ui" line="55"/>
-      <source>Machine</source>
-      <translation>Maskin</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="68"/>
-      <source>Machine configuration (.fcm) to use for post-processing</source>
-      <translation>Maskinkonfiguration (.fcm) som ska användas för postprocessning</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="78"/>
-      <source>Fixtures</source>
-      <translation>Fixturer</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="90"/>
-      <source>Check fixtures to include in the G-code output</source>
-      <translation>Markera fixturer som ska inkluderas i G-kodsutdata</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="100"/>
-      <source>Job Details</source>
-      <translation>Jobbdetaljer</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="109"/>
-      <source>Author</source>
-      <translation>Upphovsperson</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="116"/>
-      <source>Author name written into the G-code header comment</source>
-      <translation>Upphovspersonens namn som skrivs i G-kodens inledande kommentar</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="119"/>
-      <location filename="../panels/DlgPostProcess.ui" line="145"/>
-      <source>(optional)</source>
-      <translation>(valfri)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="126"/>
-      <source>Comment</source>
-      <translation>Kommentar</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="142"/>
-      <source>Arbitrary comment written into the G-code header</source>
-      <translation>Valfri kommentar som skrivs i G-kodens inledning</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="155"/>
-      <location filename="../panels/DlgPostProcess.ui" line="310"/>
-      <source>Options</source>
-      <translation>Alternativ</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="161"/>
-      <source>Generate a full sanity/setup report alongside the G-code file</source>
-      <translation>Generera en fullständig rapport med rimlighetskontroll och inställningar tillsammans med G-kodsfilen</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="164"/>
-      <source>Generate HTML sanity report</source>
-      <translation>Generera HTML-rapport med rimlighetskontroll</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="177"/>
-      <source>Post Processor Parameters</source>
-      <translation>Postprocessorparametrar</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="186"/>
-      <source>(No additional parameters for this post processor)</source>
-      <translation>(Inga ytterligare parametrar för den här postprocessorn)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="213"/>
-      <source>Operations</source>
-      <translation>Operationer</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="219"/>
-      <source>Check operations to include in the G-code output. Uncheck to skip.</source>
-      <translation>Markera operationer som ska inkluderas i G-kodsutdata. Avmarkera för att hoppa över.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="232"/>
-      <source>#</source>
-      <translation>#</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="237"/>
-      <source>Operation</source>
-      <translation>Operation</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="242"/>
-      <source>Tool</source>
-      <translation>Verktyg</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="250"/>
-      <source>Tool Controller</source>
-      <translation>Verktygsstyrning</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="255"/>
-      <source>Coolant</source>
-      <translation>Kylmedel</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="260"/>
-      <source>Time</source>
-      <translation>Tid</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="270"/>
-      <source>Select All</source>
-      <translation>Markera alla</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="277"/>
-      <source>Select None</source>
-      <translation>Avmarkera alla</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="284"/>
-      <source>Show the workplan (postable items structure)</source>
-      <translation>Visa bearbetningsplanen (strukturen med objekt som kan postprocessas)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="287"/>
-      <source>Workplan</source>
-      <translation>Bearbetningsplan</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="337"/>
-      <source>(Select a machine on the Overview tab to see machine output options)</source>
-      <translation>(Välj en maskin på fliken Översikt för att visa alternativ för maskinutdata)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="365"/>
-      <source>Output</source>
-      <translation>Utdata</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="373"/>
-      <source>Output folder</source>
-      <translation>Utdatamapp</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="380"/>
-      <source>Folder where G-code files will be saved</source>
-      <translation>Mapp där G-kodsfiler sparas</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="383"/>
-      <source>(resolved when output is generated)</source>
-      <translation>(bestäms när utdata genereras)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="396"/>
-      <source>Browse…</source>
-      <translation>Bläddra…</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="407"/>
-      <source>Filename template</source>
-      <translation>Filnamnsmall</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="414"/>
-      <source>Filename template. Substitutions: %j=job name, %d=document, %S=sequence number.
-%T=tool number, %t=tool controller, %W=fixture and %O=operation name a section of a split output and are ignored when the output is not split.</source>
-      <translation>Mall för filnamn. Ersättningar: %j=jobbnamn, %d=dokument, %S=sekvensnummer.
-%T=verktygsnummer, %t=verktygsstyrning, %W=uppspänning och %O=operationsnamn anger avsnittet i en delad utdata och ignoreras när utdata inte delas.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="418"/>
-      <source>e.g. %j.nc</source>
-      <translation>t.ex. %j.nc</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="434"/>
-      <source>Regenerate output filenames using this template</source>
-      <translation>Generera om utdatafilnamnen med den här mallen</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="437"/>
-      <source>Apply</source>
-      <translation>Verkställ</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="449"/>
-      <source>Press &quot;Generate Output&quot; to preview G-code before saving.</source>
-      <translation>Tryck på ”Generera utdata” för att förhandsgranska G-koden innan du sparar.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="469"/>
-      <source>Generated output files. Select a file to view or edit its contents.</source>
-      <translation>Genererade utdatafiler. Välj en fil för att visa eller redigera dess innehåll.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="480"/>
-      <source>G-code content for the selected file. You may edit before saving.</source>
-      <translation>G-kodsinnehåll för den valda filen. Du kan redigera det innan du sparar.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="493"/>
-      <source>Save to Disk</source>
-      <translation>Spara till disk</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="516"/>
-      <source>Warnings</source>
-      <translation>Varningar</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="525"/>
-      <source>No issues found</source>
-      <translation>Inga problem hittades</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="535"/>
-      <source>Validation issues found in the job. WARNING and CAUTION items should be addressed before machining.</source>
-      <translation>Valideringsproblem hittades i jobbet. Poster av typen WARNING och CAUTION bör åtgärdas före bearbetning.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="557"/>
-      <source>Severity</source>
-      <translation>Allvarlighetsgrad</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="562"/>
-      <source>Note</source>
-      <translation>Anteckning</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_PostSelected</name>
-    <message>
-      <location filename="../../../Path/Post/Command.py" line="356"/>
-      <source>Post Process Selected</source>
-      <translation>Efterbehandla markerade</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Command.py" line="360"/>
-      <source>Post Processes the selected operations</source>
-      <translation>Efterbehandlar de valda operationerna</translation>
-    </message>
-  </context>
-  <context>
-    <name>MirrorDressup</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="118"/>
-      <source>No base operation</source>
-      <translation>Ingen basoperation</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="125"/>
-      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
-      <translation>Basobjektet &apos;%s&apos; är inte härlett från Path::Feature</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="132"/>
-      <source>Base operation &apos;%s&apos; with empty path</source>
-      <translation>Basoperationen &apos;%s&apos; har en tom bana</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_DressupMirror</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="277"/>
-      <source>Mirror</source>
-      <translation>Spegla</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="279"/>
-      <source>Creates mirror of a selected path</source>
-      <translation>Skapar en spegling av en vald bana</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="308"/>
-      <source>The selected object is not a path</source>
-      <translation>Det valda objektet är inte en bana</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="312"/>
-      <source>Select a profile object</source>
-      <translation>Välj ett profilobjekt</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_DressupPathBoundary2</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="118"/>
-      <source>Boundary model missing</source>
-      <translation>Gränsmodell saknas</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="122"/>
-      <source>Boundary has no shape</source>
-      <translation>Gränsen saknar form</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="126"/>
-      <source>Boundary shape is not a solid</source>
-      <translation>Gränsformen är inte en solid</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="172"/>
-      <source>No path with such boundary</source>
-      <translation>Ingen verktygsbana med en sådan gräns</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="281"/>
-      <source>The selected object is not a path</source>
-      <translation>Det valda objektet är inte en bana</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="286"/>
-      <source>Select a profile object</source>
-      <translation>Välj ett profilobjekt</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="305"/>
-      <source>Boundary2</source>
-      <translation>Gräns 2</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="309"/>
-      <source>Creates a boundary dress-up from a selected toolpath</source>
-      <translation>Skapar en gränsmodifiering från en vald verktygsbana</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_DressupPlungeMilling</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="137"/>
-      <source>No base operation</source>
-      <translation>Ingen basoperation</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="146"/>
-      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
-      <translation>Basobjektet &apos;%s&apos; är inte härlett från Path::Feature</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="154"/>
-      <source>Base operation &apos;%s&apos; with empty path</source>
-      <translation>Basoperationen &apos;%s&apos; har en tom bana</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="160"/>
-      <source>Negative or zero stepover</source>
-      <translation>Sidsteget är negativt eller noll</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="278"/>
-      <source>Plunge Milling</source>
-      <translation>Dykfräsning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="282"/>
-      <source>Creates plunge milling for a selected path</source>
-      <translation>Skapar dykfräsning för en vald bana</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="312"/>
-      <source>The selected object is not a path</source>
-      <translation>Det valda objektet är inte en bana</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="317"/>
-      <source>Select a profile object</source>
-      <translation>Välj ett profilobjekt</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_FeedsSpeeds</name>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="220"/>
-      <source>e.g. &apos;Aluminum aggressive&apos;</source>
-      <translation>t.ex. &apos;Aggressiv aluminium&apos;</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="248"/>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="613"/>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="360"/>
-      <source>(any)</source>
-      <translation>(valfritt)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="443"/>
-      <source>(none)</source>
-      <translation>(ingen)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="449"/>
-      <source>Name required</source>
-      <translation>Namn krävs</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="450"/>
-      <source>Give the preset a name.</source>
-      <translation>Ge förinställningen ett namn.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="457"/>
-      <source>Duplicate preset</source>
-      <translation>Förinställningen finns redan</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="462"/>
-      <source>This tool already has a preset named &apos;%s&apos; for this material and op type.</source>
-      <translation>Verktyget har redan en förinställning med namnet &apos;%s&apos; för detta material och denna typ av operation.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="562"/>
-      <source>Name</source>
-      <translation>Namn</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="563"/>
-      <source>Material</source>
-      <translation>Material</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="564"/>
-      <source>Op type</source>
-      <translation>Operationstyp</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="565"/>
-      <source>Surface speed</source>
-      <translation>Skärhastighet</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="566"/>
-      <source>Chipload</source>
-      <translation>Matning per tand</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="567"/>
-      <source>Notes</source>
-      <translation>Anteckningar</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="579"/>
-      <source>Add preset</source>
-      <translation>Lägg till förinställning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="583"/>
-      <source>Edit</source>
-      <translation>Redigera</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="587"/>
-      <source>Copy</source>
-      <translation>Kopiera</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="591"/>
-      <source>Delete</source>
-      <translation>Ta bort</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="610"/>
-      <source>(any material)</source>
-      <translation>(valfritt material)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="330"/>
-      <source>Suggest Feeds &amp; Speeds</source>
-      <translation>Föreslå matningar och varvtal</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="352"/>
-      <source>(no tool)</source>
-      <translation>(inget verktyg)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="353"/>
-      <source>Tool:</source>
-      <translation>Verktyg:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
-      <source>(none — generic resolution)</source>
-      <translation>(ingen – generell lösning)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
-      <source>Material:</source>
-      <translation>Material:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="369"/>
-      <source>Op type:</source>
-      <translation>Operationstyp:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="377"/>
-      <source>Apply preset:</source>
-      <translation>Tillämpa förinställning:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="381"/>
-      <source>Suggestion</source>
-      <translation>Förslag</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="385"/>
-      <source>Source:</source>
-      <translation>Källa:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="391"/>
-      <source>Confidence:</source>
-      <translation>Tillförlitlighet:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="396"/>
-      <source>Current</source>
-      <translation>Nuvarande</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="398"/>
-      <source>Suggested</source>
-      <translation>Föreslaget</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="400"/>
-      <source>Δ</source>
-      <translation>Δ</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="436"/>
-      <source>Auto (use resolver)</source>
-      <translation>Automatiskt (använd lösaren)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="530"/>
-      <source>No suggestion available</source>
-      <translation>Inget förslag tillgängligt</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="541"/>
-      <source>No matching preset on this tool. Open the tool from the library to add presets.</source>
-      <translation>Ingen matchande förinställning för verktyget. Öppna verktyget från biblioteket för att lägga till förinställningar.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/MaterialPicker.py" line="58"/>
-      <source>Choose material</source>
-      <translation>Välj material</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_ToolBitDock</name>
-    <message>
-      <location filename="../../../Path/Tool/library/ui/cmd.py" line="51"/>
-      <source>Add Toolbit…</source>
-      <translation>Lägg till verktygsspets…</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/library/ui/cmd.py" line="52"/>
-      <source>Opens the toolbit selection dialog</source>
-      <translation>Öppnar dialogrutan för att välja verktygsspets</translation>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="368"/>
+      <source>Simulates G-code on stock</source>
+      <translation>Simulerar G-kod på ämnet</translation>
     </message>
   </context>
   <context>
@@ -14667,7 +13028,7 @@ Verktygsnummer för {}:</translation>
     <message>
       <location filename="../../../Path/Op/RotarySurface.py" line="112"/>
       <source>New property added to</source>
-      <translation>Ny egenskap tillagd till</translation>
+      <translation>Ny egenskap tillagd i</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/RotarySurface.py" line="114"/>
@@ -14712,12 +13073,75 @@ Verktygsnummer för {}:</translation>
     <message>
       <location filename="../../../Path/Op/Gui/RotarySurface.py" line="155"/>
       <source>Rotary Surface</source>
-      <translation>Rotationsyta</translation>
+      <translation>Roterande ytbearbetning</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/RotarySurface.py" line="159"/>
       <source>Continuous 4-axis rotary surfacing on a part mounted on a single rotary.</source>
       <translation>Kontinuerlig fyraxlig ytbearbetning av en detalj monterad på en enda rotationsaxel.</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_MillFacing</name>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="98"/>
+      <source>New property added to</source>
+      <translation>Ny egenskap tillagd i</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="100"/>
+      <source>Check default value(s).</source>
+      <translation>Kontrollera standardvärde(n).</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="215"/>
+      <source>Climb</source>
+      <translation>Medfräsning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="216"/>
+      <source>Conventional</source>
+      <translation>Motfräsning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="219"/>
+      <source>ZigZag</source>
+      <translation>Sicksack</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="220"/>
+      <source>Bidirectional</source>
+      <translation>Dubbelriktad</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="221"/>
+      <source>Directional</source>
+      <translation>Enkelriktad</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="222"/>
+      <source>Spiral Circular</source>
+      <translation>Cirkulär spiral</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="223"/>
+      <source>Spiral Rectangular</source>
+      <translation>Rektangulär spiral</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="443"/>
+      <source>%s: Generating empty toolpath. Take attention to extensions and tool diameter.</source>
+      <translation>%s: Skapar en tom verktygsbana. Kontrollera förlängningar och verktygsdiameter.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/MillFacing.py" line="181"/>
+      <source>Mill Facing</source>
+      <translation>Planfräsning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/MillFacing.py" line="184"/>
+      <source>Create a Mill Facing Operation to machine the top surface of stock</source>
+      <translation>Skapa en planfräsningsoperation för att bearbeta ämnets övre yta</translation>
     </message>
   </context>
   <context>
@@ -15041,87 +13465,11 @@ Verktygstyper som stöds: pinnfräs med plan ände, hörnradiefräs och V-fräs.
     </message>
   </context>
   <context>
-    <name>CAM_MillFacing</name>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="98"/>
-      <source>New property added to</source>
-      <translation>Ny egenskap tillagd till</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="100"/>
-      <source>Check default value(s).</source>
-      <translation>Kontrollera standardvärde(n).</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="215"/>
-      <source>Climb</source>
-      <translation>Medfräsning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="216"/>
-      <source>Conventional</source>
-      <translation>Motfräsning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="219"/>
-      <source>ZigZag</source>
-      <translation>Sicksack</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="220"/>
-      <source>Bidirectional</source>
-      <translation>Dubbelriktad</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="221"/>
-      <source>Directional</source>
-      <translation>Enkelriktad</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="222"/>
-      <source>Spiral Circular</source>
-      <translation>Cirkulär spiral</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="223"/>
-      <source>Spiral Rectangular</source>
-      <translation>Rektangulär spiral</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="443"/>
-      <source>%s: Generating empty toolpath. Take attention to extensions and tool diameter.</source>
-      <translation>%s: Skapar tom verktygsbana. Kontrollera tillägg och verktygsdiameter.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/MillFacing.py" line="181"/>
-      <source>Mill Facing</source>
-      <translation>Planfräsning</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/MillFacing.py" line="184"/>
-      <source>Create a Mill Facing Operation to machine the top surface of stock</source>
-      <translation>Skapa en planfräsningsoperation för att bearbeta ämnets övre yta</translation>
-    </message>
-  </context>
-  <context>
     <name>Waterline</name>
     <message>
       <location filename="../../../Path/Op/Waterline.py" line="1399"/>
       <source>: Steps below the model&apos;s top Face will be the only ones processed.</source>
       <translation>: Endast steg under modellens övre yta bearbetas.</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_SetStartPoint</name>
-    <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1831"/>
-      <source>Start Point Selection</source>
-      <translation>Val av startpunkt</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1832"/>
-      <source>Selects the start point</source>
-      <translation>Väljer startpunkten</translation>
     </message>
   </context>
   <context>
@@ -15146,48 +13494,1240 @@ Verktygstyper som stöds: pinnfräs med plan ände, hörnradiefräs och V-fräs.
     </message>
   </context>
   <context>
-    <name>CAM_QuickValidate</name>
+    <name>CAM_SetStartPoint</name>
     <message>
-      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="127"/>
-      <source>Quick Validate</source>
-      <translation>Snabbvalidera</translation>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1834"/>
+      <source>Start Point Selection</source>
+      <translation>Val av startpunkt</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="132"/>
-      <source>Validates the CAM job for common issues without generating a full report</source>
-      <translation>Validerar CAM-jobbet för vanliga problem utan att skapa en fullständig rapport</translation>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1835"/>
+      <source>Selects the start point</source>
+      <translation>Väljer startpunkten</translation>
     </message>
   </context>
   <context>
-    <name>CAM_Workplane</name>
+    <name>CAM_PostSelected</name>
     <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="80"/>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="121"/>
-      <source>Work Plane</source>
-      <translation>Arbetsplan</translation>
+      <location filename="../../../Path/Post/Command.py" line="356"/>
+      <source>Post Process Selected</source>
+      <translation>Postprocessa markerade</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="85"/>
-      <source>Create a named work plane on the Job, from a selected planar face or at the Job origin. Operations can share one work plane.</source>
-      <translation>Skapa ett namngivet arbetsplan i jobbet, från en vald plan yta eller vid jobbets origo. Operationer kan dela ett arbetsplan.</translation>
+      <location filename="../../../Path/Post/Command.py" line="360"/>
+      <source>Post Processes the selected operations</source>
+      <translation>Postprocessar de valda operationerna</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_ToolBitDock</name>
+    <message>
+      <location filename="../../../Path/Tool/library/ui/cmd.py" line="51"/>
+      <source>Add Toolbit…</source>
+      <translation>Lägg till verktygsdefinition…</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="122"/>
+      <location filename="../../../Path/Tool/library/ui/cmd.py" line="52"/>
+      <source>Opens the toolbit selection dialog</source>
+      <translation>Öppnar dialogrutan för att välja verktygsdefinition</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_FeedsSpeeds</name>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="330"/>
+      <source>Suggest Feeds &amp; Speeds</source>
+      <translation>Föreslå matningar och varvtal</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="352"/>
+      <source>(no tool)</source>
+      <translation>(inget verktyg)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="353"/>
+      <source>Tool:</source>
+      <translation>Verktyg:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
+      <source>(none — generic resolution)</source>
+      <translation>(ingen – generell lösning)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
+      <source>Material:</source>
+      <translation>Material:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="360"/>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="248"/>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="613"/>
+      <source>(any)</source>
+      <translation>(valfritt)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="369"/>
+      <source>Op type:</source>
+      <translation>Operationstyp:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="377"/>
+      <source>Apply preset:</source>
+      <translation>Tillämpa förinställning:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="381"/>
+      <source>Suggestion</source>
+      <translation>Förslag</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="385"/>
+      <source>Source:</source>
+      <translation>Källa:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="391"/>
+      <source>Confidence:</source>
+      <translation>Tillförlitlighet:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="396"/>
+      <source>Current</source>
+      <translation>Nuvarande</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="398"/>
+      <source>Suggested</source>
+      <translation>Föreslaget</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="400"/>
+      <source>Δ</source>
+      <translation>Δ</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="436"/>
+      <source>Auto (use resolver)</source>
+      <translation>Automatiskt (använd lösaren)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="530"/>
+      <source>No suggestion available</source>
+      <translation>Inget förslag tillgängligt</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="541"/>
+      <source>No matching preset on this tool. Open the tool from the library to add presets.</source>
+      <translation>Ingen matchande förinställning för verktyget. Öppna verktyget från biblioteket för att lägga till förinställningar.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/MaterialPicker.py" line="58"/>
+      <source>Choose material</source>
+      <translation>Välj material</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="220"/>
+      <source>e.g. &apos;Aluminum aggressive&apos;</source>
+      <translation>t.ex. &apos;Aggressiv aluminium&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="443"/>
+      <source>(none)</source>
+      <translation>(ingen)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="449"/>
+      <source>Name required</source>
+      <translation>Namn krävs</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="450"/>
+      <source>Give the preset a name.</source>
+      <translation>Ge förinställningen ett namn.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="457"/>
+      <source>Duplicate preset</source>
+      <translation>Förinställningen finns redan</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="462"/>
+      <source>This tool already has a preset named &apos;%s&apos; for this material and op type.</source>
+      <translation>Verktyget har redan en förinställning med namnet &apos;%s&apos; för detta material och denna typ av operation.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="562"/>
       <source>Name</source>
       <translation>Namn</translation>
     </message>
-  </context>
-  <context>
-    <name>CAM_SimulatorGL</name>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="364"/>
-      <source>CAM Simulator</source>
-      <translation>CAM-simulator</translation>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="563"/>
+      <source>Material</source>
+      <translation>Material</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="366"/>
-      <source>Simulates G-code on stock</source>
-      <translation>Simulerar G-kod på ämnet</translation>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="564"/>
+      <source>Op type</source>
+      <translation>Operationstyp</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="565"/>
+      <source>Surface speed</source>
+      <translation>Skärhastighet</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="566"/>
+      <source>Chipload</source>
+      <translation>Matning per tand</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="567"/>
+      <source>Notes</source>
+      <translation>Anteckningar</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="579"/>
+      <source>Add preset</source>
+      <translation>Lägg till förinställning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="583"/>
+      <source>Edit</source>
+      <translation>Redigera</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="587"/>
+      <source>Copy</source>
+      <translation>Kopiera</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="591"/>
+      <source>Delete</source>
+      <translation>Ta bort</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="610"/>
+      <source>(any material)</source>
+      <translation>(valfritt material)</translation>
+    </message>
+  </context>
+  <context>
+    <name>MirrorDressup</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="118"/>
+      <source>No base operation</source>
+      <translation>Ingen basoperation</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="125"/>
+      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
+      <translation>Basobjektet &apos;%s&apos; är inte härlett från Path::Feature</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="132"/>
+      <source>Base operation &apos;%s&apos; with empty path</source>
+      <translation>Basoperationen &apos;%s&apos; har en tom bana</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_DressupMirror</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="277"/>
+      <source>Mirror</source>
+      <translation>Spegla</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="279"/>
+      <source>Creates mirror of a selected path</source>
+      <translation>Skapar en spegling av en vald bana</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="308"/>
+      <source>The selected object is not a path</source>
+      <translation>Det valda objektet är inte en bana</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="312"/>
+      <source>Select a profile object</source>
+      <translation>Välj ett profilobjekt</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_DressupPlungeMilling</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="137"/>
+      <source>No base operation</source>
+      <translation>Ingen basoperation</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="146"/>
+      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
+      <translation>Basobjektet &apos;%s&apos; är inte härlett från Path::Feature</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="154"/>
+      <source>Base operation &apos;%s&apos; with empty path</source>
+      <translation>Basoperationen &apos;%s&apos; har en tom bana</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="160"/>
+      <source>Negative or zero stepover</source>
+      <translation>Sidsteget är negativt eller noll</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="278"/>
+      <source>Plunge Milling</source>
+      <translation>Dykfräsning</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="282"/>
+      <source>Creates plunge milling for a selected path</source>
+      <translation>Skapar dykfräsning för en vald bana</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="312"/>
+      <source>The selected object is not a path</source>
+      <translation>Det valda objektet är inte en bana</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="317"/>
+      <source>Select a profile object</source>
+      <translation>Välj ett profilobjekt</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_DressupPathBoundary2</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="118"/>
+      <source>Boundary model missing</source>
+      <translation>Gränsmodell saknas</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="122"/>
+      <source>Boundary has no shape</source>
+      <translation>Gränsen saknar form</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="126"/>
+      <source>Boundary shape is not a solid</source>
+      <translation>Gränsformen är inte en solid</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="172"/>
+      <source>No path with such boundary</source>
+      <translation>Ingen verktygsbana med en sådan gräns</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="281"/>
+      <source>The selected object is not a path</source>
+      <translation>Det valda objektet är inte en bana</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="286"/>
+      <source>Select a profile object</source>
+      <translation>Välj ett profilobjekt</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="305"/>
+      <source>Boundary2</source>
+      <translation>Gräns 2</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="309"/>
+      <source>Creates a boundary dress-up from a selected toolpath</source>
+      <translation>Skapar en gränsmodifiering från en vald verktygsbana</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_MachineImport</name>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="77"/>
+      <source>Only http and https URLs are supported.</source>
+      <translation>Endast HTTP- och HTTPS-URL:er stöds.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="88"/>
+      <source>Import Machine from MTConnect</source>
+      <translation>Importera maskin från MTConnect</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="100"/>
+      <source>Enter the URL of the machine&apos;s MTConnect agent (for example http://machine:5000/probe) or select a saved probe XML file.</source>
+      <translation>Ange URL:en till maskinens MTConnect-agent (till exempel http://machine:5000/probe) eller välj en sparad XML-fil med maskinbeskrivning (probe).</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="110"/>
+      <source>Select a probe XML file</source>
+      <translation>Välj en XML-fil med maskinbeskrivning (probe)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="116"/>
+      <source>Import</source>
+      <translation>Importera</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="126"/>
+      <source>Select Probe XML File</source>
+      <translation>Välj XML-fil med maskinbeskrivning (probe)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="128"/>
+      <source>XML files (*.xml);;All files (*)</source>
+      <translation>XML-filer (*.xml);;Alla filer (*)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="145"/>
+      <source>Select Device</source>
+      <translation>Välj enhet</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="146"/>
+      <source>This agent describes several machines:</source>
+      <translation>Den här agenten beskriver flera maskiner:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="159"/>
+      <source>Import Failed</source>
+      <translation>Importen misslyckades</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="174"/>
+      <source>Machine Imported</source>
+      <translation>Maskinen har importerats</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="178"/>
+      <source>The machine was imported. Review it in the editor.
+
+{summary}</source>
+      <translation>Maskinen importerades. Granska den i redigeraren.
+
+{summary}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="106"/>
+      <source>Imported:</source>
+      <translation>Importerat:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="109"/>
+      <source>Assumed (please review):</source>
+      <translation>Antaget (granska):</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="112"/>
+      <source>Not imported:</source>
+      <translation>Inte importerat:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="320"/>
+      <source>Rotary axes wired as a {label} configuration; the probe does not describe rotary mounting. Review roles and chain order.</source>
+      <translation>Rotationsaxlarna har kopplats ihop till en {label}-konfiguration. Probe-dokumentet beskriver inte hur rotationsaxlarna är monterade. Granska roller och kedjeordning.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="331"/>
+      <source>Rotary axis {letter} assumed to be a table rotary. Review its role.</source>
+      <translation>Rotationsaxeln {letter} antas vara en bordsrotationsaxel. Granska dess roll.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="339"/>
+      <source>Rotary axes {letters} have no default chain wiring; assign roles and parents in the editor.</source>
+      <translation>Rotationsaxlarna {letters} saknar standardkoppling i kedjan. Tilldela roller och överordnade axlar i redigeraren.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="387"/>
+      <source>Imported from MTConnect probe</source>
+      <translation>Importerad från MTConnects probe-dokument</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="409"/>
+      <source>Linear component &apos;{name}&apos; is not a recognized axis.</source>
+      <translation>Den linjära komponenten ”{name}” är inte en känd axel.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="429"/>
+      <source>Linear axis {letter}{detail}</source>
+      <translation>Linjär axel {letter}{detail}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="440"/>
+      <source>Rotary component &apos;{name}&apos; is neither an A/B/C axis nor a spindle.</source>
+      <translation>Den roterande komponenten ”{name}” är varken en A/B/C-axel eller en spindel.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="454"/>
+      <source>Rotary axis {letter}{detail}</source>
+      <translation>Rotationsaxel {letter}{detail}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="484"/>
+      <source>Spindle{detail}</source>
+      <translation>Spindel{detail}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="491"/>
+      <source>Additional spindles found; only the first was imported.</source>
+      <translation>Fler spindlar hittades; endast den första importerades.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="498"/>
+      <source>No spindle described by the probe; a default rotary toolhead was added.</source>
+      <translation>Probe-dokumentet beskriver ingen spindel. Ett roterande verktygshuvud med standardinställningar lades till.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="507"/>
+      <source>Axis velocities are not published by this machine; defaults were used.</source>
+      <translation>Maskinen publicerar inte axelhastigheter; standardvärden användes.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="511"/>
+      <source>Import assumptions:</source>
+      <translation>Antaganden vid import:</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_MachineEditor</name>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="118"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="177"/>
+      <source>Include Blank Lines</source>
+      <translation>Inkludera tomma rader</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="119"/>
+      <source>Path Labels</source>
+      <translation>Banetiketter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="120"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="168"/>
+      <source>Include Machine Name</source>
+      <translation>Inkludera maskinnamn</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="121"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="122"/>
+      <source>Output Duplicate Axis Values</source>
+      <translation>Mata ut duplicerade axelvärden</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="123"/>
+      <source>Adaptive Output</source>
+      <translation>Adaptiva utdata</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="124"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="187"/>
+      <source>Axis Precision</source>
+      <translation>Axelprecision</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="125"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="188"/>
+      <source>Feed Precision</source>
+      <translation>Matningsprecision</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="126"/>
+      <source>Toolhead Decimals</source>
+      <translation>Decimaler för verktygshuvud</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="127"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="175"/>
+      <source>Comment Symbol</source>
+      <translation>Kommentarsymbol</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="128"/>
+      <source>Modal Output (Suppress Repeats)</source>
+      <translation>Modal utmatning (undertryck upprepningar)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="129"/>
+      <source>Translate Drill Cycles</source>
+      <translation>Omvandla borrningscykler</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="130"/>
+      <source>Translate Rapid Moves</source>
+      <translation>Omvandla snabbförflyttningar</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="131"/>
+      <source>Split Arcs</source>
+      <translation>Dela bågar</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="134"/>
+      <source>XY Before Z After Tool Change</source>
+      <translation>XY före Z efter verktygsbyte</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="135"/>
+      <source>Show Editor After Generation</source>
+      <translation>Visa redigeraren efter generering</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="136"/>
+      <source>List Tools in Preamble</source>
+      <translation>Lista verktyg i inledningen</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="137"/>
+      <source>Show Machine Units</source>
+      <translation>Visa maskinenheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="138"/>
+      <source>Show Operation Labels</source>
+      <translation>Visa operationsetiketter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="139"/>
+      <source>Output T Before M6</source>
+      <translation>Mata ut T före M6</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="140"/>
+      <source>Chipbreaking Amount (mm)</source>
+      <translation>Spånbrytningssträcka (mm)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="141"/>
+      <source>Toolhead Wait Time (seconds)</source>
+      <translation>Väntetid för verktygshuvud (sekunder)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="142"/>
+      <source>Post Processor</source>
+      <translation>Postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="143"/>
+      <source>Post Processor Arguments</source>
+      <translation>Postprocessorargument</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="144"/>
+      <source>Use Tool Length Offset</source>
+      <translation>Använd verktygslängdskompensering</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="147"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="86"/>
+      <source>Output Tool Length Offset (G43)</source>
+      <translation>Mata ut verktygslängdskompensering (G43)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="148"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="88"/>
+      <source>Enable Remote Posting</source>
+      <translation>Aktivera fjärröverföring</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="151"/>
+      <source>Stop Toolhead for Tool Change</source>
+      <translation>Stoppa verktygshuvudet vid verktygsbyte</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="152"/>
+      <source>Enable Coolant</source>
+      <translation>Aktivera kylmedel</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="155"/>
+      <source>Enable Machine-Specific Commands</source>
+      <translation>Aktivera maskinspecifika kommandon</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="157"/>
+      <source>Output Units</source>
+      <translation>Utdataenheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="158"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="105"/>
+      <source>Header Options</source>
+      <translation>Rubrikalternativ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="159"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="106"/>
+      <source>Comment Options</source>
+      <translation>Kommentarsalternativ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="160"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="107"/>
+      <source>Formatting Options</source>
+      <translation>Formateringsalternativ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="161"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="108"/>
+      <source>Precision Options</source>
+      <translation>Precisionsalternativ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="162"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="109"/>
+      <source>Duplicate Output Options</source>
+      <translation>Alternativ för duplicerade utdata</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="163"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="83"/>
+      <source>Output Header</source>
+      <translation>Mata ut rubrik</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="165"/>
+      <source>Include Date</source>
+      <translation>Inkludera datum</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="166"/>
+      <source>Include Description</source>
+      <translation>Inkludera beskrivning</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="167"/>
+      <source>Include Document Name</source>
+      <translation>Inkludera dokumentnamn</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="169"/>
+      <source>Include Project File</source>
+      <translation>Inkludera projektfil</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="170"/>
+      <source>Include Units</source>
+      <translation>Inkludera enheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="171"/>
+      <source>Include Tool List</source>
+      <translation>Inkludera verktygslista</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="172"/>
+      <source>Include Fixture List</source>
+      <translation>Inkludera fixturlista</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="174"/>
+      <source>Enable Comments</source>
+      <translation>Aktivera kommentarer</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="176"/>
+      <source>Include Operation Labels</source>
+      <translation>Inkludera operationsetiketter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="178"/>
+      <source>Output bCNC Comments</source>
+      <translation>Mata ut bCNC-kommentarer</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="180"/>
+      <source>Line Numbers</source>
+      <translation>Radnummer</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="181"/>
+      <source>Line Number Start</source>
+      <translation>Startnummer för rader</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="182"/>
+      <source>Line Number Prefix</source>
+      <translation>Prefix för radnummer</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="183"/>
+      <source>Line Increment</source>
+      <translation>Radsteg</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="184"/>
+      <source>Command Space</source>
+      <translation>Mellanslag mellan kommandon</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="185"/>
+      <source>End of Line Chars</source>
+      <translation>Radslutstecken</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="189"/>
+      <source>Toolhead Precision</source>
+      <translation>Precision för verktygshuvud</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="191"/>
+      <source>Duplicate Commands</source>
+      <translation>Duplicera kommandon</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="192"/>
+      <source>Duplicate Parameters</source>
+      <translation>Duplicera parametrar</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="194"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1144"/>
+      <source>Kinematics</source>
+      <translation>Kinematik</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="195"/>
+      <source>Base Frame</source>
+      <translation>Baskoordinatsystem</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="196"/>
+      <source>Origin</source>
+      <translation>Origo</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="197"/>
+      <source>Orientation Quaternion</source>
+      <translation>Orienteringskvaternion</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="198"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1153"/>
+      <source>TCP Supported</source>
+      <translation>TCP stöds</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="199"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1184"/>
+      <source>Rotation Strategy</source>
+      <translation>Rotationsstrategi</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="200"/>
+      <source>Kinematics Notes</source>
+      <translation>Kinematikanmärkningar</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="202"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1338"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1487"/>
+      <source>Role</source>
+      <translation>Roll</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="203"/>
+      <source>Parent Axis</source>
+      <translation>Överordnad axel</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="204"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1362"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1511"/>
+      <source>Sequence</source>
+      <translation>Sekvens</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="205"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1449"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1591"/>
+      <source>Joint Origin</source>
+      <translation>Ledens origo</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="206"/>
+      <source>Joint Axis</source>
+      <translation>Ledaxel</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="207"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1604"/>
+      <source>Solution Preference</source>
+      <translation>Föredragen lösning</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="208"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1612"/>
+      <source>Allow Flip</source>
+      <translation>Tillåt vändning</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="209"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1634"/>
+      <source>Wrap Strategy</source>
+      <translation>Hantering av vinkelomslag</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="376"/>
+      <source>Custom Machine</source>
+      <translation>Anpassad maskin</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="381"/>
+      <source>2-Axis Lathe (X, Z)</source>
+      <translation>2-axlig svarv (X, Z)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="386"/>
+      <source>3-Axis Mill (XYZ)</source>
+      <translation>3-axlig fräs (XYZ)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="391"/>
+      <source>4-Axis Mill (XYZ + A)</source>
+      <translation>4-axlig fräs (XYZ + A)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="396"/>
+      <source>4-Axis Mill (XYZ + B)</source>
+      <translation>4-axlig fräs (XYZ + B)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="401"/>
+      <source>5-Axis Mill (XYZ + A, C)</source>
+      <translation>5-axlig fräs (XYZ + A, C)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="406"/>
+      <source>5-Axis Mill (XYZ + B, C)</source>
+      <translation>5-axlig fräs (XYZ + B, C)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="447"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="662"/>
+      <source>Machine Editor</source>
+      <translation>Maskinredigerare</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="463"/>
+      <source>Machine</source>
+      <translation>Maskin</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="468"/>
+      <source>Toolheads</source>
+      <translation>Verktygshuvuden</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="473"/>
+      <source>Postprocessor</source>
+      <translation>Postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="478"/>
+      <source>Options</source>
+      <translation>Alternativ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="505"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2426"/>
+      <source>Edit as Text</source>
+      <translation>Redigera som text</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="509"/>
+      <source>Validate</source>
+      <translation>Validera</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="516"/>
+      <source>Check this machine for problems that would stop it loading or would silently drop settings</source>
+      <translation>Kontrollera maskinen för problem som hindrar den från att läsas in eller gör att inställningar ignoreras utan meddelande</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="526"/>
+      <source>Save</source>
+      <translation>Spara</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="529"/>
+      <source>Close</source>
+      <translation>Stäng</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="831"/>
+      <source>Remove Toolhead</source>
+      <translation>Ta bort verktygshuvud</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="832"/>
+      <source>Remove toolhead? This action cannot be undone.</source>
+      <translation>Ta bort verktygshuvudet? Åtgärden kan inte ångras.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="891"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1025"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1108"/>
+      <source>Custom</source>
+      <translation>Anpassad</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="939"/>
+      <source>Community-maintained machine definitions are available in the Machines addon.</source>
+      <translation>Maskindefinitioner som underhålls av gemenskapen finns i tillägget Machines.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="940"/>
+      <source>Open Addon Manager</source>
+      <translation>Öppna tilläggshanteraren</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="941"/>
+      <source>Do not show again</source>
+      <translation>Visa inte igen</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1033"/>
+      <source>Template Load Error</source>
+      <translation>Fel vid inläsning av mall</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1034"/>
+      <source>Could not load template</source>
+      <translation>Kunde inte läsa in mallen</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1091"/>
+      <source>Name</source>
+      <translation>Namn</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1114"/>
+      <source>Load settings from an existing machine template</source>
+      <translation>Läs in inställningar från en befintlig maskinmall</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1115"/>
+      <source>Template</source>
+      <translation>Mall</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1125"/>
+      <source>Manufacturer</source>
+      <translation>Tillverkare</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1129"/>
+      <source>Description</source>
+      <translation>Beskrivning</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1132"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="67"/>
+      <source>Metric</source>
+      <translation>Metriska måttenheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1133"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="68"/>
+      <source>Imperial</source>
+      <translation>Brittiska måttenheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1135"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="77"/>
+      <source>Units</source>
+      <translation>Enheter</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1141"/>
+      <source>Type</source>
+      <translation>Typ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1159"/>
+      <source>Not declared</source>
+      <translation>Inte deklarerad</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1160"/>
+      <source>Dynamic work offset (DWO)</source>
+      <translation>Dynamisk arbetsförskjutning (DWO)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1161"/>
+      <source>Tilted work plane (TWP)</source>
+      <translation>Lutat arbetsplan (TWP)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1164"/>
+      <source>Post transform (not available yet)</source>
+      <translation>Eftertransformering (inte tillgängligt ännu)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1177"/>
+      <source>How the control runs an operation on a tilted work plane. DWO: the post commands the rotary axes and the control applies its pivot offsets. TWP: the post declares the plane and the control positions the rotary axes. A machine with rotary axes and no strategy cannot post such an operation. The command the plane is declared with comes from the post-processor.</source>
+      <translation>Hur styrsystemet kör en operation på ett lutat arbetsplan. DWO: postprocessorn styr rotationsaxlarna och styrsystemet tillämpar sina pivotförskjutningar. TWP: postprocessorn deklarerar planet och styrsystemet positionerar rotationsaxlarna. En maskin med rotationsaxlar utan strategi kan inte postprocessa en sådan operation. Kommandot som används för att deklarera planet kommer från postprocessorn.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1193"/>
+      <source>Notes</source>
+      <translation>Anteckningar</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1199"/>
+      <source>Axes</source>
+      <translation>Axlar</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1227"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1228"/>
+      <source>Add Toolhead</source>
+      <translation>Lägg till verktygshuvud</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1353"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1502"/>
+      <source>Parent</source>
+      <translation>Överordnad</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1380"/>
+      <source>Direction</source>
+      <translation>Riktning</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1391"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1519"/>
+      <source>Min Limit</source>
+      <translation>Nedre gräns</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1401"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1526"/>
+      <source>Max Limit</source>
+      <translation>Övre gräns</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1411"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1535"/>
+      <source>Max Velocity</source>
+      <translation>Maximal hastighet</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1553"/>
+      <source>Rotation Axis</source>
+      <translation>Rotationsaxel</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1622"/>
+      <source>Prefer Positive</source>
+      <translation>Föredra positivt</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2000"/>
+      <source>Postprocessor Selection</source>
+      <translation>Val av postprocessor</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2010"/>
+      <source>Select the postprocessor file for this machine</source>
+      <translation>Välj postprocessorfil för maskinen</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2036"/>
+      <source>Post Processor:</source>
+      <translation>Postprocessor:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2042"/>
+      <source>Postprocessor Configuration</source>
+      <translation>Postprocessorkonfiguration</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2431"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2593"/>
+      <source>JSON Error</source>
+      <translation>JSON-fel</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2432"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2489"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2594"/>
+      <source>Invalid JSON: {}</source>
+      <translation>Ogiltig JSON: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2437"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2456"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2600"/>
+      <source>Error</source>
+      <translation>Fel</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2438"/>
+      <source>Failed to parse data: {}</source>
+      <translation>Det gick inte att tolka data: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2451"/>
+      <source>Edit as Form</source>
+      <translation>Redigera som formulär</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2457"/>
+      <source>Failed to generate JSON: {}</source>
+      <translation>Kunde inte generera JSON: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2488"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2495"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2511"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2527"/>
+      <source>Validation</source>
+      <translation>Validering</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2496"/>
+      <source>This machine does not load: {}</source>
+      <translation>Maskinen kan inte läsas in: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2512"/>
+      <source>No problems found.</source>
+      <translation>Inga problem hittades.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2518"/>
+      <source>{} error(s) and {} warning(s) found.</source>
+      <translation>{} fel och {} varningar hittades.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2523"/>
+      <source>{} warning(s) found.</source>
+      <translation>{} varningar hittades.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2567"/>
+      <source>Duplicate Machine Name</source>
+      <translation>Maskinnamnet används redan</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2571"/>
+      <source>A machine with the name &apos;{}&apos; already exists. Please choose a different name.</source>
+      <translation>Det finns redan en maskin med namnet &apos;{}&apos;. Välj ett annat namn.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2601"/>
+      <source>Failed to save: {}</source>
+      <translation>Kunde inte spara: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="63"/>
+      <source>Main Options</source>
+      <translation>Huvudalternativ</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="133"/>
+      <source>Processing Options</source>
+      <translation>Bearbetningsalternativ</translation>
     </message>
   </context>
   <context>
@@ -15246,6 +14786,342 @@ Verktygstyper som stöds: pinnfräs med plan ände, hörnradiefräs och V-fräs.
       <location filename="../../../PathSimulator/AppGL/GuiDisplay.cpp" line="99"/>
       <source>x%1</source>
       <translation>x%1</translation>
+    </message>
+  </context>
+  <context>
+    <name>DlgPostProcess</name>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="14"/>
+      <source>Post Processing</source>
+      <translation>Postprocessning</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="29"/>
+      <source>Post Processing - Job: (unknown)</source>
+      <translation>Postprocessning – jobb: (okänt)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="40"/>
+      <source>Overview</source>
+      <translation>Översikt</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="46"/>
+      <location filename="../panels/DlgPostProcess.ui" line="55"/>
+      <source>Machine</source>
+      <translation>Maskin</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="68"/>
+      <source>Machine configuration (.fcm) to use for post-processing</source>
+      <translation>Maskinkonfiguration (.fcm) som ska användas för postprocessning</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="78"/>
+      <source>Fixtures</source>
+      <translation>Fixturer</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="90"/>
+      <source>Check fixtures to include in the G-code output</source>
+      <translation>Markera fixturer som ska inkluderas i G-kodsutdata</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="100"/>
+      <source>Job Details</source>
+      <translation>Jobbdetaljer</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="109"/>
+      <source>Author</source>
+      <translation>Upphovsperson</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="116"/>
+      <source>Author name written into the G-code header comment</source>
+      <translation>Upphovspersonens namn som skrivs i G-kodens inledande kommentar</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="119"/>
+      <location filename="../panels/DlgPostProcess.ui" line="145"/>
+      <source>(optional)</source>
+      <translation>(valfri)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="126"/>
+      <source>Comment</source>
+      <translation>Kommentar</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="142"/>
+      <source>Arbitrary comment written into the G-code header</source>
+      <translation>Valfri kommentar som skrivs i G-kodens inledning</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="155"/>
+      <location filename="../panels/DlgPostProcess.ui" line="310"/>
+      <source>Options</source>
+      <translation>Alternativ</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="161"/>
+      <source>Generate a full sanity/setup report alongside the G-code file</source>
+      <translation>Generera en fullständig rapport med rimlighetskontroll och inställningar tillsammans med G-kodsfilen</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="164"/>
+      <source>Generate HTML sanity report</source>
+      <translation>Generera HTML-rapport med rimlighetskontroll</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="177"/>
+      <source>Post Processor Parameters</source>
+      <translation>Postprocessorparametrar</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="186"/>
+      <source>(No additional parameters for this post processor)</source>
+      <translation>(Inga ytterligare parametrar för den här postprocessorn)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="213"/>
+      <source>Operations</source>
+      <translation>Operationer</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="219"/>
+      <source>Check operations to include in the G-code output. Uncheck to skip.</source>
+      <translation>Markera operationer som ska inkluderas i G-kodsutdata. Avmarkera för att hoppa över.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="232"/>
+      <source>#</source>
+      <translation>#</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="237"/>
+      <source>Operation</source>
+      <translation>Operation</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="242"/>
+      <source>Tool</source>
+      <translation>Verktyg</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="250"/>
+      <source>Tool Controller</source>
+      <translation>Verktygsstyrning</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="255"/>
+      <source>Coolant</source>
+      <translation>Kylmedel</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="260"/>
+      <source>Time</source>
+      <translation>Tid</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="270"/>
+      <source>Select All</source>
+      <translation>Markera alla</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="277"/>
+      <source>Select None</source>
+      <translation>Avmarkera alla</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="284"/>
+      <source>Show the workplan (postable items structure)</source>
+      <translation>Visa bearbetningsplanen (strukturen med objekt som kan postprocessas)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="287"/>
+      <source>Workplan</source>
+      <translation>Bearbetningsplan</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="337"/>
+      <source>(Select a machine on the Overview tab to see machine output options)</source>
+      <translation>(Välj en maskin på fliken Översikt för att visa alternativ för maskinutdata)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="365"/>
+      <source>Output</source>
+      <translation>Utdata</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="373"/>
+      <source>Output folder</source>
+      <translation>Utdatamapp</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="380"/>
+      <source>Folder where G-code files will be saved</source>
+      <translation>Mapp där G-kodsfiler sparas</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="383"/>
+      <source>(resolved when output is generated)</source>
+      <translation>(bestäms när utdata genereras)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="396"/>
+      <source>Browse…</source>
+      <translation>Bläddra…</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="407"/>
+      <source>Filename template</source>
+      <translation>Filnamnsmall</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="414"/>
+      <source>Filename template. Substitutions: %j=job name, %d=document, %S=sequence number.
+%T=tool number, %t=tool controller, %W=fixture and %O=operation name a section of a split output and are ignored when the output is not split.</source>
+      <translation>Mall för filnamn. Ersättningar: %j=jobbnamn, %d=dokument, %S=sekvensnummer.
+%T=verktygsnummer, %t=verktygsstyrning, %W=uppspänning och %O=operationsnamn anger avsnittet i en delad utdata och ignoreras när utdata inte delas.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="418"/>
+      <source>e.g. %j.nc</source>
+      <translation>t.ex. %j.nc</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="434"/>
+      <source>Regenerate output filenames using this template</source>
+      <translation>Generera om utdatafilnamnen med den här mallen</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="437"/>
+      <source>Apply</source>
+      <translation>Verkställ</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="449"/>
+      <source>Press &quot;Generate Output&quot; to preview G-code before saving.</source>
+      <translation>Tryck på ”Generera utdata” för att förhandsgranska G-koden innan du sparar.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="469"/>
+      <source>Generated output files. Select a file to view or edit its contents.</source>
+      <translation>Genererade utdatafiler. Välj en fil för att visa eller redigera dess innehåll.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="480"/>
+      <source>G-code content for the selected file. You may edit before saving.</source>
+      <translation>G-kodsinnehåll för den valda filen. Du kan redigera det innan du sparar.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="493"/>
+      <source>Save to Disk</source>
+      <translation>Spara till disk</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="516"/>
+      <source>Warnings</source>
+      <translation>Varningar</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="525"/>
+      <source>No issues found</source>
+      <translation>Inga problem hittades</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="535"/>
+      <source>Validation issues found in the job. WARNING and CAUTION items should be addressed before machining.</source>
+      <translation>Valideringsproblem hittades i jobbet. Varningar och försiktighetsmeddelanden bör åtgärdas före bearbetning.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="557"/>
+      <source>Severity</source>
+      <translation>Allvarlighetsgrad</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="562"/>
+      <source>Note</source>
+      <translation>Anteckning</translation>
+    </message>
+  </context>
+  <context>
+    <name>FeedsSpeedsPresetEdit</name>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="14"/>
+      <source>Edit preset</source>
+      <translation>Redigera förinställning</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="22"/>
+      <source>Name:</source>
+      <translation>Namn:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="32"/>
+      <source>Material:</source>
+      <translation>Material:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="41"/>
+      <source>(none)</source>
+      <translation>(ingen)</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="48"/>
+      <source>Browse…</source>
+      <translation>Bläddra…</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="55"/>
+      <source>Generic (any material)</source>
+      <translation>Generiskt (valfritt material)</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="64"/>
+      <source>Op type:</source>
+      <translation>Operationstyp:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="74"/>
+      <source>Surface speed:</source>
+      <translation>Skärhastighet:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="91"/>
+      <source>Chipload (per tooth):</source>
+      <translation>Matning per tand:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="111"/>
+      <source>Vert feed ratio:</source>
+      <translation>Förhållande för vertikal matning:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="136"/>
+      <source>Direct feed and speed</source>
+      <translation>Direkt matning och varvtal</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="142"/>
+      <source>Horiz feed:</source>
+      <translation>Horisontell matning:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="162"/>
+      <source>Spindle speed:</source>
+      <translation>Spindelvarvtal:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="185"/>
+      <source>Notes</source>
+      <translation>Anteckningar</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="201"/>
+      <source>Tool diameter and/or flute count missing — surface speed and chipload won&apos;t auto-sync with direct feed/speed.</source>
+      <translation>Verktygsdiameter och/eller antal skär saknas. Skärhastighet och matning per tand synkroniseras inte automatiskt med direkt angiven matning och varvtal.</translation>
     </message>
   </context>
   <context>

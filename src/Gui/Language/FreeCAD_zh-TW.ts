@@ -9,25 +9,25 @@
       <translation>&lt;空&gt;</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2446"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2735"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2444"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2733"/>
       <source>Angle</source>
       <translation>角度</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2450"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2739"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2448"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2737"/>
       <source>Axis</source>
       <translation>軸</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2744"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2742"/>
       <source>Position</source>
       <translation>位置</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgAddProperty.cpp" line="376"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3016"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3014"/>
       <source>Enum</source>
       <translation>列舉</translation>
     </message>
@@ -133,10 +133,10 @@
       <translation>放置</translation>
     </message>
     <message>
-      <location filename="../Transform.cpp" line="108"/>
-      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
       <location filename="../TaskTransform.cpp" line="152"/>
       <location filename="../TaskTransform.cpp" line="1069"/>
+      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
+      <location filename="../Transform.cpp" line="108"/>
       <source>Transform</source>
       <translation>轉換</translation>
     </message>
@@ -5473,44 +5473,44 @@ The 'Status' column shows whether the document could be recovered.</source>
       <translation>顯示相依性</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="124"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
       <source>Depending on</source>
       <translation>相依</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="125"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="129"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="127"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="131"/>
       <source>Document</source>
       <translation>文件</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
       <source>Name</source>
       <translation>名稱</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
       <source>Depended by</source>
       <translation>相依於</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="134"/>
       <source>Selections</source>
       <translation>選項</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="138"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="140"/>
       <source>All</source>
       <translation>所有</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="168"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
       <source>&amp;Use Original Selection</source>
       <translation>使用原始選擇(&amp;U)</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="172"/>
       <source>Ignore dependencies and proceed with the objects
 originally selected prior to opening this dialog</source>
       <translation>忽略相依性並繼續處理在開啟此對話框之前最初選擇的物件</translation>
@@ -5574,12 +5574,12 @@ originally selected prior to opening this dialog</source>
       <translation>到結尾</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="733"/>
+      <location filename="../ReportView.cpp" line="738"/>
       <source>Save As…</source>
       <translation>另存為…</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="745"/>
+      <location filename="../ReportView.cpp" line="750"/>
       <source>Plain text files</source>
       <translation>純文字檔</translation>
     </message>
@@ -5606,12 +5606,12 @@ originally selected prior to opening this dialog</source>
       <translation>顯示報告檢視</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="731"/>
+      <location filename="../ReportView.cpp" line="733"/>
       <source>Clear</source>
       <translation>清除</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="743"/>
+      <location filename="../ReportView.cpp" line="748"/>
       <source>Save Report Output</source>
       <translation>儲存報表輸出</translation>
     </message>
@@ -5959,15 +5959,15 @@ Save all changes?</source>
       <translation>點陣圖</translation>
     </message>
     <message>
-      <location filename="../GraphvizView.cpp" line="411"/>
-      <location filename="../CommandDoc.cpp" line="765"/>
-      <source>Export Graph</source>
-      <translation>匯出圖表</translation>
-    </message>
-    <message>
       <location filename="../GraphvizView.cpp" line="474"/>
       <source>Export graph</source>
       <translation>匯出圖形</translation>
+    </message>
+    <message>
+      <location filename="../CommandDoc.cpp" line="765"/>
+      <location filename="../GraphvizView.cpp" line="411"/>
+      <source>Export Graph</source>
+      <translation>匯出圖表</translation>
     </message>
   </context>
   <context>
@@ -6017,66 +6017,66 @@ Save all changes?</source>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
+      <location filename="../InputVector.cpp" line="104"/>
+      <location filename="../InputVector.cpp" line="118"/>
       <location filename="../InputVector.h" line="131"/>
       <location filename="../InputVector.h" line="154"/>
       <location filename="../InputVector.h" line="277"/>
       <location filename="../InputVector.h" line="300"/>
       <location filename="../InputVector.h" line="475"/>
       <location filename="../InputVector.h" line="489"/>
-      <location filename="../InputVector.cpp" line="104"/>
-      <location filename="../InputVector.cpp" line="118"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="105"/>
+      <location filename="../InputVector.cpp" line="119"/>
       <location filename="../InputVector.h" line="132"/>
       <location filename="../InputVector.h" line="155"/>
       <location filename="../InputVector.h" line="278"/>
       <location filename="../InputVector.h" line="301"/>
       <location filename="../InputVector.h" line="476"/>
       <location filename="../InputVector.h" line="490"/>
-      <location filename="../InputVector.cpp" line="105"/>
-      <location filename="../InputVector.cpp" line="119"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="106"/>
+      <location filename="../InputVector.cpp" line="120"/>
       <location filename="../InputVector.h" line="133"/>
       <location filename="../InputVector.h" line="156"/>
       <location filename="../InputVector.h" line="279"/>
       <location filename="../InputVector.h" line="302"/>
       <location filename="../InputVector.h" line="477"/>
       <location filename="../InputVector.h" line="491"/>
-      <location filename="../InputVector.cpp" line="106"/>
-      <location filename="../InputVector.cpp" line="120"/>
       <source>Z</source>
       <translation>Z</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="107"/>
+      <location filename="../InputVector.cpp" line="123"/>
       <location filename="../InputVector.h" line="134"/>
       <location filename="../InputVector.h" line="159"/>
       <location filename="../InputVector.h" line="280"/>
       <location filename="../InputVector.h" line="305"/>
       <location filename="../InputVector.h" line="478"/>
       <location filename="../InputVector.h" line="494"/>
-      <location filename="../InputVector.cpp" line="107"/>
-      <location filename="../InputVector.cpp" line="123"/>
       <source>User defined…</source>
       <translation>使用者定義</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="215"/>
       <location filename="../InputVector.h" line="240"/>
       <location filename="../InputVector.h" line="375"/>
       <location filename="../InputVector.h" line="564"/>
-      <location filename="../InputVector.cpp" line="215"/>
       <source>Wrong direction</source>
       <translation>錯誤的方向</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="216"/>
       <location filename="../InputVector.h" line="241"/>
       <location filename="../InputVector.h" line="376"/>
       <location filename="../InputVector.h" line="565"/>
-      <location filename="../InputVector.cpp" line="216"/>
       <source>Direction must not be the null vector</source>
       <translation>方向不可為空向量</translation>
     </message>
@@ -6112,12 +6112,12 @@ Save all changes?</source>
       <translation>巨集</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1364"/>
+      <location filename="../Command.cpp" line="1368"/>
       <source>Macro file doesn't exist</source>
       <translation>巨集檔案不存在</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1365"/>
+      <location filename="../Command.cpp" line="1369"/>
       <source>No such macro file: '%1'</source>
       <translation>無 '%1'之巨集</translation>
     </message>
@@ -6497,12 +6497,12 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::LinkSelection</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Error</source>
       <translation>錯誤</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Object not found</source>
       <translation>未發現物件</translation>
     </message>
@@ -6510,153 +6510,153 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::PropertyEditor</name>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="382"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="363"/>
       <source>Edit</source>
       <translation>編輯</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="393"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="374"/>
       <source>property</source>
       <translation>屬性</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="919"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="869"/>
       <source>Expand/Collapse Properties</source>
       <translation>展開/收合屬性</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="921"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="871"/>
       <source>Expand to Default</source>
       <translation>展開至預設</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="923"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="873"/>
       <source>Expand All</source>
       <translation>展開全部</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="925"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="875"/>
       <source>Collapse All</source>
       <translation>收合全部</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="931"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="881"/>
       <source>Default Expand</source>
       <translation>預設展開</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="934"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="884"/>
       <source>Auto Expand</source>
       <translation>自動展開</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="937"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="887"/>
       <source>Auto Collapse</source>
       <translation>自動收合</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1027"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="977"/>
       <source>object %1 (%2):
 </source>
       <translation>物件 %1 (%2)：
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1034"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="984"/>
       <source>property %1
 </source>
       <translation>屬性 %1
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1046"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="996"/>
       <source>document %1:
 </source>
       <translation>文件 %1：
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1071"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1021"/>
       <source>The property %1 in object %2 (%3) in document %4 is referenced by:</source>
       <translation>文件 %4 中物件 %2 (%3) 的屬性 %1 被以下項目參考：
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1087"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1037"/>
       <source>(No references found.)</source>
       <translation>（找不到參考。）</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1105"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1193"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1055"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
       <source>Property Uses</source>
       <translation>屬性用途</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1135"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1085"/>
       <source>Copy</source>
       <translation>拷貝</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1093"/>
       <source>Add Property</source>
       <translation>增加屬性</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1150"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1433"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1100"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1383"/>
       <source>Rename Property Group</source>
       <translation>重新命名屬性群組</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1161"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1111"/>
       <source>Cannot rename group: one or more properties have names that start with the group name</source>
       <translation>無法重新命名群組：有一或多個屬性名稱以群組名稱開頭</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1170"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1403"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1120"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1353"/>
       <source>Rename Property</source>
       <translation>重新命名屬性</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1171"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1373"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1121"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1323"/>
       <source>Edit Property Tooltip</source>
       <translation>編輯屬性工具提示</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1188"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1138"/>
       <source>Delete Property</source>
       <translation>刪除屬性</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1203"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1153"/>
       <source>Move Property</source>
       <translation>移動屬性</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1374"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1324"/>
       <source>Tooltip</source>
       <translation>工具提示</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1213"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1163"/>
       <source>Show Hidden</source>
       <translation>顯示隱藏</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1230"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1180"/>
       <source>Expression</source>
       <translation>Expression</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1404"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1354"/>
       <source>Property name</source>
       <translation>屬性名稱</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1434"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1384"/>
       <source>Group name:</source>
       <translation>群組名稱：</translation>
     </message>
@@ -7227,6 +7227,7 @@ Specify another directory?</source>
     </message>
     <message>
       <location filename="Translator.cpp" line="241"/>
+      <location filename="Translator.cpp" line="279"/>
       <source>English</source>
       <translation>英文</translation>
     </message>
@@ -8096,7 +8097,7 @@ Check the report view for more details.</source>
       <translation> → 正在重啟...</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="548"/>
+      <location filename="../Command.cpp" line="550"/>
       <source>Exception</source>
       <translation>異常</translation>
     </message>
@@ -8727,12 +8728,12 @@ Choose 'Abort' to abort</source>
       <translation>無法打開您的系統瀏覽器。</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3342"/>
+      <location filename="../View3DInventorViewer.cpp" line="3343"/>
       <source>Out of memory</source>
       <translation>記憶體不足</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3343"/>
+      <location filename="../View3DInventorViewer.cpp" line="3344"/>
       <source>Not enough memory available to display the data.</source>
       <translation>沒有足夠的記憶體可用來顯示資料。</translation>
     </message>
@@ -8878,8 +8879,8 @@ Choose 'Abort' to abort</source>
       <translation>拖放操作失敗</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1010"/>
       <location filename="../ViewProviderLink.cpp" line="3055"/>
+      <location filename="../MainWindow.cpp" line="1010"/>
       <source>Apply to all</source>
       <translation>全部套用</translation>
     </message>
@@ -9197,12 +9198,12 @@ the current copy will be lost.
   <context>
     <name>SelectionFilter</name>
     <message>
-      <location filename="../Selection/Selection.cpp" line="975"/>
+      <location filename="../Selection/Selection.cpp" line="978"/>
       <source>Not allowed:</source>
       <translation>不允許：</translation>
     </message>
     <message>
-      <location filename="../Selection/Selection.cpp" line="1335"/>
+      <location filename="../Selection/Selection.cpp" line="1338"/>
       <source>Selection not allowed by filter</source>
       <translation>不允許使用過濾器選擇</translation>
     </message>
@@ -14574,7 +14575,7 @@ This makes the docked panel stay transparent at all times.</source>
   <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4700"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4698"/>
       <source>Changes the linked object</source>
       <translation>變更鏈結物件</translation>
     </message>
@@ -14582,12 +14583,12 @@ This makes the docked panel stay transparent at all times.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyItemDelegate</name>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>Yes</source>
       <translation>是</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>No</source>
       <translation>否</translation>
     </message>
@@ -14731,6 +14732,49 @@ This makes the docked panel stay transparent at all times.</source>
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::DlgDocumentObject</name>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="14"/>
+      <source>Object</source>
+      <translation>物件</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="46"/>
+      <source>Filter by type</source>
+      <translation>依類型過濾</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="53"/>
+      <source>Synchronizes the 3D view selection with the full object hierarchy</source>
+      <translation>將 3D 視圖選擇與完整物件階層同步</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="56"/>
+      <source>Sync sub-object selection</source>
+      <translation>同步子物件選擇</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="88"/>
+      <source>Search</source>
+      <translation>搜尋</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="95"/>
+      <source>A search pattern to filter the results above</source>
+      <translation>一個搜尋樣式以過濾上述結果</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.cpp" line="118"/>
+      <source>Reset</source>
+      <translation>重設</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.cpp" line="119"/>
+      <source>Clear</source>
+      <translation>清除</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::DlgSettingsKeyboard</name>
     <message>
       <location filename="../Dialogs/DlgKeyboard.ui" line="14"/>
@@ -14833,95 +14877,17 @@ treated as shortcut key sequence 'F, F'.</source>
     </message>
   </context>
   <context>
-    <name>Gui::Dialog::DlgDocumentObject</name>
+    <name>FileDialog</name>
     <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="14"/>
-      <source>Object</source>
-      <translation>物件</translation>
+      <location filename="../FileDialog.cpp" line="579"/>
+      <source>Save As</source>
+      <translation>另存為</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="46"/>
-      <source>Filter by type</source>
-      <translation>依類型過濾</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="53"/>
-      <source>Synchronizes the 3D view selection with the full object hierarchy</source>
-      <translation>將 3D 視圖選擇與完整物件階層同步</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="56"/>
-      <source>Sync sub-object selection</source>
-      <translation>同步子物件選擇</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="88"/>
-      <source>Search</source>
-      <translation>搜尋</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="95"/>
-      <source>A search pattern to filter the results above</source>
-      <translation>一個搜尋樣式以過濾上述結果</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.cpp" line="118"/>
-      <source>Reset</source>
-      <translation>重設</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.cpp" line="119"/>
-      <source>Clear</source>
-      <translation>清除</translation>
-    </message>
-  </context>
-  <context>
-    <name>Gui::Command</name>
-    <message>
-      <location filename="../Command.cpp" line="1063"/>
-      <source>Experimental</source>
-      <translation>實驗性功能</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1065"/>
-      <source>EXPERIMENTAL: this command may change.</source>
-      <translation>實驗性：此指令可能變更。</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1069"/>
-      <source>Development preview</source>
-      <translation>開發預覽</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1070"/>
-      <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
-      <translation>開發預覽：此指令可能變更或移除。</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdOpenGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="85"/>
-      <source>&amp;Open…</source>
-      <translation>開啟(&amp;O)</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="86"/>
-      <source>Opens a document or imports files</source>
-      <translation>開啟一個文件或匯入檔案</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdSaveGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="966"/>
-      <source>Save</source>
-      <translation>儲存</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="967"/>
-      <source>Saves the active document</source>
-      <translation>儲存作業中文件</translation>
+      <location filename="../FileDialog.cpp" line="715"/>
+      <location filename="../FileDialog.cpp" line="811"/>
+      <source>Open</source>
+      <translation>開啟</translation>
     </message>
   </context>
   <context>
@@ -14963,43 +14929,55 @@ treated as shortcut key sequence 'F, F'.</source>
     </message>
   </context>
   <context>
+    <name>StdCmdToggleBottomPanels</name>
+    <message>
+      <location filename="../CommandView.cpp" line="3858"/>
+      <source>Toggle Bottom Panels</source>
+      <translation>切換底部面板</translation>
+    </message>
+    <message>
+      <location filename="../CommandView.cpp" line="3859"/>
+      <source>Toggles the bottom dock panels</source>
+      <translation>切換底部停駐面板</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::PropertyMapEditor</name>
     <message>
-      <location filename="../Widgets.cpp" line="1913"/>
+      <location filename="../Widgets.cpp" line="1924"/>
       <source>Key</source>
       <translation>Key</translation>
     </message>
     <message>
-      <location filename="../Widgets.cpp" line="1913"/>
+      <location filename="../Widgets.cpp" line="1924"/>
       <source>Value</source>
       <translation>值</translation>
     </message>
   </context>
   <context>
-    <name>StdCmdToggleSuppress</name>
+    <name>StdCmdOpenGroup</name>
     <message>
-      <location filename="../CommandFeat.cpp" line="240"/>
-      <source>Toggle Suppressed</source>
-      <translation>切換已抑制</translation>
+      <location filename="../CommandDoc.cpp" line="85"/>
+      <source>&amp;Open…</source>
+      <translation>開啟(&amp;O)</translation>
     </message>
     <message>
-      <location filename="../CommandFeat.cpp" line="242"/>
-      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
-      <translation>切換所選物件的抑制狀態。被抑制的物件行為如同已刪除。</translation>
+      <location filename="../CommandDoc.cpp" line="86"/>
+      <source>Opens a document or imports files</source>
+      <translation>開啟一個文件或匯入檔案</translation>
     </message>
   </context>
   <context>
-    <name>FileDialog</name>
+    <name>StdCmdSaveGroup</name>
     <message>
-      <location filename="../FileDialog.cpp" line="579"/>
-      <source>Save As</source>
-      <translation>另存為</translation>
+      <location filename="../CommandDoc.cpp" line="966"/>
+      <source>Save</source>
+      <translation>儲存</translation>
     </message>
     <message>
-      <location filename="../FileDialog.cpp" line="715"/>
-      <location filename="../FileDialog.cpp" line="811"/>
-      <source>Open</source>
-      <translation>開啟</translation>
+      <location filename="../CommandDoc.cpp" line="967"/>
+      <source>Saves the active document</source>
+      <translation>儲存作業中文件</translation>
     </message>
   </context>
   <context>
@@ -15034,16 +15012,39 @@ treated as shortcut key sequence 'F, F'.</source>
     </message>
   </context>
   <context>
-    <name>StdCmdToggleBottomPanels</name>
+    <name>StdCmdToggleSuppress</name>
     <message>
-      <location filename="../CommandView.cpp" line="3858"/>
-      <source>Toggle Bottom Panels</source>
-      <translation>切換底部面板</translation>
+      <location filename="../CommandFeat.cpp" line="240"/>
+      <source>Toggle Suppressed</source>
+      <translation>切換已抑制</translation>
     </message>
     <message>
-      <location filename="../CommandView.cpp" line="3859"/>
-      <source>Toggles the bottom dock panels</source>
-      <translation>切換底部停駐面板</translation>
+      <location filename="../CommandFeat.cpp" line="242"/>
+      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
+      <translation>切換所選物件的抑制狀態。被抑制的物件行為如同已刪除。</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Command</name>
+    <message>
+      <location filename="../Command.cpp" line="1067"/>
+      <source>Experimental</source>
+      <translation>實驗性功能</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1069"/>
+      <source>EXPERIMENTAL: this command may change.</source>
+      <translation>實驗性：此指令可能變更。</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1073"/>
+      <source>Development preview</source>
+      <translation>開發預覽</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1074"/>
+      <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
+      <translation>開發預覽：此指令可能變更或移除。</translation>
     </message>
   </context>
   <context>
@@ -15057,32 +15058,32 @@ treated as shortcut key sequence 'F, F'.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3588"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3586"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>定義表面在受光照射時的基礎色彩。它代表物件如何均勻地向所有方向散射光線，與觀察者角度無關。此屬性對材質色彩影響最大。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3598"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3596"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>定義表面在間接、均勻照明下的色彩，呈現僅受場景環境光照射、無方向光、陰影或高光時的外觀</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3608"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3606"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>定義光線直接照射到光滑或反射表面上時出現的明亮、鏡面般高光的色彩與強度。光滑物件請設為明亮色彩。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3618"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3616"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>定義表面彷彿自身發光（如光源）的色彩，與外部照明無關，使物件看起來自體發光。設為黑色表示無發光色彩。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3630"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3628"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>定義表面上高光的大小與銳利度。數值越高產生越小、越銳利的高光；數值越低則產生較寬、較柔和的高光。注意高光強度由反射色彩決定。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3642"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3640"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>定義光線穿透物件的程度，使其部分或完全透明</translation>
     </message>
@@ -15090,32 +15091,32 @@ treated as shortcut key sequence 'F, F'.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialListItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3954"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3952"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>定義表面在受光照射時的基礎色彩。它代表物件如何均勻地向所有方向散射光線，與觀察者角度無關。此屬性對材質色彩影響最大。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3964"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3962"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>定義表面在間接、均勻照明下的色彩，呈現僅受場景環境光照射、無方向光、陰影或高光時的外觀</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3974"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3972"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>定義光線直接照射到光滑或反射表面上時出現的明亮、鏡面般高光的色彩與強度。光滑物件請設為明亮色彩。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3984"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3982"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>定義表面彷彿自身發光（如光源）的色彩，與外部照明無關，使物件看起來自體發光。設為黑色表示無發光色彩。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3996"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3994"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>定義表面上高光的大小與銳利度。數值越高產生越小、越銳利的高光；數值越低則產生較寬、較柔和的高光。注意高光強度由反射色彩決定。</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4008"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4006"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation/>
     </message>
@@ -15123,7 +15124,7 @@ treated as shortcut key sequence 'F, F'.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyMapItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4930"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4928"/>
       <source>Map</source>
       <translation>地圖</translation>
     </message>

@@ -9,25 +9,25 @@
       <translation>&lt;prázdný&gt;</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2446"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2735"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2444"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2733"/>
       <source>Angle</source>
       <translation>Úhel</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2450"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2739"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2448"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2737"/>
       <source>Axis</source>
       <translation>Osa</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2744"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2742"/>
       <source>Position</source>
       <translation>Poloha</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgAddProperty.cpp" line="376"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3016"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3014"/>
       <source>Enum</source>
       <translation>Výčet</translation>
     </message>
@@ -133,10 +133,10 @@
       <translation>Umístění</translation>
     </message>
     <message>
-      <location filename="../Transform.cpp" line="108"/>
-      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
       <location filename="../TaskTransform.cpp" line="152"/>
       <location filename="../TaskTransform.cpp" line="1069"/>
+      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
+      <location filename="../Transform.cpp" line="108"/>
       <source>Transform</source>
       <translation>Transformace</translation>
     </message>
@@ -5482,44 +5482,44 @@ Sloupec "Status" ukazuje zda je možné dokument obnovit.</translation>
       <translation>Zobrazit závislosti</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="124"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
       <source>Depending on</source>
       <translation>Závisí na</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="125"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="129"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="127"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="131"/>
       <source>Document</source>
       <translation>Dokument</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
       <source>Name</source>
       <translation>Název</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
       <source>Depended by</source>
       <translation>Závisí</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="134"/>
       <source>Selections</source>
       <translation>Výběry</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="138"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="140"/>
       <source>All</source>
       <translation>Vše</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="168"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
       <source>&amp;Use Original Selection</source>
       <translation>&amp;Použít původní výběr</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="172"/>
       <source>Ignore dependencies and proceed with the objects
 originally selected prior to opening this dialog</source>
       <translation>Ignorovat závislosti a pokračovat s objekty
@@ -5584,12 +5584,12 @@ původně vybranými před otevřením tohoto dialogu</translation>
       <translation>Přejít na konec</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="733"/>
+      <location filename="../ReportView.cpp" line="738"/>
       <source>Save As…</source>
       <translation>Uložit jako…</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="745"/>
+      <location filename="../ReportView.cpp" line="750"/>
       <source>Plain text files</source>
       <translation>Soubory prostého textu</translation>
     </message>
@@ -5616,12 +5616,12 @@ původně vybranými před otevřením tohoto dialogu</translation>
       <translation>Zobrazit Pohled protokolu</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="731"/>
+      <location filename="../ReportView.cpp" line="733"/>
       <source>Clear</source>
       <translation>Vyčistit</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="743"/>
+      <location filename="../ReportView.cpp" line="748"/>
       <source>Save Report Output</source>
       <translation>Uložit výstupní zprávu</translation>
     </message>
@@ -5968,14 +5968,14 @@ Uložit všechny změny?</translation>
       <translation>Bitmapa</translation>
     </message>
     <message>
-      <location filename="../GraphvizView.cpp" line="411"/>
-      <location filename="../CommandDoc.cpp" line="765"/>
-      <source>Export Graph</source>
+      <location filename="../GraphvizView.cpp" line="474"/>
+      <source>Export graph</source>
       <translation>Exportovat graf</translation>
     </message>
     <message>
-      <location filename="../GraphvizView.cpp" line="474"/>
-      <source>Export graph</source>
+      <location filename="../CommandDoc.cpp" line="765"/>
+      <location filename="../GraphvizView.cpp" line="411"/>
+      <source>Export Graph</source>
       <translation>Exportovat graf</translation>
     </message>
   </context>
@@ -6026,66 +6026,66 @@ Uložit všechny změny?</translation>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
+      <location filename="../InputVector.cpp" line="104"/>
+      <location filename="../InputVector.cpp" line="118"/>
       <location filename="../InputVector.h" line="131"/>
       <location filename="../InputVector.h" line="154"/>
       <location filename="../InputVector.h" line="277"/>
       <location filename="../InputVector.h" line="300"/>
       <location filename="../InputVector.h" line="475"/>
       <location filename="../InputVector.h" line="489"/>
-      <location filename="../InputVector.cpp" line="104"/>
-      <location filename="../InputVector.cpp" line="118"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="105"/>
+      <location filename="../InputVector.cpp" line="119"/>
       <location filename="../InputVector.h" line="132"/>
       <location filename="../InputVector.h" line="155"/>
       <location filename="../InputVector.h" line="278"/>
       <location filename="../InputVector.h" line="301"/>
       <location filename="../InputVector.h" line="476"/>
       <location filename="../InputVector.h" line="490"/>
-      <location filename="../InputVector.cpp" line="105"/>
-      <location filename="../InputVector.cpp" line="119"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="106"/>
+      <location filename="../InputVector.cpp" line="120"/>
       <location filename="../InputVector.h" line="133"/>
       <location filename="../InputVector.h" line="156"/>
       <location filename="../InputVector.h" line="279"/>
       <location filename="../InputVector.h" line="302"/>
       <location filename="../InputVector.h" line="477"/>
       <location filename="../InputVector.h" line="491"/>
-      <location filename="../InputVector.cpp" line="106"/>
-      <location filename="../InputVector.cpp" line="120"/>
       <source>Z</source>
       <translation>Z</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="107"/>
+      <location filename="../InputVector.cpp" line="123"/>
       <location filename="../InputVector.h" line="134"/>
       <location filename="../InputVector.h" line="159"/>
       <location filename="../InputVector.h" line="280"/>
       <location filename="../InputVector.h" line="305"/>
       <location filename="../InputVector.h" line="478"/>
       <location filename="../InputVector.h" line="494"/>
-      <location filename="../InputVector.cpp" line="107"/>
-      <location filename="../InputVector.cpp" line="123"/>
       <source>User defined…</source>
       <translation>Uživatelem definovaný…</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="215"/>
       <location filename="../InputVector.h" line="240"/>
       <location filename="../InputVector.h" line="375"/>
       <location filename="../InputVector.h" line="564"/>
-      <location filename="../InputVector.cpp" line="215"/>
       <source>Wrong direction</source>
       <translation>Špatný směr</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="216"/>
       <location filename="../InputVector.h" line="241"/>
       <location filename="../InputVector.h" line="376"/>
       <location filename="../InputVector.h" line="565"/>
-      <location filename="../InputVector.cpp" line="216"/>
       <source>Direction must not be the null vector</source>
       <translation>Směr nesmí být nulový vektor</translation>
     </message>
@@ -6121,12 +6121,12 @@ Uložit všechny změny?</translation>
       <translation>Makra</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1364"/>
+      <location filename="../Command.cpp" line="1368"/>
       <source>Macro file doesn't exist</source>
       <translation>Soubor makra neexistuje</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1365"/>
+      <location filename="../Command.cpp" line="1369"/>
       <source>No such macro file: '%1'</source>
       <translation>Není soubor makra: '%1'</translation>
     </message>
@@ -6511,12 +6511,12 @@ V pravém pohledu jsou %2 body vybrány.</translation>
   <context>
     <name>Gui::PropertyEditor::LinkSelection</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Error</source>
       <translation>Chyba</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Object not found</source>
       <translation>Objekt nenalezen</translation>
     </message>
@@ -6524,152 +6524,152 @@ V pravém pohledu jsou %2 body vybrány.</translation>
   <context>
     <name>Gui::PropertyEditor::PropertyEditor</name>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="382"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="363"/>
       <source>Edit</source>
       <translation>Upravit</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="393"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="374"/>
       <source>property</source>
       <translation>vlastnost</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="919"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="869"/>
       <source>Expand/Collapse Properties</source>
       <translation>Rozbalit/Sbalit vlastnosti</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="921"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="871"/>
       <source>Expand to Default</source>
       <translation>Rozbalit na výchozí</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="923"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="873"/>
       <source>Expand All</source>
       <translation>Rozbalit vše</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="925"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="875"/>
       <source>Collapse All</source>
       <translation>Sbalit vše</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="931"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="881"/>
       <source>Default Expand</source>
       <translation>Výchozí rozbalení</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="934"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="884"/>
       <source>Auto Expand</source>
       <translation>Automatické rozbalení</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="937"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="887"/>
       <source>Auto Collapse</source>
       <translation>Automatické sbalení</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1027"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="977"/>
       <source>object %1 (%2):
 </source>
       <translation>objekt %1 (%2):
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1034"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="984"/>
       <source>property %1
 </source>
       <translation>vlastnost %1
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1046"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="996"/>
       <source>document %1:
 </source>
       <translation>dokument %1:
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1071"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1021"/>
       <source>The property %1 in object %2 (%3) in document %4 is referenced by:</source>
       <translation>Na objekt %1 v objektu %2 (%3) v dokumentu %4 odkazují:</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1087"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1037"/>
       <source>(No references found.)</source>
       <translation>(Nebyly nalezeny žádné odkazy.)</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1105"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1193"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1055"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
       <source>Property Uses</source>
       <translation>Použité vlastnosti</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1135"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1085"/>
       <source>Copy</source>
       <translation>Kopírovat</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1093"/>
       <source>Add Property</source>
       <translation>Přidat vlastnost</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1150"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1433"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1100"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1383"/>
       <source>Rename Property Group</source>
       <translation>Přejmenovat skupinu vlastností</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1161"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1111"/>
       <source>Cannot rename group: one or more properties have names that start with the group name</source>
       <translation>Nelze přejmenovat skupinu: názvy jedné nebo více vlastností začínají názvem skupiny</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1170"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1403"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1120"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1353"/>
       <source>Rename Property</source>
       <translation>Přejmenovat vlastnost</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1171"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1373"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1121"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1323"/>
       <source>Edit Property Tooltip</source>
       <translation>Upravit nápovědu vlastnosti</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1188"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1138"/>
       <source>Delete Property</source>
       <translation>Odstranit vlastnost</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1203"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1153"/>
       <source>Move Property</source>
       <translation>Přesunout vlastnosti</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1374"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1324"/>
       <source>Tooltip</source>
       <translation>Popisek nástroje</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1213"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1163"/>
       <source>Show Hidden</source>
       <translation>Zobrazit skryté</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1230"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1180"/>
       <source>Expression</source>
       <translation>Výraz</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1404"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1354"/>
       <source>Property name</source>
       <translation>Název vlastnosti</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1434"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1384"/>
       <source>Group name:</source>
       <translation>Jméno skupiny:</translation>
     </message>
@@ -7244,6 +7244,7 @@ Zadat jiný adresář?</translation>
     </message>
     <message>
       <location filename="Translator.cpp" line="241"/>
+      <location filename="Translator.cpp" line="279"/>
       <source>English</source>
       <translation>Angličtina</translation>
     </message>
@@ -8116,7 +8117,7 @@ Zkontrolujte zobrazení reportu pro více podrobností.</translation>
       <translation> → Restartování…</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="548"/>
+      <location filename="../Command.cpp" line="550"/>
       <source>Exception</source>
       <translation>Výjimka</translation>
     </message>
@@ -8749,12 +8750,12 @@ Zvolte 'Přerušit' pro zrušení</translation>
       <translation>Nelze otevřít systémový prohlížeč.</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3342"/>
+      <location filename="../View3DInventorViewer.cpp" line="3343"/>
       <source>Out of memory</source>
       <translation>Nedostatek paměti</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3343"/>
+      <location filename="../View3DInventorViewer.cpp" line="3344"/>
       <source>Not enough memory available to display the data.</source>
       <translation>Není dostatek paměti pro zobrazení dat.</translation>
     </message>
@@ -8900,8 +8901,8 @@ Zvolte 'Přerušit' pro zrušení</translation>
       <translation>Přetažení se nezdařilo</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1010"/>
       <location filename="../ViewProviderLink.cpp" line="3055"/>
+      <location filename="../MainWindow.cpp" line="1010"/>
       <source>Apply to all</source>
       <translation>Použít na všechny</translation>
     </message>
@@ -9222,12 +9223,12 @@ na aktuální kopii budou ztraceny.
   <context>
     <name>SelectionFilter</name>
     <message>
-      <location filename="../Selection/Selection.cpp" line="975"/>
+      <location filename="../Selection/Selection.cpp" line="978"/>
       <source>Not allowed:</source>
       <translation>Toto není dovoleno:</translation>
     </message>
     <message>
-      <location filename="../Selection/Selection.cpp" line="1335"/>
+      <location filename="../Selection/Selection.cpp" line="1338"/>
       <source>Selection not allowed by filter</source>
       <translation>Výběr není povoleno filtrem</translation>
     </message>
@@ -14608,7 +14609,7 @@ Díky tomu zůstane ukotvený panel vždy průhledný.</translation>
   <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4700"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4698"/>
       <source>Changes the linked object</source>
       <translation>Změní propojený objekt</translation>
     </message>
@@ -14616,12 +14617,12 @@ Díky tomu zůstane ukotvený panel vždy průhledný.</translation>
   <context>
     <name>Gui::PropertyEditor::PropertyItemDelegate</name>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>Yes</source>
       <translation>Ano</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>No</source>
       <translation>Ne</translation>
     </message>
@@ -14766,6 +14767,49 @@ Díky tomu zůstane ukotvený panel vždy průhledný.</translation>
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::DlgDocumentObject</name>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="14"/>
+      <source>Object</source>
+      <translation>Objekt</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="46"/>
+      <source>Filter by type</source>
+      <translation>Filtrovat podle typu</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="53"/>
+      <source>Synchronizes the 3D view selection with the full object hierarchy</source>
+      <translation>Synchronizuje zobrazení 3D pohledu s plnou hierarchií objektů</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="56"/>
+      <source>Sync sub-object selection</source>
+      <translation>Synchronizovat výběr podobjektů</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="88"/>
+      <source>Search</source>
+      <translation>Hledat</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="95"/>
+      <source>A search pattern to filter the results above</source>
+      <translation>Vyhledávací vzor pro filtrování výsledků výše</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.cpp" line="118"/>
+      <source>Reset</source>
+      <translation>Reset</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.cpp" line="119"/>
+      <source>Clear</source>
+      <translation>Vyčistit</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::DlgSettingsKeyboard</name>
     <message>
       <location filename="../Dialogs/DlgKeyboard.ui" line="14"/>
@@ -14868,95 +14912,17 @@ prodleva, bude považováno za sekvenci klávesové zkratky 'F, F'.</translation
     </message>
   </context>
   <context>
-    <name>Gui::Dialog::DlgDocumentObject</name>
+    <name>FileDialog</name>
     <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="14"/>
-      <source>Object</source>
-      <translation>Objekt</translation>
+      <location filename="../FileDialog.cpp" line="579"/>
+      <source>Save As</source>
+      <translation>Uložit jako</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="46"/>
-      <source>Filter by type</source>
-      <translation>Filtrovat podle typu</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="53"/>
-      <source>Synchronizes the 3D view selection with the full object hierarchy</source>
-      <translation>Synchronizuje zobrazení 3D pohledu s plnou hierarchií objektů</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="56"/>
-      <source>Sync sub-object selection</source>
-      <translation>Synchronizovat výběr podobjektů</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="88"/>
-      <source>Search</source>
-      <translation>Hledat</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="95"/>
-      <source>A search pattern to filter the results above</source>
-      <translation>Vyhledávací vzor pro filtrování výsledků výše</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.cpp" line="118"/>
-      <source>Reset</source>
-      <translation>Reset</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.cpp" line="119"/>
-      <source>Clear</source>
-      <translation>Vyčistit</translation>
-    </message>
-  </context>
-  <context>
-    <name>Gui::Command</name>
-    <message>
-      <location filename="../Command.cpp" line="1063"/>
-      <source>Experimental</source>
-      <translation>Experimentální</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1065"/>
-      <source>EXPERIMENTAL: this command may change.</source>
-      <translation type="unfinished">EXPERIMENTAL: this command may change.</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1069"/>
-      <source>Development preview</source>
-      <translation type="unfinished">Development preview</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1070"/>
-      <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
-      <translation type="unfinished">DEVELOPMENT PREVIEW: this command may change or be removed.</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdOpenGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="85"/>
-      <source>&amp;Open…</source>
-      <translation>&amp;Otevřít…</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="86"/>
-      <source>Opens a document or imports files</source>
-      <translation>Otevře dokument nebo importuje soubory</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdSaveGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="966"/>
-      <source>Save</source>
-      <translation>Uložit</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="967"/>
-      <source>Saves the active document</source>
-      <translation>Uloží aktivní dokument</translation>
+      <location filename="../FileDialog.cpp" line="715"/>
+      <location filename="../FileDialog.cpp" line="811"/>
+      <source>Open</source>
+      <translation>Otevřít</translation>
     </message>
   </context>
   <context>
@@ -14998,43 +14964,55 @@ prodleva, bude považováno za sekvenci klávesové zkratky 'F, F'.</translation
     </message>
   </context>
   <context>
+    <name>StdCmdToggleBottomPanels</name>
+    <message>
+      <location filename="../CommandView.cpp" line="3858"/>
+      <source>Toggle Bottom Panels</source>
+      <translation>Přepnout spodní panely</translation>
+    </message>
+    <message>
+      <location filename="../CommandView.cpp" line="3859"/>
+      <source>Toggles the bottom dock panels</source>
+      <translation>Přepne spodní dokované panely</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::PropertyMapEditor</name>
     <message>
-      <location filename="../Widgets.cpp" line="1913"/>
+      <location filename="../Widgets.cpp" line="1924"/>
       <source>Key</source>
       <translation>Klíč</translation>
     </message>
     <message>
-      <location filename="../Widgets.cpp" line="1913"/>
+      <location filename="../Widgets.cpp" line="1924"/>
       <source>Value</source>
       <translation>Hodnota</translation>
     </message>
   </context>
   <context>
-    <name>StdCmdToggleSuppress</name>
+    <name>StdCmdOpenGroup</name>
     <message>
-      <location filename="../CommandFeat.cpp" line="240"/>
-      <source>Toggle Suppressed</source>
-      <translation>Přepnout potlačení</translation>
+      <location filename="../CommandDoc.cpp" line="85"/>
+      <source>&amp;Open…</source>
+      <translation>&amp;Otevřít…</translation>
     </message>
     <message>
-      <location filename="../CommandFeat.cpp" line="242"/>
-      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
-      <translation>Přepíná stav potlačení vybraných objektů. Potlačený objekt se chová, jako by byl smazán.</translation>
+      <location filename="../CommandDoc.cpp" line="86"/>
+      <source>Opens a document or imports files</source>
+      <translation>Otevře dokument nebo importuje soubory</translation>
     </message>
   </context>
   <context>
-    <name>FileDialog</name>
+    <name>StdCmdSaveGroup</name>
     <message>
-      <location filename="../FileDialog.cpp" line="579"/>
-      <source>Save As</source>
-      <translation>Uložit jako</translation>
+      <location filename="../CommandDoc.cpp" line="966"/>
+      <source>Save</source>
+      <translation>Uložit</translation>
     </message>
     <message>
-      <location filename="../FileDialog.cpp" line="715"/>
-      <location filename="../FileDialog.cpp" line="811"/>
-      <source>Open</source>
-      <translation>Otevřít</translation>
+      <location filename="../CommandDoc.cpp" line="967"/>
+      <source>Saves the active document</source>
+      <translation>Uloží aktivní dokument</translation>
     </message>
   </context>
   <context>
@@ -15069,16 +15047,39 @@ prodleva, bude považováno za sekvenci klávesové zkratky 'F, F'.</translation
     </message>
   </context>
   <context>
-    <name>StdCmdToggleBottomPanels</name>
+    <name>StdCmdToggleSuppress</name>
     <message>
-      <location filename="../CommandView.cpp" line="3858"/>
-      <source>Toggle Bottom Panels</source>
-      <translation>Přepnout spodní panely</translation>
+      <location filename="../CommandFeat.cpp" line="240"/>
+      <source>Toggle Suppressed</source>
+      <translation>Přepnout potlačení</translation>
     </message>
     <message>
-      <location filename="../CommandView.cpp" line="3859"/>
-      <source>Toggles the bottom dock panels</source>
-      <translation>Přepne spodní dokované panely</translation>
+      <location filename="../CommandFeat.cpp" line="242"/>
+      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
+      <translation>Přepíná stav potlačení vybraných objektů. Potlačený objekt se chová, jako by byl smazán.</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Command</name>
+    <message>
+      <location filename="../Command.cpp" line="1067"/>
+      <source>Experimental</source>
+      <translation>Experimentální</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1069"/>
+      <source>EXPERIMENTAL: this command may change.</source>
+      <translation type="unfinished">EXPERIMENTAL: this command may change.</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1073"/>
+      <source>Development preview</source>
+      <translation type="unfinished">Development preview</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1074"/>
+      <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
+      <translation type="unfinished">DEVELOPMENT PREVIEW: this command may change or be removed.</translation>
     </message>
   </context>
   <context>
@@ -15092,32 +15093,32 @@ prodleva, bude považováno za sekvenci klávesové zkratky 'F, F'.</translation
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3588"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3586"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>Určuje základní barvu povrchu při osvětlení. Vyjadřuje, jak objekt rovnoměrně rozptyluje světlo do všech směrů, bez ohledu na úhel pohledu pozorovatele. Tato vlastnost má největší vliv na barvu materiálu.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3598"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3596"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>Definuje barvu povrchu pod nepřímým, rovnoměrným osvětlením. znázorňuje, jak se zobrazuje, když je osvětleno pouze okolním světlem v scéně, bez směrového světla, stínování nebo zvýraznění</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3608"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3606"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>Definuje barvu a intenzitu jasných, zrcadlových odlesků, které se objevují na lesklých nebo odrazivých površích, když na ně dopadá přímé světlo. Pro lesklé objekty nastavte jasné barvy.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3618"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3616"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>Definuje barvu povrchu, který působí, jako by vyzařoval světlo, jako by byl zdrojem světla, a to nezávisle na vnějším osvětlení, díky čemuž objekt vypadá, jako by svítil sám od sebe. Nastavte na černou, pokud nechcete, aby povrch nevyzařoval žádnou barvu.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3630"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3628"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>Definuje velikost a ostrost odlesků na povrchu. Vyšší hodnoty vytvářejí malé, ostré odlesky, zatímco nižší hodnoty vytvářejí široké, měkké odlesky. Upozorňujeme, že intenzita odlesků je dána barvou odlesku.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3642"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3640"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>Definuje, kolik světla prochází objektem, takže jím částečně nebo zcela prochází</translation>
     </message>
@@ -15125,32 +15126,32 @@ prodleva, bude považováno za sekvenci klávesové zkratky 'F, F'.</translation
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialListItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3954"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3952"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>Definuje základní barvu povrchu při osvětlení. Vyjadřuje, jak objekt rovnoměrně rozptyluje světlo do všech směrů, bez ohledu na úhel pohledu pozorovatele. Tato vlastnost má největší vliv na barvu materiálu.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3964"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3962"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>Definuje barvu povrchu pod nepřímým, rovnoměrným osvětlením. znázorňuje, jak se zobrazuje, když je osvětleno pouze okolním světlem v scéně, bez směrového světla, stínování nebo zvýraznění</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3974"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3972"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>Definuje barvu a intenzitu jasných, zrcadlových odlesků, které se objevují na lesklých nebo odrazivých površích, když na ně dopadá přímé světlo. Pro lesklé objekty nastavte jasné barvy.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3984"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3982"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>Definuje barvu povrchu, který působí, jako by vyzařoval světlo, jako by byl zdrojem světla, a to nezávisle na vnějším osvětlení, díky čemuž objekt vypadá, jako by svítil sám od sebe. Nastavte na černou, pokud nechcete, aby povrch nevyzařoval žádnou barvu.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3996"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3994"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>Definuje velikost a ostrost odlesků na povrchu. Vyšší hodnoty vytvářejí malé, ostré odlesky, zatímco nižší hodnoty vytvářejí široké, měkké odlesky. Upozorňujeme, že intenzita odlesků je dána barvou odlesku.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4008"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4006"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>Určuje, kolik světla prochází objektem, takže jím částečně nebo zcela prochází</translation>
     </message>
@@ -15158,7 +15159,7 @@ prodleva, bude považováno za sekvenci klávesové zkratky 'F, F'.</translation
   <context>
     <name>Gui::PropertyEditor::PropertyMapItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4930"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4928"/>
       <source>Map</source>
       <translation>Mapa</translation>
     </message>

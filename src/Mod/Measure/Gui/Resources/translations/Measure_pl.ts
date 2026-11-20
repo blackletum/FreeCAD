@@ -463,6 +463,54 @@ w przeciwnym razie zostanie rozpoczęty nowy pomiar.</translation>
     </message>
   </context>
   <context>
+    <name>TaskMeasure</name>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="121"/>
+      <source>Distance</source>
+      <translation>Odległość</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="129"/>
+      <source>Distance Free</source>
+      <translation>Dystans swobodny</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="137"/>
+      <source>Angle</source>
+      <translation>Kąt</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="145"/>
+      <source>Length</source>
+      <translation>Długość</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="153"/>
+      <source>Position</source>
+      <translation>Pozycja</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="161"/>
+      <source>Area</source>
+      <translation>Powierzchnia</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="169"/>
+      <source>Diameter</source>
+      <translation>Średnica</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="177"/>
+      <source>Radius</source>
+      <translation>Promień</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="185"/>
+      <source>Geometric Center</source>
+      <translation>Środek geometryczny</translation>
+    </message>
+  </context>
+  <context>
     <name>StdCmdMassProperties</name>
     <message>
       <location filename="../../Command.cpp" line="97"/>
@@ -521,54 +569,6 @@ w przeciwnym razie zostanie rozpoczęty nowy pomiar.</translation>
       <location filename="../../TaskMassProperties.cpp" line="1236"/>
       <source> (Average)</source>
       <translation>(Przeciętne)</translation>
-    </message>
-  </context>
-  <context>
-    <name>TaskMeasure</name>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="121"/>
-      <source>Distance</source>
-      <translation>Odległość</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="129"/>
-      <source>Distance Free</source>
-      <translation>Dystans swobodny</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="137"/>
-      <source>Angle</source>
-      <translation>Kąt</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="145"/>
-      <source>Length</source>
-      <translation>Długość</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="153"/>
-      <source>Position</source>
-      <translation>Pozycja</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="161"/>
-      <source>Area</source>
-      <translation>Powierzchnia</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="169"/>
-      <source>Diameter</source>
-      <translation>Średnica</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="177"/>
-      <source>Radius</source>
-      <translation>Promień</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="185"/>
-      <source>Geometric Center</source>
-      <translation>Środek geometryczny</translation>
     </message>
   </context>
 </TS>

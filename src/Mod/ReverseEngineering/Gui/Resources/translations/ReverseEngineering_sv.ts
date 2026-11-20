@@ -150,7 +150,7 @@
     <message>
       <location filename="../../Command.cpp" line="481"/>
       <source>Reverse Engineering</source>
-      <translation>Nätsegmentering</translation>
+      <translation>Omvänd konstruktion</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="482"/>
@@ -367,7 +367,7 @@
     <message>
       <location filename="../../Poisson.ui" line="26"/>
       <source>Octree depth</source>
-      <translation>Octree-djup</translation>
+      <translation>Oktträdsdjup</translation>
     </message>
     <message>
       <location filename="../../Poisson.ui" line="46"/>
@@ -593,7 +593,7 @@
     <message>
       <location filename="../../Workbench.cpp" line="36"/>
       <source>&amp;Reverse Engineering</source>
-      <translation>&amp;Rekonstruktion</translation>
+      <translation>&amp;Omvänd konstruktion</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="37"/>
@@ -631,7 +631,7 @@
     <message>
       <location filename="../../FitBSplineCurve.ui" line="37"/>
       <source>Chord length</source>
-      <translation>Kordalängd</translation>
+      <translation>Kordlängd</translation>
     </message>
     <message>
       <location filename="../../FitBSplineCurve.ui" line="42"/>

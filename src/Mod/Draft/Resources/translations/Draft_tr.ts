@@ -29,8 +29,8 @@
       <translation>Yeni</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLayers.ui" line="36"/>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="113"/>
+      <location filename="../ui/dialogLayers.ui" line="36"/>
       <source>Delete</source>
       <translation>Sil</translation>
     </message>
@@ -1448,9 +1448,9 @@ Bu ayar Öteleme özelliğini değiştirir.</translation>
       <translation>Varsayılan çalışma düzlemi</translation>
     </message>
     <message>
+      <location filename="../ui/preferences-dxf.ui" line="20"/>
       <location filename="../ui/preferences-draft.ui" line="14"/>
       <location filename="../ui/preferences-draft.ui" line="20"/>
-      <location filename="../ui/preferences-dxf.ui" line="20"/>
       <source>General</source>
       <translation>Genel</translation>
     </message>
@@ -2069,7 +2069,7 @@ a raw wire from the original shape is added</source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="120"/>
       <source>Apply cuts</source>
-      <translation type="unfinished">Apply cuts</translation>
+      <translation>Kesimleri uygula</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="140"/>
@@ -3059,9 +3059,9 @@ if they match the X, Y or Z axis of the global coordinate system</source>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="834"/>
-      <location filename="../../draftguitools/gui_rotate.py" line="292"/>
       <location filename="../../draftguitools/gui_move.py" line="221"/>
       <location filename="../../draftguitools/gui_scale.py" line="229"/>
+      <location filename="../../draftguitools/gui_rotate.py" line="292"/>
       <source>Copy</source>
       <translation>Kopyala</translation>
     </message>
@@ -3484,7 +3484,7 @@ Not available if the 'Use Part Primitives' preference is enabled</source>
     <message>
       <location filename="../../DraftGui.py" line="2113"/>
       <source>Create Objects</source>
-      <translation type="unfinished">Create Objects</translation>
+      <translation>Öğeleri Oluştur</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="2295"/>
@@ -3610,20 +3610,20 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <location filename="../../draftmake/make_label.py" line="202"/>
       <location filename="../../draftmake/make_patharray.py" line="179"/>
       <location filename="../../draftmake/make_patharray.py" line="339"/>
-      <location filename="../../draftmake/make_text.py" line="95"/>
-      <location filename="../../draftmake/make_text.py" line="181"/>
+      <location filename="../../draftmake/make_array.py" line="85"/>
+      <location filename="../../draftmake/make_pointarray.py" line="92"/>
       <location filename="../../draftmake/make_dimension.py" line="267"/>
       <location filename="../../draftmake/make_dimension.py" line="356"/>
       <location filename="../../draftmake/make_dimension.py" line="484"/>
       <location filename="../../draftmake/make_dimension.py" line="605"/>
-      <location filename="../../draftmake/make_array.py" line="85"/>
-      <location filename="../../draftmake/make_pointarray.py" line="92"/>
+      <location filename="../../draftmake/make_text.py" line="95"/>
+      <location filename="../../draftmake/make_text.py" line="181"/>
       <location filename="../../draftmake/make_layer.py" line="57"/>
       <location filename="../../draftmake/make_layer.py" line="150"/>
-      <location filename="../../draftutils/utils.py" line="1135"/>
-      <location filename="../../draftutils/groups.py" line="101"/>
-      <location filename="../../draftutils/gui_utils.py" line="944"/>
       <location filename="../../draftfunctions/cut.py" line="60"/>
+      <location filename="../../draftutils/groups.py" line="101"/>
+      <location filename="../../draftutils/utils.py" line="1135"/>
+      <location filename="../../draftutils/gui_utils.py" line="944"/>
       <source>No active document. Aborting.</source>
       <translation>Etkin belge yok. İptal ediliyor.</translation>
     </message>
@@ -3782,10 +3782,10 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <translation>%1 metin noktasını seçin</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="77"/>
-      <location filename="../../draftguitools/gui_dimensions.py" line="122"/>
-      <location filename="../../draftguitools/gui_lines.py" line="95"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="71"/>
+      <location filename="../../draftguitools/gui_lines.py" line="95"/>
+      <location filename="../../draftguitools/gui_dimensions.py" line="122"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="77"/>
       <source>Pick first point</source>
       <translation>İlk noktayı seçin</translation>
     </message>
@@ -3803,6 +3803,13 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <location filename="../../draftguitools/gui_lines.py" line="207"/>
       <source>Create Wire</source>
       <translation>Tel Oluştur</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lines.py" line="246"/>
+      <location filename="../../drafttests/test_lines_gui.py" line="56"/>
+      <location filename="../../drafttests/test_lines_gui.py" line="94"/>
+      <source>Point identical to previous point</source>
+      <translation type="unfinished">Point identical to previous point</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_lines.py" line="327"/>
@@ -3825,6 +3832,8 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <translation>Poliçizgi</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_beziers.py" line="158"/>
+      <location filename="../../draftguitools/gui_beziers.py" line="161"/>
       <location filename="../../draftguitools/gui_lines.py" line="240"/>
       <location filename="../../draftguitools/gui_lines.py" line="259"/>
       <location filename="../../draftguitools/gui_lines.py" line="266"/>
@@ -3832,8 +3841,6 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <location filename="../../draftguitools/gui_lines.py" line="285"/>
       <location filename="../../draftguitools/gui_splines.py" line="153"/>
       <location filename="../../draftguitools/gui_splines.py" line="158"/>
-      <location filename="../../draftguitools/gui_beziers.py" line="158"/>
-      <location filename="../../draftguitools/gui_beziers.py" line="161"/>
       <source>Pick next point</source>
       <translation>Sonraki noktayı seçin</translation>
     </message>
@@ -3910,6 +3917,18 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <translation>Bitiş noktasını seçin</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_move.py" line="195"/>
+      <location filename="../../draftguitools/gui_scale.py" line="126"/>
+      <location filename="../../draftguitools/gui_rotate.py" line="245"/>
+      <source>No valid subelements selected</source>
+      <translation>Geçerli alt öğe seçilmedi</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_move.py" line="223"/>
+      <source>Move</source>
+      <translation>Taşı</translation>
+    </message>
+    <message>
       <location filename="../../draftguitools/gui_move.py" line="255"/>
       <source>%1 pick start point</source>
       <translation>%1 başlangıç noktasını seçin</translation>
@@ -3918,18 +3937,6 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <location filename="../../draftguitools/gui_move.py" line="259"/>
       <source>%1 pick end point</source>
       <translation>%1 bitiş noktasını seç</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="245"/>
-      <location filename="../../draftguitools/gui_move.py" line="195"/>
-      <location filename="../../draftguitools/gui_scale.py" line="126"/>
-      <source>No valid subelements selected</source>
-      <translation>Geçerli alt öğe seçilmedi</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_move.py" line="223"/>
-      <source>Move</source>
-      <translation>Taşı</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_arcs.py" line="94"/>
@@ -4098,10 +4105,10 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <translation>3 Noktadan Yay Oluştur</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="222"/>
-      <location filename="../../draftguitools/gui_lines.py" line="318"/>
-      <location filename="../../draftguitools/gui_arcs.py" line="658"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="219"/>
+      <location filename="../../draftguitools/gui_lines.py" line="318"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="222"/>
+      <location filename="../../draftguitools/gui_arcs.py" line="658"/>
       <source>%1 pick first point</source>
       <translation>%1 birinci noktayı seç</translation>
     </message>
@@ -4132,6 +4139,13 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <translation type="unfinished">%1 run Move, Rotate or Scale on subelements</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_subelements.py" line="179"/>
+      <location filename="../../draftguitools/gui_dimensions.py" line="617"/>
+      <location filename="../../draftguitools/gui_edit.py" line="391"/>
+      <source>%1 finish</source>
+      <translation>%1 bitir</translation>
+    </message>
+    <message>
       <location filename="../../draftguitools/gui_edit.py" line="298"/>
       <source>Select a Draft object to edit</source>
       <translation>Düzenlemek için bir Draft nesnesi seçin</translation>
@@ -4150,13 +4164,6 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <location filename="../../draftguitools/gui_edit.py" line="388"/>
       <source>%1 options for hovered node/edge</source>
       <translation type="unfinished">%1 options for hovered node/edge</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit.py" line="391"/>
-      <location filename="../../draftguitools/gui_dimensions.py" line="617"/>
-      <location filename="../../draftguitools/gui_subelements.py" line="179"/>
-      <source>%1 finish</source>
-      <translation>%1 bitir</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_edit.py" line="396"/>
@@ -4282,9 +4289,9 @@ veya daha düşük bir DWG sürümüne kaydetmeyi deneyin.</translation>
       <translation>Nokta Oluştur</translation>
     </message>
     <message>
+      <location filename="../../drafttaskpanels/task_shapestring.py" line="216"/>
       <location filename="../../draftguitools/gui_points.py" line="189"/>
       <location filename="../../draftguitools/gui_texts.py" line="180"/>
-      <location filename="../../drafttaskpanels/task_shapestring.py" line="216"/>
       <source>%1 pick point</source>
       <translation>%1 noktayı seç</translation>
     </message>
@@ -4484,15 +4491,21 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <translation>Yalnızca tek bir yüzey ekstrüde edilebilir</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="159"/>
       <location filename="../../draftutils/utils.py" line="385"/>
       <location filename="../../draftutils/utils.py" line="388"/>
       <location filename="../../draftutils/utils.py" line="391"/>
       <location filename="../../draftutils/utils.py" line="396"/>
       <location filename="../../draftutils/utils.py" line="402"/>
       <location filename="../../draftutils/utils.py" line="417"/>
-      <location filename="../../draftguitools/gui_trimex.py" line="159"/>
       <source>Trimex does not support this object type</source>
       <translation>Trimex bu nesne türünü desteklemiyor</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="200"/>
+      <location filename="../../draftguitools/gui_trimex.py" line="741"/>
+      <source>Select a single face to extrude</source>
+      <translation type="unfinished">Select a single face to extrude</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_trimex.py" line="607"/>
@@ -4508,6 +4521,41 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <location filename="../../draftguitools/gui_trimex.py" line="630"/>
       <source>Too many intersection points</source>
       <translation>Çok fazla kesişim noktası</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="703"/>
+      <source>Trimex: move the mouse into the 3D view before typing a value</source>
+      <translation type="unfinished">Trimex: move the mouse into the 3D view before typing a value</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="714"/>
+      <source>%1 pick target</source>
+      <translation type="unfinished">%1 pick target</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="716"/>
+      <source>Hold %1 free direction</source>
+      <translation type="unfinished">Hold %1 free direction</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="719"/>
+      <source>Hold %1 keep active endpoint</source>
+      <translation type="unfinished">Hold %1 keep active endpoint</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="722"/>
+      <source>Hold %1 invert trim direction</source>
+      <translation type="unfinished">Hold %1 invert trim direction</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="731"/>
+      <source>Extrude Face</source>
+      <translation type="unfinished">Extrude Face</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="732"/>
+      <source>Select a face to extrude</source>
+      <translation type="unfinished">Select a face to extrude</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="92"/>
@@ -4531,12 +4579,6 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <translation>Mesafeyi seçin</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="200"/>
-      <location filename="../../draftguitools/gui_trimex.py" line="733"/>
-      <source>Select a single face to extrude</source>
-      <translation type="unfinished">Select a single face to extrude</translation>
-    </message>
-    <message>
       <location filename="../../draftguitools/gui_trimex.py" line="305"/>
       <source>Offset angle</source>
       <translation>Ofset açısı</translation>
@@ -4545,36 +4587,6 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <location filename="../../draftguitools/gui_trimex.py" line="610"/>
       <source>Unable to trim these objects, too many wires</source>
       <translation>Bu nesneler kırpılamıyor; çok fazla tel var</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="706"/>
-      <source>%1 pick target</source>
-      <translation type="unfinished">%1 pick target</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="708"/>
-      <source>Hold %1 free direction</source>
-      <translation type="unfinished">Hold %1 free direction</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="711"/>
-      <source>Hold %1 keep active endpoint</source>
-      <translation type="unfinished">Hold %1 keep active endpoint</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="714"/>
-      <source>Hold %1 invert trim direction</source>
-      <translation type="unfinished">Hold %1 invert trim direction</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="723"/>
-      <source>Extrude Face</source>
-      <translation type="unfinished">Extrude Face</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="724"/>
-      <source>Select a face to extrude</source>
-      <translation type="unfinished">Select a face to extrude</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_splines.py" line="75"/>
@@ -4763,14 +4775,14 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <translation>Elips Oluştur</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="211"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="208"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="211"/>
       <source>Pick opposite point</source>
       <translation>Karşı noktayı seçin</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="226"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="223"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="226"/>
       <source>%1 pick opposite point</source>
       <translation>%1 karşı noktayı seç</translation>
     </message>
@@ -4850,7 +4862,7 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
     <message>
       <location filename="../../draftguitools/gui_dimensions.py" line="598"/>
       <source>%1 select edge</source>
-      <translation type="unfinished">%1 select edge</translation>
+      <translation>%1 kenar seç</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_dimensions.py" line="615"/>
@@ -5391,10 +5403,10 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
     <message>
       <location filename="../../draftmake/make_patharray.py" line="184"/>
       <location filename="../../draftmake/make_patharray.py" line="344"/>
-      <location filename="../../draftmake/make_orthoarray.py" line="149"/>
-      <location filename="../../draftmake/make_circulararray.py" line="135"/>
       <location filename="../../draftmake/make_polararray.py" line="111"/>
+      <location filename="../../draftmake/make_circulararray.py" line="135"/>
       <location filename="../../draftmake/make_pointarray.py" line="97"/>
+      <location filename="../../draftmake/make_orthoarray.py" line="149"/>
       <source>Wrong input: base_object not in document.</source>
       <translation>Hatalı girdi: base_object belgede bulunmuyor.</translation>
     </message>
@@ -5410,8 +5422,8 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <location filename="../../draftmake/make_patharray.py" line="266"/>
       <location filename="../../draftmake/make_patharray.py" line="273"/>
       <location filename="../../draftmake/make_patharray.py" line="354"/>
-      <location filename="../../draftmake/make_orthoarray.py" line="139"/>
       <location filename="../../draftmake/make_polararray.py" line="123"/>
+      <location filename="../../draftmake/make_orthoarray.py" line="139"/>
       <location filename="../../draftmake/make_layer.py" line="189"/>
       <source>Wrong input: must be a number.</source>
       <translation>Hatalı girdi: sayı olmalıdır.</translation>
@@ -5421,6 +5433,8 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <location filename="../../draftmake/make_patharray.py" line="202"/>
       <location filename="../../draftmake/make_patharray.py" line="253"/>
       <location filename="../../draftmake/make_patharray.py" line="260"/>
+      <location filename="../../draftmake/make_polararray.py" line="135"/>
+      <location filename="../../draftmake/make_circulararray.py" line="165"/>
       <location filename="../../draftmake/make_dimension.py" line="273"/>
       <location filename="../../draftmake/make_dimension.py" line="279"/>
       <location filename="../../draftmake/make_dimension.py" line="286"/>
@@ -5430,8 +5444,6 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <location filename="../../draftmake/make_dimension.py" line="611"/>
       <location filename="../../draftmake/make_dimension.py" line="636"/>
       <location filename="../../draftmake/make_dimension.py" line="643"/>
-      <location filename="../../draftmake/make_circulararray.py" line="165"/>
-      <location filename="../../draftmake/make_polararray.py" line="135"/>
       <source>Wrong input: must be a vector.</source>
       <translation>Hatalı girdi: vektör olmalıdır.</translation>
     </message>
@@ -5458,9 +5470,9 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <translation>Girdi: tek değer vektöre genişletildi.</translation>
     </message>
     <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="113"/>
-      <location filename="../../draftmake/make_circulararray.py" line="153"/>
       <location filename="../../draftmake/make_polararray.py" line="117"/>
+      <location filename="../../draftmake/make_circulararray.py" line="153"/>
+      <location filename="../../draftmake/make_orthoarray.py" line="113"/>
       <source>Wrong input: must be an integer number.</source>
       <translation>Hatalı girdi: tamsayı olmalıdır.</translation>
     </message>
@@ -5473,8 +5485,8 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_label.py" line="218"/>
-      <location filename="../../draftmake/make_text.py" line="113"/>
       <location filename="../../draftmake/make_pointarray.py" line="119"/>
+      <location filename="../../draftmake/make_text.py" line="113"/>
       <source>Wrong input: must be a placement, a vector, or a rotation.</source>
       <translation>Hatalı girdi: yerleşim, vektör veya dönme olmalıdır.</translation>
     </message>
@@ -5658,10 +5670,10 @@ Son açı, taban açısı ile bu miktarın toplamı olacaktır.</translation>
       <translation>Yanlış girdi: 0 ile 100 arasında bir sayı olmalıdır.</translation>
     </message>
     <message>
-      <location filename="../../draftviewproviders/view_draft_annotation.py" line="284"/>
-      <location filename="../../draftviewproviders/view_base.py" line="470"/>
-      <location filename="../../draftviewproviders/view_hatch.py" line="87"/>
       <location filename="../../draftviewproviders/view_clone.py" line="71"/>
+      <location filename="../../draftviewproviders/view_base.py" line="470"/>
+      <location filename="../../draftviewproviders/view_draft_annotation.py" line="284"/>
+      <location filename="../../draftviewproviders/view_hatch.py" line="87"/>
       <source>Edit</source>
       <translation>Düzenle</translation>
     </message>
@@ -5951,8 +5963,8 @@ SVG desen seçeneklerini güncellemek istiyor musunuz?</translation>
       <translation>Eğimi Değiştir</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="92"/>
       <location filename="../../draftguitools/gui_patharray.py" line="114"/>
+      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="92"/>
       <source>Select exactly 2 objects, the base object and the path object, before calling this command</source>
       <translation>Bu komutu çağırmadan önce tam olarak 2 nesne seçin: taban nesnesi ve yol nesnesi</translation>
     </message>
@@ -6113,14 +6125,7 @@ FreeCAD'in bu kütüphaneleri indirmesine izin vermek için Evet yanıtını ver
     <message>
       <location filename="../../draftviewproviders/view_wpproxy.py" line="97"/>
       <source>Save Camera View</source>
-      <translation type="unfinished">Save Camera View</translation>
-    </message>
-    <message>
-      <location filename="../../drafttests/test_lines_gui.py" line="56"/>
-      <location filename="../../drafttests/test_lines_gui.py" line="94"/>
-      <location filename="../../draftguitools/gui_lines.py" line="246"/>
-      <source>Point identical to previous point</source>
-      <translation type="unfinished">Point identical to previous point</translation>
+      <translation>Kamera Görünümünü Kaydet</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_field_locks.py" line="90"/>
@@ -7039,12 +7044,12 @@ birleştirmek için Doğru, bileşik yapmak için Yanlış ayarlayın</translati
       <translation>Yüzey oluştur</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="90"/>
       <location filename="../../draftobjects/rectangle.py" line="70"/>
       <location filename="../../draftobjects/bspline.py" line="57"/>
-      <location filename="../../draftobjects/bezcurve.py" line="66"/>
       <location filename="../../draftobjects/polygon.py" line="70"/>
       <location filename="../../draftobjects/circle.py" line="64"/>
+      <location filename="../../draftobjects/bezcurve.py" line="66"/>
+      <location filename="../../draftobjects/wire.py" line="90"/>
       <source>The area of this object</source>
       <translation>Bu nesnenin alanı</translation>
     </message>
@@ -7069,16 +7074,16 @@ birleştirmek için Doğru, bileşik yapmak için Yanlış ayarlayın</translati
       <translation>Çokgenin kontrol çemberinden nasıl çizileceği</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="78"/>
       <location filename="../../draftobjects/rectangle.py" line="55"/>
       <location filename="../../draftobjects/polygon.py" line="61"/>
+      <location filename="../../draftobjects/wire.py" line="78"/>
       <source>Radius to use to fillet the corners</source>
       <translation>Köşeleri yuvarlatmak için kullanılacak yarıçap</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="81"/>
       <location filename="../../draftobjects/rectangle.py" line="58"/>
       <location filename="../../draftobjects/polygon.py" line="64"/>
+      <location filename="../../draftobjects/wire.py" line="81"/>
       <source>Size of the chamfer to give to the corners</source>
       <translation>Köşelere verilecek pah boyutu</translation>
     </message>
@@ -8991,7 +8996,7 @@ The 'Auto Update' property of the views is ignored.</translation>
     <message>
       <location filename="../../draftguitools/gui_shape2dview.py" line="176"/>
       <source>2D View Tools</source>
-      <translation type="unfinished">2D View Tools</translation>
+      <translation>2D Görünüm Araçları</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_shape2dview.py" line="180"/>

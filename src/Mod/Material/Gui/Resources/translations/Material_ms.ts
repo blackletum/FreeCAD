@@ -1195,8 +1195,8 @@ Jika tidak ditandai, mereka akan susun mengikut nama mereka.</translation>
       <translation type="unfinished">Otherwise, all changes will be lost.</translation>
     </message>
     <message>
-      <location filename="../../ListEdit.cpp" line="142"/>
       <location filename="../../MaterialSave.cpp" line="568"/>
+      <location filename="../../ListEdit.cpp" line="142"/>
       <location filename="../../Array2D.cpp" line="170"/>
       <source>Confirm Delete</source>
       <translation>Pasti untuk menghapuskan</translation>
@@ -1408,7 +1408,7 @@ Jika tidak ditandai, mereka akan susun mengikut nama mereka.</translation>
     <message>
       <location filename="../../Command.cpp" line="202"/>
       <source>Migrate</source>
-      <translation type="unfinished">Migrate</translation>
+      <translation>Migrasi</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="203"/>

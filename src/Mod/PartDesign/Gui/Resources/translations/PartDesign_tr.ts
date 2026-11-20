@@ -206,17 +206,17 @@ böylece öz-kesişme önlenir.</translation>
   <context>
     <name>CmdPartDesignBoolean</name>
     <message>
-      <location filename="../../Command.cpp" line="2870"/>
+      <location filename="../../Command.cpp" line="2872"/>
       <source>PartDesign</source>
       <translation>ParçaTasarımı</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2871"/>
+      <location filename="../../Command.cpp" line="2873"/>
       <source>Boolean Operation</source>
       <translation>Mantıksal işlem</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2872"/>
+      <location filename="../../Command.cpp" line="2874"/>
       <source>Applies boolean operations with the selected objects and the active body</source>
       <translation>Seçili nesneler ile etkin gövde arasında Boole işlemleri uygular</translation>
     </message>
@@ -494,17 +494,17 @@ böylece öz-kesişme önlenir.</translation>
   <context>
     <name>CmdPartDesignMultiTransform</name>
     <message>
-      <location filename="../../Command.cpp" line="2739"/>
+      <location filename="../../Command.cpp" line="2741"/>
       <source>PartDesign</source>
       <translation>ParçaTasarımı</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2740"/>
+      <location filename="../../Command.cpp" line="2742"/>
       <source>Multi-Transform</source>
       <translation>Çoklu Dönüşüm</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2741"/>
+      <location filename="../../Command.cpp" line="2743"/>
       <source>Applies multiple transformations to the selected features or active body</source>
       <translation>Seçili özelliklere veya etkin gövdeye birden çok dönüşüm uygular</translation>
     </message>
@@ -602,17 +602,17 @@ böylece öz-kesişme önlenir.</translation>
   <context>
     <name>CmdPartDesignPolarPattern</name>
     <message>
-      <location filename="../../Command.cpp" line="2634"/>
+      <location filename="../../Command.cpp" line="2636"/>
       <source>PartDesign</source>
       <translation>ParçaTasarımı</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2635"/>
+      <location filename="../../Command.cpp" line="2637"/>
       <source>Polar Pattern</source>
       <translation>Kutupsal Dizilim</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2636"/>
+      <location filename="../../Command.cpp" line="2638"/>
       <source>Duplicates the selected features or the active body in a circular pattern</source>
       <translation>Seçili özellikleri veya etkin gövdeyi dairesel bir dizilimde çoğaltır</translation>
     </message>
@@ -638,17 +638,17 @@ böylece öz-kesişme önlenir.</translation>
   <context>
     <name>CmdPartDesignScaled</name>
     <message>
-      <location filename="../../Command.cpp" line="2696"/>
+      <location filename="../../Command.cpp" line="2698"/>
       <source>PartDesign</source>
       <translation>ParçaTasarımı</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2697"/>
+      <location filename="../../Command.cpp" line="2699"/>
       <source>Scale</source>
       <translation>Ölçek</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2698"/>
+      <location filename="../../Command.cpp" line="2700"/>
       <source>Scales the selected features or the active body</source>
       <translation>Seçili özellikleri veya etkin gövdeyi ölçekler</translation>
     </message>
@@ -905,7 +905,7 @@ böylece öz-kesişme önlenir.</translation>
       <translation>Kopya Oluştur</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2794"/>
+      <location filename="../../Command.cpp" line="2796"/>
       <source>Convert to Multi-Transform feature</source>
       <translation>Çoklu Dönüşüm özelliğine dönüştür</translation>
     </message>
@@ -926,13 +926,13 @@ böylece öz-kesişme önlenir.</translation>
       <translation>Yeni eskiz</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2891"/>
+      <location filename="../../Command.cpp" line="2893"/>
       <source>Create Boolean</source>
       <translation>Mantıksal (İşlem) Oluştur</translation>
     </message>
     <message>
-      <location filename="../../DlgActiveBody.cpp" line="102"/>
       <location filename="../../CommandBody.cpp" line="225"/>
+      <location filename="../../DlgActiveBody.cpp" line="102"/>
       <source>Add a Body</source>
       <translation>Gövde Ekle</translation>
     </message>
@@ -962,37 +962,37 @@ böylece öz-kesişme önlenir.</translation>
       <translation>Bir nesne taşı</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="306"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="308"/>
       <source>Mirror</source>
       <translation>Aynala</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="346"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="348"/>
       <source>Linear Pattern</source>
       <translation>Doğrusal Desen</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="395"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="397"/>
       <source>Polar Pattern</source>
       <translation>Kutupsal Dizilim</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="436"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="438"/>
       <source>Circular Pattern</source>
       <translation type="unfinished">Circular Pattern</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="475"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="477"/>
       <source>Path Pattern</source>
       <translation type="unfinished">Path Pattern</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="499"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="501"/>
       <source>Point Pattern</source>
       <translation type="unfinished">Point Pattern</translation>
     </message>
     <message>
-      <location filename="../../TaskMultiTransformParameters.cpp" line="521"/>
+      <location filename="../../TaskMultiTransformParameters.cpp" line="523"/>
       <source>Scale</source>
       <translation>Ölçek</translation>
     </message>
@@ -2259,76 +2259,76 @@ Sıfırsa, Yarıçap2'ye eşittir</translation>
       <translation type="unfinished">Offset from the profile or selected start reference</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="702"/>
+      <location filename="../../TaskHoleParameters.cpp" line="711"/>
       <source>Cancel</source>
       <translation>İptal</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="703"/>
+      <location filename="../../TaskHoleParameters.cpp" line="712"/>
       <source>Select face, plane...</source>
       <translation type="unfinished">Select face, plane...</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="708"/>
+      <location filename="../../TaskHoleParameters.cpp" line="717"/>
       <source>Pick Reference</source>
       <translation>Referans Seç</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="709"/>
-      <location filename="../../TaskHoleParameters.cpp" line="1130"/>
+      <location filename="../../TaskHoleParameters.cpp" line="718"/>
+      <location filename="../../TaskHoleParameters.cpp" line="1139"/>
       <source>No start reference selected</source>
       <translation type="unfinished">No start reference selected</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="772"/>
+      <location filename="../../TaskHoleParameters.cpp" line="781"/>
       <source>Medium</source>
       <comment>Distance between thread crest and hole wall, use ISO-273 nomenclature or equivalent if possible</comment>
       <translation>Orta</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="776"/>
+      <location filename="../../TaskHoleParameters.cpp" line="785"/>
       <source>Fine</source>
       <comment>Distance between thread crest and hole wall, use ISO-273 nomenclature or equivalent if possible</comment>
       <translation>İyi</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="780"/>
+      <location filename="../../TaskHoleParameters.cpp" line="789"/>
       <source>Coarse</source>
       <comment>Distance between thread crest and hole wall, use ISO-273 nomenclature or equivalent if possible</comment>
       <translation>Kaba</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="786"/>
+      <location filename="../../TaskHoleParameters.cpp" line="795"/>
       <source>Normal</source>
       <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
-      <translation>Olağan</translation>
-    </message>
-    <message>
-      <location filename="../../TaskHoleParameters.cpp" line="790"/>
-      <source>Close</source>
-      <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
-      <translation>Kapat</translation>
-    </message>
-    <message>
-      <location filename="../../TaskHoleParameters.cpp" line="794"/>
-      <source>Loose</source>
-      <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
-      <translation>Bol</translation>
-    </message>
-    <message>
-      <location filename="../../TaskHoleParameters.cpp" line="798"/>
-      <source>Normal</source>
-      <comment>Distance between thread crest and hole wall</comment>
       <translation>Olağan</translation>
     </message>
     <message>
       <location filename="../../TaskHoleParameters.cpp" line="799"/>
       <source>Close</source>
+      <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
+      <translation>Kapat</translation>
+    </message>
+    <message>
+      <location filename="../../TaskHoleParameters.cpp" line="803"/>
+      <source>Loose</source>
+      <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
+      <translation>Bol</translation>
+    </message>
+    <message>
+      <location filename="../../TaskHoleParameters.cpp" line="807"/>
+      <source>Normal</source>
+      <comment>Distance between thread crest and hole wall</comment>
+      <translation>Olağan</translation>
+    </message>
+    <message>
+      <location filename="../../TaskHoleParameters.cpp" line="808"/>
+      <source>Close</source>
       <comment>Distance between thread crest and hole wall</comment>
       <translation>Kapat</translation>
     </message>
     <message>
-      <location filename="../../TaskHoleParameters.cpp" line="800"/>
+      <location filename="../../TaskHoleParameters.cpp" line="809"/>
       <source>Wide</source>
       <comment>Distance between thread crest and hole wall</comment>
       <translation>Geniş</translation>
@@ -3397,64 +3397,70 @@ belirlenen yön boyunca ölçülecek</translation>
   <context>
     <name>PartDesignGui::TaskTransformedParameters</name>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="111"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="112"/>
       <source>Remove</source>
       <translation>Kaldır</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="398"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="445"/>
       <source>Normal sketch axis</source>
       <translation>Çizime dik eksen</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="397"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="439"/>
       <source>Vertical sketch axis</source>
       <translation>Dikey taslak ekseni</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="396"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="423"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="509"/>
+      <source>No reference</source>
+      <translation type="unfinished">No reference</translation>
+    </message>
+    <message>
+      <location filename="../../TaskTransformedParameters.cpp" line="433"/>
       <source>Horizontal sketch axis</source>
       <translation>Yatay taslak ekseni</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="400"/>
-      <location filename="../../TaskTransformedParameters.cpp" line="436"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="449"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="529"/>
       <source>Construction line %1</source>
       <translation>Yapı hattı %1</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="414"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="466"/>
       <source>Base X-axis</source>
       <translation>Temel X ekseni</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="415"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="472"/>
       <source>Base Y-axis</source>
       <translation>Temel Y ekseni</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="416"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="478"/>
       <source>Base Z-axis</source>
       <translation>Temel Z ekseni</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="450"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="551"/>
       <source>Base XY-plane</source>
       <translation>Temel XY düzlemi</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="451"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="557"/>
       <source>Base YZ-plane</source>
       <translation>Temel YZ düzlemi</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="452"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="563"/>
       <source>Base XZ-plane</source>
       <translation>Temel XZ düzlemi</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="424"/>
-      <location filename="../../TaskTransformedParameters.cpp" line="460"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="491"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="576"/>
       <source>Select reference…</source>
       <translation>Referans seç…</translation>
     </message>
@@ -3580,8 +3586,8 @@ belirlenen yön boyunca ölçülecek</translation>
       <translation>Bu belgede geçerli uçaklar yok</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1194"/>
       <location filename="../../ViewProviderDatum.cpp" line="259"/>
+      <location filename="../../Command.cpp" line="1194"/>
       <location filename="../../ViewProvider.cpp" line="164"/>
       <location filename="../../SketchWorkflow.cpp" line="778"/>
       <location filename="../../ViewProviderShapeBinder.cpp" line="98"/>
@@ -3629,37 +3635,6 @@ belirlenen yön boyunca ölçülecek</translation>
       <translation>Belgede mevcut bir eskiz yok</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1195"/>
-      <location filename="../../ViewProviderDatum.cpp" line="260"/>
-      <location filename="../../ViewProvider.cpp" line="165"/>
-      <location filename="../../SketchWorkflow.cpp" line="779"/>
-      <location filename="../../ViewProviderShapeBinder.cpp" line="99"/>
-      <source>Close this dialog?</source>
-      <translation>Bu iletişim kutusu kapatılsın mı?</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="1876"/>
-      <location filename="../../Command.cpp" line="1911"/>
-      <source>Wrong selection</source>
-      <translation>Yanlış seçim</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="1877"/>
-      <source>Select an edge, face, or body from a single body.</source>
-      <translation>Tek bir gövdeden bir kenar, yüz veya gövde seçin.</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="1884"/>
-      <location filename="../../Command.cpp" line="2335"/>
-      <source>Selection is not in the active body</source>
-      <translation>Seçim etkin gövde içinde değil</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="1912"/>
-      <source>Shape of the selected part is empty</source>
-      <translation>Seçilen parçanın şekli boş</translation>
-    </message>
-    <message>
       <location filename="../../Command.cpp" line="2085"/>
       <location filename="../../Command.cpp" line="2113"/>
       <source>Wrong Selection</source>
@@ -3695,6 +3670,37 @@ belirlenen yön boyunca ölçülecek</translation>
       <location filename="../../Command.cpp" line="2336"/>
       <source>Select only one feature in an active body.</source>
       <translation type="unfinished">Select only one feature in an active body.</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="260"/>
+      <location filename="../../Command.cpp" line="1195"/>
+      <location filename="../../ViewProvider.cpp" line="165"/>
+      <location filename="../../SketchWorkflow.cpp" line="779"/>
+      <location filename="../../ViewProviderShapeBinder.cpp" line="99"/>
+      <source>Close this dialog?</source>
+      <translation>Bu iletişim kutusu kapatılsın mı?</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="1876"/>
+      <location filename="../../Command.cpp" line="1911"/>
+      <source>Wrong selection</source>
+      <translation>Yanlış seçim</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="1877"/>
+      <source>Select an edge, face, or body from a single body.</source>
+      <translation>Tek bir gövdeden bir kenar, yüz veya gövde seçin.</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="1884"/>
+      <location filename="../../Command.cpp" line="2335"/>
+      <source>Selection is not in the active body</source>
+      <translation>Seçim etkin gövde içinde değil</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="1912"/>
+      <source>Shape of the selected part is empty</source>
+      <translation>Seçilen parçanın şekli boş</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1885"/>
@@ -3898,13 +3904,13 @@ Bu, beklenmedik sonuçlara neden olabilir.</translation>
       <translation>Mevcut bir temel özellik olmadan bir çıkarılabilir özellik oluşturmak mümkün değildir</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="433"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="519"/>
       <location filename="../../TaskRevolutionParameters.cpp" line="299"/>
       <source>Vertical sketch axis</source>
       <translation>Dikey taslak ekseni</translation>
     </message>
     <message>
-      <location filename="../../TaskTransformedParameters.cpp" line="434"/>
+      <location filename="../../TaskTransformedParameters.cpp" line="525"/>
       <location filename="../../TaskRevolutionParameters.cpp" line="300"/>
       <source>Horizontal sketch axis</source>
       <translation>Yatay taslak ekseni</translation>
@@ -3961,8 +3967,8 @@ Gövdesiz Part Design nesneleri içeren eski belgeler için, bunları bir gövde
     <message>
       <location filename="../../ViewProvider.cpp" line="121"/>
       <location filename="../../ViewProviderDressUp.cpp" line="71"/>
-      <location filename="../../ViewProviderTransformed.cpp" line="68"/>
       <location filename="../../ViewProviderShapeBinder.cpp" line="228"/>
+      <location filename="../../ViewProviderTransformed.cpp" line="68"/>
       <source>Edit %1</source>
       <translation>%1'i düzenle</translation>
     </message>
@@ -4101,7 +4107,7 @@ Buna karşın, daha sonra istediğiniz herhangi bir anda 'Part Design -&gt; Migr
       <translation>Doğrusal Deseni Düzenle</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderLoft.cpp" line="67"/>
+      <location filename="../../ViewProviderLoft.cpp" line="71"/>
       <source>Edit Loft</source>
       <translation>Loft'u Düzenle</translation>
     </message>
@@ -4937,48 +4943,48 @@ over 90: larger hole radius at the bottom</source>
       <translation>BaseFeature'ın şekli boş</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="172"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="220"/>
       <source>Cannot do boolean cut without BaseFeature</source>
       <translation>BaseFeature olmadan Boole kesme yapılamaz</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="194"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="242"/>
       <source>Cannot do boolean with anything but Part::Feature and its derivatives</source>
       <translation>Part::Feature ve türevleri dışındaki nesnelerle Boole işlemi yapılamaz</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="211"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="259"/>
       <source>Cannot do boolean operation with invalid base shape</source>
       <translation>Geçersiz temel şekille Boole işlemi yapılamaz</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="266"/>
-      <location filename="../../../App/FeaturePipe.cpp" line="514"/>
-      <location filename="../../../App/FeaturePipe.cpp" line="539"/>
-      <location filename="../../../App/FeaturePipe.cpp" line="557"/>
-      <location filename="../../../App/FeatureFillet.cpp" line="142"/>
-      <location filename="../../../App/FeatureChamfer.cpp" line="196"/>
-      <location filename="../../../App/FeatureRevolved.cpp" line="535"/>
-      <location filename="../../../App/FeatureHelix.cpp" line="419"/>
-      <location filename="../../../App/FeatureHelix.cpp" line="435"/>
-      <location filename="../../../App/FeatureHelix.cpp" line="453"/>
-      <location filename="../../../App/FeatureDraft.cpp" line="335"/>
       <location filename="../../../App/FeatureExtrude.cpp" line="836"/>
       <location filename="../../../App/FeatureExtrude.cpp" line="852"/>
       <location filename="../../../App/FeatureExtrude.cpp" line="865"/>
-      <location filename="../../../App/FeatureHole.cpp" line="2144"/>
       <location filename="../../../App/FeatureLoft.cpp" line="387"/>
       <location filename="../../../App/FeatureLoft.cpp" line="422"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2142"/>
+      <location filename="../../../App/FeatureHelix.cpp" line="419"/>
+      <location filename="../../../App/FeatureHelix.cpp" line="435"/>
+      <location filename="../../../App/FeatureHelix.cpp" line="453"/>
+      <location filename="../../../App/FeatureRevolved.cpp" line="535"/>
+      <location filename="../../../App/FeatureFillet.cpp" line="142"/>
+      <location filename="../../../App/FeatureDraft.cpp" line="335"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="314"/>
+      <location filename="../../../App/FeatureChamfer.cpp" line="196"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="529"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="554"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="572"/>
       <source>Result has multiple solids: enable 'Allow Compound' in the active body.</source>
       <translation>Sonuç birden fazla katı içeriyor: etkin gövdede 'Bileşiğe izin ver' seçeneğini etkinleştirin.</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="221"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="269"/>
       <source>Tool shape is null</source>
       <translation>Araç şekli yok (null)</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="248"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="296"/>
       <source>Unsupported boolean operation</source>
       <translation>Desteklenmeyen Boole işlemi</translation>
     </message>
@@ -5003,11 +5009,11 @@ over 90: larger hole radius at the bottom</source>
       <translation>Oluşan birleştirilmiş ekstrüzyon yok (null).</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="549"/>
-      <location filename="../../../App/FeatureHelix.cpp" line="445"/>
-      <location filename="../../../App/FeaturePrimitive.cpp" line="132"/>
       <location filename="../../../App/FeatureExtrude.cpp" line="827"/>
       <location filename="../../../App/FeatureLoft.cpp" line="415"/>
+      <location filename="../../../App/FeatureHelix.cpp" line="445"/>
+      <location filename="../../../App/FeaturePrimitive.cpp" line="132"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="564"/>
       <source>Resulting shape is not a solid</source>
       <translation>Oluşan şekil bir katı değil</translation>
     </message>
@@ -5084,8 +5090,8 @@ over 90: larger hole radius at the bottom</source>
       <translation>Yön, eskizin normal vektörüne dik olduğu için oluşturma başarısız oldu</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureRevolved.cpp" line="298"/>
       <location filename="../../../App/FeatureExtrude.cpp" line="528"/>
+      <location filename="../../../App/FeatureRevolved.cpp" line="298"/>
       <source>Creating a face from sketch failed</source>
       <translation>Taslakdan yüzey yaratma hatası</translation>
     </message>
@@ -5165,7 +5171,7 @@ Eskiz içinde kesişen öğelere izin verilmez.</translation>
       <translation>Hata: yüzey düzlemsel olmalı</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2507"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2505"/>
       <source>Error: Result is not a solid</source>
       <translation>Hata: Sonuç bir katı değil</translation>
     </message>
@@ -5245,45 +5251,45 @@ Eskiz içinde kesişen öğelere izin verilmez.</translation>
       <translation>Delik hatası: Oluşan şekil boş</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2067"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2065"/>
       <source>Hole error: Finding axis failed</source>
       <translation>Delik hatası: Eksen bulunamadı</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2116"/>
-      <location filename="../../../App/FeatureHole.cpp" line="2124"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2114"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2122"/>
       <source>Boolean operation failed on profile Edge</source>
       <translation>Profil kenarında Boole işlemi başarısız oldu</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2131"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2129"/>
       <source>Boolean operation produced non-solid on profile Edge</source>
       <translation>Profil kenarında Boole işlemi katı olmayan bir sonuç üretti</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureBoolean.cpp" line="258"/>
+      <location filename="../../../App/FeatureBoolean.cpp" line="306"/>
       <source>Boolean operation failed</source>
       <translation>Boole işlemi başarısız oldu</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2157"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2155"/>
       <source>Could not create face from sketch.
 Intersecting sketch entities or multiple faces in a sketch are not allowed for making a pocket up to a face.</source>
       <translation>Eskizden yüz oluşturulamadı.
 Bir yüze kadar cep oluştururken, eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2330"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2328"/>
       <source>Thread type out of range</source>
       <translation>Diş türü aralık dışında</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2333"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2331"/>
       <source>Thread size out of range</source>
       <translation>Diş ölçüsü aralık dışında</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureHole.cpp" line="2481"/>
+      <location filename="../../../App/FeatureHole.cpp" line="2479"/>
       <source>Error: Thread could not be built</source>
       <translation>Hata: Diş oluşturulamadı</translation>
     </message>
@@ -5303,8 +5309,8 @@ Bir yüze kadar cep oluştururken, eskizde kesişen öğelere veya birden fazla 
       <translation>Loft: Eskizden yüz oluşturma başarısız oldu</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="477"/>
       <location filename="../../../App/FeatureLoft.cpp" line="357"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="492"/>
       <source>Loft: Failed to create shell</source>
       <translation>Loft: Kabuk oluşturulamadı</translation>
     </message>
@@ -5316,87 +5322,87 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed.</sou
 Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="187"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="203"/>
       <source>Pipe: Could not obtain profile shape</source>
       <translation>Boru: Profil şekli alınamadı</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="194"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="210"/>
       <source>No spine linked</source>
       <translation>Omurga (spine) bağlı değil</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="209"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="225"/>
       <source>No auxiliary spine linked.</source>
       <translation>Yardımcı omurga bağlı değil.</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="231"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="247"/>
       <source>Pipe: Only one isolated point is needed if using a sketch with isolated points for section</source>
       <translation>Boru: Kesit için izole noktalar içeren bir eskiz kullanılıyorsa yalnızca bir izole nokta gerekir</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="240"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="256"/>
       <source>Pipe: At least one section is needed when using a single point for profile</source>
       <translation>Boru: Profil için tek nokta kullanıldığında en az bir kesit gerekli</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="258"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="274"/>
       <source>Pipe: All sections need to be Part features</source>
       <translation>Boru: Tüm kesitler Part özellikleri olmalıdır</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="267"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="282"/>
       <source>Pipe: Could not obtain section shape</source>
       <translation>Boru: Kesit şekli alınamadı</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="275"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="290"/>
       <source>Pipe: Only the profile and last section can be vertices</source>
       <translation>Boru: Yalnızca profil ve son kesit tepe noktası (vertex) olabilir</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="288"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="303"/>
       <source>Multisections need to have the same amount of inner wires as the base section</source>
       <translation>Çoklu kesitlerin, temel kesitle aynı sayıda iç tel (wire) içermesi gerekir</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="321"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="336"/>
       <source>Path must not be a null shape</source>
       <translation>Yol (path) boş (null) bir şekil olmamalı</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="361"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="376"/>
       <source>Pipe could not be built</source>
       <translation>Boru oluşturulamadı</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="509"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="524"/>
       <source>Pipe: There is nothing to subtract from</source>
       <translation>Boru: Çıkarılacak bir şey yok</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="571"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="586"/>
       <source>A fatal error occurred when making the pipe</source>
       <translation>Boru oluşturulurken kritik bir hata oluştu</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="698"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="713"/>
       <source>Invalid element in spine.</source>
       <translation>Omurgada geçersiz öğe.</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="703"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="718"/>
       <source>Element in spine is neither an edge nor a wire.</source>
       <translation>Omurgadaki öğe ne bir kenar ne de bir tel (wire).</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="716"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="731"/>
       <source>Spine is neither an edge nor a wire.</source>
       <translation>Omurga ne bir kenar ne de bir tel (wire).</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePipe.cpp" line="721"/>
+      <location filename="../../../App/FeaturePipe.cpp" line="736"/>
       <source>Invalid spine.</source>
       <translation>Geçersiz omurga.</translation>
     </message>
@@ -5406,8 +5412,8 @@ Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
       <translation>Temel özellik olmadan primitif özellik çıkarılamaz</translation>
     </message>
     <message>
-      <location filename="../../../App/FeaturePrimitive.cpp" line="124"/>
       <location filename="../../../App/FeatureLoft.cpp" line="408"/>
+      <location filename="../../../App/FeaturePrimitive.cpp" line="124"/>
       <source>Failed to perform boolean operation</source>
       <translation>Boole işlemi gerçekleştirilemedi</translation>
     </message>
@@ -5646,7 +5652,7 @@ Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
       <translation>Kaldırılan hacim önizlemesi hesaplanırken hata: %1</translation>
     </message>
     <message>
-      <location filename="../../../App/FeatureAddSub.cpp" line="180"/>
+      <location filename="../../../App/FeatureAddSub.cpp" line="174"/>
       <source>Resulting shape is empty. That may indicate that no material will be removed or a problem with the model.</source>
       <translation>Oluşan şekil boş. Bu, malzeme kaldırılmayacağını veya modelde bir sorun olduğunu gösterebilir.</translation>
     </message>
@@ -5654,12 +5660,12 @@ Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
   <context>
     <name>CmdPartDesignCompDatums</name>
     <message>
-      <location filename="../../Command.cpp" line="2938"/>
+      <location filename="../../Command.cpp" line="2940"/>
       <source>Create Datum</source>
       <translation>Datum Oluştur</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2939"/>
+      <location filename="../../Command.cpp" line="2941"/>
       <source>Creates a datum object or local coordinate system</source>
       <translation>Bir datum nesnesi veya yerel koordinat sistemi oluşturur</translation>
     </message>
@@ -5667,12 +5673,12 @@ Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
   <context>
     <name>CmdPartDesignCompSketches</name>
     <message>
-      <location filename="../../Command.cpp" line="2973"/>
+      <location filename="../../Command.cpp" line="2975"/>
       <source>Create Datum</source>
       <translation>Datum Oluştur</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2974"/>
+      <location filename="../../Command.cpp" line="2976"/>
       <source>Creates a datum object or local coordinate system</source>
       <translation>Bir datum nesnesi veya yerel koordinat sistemi oluşturur</translation>
     </message>
@@ -5901,32 +5907,32 @@ Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
   <context>
     <name>PartDesignGui::TaskPatternParameters</name>
     <message>
-      <location filename="../../TaskPatternParameters.cpp" line="425"/>
+      <location filename="../../TaskPatternParameters.cpp" line="474"/>
       <source>Select a sketch or shape containing the pattern points</source>
       <translation type="unfinished">Select a sketch or shape containing the pattern points</translation>
     </message>
     <message>
-      <location filename="../../TaskPatternParameters.cpp" line="431"/>
+      <location filename="../../TaskPatternParameters.cpp" line="480"/>
       <source>Select a sketch, Sub-Shape Binder, or path edge</source>
       <translation type="unfinished">Select a sketch, Sub-Shape Binder, or path edge</translation>
     </message>
     <message>
-      <location filename="../../TaskPatternParameters.cpp" line="440"/>
+      <location filename="../../TaskPatternParameters.cpp" line="489"/>
       <source>Select a direction reference (edge, face, datum line)</source>
       <translation>Bir yön referansı seçin (kenar, yüz, datum doğrusu)</translation>
     </message>
     <message>
-      <location filename="../../TaskPatternParameters.cpp" line="504"/>
+      <location filename="../../TaskPatternParameters.cpp" line="553"/>
       <source>Invalid selection. Select a sketch or shape containing points.</source>
       <translation type="unfinished">Invalid selection. Select a sketch or shape containing points.</translation>
     </message>
     <message>
-      <location filename="../../TaskPatternParameters.cpp" line="507"/>
+      <location filename="../../TaskPatternParameters.cpp" line="556"/>
       <source>Invalid selection. Select a sketch, Sub-Shape Binder, or path edge.</source>
       <translation type="unfinished">Invalid selection. Select a sketch, Sub-Shape Binder, or path edge.</translation>
     </message>
     <message>
-      <location filename="../../TaskPatternParameters.cpp" line="509"/>
+      <location filename="../../TaskPatternParameters.cpp" line="558"/>
       <source>Invalid selection. Select an edge, planar face, or datum line.</source>
       <translation>Geçersiz seçim. Bir kenar, düzlemsel bir yüz veya datum doğrusu seçin.</translation>
     </message>
@@ -6011,40 +6017,32 @@ Eskizde kesişen öğelere veya birden fazla yüze izin verilmez.</translation>
   <context>
     <name>CmdPartDesignPointPattern</name>
     <message>
-      <location filename="../../Command.cpp" line="2594"/>
+      <location filename="../../Command.cpp" line="2596"/>
       <source>PartDesign</source>
       <translation>ParçaTasarımı</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2595"/>
+      <location filename="../../Command.cpp" line="2597"/>
       <source>Point Pattern</source>
       <translation type="unfinished">Point Pattern</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2596"/>
+      <location filename="../../Command.cpp" line="2598"/>
       <source>Duplicates the selected features or the active body at points from a shape</source>
       <translation type="unfinished">Duplicates the selected features or the active body at points from a shape</translation>
     </message>
   </context>
   <context>
-    <name>PartDesignGui::ViewProviderDefeaturing</name>
+    <name>PartDesignGui::ViewProviderCircularPattern</name>
     <message>
-      <location filename="../../ViewProviderDefeaturing.h" line="40"/>
-      <source>Defeaturing Parameters</source>
-      <translation type="unfinished">Defeaturing Parameters</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartDesignGui::ViewProviderPathPattern</name>
-    <message>
-      <location filename="../../ViewProviderPathPattern.h" line="18"/>
-      <source>Path Pattern Parameters</source>
-      <translation type="unfinished">Path Pattern Parameters</translation>
+      <location filename="../../ViewProviderCircularPattern.h" line="18"/>
+      <source>Circular Pattern Parameters</source>
+      <translation type="unfinished">Circular Pattern Parameters</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderPathPattern.cpp" line="11"/>
-      <source>Edit Path Pattern</source>
-      <translation type="unfinished">Edit Path Pattern</translation>
+      <location filename="../../ViewProviderCircularPattern.cpp" line="11"/>
+      <source>Edit Circular Pattern</source>
+      <translation type="unfinished">Edit Circular Pattern</translation>
     </message>
   </context>
   <context>
@@ -6073,24 +6071,37 @@ Adjust the parameters and try again.</translation>
     </message>
   </context>
   <context>
-    <name>PartDesignGui::TaskDlgShapeBinder</name>
+    <name>PartDesignGui::ViewProviderPointPattern</name>
     <message>
-      <location filename="../../TaskShapeBinder.cpp" line="443"/>
-      <source>Input Error</source>
-      <translation>Giriş hatası</translation>
+      <location filename="../../ViewProviderPointPattern.h" line="18"/>
+      <source>Point Pattern Parameters</source>
+      <translation type="unfinished">Point Pattern Parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderPointPattern.cpp" line="11"/>
+      <source>Edit Point Pattern</source>
+      <translation type="unfinished">Edit Point Pattern</translation>
     </message>
   </context>
   <context>
-    <name>PartDesignGui::ViewProviderCircularPattern</name>
+    <name>PartDesignGui::ViewProviderPathPattern</name>
     <message>
-      <location filename="../../ViewProviderCircularPattern.h" line="18"/>
-      <source>Circular Pattern Parameters</source>
-      <translation type="unfinished">Circular Pattern Parameters</translation>
+      <location filename="../../ViewProviderPathPattern.cpp" line="11"/>
+      <source>Edit Path Pattern</source>
+      <translation type="unfinished">Edit Path Pattern</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderCircularPattern.cpp" line="11"/>
-      <source>Edit Circular Pattern</source>
-      <translation type="unfinished">Edit Circular Pattern</translation>
+      <location filename="../../ViewProviderPathPattern.h" line="18"/>
+      <source>Path Pattern Parameters</source>
+      <translation type="unfinished">Path Pattern Parameters</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderDefeaturing</name>
+    <message>
+      <location filename="../../ViewProviderDefeaturing.h" line="40"/>
+      <source>Defeaturing Parameters</source>
+      <translation type="unfinished">Defeaturing Parameters</translation>
     </message>
   </context>
   <context>
@@ -6102,16 +6113,11 @@ Adjust the parameters and try again.</translation>
     </message>
   </context>
   <context>
-    <name>PartDesignGui::ViewProviderPointPattern</name>
+    <name>PartDesignGui::TaskDlgShapeBinder</name>
     <message>
-      <location filename="../../ViewProviderPointPattern.h" line="18"/>
-      <source>Point Pattern Parameters</source>
-      <translation type="unfinished">Point Pattern Parameters</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderPointPattern.cpp" line="11"/>
-      <source>Edit Point Pattern</source>
-      <translation type="unfinished">Edit Point Pattern</translation>
+      <location filename="../../TaskShapeBinder.cpp" line="443"/>
+      <source>Input Error</source>
+      <translation>Giriş hatası</translation>
     </message>
   </context>
 </TS>

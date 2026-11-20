@@ -413,16 +413,6 @@
       <translation>Очистити комірки</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.cpp" line="228"/>
-      <source>Setup conf table</source>
-      <translation>Налаштувати таблицю конфігурацій</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSheetConf.cpp" line="391"/>
-      <source>Unsetup conf table</source>
-      <translation>Скасувати налаштування таблиці конфігурацій</translation>
-    </message>
-    <message>
       <location filename="../../DlgBindSheet.cpp" line="243"/>
       <source>Bind cells</source>
       <translation>Прив'язати комірки</translation>
@@ -431,6 +421,16 @@
       <location filename="../../DlgBindSheet.cpp" line="297"/>
       <source>Unbind cells</source>
       <translation>Відв'язати комірки</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSheetConf.cpp" line="228"/>
+      <source>Setup conf table</source>
+      <translation>Налаштувати таблицю конфігурацій</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSheetConf.cpp" line="391"/>
+      <source>Unsetup conf table</source>
+      <translation>Скасувати налаштування таблиці конфігурацій</translation>
     </message>
   </context>
   <context>

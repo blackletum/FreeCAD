@@ -73,12 +73,12 @@
       <translation>하위 어셈블리가 현재 유연한 상태입니다. 이 작업으로 강체로 변경됩니다.</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="329"/>
+      <location filename="../../../App/BomObject.cpp" line="332"/>
       <source>N/A</source>
       <translation>해당 없음</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="353"/>
+      <location filename="../../../App/BomObject.cpp" line="356"/>
       <source>Not supported</source>
       <translation>지원되지 않음</translation>
     </message>
@@ -182,7 +182,7 @@
     <message>
       <location filename="../../../JointObject.py" line="1431"/>
       <source>Update Stored Positions</source>
-      <translation type="unfinished">Update Stored Positions</translation>
+      <translation>저장된 위치 업데이트</translation>
     </message>
     <message>
       <location filename="../../../JointObject.py" line="1876"/>
@@ -500,7 +500,7 @@ SLOPE는 시간 T1과 T2를 기준으로 0에서 H1, 그리고 H2에서 0으로�
     <message>
       <location filename="../../../CommandCreateSimulation.py" line="1093"/>
       <source>Pillow (PIL) is not installed. It is required for video export.</source>
-      <translation type="unfinished">Pillow (PIL) is not installed. It is required for video export.</translation>
+      <translation>Pillow (PIL)이 설치되지 않았습니다. 비디오 내보내기에 필요합니다.</translation>
     </message>
     <message>
       <location filename="../../../CommandCreateSimulation.py" line="1100"/>
@@ -525,12 +525,12 @@ SLOPE는 시간 T1과 T2를 기준으로 0에서 H1, 그리고 H2에서 0으로�
     <message>
       <location filename="../../../CommandCreateSimulation.py" line="1186"/>
       <source>PyAv is not installed. It is required for video export.</source>
-      <translation type="unfinished">PyAv is not installed. It is required for video export.</translation>
+      <translation>PyAv가 설치되지 않았습니다. 비디오 내보내기에 필요합니다.</translation>
     </message>
     <message>
       <location filename="../../../CommandCreateSimulation.py" line="1205"/>
       <source>Unknown video export format</source>
-      <translation type="unfinished">Unknown video export format</translation>
+      <translation>알 수 없는 비디오 내보내기 형식</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="170"/>
@@ -568,32 +568,32 @@ SLOPE는 시간 T1과 T2를 기준으로 0에서 H1, 그리고 H2에서 0으로�
       <translation>시뮬레이션</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="394"/>
+      <location filename="../../../CommandCreateView.py" line="396"/>
       <source>Radial Translation</source>
       <translation type="unfinished">Radial Translation</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="397"/>
+      <location filename="../../../CommandCreateView.py" line="399"/>
       <source>Rotation</source>
       <translation>회전</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="400"/>
+      <location filename="../../../CommandCreateView.py" line="402"/>
       <source>Translation</source>
       <translation>이동</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="988"/>
+      <location filename="../../../CommandCreateView.py" line="990"/>
       <source>Angle of this exploded-view move</source>
       <translation type="unfinished">Angle of this exploded-view move</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="998"/>
+      <location filename="../../../CommandCreateView.py" line="1000"/>
       <source>Distance of this exploded-view move</source>
       <translation type="unfinished">Distance of this exploded-view move</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="1038"/>
+      <location filename="../../../CommandCreateView.py" line="1040"/>
       <source>Edit placement</source>
       <translation type="unfinished">Edit placement</translation>
     </message>
@@ -728,18 +728,18 @@ SLOPE는 시간 T1과 T2를 기준으로 0에서 H1, 그리고 H2에서 0으로�
       <translation>고정할 대상체</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="527"/>
-      <location filename="../../../CommandCreateView.py" line="564"/>
+      <location filename="../../../CommandCreateView.py" line="529"/>
+      <location filename="../../../CommandCreateView.py" line="566"/>
       <source>The objects moved by the move</source>
       <translation>이동에 의해 이동된 객체</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="539"/>
+      <location filename="../../../CommandCreateView.py" line="541"/>
       <source>This is the movement of the move. The end placement is the result of the start placement * this placement.</source>
       <translation>이동의 변위입니다. 최종 배치는 시작 배치 * 이 배치의 결과입니다.</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="548"/>
+      <location filename="../../../CommandCreateView.py" line="550"/>
       <source>The type of the move</source>
       <translation>이동의 유형</translation>
     </message>
@@ -1123,7 +1123,7 @@ The files are named "runPreDrag.asmt" and "dragging.log" and are located in the 
     <message>
       <location filename="../panels/TaskAssemblyCreateView.ui" line="49"/>
       <source>Select a feature to align. Press Esc to cancel.</source>
-      <translation>정렬할 피처를 선택하십시오. Esc를 누르면 취소됩니다.</translation>
+      <translation>정렬할 특징형상을 선택하세요. Esc를 누르면 취소됩니다.</translation>
     </message>
     <message>
       <location filename="../panels/TaskAssemblyCreateView.ui" line="56"/>

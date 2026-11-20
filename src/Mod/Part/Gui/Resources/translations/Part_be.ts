@@ -4388,22 +4388,32 @@ Check one or more edge entities first.</source>
       <translation>Найбольшае вуглавое адхіленне</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="88"/>
+      <location filename="../../DlgSettings3DViewPart.ui" line="139"/>
+      <source>Applies these tessellation settings to all objects in currently open documents</source>
+      <translation>Прымяняе налады брукаванне да ўсіх аб'ектах у адкрытых у дадзены момант дакументах</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings3DViewPart.ui" line="142"/>
+      <source>Apply to Open Documents</source>
+      <translation>Прымяніць да адкрытых дакументаў</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="94"/>
       <source>Deviation</source>
       <translation type="unfinished">Deviation</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="89"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="95"/>
       <source>Setting a too small deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
       <translation>Задаць занадта малое адхіленне прыводзіць да таго, што брукаванне займае больш часу і, такім чынам, прыводзіць да завісання ці запаволення працы графічнага інтэрфейсу.</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="113"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="119"/>
       <source>Angle deflection</source>
       <translation>Вугал адхілення</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="114"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="120"/>
       <source>Setting a too small angle deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
       <translation>Задаць занадта малы вугал адхілення прыводзіць да таго, што брукаванне займае больш часу і, такім чынам, прыводзіць да завісання ці запаволення працы графічнага інтэрфейсу.</translation>
     </message>
@@ -5077,7 +5087,7 @@ the sketch plane's normal vector will be used</source>
       <translation>Абраць фігуру для сіметрыі.</translation>
     </message>
     <message>
-      <location filename="../../Mirroring.cpp" line="321"/>
+      <location filename="../../Mirroring.cpp" line="319"/>
       <source>No such document '%1'.</source>
       <translation>Адсутнічае такі дакумент '%1'.</translation>
     </message>
@@ -6145,8 +6155,8 @@ in the 3D view for the sweep path.</source>
     <message>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="51"/>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="59"/>
-      <location filename="../../ViewProviderPrimitive.cpp" line="55"/>
       <location filename="../../ViewProvider.cpp" line="53"/>
+      <location filename="../../ViewProviderPrimitive.cpp" line="55"/>
       <source>Edit %1</source>
       <translation>Змяніць %1</translation>
     </message>
@@ -6588,7 +6598,7 @@ Continue?</source>
       <translation>Увядзіце адлегласць:</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderExt.cpp" line="1011"/>
+      <location filename="../../ViewProviderExt.cpp" line="1012"/>
       <source>Appearance per Face</source>
       <translation>Знешні выгляд для кожнай грані</translation>
     </message>
@@ -7417,7 +7427,7 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>Exceptions</name>
     <message>
-      <location filename="../../../App/Geometry.cpp" line="6726"/>
+      <location filename="../../../App/Geometry.cpp" line="6730"/>
       <source>Unable to guess intersection of curves. Try adding a coincident constraint between the vertices of the curves you are intending to fillet.</source>
       <translation>Немагчыма разлічыць скрыжаванне крывых.
 Паспрабуйце дадаць абмежаванні супадзенняў паміж вяршынямі крывых, якія вы збіраецеся акругліць.</translation>
@@ -7813,7 +7823,7 @@ Overlapping volumes of the shapes will be removed.</source>
     </message>
     <message>
       <location filename="../../PatternParametersWidget.cpp" line="371"/>
-      <location filename="../../PatternParametersWidget.cpp" line="467"/>
+      <location filename="../../PatternParametersWidget.cpp" line="476"/>
       <source>Spacing %1</source>
       <translation>Адлегласць %1</translation>
     </message>
@@ -7823,7 +7833,7 @@ Overlapping volumes of the shapes will be removed.</source>
       <translation>Выдаліць вызначэнне адлегласці.</translation>
     </message>
     <message>
-      <location filename="../../PatternParametersWidget.cpp" line="894"/>
+      <location filename="../../PatternParametersWidget.cpp" line="903"/>
       <source>Reset spacing</source>
       <translation>Скінуць інтэрвал</translation>
     </message>
@@ -7858,16 +7868,27 @@ Overlapping volumes of the shapes will be removed.</source>
     </message>
   </context>
   <context>
-    <name>TaskLinkArrayParameters</name>
+    <name>PartGui::PatternPointParametersWidget</name>
     <message>
-      <location filename="../../TaskLinkArrayParameters.ui" line="17"/>
-      <source>Linked object</source>
-      <translation>Звязаны аб'ект</translation>
+      <location filename="../../PatternPointParametersWidget.ui" line="19"/>
+      <source>Point object</source>
+      <translation>Кропкавы аб'ект</translation>
     </message>
     <message>
-      <location filename="../../TaskLinkArrayParameters.ui" line="27"/>
-      <source>Select Object</source>
-      <translation>Абраць аб'ект</translation>
+      <location filename="../../PatternPointParametersWidget.ui" line="29"/>
+      <location filename="../../PatternPointParametersWidget.cpp" line="85"/>
+      <source>Select Point Object</source>
+      <translation>Абраць кропкавы аб'ект</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPointParametersWidget.ui" line="36"/>
+      <source>Relative to first</source>
+      <translation>Адносна першага</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPointParametersWidget.ui" line="46"/>
+      <source>Origin point index</source>
+      <translation>Індэкс кропкі пачатку каардынат</translation>
     </message>
   </context>
   <context>
@@ -7921,94 +7942,244 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>PartGui::PatternPathParametersWidget</name>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="6"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="17"/>
       <source>Path</source>
       <translation>Траекторыя</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="7"/>
-      <location filename="../../PatternPathParametersWidget.cpp" line="148"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="24"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="240"/>
       <source>Select Path</source>
       <translation>Абраць траекторыю</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="8"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="31"/>
       <source>Spacing mode</source>
       <translation>Рэжым адлегласці</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="10"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="41"/>
       <source>Occurrences</source>
       <translation>Выступы</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="12"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="51"/>
       <source>Spacing</source>
       <translation>Адлегласць</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="14"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="65"/>
       <source>Start offset</source>
       <translation>Пачатковае зрушэнне</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="16"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="79"/>
       <source>End offset</source>
       <translation>Канцавое зрушэнне</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="18"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="93"/>
       <source>Reverse path</source>
       <translation>Развярнуць траекторыю</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="19"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="100"/>
       <source>Align to path</source>
       <translation>Выраўнаваць да траекторыі</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="107"/>
+      <source>Tangent Axis</source>
+      <translation>Датычная вось</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="117"/>
+      <source>Flip tangent axis</source>
+      <translation>Павярнуць датычную вось</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="124"/>
+      <source>Vertical axis</source>
+      <translation>Вертыкальная вось</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="134"/>
+      <source>Flip vertical axis</source>
+      <translation>Павярнуць вертыкальную вось</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="141"/>
+      <source>Origin point index</source>
+      <translation>Індэкс кропкі пачатку каардынат</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="151"/>
+      <source>Total offset</source>
+      <translation>Агульнае зрушэнне</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="161"/>
+      <source>Relative to first</source>
+      <translation>Адносна першага</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
       <source>Fixed count</source>
       <translation>Выпраўленая колькасць</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
       <source>Fixed spacing</source>
       <translation>Выпраўленая адлегласць</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
       <source>Fixed count and spacing</source>
       <translation>Выпраўленая колькасці і адлегласць</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="160"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="252"/>
       <source>(+%1)</source>
       <translation>(+%1)</translation>
     </message>
   </context>
   <context>
-    <name>PartGui::PatternPointParametersWidget</name>
+    <name>TaskLinkArrayParameters</name>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="19"/>
-      <source>Point object</source>
-      <translation>Кропкавы аб'ект</translation>
+      <location filename="../../TaskLinkArrayParameters.ui" line="17"/>
+      <source>Linked object</source>
+      <translation>Звязаны аб'ект</translation>
     </message>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="29"/>
-      <location filename="../../PatternPointParametersWidget.cpp" line="85"/>
-      <source>Select Point Object</source>
-      <translation>Абраць кропкавы аб'ект</translation>
+      <location filename="../../TaskLinkArrayParameters.ui" line="27"/>
+      <source>Select Object</source>
+      <translation>Абраць аб'ект</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::TaskPatternParameters</name>
+    <message>
+      <location filename="../../TaskPatternParameters.cpp" line="147"/>
+      <source>Direction 2</source>
+      <translation>Напрамак 2</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::PatternInstanceControls</name>
+    <message>
+      <location filename="../../PatternInstanceControls.cpp" line="226"/>
+      <source>Restores this instance</source>
+      <translation>Аднаўляе гэты асобнік</translation>
     </message>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="36"/>
-      <source>Relative to first</source>
-      <translation>Адносна першага</translation>
+      <location filename="../../PatternInstanceControls.cpp" line="231"/>
+      <source>Suppresses this instance</source>
+      <translation>Душыць гэты асобнік</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::TaskLinkArrayParameters</name>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="165"/>
+      <source>Circular Link Array</source>
+      <translation>Кругавы масіў спасылак</translation>
     </message>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="46"/>
-      <source>Origin point index</source>
-      <translation>Індэкс кропкі пачатку каардынат</translation>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="168"/>
+      <source>Path Link Array</source>
+      <translation>Масіў сувязей траекторый</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="171"/>
+      <source>Point Link Array</source>
+      <translation>Масіў сувязей кропак</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="175"/>
+      <source>Polar Link Array</source>
+      <translation>Палярны масіў спасылак</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="178"/>
+      <source>Linear Link Array</source>
+      <translation>Лінейны масіў спасылак</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="321"/>
+      <source>Selecting…</source>
+      <translation>Выбар…</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="327"/>
+      <source>Select Object</source>
+      <translation>Абраць аб'ект</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="345"/>
+      <source>Select an object to link</source>
+      <translation>Абярыце аб'ект для сувязі</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="571"/>
+      <source>No reference</source>
+      <translation>Без апорнага элементу</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="577"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="595"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="610"/>
+      <source>Object X-axis</source>
+      <translation>Аб'ект восі X</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="581"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="598"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="616"/>
+      <source>Object Y-axis</source>
+      <translation>Аб'ект восі Y</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="587"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="602"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="619"/>
+      <source>Object Z-axis</source>
+      <translation>Аб'ект восі Z</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="625"/>
+      <source>Select reference…</source>
+      <translation>Абраць апорны элемент…</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="754"/>
+      <source>Select connected path edges</source>
+      <translation>Абраць рэбры злучанай траекторыі</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="757"/>
+      <source>Select a sketch or shape containing points</source>
+      <translation>Абраць эскіз ці фігуру, якія змяшчаюць кропкі</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="761"/>
+      <source>Select a rotation axis</source>
+      <translation>Абраць вось вярчэння</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="763"/>
+      <source>Select a direction reference</source>
+      <translation>Абраць апорны напрамак</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="913"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="930"/>
+      <source>Input Error</source>
+      <translation>Памылка ўводу</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="913"/>
+      <source>Select an object to link.</source>
+      <translation>Абярыце аб'ект для сувязі.</translation>
     </message>
   </context>
   <context>
@@ -8117,127 +8288,6 @@ Overlapping volumes of the shapes will be removed.</source>
       <location filename="../../Command.cpp" line="2951"/>
       <source>Creates link arrays</source>
       <translation>Стварае масівы спасылак</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::PatternInstanceControls</name>
-    <message>
-      <location filename="../../PatternInstanceControls.cpp" line="226"/>
-      <source>Restores this instance</source>
-      <translation>Аднаўляе гэты асобнік</translation>
-    </message>
-    <message>
-      <location filename="../../PatternInstanceControls.cpp" line="231"/>
-      <source>Suppresses this instance</source>
-      <translation>Душыць гэты асобнік</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::TaskPatternParameters</name>
-    <message>
-      <location filename="../../TaskPatternParameters.cpp" line="147"/>
-      <source>Direction 2</source>
-      <translation>Напрамак 2</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::TaskLinkArrayParameters</name>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="163"/>
-      <source>Circular Link Array</source>
-      <translation>Кругавы масіў спасылак</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="166"/>
-      <source>Path Link Array</source>
-      <translation>Масіў сувязей траекторый</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="169"/>
-      <source>Point Link Array</source>
-      <translation>Масіў сувязей кропак</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="173"/>
-      <source>Polar Link Array</source>
-      <translation>Палярны масіў спасылак</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="176"/>
-      <source>Linear Link Array</source>
-      <translation>Лінейны масіў спасылак</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="312"/>
-      <source>Selecting…</source>
-      <translation>Выбар…</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="318"/>
-      <source>Select Object</source>
-      <translation>Абраць аб'ект</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="336"/>
-      <source>Select an object to link</source>
-      <translation>Абярыце аб'ект для сувязі</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="557"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="575"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="590"/>
-      <source>Object X-axis</source>
-      <translation>Аб'ект восі X</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="561"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="578"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="596"/>
-      <source>Object Y-axis</source>
-      <translation>Аб'ект восі Y</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="567"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="582"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="599"/>
-      <source>Object Z-axis</source>
-      <translation>Аб'ект восі Z</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="605"/>
-      <source>Select reference…</source>
-      <translation>Абраць апорны элемент…</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="734"/>
-      <source>Select connected path edges</source>
-      <translation>Абраць рэбры злучанай траекторыі</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="737"/>
-      <source>Select a sketch or shape containing points</source>
-      <translation>Абраць эскіз ці фігуру, якія змяшчаюць кропкі</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="741"/>
-      <source>Select a rotation axis</source>
-      <translation>Абраць вось вярчэння</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="743"/>
-      <source>Select a direction reference</source>
-      <translation>Абраць апорны напрамак</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="879"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="896"/>
-      <source>Input Error</source>
-      <translation>Памылка ўводу</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="879"/>
-      <source>Select an object to link.</source>
-      <translation>Абярыце аб'ект для сувязі.</translation>
     </message>
   </context>
   <context>

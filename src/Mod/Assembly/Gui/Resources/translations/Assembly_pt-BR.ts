@@ -73,12 +73,12 @@
       <translation>Sua sub-montagem esta flexível atualmente. Isso vai torná-la rígida.</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="329"/>
+      <location filename="../../../App/BomObject.cpp" line="332"/>
       <source>N/A</source>
       <translation>N/A</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="353"/>
+      <location filename="../../../App/BomObject.cpp" line="356"/>
       <source>Not supported</source>
       <translation>Não suportado</translation>
     </message>
@@ -567,32 +567,32 @@ SLOPE define a firmeza da transição entre 0 e H1 e H2 para 0 sobre tempo = T1 
       <translation>Simulação</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="394"/>
+      <location filename="../../../CommandCreateView.py" line="396"/>
       <source>Radial Translation</source>
       <translation>Translação Radial</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="397"/>
+      <location filename="../../../CommandCreateView.py" line="399"/>
       <source>Rotation</source>
       <translation>Rotação</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="400"/>
+      <location filename="../../../CommandCreateView.py" line="402"/>
       <source>Translation</source>
       <translation>Translação</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="988"/>
+      <location filename="../../../CommandCreateView.py" line="990"/>
       <source>Angle of this exploded-view move</source>
       <translation>Ângulo deste movimento da vista explodida</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="998"/>
+      <location filename="../../../CommandCreateView.py" line="1000"/>
       <source>Distance of this exploded-view move</source>
       <translation>Distância deste movimento da vista explodida</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="1038"/>
+      <location filename="../../../CommandCreateView.py" line="1040"/>
       <source>Edit placement</source>
       <translation>Editar posicionamento</translation>
     </message>
@@ -727,18 +727,18 @@ SLOPE define a firmeza da transição entre 0 e H1 e H2 para 0 sobre tempo = T1 
       <translation>Fixar objeto</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="527"/>
-      <location filename="../../../CommandCreateView.py" line="564"/>
+      <location filename="../../../CommandCreateView.py" line="529"/>
+      <location filename="../../../CommandCreateView.py" line="566"/>
       <source>The objects moved by the move</source>
       <translation>Os objetos movidos por este deslocamento</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="539"/>
+      <location filename="../../../CommandCreateView.py" line="541"/>
       <source>This is the movement of the move. The end placement is the result of the start placement * this placement.</source>
       <translation>Este é o valor do deslocamento deste movimento. O localizador final é o resultado do localizador inicial * este localizador.</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="548"/>
+      <location filename="../../../CommandCreateView.py" line="550"/>
       <source>The type of the move</source>
       <translation>O tipo de movimento</translation>
     </message>

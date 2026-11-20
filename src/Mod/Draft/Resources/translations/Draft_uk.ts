@@ -29,8 +29,8 @@
       <translation>Новий</translation>
     </message>
     <message>
-      <location filename="../ui/dialogLayers.ui" line="36"/>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="113"/>
+      <location filename="../ui/dialogLayers.ui" line="36"/>
       <source>Delete</source>
       <translation>Видалити</translation>
     </message>
@@ -1453,9 +1453,9 @@ This setting modifies the Translate property.</source>
       <translation>Типова робоча площина</translation>
     </message>
     <message>
+      <location filename="../ui/preferences-dxf.ui" line="20"/>
       <location filename="../ui/preferences-draft.ui" line="14"/>
       <location filename="../ui/preferences-draft.ui" line="20"/>
-      <location filename="../ui/preferences-dxf.ui" line="20"/>
       <source>General</source>
       <translation>Загальні</translation>
     </message>
@@ -3092,9 +3092,9 @@ if they match the X, Y or Z axis of the global coordinate system</source>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="834"/>
-      <location filename="../../draftguitools/gui_rotate.py" line="292"/>
       <location filename="../../draftguitools/gui_move.py" line="221"/>
       <location filename="../../draftguitools/gui_scale.py" line="229"/>
+      <location filename="../../draftguitools/gui_rotate.py" line="292"/>
       <source>Copy</source>
       <translation>Копіювати</translation>
     </message>
@@ -3643,20 +3643,20 @@ or try saving to a lower DWG version.</source>
       <location filename="../../draftmake/make_label.py" line="202"/>
       <location filename="../../draftmake/make_patharray.py" line="179"/>
       <location filename="../../draftmake/make_patharray.py" line="339"/>
-      <location filename="../../draftmake/make_text.py" line="95"/>
-      <location filename="../../draftmake/make_text.py" line="181"/>
+      <location filename="../../draftmake/make_array.py" line="85"/>
+      <location filename="../../draftmake/make_pointarray.py" line="92"/>
       <location filename="../../draftmake/make_dimension.py" line="267"/>
       <location filename="../../draftmake/make_dimension.py" line="356"/>
       <location filename="../../draftmake/make_dimension.py" line="484"/>
       <location filename="../../draftmake/make_dimension.py" line="605"/>
-      <location filename="../../draftmake/make_array.py" line="85"/>
-      <location filename="../../draftmake/make_pointarray.py" line="92"/>
+      <location filename="../../draftmake/make_text.py" line="95"/>
+      <location filename="../../draftmake/make_text.py" line="181"/>
       <location filename="../../draftmake/make_layer.py" line="57"/>
       <location filename="../../draftmake/make_layer.py" line="150"/>
-      <location filename="../../draftutils/utils.py" line="1135"/>
-      <location filename="../../draftutils/groups.py" line="101"/>
-      <location filename="../../draftutils/gui_utils.py" line="944"/>
       <location filename="../../draftfunctions/cut.py" line="60"/>
+      <location filename="../../draftutils/groups.py" line="101"/>
+      <location filename="../../draftutils/utils.py" line="1135"/>
+      <location filename="../../draftutils/gui_utils.py" line="944"/>
       <source>No active document. Aborting.</source>
       <translation>Немає активного документа. Перервано.</translation>
     </message>
@@ -3815,10 +3815,10 @@ or try saving to a lower DWG version.</source>
       <translation>%1 вибрати точку тексту</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="77"/>
-      <location filename="../../draftguitools/gui_dimensions.py" line="122"/>
-      <location filename="../../draftguitools/gui_lines.py" line="95"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="71"/>
+      <location filename="../../draftguitools/gui_lines.py" line="95"/>
+      <location filename="../../draftguitools/gui_dimensions.py" line="122"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="77"/>
       <source>Pick first point</source>
       <translation>Вказати першу точку</translation>
     </message>
@@ -3836,6 +3836,13 @@ or try saving to a lower DWG version.</source>
       <location filename="../../draftguitools/gui_lines.py" line="207"/>
       <source>Create Wire</source>
       <translation>Створити полілінію</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lines.py" line="246"/>
+      <location filename="../../drafttests/test_lines_gui.py" line="56"/>
+      <location filename="../../drafttests/test_lines_gui.py" line="94"/>
+      <source>Point identical to previous point</source>
+      <translation>Точка збігається з попередньою</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_lines.py" line="327"/>
@@ -3858,6 +3865,8 @@ or try saving to a lower DWG version.</source>
       <translation>Полілінія</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_beziers.py" line="158"/>
+      <location filename="../../draftguitools/gui_beziers.py" line="161"/>
       <location filename="../../draftguitools/gui_lines.py" line="240"/>
       <location filename="../../draftguitools/gui_lines.py" line="259"/>
       <location filename="../../draftguitools/gui_lines.py" line="266"/>
@@ -3865,8 +3874,6 @@ or try saving to a lower DWG version.</source>
       <location filename="../../draftguitools/gui_lines.py" line="285"/>
       <location filename="../../draftguitools/gui_splines.py" line="153"/>
       <location filename="../../draftguitools/gui_splines.py" line="158"/>
-      <location filename="../../draftguitools/gui_beziers.py" line="158"/>
-      <location filename="../../draftguitools/gui_beziers.py" line="161"/>
       <source>Pick next point</source>
       <translation>Вказати наступну точку</translation>
     </message>
@@ -3943,6 +3950,18 @@ or try saving to a lower DWG version.</source>
       <translation>Вказати кінцеву точку</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_move.py" line="195"/>
+      <location filename="../../draftguitools/gui_scale.py" line="126"/>
+      <location filename="../../draftguitools/gui_rotate.py" line="245"/>
+      <source>No valid subelements selected</source>
+      <translation>Не вибрано коректних підоб'єктів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_move.py" line="223"/>
+      <source>Move</source>
+      <translation>Перемістити</translation>
+    </message>
+    <message>
       <location filename="../../draftguitools/gui_move.py" line="255"/>
       <source>%1 pick start point</source>
       <translation>%1 вибрати початкову точку</translation>
@@ -3951,18 +3970,6 @@ or try saving to a lower DWG version.</source>
       <location filename="../../draftguitools/gui_move.py" line="259"/>
       <source>%1 pick end point</source>
       <translation>%1 вибрати кінцеву точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="245"/>
-      <location filename="../../draftguitools/gui_move.py" line="195"/>
-      <location filename="../../draftguitools/gui_scale.py" line="126"/>
-      <source>No valid subelements selected</source>
-      <translation>Не вибрано коректних підоб'єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_move.py" line="223"/>
-      <source>Move</source>
-      <translation>Перемістити</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_arcs.py" line="94"/>
@@ -4131,10 +4138,10 @@ or try saving to a lower DWG version.</source>
       <translation>Створити дугу з 3 точок</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="222"/>
-      <location filename="../../draftguitools/gui_lines.py" line="318"/>
-      <location filename="../../draftguitools/gui_arcs.py" line="658"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="219"/>
+      <location filename="../../draftguitools/gui_lines.py" line="318"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="222"/>
+      <location filename="../../draftguitools/gui_arcs.py" line="658"/>
       <source>%1 pick first point</source>
       <translation>%1 вибрати першу точку</translation>
     </message>
@@ -4165,6 +4172,13 @@ or try saving to a lower DWG version.</source>
       <translation>%1 виконати переміщення, поворот або масштабування підоб'єктів</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_subelements.py" line="179"/>
+      <location filename="../../draftguitools/gui_dimensions.py" line="617"/>
+      <location filename="../../draftguitools/gui_edit.py" line="391"/>
+      <source>%1 finish</source>
+      <translation>%1 завершити</translation>
+    </message>
+    <message>
       <location filename="../../draftguitools/gui_edit.py" line="298"/>
       <source>Select a Draft object to edit</source>
       <translation>Виберіть об'єкт Draft для редагування</translation>
@@ -4183,13 +4197,6 @@ or try saving to a lower DWG version.</source>
       <location filename="../../draftguitools/gui_edit.py" line="388"/>
       <source>%1 options for hovered node/edge</source>
       <translation>%1 параметри вузла/ребра під курсором</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit.py" line="391"/>
-      <location filename="../../draftguitools/gui_dimensions.py" line="617"/>
-      <location filename="../../draftguitools/gui_subelements.py" line="179"/>
-      <source>%1 finish</source>
-      <translation>%1 завершити</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_edit.py" line="396"/>
@@ -4315,9 +4322,9 @@ or try saving to a lower DWG version.</source>
       <translation>Створити точку</translation>
     </message>
     <message>
+      <location filename="../../drafttaskpanels/task_shapestring.py" line="216"/>
       <location filename="../../draftguitools/gui_points.py" line="189"/>
       <location filename="../../draftguitools/gui_texts.py" line="180"/>
-      <location filename="../../drafttaskpanels/task_shapestring.py" line="216"/>
       <source>%1 pick point</source>
       <translation>%1 вибрати точку</translation>
     </message>
@@ -4517,15 +4524,21 @@ The final angle will be the base angle plus this amount.</source>
       <translation>Видавити можна лише одну грань</translation>
     </message>
     <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="159"/>
       <location filename="../../draftutils/utils.py" line="385"/>
       <location filename="../../draftutils/utils.py" line="388"/>
       <location filename="../../draftutils/utils.py" line="391"/>
       <location filename="../../draftutils/utils.py" line="396"/>
       <location filename="../../draftutils/utils.py" line="402"/>
       <location filename="../../draftutils/utils.py" line="417"/>
-      <location filename="../../draftguitools/gui_trimex.py" line="159"/>
       <source>Trimex does not support this object type</source>
       <translation>Trimex не підтримує цей тип об'єктів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="200"/>
+      <location filename="../../draftguitools/gui_trimex.py" line="741"/>
+      <source>Select a single face to extrude</source>
+      <translation>Виберіть одну грань для видавлювання</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_trimex.py" line="607"/>
@@ -4541,6 +4554,41 @@ The final angle will be the base angle plus this amount.</source>
       <location filename="../../draftguitools/gui_trimex.py" line="630"/>
       <source>Too many intersection points</source>
       <translation>Забагато точок перетину</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="703"/>
+      <source>Trimex: move the mouse into the 3D view before typing a value</source>
+      <translation type="unfinished">Trimex: move the mouse into the 3D view before typing a value</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="714"/>
+      <source>%1 pick target</source>
+      <translation>%1 вибрати ціль</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="716"/>
+      <source>Hold %1 free direction</source>
+      <translation>Утримуйте %1 — вільний напрямок</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="719"/>
+      <source>Hold %1 keep active endpoint</source>
+      <translation>Утримуйте %1 — зберегти активну кінцеву точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="722"/>
+      <source>Hold %1 invert trim direction</source>
+      <translation>Утримуйте %1 — змінити напрямок обрізання</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="731"/>
+      <source>Extrude Face</source>
+      <translation>Видавити грань</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="732"/>
+      <source>Select a face to extrude</source>
+      <translation>Виберіть грань для видавлювання</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="92"/>
@@ -4564,12 +4612,6 @@ The final angle will be the base angle plus this amount.</source>
       <translation>Вказати відстань</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="200"/>
-      <location filename="../../draftguitools/gui_trimex.py" line="733"/>
-      <source>Select a single face to extrude</source>
-      <translation>Виберіть одну грань для видавлювання</translation>
-    </message>
-    <message>
       <location filename="../../draftguitools/gui_trimex.py" line="305"/>
       <source>Offset angle</source>
       <translation>Кут зміщення</translation>
@@ -4578,36 +4620,6 @@ The final angle will be the base angle plus this amount.</source>
       <location filename="../../draftguitools/gui_trimex.py" line="610"/>
       <source>Unable to trim these objects, too many wires</source>
       <translation>Неможливо обрізати ці об'єкти: забагато поліліній</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="706"/>
-      <source>%1 pick target</source>
-      <translation>%1 вибрати ціль</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="708"/>
-      <source>Hold %1 free direction</source>
-      <translation>Утримуйте %1 — вільний напрямок</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="711"/>
-      <source>Hold %1 keep active endpoint</source>
-      <translation>Утримуйте %1 — зберегти активну кінцеву точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="714"/>
-      <source>Hold %1 invert trim direction</source>
-      <translation>Утримуйте %1 — змінити напрямок обрізання</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="723"/>
-      <source>Extrude Face</source>
-      <translation>Видавити грань</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="724"/>
-      <source>Select a face to extrude</source>
-      <translation>Виберіть грань для видавлювання</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_splines.py" line="75"/>
@@ -4796,14 +4808,14 @@ The final angle will be the base angle plus this amount.</source>
       <translation>Створити еліпс</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="211"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="208"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="211"/>
       <source>Pick opposite point</source>
       <translation>Вказати протилежну точку</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="226"/>
       <location filename="../../draftguitools/gui_rectangles.py" line="223"/>
+      <location filename="../../draftguitools/gui_ellipses.py" line="226"/>
       <source>%1 pick opposite point</source>
       <translation>%1 вибрати протилежну точку</translation>
     </message>
@@ -5424,10 +5436,10 @@ The final angle will be the base angle plus this amount.</source>
     <message>
       <location filename="../../draftmake/make_patharray.py" line="184"/>
       <location filename="../../draftmake/make_patharray.py" line="344"/>
-      <location filename="../../draftmake/make_orthoarray.py" line="149"/>
-      <location filename="../../draftmake/make_circulararray.py" line="135"/>
       <location filename="../../draftmake/make_polararray.py" line="111"/>
+      <location filename="../../draftmake/make_circulararray.py" line="135"/>
       <location filename="../../draftmake/make_pointarray.py" line="97"/>
+      <location filename="../../draftmake/make_orthoarray.py" line="149"/>
       <source>Wrong input: base_object not in document.</source>
       <translation>Неправильні вхідні дані: base_object немає в документі.</translation>
     </message>
@@ -5443,8 +5455,8 @@ The final angle will be the base angle plus this amount.</source>
       <location filename="../../draftmake/make_patharray.py" line="266"/>
       <location filename="../../draftmake/make_patharray.py" line="273"/>
       <location filename="../../draftmake/make_patharray.py" line="354"/>
-      <location filename="../../draftmake/make_orthoarray.py" line="139"/>
       <location filename="../../draftmake/make_polararray.py" line="123"/>
+      <location filename="../../draftmake/make_orthoarray.py" line="139"/>
       <location filename="../../draftmake/make_layer.py" line="189"/>
       <source>Wrong input: must be a number.</source>
       <translation>Неправильні вхідні дані: має бути число.</translation>
@@ -5454,6 +5466,8 @@ The final angle will be the base angle plus this amount.</source>
       <location filename="../../draftmake/make_patharray.py" line="202"/>
       <location filename="../../draftmake/make_patharray.py" line="253"/>
       <location filename="../../draftmake/make_patharray.py" line="260"/>
+      <location filename="../../draftmake/make_polararray.py" line="135"/>
+      <location filename="../../draftmake/make_circulararray.py" line="165"/>
       <location filename="../../draftmake/make_dimension.py" line="273"/>
       <location filename="../../draftmake/make_dimension.py" line="279"/>
       <location filename="../../draftmake/make_dimension.py" line="286"/>
@@ -5463,8 +5477,6 @@ The final angle will be the base angle plus this amount.</source>
       <location filename="../../draftmake/make_dimension.py" line="611"/>
       <location filename="../../draftmake/make_dimension.py" line="636"/>
       <location filename="../../draftmake/make_dimension.py" line="643"/>
-      <location filename="../../draftmake/make_circulararray.py" line="165"/>
-      <location filename="../../draftmake/make_polararray.py" line="135"/>
       <source>Wrong input: must be a vector.</source>
       <translation>Неправильні вхідні дані: має бути вектор.</translation>
     </message>
@@ -5491,9 +5503,9 @@ The final angle will be the base angle plus this amount.</source>
       <translation>Вхідні дані: одне значення розгорнуто у вектор.</translation>
     </message>
     <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="113"/>
-      <location filename="../../draftmake/make_circulararray.py" line="153"/>
       <location filename="../../draftmake/make_polararray.py" line="117"/>
+      <location filename="../../draftmake/make_circulararray.py" line="153"/>
+      <location filename="../../draftmake/make_orthoarray.py" line="113"/>
       <source>Wrong input: must be an integer number.</source>
       <translation>Неправильні вхідні дані: має бути ціле число.</translation>
     </message>
@@ -5506,8 +5518,8 @@ The final angle will be the base angle plus this amount.</source>
     </message>
     <message>
       <location filename="../../draftmake/make_label.py" line="218"/>
-      <location filename="../../draftmake/make_text.py" line="113"/>
       <location filename="../../draftmake/make_pointarray.py" line="119"/>
+      <location filename="../../draftmake/make_text.py" line="113"/>
       <source>Wrong input: must be a placement, a vector, or a rotation.</source>
       <translation>Неправильні вхідні дані: має бути розміщення, вектор або поворот.</translation>
     </message>
@@ -5691,10 +5703,10 @@ The final angle will be the base angle plus this amount.</source>
       <translation>Неправильні вхідні дані: має бути число від 0 до 100.</translation>
     </message>
     <message>
-      <location filename="../../draftviewproviders/view_draft_annotation.py" line="284"/>
-      <location filename="../../draftviewproviders/view_base.py" line="470"/>
-      <location filename="../../draftviewproviders/view_hatch.py" line="87"/>
       <location filename="../../draftviewproviders/view_clone.py" line="71"/>
+      <location filename="../../draftviewproviders/view_base.py" line="470"/>
+      <location filename="../../draftviewproviders/view_draft_annotation.py" line="284"/>
+      <location filename="../../draftviewproviders/view_hatch.py" line="87"/>
       <source>Edit</source>
       <translation>Редагувати</translation>
     </message>
@@ -5984,8 +5996,8 @@ of existing objects in all opened documents?</source>
       <translation>Змінити нахил</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="92"/>
       <location filename="../../draftguitools/gui_patharray.py" line="114"/>
+      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="92"/>
       <source>Select exactly 2 objects, the base object and the path object, before calling this command</source>
       <translation>Перед викликом цієї команди виберіть рівно 2 об'єкти: базовий об'єкт і об'єкт траєкторії</translation>
     </message>
@@ -6148,13 +6160,6 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
       <location filename="../../draftviewproviders/view_wpproxy.py" line="97"/>
       <source>Save Camera View</source>
       <translation>Зберегти вид камери</translation>
-    </message>
-    <message>
-      <location filename="../../drafttests/test_lines_gui.py" line="56"/>
-      <location filename="../../drafttests/test_lines_gui.py" line="94"/>
-      <location filename="../../draftguitools/gui_lines.py" line="246"/>
-      <source>Point identical to previous point</source>
-      <translation>Точка збігається з попередньою</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_field_locks.py" line="90"/>
@@ -7073,12 +7078,12 @@ True — об'єднати, False — складений об'єкт</translatio
       <translation>Створити грань</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="90"/>
       <location filename="../../draftobjects/rectangle.py" line="70"/>
       <location filename="../../draftobjects/bspline.py" line="57"/>
-      <location filename="../../draftobjects/bezcurve.py" line="66"/>
       <location filename="../../draftobjects/polygon.py" line="70"/>
       <location filename="../../draftobjects/circle.py" line="64"/>
+      <location filename="../../draftobjects/bezcurve.py" line="66"/>
+      <location filename="../../draftobjects/wire.py" line="90"/>
       <source>The area of this object</source>
       <translation>Площа цього об'єкта</translation>
     </message>
@@ -7103,16 +7108,16 @@ True — об'єднати, False — складений об'єкт</translatio
       <translation>Як багатокутник будується відносно керувального кола</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="78"/>
       <location filename="../../draftobjects/rectangle.py" line="55"/>
       <location filename="../../draftobjects/polygon.py" line="61"/>
+      <location filename="../../draftobjects/wire.py" line="78"/>
       <source>Radius to use to fillet the corners</source>
       <translation>Радіус заокруглення кутів</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="81"/>
       <location filename="../../draftobjects/rectangle.py" line="58"/>
       <location filename="../../draftobjects/polygon.py" line="64"/>
+      <location filename="../../draftobjects/wire.py" line="81"/>
       <source>Size of the chamfer to give to the corners</source>
       <translation>Розмір фаски на кутах</translation>
     </message>

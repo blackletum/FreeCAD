@@ -420,7 +420,7 @@ Detta kommando fungerar endast med ett nätobjekt.</translation>
     <message>
       <location filename="../../Command.cpp" line="288"/>
       <source>Extrapolates the selected face or surface at its boundaries with its local U and V parameters</source>
-      <translation>Extrapolerar den valda sidan eller ytan vid dess gränser med dess lokala U- och V-parametrar</translation>
+      <translation>Extrapolerar den valda ytan vid dess gränser med hjälp av dess lokala U- och V-parametrar</translation>
     </message>
   </context>
   <context>
@@ -428,7 +428,7 @@ Detta kommando fungerar endast med ett nätobjekt.</translation>
     <message>
       <location filename="../../Command.cpp" line="315"/>
       <source>Wrong selection</source>
-      <translation>Fel val</translation>
+      <translation>Felaktigt val</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="316"/>

@@ -9,25 +9,25 @@
       <translation>&lt;empty&gt;</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2446"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2735"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2444"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2733"/>
       <source>Angle</source>
       <translation>Angolo</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2450"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2739"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2448"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2737"/>
       <source>Axis</source>
       <translation>Asse</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2744"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2742"/>
       <source>Position</source>
       <translation>Posizione</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgAddProperty.cpp" line="376"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3016"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3014"/>
       <source>Enum</source>
       <translation>Enum</translation>
     </message>
@@ -133,10 +133,10 @@
       <translation>Posizionamento</translation>
     </message>
     <message>
-      <location filename="../Transform.cpp" line="108"/>
-      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
       <location filename="../TaskTransform.cpp" line="152"/>
       <location filename="../TaskTransform.cpp" line="1069"/>
+      <location filename="../Transform.cpp" line="108"/>
+      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
       <source>Transform</source>
       <translation>Trasforma</translation>
     </message>
@@ -4742,7 +4742,7 @@ Il sistema di preferenza è quello impostato nelle preferenze generali.</transla
   <context>
     <name>Gui::Dialog::DockablePlacement</name>
     <message>
-      <location filename="../Placement.cpp" line="1168"/>
+      <location filename="../Placement.cpp" line="1173"/>
       <source>Placement</source>
       <translation>Posizionamento</translation>
     </message>
@@ -5484,44 +5484,44 @@ The 'Status' column shows whether the document could be recovered.</source>
       <translation>Mostra dipendenze</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="124"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
       <source>Depending on</source>
       <translation>Dipende da</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="125"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="129"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="127"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="131"/>
       <source>Document</source>
       <translation>Documento</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
       <source>Name</source>
       <translation>Nome</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
       <source>Depended by</source>
       <translation>Dipendente da</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="134"/>
       <source>Selections</source>
       <translation>Selezioni</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="138"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="140"/>
       <source>All</source>
       <translation>Tutti</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="168"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
       <source>&amp;Use Original Selection</source>
       <translation>&amp;Utilizza selezione originale</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="172"/>
       <source>Ignore dependencies and proceed with the objects
 originally selected prior to opening this dialog</source>
       <translation>Ignora le dipendenze e procedi con gli oggetti
@@ -5586,12 +5586,12 @@ originariamente selezionati prima di aprire questa finestra</translation>
       <translation>Va alla fine</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="733"/>
+      <location filename="../ReportView.cpp" line="738"/>
       <source>Save As…</source>
       <translation>Salva come…</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="745"/>
+      <location filename="../ReportView.cpp" line="750"/>
       <source>Plain text files</source>
       <translation>File di testo semplice</translation>
     </message>
@@ -5618,12 +5618,12 @@ originariamente selezionati prima di aprire questa finestra</translation>
       <translation>Mostra la vista report in caso di</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="731"/>
+      <location filename="../ReportView.cpp" line="733"/>
       <source>Clear</source>
       <translation>Pulisci</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="743"/>
+      <location filename="../ReportView.cpp" line="748"/>
       <source>Save Report Output</source>
       <translation>Salva report di output</translation>
     </message>
@@ -5907,22 +5907,22 @@ Salvare tutte le modifiche?</translation>
   <context>
     <name>Gui::GestureNavigationStyle</name>
     <message>
-      <location filename="../Navigation/GestureNavigationStyle.cpp" line="955"/>
+      <location filename="../Navigation/GestureNavigationStyle.cpp" line="956"/>
       <source>Tap OR click left mouse button.</source>
       <translation>Toccare oppure cliccare con il pulsante sinistro del mouse.</translation>
     </message>
     <message>
-      <location filename="../Navigation/GestureNavigationStyle.cpp" line="957"/>
+      <location filename="../Navigation/GestureNavigationStyle.cpp" line="958"/>
       <source>Drag screen with two fingers OR press right mouse button.</source>
       <translation>Trascinare lo schermo con due dita, oppure premere il tasto destro del mouse.</translation>
     </message>
     <message>
-      <location filename="../Navigation/GestureNavigationStyle.cpp" line="959"/>
+      <location filename="../Navigation/GestureNavigationStyle.cpp" line="960"/>
       <source>Drag screen with one finger OR press left mouse button. In Sketcher and other edit modes, hold Alt in addition.</source>
       <translation>Trascinare lo schermo con un dito, oppure premere il tasto sinistro del mouse. In Sketcher e altre modalità di modifica, tenere anche premuto Alt.</translation>
     </message>
     <message>
-      <location filename="../Navigation/GestureNavigationStyle.cpp" line="964"/>
+      <location filename="../Navigation/GestureNavigationStyle.cpp" line="965"/>
       <source>Pinch (place two fingers on the screen and drag them apart from or towards each other) OR scroll mouse wheel OR PgUp/PgDown on keyboard.</source>
       <translation>Pinch (posizionare due dita sullo schermo e trascinarle allontanandole o avvicinandole l'una all'altra) OPPURE usare la rotellina del mouse OPPURE usare PgSu/PgGiù sulla tastiera.</translation>
     </message>
@@ -6028,66 +6028,66 @@ Salvare tutte le modifiche?</translation>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
+      <location filename="../InputVector.cpp" line="104"/>
+      <location filename="../InputVector.cpp" line="118"/>
       <location filename="../InputVector.h" line="131"/>
       <location filename="../InputVector.h" line="154"/>
       <location filename="../InputVector.h" line="277"/>
       <location filename="../InputVector.h" line="300"/>
       <location filename="../InputVector.h" line="475"/>
       <location filename="../InputVector.h" line="489"/>
-      <location filename="../InputVector.cpp" line="104"/>
-      <location filename="../InputVector.cpp" line="118"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="105"/>
+      <location filename="../InputVector.cpp" line="119"/>
       <location filename="../InputVector.h" line="132"/>
       <location filename="../InputVector.h" line="155"/>
       <location filename="../InputVector.h" line="278"/>
       <location filename="../InputVector.h" line="301"/>
       <location filename="../InputVector.h" line="476"/>
       <location filename="../InputVector.h" line="490"/>
-      <location filename="../InputVector.cpp" line="105"/>
-      <location filename="../InputVector.cpp" line="119"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="106"/>
+      <location filename="../InputVector.cpp" line="120"/>
       <location filename="../InputVector.h" line="133"/>
       <location filename="../InputVector.h" line="156"/>
       <location filename="../InputVector.h" line="279"/>
       <location filename="../InputVector.h" line="302"/>
       <location filename="../InputVector.h" line="477"/>
       <location filename="../InputVector.h" line="491"/>
-      <location filename="../InputVector.cpp" line="106"/>
-      <location filename="../InputVector.cpp" line="120"/>
       <source>Z</source>
       <translation>Z</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="107"/>
+      <location filename="../InputVector.cpp" line="123"/>
       <location filename="../InputVector.h" line="134"/>
       <location filename="../InputVector.h" line="159"/>
       <location filename="../InputVector.h" line="280"/>
       <location filename="../InputVector.h" line="305"/>
       <location filename="../InputVector.h" line="478"/>
       <location filename="../InputVector.h" line="494"/>
-      <location filename="../InputVector.cpp" line="107"/>
-      <location filename="../InputVector.cpp" line="123"/>
       <source>User defined…</source>
       <translation>Definito dall'utente…</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="215"/>
       <location filename="../InputVector.h" line="240"/>
       <location filename="../InputVector.h" line="375"/>
       <location filename="../InputVector.h" line="564"/>
-      <location filename="../InputVector.cpp" line="215"/>
       <source>Wrong direction</source>
       <translation>Direzione sbagliata</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="216"/>
       <location filename="../InputVector.h" line="241"/>
       <location filename="../InputVector.h" line="376"/>
       <location filename="../InputVector.h" line="565"/>
-      <location filename="../InputVector.cpp" line="216"/>
       <source>Direction must not be the null vector</source>
       <translation>La direzione non può essere un vettore nullo</translation>
     </message>
@@ -6123,12 +6123,12 @@ Salvare tutte le modifiche?</translation>
       <translation>Macro</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1364"/>
+      <location filename="../Command.cpp" line="1368"/>
       <source>Macro file doesn't exist</source>
       <translation>Il file di macro non esiste</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1365"/>
+      <location filename="../Command.cpp" line="1369"/>
       <source>No such macro file: '%1'</source>
       <translation>Nessun file macro: '%1'</translation>
     </message>
@@ -6510,12 +6510,12 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::LinkSelection</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Error</source>
       <translation>Errore</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Object not found</source>
       <translation>Oggetto non trovato</translation>
     </message>
@@ -6523,152 +6523,152 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::PropertyEditor</name>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="382"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="363"/>
       <source>Edit</source>
       <translation>Modifica</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="393"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="374"/>
       <source>property</source>
       <translation>proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="919"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="869"/>
       <source>Expand/Collapse Properties</source>
       <translation>Espandi/Comprimi Proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="921"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="871"/>
       <source>Expand to Default</source>
       <translation>Espandi a predefinito</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="923"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="873"/>
       <source>Expand All</source>
       <translation>Espandi tutto</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="925"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="875"/>
       <source>Collapse All</source>
       <translation>Comprimi tutto</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="931"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="881"/>
       <source>Default Expand</source>
       <translation>Espansione predefinita</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="934"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="884"/>
       <source>Auto Expand</source>
       <translation>Espansione automatica</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="937"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="887"/>
       <source>Auto Collapse</source>
       <translation>Comprimi automaticamente</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1027"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="977"/>
       <source>object %1 (%2):
 </source>
       <translation>oggetto %1 (%2):
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1034"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="984"/>
       <source>property %1
 </source>
       <translation>proprietà %1
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1046"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="996"/>
       <source>document %1:
 </source>
       <translation>documento %1:
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1071"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1021"/>
       <source>The property %1 in object %2 (%3) in document %4 is referenced by:</source>
       <translation>La proprietà %1 nell'oggetto %2 (%3) nel documento %4 è referenziata da:</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1087"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1037"/>
       <source>(No references found.)</source>
       <translation>(Nessun riferimento trovato.)</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1105"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1193"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1055"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
       <source>Property Uses</source>
       <translation>Utilizzi proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1135"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1085"/>
       <source>Copy</source>
       <translation>Copia</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1093"/>
       <source>Add Property</source>
       <translation>Aggiungi proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1150"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1433"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1100"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1383"/>
       <source>Rename Property Group</source>
       <translation>Rinomina gruppo proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1161"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1111"/>
       <source>Cannot rename group: one or more properties have names that start with the group name</source>
       <translation>Impossibile rinominare il gruppo: una o più proprietà hanno nomi che iniziano con il nome del gruppo</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1170"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1403"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1120"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1353"/>
       <source>Rename Property</source>
       <translation>Rinomina Proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1171"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1373"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1121"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1323"/>
       <source>Edit Property Tooltip</source>
       <translation>Modifica suggerimento proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1188"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1138"/>
       <source>Delete Property</source>
       <translation>Elimina proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1203"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1153"/>
       <source>Move Property</source>
       <translation>Sposta proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1374"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1324"/>
       <source>Tooltip</source>
       <translation>Suggerimento</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1213"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1163"/>
       <source>Show Hidden</source>
       <translation>Mostra nascosti</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1230"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1180"/>
       <source>Expression</source>
       <translation>Espressione</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1404"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1354"/>
       <source>Property name</source>
       <translation>Nome proprietà</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1434"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1384"/>
       <source>Group name:</source>
       <translation>Nome gruppo:</translation>
     </message>
@@ -6831,30 +6831,30 @@ Uscire senza salvare tutti i dati?</translation>
   <context>
     <name>Gui::RecentFilesAction</name>
     <message>
-      <location filename="../Action.cpp" line="871"/>
+      <location filename="../Action.cpp" line="887"/>
       <source>Open...</source>
       <translation>Apri...</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="872"/>
-      <location filename="../Action.cpp" line="873"/>
+      <location filename="../Action.cpp" line="888"/>
+      <location filename="../Action.cpp" line="889"/>
       <source>Open a document or import files.</source>
       <translation>Apre un documento o importa dei file.</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="888"/>
-      <location filename="../Action.cpp" line="897"/>
+      <location filename="../Action.cpp" line="904"/>
+      <location filename="../Action.cpp" line="913"/>
       <source>Clear Recent Files</source>
       <extracomment>Empties the list of recent files</extracomment>
       <translation>Pulisci File Recenti</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="898"/>
+      <location filename="../Action.cpp" line="914"/>
       <source>Clear the list of recent files?</source>
       <translation>Cancellare l'elenco dei file recenti?</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="973"/>
+      <location filename="../Action.cpp" line="989"/>
       <source>Open file %1</source>
       <translation>Apri file %1</translation>
     </message>
@@ -6862,12 +6862,12 @@ Uscire senza salvare tutti i dati?</translation>
   <context>
     <name>Gui::RecentMacrosAction</name>
     <message>
-      <location filename="../Action.cpp" line="1148"/>
+      <location filename="../Action.cpp" line="1164"/>
       <source>none</source>
       <translation>nessuno</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1166"/>
+      <location filename="../Action.cpp" line="1182"/>
       <source>Run macro %1 (Shift+click to edit) keyboard shortcut: %2</source>
       <translation>Esegue la macro %1 (Maiusc+clic per modificare) scorciatoia da tastiera: %2</translation>
     </message>
@@ -7243,6 +7243,7 @@ Specificare un'altra directory?</translation>
     </message>
     <message>
       <location filename="Translator.cpp" line="241"/>
+      <location filename="Translator.cpp" line="279"/>
       <source>English</source>
       <translation>Inglese</translation>
     </message>
@@ -7424,6 +7425,11 @@ Specificare un'altra directory?</translation>
       <location filename="Translator.cpp" line="277"/>
       <source>Hebrew</source>
       <translation>Ebraico</translation>
+    </message>
+    <message>
+      <location filename="Translator.cpp" line="280"/>
+      <source>Persian</source>
+      <translation type="unfinished">Persian</translation>
     </message>
     <message>
       <location filename="Translator.cpp" line="239"/>
@@ -7738,12 +7744,12 @@ Specificare un'altra directory?</translation>
   <context>
     <name>Gui::WorkbenchGroup</name>
     <message>
-      <location filename="../Action.cpp" line="732"/>
+      <location filename="../Action.cpp" line="748"/>
       <source>Selects the '%1' workbench</source>
       <translation>Seleziona l'ambiente di lavoro '%1'</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="760"/>
+      <location filename="../Action.cpp" line="776"/>
       <source>Select the '%1' workbench</source>
       <translation>Seleziona l'ambiente '%1'</translation>
     </message>
@@ -8113,7 +8119,7 @@ Consultare la vista report per maggiori dettagli.</translation>
       <translation> → Riavvio…</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="548"/>
+      <location filename="../Command.cpp" line="550"/>
       <source>Exception</source>
       <translation>Eccezione</translation>
     </message>
@@ -8159,13 +8165,6 @@ Consultare la vista report per maggiori dettagli.</translation>
       <location filename="../CommandDoc.cpp" line="686"/>
       <source>Merge Document</source>
       <translation>Unisci documento</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="676"/>
-      <location filename="../Document.cpp" line="1749"/>
-      <location filename="../Document.cpp" line="1879"/>
-      <source>%1 document</source>
-      <translation>%1 documento</translation>
     </message>
     <message>
       <location filename="../CommandDoc.cpp" line="687"/>
@@ -8616,6 +8615,13 @@ Usa 'Salva come…' per preservare il file originale.
       <translation>Salva il documento con nuovo nome di file…</translation>
     </message>
     <message>
+      <location filename="../Document.cpp" line="1749"/>
+      <location filename="../Document.cpp" line="1879"/>
+      <location filename="../CommandDoc.cpp" line="676"/>
+      <source>%1 document</source>
+      <translation>%1 documento</translation>
+    </message>
+    <message>
       <location filename="../Document.cpp" line="1865"/>
       <source>Save a copy of the document under new filename…</source>
       <translation>Salvare una copia del documento con un nuovo nome di file…</translation>
@@ -8746,12 +8752,12 @@ Scegliere 'Annulla' per interrompere</translation>
       <translation>Impossibile aprire il browser di sistema.</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3342"/>
+      <location filename="../View3DInventorViewer.cpp" line="3343"/>
       <source>Out of memory</source>
       <translation>Memoria insufficiente</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3343"/>
+      <location filename="../View3DInventorViewer.cpp" line="3344"/>
       <source>Not enough memory available to display the data.</source>
       <translation>Memoria disponibile insufficiente per visualizzare i dati.</translation>
     </message>
@@ -8897,8 +8903,8 @@ Scegliere 'Annulla' per interrompere</translation>
       <translation>Trascinamento della selezione non riuscito</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1010"/>
       <location filename="../ViewProviderLink.cpp" line="3055"/>
+      <location filename="../MainWindow.cpp" line="1010"/>
       <source>Apply to all</source>
       <translation>Applica a tutti</translation>
     </message>
@@ -9006,8 +9012,8 @@ the current copy will be lost.
       <translation>Attiva/disattiva sovrapposizione</translation>
     </message>
     <message>
-      <location filename="../OverlayWidgets.cpp" line="2588"/>
       <location filename="../OverlayManager.cpp" line="1131"/>
+      <location filename="../OverlayWidgets.cpp" line="2588"/>
       <source>Toggle floating window</source>
       <translation>Attiva/disattiva finestra fluttuante</translation>
     </message>
@@ -9193,6 +9199,11 @@ the current copy will be lost.
       <translation>Applica a tutti gli oggetti selezionati (%1) e ai loro elementi figlio</translation>
     </message>
     <message>
+      <location filename="../CommandStructure.cpp" line="78"/>
+      <source>Part</source>
+      <translation>Parte</translation>
+    </message>
+    <message>
       <location filename="../ViewProviderImagePlane.cpp" line="172"/>
       <source>Edit Image Plane</source>
       <translation>Modifica piano immagine</translation>
@@ -9207,21 +9218,16 @@ the current copy will be lost.
       <source>All Files</source>
       <translation>Tutti i file</translation>
     </message>
-    <message>
-      <location filename="../CommandStructure.cpp" line="78"/>
-      <source>Part</source>
-      <translation>Parte</translation>
-    </message>
   </context>
   <context>
     <name>SelectionFilter</name>
     <message>
-      <location filename="../Selection/Selection.cpp" line="975"/>
+      <location filename="../Selection/Selection.cpp" line="978"/>
       <source>Not allowed:</source>
       <translation>Non consentito:</translation>
     </message>
     <message>
-      <location filename="../Selection/Selection.cpp" line="1335"/>
+      <location filename="../Selection/Selection.cpp" line="1338"/>
       <source>Selection not allowed by filter</source>
       <translation>Selezione non consentita dal filtro</translation>
     </message>
@@ -9535,8 +9541,8 @@ the current copy will be lost.
   <context>
     <name>StdCmdNew</name>
     <message>
-      <location filename="../MainWindow.cpp" line="2644"/>
       <location filename="../DocumentRecovery.cpp" line="410"/>
+      <location filename="../MainWindow.cpp" line="2644"/>
       <source>Unnamed</source>
       <translation>Senza nome</translation>
     </message>
@@ -14592,7 +14598,7 @@ In questo modo il pannello agganciato rimane sempre trasparente.</translation>
   <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4700"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4698"/>
       <source>Changes the linked object</source>
       <translation>Cambia l'oggetto collegato</translation>
     </message>
@@ -14600,12 +14606,12 @@ In questo modo il pannello agganciato rimane sempre trasparente.</translation>
   <context>
     <name>Gui::PropertyEditor::PropertyItemDelegate</name>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>Yes</source>
       <translation>Sì</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>No</source>
       <translation>No</translation>
     </message>
@@ -14896,50 +14902,24 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
   <context>
     <name>Gui::Command</name>
     <message>
-      <location filename="../Command.cpp" line="1063"/>
+      <location filename="../Command.cpp" line="1067"/>
       <source>Experimental</source>
       <translation>Sperimentale</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1065"/>
+      <location filename="../Command.cpp" line="1069"/>
       <source>EXPERIMENTAL: this command may change.</source>
       <translation>ESPERIMENTALE: questo comando può cambiare.</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1069"/>
+      <location filename="../Command.cpp" line="1073"/>
       <source>Development preview</source>
       <translation>Anteprima sviluppo</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1070"/>
+      <location filename="../Command.cpp" line="1074"/>
       <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
       <translation>PREVISIONE DELLO SVILUPPO: questo comando può cambiare o essere rimosso.</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdOpenGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="85"/>
-      <source>&amp;Open…</source>
-      <translation>&amp;Apri…</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="86"/>
-      <source>Opens a document or imports files</source>
-      <translation>Apre un documento o importa dei file</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdSaveGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="966"/>
-      <source>Save</source>
-      <translation>Salva</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="967"/>
-      <source>Saves the active document</source>
-      <translation>Salva il documento attivo</translation>
     </message>
   </context>
   <context>
@@ -14981,32 +14961,6 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
     </message>
   </context>
   <context>
-    <name>Gui::PropertyMapEditor</name>
-    <message>
-      <location filename="../Widgets.cpp" line="1913"/>
-      <source>Key</source>
-      <translation>Chiave</translation>
-    </message>
-    <message>
-      <location filename="../Widgets.cpp" line="1913"/>
-      <source>Value</source>
-      <translation>Valore</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdToggleSuppress</name>
-    <message>
-      <location filename="../CommandFeat.cpp" line="240"/>
-      <source>Toggle Suppressed</source>
-      <translation>Attiva/disattiva soppresso</translation>
-    </message>
-    <message>
-      <location filename="../CommandFeat.cpp" line="242"/>
-      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
-      <translation>Attiva/Disattiva la soppressione dello stato degli oggetti selezionati. Un oggetto soppresso si comporta come se fosse stato eliminato.</translation>
-    </message>
-  </context>
-  <context>
     <name>FileDialog</name>
     <message>
       <location filename="../FileDialog.cpp" line="579"/>
@@ -15018,6 +14972,19 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
       <location filename="../FileDialog.cpp" line="811"/>
       <source>Open</source>
       <translation>Apri</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::PropertyMapEditor</name>
+    <message>
+      <location filename="../Widgets.cpp" line="1924"/>
+      <source>Key</source>
+      <translation>Chiave</translation>
+    </message>
+    <message>
+      <location filename="../Widgets.cpp" line="1924"/>
+      <source>Value</source>
+      <translation>Valore</translation>
     </message>
   </context>
   <context>
@@ -15052,6 +15019,19 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
     </message>
   </context>
   <context>
+    <name>StdCmdToggleSuppress</name>
+    <message>
+      <location filename="../CommandFeat.cpp" line="240"/>
+      <source>Toggle Suppressed</source>
+      <translation>Attiva/disattiva soppresso</translation>
+    </message>
+    <message>
+      <location filename="../CommandFeat.cpp" line="242"/>
+      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
+      <translation>Attiva/Disattiva la soppressione dello stato degli oggetti selezionati. Un oggetto soppresso si comporta come se fosse stato eliminato.</translation>
+    </message>
+  </context>
+  <context>
     <name>StdCmdToggleBottomPanels</name>
     <message>
       <location filename="../CommandView.cpp" line="3858"/>
@@ -15065,6 +15045,32 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
     </message>
   </context>
   <context>
+    <name>StdCmdOpenGroup</name>
+    <message>
+      <location filename="../CommandDoc.cpp" line="85"/>
+      <source>&amp;Open…</source>
+      <translation>&amp;Apri…</translation>
+    </message>
+    <message>
+      <location filename="../CommandDoc.cpp" line="86"/>
+      <source>Opens a document or imports files</source>
+      <translation>Apre un documento o importa dei file</translation>
+    </message>
+  </context>
+  <context>
+    <name>StdCmdSaveGroup</name>
+    <message>
+      <location filename="../CommandDoc.cpp" line="966"/>
+      <source>Save</source>
+      <translation>Salva</translation>
+    </message>
+    <message>
+      <location filename="../CommandDoc.cpp" line="967"/>
+      <source>Saves the active document</source>
+      <translation>Salva il documento attivo</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui</name>
     <message>
       <location filename="../Dialogs/DlgThemeEditor.cpp" line="402"/>
@@ -15075,32 +15081,32 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3588"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3586"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>Definisce il colore di base di una superficie illuminata dalla luce. Rappresenta come l'oggetto diffonde la luce uniformemente in tutte le direzioni, indipendentemente dall'angolo dello spettatore. Questa proprietà influenzerà maggiormente il colore del materiale.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3598"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3596"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>Definisce il colore di una superficie in condizioni d'illuminazione indiretta e uniforme, rappresentando l'aspetto che assume quando è illuminata esclusivamente dalla luce ambientale presente nella scena, senza luci direzionali, ombre o riflessi</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3608"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3606"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>Definisce il colore e l'intensità dei riflessi luminosi che appaiono su superfici lucide o riflettenti quando la luce li colpisce direttamente. Impostare a colori vivaci per oggetti lucidi.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3618"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3616"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>Definisce il colore di una superficie che sembra emettere come se fosse una sorgente di luce, indipendente dall'illuminazione esterna, rendendo l'oggetto auto illuminato. Impostare a nero per non avere alcun colore emesso.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3630"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3628"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>Definisce le dimensioni e la nitidezza dei riflessi speculari su una superficie. Valori più alti producono riflessi piccoli e nitidi, mentre valori più bassi creano riflessi ampi e sfumati. Si noti che l'intensità dei riflessi è determinata dal colore speculare.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3642"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3640"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>Definisce quanta luce passa attraverso un oggetto, rendendolo parzialmente o completamente trasparente</translation>
     </message>
@@ -15108,32 +15114,32 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialListItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3954"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3952"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>Definisce il colore di base di una superficie illuminata dalla luce. Rappresenta come l'oggetto diffonde la luce uniformemente in tutte le direzioni, indipendentemente dall'angolo dello spettatore. Questa proprietà influenzerà maggiormente il colore del materiale.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3964"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3962"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>Definisce il colore di una superficie in condizioni d'illuminazione indiretta e uniforme, rappresentando l'aspetto che assume quando è illuminata esclusivamente dalla luce ambientale presente nella scena, senza luci direzionali, ombre o riflessi</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3974"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3972"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>Definisce il colore e l'intensità dei riflessi luminosi che appaiono su superfici lucide o riflettenti quando la luce li colpisce direttamente. Impostare a colori vivaci per oggetti lucidi.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3984"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3982"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>Definisce il colore di una superficie che sembra emettere come se fosse una sorgente di luce, indipendente dall'illuminazione esterna, rendendo l'oggetto auto illuminato. Impostare a nero per non avere alcun colore emesso.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3996"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3994"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>Definisce le dimensioni e la nitidezza dei riflessi speculari su una superficie. Valori più alti producono riflessi piccoli e nitidi, mentre valori più bassi creano riflessi ampi e sfumati. Si noti che l'intensità dei riflessi è determinata dal colore speculare.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4008"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4006"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>Definisce quanta luce passa attraverso un oggetto, rendendolo parzialmente o completamente trasparente</translation>
     </message>
@@ -15141,7 +15147,7 @@ Ad esempio, premendo 'F' due volte di seguito più rapidamente dell'impostazione
   <context>
     <name>Gui::PropertyEditor::PropertyMapItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4930"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4928"/>
       <source>Map</source>
       <translation>Mappa</translation>
     </message>

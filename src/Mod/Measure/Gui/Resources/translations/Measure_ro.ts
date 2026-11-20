@@ -447,6 +447,54 @@
     </message>
   </context>
   <context>
+    <name>TaskMeasure</name>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="121"/>
+      <source>Distance</source>
+      <translation type="unfinished">Distance</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="129"/>
+      <source>Distance Free</source>
+      <translation type="unfinished">Distance Free</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="137"/>
+      <source>Angle</source>
+      <translation>Unghi</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="145"/>
+      <source>Length</source>
+      <translation>Lungime</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="153"/>
+      <source>Position</source>
+      <translation type="unfinished">Position</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="161"/>
+      <source>Area</source>
+      <translation>Suprafață</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="169"/>
+      <source>Diameter</source>
+      <translation>Diametru</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="177"/>
+      <source>Radius</source>
+      <translation>Raza</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="185"/>
+      <source>Geometric Center</source>
+      <translation type="unfinished">Geometric Center</translation>
+    </message>
+  </context>
+  <context>
     <name>StdCmdMassProperties</name>
     <message>
       <location filename="../../Command.cpp" line="97"/>
@@ -505,54 +553,6 @@
       <location filename="../../TaskMassProperties.cpp" line="1236"/>
       <source> (Average)</source>
       <translation type="unfinished"> (Average)</translation>
-    </message>
-  </context>
-  <context>
-    <name>TaskMeasure</name>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="121"/>
-      <source>Distance</source>
-      <translation type="unfinished">Distance</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="129"/>
-      <source>Distance Free</source>
-      <translation type="unfinished">Distance Free</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="137"/>
-      <source>Angle</source>
-      <translation>Unghi</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="145"/>
-      <source>Length</source>
-      <translation>Lungime</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="153"/>
-      <source>Position</source>
-      <translation type="unfinished">Position</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="161"/>
-      <source>Area</source>
-      <translation>Suprafață</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="169"/>
-      <source>Diameter</source>
-      <translation>Diametru</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="177"/>
-      <source>Radius</source>
-      <translation>Raza</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="185"/>
-      <source>Geometric Center</source>
-      <translation type="unfinished">Geometric Center</translation>
     </message>
   </context>
 </TS>

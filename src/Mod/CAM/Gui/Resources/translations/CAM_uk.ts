@@ -709,10 +709,10 @@ For stock from the base object&apos;s bounding box it means the extra material i
       <translation>Всі об'єкти будуть оброблені з однаковими властивостями операції</translation>
     </message>
     <message>
-      <location filename="../panels/PropertyBag.ui" line="62"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="43"/>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="72"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="157"/>
+      <location filename="../panels/PropertyBag.ui" line="62"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="43"/>
       <source>Add</source>
       <translation>Додати</translation>
     </message>
@@ -722,10 +722,10 @@ For stock from the base object&apos;s bounding box it means the extra material i
       <translation>Список операцій з базовою геометрією у поточному завданні</translation>
     </message>
     <message>
-      <location filename="../panels/PropertyBag.ui" line="48"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="53"/>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="82"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="167"/>
+      <location filename="../panels/PropertyBag.ui" line="48"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="53"/>
       <source>Remove</source>
       <translation>Видалити</translation>
     </message>
@@ -734,6 +734,17 @@ For stock from the base object&apos;s bounding box it means the extra material i
       <location filename="../panels/PageBaseGeometryEdit.ui" line="92"/>
       <source>Clear</source>
       <translation>Очистити</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="124"/>
+      <source>Feature</source>
+      <translation>Елемент</translation>
+    </message>
+    <message>
+      <location filename="../panels/ToolEditor.ui" line="96"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="129"/>
+      <source>Diameter</source>
+      <translation>Діаметр</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="62"/>
@@ -762,17 +773,6 @@ Reset deletes all current items from the list and fills the list with all circul
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="119"/>
       <source>#</source>
       <translation type="unfinished">#</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="124"/>
-      <source>Feature</source>
-      <translation>Елемент</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="129"/>
-      <location filename="../panels/ToolEditor.ui" line="96"/>
-      <source>Diameter</source>
-      <translation>Діаметр</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="144"/>
@@ -815,16 +815,16 @@ Reset deletes all current items from the list and fills the list with all circul
       <translation>Список місць для обробки</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProbeEdit.ui" line="26"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="24"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="134"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="24"/>
+      <location filename="../panels/PageOpProbeEdit.ui" line="26"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProbeEdit.ui" line="43"/>
-      <location filename="../panels/PageBaseLocationEdit.ui" line="29"/>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="139"/>
+      <location filename="../panels/PageBaseLocationEdit.ui" line="29"/>
+      <location filename="../panels/PageOpProbeEdit.ui" line="43"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
@@ -854,8 +854,8 @@ Reset deletes all current items from the list and fills the list with all circul
       <translation>Правка</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="36"/>
       <location filename="../panels/PageDepthsEdit.ui" line="39"/>
+      <location filename="../panels/SetupGlobal.ui" line="36"/>
       <source>Start depth</source>
       <translation>Початкова глибина</translation>
     </message>
@@ -872,8 +872,8 @@ Reset deletes all current items from the list and fills the list with all circul
       <translation>Перенести значення Z вибраного елемента як глибину початку операції</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="52"/>
       <location filename="../panels/PageDepthsEdit.ui" line="85"/>
+      <location filename="../panels/SetupGlobal.ui" line="52"/>
       <source>Final depth</source>
       <translation>Кінцева глибина</translation>
     </message>
@@ -889,46 +889,6 @@ Reset deletes all current items from the list and fills the list with all circul
       <translation>Перенести значення Z вибраного елемента як кінцеву глибину операції</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="68"/>
-      <location filename="../panels/PageDepthsEdit.ui" line="131"/>
-      <location filename="../panels/PageHeightsEdit.ui" line="190"/>
-      <source>Step down</source>
-      <translation>Крок по глибині</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDepthsEdit.ui" line="138"/>
-      <location filename="../panels/PageHeightsEdit.ui" line="197"/>
-      <source>The depth in Z-axis the operation moves downwards between layers. This value depends on the tool being used, the material to be cut, available cooling and many other factors. Consult the tool manufacturers data sheets for the proper value.</source>
-      <translation>Глибина по осі Z, на яку операція опускається між шарами. Це значення залежить від інструмента, оброблюваного матеріалу, наявного охолодження та багатьох інших чинників. Правильне значення дивіться в технічних даних виробника інструмента.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDepthsEdit.ui" line="163"/>
-      <location filename="../panels/PageHeightsEdit.ui" line="222"/>
-      <source>Finish step down</source>
-      <translation>Крок по глибині чистового проходу</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDepthsEdit.ui" line="170"/>
-      <source>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</source>
-      <translation>Глибина останнього проходу операції. Дає змогу отримати чистішу поверхню.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDiametersEdit.ui" line="20"/>
-      <source>Min Diameter</source>
-      <translation>Мін. діаметр</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="318"/>
-      <location filename="../panels/PageDiametersEdit.ui" line="54"/>
-      <source>Max diameter</source>
-      <translation>Максимальний діаметр</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageDiametersEdit.ui" line="74"/>
-      <source>Transfer the Z value of the selected feature as the final depth for the operation.</source>
-      <translation>Перенести значення Z вибраного елемента як кінцеву глибину операції.</translation>
-    </message>
-    <message>
       <location filename="../panels/PageHeightsEdit.ui" line="26"/>
       <source>Work plane</source>
       <translation>Робоча площина</translation>
@@ -937,11 +897,6 @@ Reset deletes all current items from the list and fills the list with all circul
       <location filename="../panels/PageHeightsEdit.ui" line="33"/>
       <source>The frame this operation works in. Heights and depths are measured in it, so changing it makes manually entered values stale.</source>
       <translation>Система координат, у якій працює ця операція. Висоти й глибини вимірюються в ній, тож після її зміни введені вручну значення стають неактуальними.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageHeightsEdit.ui" line="119"/>
-      <source>The height above which it is safe to move the tool bit with rapid movements. Below this height all lateral and downward movements are performed with feed rate speeds.</source>
-      <translation>Висота, вище якої інструмент можна безпечно переміщати прискореними переміщеннями. Нижче цієї висоти всі бічні та низхідні переміщення виконуються зі швидкістю подачі.</translation>
     </message>
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="144"/>
@@ -957,6 +912,25 @@ Reset deletes all current items from the list and fills the list with all circul
       <location filename="../panels/PageHeightsEdit.ui" line="164"/>
       <source>Transfer the Z value of the selected feature as the start height for the operation</source>
       <translation>Перенести значення Z вибраного елемента як початкову висоту операції</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="190"/>
+      <location filename="../panels/PageDepthsEdit.ui" line="131"/>
+      <location filename="../panels/SetupGlobal.ui" line="68"/>
+      <source>Step down</source>
+      <translation>Крок по глибині</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="197"/>
+      <location filename="../panels/PageDepthsEdit.ui" line="138"/>
+      <source>The depth in Z-axis the operation moves downwards between layers. This value depends on the tool being used, the material to be cut, available cooling and many other factors. Consult the tool manufacturers data sheets for the proper value.</source>
+      <translation>Глибина по осі Z, на яку операція опускається між шарами. Це значення залежить від інструмента, оброблюваного матеріалу, наявного охолодження та багатьох інших чинників. Правильне значення дивіться в технічних даних виробника інструмента.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="222"/>
+      <location filename="../panels/PageDepthsEdit.ui" line="163"/>
+      <source>Finish step down</source>
+      <translation>Крок по глибині чистового проходу</translation>
     </message>
     <message>
       <location filename="../panels/PageHeightsEdit.ui" line="229"/>
@@ -1028,6 +1002,32 @@ Tool Shape: safest - checks clearance using the cross section of the tool shape
       <translation>Мінімальний зазор між інструментом і будь-яким тілом під час з'єднувальних переміщень. Застосовується до всіх режимів з'єднання.</translation>
     </message>
     <message>
+      <location filename="../panels/PageDepthsEdit.ui" line="170"/>
+      <source>Depth of the final cut of the operation. Can be used to produce a cleaner finish.</source>
+      <translation>Глибина останнього проходу операції. Дає змогу отримати чистішу поверхню.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDiametersEdit.ui" line="20"/>
+      <source>Min Diameter</source>
+      <translation>Мін. діаметр</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDiametersEdit.ui" line="54"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="318"/>
+      <source>Max diameter</source>
+      <translation>Максимальний діаметр</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageDiametersEdit.ui" line="74"/>
+      <source>Transfer the Z value of the selected feature as the final depth for the operation.</source>
+      <translation>Перенести значення Z вибраного елемента як кінцеву глибину операції.</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageHeightsEdit.ui" line="119"/>
+      <source>The height above which it is safe to move the tool bit with rapid movements. Below this height all lateral and downward movements are performed with feed rate speeds.</source>
+      <translation>Висота, вище якої інструмент можна безпечно переміщати прискореними переміщеннями. Нижче цієї висоти всі бічні та низхідні переміщення виконуються зі швидкістю подачі.</translation>
+    </message>
+    <message>
       <location filename="../panels/PageHeightsEdit.ui" line="87"/>
       <source>The height where lateral movement of the toolbit is not obstructed by any fixtures or the part / stock material itself.</source>
       <translation>Висота, на якій бічному переміщенню інструмента не заважають пристосування чи сам матеріал деталі/заготовки.</translation>
@@ -1087,11 +1087,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
       <translation>Контролер інструмента</translation>
     </message>
     <message>
-      <location filename="../panels/PageToolControllerEdit.ui" line="54"/>
-      <source>The coolant mode to be used for this operation</source>
-      <translation>Режим охолодження для цієї операції</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="38"/>
       <source>Accuracy vs performance</source>
       <translation>Точність чи швидкість</translation>
@@ -1107,19 +1102,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
       <translation>Бічна відстань, на яку різальний інструмент зміщується між послідовними проходами, у відсотках від діаметра інструмента.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="113"/>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="337"/>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="366"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="160"/>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="185"/>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="95"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="338"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="553"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="121"/>
-      <source>%</source>
-      <translation>%</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="135"/>
       <source>Step over (distance)</source>
       <translation>Бічний крок (відстань)</translation>
@@ -1130,30 +1112,14 @@ Larger values (further to the right) will calculate faster; smaller values (furt
       <translation>Бічна відстань, на яку різальний інструмент зміщується між послідовними проходами.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="169"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="193"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="75"/>
-      <source>Retract threshold</source>
-      <translation>Поріг відведення</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="189"/>
       <source>Toggle keep tool down ratio between 0 and tool diameter</source>
       <translation>Перемикає поріг переходу без підйому між 0 і діаметром інструмента</translation>
     </message>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="204"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="68"/>
       <source>How much stock to leave on the walls for this operation</source>
       <translation>Скільки припуску залишити на стінках у цій операції</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="214"/>
-      <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="155"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="179"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="61"/>
-      <source>Radial stock to leave</source>
-      <translation>Радіальний залишковий припуск</translation>
     </message>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="227"/>
@@ -1166,32 +1132,14 @@ Larger values (further to the right) will calculate faster; smaller values (furt
       <translation>&lt;b&gt;Параметри гвинтового входу&lt;/b&gt;</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="267"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="86"/>
-      <source>Max pitch</source>
-      <translation>Макс. крок</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="274"/>
       <source>The maximum allowable descent in a single revolution of the helix. Set to zero to disable limitation by pitch.</source>
       <translation>Максимально допустиме опускання за один оберт гвинтової лінії. Нуль вимикає обмеження за кроком.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="284"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="100"/>
-      <source>Max ramp angle</source>
-      <translation>Макс. кут похилого входу</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="291"/>
       <source>The maximum allowable angle of the helix ramp entry. Set to zero to disable limitation by ramp angle.</source>
       <translation>Максимально допустимий кут гвинтового похилого входу. Нуль вимикає обмеження за кутом.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="301"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="160"/>
-      <source>Cone angle</source>
-      <translation>Кут конуса</translation>
     </message>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="325"/>
@@ -1359,8 +1307,8 @@ Does not affect the toolpath point spacing (Sample Interval).</source>
       <translation>Тип операції</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpAdaptiveEdit.ui" line="152"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="486"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="152"/>
       <source>Lift distance</source>
       <translation>Висота підйому</translation>
     </message>
@@ -1380,8 +1328,8 @@ Does not affect the toolpath point spacing (Sample Interval).</source>
       <translation>Стоп</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="33"/>
       <location filename="../panels/PageOpDeburrEdit.ui" line="49"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="42"/>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="140"/>
       <source>Direction</source>
       <translation>Напрямок</translation>
@@ -1567,6 +1515,31 @@ Does not affect the toolpath point spacing (Sample Interval).</source>
       <translation>Режим різання</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="86"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="267"/>
+      <source>Max pitch</source>
+      <translation>Макс. крок</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="100"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="284"/>
+      <source>Max ramp angle</source>
+      <translation>Макс. кут похилого входу</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="121"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="338"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="553"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="113"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="337"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="366"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="112"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="185"/>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="95"/>
+      <source>%</source>
+      <translation>%</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpHelixEdit.ui" line="140"/>
       <source>Radial stock to leave (outer)</source>
       <translation>Радіальний залишковий припуск (зовнішній)</translation>
@@ -1575,6 +1548,12 @@ Does not affect the toolpath point spacing (Sample Interval).</source>
       <location filename="../panels/PageOpHelixEdit.ui" line="150"/>
       <source>Radial stock to leave (inner)</source>
       <translation>Радіальний залишковий припуск (внутрішній)</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpHelixEdit.ui" line="160"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="301"/>
+      <source>Cone angle</source>
+      <translation>Кут конуса</translation>
     </message>
     <message>
       <location filename="../panels/PageOpHelixEdit.ui" line="173"/>
@@ -1682,17 +1661,19 @@ Does not affect the toolpath point spacing (Sample Interval).</source>
       <translation>Форма межі</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="30"/>
-      <source>Specify if the facing should be restricted by the actual shape of the selected face (or the part if no face is selected), or if the bounding box should be faced off.
-
-The latter can be used to face of the entire stock area to ensure uniform heights for the following operations.</source>
-      <translation>Укажіть, чи має торцювання обмежуватися фактичною формою вибраної грані (або деталі, якщо грань не вибрано), чи слід торцювати весь габаритний прямокутник.
-
-Другий варіант можна використати, щоб проторцювати всю площу заготовки й забезпечити однакову висоту для наступних операцій.</translation>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="86"/>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="62"/>
+      <source>°</source>
+      <translation type="unfinished">°</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="207"/>
+      <source>Ignore holes</source>
+      <translation>Ігнорувати отвори</translation>
     </message>
     <message>
       <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="29"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="45"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="39"/>
       <location filename="../panels/PageOpMillFacingEdit.ui" line="45"/>
       <source>Cut Mode</source>
       <translation>Режим різання</translation>
@@ -1783,6 +1764,14 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Кутова щільність точок у напрямку різання (градуси). Менше значення — гладкіша поверхня, але більше G-коду; типово 5–15°.</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="155"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="63"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="214"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="158"/>
+      <source>Radial stock to leave</source>
+      <translation>Радіальний залишковий припуск</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpRotarySurfaceEdit.ui" line="162"/>
       <source>How much stock to leave on the walls for this operation. Use a small positive value for a finish allowance; 0 cuts directly to the surface.</source>
       <translation>Скільки припуску залишити на стінках у цій операції. Використовуйте невелике додатне значення як припуск на чистову обробку; 0 — обробка безпосередньо до поверхні.</translation>
@@ -1808,19 +1797,17 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Якщо позначено, траєкторія обмежується проєкцією (осьовою, кутовою) граней, вибраних на деталі. Якщо не позначено, траєкторія охоплює все вікно 'Початок X'…'Кінець X' / 'Початковий кут'…'Кінцевий кут'.</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="56"/>
       <location filename="../panels/PageOpHelixEdit.ui" line="73"/>
       <source>Climb</source>
       <translation>Попутне</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="61"/>
       <location filename="../panels/PageOpHelixEdit.ui" line="78"/>
       <source>Conventional</source>
       <translation>Зустрічне</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="69"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="49"/>
       <source>Pattern</source>
       <translation>Схема</translation>
     </message>
@@ -1830,132 +1817,43 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Інструмент і його налаштування для цієї операції</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="261"/>
       <location filename="../panels/PageToolControllerEdit.ui" line="47"/>
+      <location filename="../panels/SetupGlobal.ui" line="261"/>
       <source>Coolant mode</source>
       <translation>Режим охолодження</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="52"/>
-      <source>The cutting mode assumes that the cut on one side of the tool bit represents the resulting part and the other side is either already milled away or will be removed later on. Climb mode is when the tool bit is moved into the cut on each rotation, whereas in conventional mode the tool bit&apos;s rotation and the tool&apos;s lateral movement are in the same direction</source>
-      <translation>Режим різання передбачає, що поверхня з одного боку інструмента утворює готову деталь, а з іншого боку матеріал уже вибрано або буде вибрано пізніше. При попутному фрезеруванні інструмент на кожному оберті врізається в матеріал, а при зустрічному обертання інструмента та його бічне переміщення мають однаковий напрямок</translation>
+      <location filename="../panels/PageToolControllerEdit.ui" line="54"/>
+      <source>The coolant mode to be used for this operation</source>
+      <translation>Режим охолодження для цієї операції</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="76"/>
-      <source>Pattern the tool bit is moved in to clear the material</source>
-      <translation>Схема руху інструмента для вибирання матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="83"/>
-      <source>ZigZag</source>
-      <translation>Зигзаг</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="93"/>
-      <source>Spiral</source>
-      <translation>Спіраль</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="98"/>
-      <source>ZigZagOffset</source>
-      <translation>Зигзаг зі зміщенням</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="103"/>
-      <source>Line</source>
-      <translation>Лінія</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="108"/>
-      <source>Grid</source>
-      <translation>Сітка</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="113"/>
-      <source>Triangle</source>
-      <translation>Трикутник</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="121"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="79"/>
       <location filename="../panels/PageOpMillFacingEdit.ui" line="55"/>
       <source>Angle</source>
       <translation>Кут</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="128"/>
-      <source>Angle in which the pattern is applied</source>
-      <translation>Кут, під яким застосовується схема</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="131"/>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="62"/>
-      <source>°</source>
-      <translation type="unfinished">°</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="157"/>
-      <source>The sideways distance* the cutting tool moves between successive passes (*a percentage of the tool&apos;s diameter).</source>
-      <translation>Бічна відстань*, на яку різальний інструмент зміщується між послідовними проходами (*у відсотках від діаметра інструмента).</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="268"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="197"/>
-      <source>Set picked point as start point</source>
-      <translation>Зробити вибрану точку початковою</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="186"/>
-      <source>The amount of material that should be left by this operation in relation to the target shape</source>
-      <translation>Кількість матеріалу, яку ця операція має залишити відносно цільової форми</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="200"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="82"/>
-      <source>Distance which will attempts to avoid unnecessary retractions</source>
-      <translation>Відстань, у межах якої уникаються зайві відведення</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="210"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="92"/>
-      <source>Toggle retract threshold between 0 and tool diameter</source>
-      <translation>Перемикає поріг відведення між 0 і діаметром інструмента</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="231"/>
-      <source>If selected the operation uses the outline of the selected base geometry and ignores all holes</source>
-      <translation>Якщо позначено, операція використовує обрис вибраної базової геометрії й ігнорує всі отвори</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="234"/>
-      <source>Ignore holes</source>
-      <translation>Ігнорувати отвори</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="258"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="228"/>
       <source>Specify if this operation uses a starting point</source>
       <translation>Укажіть, чи використовує ця операція початкову точку</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="261"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="190"/>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="224"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="204"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="415"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="231"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="224"/>
       <source>Use start point</source>
       <translation>Використовувати початкову точку</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="241"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="214"/>
       <source>Clear edges</source>
       <translation>Обробляти краї</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="248"/>
-      <source>Check to skip machining regions that have already been cleared by previous operations</source>
-      <translation>Позначте, щоб пропускати області, які вже оброблено попередніми операціями</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="241"/>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="251"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="221"/>
       <source>Use rest machining</source>
       <translation>Доробка залишків</translation>
     </message>
@@ -2000,14 +1898,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation type="unfinished">ProbePoints.txt</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="34"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="53"/>
-      <source>PLACEHOLDER</source>
-      <translation type="unfinished">PLACEHOLDER</translation>
-    </message>
-    <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="56"/>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="49"/>
       <source>The direction in which the profile is performed, clockwise or counterclockwise</source>
       <translation>Напрямок, у якому виконується профіль: за годинниковою стрілкою чи проти</translation>
     </message>
@@ -2017,74 +1908,89 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Бік різання</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="30"/>
-      <source>Specify if the profile should be performed inside or outside the base geometry features. This only matters if &apos;Use compensation&apos; is checked (the default).</source>
-      <translation>Укажіть, чи виконувати профіль усередині чи ззовні елементів базової геометрії. Це має значення лише тоді, коли позначено 'Використовувати компенсацію' (типово).</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="107"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="102"/>
       <source>Number of passes</source>
       <translation>Кількість проходів</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="120"/>
-      <source>The number of passes to do. If more than one, requires a non-zero value for &apos;Pass stepover&apos;.</source>
-      <translation>Кількість проходів. Якщо більше одного, потрібне ненульове значення 'Крок між проходами'.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="127"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="119"/>
       <source>Pass stepover</source>
       <translation>Крок між проходами</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="134"/>
-      <source>If doing multiple passes, the extra offset of each additional pass</source>
-      <translation>Під час кількох проходів — додаткове зміщення кожного наступного проходу</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="187"/>
-      <source>Check if this operation should use a starting point</source>
-      <translation>Позначте, якщо ця операція має використовувати початкову точку</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="147"/>
-      <source>Check if this profile operation should also process holes in the base geometry. Found holes are automatically offset on the opposite cut side and performed in the opposite direction as perimeters. Note that this does not include cylindrical holes, the assumption being that they will get drilled</source>
-      <translation>Позначте, якщо ця операція профілювання має також обробляти отвори в базовій геометрії. Знайдені отвори автоматично зміщуються на протилежний бік різання й обробляються в напрямку, протилежному периметрам. Зауважте, що це не стосується циліндричних отворів: вважається, що їх буде просвердлено</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="150"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="169"/>
       <source>Process holes</source>
       <translation>Обробляти отвори</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="157"/>
-      <source>If checked, the profile operation is offset by the tool radius. The offset direction is determined by &apos;Cut side&apos;.</source>
-      <translation>Якщо позначено, операцію профілювання зміщено на радіус інструмента. Напрямок зміщення визначає 'Бік різання'.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="167"/>
-      <source>Check if you want this profile operation to also be applied to cylindrical holes, which normally get drilled. This can be useful if no drill of adequate size is available or the number of holes don&apos;t warrant a tool change. Note that the cut side and direction is reversed in respect to the specified values.</source>
-      <translation>Позначте, якщо цю операцію профілювання слід застосувати й до циліндричних отворів, які зазвичай свердлять. Це корисно, якщо немає свердла потрібного розміру або кількість отворів не виправдовує зміну інструмента. Зауважте, що бік і напрямок різання змінюються на протилежні відносно заданих значень.</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="170"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="183"/>
       <source>Process circles</source>
       <translation>Обробляти кола</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="177"/>
-      <source>Check if this profile operation should also process the outside perimeter of the base geometry shapes</source>
-      <translation>Позначте, якщо ця операція профілювання має також обробляти зовнішній периметр форм базової геометрії</translation>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="43"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="59"/>
+      <source>Start at</source>
+      <translation type="unfinished">Start at</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="160"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="53"/>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="44"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="31"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="69"/>
+      <source>Sorting</source>
+      <translation>Сортування</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="73"/>
+      <location filename="../panels/PageOpAdaptiveEdit.ui" line="169"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="168"/>
+      <source>Retract threshold</source>
+      <translation>Поріг відведення</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="87"/>
+      <source>Toggle retract threshold between 0 and tool diameter</source>
+      <translation>Перемикає поріг відведення між 0 і діаметром інструмента</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="129"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="131"/>
+      <source>Finishing passes</source>
+      <translation type="unfinished">Finishing passes</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="146"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="148"/>
+      <source>Finishing offset</source>
+      <translation type="unfinished">Finishing offset</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="162"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="200"/>
+      <source>Finishing one step down</source>
+      <translation type="unfinished">Finishing one step down</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="176"/>
       <source>Use Compensation</source>
       <translation>Використовувати компенсацію</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpProfileFullEdit.ui" line="180"/>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="190"/>
       <source>Process Perimeter</source>
       <translation>Обробляти периметр</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="197"/>
+      <source>Use longest edge</source>
+      <translation type="unfinished">Use longest edge</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpProfileFullEdit.ui" line="211"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="238"/>
+      <source>Set picked point as start point</source>
+      <translation>Зробити вибрану точку початковою</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="88"/>
@@ -2172,17 +2078,29 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Подовжити початок траєкторії</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpSlotEdit.ui" line="306"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="59"/>
+      <location filename="../panels/PageOpWaterlineEdit.ui" line="62"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="51"/>
+      <source>Layer mode</source>
+      <translation>Режим шарів</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="313"/>
       <source>Set the cut pattern for the operation</source>
       <translation>Задайте схему різання для операції</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpWaterlineEdit.ui" line="62"/>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="51"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="59"/>
-      <location filename="../panels/PageOpSlotEdit.ui" line="306"/>
-      <source>Layer mode</source>
-      <translation>Режим шарів</translation>
+      <location filename="../panels/PageOpSlotEdit.ui" line="317"/>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="36"/>
+      <source>Directional</source>
+      <translation>Напрямковий</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpSlotEdit.ui" line="322"/>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="31"/>
+      <source>Bidirectional</source>
+      <translation>Двонапрямковий</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="330"/>
@@ -2263,53 +2181,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Планарне: плоске 3D-сканування поверхні. Ротаційне: ротаційне сканування з 4-ю віссю.</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="39"/>
       <location filename="../panels/PageOpEngraveEdit.ui" line="23"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="81"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="65"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="39"/>
       <source>Cut pattern</source>
       <translation>Схема різання</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="31"/>
-      <location filename="../panels/PageOpSlotEdit.ui" line="322"/>
-      <source>Bidirectional</source>
-      <translation>Двонапрямковий</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="36"/>
-      <location filename="../panels/PageOpSlotEdit.ui" line="317"/>
-      <source>Directional</source>
-      <translation>Напрямковий</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="44"/>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="31"/>
-      <source>Sorting</source>
-      <translation>Сортування</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="52"/>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="39"/>
-      <source>Automatic</source>
-      <translation>Автоматичний</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="57"/>
-      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="44"/>
-      <source>Manual</source>
-      <translation>Вручну</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="79"/>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="81"/>
-      <source>Reverse</source>
-      <translation>Зворотний напрямок</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpEngraveEdit.ui" line="86"/>
-      <source>Approximation</source>
-      <translation>Апроксимація</translation>
     </message>
     <message>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="93"/>
@@ -2318,8 +2195,8 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Задайте геометричну схему вибирання для операції</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="79"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="357"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="79"/>
       <source>Profile edges</source>
       <translation>Профілювати краї</translation>
     </message>
@@ -2329,8 +2206,8 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Профілювати краї виділеного</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpSurfaceEdit.ui" line="93"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="286"/>
+      <location filename="../panels/PageOpSurfaceEdit.ui" line="93"/>
       <source>Avoid last X faces</source>
       <translation>Уникати останніх X граней</translation>
     </message>
@@ -2381,9 +2258,9 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Увімкніть, якщо задаєте початкову точку</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="447"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="188"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="234"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="447"/>
       <source>Optimize linear paths</source>
       <translation>Оптимізувати лінійні траєкторії</translation>
     </message>
@@ -2435,18 +2312,18 @@ The latter can be used to face of the entire stock area to ensure uniform height
       <translation>Зміщення глибини</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpWaterlineEdit.ui" line="106"/>
       <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="226"/>
+      <location filename="../panels/PageOpWaterlineEdit.ui" line="106"/>
       <source>Boundary adjustment</source>
       <translation>Регулювання межі</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpPocketFullEdit.ui" line="150"/>
+      <location filename="../panels/PageOpHelixEdit.ui" line="114"/>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="331"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="123"/>
+      <location filename="../panels/PageOpPocketFullEdit.ui" line="105"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="175"/>
       <location filename="../panels/PageOpMillFacingEdit.ui" line="88"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="331"/>
-      <location filename="../panels/PageOpHelixEdit.ui" line="114"/>
       <source>Step over</source>
       <translation>Бічний крок</translation>
     </message>
@@ -2460,9 +2337,9 @@ A step over of 100% results in no overlap between two different cycles.</source>
 Бічний крок 100% означає відсутність перекриття між сусідніми циклами.</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="154"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="151"/>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="204"/>
-      <location filename="../panels/PageOpPlanarSurfaceEdit.ui" line="154"/>
       <source>Sample interval</source>
       <translation>Інтервал вибірки</translation>
     </message>
@@ -2519,8 +2396,8 @@ Default: OpToolDiameter</source>
       <translation>Зміщення</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="113"/>
       <location filename="../panels/PageHeightsEdit.ui" line="80"/>
+      <location filename="../panels/SetupGlobal.ui" line="113"/>
       <source>Clearance</source>
       <translation>Висота переходу</translation>
     </message>
@@ -2601,8 +2478,8 @@ Default: 3 mm</source>
       <translation>Орієнтація</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpThreadMillingEdit.ui" line="40"/>
       <location filename="../panels/ToolEditor.ui" line="43"/>
+      <location filename="../panels/PageOpThreadMillingEdit.ui" line="40"/>
       <source>Type</source>
       <translation>Тип</translation>
     </message>
@@ -2637,8 +2514,8 @@ Default: 3 mm</source>
       <translation>Ниток на дюйм</translation>
     </message>
     <message>
-      <location filename="../panels/SetupGlobal.ui" line="24"/>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="120"/>
+      <location filename="../panels/SetupGlobal.ui" line="24"/>
       <source>Operation</source>
       <translation>Операція</translation>
     </message>
@@ -2861,29 +2738,32 @@ If the radius is bigger than that which the tag shape itself supports, the resul
       <translation>Генерування перемичок</translation>
     </message>
     <message>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="52"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="39"/>
+      <source>Automatic</source>
+      <translation>Автоматичний</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="57"/>
+      <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="44"/>
+      <source>Manual</source>
+      <translation>Вручну</translation>
+    </message>
+    <message>
       <location filename="../panels/PageOpEngraveEdit.ui" line="65"/>
       <source>Start at vertex</source>
       <translation>Почати з вершини</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="35"/>
-      <source>Clearing Pattern</source>
-      <translation>Схема вибирання</translation>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="79"/>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="81"/>
+      <source>Reverse</source>
+      <translation>Зворотний напрямок</translation>
     </message>
     <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="117"/>
-      <source>Pass Extension</source>
-      <translation>Подовження проходу</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="134"/>
-      <source>Stock Extension</source>
-      <translation>Розширення за заготовку</translation>
-    </message>
-    <message>
-      <location filename="../panels/PageOpMillFacingEdit.ui" line="151"/>
-      <source>Axial stock to leave</source>
-      <translation>Осьовий залишковий припуск</translation>
+      <location filename="../panels/PageOpEngraveEdit.ui" line="86"/>
+      <source>Approximation</source>
+      <translation>Апроксимація</translation>
     </message>
     <message>
       <location filename="../panels/PageOpCustomEdit.ui" line="20"/>
@@ -3048,6 +2928,26 @@ Use ! at the start of the line to individually disable post processing on a give
       <location filename="../panels/PageOpFluteEdit.ui" line="208"/>
       <source>Flip Start</source>
       <translation>Поміняти початок</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="35"/>
+      <source>Clearing Pattern</source>
+      <translation>Схема вибирання</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="117"/>
+      <source>Pass Extension</source>
+      <translation>Подовження проходу</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="134"/>
+      <source>Stock Extension</source>
+      <translation>Розширення за заготовку</translation>
+    </message>
+    <message>
+      <location filename="../panels/PageOpMillFacingEdit.ui" line="151"/>
+      <source>Axial stock to leave</source>
+      <translation>Осьовий залишковий припуск</translation>
     </message>
   </context>
   <context>
@@ -3640,15 +3540,15 @@ Set to zero to disable G-code highlighter.</source>
       <translation>Доопрацювання: перепризначення осей</translation>
     </message>
     <message>
-      <location filename="../panels/AxisMapEdit.ui" line="20"/>
-      <location filename="../panels/HoldingTagsEdit.ui" line="288"/>
-      <source>Radius</source>
-      <translation>Радіус</translation>
-    </message>
-    <message>
       <location filename="../panels/AxisMapEdit.ui" line="40"/>
       <source>Invert Direction</source>
       <translation>Інвертувати напрямок</translation>
+    </message>
+    <message>
+      <location filename="../panels/HoldingTagsEdit.ui" line="288"/>
+      <location filename="../panels/AxisMapEdit.ui" line="20"/>
+      <source>Radius</source>
+      <translation>Радіус</translation>
     </message>
     <message>
       <location filename="../panels/AxisMapEdit.ui" line="30"/>
@@ -3661,8 +3561,8 @@ Set to zero to disable G-code highlighter.</source>
       <translation>Dogbone-вирізи</translation>
     </message>
     <message>
-      <location filename="../panels/ZCorrectEdit.ui" line="35"/>
       <location filename="../panels/DogboneEdit.ui" line="35"/>
+      <location filename="../panels/ZCorrectEdit.ui" line="35"/>
       <source>Dressup</source>
       <translation>Доопрацювання</translation>
     </message>
@@ -3965,29 +3865,39 @@ Set to zero to disable G-code highlighter.</source>
   <context>
     <name>TaskPathSimulator</name>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="14"/>
       <location filename="../panels/TaskPathCamoticsSim.ui" line="14"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="14"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="14"/>
       <source>Path Simulator</source>
       <translation>Симулятор траєкторії</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="229"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="31"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="229"/>
       <source>Accuracy</source>
       <translation>Точність</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="278"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="86"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="278"/>
       <source>Job</source>
       <translation>Завдання</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="55"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="103"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="55"/>
       <source>Activate/resume simulation</source>
       <translation>Активувати/відновити симуляцію</translation>
+    </message>
+    <message>
+      <location filename="../panels/TaskCAMSimulator.ui" line="127"/>
+      <source>Set default state in accordance with operations visibility</source>
+      <translation>Встановити типовий стан відповідно до видимості операцій</translation>
+    </message>
+    <message>
+      <location filename="../panels/TaskCAMSimulator.ui" line="130"/>
+      <source>Follow operations visibility</source>
+      <translation>Слідувати видимості операцій</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="35"/>
@@ -4000,8 +3910,8 @@ Set to zero to disable G-code highlighter.</source>
       <translation>Стоп</translation>
     </message>
     <message>
-      <location filename="../panels/TaskPathSimulator.ui" line="58"/>
       <location filename="../panels/TaskCAMSimulator.ui" line="106"/>
+      <location filename="../panels/TaskPathSimulator.ui" line="58"/>
       <source>Play</source>
       <translation>Відтворити</translation>
     </message>
@@ -4064,16 +3974,6 @@ Set to zero to disable G-code highlighter.</source>
       <location filename="../panels/TaskPathCamoticsSim.ui" line="75"/>
       <source>New CAMotics File</source>
       <translation>Новий файл CAMotics</translation>
-    </message>
-    <message>
-      <location filename="../panels/TaskCAMSimulator.ui" line="127"/>
-      <source>Set default state in accordance with operations visibility</source>
-      <translation>Встановити типовий стан відповідно до видимості операцій</translation>
-    </message>
-    <message>
-      <location filename="../panels/TaskCAMSimulator.ui" line="130"/>
-      <source>Follow operations visibility</source>
-      <translation>Слідувати видимості операцій</translation>
     </message>
   </context>
   <context>
@@ -5049,32 +4949,32 @@ Default: 3 mm</source>
       <translation>грань %s не оброблена, вважається невертикальною</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="244"/>
+      <location filename="../../../Path/Geom.py" line="249"/>
       <source>edge %s not handled, assuming not vertical</source>
       <translation>ребро %s не оброблено, вважається невертикальним</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="248"/>
+      <location filename="../../../Path/Geom.py" line="253"/>
       <source>isVertical(%s) not supported</source>
       <translation>isVertical(%s) не підтримується</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="278"/>
+      <location filename="../../../Path/Geom.py" line="283"/>
       <source>isHorizontal(%s) not supported</source>
       <translation>isHorizontal(%s) не підтримується</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="863"/>
+      <location filename="../../../Path/Geom.py" line="868"/>
       <source>%s not supported for flipping</source>
       <translation>%s не підтримується для перевертання</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="933"/>
+      <location filename="../../../Path/Geom.py" line="938"/>
       <source>combineHorizontalFaces: Zero working area to process</source>
       <translation>combineHorizontalFaces: нульова робоча область для обробки</translation>
     </message>
     <message>
-      <location filename="../../../Path/Geom.py" line="955"/>
+      <location filename="../../../Path/Geom.py" line="961"/>
       <source>Can not restore order of faces.</source>
       <translation>Не вдалося відновити порядок граней.</translation>
     </message>
@@ -5085,6 +4985,7 @@ Default: 3 mm</source>
       <location filename="../../../Path/Base/PropertyBag.py" line="77"/>
       <location filename="../../../Path/Base/PropertyBag.py" line="114"/>
       <source>List of custom property groups</source>
+      <extracomment>float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=None) bool = field(default=False) str = field(default=&quot;G54&quot;) str = field(default=&quot;off&quot;) str = Z|R for G98/G99, for drill cycles float = field(default=None) int = field(default=0) int = field(default=None)</extracomment>
       <translation>Список груп користувацьких властивостей</translation>
     </message>
     <message>
@@ -5151,8 +5052,8 @@ Default: 3 mm</source>
       <translation>Типова стратегія уникнення зіткнень для нових операцій.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Boundary.py" line="63"/>
       <location filename="../../../Path/Dressup/Tags.py" line="895"/>
+      <location filename="../../../Path/Dressup/Boundary.py" line="63"/>
       <location filename="../../../Path/Dressup/Gui/AxisMap.py" line="56"/>
       <source>The base path to modify</source>
       <translation>Базова траєкторія для зміни</translation>
@@ -5166,14 +5067,6 @@ Default: 3 mm</source>
       <location filename="../../../Path/Dressup/Boundary.py" line="84"/>
       <source>Determines if Boundary describes an inclusion or exclusion mask.</source>
       <translation>Визначає, чи межа є маскою включення або виключення.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Boundary.py" line="94"/>
-      <location filename="../../../Path/Dressup/Boundary.py" line="145"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="194"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="358"/>
-      <source>Set distance which will attempts to avoid unnecessary retractions.</source>
-      <translation>Задає відстань, у межах якої уникаються зайві відведення.</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Boundary.py" line="103"/>
@@ -5296,11 +5189,11 @@ Affects only to Path repesentation in 3d view.</source>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Array.py" line="43"/>
-      <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="62"/>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="49"/>
       <location filename="../../../Path/Dressup/Gui/Dragknife.py" line="60"/>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="74"/>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="49"/>
       <location filename="../../../Path/Dressup/Gui/RampEntry.py" line="49"/>
+      <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="62"/>
       <source>The base toolpath to modify</source>
       <translation>Базова траєкторія для модифікації</translation>
     </message>
@@ -5330,34 +5223,12 @@ Affects only to Path repesentation in 3d view.</source>
       <translation>Змінити вихід з траєкторії</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="55"/>
-      <source>Shape to limit toolpath</source>
-      <translation>Форма, що обмежує траєкторію</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="61"/>
-      <source>Keep path inside or outside the shape</source>
-      <translation>Утримувати траєкторію всередині чи ззовні форми</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="70"/>
+      <location filename="../../../Path/Op/Profile.py" line="202"/>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="94"/>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="358"/>
-      <location filename="../../../Path/Op/Profile.py" line="193"/>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="70"/>
       <source>Set distance which will attempts to avoid unnecessary retractions</source>
       <translation>Встановити відстань, що намагається уникнути зайвих відведень</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="81"/>
-      <source>Apply boundary to Rest Machining
-Does not affects to current path, but can be used by other operations with Rest Machining feature</source>
-      <translation>Застосувати межу до доробки залишків
-Не впливає на поточну траєкторію, але може використовуватися іншими операціями з доробкою залишків</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="87"/>
-      <source>Apply offset to boundary shape</source>
-      <translation>Застосувати зміщення до форми межі</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="100"/>
@@ -5450,7 +5321,6 @@ Only for styles: Arc, Line, Perpendicular and Tangent</source>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Gui/RampEntry.py" line="55"/>
-      <location filename="../../../Path/Op/Profile.py" line="249"/>
       <source>Angle of ramp</source>
       <translation>Кут похилого входу</translation>
     </message>
@@ -5613,9 +5483,9 @@ Above this depth ramps are not generated, but motion commands are passed through
       <translation>Посилання на моделі, вилучені із завдання, — на випадок їх повернення</translation>
     </message>
     <message>
+      <location filename="../../../Path/Main/Job.py" line="811"/>
       <location filename="../../../Path/Op/Base.py" line="313"/>
       <location filename="../../../Path/Op/Base.py" line="672"/>
-      <location filename="../../../Path/Main/Job.py" line="811"/>
       <source>Operations Cycle Time Estimation</source>
       <translation>Оцінка часу циклу операцій</translation>
     </message>
@@ -5701,166 +5571,88 @@ Above this depth ramps are not generated, but motion commands are passed through
       <translation>Номер зміщення робочої системи координат</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Base.py" line="287"/>
       <location filename="../../../Path/Main/Gui/Fixture.py" line="64"/>
+      <location filename="../../../Path/Op/Base.py" line="287"/>
       <source>Make False, to prevent operation from generating code</source>
       <translation>Вимкніть, щоб операція не генерувала код</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1552"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1557"/>
       <source>Side of selected faces that tool should cut</source>
       <translation>Сторона вибраних граней, яку має обробляти інструмент</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1561"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1566"/>
       <source>Type of adaptive operation</source>
       <translation>Тип адаптивної операції</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="133"/>
-      <source>The direction of the circular cuts, ClockWise (CW) or CounterClockWise (CCW)</source>
-      <translation>Напрямок кругових проходів: за годинниковою стрілкою (CW) чи проти (CCW)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="151"/>
-      <location filename="../../../Path/Op/Helix.py" line="571"/>
-      <source>The direction of the circular cuts</source>
-      <translation>Напрямок кругових проходів</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="160"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="173"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1579"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1964"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1584"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1969"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="171"/>
+      <location filename="../../../Path/Op/Helix.py" line="162"/>
       <source>Percent of cutter diameter to step over on each pass</source>
       <translation>Бічний крок на кожному проході у відсотках від діаметра різця</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="172"/>
-      <source>Set how much stock to leave on the inner wall for the operation.
-Default inner radius for Internal profile is Tool radius, and can not be less than (-ToolRadius)
-For External profile - profile radius</source>
-      <translation>Задає, скільки припуску залишити на внутрішній стінці в операції.
-Типовий внутрішній радіус для внутрішнього профілю — радіус інструмента, і він не може бути меншим за (-ToolRadius)
-Для зовнішнього профілю — радіус профілю</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1593"/>
+      <location filename="../../../Path/Op/PlanarSurface.py" line="564"/>
+      <source>Lift distance for rapid moves</source>
+      <translation>Відстань підйому для прискорених переміщень</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="181"/>
-      <location filename="../../../Path/Op/Helix.py" line="420"/>
-      <source>Set how much stock to leave on the outer wall for the operation.</source>
-      <translation>Задає, скільки припуску залишити на зовнішній стінці в операції.</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1602"/>
+      <source>Max length of keep tool down path compared to direct distance between points</source>
+      <translation>Максимальна довжина переходу без підйому інструмента порівняно з прямою відстанню між точками</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="190"/>
-      <location filename="../../../Path/Op/Helix.py" line="475"/>
-      <source>Cone angle of the Helix</source>
-      <translation>Кут конуса гвинтової лінії</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1620"/>
+      <source>Set how much stock to leave on the floor for the operation. This property is only used if the ModelAwareExperiment is enabled.</source>
+      <translation>Задає, скільки припуску залишити на дні в операції. Ця властивість використовується, лише якщо увімкнено ModelAwareExperiment.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="199"/>
-      <location filename="../../../Path/Op/Helix.py" line="433"/>
-      <source>Create only one Helix</source>
-      <translation>Створити лише одну гвинтову лінію</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1686"/>
+      <location filename="../../../Path/Op/PlanarSurface.py" line="603"/>
+      <source>The maximum allowable helix ramp entry angle (degrees)
+Set to zero to disable limitation by ramp angle</source>
+      <translation>Максимально допустимий кут гвинтового похилого входу (градуси)
+Нуль вимикає обмеження за кутом</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="208"/>
-      <location filename="../../../Path/Op/Helix.py" line="443"/>
-      <source>Create spiral mill</source>
-      <translation>Створити спіральне фрезерування</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="217"/>
-      <location filename="../../../Path/Op/Helix.py" line="453"/>
-      <source>Create finish full circle for helix</source>
-      <translation>Завершувати гвинтову обробку повним колом</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="226"/>
-      <location filename="../../../Path/Op/Helix.py" line="464"/>
-      <source>Create finish full circle for spiral</source>
-      <translation>Завершувати спіральну обробку повним колом</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="235"/>
-      <location filename="../../../Path/Op/Helix.py" line="485"/>
-      <source>Side of profile on which create Path</source>
-      <translation>Бік профілю, з якого створюється траєкторія</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="244"/>
-      <location filename="../../../Path/Op/Helix.py" line="496"/>
-      <source>Move from wall while retract if there is free space</source>
-      <translation>Відходити від стінки під час відведення, якщо є вільний простір</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="253"/>
-      <location filename="../../../Path/Op/Helix.py" line="507"/>
-      <source>Override arcs feed rate to get constant tool cutting speed</source>
-      <translation>Перевизначати подачу на дугах для сталої швидкості різання</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="263"/>
-      <location filename="../../../Path/Op/Helix.py" line="518"/>
-      <source>Replace profiles diameter to get identical size of the holes
-This value can not be less than tool diameter</source>
-      <translation>Замінювати діаметр профілів, щоб отримати однаковий розмір отворів
-Це значення не може бути меншим за діаметр інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="274"/>
-      <location filename="../../../Path/Op/Helix.py" line="530"/>
-      <source>Determine position of the start and end point
-Angle 0 means start and end points located along axis X
-Set -1 to calculate optimal angle automatically</source>
-      <translation>Визначає положення початкової й кінцевої точок
-Кут 0 означає, що початкова й кінцева точки лежать на осі X
-Задайте -1, щоб оптимальний кут обчислювався автоматично</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Helix.py" line="284"/>
-      <location filename="../../../Path/Op/Helix.py" line="544"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1691"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1696"/>
+      <location filename="../../../Path/Op/Helix.py" line="286"/>
+      <location filename="../../../Path/Op/Helix.py" line="546"/>
       <source>The maximum allowable descent in a single revolution of the helix
 Set to zero to disable limitation by pitch</source>
       <translation>Максимально допустиме опускання за один оберт гвинтової лінії
 Нуль вимикає обмеження за кроком</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="294"/>
-      <location filename="../../../Path/Op/Helix.py" line="561"/>
-      <source>The maximum allowable ramp entry angle
-Set to zero to disable limitation by ramp angle</source>
-      <translation>Максимально допустимий кут похилого входу
-Нуль вимикає обмеження за кутом</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1714"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1908"/>
+      <location filename="../../../Path/Op/PlanarSurface.py" line="612"/>
+      <source>Maximum (and nominal) helix entry diameter, as a percentage of the tool diameter</source>
+      <translation>Максимальний (і номінальний) діаметр гвинтового входу у відсотках від діаметра інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="303"/>
-      <location filename="../../../Path/Op/Helix.py" line="589"/>
-      <source>Allows to process cone helix from bottom to top</source>
-      <translation>Дає змогу обробляти конічну гвинтову лінію знизу вгору</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1723"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1917"/>
+      <source>Minimum acceptable helix entry diameter, as a percentage of the tool diameter</source>
+      <translation>Мінімальний допустимий діаметр гвинтового входу у відсотках від діаметра інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="407"/>
-      <source>Set how much stock to leave on the inner wall for the operation.
-Default inner radius is Tool radius and can not be less than (-ToolRadius)
-For External profile - profile radius</source>
-      <translation>Задає, скільки припуску залишити на внутрішній стінці в операції.
-Типовий внутрішній радіус — радіус інструмента, і він не може бути меншим за (-ToolRadius)
-Для зовнішнього профілю — радіус профілю</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1878"/>
+      <location filename="../../../Path/Op/MillFacing.py" line="170"/>
+      <source>Set how much stock to leave on the floor for the operation.</source>
+      <translation>Задайте, скільки припуску залишити на дні в операції.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1588"/>
-      <location filename="../../../Path/Op/PlanarSurface.py" line="564"/>
-      <source>Lift distance for rapid moves</source>
-      <translation>Відстань підйому для прискорених переміщень</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1939"/>
+      <source>The maximum allowable descent in a single revolution of the helix. Set to 0 to disable the pitch limit.</source>
+      <translation>Максимально допустиме опускання за один оберт гвинтової лінії. 0 вимикає обмеження кроку.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1597"/>
-      <source>Max length of keep tool down path compared to direct distance between points</source>
-      <translation>Максимальна довжина переходу без підйому інструмента порівняно з прямою відстанню між точками</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1570"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1575"/>
       <source>Influences calculation performance vs stability and accuracy.
 
 Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
@@ -5869,105 +5661,63 @@ Larger values (further to the right) will calculate faster; smaller values (furt
 Більші значення (правіше) обчислюються швидше; менші значення (лівіше) дають точніші траєкторії.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1615"/>
-      <source>Set how much stock to leave on the floor for the operation. This property is only used if the ModelAwareExperiment is enabled.</source>
-      <translation>Задає, скільки припуску залишити на дні в операції. Ця властивість використовується, лише якщо увімкнено ModelAwareExperiment.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1624"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1629"/>
       <location filename="../../../Path/Op/PlanarSurface.py" line="584"/>
       <source>Force plunging into material inside and clearing towards the edges</source>
       <translation>Примусово занурюватися в матеріал усередині й вибирати в напрямку країв</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1633"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1638"/>
       <location filename="../../../Path/Op/PlanarSurface.py" line="593"/>
       <source>To take a finishing profile path at the end</source>
       <translation>Виконати наприкінці чистовий прохід по контуру</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1640"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1650"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1645"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
       <source>Stop processing</source>
       <translation>Зупинити обробку</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1681"/>
-      <location filename="../../../Path/Op/PlanarSurface.py" line="603"/>
-      <source>The maximum allowable helix ramp entry angle (degrees)
-Set to zero to disable limitation by ramp angle</source>
-      <translation>Максимально допустимий кут гвинтового похилого входу (градуси)
-Нуль вимикає обмеження за кутом</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1709"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1903"/>
-      <location filename="../../../Path/Op/PlanarSurface.py" line="612"/>
-      <source>Maximum (and nominal) helix entry diameter, as a percentage of the tool diameter</source>
-      <translation>Максимальний (і номінальний) діаметр гвинтового входу у відсотках від діаметра інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1718"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1912"/>
-      <source>Minimum acceptable helix entry diameter, as a percentage of the tool diameter</source>
-      <translation>Мінімальний допустимий діаметр гвинтового входу у відсотках від діаметра інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1745"/>
-      <source>Orders cuts by region instead of depth. This property is only used if the ModelAwareExperiment is enabled.</source>
-      <translation>Упорядковує проходи за областями, а не за глибиною. Ця властивість використовується, лише якщо увімкнено ModelAwareExperiment.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1760"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1884"/>
-      <source>Enable the experimental model awareness feature to respect 3D geometry and prevent cutting under overhangs</source>
-      <translation>Увімкнути експериментальне врахування моделі, щоб зважати на 3D-геометрію й не різати під нависаннями</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1873"/>
-      <location filename="../../../Path/Op/MillFacing.py" line="170"/>
-      <source>Set how much stock to leave on the floor for the operation.</source>
-      <translation>Задайте, скільки припуску залишити на дні в операції.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1934"/>
-      <source>The maximum allowable descent in a single revolution of the helix. Set to 0 to disable the pitch limit.</source>
-      <translation>Максимально допустиме опускання за один оберт гвинтової лінії. 0 вимикає обмеження кроку.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1660"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1665"/>
       <source>Internal input state</source>
       <translation>Внутрішній вхідний стан</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1669"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1674"/>
       <source>Internal output state</source>
       <translation>Внутрішній вихідний стан</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1700"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1705"/>
       <source>Helix cone angle (degrees)</source>
       <translation>Кут конуса гвинтового входу (градуси)</translation>
     </message>
     <message>
+      <location filename="../../../Path/Op/Adaptive.py" line="1732"/>
       <location filename="../../../Path/Op/PocketShape.py" line="78"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1727"/>
       <source>Uses the outline of the base geometry.</source>
       <translation>Використовує обрис базової геометрії.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketShape.py" line="90"/>
-      <source>Close open area formed by edges or vertical faces by straight line.</source>
-      <translation>Замикати відкриту область, утворену ребрами або вертикальними гранями, прямою лінією.</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="1750"/>
+      <source>Orders cuts by region instead of depth. This property is only used if the ModelAwareExperiment is enabled.</source>
+      <translation>Упорядковує проходи за областями, а не за глибиною. Ця властивість використовується, лише якщо увімкнено ModelAwareExperiment.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1862"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1765"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1889"/>
+      <source>Enable the experimental model awareness feature to respect 3D geometry and prevent cutting under overhangs</source>
+      <translation>Увімкнути експериментальне врахування моделі, щоб зважати на 3D-геометрію й не різати під нависаннями</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Adaptive.py" line="1867"/>
       <source>Orders cuts by region instead of depth.</source>
       <translation>Упорядковує проходи за областями, а не за глибиною.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Area.py" line="95"/>
-      <location filename="../../../Path/Op/Area.py" line="146"/>
+      <location filename="../../../Path/Op/Area.py" line="93"/>
+      <location filename="../../../Path/Op/Area.py" line="144"/>
       <source>Split Arcs into discrete segments</source>
       <translation>Розбивати дуги на окремі сегменти</translation>
     </message>
@@ -6099,9 +5849,9 @@ Tool Shape: safest - checks clearance using the cross section of the tool shape<
       <translation>Початкова точка цієї траєкторії</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Base.py" line="433"/>
       <location filename="../../../Path/Op/Surface.py" line="418"/>
       <location filename="../../../Path/Op/Slot.py" line="223"/>
+      <location filename="../../../Path/Op/Base.py" line="433"/>
       <location filename="../../../Path/Op/PlanarSurface.py" line="544"/>
       <location filename="../../../Path/Op/Waterline.py" line="463"/>
       <source>Make True, if specifying a Start Point</source>
@@ -6129,31 +5879,31 @@ Tool Shape: safest - checks clearance using the cross section of the tool shape<
       <translation>Параметр охолодження для цієї операції</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="84"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="87"/>
       <source>List of disabled features</source>
       <translation>Список вимкнених елементів</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="91"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="300"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="94"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="308"/>
       <source>Manual or Automatic mode sorting of holes</source>
       <translation>Ручне чи автоматичне сортування отворів</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="102"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="314"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="105"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="322"/>
       <source>Start point for automatic sorting (x,y used, z ignored)</source>
       <translation>Початкова точка для автоматичного сортування (використовуються x,y, z ігнорується)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="109"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="323"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="112"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="331"/>
       <source>Enable to use end point for automatic sorting</source>
       <translation>Увімкніть, щоб використовувати кінцеву точку для автоматичного сортування</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="118"/>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="335"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="121"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="343"/>
       <source>End point for automatic sorting (x,y used, z ignored)</source>
       <translation>Кінцева точка для автоматичного сортування (використовуються x,y, z ігнорується)</translation>
     </message>
@@ -6276,8 +6026,8 @@ instead of drilling the full depth in one pass</source>
       <translation>Обчислити довжину вістря та відняти від кінцевої глибини</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Vcarve.py" line="409"/>
       <location filename="../../../Path/Op/Engrave.py" line="108"/>
+      <location filename="../../../Path/Op/Vcarve.py" line="409"/>
       <source>Additional base objects to be engraved</source>
       <translation>Додаткові базові об'єкти для гравіювання</translation>
     </message>
@@ -6350,9 +6100,124 @@ Automatic — сортування поліліній методом найбл�
       <translation>Якщо увімкнено, з'єднані ребра розширень об'єднуються в полілінії.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="142"/>
+      <location filename="../../../Path/Op/Helix.py" line="135"/>
+      <source>The direction of the circular cuts, ClockWise (CW) or CounterClockWise (CCW)</source>
+      <translation>Напрямок кругових проходів: за годинниковою стрілкою (CW) чи проти (CCW)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="144"/>
       <source>Start cutting from the inside or outside</source>
       <translation>Починати різання зсередини чи ззовні</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="153"/>
+      <location filename="../../../Path/Op/Helix.py" line="573"/>
+      <source>The direction of the circular cuts</source>
+      <translation>Напрямок кругових проходів</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="174"/>
+      <source>Set how much stock to leave on the inner wall for the operation.
+Default inner radius for Internal profile is Tool radius, and can not be less than (-ToolRadius)
+For External profile - profile radius</source>
+      <translation>Задає, скільки припуску залишити на внутрішній стінці в операції.
+Типовий внутрішній радіус для внутрішнього профілю — радіус інструмента, і він не може бути меншим за (-ToolRadius)
+Для зовнішнього профілю — радіус профілю</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="183"/>
+      <location filename="../../../Path/Op/Helix.py" line="422"/>
+      <source>Set how much stock to leave on the outer wall for the operation.</source>
+      <translation>Задає, скільки припуску залишити на зовнішній стінці в операції.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="192"/>
+      <location filename="../../../Path/Op/Helix.py" line="477"/>
+      <source>Cone angle of the Helix</source>
+      <translation>Кут конуса гвинтової лінії</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="201"/>
+      <location filename="../../../Path/Op/Helix.py" line="435"/>
+      <source>Create only one Helix</source>
+      <translation>Створити лише одну гвинтову лінію</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="210"/>
+      <location filename="../../../Path/Op/Helix.py" line="445"/>
+      <source>Create spiral mill</source>
+      <translation>Створити спіральне фрезерування</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="219"/>
+      <location filename="../../../Path/Op/Helix.py" line="455"/>
+      <source>Create finish full circle for helix</source>
+      <translation>Завершувати гвинтову обробку повним колом</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="228"/>
+      <location filename="../../../Path/Op/Helix.py" line="466"/>
+      <source>Create finish full circle for spiral</source>
+      <translation>Завершувати спіральну обробку повним колом</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="237"/>
+      <location filename="../../../Path/Op/Helix.py" line="487"/>
+      <source>Side of profile on which create Path</source>
+      <translation>Бік профілю, з якого створюється траєкторія</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="246"/>
+      <location filename="../../../Path/Op/Helix.py" line="498"/>
+      <source>Move from wall while retract if there is free space</source>
+      <translation>Відходити від стінки під час відведення, якщо є вільний простір</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="255"/>
+      <location filename="../../../Path/Op/Helix.py" line="509"/>
+      <source>Override arcs feed rate to get constant tool cutting speed</source>
+      <translation>Перевизначати подачу на дугах для сталої швидкості різання</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="265"/>
+      <location filename="../../../Path/Op/Helix.py" line="520"/>
+      <source>Replace profiles diameter to get identical size of the holes
+This value can not be less than tool diameter</source>
+      <translation>Замінювати діаметр профілів, щоб отримати однаковий розмір отворів
+Це значення не може бути меншим за діаметр інструмента</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="276"/>
+      <location filename="../../../Path/Op/Helix.py" line="532"/>
+      <source>Determine position of the start and end point
+Angle 0 means start and end points located along axis X
+Set -1 to calculate optimal angle automatically</source>
+      <translation>Визначає положення початкової й кінцевої точок
+Кут 0 означає, що початкова й кінцева точки лежать на осі X
+Задайте -1, щоб оптимальний кут обчислювався автоматично</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="296"/>
+      <location filename="../../../Path/Op/Helix.py" line="563"/>
+      <source>The maximum allowable ramp entry angle
+Set to zero to disable limitation by ramp angle</source>
+      <translation>Максимально допустимий кут похилого входу
+Нуль вимикає обмеження за кутом</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="305"/>
+      <location filename="../../../Path/Op/Helix.py" line="591"/>
+      <source>Allows to process cone helix from bottom to top</source>
+      <translation>Дає змогу обробляти конічну гвинтову лінію знизу вгору</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Helix.py" line="409"/>
+      <source>Set how much stock to leave on the inner wall for the operation.
+Default inner radius is Tool radius and can not be less than (-ToolRadius)
+For External profile - profile radius</source>
+      <translation>Задає, скільки припуску залишити на внутрішній стінці в операції.
+Типовий внутрішній радіус — радіус інструмента, і він не може бути меншим за (-ToolRadius)
+Для зовнішнього профілю — радіус профілю</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/MillFace.py" line="108"/>
@@ -6394,48 +6259,50 @@ Automatic — сортування поліліній методом найбл�
       <translation>Обробляти модель і заготовку в операції без вибраної базової геометрії.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="159"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="157"/>
       <source>Extra offset to apply to the operation. Direction is operation dependent.</source>
       <translation>Додаткове зміщення для операції. Напрямок залежить від операції.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="165"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="163"/>
       <source>Start pocketing at center or boundary</source>
       <translation>Починати обробку кишені з центра чи від межі</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="179"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="177"/>
       <source>Angle of the grid, line and zigzag patterns</source>
       <translation>Кут схем 'Сітка', 'Лінія' та 'Зигзаг'</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="223"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="348"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="192"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="347"/>
+      <location filename="../../../Path/Dressup/Boundary.py" line="94"/>
+      <location filename="../../../Path/Dressup/Boundary.py" line="145"/>
+      <source>Set distance which will attempts to avoid unnecessary retractions.</source>
+      <translation>Задає відстань, у межах якої уникаються зайві відведення.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/PocketBase.py" line="221"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="337"/>
       <source>Force maximum stepover even if not all area is cleared. Without this flag set, the stepover may be reduced (for large stepover, &gt;50%) to ensure full area coverage.</source>
       <translation>Примусово використовувати максимальний бічний крок, навіть якщо оброблено не всю площу. Без цього прапорця бічний крок може зменшуватися (для великих кроків, &gt;50%), щоб забезпечити повне покриття площі.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="251"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="408"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="249"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="397"/>
       <source>Finishing pass will processing with one step down at final depth</source>
       <translation>Чистовий прохід виконуватиметься одним кроком по глибині на кінцевій глибині</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="260"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="432"/>
-      <source>Create helix ramp for finishing pass</source>
-      <translation>Створювати гвинтовий вхід для чистового проходу</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="185"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="183"/>
       <source>Clearing pattern to use</source>
       <translation>Схема вибирання</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="203"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="338"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1736"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1851"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1741"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1856"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="201"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="327"/>
       <source>Skips machining regions that have already been cleared by previous operations.</source>
       <translation>Пропускає області, які вже оброблено попередніми операціями.</translation>
     </message>
@@ -6472,56 +6339,69 @@ Automatic — сортування поліліній методом найбл�
     </message>
     <message>
       <location filename="../../../Path/Op/Profile.py" line="105"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="150"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="148"/>
       <source>The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</source>
       <translation>Напрямок обходу траєкторією навколо деталі: за годинниковою стрілкою (CW) чи проти (CCW)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="129"/>
-      <source>Profile holes as well as the outline</source>
-      <translation>Профілювати отвори, а також обрис</translation>
+      <location filename="../../../Path/Op/Profile.py" line="123"/>
+      <location filename="../../../Path/Op/RotarySurface.py" line="172"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1611"/>
+      <source>Set how much stock to leave on the walls for the operation.</source>
+      <translation>Задає, скільки припуску залишити на стінках в операції.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="135"/>
-      <source>Profile the outline</source>
-      <translation>Профілювати обрис</translation>
+      <location filename="../../../Path/Op/Profile.py" line="132"/>
+      <source>Profile holes as well as the outline.
+Only with horizontal faces.</source>
+      <translation type="unfinished">Profile holes as well as the outline.
+Only with horizontal faces.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Profile.py" line="141"/>
-      <source>Profile round holes</source>
-      <translation>Профілювати круглі отвори</translation>
+      <source>Profile the outline.
+Only with horizontal faces.</source>
+      <translation type="unfinished">Profile the outline.
+Only with horizontal faces.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="147"/>
+      <location filename="../../../Path/Op/Profile.py" line="150"/>
+      <source>Profile round holes.
+Only with horizontal faces.</source>
+      <translation type="unfinished">Profile round holes.
+Only with horizontal faces.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Profile.py" line="156"/>
       <source>Side of edge that tool should cut</source>
       <translation>Бік ребра, з якого має різати інструмент</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="155"/>
+      <location filename="../../../Path/Op/Profile.py" line="164"/>
       <source>Make True, if using Cutter Radius Compensation</source>
       <translation>Увімкніть, якщо використовується корекція радіуса інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="164"/>
+      <location filename="../../../Path/Op/Profile.py" line="173"/>
       <source>The number of passes to do. If more than one, requires a non-zero value for Stepover</source>
       <translation>Кількість проходів. Якщо більше одного, потрібне ненульове значення Stepover</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="173"/>
+      <location filename="../../../Path/Op/Profile.py" line="182"/>
       <source>If doing multiple passes, the extra offset of each additional pass</source>
       <translation>Під час кількох проходів — додаткове зміщення кожного наступного проходу</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="184"/>
+      <location filename="../../../Path/Op/Profile.py" line="193"/>
       <source>Override start point
 Shoud be used only with Individually HandleMultipleFeaturesand disabled UseStartPoint</source>
       <translation>Перевизначити початкову точку
 Слід використовувати лише з HandleMultipleFeatures = Individually та вимкненим UseStartPoint</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="204"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="214"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="370"/>
+      <location filename="../../../Path/Op/Profile.py" line="213"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="212"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="359"/>
       <source>Order processing of the shapes
 Automatic: uses nearest neighbour algorithm to sort shapes
 Manual: uses order of shapes selection</source>
@@ -6530,33 +6410,26 @@ Automatic: сортування форм алгоритмом найближчо
 Manual: порядок вибору форм</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="213"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="232"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="396"/>
+      <location filename="../../../Path/Op/Profile.py" line="222"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="230"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="385"/>
       <source>Distance between roughing and finishing passes</source>
       <translation>Відстань між чорновими й чистовими проходами</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="222"/>
+      <location filename="../../../Path/Op/Profile.py" line="231"/>
       <source>Finish pass will processing with one step down at final depth</source>
       <translation>Чистовий прохід виконуватиметься одним кроком по глибині на кінцевій глибині</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="231"/>
+      <location filename="../../../Path/Op/Profile.py" line="240"/>
       <source>Start multiple profile from edge or out of edge</source>
       <translation>Починати кілька профілів від ребра або за межами ребра</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="240"/>
-      <source>Create helix ramp for closed path
-Helix pitch limits by &apos;Step Down&apos;</source>
-      <translation>Створювати гвинтовий вхід для замкненої траєкторії
-Крок гвинта обмежується 'Step Down'</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="259"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="242"/>
-      <location filename="../../../Path/Op/PocketBase.py" line="419"/>
+      <location filename="../../../Path/Op/Profile.py" line="250"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="240"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="408"/>
       <source>Adds an additional finishing pass that clears the stock left over from tool deflection</source>
       <translation>Додає ще один чистовий прохід, що знімає залишок заготовки через відтискання інструмента</translation>
     </message>
@@ -6949,10 +6822,60 @@ Helix pitch limits by &apos;Step Down&apos;</source>
       <translation>Ігнорувати зовнішні ватерлінії вище цієї висоти.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Array.py" line="49"/>
       <location filename="../../../Path/Op/Gui/Array.py" line="78"/>
+      <location filename="../../../Path/Dressup/Array.py" line="49"/>
       <source>Pattern method</source>
       <translation>Метод розміщення</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="132"/>
+      <source>Make copies in X direction before Y in Linear 2D pattern</source>
+      <translation>Створювати копії в напрямку X перед Y у лінійному 2D-масиві</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="103"/>
+      <location filename="../../../Path/Dressup/Array.py" line="66"/>
+      <source>The number of copies in X-direction in linear pattern</source>
+      <translation>Кількість копій у напрямку X у лінійному масиві</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="111"/>
+      <location filename="../../../Path/Dressup/Array.py" line="74"/>
+      <source>The number of copies in Y-direction in linear pattern</source>
+      <translation>Кількість копій у напрямку Y у лінійному масиві</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Array.py" line="103"/>
+      <source>Make copies in X-direction before Y in linear 2D pattern</source>
+      <translation>Створювати копії в напрямку X перед Y у лінійному 2D-масиві</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Array.py" line="109"/>
+      <source>Percent of copies to randomly offset</source>
+      <translation>Відсоток копій з випадковим зміщенням</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="176"/>
+      <location filename="../../../Path/Dressup/Array.py" line="115"/>
+      <source>Maximum random offset of copies</source>
+      <translation>Максимальне випадкове зміщення копій</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="182"/>
+      <location filename="../../../Path/Op/Gui/Array.py" line="272"/>
+      <source>Use randomly offset</source>
+      <translation>Використовувати випадкове зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="188"/>
+      <location filename="../../../Path/Dressup/Array.py" line="121"/>
+      <source>Seed value for jitter randomness</source>
+      <translation>Початкове значення генератора випадкових зміщень</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="55"/>
+      <source>The toolpaths to array</source>
+      <translation>Траєкторії для масиву</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="70"/>
@@ -6967,9 +6890,16 @@ Should be identical for all base operations</source>
       <translation>Кількість копій у масивах Linear1D і Polar</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Array.py" line="132"/>
-      <source>Make copies in X direction before Y in Linear 2D pattern</source>
-      <translation>Створювати копії в напрямку X перед Y у лінійному 2D-масиві</translation>
+      <location filename="../../../Path/Op/Gui/Array.py" line="95"/>
+      <location filename="../../../Path/Dressup/Array.py" line="58"/>
+      <source>The spacing between the array copies in linear pattern</source>
+      <translation>Відстань між копіями в лінійному масиві</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/Array.py" line="117"/>
+      <location filename="../../../Path/Dressup/Array.py" line="80"/>
+      <source>Total angle in polar pattern</source>
+      <translation>Загальний кут у полярному масиві</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="141"/>
@@ -7004,67 +6934,10 @@ If selection without sub elements:
       <translation>Режим сортування</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Array.py" line="182"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="272"/>
-      <source>Use randomly offset</source>
-      <translation>Використовувати випадкове зміщення</translation>
-    </message>
-    <message>
       <location filename="../../../Path/Op/Gui/Array.py" line="194"/>
       <location filename="../../../Path/Op/Gui/Array.py" line="265"/>
       <source>Max angle of rotation for jitter randomness</source>
       <translation>Максимальний кут повороту для випадкових зміщень</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="66"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="103"/>
-      <source>The number of copies in X-direction in linear pattern</source>
-      <translation>Кількість копій у напрямку X у лінійному масиві</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="74"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="111"/>
-      <source>The number of copies in Y-direction in linear pattern</source>
-      <translation>Кількість копій у напрямку Y у лінійному масиві</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="103"/>
-      <source>Make copies in X-direction before Y in linear 2D pattern</source>
-      <translation>Створювати копії в напрямку X перед Y у лінійному 2D-масиві</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="109"/>
-      <source>Percent of copies to randomly offset</source>
-      <translation>Відсоток копій з випадковим зміщенням</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="115"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="176"/>
-      <source>Maximum random offset of copies</source>
-      <translation>Максимальне випадкове зміщення копій</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="121"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="188"/>
-      <source>Seed value for jitter randomness</source>
-      <translation>Початкове значення генератора випадкових зміщень</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/Array.py" line="55"/>
-      <source>The toolpaths to array</source>
-      <translation>Траєкторії для масиву</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="58"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="95"/>
-      <source>The spacing between the array copies in linear pattern</source>
-      <translation>Відстань між копіями в лінійному масиві</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Array.py" line="80"/>
-      <location filename="../../../Path/Op/Gui/Array.py" line="117"/>
-      <source>Total angle in polar pattern</source>
-      <translation>Загальний кут у полярному масиві</translation>
     </message>
     <message>
       <location filename="../../../Path/Dressup/Array.py" line="88"/>
@@ -7072,8 +6945,8 @@ If selection without sub elements:
       <translation>Кількість копій у лінійному 1D і полярному масивах</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Array.py" line="94"/>
       <location filename="../../../Path/Op/Gui/Array.py" line="123"/>
+      <location filename="../../../Path/Dressup/Array.py" line="94"/>
       <source>The centre of rotation in polar pattern</source>
       <translation>Центр повороту в полярному масиві</translation>
     </message>
@@ -7464,92 +7337,9 @@ this gives the pause of the next move</source>
       <translation>Подача на зуб</translation>
     </message>
     <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="42"/>
-      <source>The base path for mirroring</source>
-      <translation>Базова траєкторія для дзеркального відображення</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="48"/>
-      <source>The mirroring axis</source>
-      <translation>Вісь дзеркального відображення</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="54"/>
-      <source>Offset for the mirroring axis </source>
-      <translation>Зміщення осі дзеркального відображення </translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="60"/>
-      <source>Mirroring at the center of base model</source>
-      <translation>Дзеркальне відображення відносно центра базової моделі</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="66"/>
-      <source>Add path from base operation</source>
-      <translation>Додати траєкторію з базової операції</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="72"/>
-      <source>Center point of selected shape defines offset</source>
-      <translation>Зміщення визначає центральна точка вибраної форми</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="44"/>
-      <source>The base path</source>
-      <translation>Базова траєкторія</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="50"/>
-      <source>Distance between passes</source>
-      <translation>Відстань між проходами</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="59"/>
-      <source>Use drilling cycles instead of G1 moves</source>
-      <translation>Використовувати цикли свердління замість переміщень G1</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="67"/>
-      <source>Use chipbreaking
-Can be used only if Peck Depth not a zero</source>
-      <translation>Використовувати ламання стружки
-Можна використовувати лише тоді, коли глибина за прохід не нульова</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="77"/>
-      <source>Incremental Drill depth before retracting to clear chips
-Set 0 to disable pecking</source>
-      <translation>Приріст глибини свердління перед відведенням для видалення стружки
-Нуль вимикає свердління з виведенням</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="83"/>
-      <source>R value: height the tool retracts between pecks</source>
-      <translation>Значення R: висота, на яку відводиться інструмент між проходами</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="94"/>
-      <source>The time to dwell between peck cycles
-Set 0 to disable dwell
-Can be used only if Peck Depth is zero</source>
-      <translation>Час витримки між циклами свердління з виведенням
-Нуль вимикає витримку
-Можна використовувати лише тоді, коли глибина за прохід нульова</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="74"/>
-      <source>Hint indicating which op category this TC is intended for</source>
-      <translation>Підказка, для якої категорії операцій призначено цей контролер інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="86"/>
-      <source>Per-field provenance: which source set HorizFeed/VertFeed/SpindleSpeed</source>
-      <translation>Походження кожного поля: яке джерело задало HorizFeed/VertFeed/SpindleSpeed</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/FeedsSpeeds/presets.py" line="104"/>
-      <source>JSON-encoded list of feeds &amp; speeds presets</source>
-      <translation>JSON-список пресетів подач і швидкостей</translation>
+      <location filename="../../../Path/Main/Workplane.py" line="180"/>
+      <source>Work coordinate system (G54-G59.9, G54.1 Pn) selected while operations on this plane run. Empty: the Job&apos;s own fixture.</source>
+      <translation>Робоча система координат (G54-G59.9, G54.1 Pn), що вибирається під час виконання операцій на цій площині. Порожньо — власна система координат завдання.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/RotarySurface.py" line="126"/>
@@ -7580,13 +7370,6 @@ Can be used only if Peck Depth is zero</source>
       <location filename="../../../Path/Op/RotarySurface.py" line="164"/>
       <source>Angular spacing between sampled toolpath points (degrees).</source>
       <translation>Кутова відстань між точками вибірки траєкторії (градуси).</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/RotarySurface.py" line="172"/>
-      <location filename="../../../Path/Op/Profile.py" line="123"/>
-      <location filename="../../../Path/Op/Adaptive.py" line="1606"/>
-      <source>Set how much stock to leave on the walls for the operation.</source>
-      <translation>Задає, скільки припуску залишити на стінках в операції.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/RotarySurface.py" line="180"/>
@@ -7622,6 +7405,46 @@ Can be used only if Peck Depth is zero</source>
       <location filename="../../../Path/Op/RotarySurface.py" line="234"/>
       <source>Tessellation angular deflection. Smaller = finer mesh.</source>
       <translation>Кутове відхилення тесселяції. Менше — дрібніша сітка.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="134"/>
+      <source>Set the cut mode for the operation.</source>
+      <translation>Задайте режим різання для операції.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="143"/>
+      <source>Set the clearing pattern for the operation.</source>
+      <translation>Задайте схему вибирання для операції.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="152"/>
+      <source>Set the angle for the operation.</source>
+      <translation>Задайте кут для операції.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="161"/>
+      <source>Set the stepover percentage of tool diameter.</source>
+      <translation>Задайте бічний крок у відсотках від діаметра інструмента.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="179"/>
+      <source>Distance to extend cuts beyond polygon boundary for tool disengagement.</source>
+      <translation>Відстань, на яку проходи подовжуються за межу багатокутника для виходу інструмента з матеріалу.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="188"/>
+      <source>Extends the boundary in both direction.</source>
+      <translation>Розширює межу в обох напрямках.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="197"/>
+      <source>Reverse the cutting direction for the selected pattern.</source>
+      <translation>Змінити напрямок різання для вибраної схеми на протилежний.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/PocketShape.py" line="90"/>
+      <source>Close open area formed by edges or vertical faces by straight line.</source>
+      <translation>Замикати відкриту область, утворену ребрами або вертикальними гранями, прямою лінією.</translation>
     </message>
     <message>
       <location filename="../../../Path/Op/Flute.py" line="1438"/>
@@ -7796,49 +7619,119 @@ Larger values will calculate faster; Smaller values will result in more accurate
       <translation>ПОПЕРЕДЖЕННЯ: вимкнення цього параметра дозволяє алгоритму Adaptive2d виходити за межі заготовки на відкритих кишенях. Це може спричинити хаотичні занурення, непередбачувані траєкторії та аварії верстата! Будьте надзвичайно обережні.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="134"/>
-      <source>Set the cut mode for the operation.</source>
-      <translation>Задайте режим різання для операції.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="143"/>
-      <source>Set the clearing pattern for the operation.</source>
-      <translation>Задайте схему вибирання для операції.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="152"/>
-      <source>Set the angle for the operation.</source>
-      <translation>Задайте кут для операції.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="161"/>
-      <source>Set the stepover percentage of tool diameter.</source>
-      <translation>Задайте бічний крок у відсотках від діаметра інструмента.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="179"/>
-      <source>Distance to extend cuts beyond polygon boundary for tool disengagement.</source>
-      <translation>Відстань, на яку проходи подовжуються за межу багатокутника для виходу інструмента з матеріалу.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="188"/>
-      <source>Extends the boundary in both direction.</source>
-      <translation>Розширює межу в обох напрямках.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="197"/>
-      <source>Reverse the cutting direction for the selected pattern.</source>
-      <translation>Змінити напрямок різання для вибраної схеми на протилежний.</translation>
-    </message>
-    <message>
       <location filename="../../../Path/Op/Gui/Drilling.py" line="244"/>
       <source>Apply G99 retraction: only retract to StartDepth between holes in this operation</source>
       <translation>Застосувати відведення G99: між отворами в цій операції відводити лише до StartDepth</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Workplane.py" line="180"/>
-      <source>Work coordinate system (G54-G59.9, G54.1 Pn) selected while operations on this plane run. Empty: the Job&apos;s own fixture.</source>
-      <translation>Робоча система координат (G54-G59.9, G54.1 Pn), що вибирається під час виконання операцій на цій площині. Порожньо — власна система координат завдання.</translation>
+      <location filename="../../../Path/Tool/FeedsSpeeds/presets.py" line="104"/>
+      <source>JSON-encoded list of feeds &amp; speeds presets</source>
+      <translation>JSON-список пресетів подач і швидкостей</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="74"/>
+      <source>Hint indicating which op category this TC is intended for</source>
+      <translation>Підказка, для якої категорії операцій призначено цей контролер інструмента</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="86"/>
+      <source>Per-field provenance: which source set HorizFeed/VertFeed/SpindleSpeed</source>
+      <translation>Походження кожного поля: яке джерело задало HorizFeed/VertFeed/SpindleSpeed</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="42"/>
+      <source>The base path for mirroring</source>
+      <translation>Базова траєкторія для дзеркального відображення</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="48"/>
+      <source>The mirroring axis</source>
+      <translation>Вісь дзеркального відображення</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="54"/>
+      <source>Offset for the mirroring axis </source>
+      <translation>Зміщення осі дзеркального відображення </translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="60"/>
+      <source>Mirroring at the center of base model</source>
+      <translation>Дзеркальне відображення відносно центра базової моделі</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="66"/>
+      <source>Add path from base operation</source>
+      <translation>Додати траєкторію з базової операції</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="72"/>
+      <source>Center point of selected shape defines offset</source>
+      <translation>Зміщення визначає центральна точка вибраної форми</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="44"/>
+      <source>The base path</source>
+      <translation>Базова траєкторія</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="50"/>
+      <source>Distance between passes</source>
+      <translation>Відстань між проходами</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="59"/>
+      <source>Use drilling cycles instead of G1 moves</source>
+      <translation>Використовувати цикли свердління замість переміщень G1</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="67"/>
+      <source>Use chipbreaking
+Can be used only if Peck Depth not a zero</source>
+      <translation>Використовувати ламання стружки
+Можна використовувати лише тоді, коли глибина за прохід не нульова</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="77"/>
+      <source>Incremental Drill depth before retracting to clear chips
+Set 0 to disable pecking</source>
+      <translation>Приріст глибини свердління перед відведенням для видалення стружки
+Нуль вимикає свердління з виведенням</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="83"/>
+      <source>R value: height the tool retracts between pecks</source>
+      <translation>Значення R: висота, на яку відводиться інструмент між проходами</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="94"/>
+      <source>The time to dwell between peck cycles
+Set 0 to disable dwell
+Can be used only if Peck Depth is zero</source>
+      <translation>Час витримки між циклами свердління з виведенням
+Нуль вимикає витримку
+Можна використовувати лише тоді, коли глибина за прохід нульова</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="55"/>
+      <source>Shape to limit toolpath</source>
+      <translation>Форма, що обмежує траєкторію</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="61"/>
+      <source>Keep path inside or outside the shape</source>
+      <translation>Утримувати траєкторію всередині чи ззовні форми</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="81"/>
+      <source>Apply boundary to Rest Machining
+Does not affects to current path, but can be used by other operations with Rest Machining feature</source>
+      <translation>Застосувати межу до доробки залишків
+Не впливає на поточну траєкторію, але може використовуватися іншими операціями з доробкою залишків</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="87"/>
+      <source>Apply offset to boundary shape</source>
+      <translation>Застосувати зміщення до форми межі</translation>
     </message>
   </context>
   <context>
@@ -7895,19 +7788,14 @@ Larger values will calculate faster; Smaller values will result in more accurate
   <context>
     <name>PathAreaOp</name>
     <message>
-      <location filename="../../../Path/Op/Area.py" line="116"/>
+      <location filename="../../../Path/Op/Area.py" line="114"/>
       <source>job %s has no Base.</source>
       <translation>Завдання %s не має базового об'єкта.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Area.py" line="118"/>
+      <location filename="../../../Path/Op/Area.py" line="116"/>
       <source>no job for operation %s found.</source>
       <translation>Завдання для операції %s не знайдено.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Area.py" line="294"/>
-      <source>%s: ramp method &apos;%s&apos; needs a ramp angle, plunging</source>
-      <translation>%s: метод похилого входу '%s' потребує кута похилого входу, виконується пряме врізання</translation>
     </message>
   </context>
   <context>
@@ -7933,87 +7821,62 @@ Larger values will calculate faster; Smaller values will result in more accurate
   <context>
     <name>PathProfile</name>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="285"/>
+      <location filename="../../../Path/Op/Profile.py" line="276"/>
       <source>Outside</source>
       <translation>Ззовні</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="286"/>
+      <location filename="../../../Path/Op/Profile.py" line="277"/>
       <source>Inside</source>
       <translation>Всередині</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="277"/>
+      <location filename="../../../Path/Op/Profile.py" line="268"/>
       <source>CW</source>
       <translation>За годинниковою стрілкою</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="278"/>
+      <location filename="../../../Path/Op/Profile.py" line="269"/>
       <source>CCW</source>
       <translation>Проти годинникової стрілки</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="281"/>
+      <location filename="../../../Path/Op/Profile.py" line="272"/>
       <source>Collectively</source>
       <translation>Разом</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="282"/>
+      <location filename="../../../Path/Op/Profile.py" line="273"/>
       <source>Individually</source>
       <translation>Окремо</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="289"/>
+      <location filename="../../../Path/Op/Profile.py" line="280"/>
       <source>Automatic</source>
       <translation>Автоматичний</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="290"/>
+      <location filename="../../../Path/Op/Profile.py" line="281"/>
       <source>Manual</source>
       <translation>Вручну</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="293"/>
-      <source>OutOfEdge</source>
-      <translation>За межами ребра</translation>
+      <location filename="../../../Path/Op/Profile.py" line="284"/>
+      <source>Out of edge</source>
+      <translation type="unfinished">Out of edge</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="294"/>
+      <location filename="../../../Path/Op/Profile.py" line="285"/>
       <source>Edge</source>
       <translation>Ребро</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="297"/>
-      <source>None</source>
-      <translation>Немає</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="298"/>
-      <source>Helix</source>
-      <translation>Гвинтова лінія</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="299"/>
-      <source>Method 1</source>
-      <translation>Метод 1</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="300"/>
-      <source>Method 2</source>
-      <translation>Метод 2</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="301"/>
-      <source>Method 3</source>
-      <translation>Метод 3</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Profile.py" line="488"/>
+      <location filename="../../../Path/Op/Profile.py" line="479"/>
       <source>The selected edge(s) are inaccessible. If multiple, re-ordering selection might work.</source>
       <translation>Вибрані ребра недоступні. Якщо їх кілька, спробуйте змінити порядок вибору.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Profile.py" line="634"/>
+      <location filename="../../../Path/Op/Profile.py" line="625"/>
       <source>Unable to create path for face(s).</source>
       <translation>Не вдалося створити траєкторію для граней.</translation>
     </message>
@@ -8404,66 +8267,66 @@ Larger values will calculate faster; Smaller values will result in more accurate
       <translation>u26a0 Застаріло: {}</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="850"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="853"/>
       <source>Base Geometry</source>
       <translation>Базова геометрія</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="970"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="973"/>
       <source>Multiple operations are labeled as</source>
       <translation>Кілька операцій позначені як</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1044"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1047"/>
       <source>Base Location</source>
       <translation>Базове розташування</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1272"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1275"/>
       <source>Heights</source>
       <translation>Висоти</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1435"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1438"/>
       <source>Tool Controller</source>
       <translation>Контролер інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1189"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1192"/>
       <source>FinalDepth cannot be modified for this operation.
 If it is necessary to set the FinalDepth manually please select a different operation.</source>
       <translation>Для цієї операції FinalDepth змінити не можна.
 Якщо FinalDepth потрібно задати вручну, виберіть іншу операцію.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1472"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1475"/>
       <source>Diameters</source>
       <translation>Діаметри</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1504"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1507"/>
       <source>AreaOp Operation</source>
       <translation>Операція AreaOp</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1571"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1574"/>
       <source>Operation</source>
       <translation>Операція</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1667"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1670"/>
       <source>Uncreate AreaOp Operation</source>
       <translation>Скасувати операцію AreaOp</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1882"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1885"/>
       <source>No suitable tool controller found.
 Aborting op creation</source>
       <translation>Відповідний контролер інструмента не знайдено.
 Створення операції перервано</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1886"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1889"/>
       <source>No tool controller, aborting op creation</source>
       <translation>Немає контролера інструмента, створення операції перервано</translation>
     </message>
@@ -9044,67 +8907,10 @@ Without sub selection:
       <translation>Робоча система координат</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="58"/>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="78"/>
-      <source>Presets</source>
-      <translation>Пресети</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="60"/>
-      <source>Geometry</source>
-      <translation>Геометрія</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="120"/>
-      <source>Tool Updates Available</source>
-      <translation>Доступні оновлення інструментів</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="144"/>
-      <source>&apos;{}&apos; has tools that differ from the library (newer presets, changed dimensions - e.g. a regrind - or both). Updating replaces the whole tool with the current library version and recomputes the document - expand a row to review before applying.</source>
-      <translation>'{}' має інструменти, що відрізняються від бібліотечних (новіші пресети, змінені розміри — наприклад, після переточування — або і те, і те). Оновлення замінює весь інструмент поточною версією з бібліотеки й перераховує документ — розгорніть рядок, щоб переглянути зміни перед застосуванням.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="155"/>
-      <source>Job</source>
-      <translation>Завдання</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="156"/>
-      <source>Tool #</source>
-      <translation>Інструмент №</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="157"/>
       <location filename="../../../Path/Main/Job.py" line="453"/>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="157"/>
       <source>Tool</source>
       <translation>Інструмент</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="158"/>
-      <source>Changes</source>
-      <translation>Зміни</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="206"/>
-      <source>Select all</source>
-      <translation>Вибрати все</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="225"/>
-      <source>Update</source>
-      <translation>Оновити</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="346"/>
-      <location filename="../../../Path/Main/Gui/Job.py" line="372"/>
-      <source>Update Tools from Library</source>
-      <translation>Оновити інструменти з бібліотеки</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="347"/>
-      <source>This job has no tool updates available.</source>
-      <translation>Для цього завдання немає оновлень інструментів.</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Job.py" line="454"/>
@@ -9136,6 +8942,12 @@ Without sub selection:
       <location filename="../../../Path/Main/Gui/Job.py" line="368"/>
       <source>Edit</source>
       <translation>Редагувати</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Main/Gui/Job.py" line="372"/>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="346"/>
+      <source>Update Tools from Library</source>
+      <translation>Оновити інструменти з бібліотеки</translation>
     </message>
     <message>
       <location filename="../../../Path/Main/Gui/Job.py" line="388"/>
@@ -9295,6 +9107,57 @@ Take it out?</source>
       <location filename="../../../Path/Main/Gui/JobCmd.py" line="59"/>
       <source>Creates a CAM job</source>
       <translation>Створює завдання CAM</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="58"/>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="78"/>
+      <source>Presets</source>
+      <translation>Пресети</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="60"/>
+      <source>Geometry</source>
+      <translation>Геометрія</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="120"/>
+      <source>Tool Updates Available</source>
+      <translation>Доступні оновлення інструментів</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="144"/>
+      <source>&apos;{}&apos; has tools that differ from the library (newer presets, changed dimensions - e.g. a regrind - or both). Updating replaces the whole tool with the current library version and recomputes the document - expand a row to review before applying.</source>
+      <translation>'{}' має інструменти, що відрізняються від бібліотечних (новіші пресети, змінені розміри — наприклад, після переточування — або і те, і те). Оновлення замінює весь інструмент поточною версією з бібліотеки й перераховує документ — розгорніть рядок, щоб переглянути зміни перед застосуванням.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="155"/>
+      <source>Job</source>
+      <translation>Завдання</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="156"/>
+      <source>Tool #</source>
+      <translation>Інструмент №</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="158"/>
+      <source>Changes</source>
+      <translation>Зміни</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="206"/>
+      <source>Select all</source>
+      <translation>Вибрати все</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="225"/>
+      <source>Update</source>
+      <translation>Оновити</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/UpdateDocumentToolsDlg.py" line="347"/>
+      <source>This job has no tool updates available.</source>
+      <translation>Для цього завдання немає оновлень інструментів.</translation>
     </message>
   </context>
   <context>
@@ -9751,17 +9614,17 @@ G-code under the cursor defines tool shape placement</source>
   <context>
     <name>CAM_Simulator</name>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="313"/>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="314"/>
       <source>High</source>
       <translation>Високий</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="315"/>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="316"/>
       <source>Low</source>
       <translation>Низький</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="317"/>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="318"/>
       <source>Medium</source>
       <translation>Середній</translation>
     </message>
@@ -9779,22 +9642,22 @@ G-code under the cursor defines tool shape placement</source>
   <context>
     <name>CAM_Adaptive</name>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1519"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1524"/>
       <source>Outside</source>
       <translation>Ззовні</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1520"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1525"/>
       <source>Inside</source>
       <translation>Всередині</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1523"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1528"/>
       <source>Clearing</source>
       <translation>Вибирання</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="1524"/>
+      <location filename="../../../Path/Op/Adaptive.py" line="1529"/>
       <source>Profiling</source>
       <translation>Профілювання</translation>
     </message>
@@ -9882,7 +9745,7 @@ G-code under the cursor defines tool shape placement</source>
       <translation>Цей контролер інструмента використовується ще {0} операціями.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1243"/>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1246"/>
       <source>None (Job XY)</source>
       <translation>Немає (XY завдання)</translation>
     </message>
@@ -9935,12 +9798,12 @@ G-code under the cursor defines tool shape placement</source>
       <translation>Помилка часу циклу</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="163"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="168"/>
       <source>Hole diameter may be inaccurate due to tessellation on face. Consider selecting hole edge.</source>
       <translation>Діаметр отвору може бути неточним через тесселяцію грані. Краще виберіть ребро отвору.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/CircularHoleBase.py" line="198"/>
+      <location filename="../../../Path/Op/CircularHoleBase.py" line="203"/>
       <source>Feature %s.%s cannot be processed as a circular hole - please remove from Base geometry list.</source>
       <translation>Елемент %s.%s не можна обробити як круглий отвір — видаліть його зі списку базової геометрії.</translation>
     </message>
@@ -9961,9 +9824,9 @@ G-code under the cursor defines tool shape placement</source>
       <translation>Непланарний адаптивний старт також недоступний.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/ThreadMilling.py" line="78"/>
-      <location filename="../../../Path/Op/Gui/Vcarve.py" line="124"/>
       <location filename="../../../Path/Op/Gui/Probe.py" line="59"/>
+      <location filename="../../../Path/Op/Gui/Vcarve.py" line="124"/>
+      <location filename="../../../Path/Op/Gui/ThreadMilling.py" line="78"/>
       <source>No valid toolcontroller</source>
       <translation>Немає коректного контролера інструмента</translation>
     </message>
@@ -9973,8 +9836,8 @@ G-code under the cursor defines tool shape placement</source>
       <translation>Для цієї операції потрібен контролер інструмента з V-подібною фрезою</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Vcarve.py" line="65"/>
       <location filename="../../../Path/Op/Gui/Engrave.py" line="70"/>
+      <location filename="../../../Path/Op/Gui/Vcarve.py" line="65"/>
       <source>Base shape %s already in the list</source>
       <translation>Базова форма %s вже в списку</translation>
     </message>
@@ -10166,9 +10029,9 @@ This will not delete the toolbits contained within it.</source>
 Інструменти, що містяться в ній, видалено не буде.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/toolbit/ui/browser.py" line="289"/>
       <location filename="../../../Path/Tool/library/ui/editor.py" line="430"/>
       <location filename="../../../Path/Tool/library/ui/editor.py" line="470"/>
+      <location filename="../../../Path/Tool/toolbit/ui/browser.py" line="289"/>
       <source>Error</source>
       <translation>Помилка</translation>
     </message>
@@ -10266,25 +10129,19 @@ This will not delete the toolbits contained within it.</source>
       <translation>{diameter} {pitch} {rotation} мітчик, канавок: {flutes}, різальна кромка {cutting_edge_length}</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Utils.py" line="221"/>
-      <source>CAM Export Gcode</source>
-      <translation>Експорт G-коду CAM</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="106"/>
+      <source>No Job found to add a work plane to.</source>
+      <translation>Не знайдено завдання, до якого можна додати робочу площину.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Utils.py" line="231"/>
-      <source>Save With Changes</source>
-      <translation>Зберегти зі змінами</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="137"/>
+      <source>Created %s at the Job origin. Select a planar face before the command to derive one from the model.</source>
+      <translation>Створено %s у початку координат завдання. Щоб отримати площину з моделі, перед командою виберіть пласку грань.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Utils.py" line="238"/>
-      <location filename="../../../Path/Post/Utils.py" line="241"/>
-      <source>Save Without Changes</source>
-      <translation>Зберегти без змін</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Utils.py" line="239"/>
-      <source>Abort</source>
-      <translation>Перервати</translation>
+      <location filename="../../../Path/Op/Adaptive.py" line="380"/>
+      <source>Adaptive operation couldn&apos;t determine the boundary wire. Did you select base geometry?</source>
+      <translation>Адаптивній операції не вдалося визначити полілінію межі. Чи вибрано базову геометрію?</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Processor.py" line="436"/>
@@ -10633,145 +10490,95 @@ This will not delete the toolbits contained within it.</source>
       <translation>{op} лежить на нахиленій робочій площині, а цей постпроцесор не може виводити стратегію {strategy}, оголошену верстатом '{machine}'.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="2121"/>
+      <location filename="../../../Path/Post/Processor.py" line="2133"/>
       <source>{op} is on work plane &apos;{plane}&apos;, which machine &apos;{machine}&apos; cannot index to: {reason}. Its rotary limits are {limits}.</source>
       <translation>{op} лежить на робочій площині '{plane}', до якої верстат '{machine}' не може повернутися: {reason}. Межі його поворотних осей: {limits}.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="2164"/>
+      <location filename="../../../Path/Post/Processor.py" line="2176"/>
       <source>Work plane &apos;{plane}&apos; names &apos;{fixture}&apos; as its fixture, which is not a work coordinate system (G54-G59.9, or G54.1 Pn).</source>
       <translation>Робоча площина '{plane}' називає своєю системою координат '{fixture}', яка не є робочою системою координат (G54-G59.9 або G54.1 Pn).</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3306"/>
+      <location filename="../../../Path/Post/Processor.py" line="3324"/>
       <source>The rotary axes move between operations and the Pre-Rotary Move property of machine &apos;{machine}&apos; is empty. Put the moves that bring the tool clear of the part there, in machine coordinates (for example G53 G0 Z0).</source>
       <translation>Поворотні осі рухаються між операціями, а властивість Pre-Rotary Move верстата '{machine}' порожня. Розмістіть там переміщення, що виводять інструмент від деталі, у координатах верстата (наприклад, G53 G0 Z0).</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3331"/>
+      <location filename="../../../Path/Post/Processor.py" line="3349"/>
       <source>Work plane &apos;{plane}&apos; names &apos;{fixture}&apos; as its fixture, which is not a work coordinate system (G54-G59.9, or G54.1 Pn). The post will refuse it.</source>
       <translation>Робоча площина '{plane}' називає своєю системою координат '{fixture}', яка не є робочою системою координат (G54-G59.9 або G54.1 Pn). Постпроцесор її не прийме.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3343"/>
+      <location filename="../../../Path/Post/Processor.py" line="3361"/>
       <source>Work plane &apos;{plane}&apos; selects {fixture}, which is also one of the fixtures the Job repeats its program for. Inside each repetition the plane&apos;s selection wins.</source>
       <translation>Робоча площина '{plane}' вибирає {fixture}, яка також є однією з робочих систем координат, для яких завдання повторює програму. Усередині кожного повторення діє вибір площини.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3488"/>
+      <location filename="../../../Path/Post/Processor.py" line="3506"/>
       <source> (in the Custom op, uncheck Post Process Output, or put &apos;!&apos; in front of specific command)</source>
       <translation> (в операції 'Власний' зніміть позначку 'Постобробка виводу' або поставте '!' перед конкретною командою)</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3833"/>
+      <location filename="../../../Path/Post/Processor.py" line="3851"/>
       <source>S parameter is required for a tapping operation</source>
       <translation>Для операції нарізання різьби потрібен параметр S</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="3841"/>
+      <location filename="../../../Path/Post/Processor.py" line="3859"/>
       <source>S parameter must be &gt; 0 for a tapping operation</source>
       <translation>Для операції нарізання різьби параметр S має бути &gt; 0</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/Processor.py" line="4026"/>
+      <location filename="../../../Path/Post/Processor.py" line="4044"/>
       <source>{op} is on a tilted work plane. Legacy post-processor &apos;{post}&apos; cannot position a rotary machine; select a post-processor of the current kind.</source>
       <translation>{op} лежить на нахиленій робочій площині. Застарілий постпроцесор '{post}' не вміє позиціювати поворотний верстат; виберіть постпроцесор поточного типу.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="180"/>
-      <location filename="../../../Path/Post/scripts/dynapath_post.py" line="156"/>
-      <source>Program Name</source>
-      <translation>Назва програми</translation>
+      <location filename="../../../Path/Post/Utils.py" line="221"/>
+      <source>CAM Export Gcode</source>
+      <translation>Експорт G-коду CAM</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="187"/>
-      <source>Name written in the BEGIN PGM and END PGM blocks. Leave empty to derive it from the job label. Characters other than letters, digits and underscore are replaced.</source>
-      <translation>Назва, що записується в блоки BEGIN PGM і END PGM. Залиште порожнім, щоб утворити її з мітки завдання. Символи, крім літер, цифр і підкреслення, замінюються.</translation>
+      <location filename="../../../Path/Post/Utils.py" line="231"/>
+      <source>Save With Changes</source>
+      <translation>Зберегти зі змінами</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="193"/>
-      <source>Tool Axis</source>
-      <translation>Вісь інструмента</translation>
+      <location filename="../../../Path/Post/Utils.py" line="238"/>
+      <location filename="../../../Path/Post/Utils.py" line="241"/>
+      <source>Save Without Changes</source>
+      <translation>Зберегти без змін</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="200"/>
-      <source>Spindle axis written in TOOL CALL and BLK FORM. Arcs are always output in the XY plane.</source>
-      <translation>Вісь шпинделя, що записується в TOOL CALL і BLK FORM. Дуги завжди виводяться в площині XY.</translation>
+      <location filename="../../../Path/Post/Utils.py" line="239"/>
+      <source>Abort</source>
+      <translation>Перервати</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="206"/>
-      <source>Rapid Feed Rate (0 = FMAX)</source>
-      <translation>Прискорена подача (0 = FMAX)</translation>
+      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="81"/>
+      <source>Use Alternative Tool Change</source>
+      <translation>Використовувати альтернативну зміну інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="215"/>
-      <source>Feed rate in mm/min written on rapid blocks instead of FMAX. Older controls do not accept FMAX. 0 writes FMAX.</source>
-      <translation>Подача в мм/хв, що записується в блоках прискореного переміщення замість FMAX. Старіші ЧПК не приймають FMAX. 0 — записувати FMAX.</translation>
+      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="83"/>
+      <source>Use M0 instead of M6 for tool changes</source>
+      <translation>Використовувати M0 замість M6 для зміни інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="221"/>
-      <source>Drill Cycle Format</source>
-      <translation>Формат циклів свердління</translation>
+      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="90"/>
+      <source>Estlcam post processor</source>
+      <translation>Постпроцесор Estlcam</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="230"/>
-      <source>q_parameter: CYCL DEF 200/202/203/207 with Q parameters (TNC 4xx and newer). legacy: CYCL DEF 1.x PECKING and 17.x RIGID TAPPING for controls without Q-parameter cycles.</source>
-      <translation>q_parameter: CYCL DEF 200/202/203/207 з Q-параметрами (TNC 4xx і новіші). legacy: CYCL DEF 1.x PECKING і 17.x RIGID TAPPING для ЧПК без циклів з Q-параметрами.</translation>
+      <location filename="../../../Path/Post/scripts/marlin_post.py" line="85"/>
+      <source>Marlin post processor</source>
+      <translation>Постпроцесор Marlin</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="236"/>
-      <source>Drill Cycle Set-Up Clearance</source>
-      <translation>Безпечна відстань циклу свердління</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="246"/>
-      <source>Set-up clearance (Q200) in mm. The cycle&apos;s surface coordinate is placed this far below the operation&apos;s retract height so that feed motion starts at the retract height, as in the G-code cycle.</source>
-      <translation>Безпечна відстань (Q200) у мм. Координата поверхні циклу розміщується на цю відстань нижче висоти відведення операції, щоб робоча подача починалася з висоти відведення, як у циклі G-коду.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="252"/>
-      <source>Chip Breaking Retract</source>
-      <translation>Відведення для ламання стружки</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="261"/>
-      <source>Retraction distance (Q256) in mm used for G73 chip breaking in CYCL DEF 203.</source>
-      <translation>Відстань відведення (Q256) у мм для ламання стружки G73 у CYCL DEF 203.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="267"/>
-      <source>Fixture Output</source>
-      <translation>Вивід робочих систем координат</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="275"/>
-      <source>preset: CYCL DEF 247 PRESETTING selects a preset table entry. datum: CYCL DEF 7 DATUM SHIFT selects a datum table entry. none: fixture commands are not output.</source>
-      <translation>preset: CYCL DEF 247 PRESETTING вибирає запис таблиці предустановок. datum: CYCL DEF 7 DATUM SHIFT вибирає запис таблиці нулів. none: команди робочих систем координат не виводяться.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="281"/>
-      <source>Fixture Number for G54</source>
-      <translation>Номер для G54</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="288"/>
-      <source>Preset or datum number selected for G54. G55 selects the next one, and so on.</source>
-      <translation>Номер предустановки або нуля, що вибирається для G54. G55 вибирає наступний і так далі.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="294"/>
-      <source>Output BLK FORM</source>
-      <translation>Виводити BLK FORM</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="300"/>
-      <source>Write the stock bounding box as BLK FORM 0.1 / 0.2 blocks after BEGIN PGM for graphic simulation on the control.</source>
-      <translation>Записувати габаритний прямокутник заготовки блоками BLK FORM 0.1 / 0.2 після BEGIN PGM для графічної симуляції на ЧПК.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="311"/>
-      <source>Heidenhain Klartext post processor</source>
-      <translation>Постпроцесор Heidenhain Klartext</translation>
+      <location filename="../../../Path/Post/scripts/centroid_post.py" line="87"/>
+      <source>Centroid post processor</source>
+      <translation>Постпроцесор Centroid</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/mach3_mach4_post.py" line="59"/>
@@ -10779,168 +10586,14 @@ This will not delete the toolbits contained within it.</source>
       <translation>Постпроцесор Mach3_Mach4</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="105"/>
-      <source>Pierce Delay</source>
-      <translation>Затримка проколювання</translation>
+      <location filename="../../../Path/Post/scripts/masso_g3_post.py" line="61"/>
+      <source>Masso G3 post processor</source>
+      <translation>Постпроцесор Masso G3</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="112"/>
-      <source>Pierce delay in milliseconds to wait after torch ignites (M3) before starting movement</source>
-      <translation>Затримка проколювання в мілісекундах після запалювання різака (M3) перед початком руху</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="118"/>
-      <source>Cooling Delay</source>
-      <translation>Затримка охолодження</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="125"/>
-      <source>Cooling delay in milliseconds to wait after torch extinguishes (M5) before movement</source>
-      <translation>Затримка охолодження в мілісекундах після згасання різака (M5) перед рухом</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="131"/>
-      <source>Marking Delay</source>
-      <translation>Затримка маркування</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="138"/>
-      <source>Marking delay in milliseconds to wait after torch ignites (M3) when making a mark</source>
-      <translation>Затримка маркування в мілісекундах після запалювання різака (M3) під час нанесення мітки</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="143"/>
-      <source>Control Method For Cutter</source>
-      <translation>Спосіб керування різаком</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="151"/>
-      <source>Z_Control: Torch ignites (M3) on Z- movement and extinguishes (M5) on Z+ movement.
-G0_Control: Torch ignites (M3) on change from G0 to G1 and extinguishes (M5) on G1 to G0.
-Spindle_Control: Any M3/M5 commands are output as-is.</source>
-      <translation>Z_Control: різак запалюється (M3) при русі Z- і згасає (M5) при русі Z+.
-G0_Control: різак запалюється (M3) при переході з G0 на G1 і згасає (M5) при переході з G1 на G0.
-Spindle_Control: усі команди M3/M5 виводяться без змін.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="157"/>
-      <source>Force Rapid Feeds</source>
-      <translation>Примусові прискорені подачі</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="163"/>
-      <source>Force rapid-feed speeds for all feed specified commands. Useful for dry runs to verify paths without cutting.</source>
-      <translation>Примусово використовувати швидкості прискорених переміщень для всіх команд із заданою подачею. Корисно для холостих прогонів, щоб перевірити траєкторії без різання.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="169"/>
-      <source>Mark Entry Points Only</source>
-      <translation>Позначати лише точки входу</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="175"/>
-      <source>Mark first entry points only (for drilling prep). Skips cutting moves and only marks where the torch would pierce.</source>
-      <translation>Позначати лише перші точки входу (для підготовки до свердління). Пропускає робочі переміщення й лише позначає місця, де різак пробиватиме матеріал.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="180"/>
-      <source>Strip Z Parameters</source>
-      <translation>Вилучати параметри Z</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="184"/>
-      <source>Skips Z parameters from output should the machine not support them</source>
-      <translation>Пропускає параметри Z у виводі, якщо верстат їх не підтримує</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="189"/>
-      <source>Strip F Parameters</source>
-      <translation>Вилучати параметри F</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="193"/>
-      <source>Skips F parameters from output should the machine not support them</source>
-      <translation>Пропускає параметри F у виводі, якщо верстат їх не підтримує</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="200"/>
-      <source>Generic Sheet Cutting post processor</source>
-      <translation>Загальний постпроцесор для листового різання</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="170"/>
-      <source>Automatic Tool Changer</source>
-      <translation>Автоматична зміна інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="176"/>
-      <source>Enable if machine has automatic tool changer. If disabled, tool changes will pause for manual intervention.</source>
-      <translation>Увімкніть, якщо верстат має автоматичну зміну інструмента. Якщо вимкнено, зміна інструмента призупиняє роботу для ручного втручання.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="182"/>
-      <source>Automatic Spindle Control</source>
-      <translation>Автоматичне керування шпинделем</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="188"/>
-      <source>Enable if machine has automatic spindle speed control. If disabled, spindle commands will prompt for manual adjustment.</source>
-      <translation>Увімкніть, якщо верстат має автоматичне керування частотою обертання шпинделя. Якщо вимкнено, команди шпинделя запитуватимуть ручне налаштування.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="195"/>
-      <source>OpenSBP post processor for ShopBot controllers</source>
-      <translation>Постпроцесор OpenSBP для контролерів ShopBot</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="108"/>
-      <source>G-code inserted before the rotary axes move, and before a tilted work plane is aligned to with G53.1. Put the moves that bring the tool clear of the part here, in machine coordinates: G53 G0 Z0 lifts the tool tip to machine Z zero; on the kinematics of LinuxCNC pull request #4374, G53.5 G0 Z0 parks the Z slide whatever the head is doing. Left empty, nothing clears the part before the table turns, and the sanity check says so.</source>
-      <translation>G-код, що вставляється перед рухом поворотних осей і перед вирівнюванням за нахиленою робочою площиною командою G53.1. Розмістіть тут переміщення, що виводять інструмент від деталі, у координатах верстата: G53 G0 Z0 піднімає вершину інструмента до нуля Z верстата; з кінематикою з pull request LinuxCNC #4374 G53.5 G0 Z0 паркує повзун Z незалежно від положення головки. Якщо порожньо, перед поворотом столу ніщо не відводить інструмент від деталі, про що повідомляє перевірка завдання.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="117"/>
-      <source>The line that points the tool along a declared plane&apos;s normal. Empty is G53.1, which moves the rotaries alone and lets the tool tip swing: G53.1 P1 or P2 names which of the two poses, Q1 lets the table take part. G53.6 keeps the tool center point where it is instead.</source>
-      <translation>Рядок, що спрямовує інструмент уздовж нормалі оголошеної площини. Порожньо — G53.1, що рухає лише поворотні осі й дає вершині інструмента відхилятися: G53.1 P1 або P2 вибирає одну з двох поз, Q1 дозволяє брати участь столу. G53.6 натомість утримує центральну точку інструмента на місці.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="127"/>
-      <source>Path Blending Mode</source>
-      <translation>Режим згладжування траєкторії</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="134"/>
-      <source>Path blending mode: EXACT_PATH (G61) stops at each point, EXACT_STOP (G61.1) stops at path ends, BLEND (G64) allows smooth motion</source>
-      <translation>Режим згладжування траєкторії: EXACT_PATH (G61) зупиняється в кожній точці, EXACT_STOP (G61.1) зупиняється на кінцях траєкторії, BLEND (G64) дає плавний рух</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="140"/>
-      <source>Blend Tolerance</source>
-      <translation>Допуск згладжування</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="149"/>
-      <source>Tolerance for BLEND mode (P value): 0 = no tolerance (G64), &gt;0 = tolerance (G64 P-), in current units</source>
-      <translation>Допуск для режиму BLEND (значення P): 0 = без допуску (G64), &gt;0 = допуск (G64 P-), у поточних одиницях</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="155"/>
-      <source>Tilted work plane: kinematics select</source>
-      <translation>Нахилена робоча площина: вибір кінематики</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="163"/>
-      <source>A line emitted after the preamble when the job has an operation on a tilted work plane. G53.1 needs a kinematics type whose frames describe the machine; on a switchable module that starts in identity kinematics this is where G12.1 P1 goes.</source>
-      <translation>Рядок, що виводиться після преамбули, коли завдання має операцію на нахиленій робочій площині. G53.1 потребує типу кінематики, системи координат якого описують верстат; на перемикному модулі, що запускається з тотожною кінематикою, сюди ставиться G12.1 P1.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="170"/>
-      <source>LinuxCNC post processor</source>
-      <translation>Постпроцесор LinuxCNC</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/scripts/marlin_post.py" line="85"/>
-      <source>Marlin post processor</source>
-      <translation>Постпроцесор Marlin</translation>
+      <location filename="../../../Path/Post/scripts/grbl_post.py" line="64"/>
+      <source>Grbl post processor</source>
+      <translation>Постпроцесор Grbl</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/fanuc_post.py" line="138"/>
@@ -11053,9 +10706,49 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <translation>'{op}' нарізає різьбу командою {cmd}, але не задає частоту обертання шпинделя; для жорсткого нарізання (M29) вона потрібна</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/smoothie_post.py" line="64"/>
-      <source>Refactored SmoothieBoard post processor</source>
-      <translation>Оновлений постпроцесор SmoothieBoard</translation>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="108"/>
+      <source>G-code inserted before the rotary axes move, and before a tilted work plane is aligned to with G53.1. Put the moves that bring the tool clear of the part here, in machine coordinates: G53 G0 Z0 lifts the tool tip to machine Z zero; on the kinematics of LinuxCNC pull request #4374, G53.5 G0 Z0 parks the Z slide whatever the head is doing. Left empty, nothing clears the part before the table turns, and the sanity check says so.</source>
+      <translation>G-код, що вставляється перед рухом поворотних осей і перед вирівнюванням за нахиленою робочою площиною командою G53.1. Розмістіть тут переміщення, що виводять інструмент від деталі, у координатах верстата: G53 G0 Z0 піднімає вершину інструмента до нуля Z верстата; з кінематикою з pull request LinuxCNC #4374 G53.5 G0 Z0 паркує повзун Z незалежно від положення головки. Якщо порожньо, перед поворотом столу ніщо не відводить інструмент від деталі, про що повідомляє перевірка завдання.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="117"/>
+      <source>The line that points the tool along a declared plane&apos;s normal. Empty is G53.1, which moves the rotaries alone and lets the tool tip swing: G53.1 P1 or P2 names which of the two poses, Q1 lets the table take part. G53.6 keeps the tool center point where it is instead.</source>
+      <translation>Рядок, що спрямовує інструмент уздовж нормалі оголошеної площини. Порожньо — G53.1, що рухає лише поворотні осі й дає вершині інструмента відхилятися: G53.1 P1 або P2 вибирає одну з двох поз, Q1 дозволяє брати участь столу. G53.6 натомість утримує центральну точку інструмента на місці.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="127"/>
+      <source>Path Blending Mode</source>
+      <translation>Режим згладжування траєкторії</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="134"/>
+      <source>Path blending mode: EXACT_PATH (G61) stops at each point, EXACT_STOP (G61.1) stops at path ends, BLEND (G64) allows smooth motion</source>
+      <translation>Режим згладжування траєкторії: EXACT_PATH (G61) зупиняється в кожній точці, EXACT_STOP (G61.1) зупиняється на кінцях траєкторії, BLEND (G64) дає плавний рух</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="140"/>
+      <source>Blend Tolerance</source>
+      <translation>Допуск згладжування</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="149"/>
+      <source>Tolerance for BLEND mode (P value): 0 = no tolerance (G64), &gt;0 = tolerance (G64 P-), in current units</source>
+      <translation>Допуск для режиму BLEND (значення P): 0 = без допуску (G64), &gt;0 = допуск (G64 P-), у поточних одиницях</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="155"/>
+      <source>Tilted work plane: kinematics select</source>
+      <translation>Нахилена робоча площина: вибір кінематики</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="163"/>
+      <source>A line emitted after the preamble when the job has an operation on a tilted work plane. G53.1 needs a kinematics type whose frames describe the machine; on a switchable module that starts in identity kinematics this is where G12.1 P1 goes.</source>
+      <translation>Рядок, що виводиться після преамбули, коли завдання має операцію на нахиленій робочій площині. G53.1 потребує типу кінематики, системи координат якого описують верстат; на перемикному модулі, що запускається з тотожною кінематикою, сюди ставиться G12.1 P1.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/linuxcnc_post.py" line="170"/>
+      <source>LinuxCNC post processor</source>
+      <translation>Постпроцесор LinuxCNC</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/test_post.py" line="57"/>
@@ -11063,34 +10756,214 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <translation>Тестовий постпроцесор</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/masso_g3_post.py" line="61"/>
-      <source>Masso G3 post processor</source>
-      <translation>Постпроцесор Masso G3</translation>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="170"/>
+      <source>Automatic Tool Changer</source>
+      <translation>Автоматична зміна інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="81"/>
-      <source>Use Alternative Tool Change</source>
-      <translation>Використовувати альтернативну зміну інструмента</translation>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="176"/>
+      <source>Enable if machine has automatic tool changer. If disabled, tool changes will pause for manual intervention.</source>
+      <translation>Увімкніть, якщо верстат має автоматичну зміну інструмента. Якщо вимкнено, зміна інструмента призупиняє роботу для ручного втручання.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="83"/>
-      <source>Use M0 instead of M6 for tool changes</source>
-      <translation>Використовувати M0 замість M6 для зміни інструмента</translation>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="182"/>
+      <source>Automatic Spindle Control</source>
+      <translation>Автоматичне керування шпинделем</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/estlcam_post.py" line="90"/>
-      <source>Estlcam post processor</source>
-      <translation>Постпроцесор Estlcam</translation>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="188"/>
+      <source>Enable if machine has automatic spindle speed control. If disabled, spindle commands will prompt for manual adjustment.</source>
+      <translation>Увімкніть, якщо верстат має автоматичне керування частотою обертання шпинделя. Якщо вимкнено, команди шпинделя запитуватимуть ручне налаштування.</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/centroid_post.py" line="87"/>
-      <source>Centroid post processor</source>
-      <translation>Постпроцесор Centroid</translation>
+      <location filename="../../../Path/Post/scripts/opensbp_post.py" line="195"/>
+      <source>OpenSBP post processor for ShopBot controllers</source>
+      <translation>Постпроцесор OpenSBP для контролерів ShopBot</translation>
     </message>
     <message>
-      <location filename="../../../Path/Post/scripts/grbl_post.py" line="64"/>
-      <source>Grbl post processor</source>
-      <translation>Постпроцесор Grbl</translation>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="105"/>
+      <source>Pierce Delay</source>
+      <translation>Затримка проколювання</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="112"/>
+      <source>Pierce delay in milliseconds to wait after torch ignites (M3) before starting movement</source>
+      <translation>Затримка проколювання в мілісекундах після запалювання різака (M3) перед початком руху</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="118"/>
+      <source>Cooling Delay</source>
+      <translation>Затримка охолодження</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="125"/>
+      <source>Cooling delay in milliseconds to wait after torch extinguishes (M5) before movement</source>
+      <translation>Затримка охолодження в мілісекундах після згасання різака (M5) перед рухом</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="131"/>
+      <source>Marking Delay</source>
+      <translation>Затримка маркування</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="138"/>
+      <source>Marking delay in milliseconds to wait after torch ignites (M3) when making a mark</source>
+      <translation>Затримка маркування в мілісекундах після запалювання різака (M3) під час нанесення мітки</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="143"/>
+      <source>Control Method For Cutter</source>
+      <translation>Спосіб керування різаком</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="151"/>
+      <source>Z_Control: Torch ignites (M3) on Z- movement and extinguishes (M5) on Z+ movement.
+G0_Control: Torch ignites (M3) on change from G0 to G1 and extinguishes (M5) on G1 to G0.
+Spindle_Control: Any M3/M5 commands are output as-is.</source>
+      <translation>Z_Control: різак запалюється (M3) при русі Z- і згасає (M5) при русі Z+.
+G0_Control: різак запалюється (M3) при переході з G0 на G1 і згасає (M5) при переході з G1 на G0.
+Spindle_Control: усі команди M3/M5 виводяться без змін.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="157"/>
+      <source>Force Rapid Feeds</source>
+      <translation>Примусові прискорені подачі</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="163"/>
+      <source>Force rapid-feed speeds for all feed specified commands. Useful for dry runs to verify paths without cutting.</source>
+      <translation>Примусово використовувати швидкості прискорених переміщень для всіх команд із заданою подачею. Корисно для холостих прогонів, щоб перевірити траєкторії без різання.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="169"/>
+      <source>Mark Entry Points Only</source>
+      <translation>Позначати лише точки входу</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="175"/>
+      <source>Mark first entry points only (for drilling prep). Skips cutting moves and only marks where the torch would pierce.</source>
+      <translation>Позначати лише перші точки входу (для підготовки до свердління). Пропускає робочі переміщення й лише позначає місця, де різак пробиватиме матеріал.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="180"/>
+      <source>Strip Z Parameters</source>
+      <translation>Вилучати параметри Z</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="184"/>
+      <source>Skips Z parameters from output should the machine not support them</source>
+      <translation>Пропускає параметри Z у виводі, якщо верстат їх не підтримує</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="189"/>
+      <source>Strip F Parameters</source>
+      <translation>Вилучати параметри F</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="193"/>
+      <source>Skips F parameters from output should the machine not support them</source>
+      <translation>Пропускає параметри F у виводі, якщо верстат їх не підтримує</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/generic_sheet_cutting_post.py" line="200"/>
+      <source>Generic Sheet Cutting post processor</source>
+      <translation>Загальний постпроцесор для листового різання</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="180"/>
+      <location filename="../../../Path/Post/scripts/dynapath_post.py" line="156"/>
+      <source>Program Name</source>
+      <translation>Назва програми</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="187"/>
+      <source>Name written in the BEGIN PGM and END PGM blocks. Leave empty to derive it from the job label. Characters other than letters, digits and underscore are replaced.</source>
+      <translation>Назва, що записується в блоки BEGIN PGM і END PGM. Залиште порожнім, щоб утворити її з мітки завдання. Символи, крім літер, цифр і підкреслення, замінюються.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="193"/>
+      <source>Tool Axis</source>
+      <translation>Вісь інструмента</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="200"/>
+      <source>Spindle axis written in TOOL CALL and BLK FORM. Arcs are always output in the XY plane.</source>
+      <translation>Вісь шпинделя, що записується в TOOL CALL і BLK FORM. Дуги завжди виводяться в площині XY.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="206"/>
+      <source>Rapid Feed Rate (0 = FMAX)</source>
+      <translation>Прискорена подача (0 = FMAX)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="215"/>
+      <source>Feed rate in mm/min written on rapid blocks instead of FMAX. Older controls do not accept FMAX. 0 writes FMAX.</source>
+      <translation>Подача в мм/хв, що записується в блоках прискореного переміщення замість FMAX. Старіші ЧПК не приймають FMAX. 0 — записувати FMAX.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="221"/>
+      <source>Drill Cycle Format</source>
+      <translation>Формат циклів свердління</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="230"/>
+      <source>q_parameter: CYCL DEF 200/202/203/207 with Q parameters (TNC 4xx and newer). legacy: CYCL DEF 1.x PECKING and 17.x RIGID TAPPING for controls without Q-parameter cycles.</source>
+      <translation>q_parameter: CYCL DEF 200/202/203/207 з Q-параметрами (TNC 4xx і новіші). legacy: CYCL DEF 1.x PECKING і 17.x RIGID TAPPING для ЧПК без циклів з Q-параметрами.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="236"/>
+      <source>Drill Cycle Set-Up Clearance</source>
+      <translation>Безпечна відстань циклу свердління</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="246"/>
+      <source>Set-up clearance (Q200) in mm. The cycle&apos;s surface coordinate is placed this far below the operation&apos;s retract height so that feed motion starts at the retract height, as in the G-code cycle.</source>
+      <translation>Безпечна відстань (Q200) у мм. Координата поверхні циклу розміщується на цю відстань нижче висоти відведення операції, щоб робоча подача починалася з висоти відведення, як у циклі G-коду.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="252"/>
+      <source>Chip Breaking Retract</source>
+      <translation>Відведення для ламання стружки</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="261"/>
+      <source>Retraction distance (Q256) in mm used for G73 chip breaking in CYCL DEF 203.</source>
+      <translation>Відстань відведення (Q256) у мм для ламання стружки G73 у CYCL DEF 203.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="267"/>
+      <source>Fixture Output</source>
+      <translation>Вивід робочих систем координат</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="275"/>
+      <source>preset: CYCL DEF 247 PRESETTING selects a preset table entry. datum: CYCL DEF 7 DATUM SHIFT selects a datum table entry. none: fixture commands are not output.</source>
+      <translation>preset: CYCL DEF 247 PRESETTING вибирає запис таблиці предустановок. datum: CYCL DEF 7 DATUM SHIFT вибирає запис таблиці нулів. none: команди робочих систем координат не виводяться.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="281"/>
+      <source>Fixture Number for G54</source>
+      <translation>Номер для G54</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="288"/>
+      <source>Preset or datum number selected for G54. G55 selects the next one, and so on.</source>
+      <translation>Номер предустановки або нуля, що вибирається для G54. G55 вибирає наступний і так далі.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="294"/>
+      <source>Output BLK FORM</source>
+      <translation>Виводити BLK FORM</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="300"/>
+      <source>Write the stock bounding box as BLK FORM 0.1 / 0.2 blocks after BEGIN PGM for graphic simulation on the control.</source>
+      <translation>Записувати габаритний прямокутник заготовки блоками BLK FORM 0.1 / 0.2 після BEGIN PGM для графічної симуляції на ЧПК.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/scripts/heidenhain_post.py" line="311"/>
+      <source>Heidenhain Klartext post processor</source>
+      <translation>Постпроцесор Heidenhain Klartext</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/scripts/dynapath_post.py" line="139"/>
@@ -11163,6 +11036,16 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <translation>Номери кадрів досягли б N{last}; Dynapath зупиняється на N{max}. Вимкніть номери рядків, зменште крок або розділіть вивід.</translation>
     </message>
     <message>
+      <location filename="../../../Path/Post/scripts/smoothie_post.py" line="64"/>
+      <source>Refactored SmoothieBoard post processor</source>
+      <translation>Оновлений постпроцесор SmoothieBoard</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/models/taperedballnose.py" line="53"/>
+      <source>{diameter} tip, {taper_angle} taper, {flutes}-flute tapered ball nose, {cutting_edge_height} cutting edge</source>
+      <translation>Вістря {diameter}, конусність {taper_angle}, конічна кульова фреза, зубів: {flutes}, різальна кромка {cutting_edge_height}</translation>
+    </message>
+    <message>
       <location filename="../../../Path/Base/Generator/leadinout.py" line="950"/>
       <source>Exceeded length in cutTravelEnd</source>
       <translation>Перевищено довжину в cutTravelEnd</translation>
@@ -11171,26 +11054,6 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <location filename="../../../Path/Base/Generator/leadinout.py" line="971"/>
       <source>Exceeded length in cutTravelBegin</source>
       <translation>Перевищено довжину в cutTravelBegin</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/models/taperedballnose.py" line="53"/>
-      <source>{diameter} tip, {taper_angle} taper, {flutes}-flute tapered ball nose, {cutting_edge_height} cutting edge</source>
-      <translation>Вістря {diameter}, конусність {taper_angle}, конічна кульова фреза, зубів: {flutes}, різальна кромка {cutting_edge_height}</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Adaptive.py" line="380"/>
-      <source>Adaptive operation couldn&apos;t determine the boundary wire. Did you select base geometry?</source>
-      <translation>Адаптивній операції не вдалося визначити полілінію межі. Чи вибрано базову геометрію?</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="106"/>
-      <source>No Job found to add a work plane to.</source>
-      <translation>Не знайдено завдання, до якого можна додати робочу площину.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="137"/>
-      <source>Created %s at the Job origin. Select a planar face before the command to derive one from the model.</source>
-      <translation>Створено %s у початку координат завдання. Щоб отримати площину з моделі, перед командою виберіть пласку грань.</translation>
     </message>
   </context>
   <context>
@@ -11255,49 +11118,49 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <translation>Створює траєкторію гвинтової обробки з елементів базового об'єкта</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="89"/>
+      <location filename="../../../Path/Op/Helix.py" line="91"/>
       <source>CW</source>
       <translation>За годинниковою стрілкою</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="90"/>
+      <location filename="../../../Path/Op/Helix.py" line="92"/>
       <source>CCW</source>
       <translation>Проти годинникової стрілки</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="93"/>
-      <location filename="../../../Path/Op/Helix.py" line="101"/>
+      <location filename="../../../Path/Op/Helix.py" line="95"/>
+      <location filename="../../../Path/Op/Helix.py" line="103"/>
       <source>Inside</source>
       <translation>Всередині</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="94"/>
-      <location filename="../../../Path/Op/Helix.py" line="102"/>
+      <location filename="../../../Path/Op/Helix.py" line="96"/>
+      <location filename="../../../Path/Op/Helix.py" line="104"/>
       <source>Outside</source>
       <translation>Ззовні</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="97"/>
+      <location filename="../../../Path/Op/Helix.py" line="99"/>
       <source>Climb</source>
       <translation>Попутне</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="98"/>
+      <location filename="../../../Path/Op/Helix.py" line="100"/>
       <source>Conventional</source>
       <translation>Зустрічне</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="332"/>
+      <location filename="../../../Path/Op/Helix.py" line="334"/>
       <source>Faces Cone angle is not identical</source>
       <translation>Кути конусів граней не однакові</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="339"/>
+      <location filename="../../../Path/Op/Helix.py" line="341"/>
       <source>Automatic cone angle definition allowed only for cone faces</source>
       <translation>Автоматичне визначення кута конуса дозволено лише для конічних граней</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Helix.py" line="761"/>
+      <location filename="../../../Path/Op/Helix.py" line="777"/>
       <source>Skipped hole at position %s</source>
       <translation>Пропущено отвір у положенні %s</translation>
     </message>
@@ -11365,32 +11228,27 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <translation>Зміщення</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="73"/>
-      <source>Helix</source>
-      <translation>Гвинтова лінія</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="76"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="75"/>
       <source>No clearing</source>
       <translation>Без вибирання</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="79"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="78"/>
       <source>Automatic</source>
       <translation>Автоматичний</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="80"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="79"/>
       <source>Manual</source>
       <translation>Вручну</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="74"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="73"/>
       <source>Line</source>
       <translation>Лінія</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/PocketBase.py" line="75"/>
+      <location filename="../../../Path/Op/PocketBase.py" line="74"/>
       <source>Grid</source>
       <translation>Сітка</translation>
     </message>
@@ -11415,7 +11273,7 @@ Spindle_Control: усі команди M3/M5 виводяться без змі�
       <translation>Розширення</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/PocketBase.py" line="189"/>
+      <location filename="../../../Path/Op/Gui/PocketBase.py" line="239"/>
       <source>Set start point: %s, %s</source>
       <translation>Встановити початкову точку: %s, %s</translation>
     </message>
@@ -12011,12 +11869,12 @@ Allowed selection only from one model:
   <context>
     <name>CAM_MillFace</name>
     <message>
-      <location filename="../../../Path/Op/Gui/MillFace.py" line="74"/>
+      <location filename="../../../Path/Op/Gui/MillFace.py" line="76"/>
       <source>Face</source>
       <translation>Грань</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/MillFace.py" line="75"/>
+      <location filename="../../../Path/Op/Gui/MillFace.py" line="77"/>
       <source>Create a Facing Operation from a model or face</source>
       <translation>Створити операцію торцювання з моделі або грані</translation>
     </message>
@@ -12121,26 +11979,32 @@ Several operations can be used with identical tool controller and coolant mode</
       <translation>Виконує постобробку вибраного завдання</translation>
     </message>
     <message>
+      <location filename="../../../Path/Main/Gui/Job.py" line="1542"/>
+      <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="176"/>
+      <source>(Legacy post-processor)</source>
+      <translation>(Застарілий постпроцесор)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/Processor.py" line="3230"/>
+      <source>&apos;{}&apos; commands spindle speed {} rpm, below the machine minimum of {} rpm</source>
+      <translation>'{}' задає частоту обертання шпинделя {} об/хв, нижчу за мінімум верстата {} об/хв</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/Processor.py" line="3242"/>
+      <source>&apos;{}&apos; commands spindle speed {} rpm, above the machine maximum of {} rpm</source>
+      <translation>'{}' задає частоту обертання шпинделя {} об/хв, вищу за максимум верстата {} об/хв</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Post/Processor.py" line="3266"/>
+      <source>Machine defines {} toolheads; spindle speed was not checked against their limits</source>
+      <translation>Верстат визначає {} головок; частоту обертання шпинделя не перевірено щодо їхніх меж</translation>
+    </message>
+    <message>
       <location filename="../../../Path/Post/Utils.py" line="197"/>
       <source>The %T, %t, %W and %O substitutions name the section of a split output. The job is not splitting its output, so they are ignored.
 </source>
       <translation>Підстановки %T, %t, %W і %O позначають розділ розділеного виводу. Завдання не розділяє вивід, тому їх проігноровано.
 </translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Processor.py" line="3212"/>
-      <source>&apos;{}&apos; commands spindle speed {} rpm, below the machine minimum of {} rpm</source>
-      <translation>'{}' задає частоту обертання шпинделя {} об/хв, нижчу за мінімум верстата {} об/хв</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Processor.py" line="3224"/>
-      <source>&apos;{}&apos; commands spindle speed {} rpm, above the machine maximum of {} rpm</source>
-      <translation>'{}' задає частоту обертання шпинделя {} об/хв, вищу за максимум верстата {} об/хв</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Processor.py" line="3248"/>
-      <source>Machine defines {} toolheads; spindle speed was not checked against their limits</source>
-      <translation>Верстат визначає {} головок; частоту обертання шпинделя не перевірено щодо їхніх меж</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="127"/>
@@ -12157,12 +12021,6 @@ Several operations can be used with identical tool controller and coolant mode</
       <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="169"/>
       <source>Post Processing - Job: {}</source>
       <translation>Постобробка — завдання: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="176"/>
-      <location filename="../../../Path/Main/Gui/Job.py" line="1542"/>
-      <source>(Legacy post-processor)</source>
-      <translation>(Застарілий постпроцесор)</translation>
     </message>
     <message>
       <location filename="../../../Path/Post/Gui/DlgPostProcess.py" line="338"/>
@@ -12395,17 +12253,17 @@ Tool number for {}:</source>
   <context>
     <name>CAM_Profile</name>
     <message>
-      <location filename="../../../Path/Op/Gui/Profile.py" line="186"/>
+      <location filename="../../../Path/Op/Gui/Profile.py" line="212"/>
       <source>Set start point: %s, %s</source>
       <translation>Встановити початкову точку: %s, %s</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Profile.py" line="209"/>
+      <location filename="../../../Path/Op/Gui/Profile.py" line="235"/>
       <source>Profile</source>
       <translation>Профіль</translation>
     </message>
     <message>
-      <location filename="../../../Path/Op/Gui/Profile.py" line="210"/>
+      <location filename="../../../Path/Op/Gui/Profile.py" line="236"/>
       <source>Profile entire model, selected face(s) or selected edge(s)</source>
       <translation>Профілювання всієї моделі, вибраних граней або ребер</translation>
     </message>
@@ -12565,7 +12423,6 @@ Tool number for {}:</source>
     <message>
       <location filename="../../../Path/Base/Gui/PropertyBag.py" line="428"/>
       <source>Property Bag</source>
-      <extracomment>float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=0) float = field(default=None) bool = field(default=False) str = field(default=&quot;G54&quot;) str = field(default=&quot;off&quot;) str = Z|R for G98/G99, for drill cycles float = field(default=None) int = field(default=0) int = field(default=None)</extracomment>
       <translation>Набір властивостей</translation>
     </message>
     <message>
@@ -12678,96 +12535,81 @@ Tool number for {}:</source>
   <context>
     <name>ToolBitShape</name>
     <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="34"/>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="46"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="36"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="36"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="36"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="42"/>
       <location filename="../../../Path/Tool/shape/models/endmill.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="34"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="42"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="46"/>
       <source>Cutting edge height</source>
       <translation>Висота різальної кромки</translation>
     </message>
     <message>
+      <location filename="../../../Path/Tool/shape/models/endmill.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="48"/>
       <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="38"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="46"/>
       <location filename="../../../Path/Tool/shape/models/drill.py" line="36"/>
       <location filename="../../../Path/Tool/shape/models/chamfer.py" line="50"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="40"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="46"/>
-      <location filename="../../../Path/Tool/shape/models/endmill.py" line="40"/>
       <source>Diameter</source>
       <translation>Діаметр</translation>
     </message>
     <message>
+      <location filename="../../../Path/Tool/shape/models/endmill.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="52"/>
       <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="42"/>
+      <location filename="../../../Path/Tool/shape/models/tap.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="50"/>
       <location filename="../../../Path/Tool/shape/models/drill.py" line="40"/>
       <location filename="../../../Path/Tool/shape/models/chamfer.py" line="54"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/tap.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="50"/>
-      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/endmill.py" line="44"/>
       <source>Flutes</source>
       <translation>Кількість зубів</translation>
     </message>
     <message>
+      <location filename="../../../Path/Tool/shape/models/endmill.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="44"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="56"/>
       <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="46"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="54"/>
       <location filename="../../../Path/Tool/shape/models/drill.py" line="44"/>
       <location filename="../../../Path/Tool/shape/models/chamfer.py" line="58"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="44"/>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="54"/>
-      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="48"/>
-      <location filename="../../../Path/Tool/shape/models/endmill.py" line="48"/>
       <source>Overall tool length</source>
       <translation>Загальна довжина інструмента</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="50"/>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="62"/>
-      <location filename="../../../Path/Tool/shape/models/ballend.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/radius.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="60"/>
-      <location filename="../../../Path/Tool/shape/models/tap.py" line="52"/>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="68"/>
-      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="60"/>
-      <location filename="../../../Path/Tool/shape/models/vbit.py" line="56"/>
-      <location filename="../../../Path/Tool/shape/models/reamer.py" line="48"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/radius.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/reamer.py" line="48"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="68"/>
+      <location filename="../../../Path/Tool/shape/models/vbit.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/slittingsaw.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/ballend.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/bullnose.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="50"/>
+      <location filename="../../../Path/Tool/shape/models/tap.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="62"/>
       <source>Shank diameter</source>
       <translation>Діаметр хвостовика</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="54"/>
-      <source>Included Taper angle</source>
-      <translation>Повний кут конуса</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="58"/>
-      <source>Diameter at top of Taper</source>
-      <translation>Діаметр у верхній частині конуса</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="66"/>
-      <source>Tapered Ball Nose</source>
-      <translation>Конічна кульова фреза</translation>
     </message>
     <message>
       <location filename="../../../Path/Tool/shape/models/ballend.py" line="60"/>
@@ -12775,15 +12617,15 @@ Tool number for {}:</source>
       <translation>Кульова фреза</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="42"/>
       <location filename="../../../Path/Tool/shape/models/vbit.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="42"/>
       <source>Cutting edge angle</source>
       <translation>Кут різальної кромки</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="66"/>
       <location filename="../../../Path/Tool/shape/models/radius.py" line="60"/>
       <location filename="../../../Path/Tool/shape/models/vbit.py" line="60"/>
+      <location filename="../../../Path/Tool/shape/models/chamfer.py" line="66"/>
       <source>Tip diameter</source>
       <translation>Діаметр вістря</translation>
     </message>
@@ -12798,14 +12640,19 @@ Tool number for {}:</source>
       <translation>Невідома власна форма</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="36"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="36"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="36"/>
       <source>Crest height</source>
       <translation>Висота гребеня</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="40"/>
+      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="40"/>
+      <source>Cutting diameter</source>
+      <translation>Діаметр різання</translation>
+    </message>
+    <message>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="64"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="40"/>
       <source>Cutting angle</source>
       <translation>Кут різання</translation>
     </message>
@@ -12820,14 +12667,14 @@ Tool number for {}:</source>
       <translation>Зовнішній діаметр</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="60"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="60"/>
       <source>Neck diameter</source>
       <translation>Діаметр шийки</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="64"/>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/dovetail.py" line="64"/>
       <source>Neck length</source>
       <translation>Довжина шийки</translation>
     </message>
@@ -12837,8 +12684,8 @@ Tool number for {}:</source>
       <translation>Ластівчин хвіст</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/drill.py" line="48"/>
       <location filename="../../../Path/Tool/shape/models/tap.py" line="56"/>
+      <location filename="../../../Path/Tool/shape/models/drill.py" line="48"/>
       <source>Tip angle</source>
       <translation>Кут вістря</translation>
     </message>
@@ -12918,11 +12765,6 @@ Tool number for {}:</source>
       <translation>Мітчик</translation>
     </message>
     <message>
-      <location filename="../../../Path/Tool/shape/models/threadmill.py" line="40"/>
-      <source>Cutting diameter</source>
-      <translation>Діаметр різання</translation>
-    </message>
-    <message>
       <location filename="../../../Path/Tool/shape/models/threadmill.py" line="72"/>
       <source>Thread Mill</source>
       <translation>Різьбова фреза</translation>
@@ -12952,12 +12794,27 @@ Tool number for {}:</source>
       <source>Radius Mill</source>
       <translation>Радіусна фреза</translation>
     </message>
+    <message>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="54"/>
+      <source>Included Taper angle</source>
+      <translation>Повний кут конуса</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="58"/>
+      <source>Diameter at top of Taper</source>
+      <translation>Діаметр у верхній частині конуса</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/shape/models/taperedballnose.py" line="66"/>
+      <source>Tapered Ball Nose</source>
+      <translation>Конічна кульова фреза</translation>
+    </message>
   </context>
   <context>
     <name>ToolBitToolBitShapeShapeEndMill</name>
     <message>
-      <location filename="../../../Path/Tool/shape/models/custom.py" line="58"/>
       <location filename="../../../Path/Tool/shape/models/endmill.py" line="52"/>
+      <location filename="../../../Path/Tool/shape/models/custom.py" line="58"/>
       <source>Shank diameter</source>
       <translation>Діаметр хвостовика</translation>
     </message>
@@ -13123,1542 +12980,48 @@ Tool number for {}:</source>
     </message>
   </context>
   <context>
-    <name>CAM_MachineImport</name>
+    <name>CAM_QuickValidate</name>
     <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="106"/>
-      <source>Imported:</source>
-      <translation>Імпортовано:</translation>
+      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="127"/>
+      <source>Quick Validate</source>
+      <translation>Швидка перевірка</translation>
     </message>
     <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="109"/>
-      <source>Assumed (please review):</source>
-      <translation>Припущено (перевірте):</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="112"/>
-      <source>Not imported:</source>
-      <translation>Не імпортовано:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="321"/>
-      <source>Rotary axes wired as a {label} configuration; the probe does not describe rotary mounting. Review roles and chain order.</source>
-      <translation>Поворотні осі з'єднано за конфігурацією {label}; probe не описує монтаж поворотних осей. Перевірте ролі та порядок ланцюга.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="332"/>
-      <source>Rotary axis {letter} assumed to be a table rotary. Review its role.</source>
-      <translation>Поворотну вісь {letter} вважається поворотним столом. Перевірте її роль.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="340"/>
-      <source>Rotary axes {letters} have no default chain wiring; assign roles and parents in the editor.</source>
-      <translation>Поворотні осі {letters} не мають типового з'єднання в ланцюг; призначте ролі та батьківські осі в редакторі.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="388"/>
-      <source>Imported from MTConnect probe</source>
-      <translation>Імпортовано з probe MTConnect</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="410"/>
-      <source>Linear component &apos;{name}&apos; is not a recognized axis.</source>
-      <translation>Лінійний компонент '{name}' не є розпізнаною віссю.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="430"/>
-      <source>Linear axis {letter}{detail}</source>
-      <translation>Лінійна вісь {letter}{detail}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="441"/>
-      <source>Rotary component &apos;{name}&apos; is neither an A/B/C axis nor a spindle.</source>
-      <translation>Поворотний компонент '{name}' не є ні віссю A/B/C, ні шпинделем.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="455"/>
-      <source>Rotary axis {letter}{detail}</source>
-      <translation>Поворотна вісь {letter}{detail}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="485"/>
-      <source>Spindle{detail}</source>
-      <translation>Шпиндель{detail}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="492"/>
-      <source>Additional spindles found; only the first was imported.</source>
-      <translation>Знайдено додаткові шпинделі; імпортовано лише перший.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="499"/>
-      <source>No spindle described by the probe; a default rotary toolhead was added.</source>
-      <translation>Probe не описує шпиндель; додано типову поворотну головку.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="508"/>
-      <source>Axis velocities are not published by this machine; defaults were used.</source>
-      <translation>Цей верстат не публікує швидкості осей; використано типові значення.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/models/mtconnect_import.py" line="512"/>
-      <source>Import assumptions:</source>
-      <translation>Припущення під час імпорту:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="77"/>
-      <source>Only http and https URLs are supported.</source>
-      <translation>Підтримуються лише URL-адреси http і https.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="88"/>
-      <source>Import Machine from MTConnect</source>
-      <translation>Імпорт верстата з MTConnect</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="100"/>
-      <source>Enter the URL of the machine&apos;s MTConnect agent (for example http://machine:5000/probe) or select a saved probe XML file.</source>
-      <translation>Введіть URL агента MTConnect верстата (наприклад, http://machine:5000/probe) або виберіть збережений XML-файл probe.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="110"/>
-      <source>Select a probe XML file</source>
-      <translation>Виберіть XML-файл probe</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="116"/>
-      <source>Import</source>
-      <translation>Імпортувати</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="126"/>
-      <source>Select Probe XML File</source>
-      <translation>Вибрати XML-файл probe</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="128"/>
-      <source>XML files (*.xml);;All files (*)</source>
-      <translation>Файли XML (*.xml);;Усі файли (*)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="145"/>
-      <source>Select Device</source>
-      <translation>Вибрати пристрій</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="146"/>
-      <source>This agent describes several machines:</source>
-      <translation>Цей агент описує кілька верстатів:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="159"/>
-      <source>Import Failed</source>
-      <translation>Помилка імпорту</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="174"/>
-      <source>Machine Imported</source>
-      <translation>Верстат імпортовано</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="178"/>
-      <source>The machine was imported. Review it in the editor.
-
-{summary}</source>
-      <translation>Верстат імпортовано. Перегляньте його в редакторі.
-
-{summary}</translation>
+      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="132"/>
+      <source>Validates the CAM job for common issues without generating a full report</source>
+      <translation>Перевіряє завдання CAM без генерації повного звіту</translation>
     </message>
   </context>
   <context>
-    <name>CAM_MachineEditor</name>
+    <name>CAM_Workplane</name>
     <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="118"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="177"/>
-      <source>Include Blank Lines</source>
-      <translation>Включати порожні рядки</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="80"/>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="121"/>
+      <source>Work Plane</source>
+      <translation>Робоча площина</translation>
     </message>
     <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="119"/>
-      <source>Path Labels</source>
-      <translation>Мітки траєкторій</translation>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="85"/>
+      <source>Create a named work plane on the Job, from a selected planar face or at the Job origin. Operations can share one work plane.</source>
+      <translation>Створює іменовану робочу площину в завданні — з вибраної пласкої грані або в початку координат завдання. Кілька операцій можуть використовувати одну робочу площину.</translation>
     </message>
     <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="120"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="168"/>
-      <source>Include Machine Name</source>
-      <translation>Включати назву верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="121"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="122"/>
-      <source>Output Duplicate Axis Values</source>
-      <translation>Виводити дублікати значень осей</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="123"/>
-      <source>Adaptive Output</source>
-      <translation>Адаптивний вивід</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="124"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="187"/>
-      <source>Axis Precision</source>
-      <translation>Точність осей</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="125"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="188"/>
-      <source>Feed Precision</source>
-      <translation>Точність подачі</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="126"/>
-      <source>Toolhead Decimals</source>
-      <translation>Знаки після коми для головки</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="127"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="175"/>
-      <source>Comment Symbol</source>
-      <translation>Символ коментаря</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="128"/>
-      <source>Modal Output (Suppress Repeats)</source>
-      <translation>Модальний вивід (придушення повторів)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="129"/>
-      <source>Translate Drill Cycles</source>
-      <translation>Перетворювати цикли свердління</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="130"/>
-      <source>Translate Rapid Moves</source>
-      <translation>Перетворювати прискорені переміщення</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="131"/>
-      <source>Split Arcs</source>
-      <translation>Розбивати дуги</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="134"/>
-      <source>XY Before Z After Tool Change</source>
-      <translation>XY перед Z після зміни інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="135"/>
-      <source>Show Editor After Generation</source>
-      <translation>Показувати редактор після генерації</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="136"/>
-      <source>List Tools in Preamble</source>
-      <translation>Перераховувати інструменти в преамбулі</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="137"/>
-      <source>Show Machine Units</source>
-      <translation>Показувати одиниці верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="138"/>
-      <source>Show Operation Labels</source>
-      <translation>Показувати мітки операцій</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="139"/>
-      <source>Output T Before M6</source>
-      <translation>Виводити T перед M6</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="140"/>
-      <source>Chipbreaking Amount (mm)</source>
-      <translation>Величина стружколомання (мм)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="141"/>
-      <source>Toolhead Wait Time (seconds)</source>
-      <translation>Час очікування головки (с)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="142"/>
-      <source>Post Processor</source>
-      <translation>Постпроцесор</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="143"/>
-      <source>Post Processor Arguments</source>
-      <translation>Аргументи постпроцесора</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="144"/>
-      <source>Use Tool Length Offset</source>
-      <translation>Використовувати зміщення довжини інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="147"/>
-      <source>Output Tool Length Offset (G43)</source>
-      <translation>Виводити зміщення довжини інструмента (G43)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="148"/>
-      <source>Enable Remote Posting</source>
-      <translation>Увімкнути дистанційну постобробку</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="151"/>
-      <source>Stop Toolhead for Tool Change</source>
-      <translation>Зупиняти головку при зміні інструмента</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="152"/>
-      <source>Enable Coolant</source>
-      <translation>Увімкнути охолодження</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="155"/>
-      <source>Enable Machine-Specific Commands</source>
-      <translation>Увімкнути команди верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="157"/>
-      <source>Output Units</source>
-      <translation>Одиниці виводу</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="158"/>
-      <source>Header Options</source>
-      <translation>Параметри заголовка</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="159"/>
-      <source>Comment Options</source>
-      <translation>Параметри коментарів</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="160"/>
-      <source>Formatting Options</source>
-      <translation>Параметри форматування</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="161"/>
-      <source>Precision Options</source>
-      <translation>Параметри точності</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="162"/>
-      <source>Duplicate Output Options</source>
-      <translation>Параметри дублювання виводу</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="163"/>
-      <source>Output Header</source>
-      <translation>Заголовок виводу</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="165"/>
-      <source>Include Date</source>
-      <translation>Включати дату</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="166"/>
-      <source>Include Description</source>
-      <translation>Включати опис</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="167"/>
-      <source>Include Document Name</source>
-      <translation>Включати назву документа</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="169"/>
-      <source>Include Project File</source>
-      <translation>Включати файл проєкту</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="170"/>
-      <source>Include Units</source>
-      <translation>Включати одиниці</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="171"/>
-      <source>Include Tool List</source>
-      <translation>Включати список інструментів</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="172"/>
-      <source>Include Fixture List</source>
-      <translation>Включати список робочих систем координат</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="174"/>
-      <source>Enable Comments</source>
-      <translation>Увімкнути коментарі</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="176"/>
-      <source>Include Operation Labels</source>
-      <translation>Включати мітки операцій</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="178"/>
-      <source>Output bCNC Comments</source>
-      <translation>Виводити коментарі bCNC</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="180"/>
-      <source>Line Numbers</source>
-      <translation>Номери рядків</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="181"/>
-      <source>Line Number Start</source>
-      <translation>Початковий номер рядка</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="182"/>
-      <source>Line Number Prefix</source>
-      <translation>Префікс номера рядка</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="183"/>
-      <source>Line Increment</source>
-      <translation>Крок нумерації</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="184"/>
-      <source>Command Space</source>
-      <translation>Пробіл між командами</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="185"/>
-      <source>End of Line Chars</source>
-      <translation>Символи кінця рядка</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="189"/>
-      <source>Toolhead Precision</source>
-      <translation>Точність головки</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="191"/>
-      <source>Duplicate Commands</source>
-      <translation>Дублювати команди</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="192"/>
-      <source>Duplicate Parameters</source>
-      <translation>Дублювати параметри</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="194"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1144"/>
-      <source>Kinematics</source>
-      <translation>Кінематика</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="195"/>
-      <source>Base Frame</source>
-      <translation>Базова система координат</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="196"/>
-      <source>Origin</source>
-      <translation>Початок координат</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="197"/>
-      <source>Orientation Quaternion</source>
-      <translation>Кватерніон орієнтації</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="198"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1153"/>
-      <source>TCP Supported</source>
-      <translation>Підтримка TCP</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="199"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1184"/>
-      <source>Rotation Strategy</source>
-      <translation>Стратегія повороту</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="200"/>
-      <source>Kinematics Notes</source>
-      <translation>Примітки до кінематики</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="202"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1338"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1487"/>
-      <source>Role</source>
-      <translation>Роль</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="203"/>
-      <source>Parent Axis</source>
-      <translation>Батьківська вісь</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="204"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1362"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1511"/>
-      <source>Sequence</source>
-      <translation>Послідовність</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="205"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1449"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1591"/>
-      <source>Joint Origin</source>
-      <translation>Початок шарніра</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="206"/>
-      <source>Joint Axis</source>
-      <translation>Вісь шарніра</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="207"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1604"/>
-      <source>Solution Preference</source>
-      <translation>Перевага розв'язку</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="208"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1612"/>
-      <source>Allow Flip</source>
-      <translation>Дозволити перевертання</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="209"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1634"/>
-      <source>Wrap Strategy</source>
-      <translation>Стратегія згортання</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="376"/>
-      <source>Custom Machine</source>
-      <translation>Власний верстат</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="381"/>
-      <source>2-Axis Lathe (X, Z)</source>
-      <translation>2-осьовий токарний (X, Z)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="386"/>
-      <source>3-Axis Mill (XYZ)</source>
-      <translation>3-осьовий фрезерний (XYZ)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="391"/>
-      <source>4-Axis Mill (XYZ + A)</source>
-      <translation>4-осьовий фрезерний (XYZ + A)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="396"/>
-      <source>4-Axis Mill (XYZ + B)</source>
-      <translation>4-осьовий фрезерний (XYZ + B)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="401"/>
-      <source>5-Axis Mill (XYZ + A, C)</source>
-      <translation>5-осьовий фрезерний (XYZ + A, C)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="406"/>
-      <source>5-Axis Mill (XYZ + B, C)</source>
-      <translation>5-осьовий фрезерний (XYZ + B, C)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="447"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="662"/>
-      <source>Machine Editor</source>
-      <translation>Редактор верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="463"/>
-      <source>Machine</source>
-      <translation>Верстат</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="468"/>
-      <source>Toolheads</source>
-      <translation>Головки</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="473"/>
-      <source>Postprocessor</source>
-      <translation>Постпроцесор</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="478"/>
-      <source>Options</source>
-      <translation>Параметри</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="505"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2428"/>
-      <source>Edit as Text</source>
-      <translation>Редагувати як текст</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="509"/>
-      <source>Validate</source>
-      <translation>Перевірити</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="516"/>
-      <source>Check this machine for problems that would stop it loading or would silently drop settings</source>
-      <translation>Перевірити цей верстат на проблеми, через які він не завантажиться або непомітно втратить налаштування</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="526"/>
-      <source>Save</source>
-      <translation>Зберегти</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="529"/>
-      <source>Close</source>
-      <translation>Закрити</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="831"/>
-      <source>Remove Toolhead</source>
-      <translation>Видалити головку</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="832"/>
-      <source>Remove toolhead? This action cannot be undone.</source>
-      <translation>Видалити головку? Цю дію не можна скасувати.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="891"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1025"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1108"/>
-      <source>Custom</source>
-      <translation>Власний</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="939"/>
-      <source>Community-maintained machine definitions are available in the Machines addon.</source>
-      <translation>Визначення верстатів, які підтримує спільнота, доступні в доповненні Machines.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="940"/>
-      <source>Open Addon Manager</source>
-      <translation>Відкрити менеджер доповнень</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="941"/>
-      <source>Do not show again</source>
-      <translation>Більше не показувати</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1033"/>
-      <source>Template Load Error</source>
-      <translation>Помилка завантаження шаблону</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1034"/>
-      <source>Could not load template</source>
-      <translation>Не вдалося завантажити шаблон</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1091"/>
+      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="122"/>
       <source>Name</source>
       <translation>Назва</translation>
     </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1114"/>
-      <source>Load settings from an existing machine template</source>
-      <translation>Завантажити налаштування з наявного шаблону верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1115"/>
-      <source>Template</source>
-      <translation>Шаблон</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1125"/>
-      <source>Manufacturer</source>
-      <translation>Виробник</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1129"/>
-      <source>Description</source>
-      <translation>Опис</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1132"/>
-      <source>Metric</source>
-      <translation>Метричні</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1133"/>
-      <source>Imperial</source>
-      <translation>Дюймові</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1135"/>
-      <source>Units</source>
-      <translation>Одиниці</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1141"/>
-      <source>Type</source>
-      <translation>Тип</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1159"/>
-      <source>Not declared</source>
-      <translation>Не оголошено</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1160"/>
-      <source>Dynamic work offset (DWO)</source>
-      <translation>Динамічне робоче зміщення (DWO)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1161"/>
-      <source>Tilted work plane (TWP)</source>
-      <translation>Нахилена робоча площина (TWP)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1164"/>
-      <source>Post transform (not available yet)</source>
-      <translation>Пост-перетворення (ще недоступне)</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1177"/>
-      <source>How the control runs an operation on a tilted work plane. DWO: the post commands the rotary axes and the control applies its pivot offsets. TWP: the post declares the plane and the control positions the rotary axes. A machine with rotary axes and no strategy cannot post such an operation. The command the plane is declared with comes from the post-processor.</source>
-      <translation>Як ЧПК виконує операцію на нахиленій робочій площині. DWO: постпроцесор задає поворотні осі, а ЧПК застосовує зміщення точки повороту. TWP: постпроцесор оголошує площину, а ЧПК позиціює поворотні осі. Верстат з поворотними осями без стратегії не може виконати постобробку такої операції. Команда оголошення площини визначається постпроцесором.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1193"/>
-      <source>Notes</source>
-      <translation>Примітки</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1199"/>
-      <source>Axes</source>
-      <translation>Осі</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1227"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1228"/>
-      <source>Add Toolhead</source>
-      <translation>Додати головку</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1353"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1502"/>
-      <source>Parent</source>
-      <translation>Батьківський</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1380"/>
-      <source>Direction</source>
-      <translation>Напрямок</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1391"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1519"/>
-      <source>Min Limit</source>
-      <translation>Мін. межа</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1401"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1526"/>
-      <source>Max Limit</source>
-      <translation>Макс. межа</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1411"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1535"/>
-      <source>Max Velocity</source>
-      <translation>Макс. швидкість</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1553"/>
-      <source>Rotation Axis</source>
-      <translation>Вісь обертання</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1622"/>
-      <source>Prefer Positive</source>
-      <translation>Перевага додатних</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2002"/>
-      <source>Postprocessor Selection</source>
-      <translation>Вибір постпроцесора</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2012"/>
-      <source>Select the postprocessor file for this machine</source>
-      <translation>Виберіть файл постпроцесора для цього верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2038"/>
-      <source>Post Processor:</source>
-      <translation>Постпроцесор:</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2044"/>
-      <source>Postprocessor Configuration</source>
-      <translation>Конфігурація постпроцесора</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2433"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2595"/>
-      <source>JSON Error</source>
-      <translation>Помилка JSON</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2434"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2491"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2596"/>
-      <source>Invalid JSON: {}</source>
-      <translation>Некоректний JSON: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2439"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2458"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2602"/>
-      <source>Error</source>
-      <translation>Помилка</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2440"/>
-      <source>Failed to parse data: {}</source>
-      <translation>Не вдалося розібрати дані: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2453"/>
-      <source>Edit as Form</source>
-      <translation>Редагувати як форму</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2459"/>
-      <source>Failed to generate JSON: {}</source>
-      <translation>Не вдалося згенерувати JSON: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2490"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2497"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2513"/>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2529"/>
-      <source>Validation</source>
-      <translation>Перевірка</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2498"/>
-      <source>This machine does not load: {}</source>
-      <translation>Цей верстат не завантажується: {}</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2514"/>
-      <source>No problems found.</source>
-      <translation>Проблем не знайдено.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2520"/>
-      <source>{} error(s) and {} warning(s) found.</source>
-      <translation>Знайдено помилок: {}, попереджень: {}.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2525"/>
-      <source>{} warning(s) found.</source>
-      <translation>Знайдено попереджень: {}.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2569"/>
-      <source>Duplicate Machine Name</source>
-      <translation>Дублікат назви верстата</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2573"/>
-      <source>A machine with the name &apos;{}&apos; already exists. Please choose a different name.</source>
-      <translation>Верстат з назвою '{}' уже існує. Виберіть іншу назву.</translation>
-    </message>
-    <message>
-      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2603"/>
-      <source>Failed to save: {}</source>
-      <translation>Не вдалося зберегти: {}</translation>
-    </message>
   </context>
   <context>
-    <name>FeedsSpeedsPresetEdit</name>
+    <name>CAM_SimulatorGL</name>
     <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="14"/>
-      <source>Edit preset</source>
-      <translation>Редагувати пресет</translation>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="366"/>
+      <source>CAM Simulator</source>
+      <translation>Симулятор CAM</translation>
     </message>
     <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="22"/>
-      <source>Name:</source>
-      <translation>Назва:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="32"/>
-      <source>Material:</source>
-      <translation>Матеріал:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="41"/>
-      <source>(none)</source>
-      <translation>(жодного)</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="48"/>
-      <source>Browse…</source>
-      <translation>Огляд…</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="55"/>
-      <source>Generic (any material)</source>
-      <translation>Загальний (будь-який матеріал)</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="64"/>
-      <source>Op type:</source>
-      <translation>Тип операції:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="74"/>
-      <source>Surface speed:</source>
-      <translation>Швидкість різання:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="91"/>
-      <source>Chipload (per tooth):</source>
-      <translation>Подача на зуб:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="111"/>
-      <source>Vert feed ratio:</source>
-      <translation>Коефіцієнт вертикальної подачі:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="136"/>
-      <source>Direct feed and speed</source>
-      <translation>Безпосередньо подача й частота обертання</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="142"/>
-      <source>Horiz feed:</source>
-      <translation>Горизонтальна подача:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="162"/>
-      <source>Spindle speed:</source>
-      <translation>Частота обертання шпинделя:</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="185"/>
-      <source>Notes</source>
-      <translation>Примітки</translation>
-    </message>
-    <message>
-      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="201"/>
-      <source>Tool diameter and/or flute count missing — surface speed and chipload won&apos;t auto-sync with direct feed/speed.</source>
-      <translation>Відсутній діаметр інструмента та/або кількість зубів — швидкість різання й подача на зуб не синхронізуватимуться автоматично з безпосередньою подачею/частотою обертання.</translation>
-    </message>
-  </context>
-  <context>
-    <name>DlgPostProcess</name>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="14"/>
-      <source>Post Processing</source>
-      <translation>Постобробка</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="29"/>
-      <source>Post Processing - Job: (unknown)</source>
-      <translation>Постобробка — завдання: (невідоме)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="40"/>
-      <source>Overview</source>
-      <translation>Огляд</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="46"/>
-      <location filename="../panels/DlgPostProcess.ui" line="55"/>
-      <source>Machine</source>
-      <translation>Верстат</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="68"/>
-      <source>Machine configuration (.fcm) to use for post-processing</source>
-      <translation>Конфігурація верстата (.fcm) для постобробки</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="78"/>
-      <source>Fixtures</source>
-      <translation>Робочі системи координат</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="90"/>
-      <source>Check fixtures to include in the G-code output</source>
-      <translation>Позначте робочі системи координат для включення у вивід G-коду</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="100"/>
-      <source>Job Details</source>
-      <translation>Деталі завдання</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="109"/>
-      <source>Author</source>
-      <translation>Автор</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="116"/>
-      <source>Author name written into the G-code header comment</source>
-      <translation>Ім'я автора, що записується в заголовковий коментар G-коду</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="119"/>
-      <location filename="../panels/DlgPostProcess.ui" line="145"/>
-      <source>(optional)</source>
-      <translation>(необов'язково)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="126"/>
-      <source>Comment</source>
-      <translation>Коментар</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="142"/>
-      <source>Arbitrary comment written into the G-code header</source>
-      <translation>Довільний коментар у заголовок G-коду</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="155"/>
-      <location filename="../panels/DlgPostProcess.ui" line="310"/>
-      <source>Options</source>
-      <translation>Параметри</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="161"/>
-      <source>Generate a full sanity/setup report alongside the G-code file</source>
-      <translation>Генерувати повний звіт перевірки/наладки поруч із файлом G-коду</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="164"/>
-      <source>Generate HTML sanity report</source>
-      <translation>Генерувати HTML-звіт перевірки</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="177"/>
-      <source>Post Processor Parameters</source>
-      <translation>Параметри постпроцесора</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="186"/>
-      <source>(No additional parameters for this post processor)</source>
-      <translation>(Немає додаткових параметрів для цього постпроцесора)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="213"/>
-      <source>Operations</source>
-      <translation>Операції</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="219"/>
-      <source>Check operations to include in the G-code output. Uncheck to skip.</source>
-      <translation>Позначте операції для включення у вивід G-коду. Зніміть позначку, щоб пропустити.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="232"/>
-      <source>#</source>
-      <translation type="unfinished">#</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="237"/>
-      <source>Operation</source>
-      <translation>Операція</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="242"/>
-      <source>Tool</source>
-      <translation>Інструмент</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="250"/>
-      <source>Tool Controller</source>
-      <translation>Контролер інструмента</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="255"/>
-      <source>Coolant</source>
-      <translation>Охолодження</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="260"/>
-      <source>Time</source>
-      <translation>Час</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="270"/>
-      <source>Select All</source>
-      <translation>Вибрати все</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="277"/>
-      <source>Select None</source>
-      <translation>Зняти все</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="284"/>
-      <source>Show the workplan (postable items structure)</source>
-      <translation>Показати план обробки (структуру елементів для постобробки)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="287"/>
-      <source>Workplan</source>
-      <translation>План обробки</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="337"/>
-      <source>(Select a machine on the Overview tab to see machine output options)</source>
-      <translation>(Виберіть верстат на вкладці Огляд для перегляду параметрів виводу)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="365"/>
-      <source>Output</source>
-      <translation>Вивід</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="373"/>
-      <source>Output folder</source>
-      <translation>Тека виводу</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="380"/>
-      <source>Folder where G-code files will be saved</source>
-      <translation>Тека, де буде збережено файли G-коду</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="383"/>
-      <source>(resolved when output is generated)</source>
-      <translation>(визначається при генерації виводу)</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="396"/>
-      <source>Browse…</source>
-      <translation>Огляд…</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="407"/>
-      <source>Filename template</source>
-      <translation>Шаблон імені файлу</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="414"/>
-      <source>Filename template. Substitutions: %j=job name, %d=document, %S=sequence number.
-%T=tool number, %t=tool controller, %W=fixture and %O=operation name a section of a split output and are ignored when the output is not split.</source>
-      <translation>Шаблон імені файлу. Підстановки: %j — назва завдання, %d — документ, %S — порядковий номер.
-%T — номер інструмента, %t — контролер інструмента, %W — робоча система координат і %O — назва операції позначають розділ розділеного виводу й ігноруються, коли вивід не розділено.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="418"/>
-      <source>e.g. %j.nc</source>
-      <translation>напр. %j.nc</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="434"/>
-      <source>Regenerate output filenames using this template</source>
-      <translation>Повторно згенерувати імена вихідних файлів за цим шаблоном</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="437"/>
-      <source>Apply</source>
-      <translation>Застосувати</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="449"/>
-      <source>Press &quot;Generate Output&quot; to preview G-code before saving.</source>
-      <translation>Натисніть «Згенерувати вивід» для попереднього перегляду G-коду перед збереженням.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="469"/>
-      <source>Generated output files. Select a file to view or edit its contents.</source>
-      <translation>Згенеровані вихідні файли. Виберіть файл для перегляду або редагування.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="480"/>
-      <source>G-code content for the selected file. You may edit before saving.</source>
-      <translation>Вміст G-коду для вибраного файлу. Можна редагувати перед збереженням.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="493"/>
-      <source>Save to Disk</source>
-      <translation>Зберегти на диск</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="516"/>
-      <source>Warnings</source>
-      <translation>Попередження</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="525"/>
-      <source>No issues found</source>
-      <translation>Проблем не знайдено</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="535"/>
-      <source>Validation issues found in the job. WARNING and CAUTION items should be addressed before machining.</source>
-      <translation>У завданні знайдено проблеми. Пункти WARNING і CAUTION слід усунути перед обробкою.</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="557"/>
-      <source>Severity</source>
-      <translation>Серйозність</translation>
-    </message>
-    <message>
-      <location filename="../panels/DlgPostProcess.ui" line="562"/>
-      <source>Note</source>
-      <translation>Примітка</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_PostSelected</name>
-    <message>
-      <location filename="../../../Path/Post/Command.py" line="356"/>
-      <source>Post Process Selected</source>
-      <translation>Постобробка вибраного</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Post/Command.py" line="360"/>
-      <source>Post Processes the selected operations</source>
-      <translation>Виконує постобробку вибраних операцій</translation>
-    </message>
-  </context>
-  <context>
-    <name>MirrorDressup</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="118"/>
-      <source>No base operation</source>
-      <translation>Немає базової операції</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="125"/>
-      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
-      <translation>Базовий об'єкт '%s' не є похідним від Path::Feature</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="132"/>
-      <source>Base operation &apos;%s&apos; with empty path</source>
-      <translation>Базова операція '%s' з порожньою траєкторією</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_DressupMirror</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="277"/>
-      <source>Mirror</source>
-      <translation>Дзеркальне відображення</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="279"/>
-      <source>Creates mirror of a selected path</source>
-      <translation>Створює дзеркальне відображення вибраної траєкторії</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="308"/>
-      <source>The selected object is not a path</source>
-      <translation>Вибраний об'єкт не є траєкторією</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="312"/>
-      <source>Select a profile object</source>
-      <translation>Виберіть об'єкт профілю</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_DressupPathBoundary2</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="118"/>
-      <source>Boundary model missing</source>
-      <translation>Модель межі відсутня</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="122"/>
-      <source>Boundary has no shape</source>
-      <translation>Межа не має форми</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="126"/>
-      <source>Boundary shape is not a solid</source>
-      <translation>Форма межі не є тілом</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="172"/>
-      <source>No path with such boundary</source>
-      <translation>Немає траєкторії з такою межею</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="281"/>
-      <source>The selected object is not a path</source>
-      <translation>Вибраний об'єкт не є траєкторією</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="286"/>
-      <source>Select a profile object</source>
-      <translation>Виберіть об'єкт профілю</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="305"/>
-      <source>Boundary2</source>
-      <translation>Межа2</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="309"/>
-      <source>Creates a boundary dress-up from a selected toolpath</source>
-      <translation>Створює доопрацювання межі для вибраної траєкторії</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_DressupPlungeMilling</name>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="137"/>
-      <source>No base operation</source>
-      <translation>Немає базової операції</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="146"/>
-      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
-      <translation>Базовий об'єкт '%s' не є похідним від Path::Feature</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="154"/>
-      <source>Base operation &apos;%s&apos; with empty path</source>
-      <translation>Базова операція '%s' з порожньою траєкторією</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="160"/>
-      <source>Negative or zero stepover</source>
-      <translation>Від'ємний або нульовий бічний крок</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="278"/>
-      <source>Plunge Milling</source>
-      <translation>Фрезерування зануренням</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="282"/>
-      <source>Creates plunge milling for a selected path</source>
-      <translation>Створює фрезерування зануренням для вибраної траєкторії</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="312"/>
-      <source>The selected object is not a path</source>
-      <translation>Вибраний об'єкт не є траєкторією</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="317"/>
-      <source>Select a profile object</source>
-      <translation>Виберіть об'єкт профілю</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_FeedsSpeeds</name>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="220"/>
-      <source>e.g. &apos;Aluminum aggressive&apos;</source>
-      <translation>напр., 'Алюміній, інтенсивно'</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="248"/>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="613"/>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="360"/>
-      <source>(any)</source>
-      <translation>(будь-який)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="443"/>
-      <source>(none)</source>
-      <translation>(жодного)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="449"/>
-      <source>Name required</source>
-      <translation>Потрібна назва</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="450"/>
-      <source>Give the preset a name.</source>
-      <translation>Дайте пресету назву.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="457"/>
-      <source>Duplicate preset</source>
-      <translation>Дублікат пресету</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="462"/>
-      <source>This tool already has a preset named &apos;%s&apos; for this material and op type.</source>
-      <translation>Цей інструмент уже має пресет з назвою '%s' для цього матеріалу й типу операції.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="562"/>
-      <source>Name</source>
-      <translation>Назва</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="563"/>
-      <source>Material</source>
-      <translation>Матеріал</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="564"/>
-      <source>Op type</source>
-      <translation>Тип операції</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="565"/>
-      <source>Surface speed</source>
-      <translation>Швидкість різання</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="566"/>
-      <source>Chipload</source>
-      <translation>Подача на зуб</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="567"/>
-      <source>Notes</source>
-      <translation>Примітки</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="579"/>
-      <source>Add preset</source>
-      <translation>Додати пресет</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="583"/>
-      <source>Edit</source>
-      <translation>Редагувати</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="587"/>
-      <source>Copy</source>
-      <translation>Копіювати</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="591"/>
-      <source>Delete</source>
-      <translation>Видалити</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="610"/>
-      <source>(any material)</source>
-      <translation>(будь-який матеріал)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="330"/>
-      <source>Suggest Feeds &amp; Speeds</source>
-      <translation>Запропонувати подачі й швидкості</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="352"/>
-      <source>(no tool)</source>
-      <translation>(немає інструмента)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="353"/>
-      <source>Tool:</source>
-      <translation>Інструмент:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
-      <source>(none — generic resolution)</source>
-      <translation>(немає — загальне визначення)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
-      <source>Material:</source>
-      <translation>Матеріал:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="369"/>
-      <source>Op type:</source>
-      <translation>Тип операції:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="377"/>
-      <source>Apply preset:</source>
-      <translation>Застосувати пресет:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="381"/>
-      <source>Suggestion</source>
-      <translation>Пропозиція</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="385"/>
-      <source>Source:</source>
-      <translation>Джерело:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="391"/>
-      <source>Confidence:</source>
-      <translation>Достовірність:</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="396"/>
-      <source>Current</source>
-      <translation>Поточне</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="398"/>
-      <source>Suggested</source>
-      <translation>Запропоноване</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="400"/>
-      <source>Δ</source>
-      <translation type="unfinished">Δ</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="436"/>
-      <source>Auto (use resolver)</source>
-      <translation>Авто (через розв'язувач)</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="530"/>
-      <source>No suggestion available</source>
-      <translation>Пропозицій немає</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="541"/>
-      <source>No matching preset on this tool. Open the tool from the library to add presets.</source>
-      <translation>Для цього інструмента немає відповідного пресету. Відкрийте інструмент із бібліотеки, щоб додати пресети.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/Gui/MaterialPicker.py" line="58"/>
-      <source>Choose material</source>
-      <translation>Вибрати матеріал</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_ToolBitDock</name>
-    <message>
-      <location filename="../../../Path/Tool/library/ui/cmd.py" line="51"/>
-      <source>Add Toolbit…</source>
-      <translation>Додати інструмент…</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Tool/library/ui/cmd.py" line="52"/>
-      <source>Opens the toolbit selection dialog</source>
-      <translation>Відкриває діалог вибору інструмента</translation>
+      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="368"/>
+      <source>Simulates G-code on stock</source>
+      <translation>Симулює G-код на заготовці</translation>
     </message>
   </context>
   <context>
@@ -14717,6 +13080,69 @@ Tool number for {}:</source>
       <location filename="../../../Path/Op/Gui/RotarySurface.py" line="159"/>
       <source>Continuous 4-axis rotary surfacing on a part mounted on a single rotary.</source>
       <translation>Безперервна 4-осьова обробка поверхні деталі, встановленої на одній поворотній осі.</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_MillFacing</name>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="98"/>
+      <source>New property added to</source>
+      <translation>Нову властивість додано до</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="100"/>
+      <source>Check default value(s).</source>
+      <translation>Перевірте типові значення.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="215"/>
+      <source>Climb</source>
+      <translation>Попутне</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="216"/>
+      <source>Conventional</source>
+      <translation>Зустрічне</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="219"/>
+      <source>ZigZag</source>
+      <translation>Зигзаг</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="220"/>
+      <source>Bidirectional</source>
+      <translation>Двонапрямковий</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="221"/>
+      <source>Directional</source>
+      <translation>Напрямковий</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="222"/>
+      <source>Spiral Circular</source>
+      <translation>Спіраль кругова</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="223"/>
+      <source>Spiral Rectangular</source>
+      <translation>Спіраль прямокутна</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/MillFacing.py" line="443"/>
+      <source>%s: Generating empty toolpath. Take attention to extensions and tool diameter.</source>
+      <translation>%s: створюється порожня траєкторія. Зверніть увагу на подовження й діаметр інструмента.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/MillFacing.py" line="181"/>
+      <source>Mill Facing</source>
+      <translation>Торцювання</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Op/Gui/MillFacing.py" line="184"/>
+      <source>Create a Mill Facing Operation to machine the top surface of stock</source>
+      <translation>Створити операцію торцювання для обробки верхньої поверхні заготовки</translation>
     </message>
   </context>
   <context>
@@ -15040,87 +13466,11 @@ Supported tool types: flat, bull-nose, V-bit.</source>
     </message>
   </context>
   <context>
-    <name>CAM_MillFacing</name>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="98"/>
-      <source>New property added to</source>
-      <translation>Нову властивість додано до</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="100"/>
-      <source>Check default value(s).</source>
-      <translation>Перевірте типові значення.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="215"/>
-      <source>Climb</source>
-      <translation>Попутне</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="216"/>
-      <source>Conventional</source>
-      <translation>Зустрічне</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="219"/>
-      <source>ZigZag</source>
-      <translation>Зигзаг</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="220"/>
-      <source>Bidirectional</source>
-      <translation>Двонапрямковий</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="221"/>
-      <source>Directional</source>
-      <translation>Напрямковий</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="222"/>
-      <source>Spiral Circular</source>
-      <translation>Спіраль кругова</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="223"/>
-      <source>Spiral Rectangular</source>
-      <translation>Спіраль прямокутна</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/MillFacing.py" line="443"/>
-      <source>%s: Generating empty toolpath. Take attention to extensions and tool diameter.</source>
-      <translation>%s: створюється порожня траєкторія. Зверніть увагу на подовження й діаметр інструмента.</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/MillFacing.py" line="181"/>
-      <source>Mill Facing</source>
-      <translation>Торцювання</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/MillFacing.py" line="184"/>
-      <source>Create a Mill Facing Operation to machine the top surface of stock</source>
-      <translation>Створити операцію торцювання для обробки верхньої поверхні заготовки</translation>
-    </message>
-  </context>
-  <context>
     <name>Waterline</name>
     <message>
       <location filename="../../../Path/Op/Waterline.py" line="1399"/>
       <source>: Steps below the model&apos;s top Face will be the only ones processed.</source>
       <translation>: оброблятимуться лише кроки нижче верхньої грані моделі.</translation>
-    </message>
-  </context>
-  <context>
-    <name>CAM_SetStartPoint</name>
-    <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1831"/>
-      <source>Start Point Selection</source>
-      <translation>Вибір початкової точки</translation>
-    </message>
-    <message>
-      <location filename="../../../Path/Op/Gui/Base.py" line="1832"/>
-      <source>Selects the start point</source>
-      <translation>Вибирає початкову точку</translation>
     </message>
   </context>
   <context>
@@ -15145,48 +13495,1240 @@ Supported tool types: flat, bull-nose, V-bit.</source>
     </message>
   </context>
   <context>
-    <name>CAM_QuickValidate</name>
+    <name>CAM_SetStartPoint</name>
     <message>
-      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="127"/>
-      <source>Quick Validate</source>
-      <translation>Швидка перевірка</translation>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1834"/>
+      <source>Start Point Selection</source>
+      <translation>Вибір початкової точки</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SanityCmd.py" line="132"/>
-      <source>Validates the CAM job for common issues without generating a full report</source>
-      <translation>Перевіряє завдання CAM без генерації повного звіту</translation>
+      <location filename="../../../Path/Op/Gui/Base.py" line="1835"/>
+      <source>Selects the start point</source>
+      <translation>Вибирає початкову точку</translation>
     </message>
   </context>
   <context>
-    <name>CAM_Workplane</name>
+    <name>CAM_PostSelected</name>
     <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="80"/>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="121"/>
-      <source>Work Plane</source>
-      <translation>Робоча площина</translation>
+      <location filename="../../../Path/Post/Command.py" line="356"/>
+      <source>Post Process Selected</source>
+      <translation>Постобробка вибраного</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="85"/>
-      <source>Create a named work plane on the Job, from a selected planar face or at the Job origin. Operations can share one work plane.</source>
-      <translation>Створює іменовану робочу площину в завданні — з вибраної пласкої грані або в початку координат завдання. Кілька операцій можуть використовувати одну робочу площину.</translation>
+      <location filename="../../../Path/Post/Command.py" line="360"/>
+      <source>Post Processes the selected operations</source>
+      <translation>Виконує постобробку вибраних операцій</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_ToolBitDock</name>
+    <message>
+      <location filename="../../../Path/Tool/library/ui/cmd.py" line="51"/>
+      <source>Add Toolbit…</source>
+      <translation>Додати інструмент…</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/WorkplaneCmd.py" line="122"/>
+      <location filename="../../../Path/Tool/library/ui/cmd.py" line="52"/>
+      <source>Opens the toolbit selection dialog</source>
+      <translation>Відкриває діалог вибору інструмента</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_FeedsSpeeds</name>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="330"/>
+      <source>Suggest Feeds &amp; Speeds</source>
+      <translation>Запропонувати подачі й швидкості</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="352"/>
+      <source>(no tool)</source>
+      <translation>(немає інструмента)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="353"/>
+      <source>Tool:</source>
+      <translation>Інструмент:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
+      <source>(none — generic resolution)</source>
+      <translation>(немає — загальне визначення)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="357"/>
+      <source>Material:</source>
+      <translation>Матеріал:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="360"/>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="248"/>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="613"/>
+      <source>(any)</source>
+      <translation>(будь-який)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="369"/>
+      <source>Op type:</source>
+      <translation>Тип операції:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="377"/>
+      <source>Apply preset:</source>
+      <translation>Застосувати пресет:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="381"/>
+      <source>Suggestion</source>
+      <translation>Пропозиція</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="385"/>
+      <source>Source:</source>
+      <translation>Джерело:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="391"/>
+      <source>Confidence:</source>
+      <translation>Достовірність:</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="396"/>
+      <source>Current</source>
+      <translation>Поточне</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="398"/>
+      <source>Suggested</source>
+      <translation>Запропоноване</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="400"/>
+      <source>Δ</source>
+      <translation type="unfinished">Δ</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="436"/>
+      <source>Auto (use resolver)</source>
+      <translation>Авто (через розв'язувач)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="530"/>
+      <source>No suggestion available</source>
+      <translation>Пропозицій немає</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/FeedsSpeedsDialog.py" line="541"/>
+      <source>No matching preset on this tool. Open the tool from the library to add presets.</source>
+      <translation>Для цього інструмента немає відповідного пресету. Відкрийте інструмент із бібліотеки, щоб додати пресети.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/Gui/MaterialPicker.py" line="58"/>
+      <source>Choose material</source>
+      <translation>Вибрати матеріал</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="220"/>
+      <source>e.g. &apos;Aluminum aggressive&apos;</source>
+      <translation>напр., 'Алюміній, інтенсивно'</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="443"/>
+      <source>(none)</source>
+      <translation>(жодного)</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="449"/>
+      <source>Name required</source>
+      <translation>Потрібна назва</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="450"/>
+      <source>Give the preset a name.</source>
+      <translation>Дайте пресету назву.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="457"/>
+      <source>Duplicate preset</source>
+      <translation>Дублікат пресету</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="462"/>
+      <source>This tool already has a preset named &apos;%s&apos; for this material and op type.</source>
+      <translation>Цей інструмент уже має пресет з назвою '%s' для цього матеріалу й типу операції.</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="562"/>
       <source>Name</source>
       <translation>Назва</translation>
     </message>
-  </context>
-  <context>
-    <name>CAM_SimulatorGL</name>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="364"/>
-      <source>CAM Simulator</source>
-      <translation>Симулятор CAM</translation>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="563"/>
+      <source>Material</source>
+      <translation>Матеріал</translation>
     </message>
     <message>
-      <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="366"/>
-      <source>Simulates G-code on stock</source>
-      <translation>Симулює G-код на заготовці</translation>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="564"/>
+      <source>Op type</source>
+      <translation>Тип операції</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="565"/>
+      <source>Surface speed</source>
+      <translation>Швидкість різання</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="566"/>
+      <source>Chipload</source>
+      <translation>Подача на зуб</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="567"/>
+      <source>Notes</source>
+      <translation>Примітки</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="579"/>
+      <source>Add preset</source>
+      <translation>Додати пресет</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="583"/>
+      <source>Edit</source>
+      <translation>Редагувати</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="587"/>
+      <source>Copy</source>
+      <translation>Копіювати</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="591"/>
+      <source>Delete</source>
+      <translation>Видалити</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Tool/toolbit/ui/presets_tab.py" line="610"/>
+      <source>(any material)</source>
+      <translation>(будь-який матеріал)</translation>
+    </message>
+  </context>
+  <context>
+    <name>MirrorDressup</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="118"/>
+      <source>No base operation</source>
+      <translation>Немає базової операції</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="125"/>
+      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
+      <translation>Базовий об'єкт '%s' не є похідним від Path::Feature</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="132"/>
+      <source>Base operation &apos;%s&apos; with empty path</source>
+      <translation>Базова операція '%s' з порожньою траєкторією</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_DressupMirror</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="277"/>
+      <source>Mirror</source>
+      <translation>Дзеркальне відображення</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="279"/>
+      <source>Creates mirror of a selected path</source>
+      <translation>Створює дзеркальне відображення вибраної траєкторії</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="308"/>
+      <source>The selected object is not a path</source>
+      <translation>Вибраний об'єкт не є траєкторією</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Mirror.py" line="312"/>
+      <source>Select a profile object</source>
+      <translation>Виберіть об'єкт профілю</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_DressupPlungeMilling</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="137"/>
+      <source>No base operation</source>
+      <translation>Немає базової операції</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="146"/>
+      <source>Base object &apos;%s&apos; is not derived from Path::Feature</source>
+      <translation>Базовий об'єкт '%s' не є похідним від Path::Feature</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="154"/>
+      <source>Base operation &apos;%s&apos; with empty path</source>
+      <translation>Базова операція '%s' з порожньою траєкторією</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="160"/>
+      <source>Negative or zero stepover</source>
+      <translation>Від'ємний або нульовий бічний крок</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="278"/>
+      <source>Plunge Milling</source>
+      <translation>Фрезерування зануренням</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="282"/>
+      <source>Creates plunge milling for a selected path</source>
+      <translation>Створює фрезерування зануренням для вибраної траєкторії</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="312"/>
+      <source>The selected object is not a path</source>
+      <translation>Вибраний об'єкт не є траєкторією</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/PlungeMilling.py" line="317"/>
+      <source>Select a profile object</source>
+      <translation>Виберіть об'єкт профілю</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_DressupPathBoundary2</name>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="118"/>
+      <source>Boundary model missing</source>
+      <translation>Модель межі відсутня</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="122"/>
+      <source>Boundary has no shape</source>
+      <translation>Межа не має форми</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="126"/>
+      <source>Boundary shape is not a solid</source>
+      <translation>Форма межі не є тілом</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="172"/>
+      <source>No path with such boundary</source>
+      <translation>Немає траєкторії з такою межею</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="281"/>
+      <source>The selected object is not a path</source>
+      <translation>Вибраний об'єкт не є траєкторією</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="286"/>
+      <source>Select a profile object</source>
+      <translation>Виберіть об'єкт профілю</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="305"/>
+      <source>Boundary2</source>
+      <translation>Межа2</translation>
+    </message>
+    <message>
+      <location filename="../../../Path/Dressup/Gui/Boundary2.py" line="309"/>
+      <source>Creates a boundary dress-up from a selected toolpath</source>
+      <translation>Створює доопрацювання межі для вибраної траєкторії</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_MachineImport</name>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="77"/>
+      <source>Only http and https URLs are supported.</source>
+      <translation>Підтримуються лише URL-адреси http і https.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="88"/>
+      <source>Import Machine from MTConnect</source>
+      <translation>Імпорт верстата з MTConnect</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="100"/>
+      <source>Enter the URL of the machine&apos;s MTConnect agent (for example http://machine:5000/probe) or select a saved probe XML file.</source>
+      <translation>Введіть URL агента MTConnect верстата (наприклад, http://machine:5000/probe) або виберіть збережений XML-файл probe.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="110"/>
+      <source>Select a probe XML file</source>
+      <translation>Виберіть XML-файл probe</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="116"/>
+      <source>Import</source>
+      <translation>Імпортувати</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="126"/>
+      <source>Select Probe XML File</source>
+      <translation>Вибрати XML-файл probe</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="128"/>
+      <source>XML files (*.xml);;All files (*)</source>
+      <translation>Файли XML (*.xml);;Усі файли (*)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="145"/>
+      <source>Select Device</source>
+      <translation>Вибрати пристрій</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="146"/>
+      <source>This agent describes several machines:</source>
+      <translation>Цей агент описує кілька верстатів:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="159"/>
+      <source>Import Failed</source>
+      <translation>Помилка імпорту</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="174"/>
+      <source>Machine Imported</source>
+      <translation>Верстат імпортовано</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/mtconnect_import_dialog.py" line="178"/>
+      <source>The machine was imported. Review it in the editor.
+
+{summary}</source>
+      <translation>Верстат імпортовано. Перегляньте його в редакторі.
+
+{summary}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="106"/>
+      <source>Imported:</source>
+      <translation>Імпортовано:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="109"/>
+      <source>Assumed (please review):</source>
+      <translation>Припущено (перевірте):</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="112"/>
+      <source>Not imported:</source>
+      <translation>Не імпортовано:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="320"/>
+      <source>Rotary axes wired as a {label} configuration; the probe does not describe rotary mounting. Review roles and chain order.</source>
+      <translation>Поворотні осі з'єднано за конфігурацією {label}; probe не описує монтаж поворотних осей. Перевірте ролі та порядок ланцюга.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="331"/>
+      <source>Rotary axis {letter} assumed to be a table rotary. Review its role.</source>
+      <translation>Поворотну вісь {letter} вважається поворотним столом. Перевірте її роль.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="339"/>
+      <source>Rotary axes {letters} have no default chain wiring; assign roles and parents in the editor.</source>
+      <translation>Поворотні осі {letters} не мають типового з'єднання в ланцюг; призначте ролі та батьківські осі в редакторі.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="387"/>
+      <source>Imported from MTConnect probe</source>
+      <translation>Імпортовано з probe MTConnect</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="409"/>
+      <source>Linear component &apos;{name}&apos; is not a recognized axis.</source>
+      <translation>Лінійний компонент '{name}' не є розпізнаною віссю.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="429"/>
+      <source>Linear axis {letter}{detail}</source>
+      <translation>Лінійна вісь {letter}{detail}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="440"/>
+      <source>Rotary component &apos;{name}&apos; is neither an A/B/C axis nor a spindle.</source>
+      <translation>Поворотний компонент '{name}' не є ні віссю A/B/C, ні шпинделем.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="454"/>
+      <source>Rotary axis {letter}{detail}</source>
+      <translation>Поворотна вісь {letter}{detail}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="484"/>
+      <source>Spindle{detail}</source>
+      <translation>Шпиндель{detail}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="491"/>
+      <source>Additional spindles found; only the first was imported.</source>
+      <translation>Знайдено додаткові шпинделі; імпортовано лише перший.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="498"/>
+      <source>No spindle described by the probe; a default rotary toolhead was added.</source>
+      <translation>Probe не описує шпиндель; додано типову поворотну головку.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="507"/>
+      <source>Axis velocities are not published by this machine; defaults were used.</source>
+      <translation>Цей верстат не публікує швидкості осей; використано типові значення.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/models/mtconnect_import.py" line="511"/>
+      <source>Import assumptions:</source>
+      <translation>Припущення під час імпорту:</translation>
+    </message>
+  </context>
+  <context>
+    <name>CAM_MachineEditor</name>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="118"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="177"/>
+      <source>Include Blank Lines</source>
+      <translation>Включати порожні рядки</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="119"/>
+      <source>Path Labels</source>
+      <translation>Мітки траєкторій</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="120"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="168"/>
+      <source>Include Machine Name</source>
+      <translation>Включати назву верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="121"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="122"/>
+      <source>Output Duplicate Axis Values</source>
+      <translation>Виводити дублікати значень осей</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="123"/>
+      <source>Adaptive Output</source>
+      <translation>Адаптивний вивід</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="124"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="187"/>
+      <source>Axis Precision</source>
+      <translation>Точність осей</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="125"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="188"/>
+      <source>Feed Precision</source>
+      <translation>Точність подачі</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="126"/>
+      <source>Toolhead Decimals</source>
+      <translation>Знаки після коми для головки</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="127"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="175"/>
+      <source>Comment Symbol</source>
+      <translation>Символ коментаря</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="128"/>
+      <source>Modal Output (Suppress Repeats)</source>
+      <translation>Модальний вивід (придушення повторів)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="129"/>
+      <source>Translate Drill Cycles</source>
+      <translation>Перетворювати цикли свердління</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="130"/>
+      <source>Translate Rapid Moves</source>
+      <translation>Перетворювати прискорені переміщення</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="131"/>
+      <source>Split Arcs</source>
+      <translation>Розбивати дуги</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="134"/>
+      <source>XY Before Z After Tool Change</source>
+      <translation>XY перед Z після зміни інструмента</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="135"/>
+      <source>Show Editor After Generation</source>
+      <translation>Показувати редактор після генерації</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="136"/>
+      <source>List Tools in Preamble</source>
+      <translation>Перераховувати інструменти в преамбулі</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="137"/>
+      <source>Show Machine Units</source>
+      <translation>Показувати одиниці верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="138"/>
+      <source>Show Operation Labels</source>
+      <translation>Показувати мітки операцій</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="139"/>
+      <source>Output T Before M6</source>
+      <translation>Виводити T перед M6</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="140"/>
+      <source>Chipbreaking Amount (mm)</source>
+      <translation>Величина стружколомання (мм)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="141"/>
+      <source>Toolhead Wait Time (seconds)</source>
+      <translation>Час очікування головки (с)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="142"/>
+      <source>Post Processor</source>
+      <translation>Постпроцесор</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="143"/>
+      <source>Post Processor Arguments</source>
+      <translation>Аргументи постпроцесора</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="144"/>
+      <source>Use Tool Length Offset</source>
+      <translation>Використовувати зміщення довжини інструмента</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="147"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="86"/>
+      <source>Output Tool Length Offset (G43)</source>
+      <translation>Виводити зміщення довжини інструмента (G43)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="148"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="88"/>
+      <source>Enable Remote Posting</source>
+      <translation>Увімкнути дистанційну постобробку</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="151"/>
+      <source>Stop Toolhead for Tool Change</source>
+      <translation>Зупиняти головку при зміні інструмента</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="152"/>
+      <source>Enable Coolant</source>
+      <translation>Увімкнути охолодження</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="155"/>
+      <source>Enable Machine-Specific Commands</source>
+      <translation>Увімкнути команди верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="157"/>
+      <source>Output Units</source>
+      <translation>Одиниці виводу</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="158"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="105"/>
+      <source>Header Options</source>
+      <translation>Параметри заголовка</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="159"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="106"/>
+      <source>Comment Options</source>
+      <translation>Параметри коментарів</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="160"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="107"/>
+      <source>Formatting Options</source>
+      <translation>Параметри форматування</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="161"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="108"/>
+      <source>Precision Options</source>
+      <translation>Параметри точності</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="162"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="109"/>
+      <source>Duplicate Output Options</source>
+      <translation>Параметри дублювання виводу</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="163"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="83"/>
+      <source>Output Header</source>
+      <translation>Заголовок виводу</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="165"/>
+      <source>Include Date</source>
+      <translation>Включати дату</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="166"/>
+      <source>Include Description</source>
+      <translation>Включати опис</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="167"/>
+      <source>Include Document Name</source>
+      <translation>Включати назву документа</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="169"/>
+      <source>Include Project File</source>
+      <translation>Включати файл проєкту</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="170"/>
+      <source>Include Units</source>
+      <translation>Включати одиниці</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="171"/>
+      <source>Include Tool List</source>
+      <translation>Включати список інструментів</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="172"/>
+      <source>Include Fixture List</source>
+      <translation>Включати список робочих систем координат</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="174"/>
+      <source>Enable Comments</source>
+      <translation>Увімкнути коментарі</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="176"/>
+      <source>Include Operation Labels</source>
+      <translation>Включати мітки операцій</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="178"/>
+      <source>Output bCNC Comments</source>
+      <translation>Виводити коментарі bCNC</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="180"/>
+      <source>Line Numbers</source>
+      <translation>Номери рядків</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="181"/>
+      <source>Line Number Start</source>
+      <translation>Початковий номер рядка</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="182"/>
+      <source>Line Number Prefix</source>
+      <translation>Префікс номера рядка</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="183"/>
+      <source>Line Increment</source>
+      <translation>Крок нумерації</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="184"/>
+      <source>Command Space</source>
+      <translation>Пробіл між командами</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="185"/>
+      <source>End of Line Chars</source>
+      <translation>Символи кінця рядка</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="189"/>
+      <source>Toolhead Precision</source>
+      <translation>Точність головки</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="191"/>
+      <source>Duplicate Commands</source>
+      <translation>Дублювати команди</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="192"/>
+      <source>Duplicate Parameters</source>
+      <translation>Дублювати параметри</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="194"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1144"/>
+      <source>Kinematics</source>
+      <translation>Кінематика</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="195"/>
+      <source>Base Frame</source>
+      <translation>Базова система координат</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="196"/>
+      <source>Origin</source>
+      <translation>Початок координат</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="197"/>
+      <source>Orientation Quaternion</source>
+      <translation>Кватерніон орієнтації</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="198"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1153"/>
+      <source>TCP Supported</source>
+      <translation>Підтримка TCP</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="199"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1184"/>
+      <source>Rotation Strategy</source>
+      <translation>Стратегія повороту</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="200"/>
+      <source>Kinematics Notes</source>
+      <translation>Примітки до кінематики</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="202"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1338"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1487"/>
+      <source>Role</source>
+      <translation>Роль</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="203"/>
+      <source>Parent Axis</source>
+      <translation>Батьківська вісь</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="204"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1362"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1511"/>
+      <source>Sequence</source>
+      <translation>Послідовність</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="205"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1449"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1591"/>
+      <source>Joint Origin</source>
+      <translation>Початок шарніра</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="206"/>
+      <source>Joint Axis</source>
+      <translation>Вісь шарніра</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="207"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1604"/>
+      <source>Solution Preference</source>
+      <translation>Перевага розв'язку</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="208"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1612"/>
+      <source>Allow Flip</source>
+      <translation>Дозволити перевертання</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="209"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1634"/>
+      <source>Wrap Strategy</source>
+      <translation>Стратегія згортання</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="376"/>
+      <source>Custom Machine</source>
+      <translation>Власний верстат</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="381"/>
+      <source>2-Axis Lathe (X, Z)</source>
+      <translation>2-осьовий токарний (X, Z)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="386"/>
+      <source>3-Axis Mill (XYZ)</source>
+      <translation>3-осьовий фрезерний (XYZ)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="391"/>
+      <source>4-Axis Mill (XYZ + A)</source>
+      <translation>4-осьовий фрезерний (XYZ + A)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="396"/>
+      <source>4-Axis Mill (XYZ + B)</source>
+      <translation>4-осьовий фрезерний (XYZ + B)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="401"/>
+      <source>5-Axis Mill (XYZ + A, C)</source>
+      <translation>5-осьовий фрезерний (XYZ + A, C)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="406"/>
+      <source>5-Axis Mill (XYZ + B, C)</source>
+      <translation>5-осьовий фрезерний (XYZ + B, C)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="447"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="662"/>
+      <source>Machine Editor</source>
+      <translation>Редактор верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="463"/>
+      <source>Machine</source>
+      <translation>Верстат</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="468"/>
+      <source>Toolheads</source>
+      <translation>Головки</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="473"/>
+      <source>Postprocessor</source>
+      <translation>Постпроцесор</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="478"/>
+      <source>Options</source>
+      <translation>Параметри</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="505"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2426"/>
+      <source>Edit as Text</source>
+      <translation>Редагувати як текст</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="509"/>
+      <source>Validate</source>
+      <translation>Перевірити</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="516"/>
+      <source>Check this machine for problems that would stop it loading or would silently drop settings</source>
+      <translation>Перевірити цей верстат на проблеми, через які він не завантажиться або непомітно втратить налаштування</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="526"/>
+      <source>Save</source>
+      <translation>Зберегти</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="529"/>
+      <source>Close</source>
+      <translation>Закрити</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="831"/>
+      <source>Remove Toolhead</source>
+      <translation>Видалити головку</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="832"/>
+      <source>Remove toolhead? This action cannot be undone.</source>
+      <translation>Видалити головку? Цю дію не можна скасувати.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="891"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1025"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1108"/>
+      <source>Custom</source>
+      <translation>Власний</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="939"/>
+      <source>Community-maintained machine definitions are available in the Machines addon.</source>
+      <translation>Визначення верстатів, які підтримує спільнота, доступні в доповненні Machines.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="940"/>
+      <source>Open Addon Manager</source>
+      <translation>Відкрити менеджер доповнень</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="941"/>
+      <source>Do not show again</source>
+      <translation>Більше не показувати</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1033"/>
+      <source>Template Load Error</source>
+      <translation>Помилка завантаження шаблону</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1034"/>
+      <source>Could not load template</source>
+      <translation>Не вдалося завантажити шаблон</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1091"/>
+      <source>Name</source>
+      <translation>Назва</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1114"/>
+      <source>Load settings from an existing machine template</source>
+      <translation>Завантажити налаштування з наявного шаблону верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1115"/>
+      <source>Template</source>
+      <translation>Шаблон</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1125"/>
+      <source>Manufacturer</source>
+      <translation>Виробник</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1129"/>
+      <source>Description</source>
+      <translation>Опис</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1132"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="67"/>
+      <source>Metric</source>
+      <translation>Метричні</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1133"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="68"/>
+      <source>Imperial</source>
+      <translation>Дюймові</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1135"/>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="77"/>
+      <source>Units</source>
+      <translation>Одиниці</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1141"/>
+      <source>Type</source>
+      <translation>Тип</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1159"/>
+      <source>Not declared</source>
+      <translation>Не оголошено</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1160"/>
+      <source>Dynamic work offset (DWO)</source>
+      <translation>Динамічне робоче зміщення (DWO)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1161"/>
+      <source>Tilted work plane (TWP)</source>
+      <translation>Нахилена робоча площина (TWP)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1164"/>
+      <source>Post transform (not available yet)</source>
+      <translation>Пост-перетворення (ще недоступне)</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1177"/>
+      <source>How the control runs an operation on a tilted work plane. DWO: the post commands the rotary axes and the control applies its pivot offsets. TWP: the post declares the plane and the control positions the rotary axes. A machine with rotary axes and no strategy cannot post such an operation. The command the plane is declared with comes from the post-processor.</source>
+      <translation>Як ЧПК виконує операцію на нахиленій робочій площині. DWO: постпроцесор задає поворотні осі, а ЧПК застосовує зміщення точки повороту. TWP: постпроцесор оголошує площину, а ЧПК позиціює поворотні осі. Верстат з поворотними осями без стратегії не може виконати постобробку такої операції. Команда оголошення площини визначається постпроцесором.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1193"/>
+      <source>Notes</source>
+      <translation>Примітки</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1199"/>
+      <source>Axes</source>
+      <translation>Осі</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1227"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1228"/>
+      <source>Add Toolhead</source>
+      <translation>Додати головку</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1353"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1502"/>
+      <source>Parent</source>
+      <translation>Батьківський</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1380"/>
+      <source>Direction</source>
+      <translation>Напрямок</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1391"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1519"/>
+      <source>Min Limit</source>
+      <translation>Мін. межа</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1401"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1526"/>
+      <source>Max Limit</source>
+      <translation>Макс. межа</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1411"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1535"/>
+      <source>Max Velocity</source>
+      <translation>Макс. швидкість</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1553"/>
+      <source>Rotation Axis</source>
+      <translation>Вісь обертання</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="1622"/>
+      <source>Prefer Positive</source>
+      <translation>Перевага додатних</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2000"/>
+      <source>Postprocessor Selection</source>
+      <translation>Вибір постпроцесора</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2010"/>
+      <source>Select the postprocessor file for this machine</source>
+      <translation>Виберіть файл постпроцесора для цього верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2036"/>
+      <source>Post Processor:</source>
+      <translation>Постпроцесор:</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2042"/>
+      <source>Postprocessor Configuration</source>
+      <translation>Конфігурація постпроцесора</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2431"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2593"/>
+      <source>JSON Error</source>
+      <translation>Помилка JSON</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2432"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2489"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2594"/>
+      <source>Invalid JSON: {}</source>
+      <translation>Некоректний JSON: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2437"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2456"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2600"/>
+      <source>Error</source>
+      <translation>Помилка</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2438"/>
+      <source>Failed to parse data: {}</source>
+      <translation>Не вдалося розібрати дані: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2451"/>
+      <source>Edit as Form</source>
+      <translation>Редагувати як форму</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2457"/>
+      <source>Failed to generate JSON: {}</source>
+      <translation>Не вдалося згенерувати JSON: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2488"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2495"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2511"/>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2527"/>
+      <source>Validation</source>
+      <translation>Перевірка</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2496"/>
+      <source>This machine does not load: {}</source>
+      <translation>Цей верстат не завантажується: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2512"/>
+      <source>No problems found.</source>
+      <translation>Проблем не знайдено.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2518"/>
+      <source>{} error(s) and {} warning(s) found.</source>
+      <translation>Знайдено помилок: {}, попереджень: {}.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2523"/>
+      <source>{} warning(s) found.</source>
+      <translation>Знайдено попереджень: {}.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2567"/>
+      <source>Duplicate Machine Name</source>
+      <translation>Дублікат назви верстата</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2571"/>
+      <source>A machine with the name &apos;{}&apos; already exists. Please choose a different name.</source>
+      <translation>Верстат з назвою '{}' уже існує. Виберіть іншу назву.</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/machine_editor.py" line="2601"/>
+      <source>Failed to save: {}</source>
+      <translation>Не вдалося зберегти: {}</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="63"/>
+      <source>Main Options</source>
+      <translation type="unfinished">Main Options</translation>
+    </message>
+    <message>
+      <location filename="../../../Machine/ui/editor/output_options_layout.py" line="133"/>
+      <source>Processing Options</source>
+      <translation type="unfinished">Processing Options</translation>
     </message>
   </context>
   <context>
@@ -15245,6 +14787,342 @@ Supported tool types: flat, bull-nose, V-bit.</source>
       <location filename="../../../PathSimulator/AppGL/GuiDisplay.cpp" line="99"/>
       <source>x%1</source>
       <translation>x%1</translation>
+    </message>
+  </context>
+  <context>
+    <name>DlgPostProcess</name>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="14"/>
+      <source>Post Processing</source>
+      <translation>Постобробка</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="29"/>
+      <source>Post Processing - Job: (unknown)</source>
+      <translation>Постобробка — завдання: (невідоме)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="40"/>
+      <source>Overview</source>
+      <translation>Огляд</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="46"/>
+      <location filename="../panels/DlgPostProcess.ui" line="55"/>
+      <source>Machine</source>
+      <translation>Верстат</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="68"/>
+      <source>Machine configuration (.fcm) to use for post-processing</source>
+      <translation>Конфігурація верстата (.fcm) для постобробки</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="78"/>
+      <source>Fixtures</source>
+      <translation>Робочі системи координат</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="90"/>
+      <source>Check fixtures to include in the G-code output</source>
+      <translation>Позначте робочі системи координат для включення у вивід G-коду</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="100"/>
+      <source>Job Details</source>
+      <translation>Деталі завдання</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="109"/>
+      <source>Author</source>
+      <translation>Автор</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="116"/>
+      <source>Author name written into the G-code header comment</source>
+      <translation>Ім'я автора, що записується в заголовковий коментар G-коду</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="119"/>
+      <location filename="../panels/DlgPostProcess.ui" line="145"/>
+      <source>(optional)</source>
+      <translation>(необов'язково)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="126"/>
+      <source>Comment</source>
+      <translation>Коментар</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="142"/>
+      <source>Arbitrary comment written into the G-code header</source>
+      <translation>Довільний коментар у заголовок G-коду</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="155"/>
+      <location filename="../panels/DlgPostProcess.ui" line="310"/>
+      <source>Options</source>
+      <translation>Параметри</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="161"/>
+      <source>Generate a full sanity/setup report alongside the G-code file</source>
+      <translation>Генерувати повний звіт перевірки/наладки поруч із файлом G-коду</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="164"/>
+      <source>Generate HTML sanity report</source>
+      <translation>Генерувати HTML-звіт перевірки</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="177"/>
+      <source>Post Processor Parameters</source>
+      <translation>Параметри постпроцесора</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="186"/>
+      <source>(No additional parameters for this post processor)</source>
+      <translation>(Немає додаткових параметрів для цього постпроцесора)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="213"/>
+      <source>Operations</source>
+      <translation>Операції</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="219"/>
+      <source>Check operations to include in the G-code output. Uncheck to skip.</source>
+      <translation>Позначте операції для включення у вивід G-коду. Зніміть позначку, щоб пропустити.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="232"/>
+      <source>#</source>
+      <translation type="unfinished">#</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="237"/>
+      <source>Operation</source>
+      <translation>Операція</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="242"/>
+      <source>Tool</source>
+      <translation>Інструмент</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="250"/>
+      <source>Tool Controller</source>
+      <translation>Контролер інструмента</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="255"/>
+      <source>Coolant</source>
+      <translation>Охолодження</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="260"/>
+      <source>Time</source>
+      <translation>Час</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="270"/>
+      <source>Select All</source>
+      <translation>Вибрати все</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="277"/>
+      <source>Select None</source>
+      <translation>Зняти все</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="284"/>
+      <source>Show the workplan (postable items structure)</source>
+      <translation>Показати план обробки (структуру елементів для постобробки)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="287"/>
+      <source>Workplan</source>
+      <translation>План обробки</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="337"/>
+      <source>(Select a machine on the Overview tab to see machine output options)</source>
+      <translation>(Виберіть верстат на вкладці Огляд для перегляду параметрів виводу)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="365"/>
+      <source>Output</source>
+      <translation>Вивід</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="373"/>
+      <source>Output folder</source>
+      <translation>Тека виводу</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="380"/>
+      <source>Folder where G-code files will be saved</source>
+      <translation>Тека, де буде збережено файли G-коду</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="383"/>
+      <source>(resolved when output is generated)</source>
+      <translation>(визначається при генерації виводу)</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="396"/>
+      <source>Browse…</source>
+      <translation>Огляд…</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="407"/>
+      <source>Filename template</source>
+      <translation>Шаблон імені файлу</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="414"/>
+      <source>Filename template. Substitutions: %j=job name, %d=document, %S=sequence number.
+%T=tool number, %t=tool controller, %W=fixture and %O=operation name a section of a split output and are ignored when the output is not split.</source>
+      <translation>Шаблон імені файлу. Підстановки: %j — назва завдання, %d — документ, %S — порядковий номер.
+%T — номер інструмента, %t — контролер інструмента, %W — робоча система координат і %O — назва операції позначають розділ розділеного виводу й ігноруються, коли вивід не розділено.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="418"/>
+      <source>e.g. %j.nc</source>
+      <translation>напр. %j.nc</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="434"/>
+      <source>Regenerate output filenames using this template</source>
+      <translation>Повторно згенерувати імена вихідних файлів за цим шаблоном</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="437"/>
+      <source>Apply</source>
+      <translation>Застосувати</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="449"/>
+      <source>Press &quot;Generate Output&quot; to preview G-code before saving.</source>
+      <translation>Натисніть «Згенерувати вивід» для попереднього перегляду G-коду перед збереженням.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="469"/>
+      <source>Generated output files. Select a file to view or edit its contents.</source>
+      <translation>Згенеровані вихідні файли. Виберіть файл для перегляду або редагування.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="480"/>
+      <source>G-code content for the selected file. You may edit before saving.</source>
+      <translation>Вміст G-коду для вибраного файлу. Можна редагувати перед збереженням.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="493"/>
+      <source>Save to Disk</source>
+      <translation>Зберегти на диск</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="516"/>
+      <source>Warnings</source>
+      <translation>Попередження</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="525"/>
+      <source>No issues found</source>
+      <translation>Проблем не знайдено</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="535"/>
+      <source>Validation issues found in the job. WARNING and CAUTION items should be addressed before machining.</source>
+      <translation>У завданні знайдено проблеми. Пункти WARNING і CAUTION слід усунути перед обробкою.</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="557"/>
+      <source>Severity</source>
+      <translation>Серйозність</translation>
+    </message>
+    <message>
+      <location filename="../panels/DlgPostProcess.ui" line="562"/>
+      <source>Note</source>
+      <translation>Примітка</translation>
+    </message>
+  </context>
+  <context>
+    <name>FeedsSpeedsPresetEdit</name>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="14"/>
+      <source>Edit preset</source>
+      <translation>Редагувати пресет</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="22"/>
+      <source>Name:</source>
+      <translation>Назва:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="32"/>
+      <source>Material:</source>
+      <translation>Матеріал:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="41"/>
+      <source>(none)</source>
+      <translation>(жодного)</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="48"/>
+      <source>Browse…</source>
+      <translation>Огляд…</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="55"/>
+      <source>Generic (any material)</source>
+      <translation>Загальний (будь-який матеріал)</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="64"/>
+      <source>Op type:</source>
+      <translation>Тип операції:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="74"/>
+      <source>Surface speed:</source>
+      <translation>Швидкість різання:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="91"/>
+      <source>Chipload (per tooth):</source>
+      <translation>Подача на зуб:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="111"/>
+      <source>Vert feed ratio:</source>
+      <translation>Коефіцієнт вертикальної подачі:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="136"/>
+      <source>Direct feed and speed</source>
+      <translation>Безпосередньо подача й частота обертання</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="142"/>
+      <source>Horiz feed:</source>
+      <translation>Горизонтальна подача:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="162"/>
+      <source>Spindle speed:</source>
+      <translation>Частота обертання шпинделя:</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="185"/>
+      <source>Notes</source>
+      <translation>Примітки</translation>
+    </message>
+    <message>
+      <location filename="../panels/FeedsSpeedsPresetEdit.ui" line="201"/>
+      <source>Tool diameter and/or flute count missing — surface speed and chipload won&apos;t auto-sync with direct feed/speed.</source>
+      <translation>Відсутній діаметр інструмента та/або кількість зубів — швидкість різання й подача на зуб не синхронізуватимуться автоматично з безпосередньою подачею/частотою обертання.</translation>
     </message>
   </context>
   <context>

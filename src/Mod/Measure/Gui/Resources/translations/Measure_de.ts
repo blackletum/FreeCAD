@@ -447,6 +447,54 @@
     </message>
   </context>
   <context>
+    <name>TaskMeasure</name>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="121"/>
+      <source>Distance</source>
+      <translation>Abstand</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="129"/>
+      <source>Distance Free</source>
+      <translation>Abstand frei</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="137"/>
+      <source>Angle</source>
+      <translation>Winkel</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="145"/>
+      <source>Length</source>
+      <translation>Länge</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="153"/>
+      <source>Position</source>
+      <translation>Position</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="161"/>
+      <source>Area</source>
+      <translation>Fläche</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="169"/>
+      <source>Diameter</source>
+      <translation>Durchmesser</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="177"/>
+      <source>Radius</source>
+      <translation>Radius</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="185"/>
+      <source>Geometric Center</source>
+      <translation>Geometrisches Zentrum</translation>
+    </message>
+  </context>
+  <context>
     <name>StdCmdMassProperties</name>
     <message>
       <location filename="../../Command.cpp" line="97"/>
@@ -505,54 +553,6 @@
       <location filename="../../TaskMassProperties.cpp" line="1236"/>
       <source> (Average)</source>
       <translation> (Durchschnitt)</translation>
-    </message>
-  </context>
-  <context>
-    <name>TaskMeasure</name>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="121"/>
-      <source>Distance</source>
-      <translation>Abstand</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="129"/>
-      <source>Distance Free</source>
-      <translation>Abstand frei</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="137"/>
-      <source>Angle</source>
-      <translation>Winkel</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="145"/>
-      <source>Length</source>
-      <translation>Länge</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="153"/>
-      <source>Position</source>
-      <translation>Position</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="161"/>
-      <source>Area</source>
-      <translation>Fläche</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="169"/>
-      <source>Diameter</source>
-      <translation>Durchmesser</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="177"/>
-      <source>Radius</source>
-      <translation>Radius</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="185"/>
-      <source>Geometric Center</source>
-      <translation>Geometrisches Zentrum</translation>
     </message>
   </context>
 </TS>

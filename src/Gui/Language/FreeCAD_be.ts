@@ -9,25 +9,25 @@
       <translation>&lt;пусты&gt;</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2446"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2735"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2444"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2733"/>
       <source>Angle</source>
       <translation>Вугал</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2450"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2739"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2448"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2737"/>
       <source>Axis</source>
       <translation>Вось</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2744"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2742"/>
       <source>Position</source>
       <translation>Становішча</translation>
     </message>
     <message>
       <location filename="../Dialogs/DlgAddProperty.cpp" line="376"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3016"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3014"/>
       <source>Enum</source>
       <translation>Пералічэнне</translation>
     </message>
@@ -133,10 +133,10 @@
       <translation>Размясціць</translation>
     </message>
     <message>
-      <location filename="../Transform.cpp" line="108"/>
-      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
       <location filename="../TaskTransform.cpp" line="152"/>
       <location filename="../TaskTransform.cpp" line="1069"/>
+      <location filename="../ViewProviderAnnotation.cpp" line="514"/>
+      <location filename="../Transform.cpp" line="108"/>
       <source>Transform</source>
       <translation>Пераўтварыць</translation>
     </message>
@@ -5514,44 +5514,44 @@ The 'Status' column shows whether the document could be recovered.</source>
       <translation>Паказаць залежнасці</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="124"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
       <source>Depending on</source>
       <translation>Залежыць ад</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="125"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="129"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="127"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="131"/>
       <source>Document</source>
       <translation>Дакумент</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="126"/>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
       <source>Name</source>
       <translation>Назва</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="128"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="130"/>
       <source>Depended by</source>
       <translation>У залежнасці ад</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="132"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="134"/>
       <source>Selections</source>
       <translation>Абраныя</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="138"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="140"/>
       <source>All</source>
       <translation>Усе</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="168"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
       <source>&amp;Use Original Selection</source>
       <translation>Ужываць &amp;пачатковы выбар</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgObjectSelection.cpp" line="170"/>
+      <location filename="../Dialogs/DlgObjectSelection.cpp" line="172"/>
       <source>Ignore dependencies and proceed with the objects
 originally selected prior to opening this dialog</source>
       <translation>Прапускаць залежнасці і працягнуць працу з аб'ектамі, якія першапачаткова абраныя да адкрыцця дадзенага дыялогавага акна</translation>
@@ -5615,12 +5615,12 @@ originally selected prior to opening this dialog</source>
       <translation>Перайсці да канца</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="733"/>
+      <location filename="../ReportView.cpp" line="738"/>
       <source>Save As…</source>
       <translation>Захаваць як…</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="745"/>
+      <location filename="../ReportView.cpp" line="750"/>
       <source>Plain text files</source>
       <translation>Тэкставыя файлы</translation>
     </message>
@@ -5647,12 +5647,12 @@ originally selected prior to opening this dialog</source>
       <translation>Паказаць прагляд справаздачы на</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="731"/>
+      <location filename="../ReportView.cpp" line="733"/>
       <source>Clear</source>
       <translation>Ачысціць</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="743"/>
+      <location filename="../ReportView.cpp" line="748"/>
       <source>Save Report Output</source>
       <translation>Захаваць вывад справаздачы</translation>
     </message>
@@ -6001,14 +6001,14 @@ Save all changes?</source>
       <translation>Bitmap</translation>
     </message>
     <message>
-      <location filename="../GraphvizView.cpp" line="411"/>
-      <location filename="../CommandDoc.cpp" line="765"/>
-      <source>Export Graph</source>
+      <location filename="../GraphvizView.cpp" line="474"/>
+      <source>Export graph</source>
       <translation>Экспартаваць дыяграму</translation>
     </message>
     <message>
-      <location filename="../GraphvizView.cpp" line="474"/>
-      <source>Export graph</source>
+      <location filename="../CommandDoc.cpp" line="765"/>
+      <location filename="../GraphvizView.cpp" line="411"/>
+      <source>Export Graph</source>
       <translation>Экспартаваць дыяграму</translation>
     </message>
   </context>
@@ -6059,66 +6059,66 @@ Save all changes?</source>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
+      <location filename="../InputVector.cpp" line="104"/>
+      <location filename="../InputVector.cpp" line="118"/>
       <location filename="../InputVector.h" line="131"/>
       <location filename="../InputVector.h" line="154"/>
       <location filename="../InputVector.h" line="277"/>
       <location filename="../InputVector.h" line="300"/>
       <location filename="../InputVector.h" line="475"/>
       <location filename="../InputVector.h" line="489"/>
-      <location filename="../InputVector.cpp" line="104"/>
-      <location filename="../InputVector.cpp" line="118"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="105"/>
+      <location filename="../InputVector.cpp" line="119"/>
       <location filename="../InputVector.h" line="132"/>
       <location filename="../InputVector.h" line="155"/>
       <location filename="../InputVector.h" line="278"/>
       <location filename="../InputVector.h" line="301"/>
       <location filename="../InputVector.h" line="476"/>
       <location filename="../InputVector.h" line="490"/>
-      <location filename="../InputVector.cpp" line="105"/>
-      <location filename="../InputVector.cpp" line="119"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="106"/>
+      <location filename="../InputVector.cpp" line="120"/>
       <location filename="../InputVector.h" line="133"/>
       <location filename="../InputVector.h" line="156"/>
       <location filename="../InputVector.h" line="279"/>
       <location filename="../InputVector.h" line="302"/>
       <location filename="../InputVector.h" line="477"/>
       <location filename="../InputVector.h" line="491"/>
-      <location filename="../InputVector.cpp" line="106"/>
-      <location filename="../InputVector.cpp" line="120"/>
       <source>Z</source>
       <translation>Z</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="107"/>
+      <location filename="../InputVector.cpp" line="123"/>
       <location filename="../InputVector.h" line="134"/>
       <location filename="../InputVector.h" line="159"/>
       <location filename="../InputVector.h" line="280"/>
       <location filename="../InputVector.h" line="305"/>
       <location filename="../InputVector.h" line="478"/>
       <location filename="../InputVector.h" line="494"/>
-      <location filename="../InputVector.cpp" line="107"/>
-      <location filename="../InputVector.cpp" line="123"/>
       <source>User defined…</source>
       <translation>Карыстальніцкі…</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="215"/>
       <location filename="../InputVector.h" line="240"/>
       <location filename="../InputVector.h" line="375"/>
       <location filename="../InputVector.h" line="564"/>
-      <location filename="../InputVector.cpp" line="215"/>
       <source>Wrong direction</source>
       <translation>Няправільны напрамак</translation>
     </message>
     <message>
+      <location filename="../InputVector.cpp" line="216"/>
       <location filename="../InputVector.h" line="241"/>
       <location filename="../InputVector.h" line="376"/>
       <location filename="../InputVector.h" line="565"/>
-      <location filename="../InputVector.cpp" line="216"/>
       <source>Direction must not be the null vector</source>
       <translation>Напрамак не павінен быць нулявым вектарам</translation>
     </message>
@@ -6154,12 +6154,12 @@ Save all changes?</source>
       <translation>Макрас</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1364"/>
+      <location filename="../Command.cpp" line="1368"/>
       <source>Macro file doesn't exist</source>
       <translation>Файл макраса не існуе</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="1365"/>
+      <location filename="../Command.cpp" line="1369"/>
       <source>No such macro file: '%1'</source>
       <translation>Файл макраса адсутнічае: '%1'</translation>
     </message>
@@ -6545,12 +6545,12 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::LinkSelection</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Error</source>
       <translation>Памылка</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4665"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4663"/>
       <source>Object not found</source>
       <translation>Аб'ект не знойдзены</translation>
     </message>
@@ -6558,151 +6558,151 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::PropertyEditor</name>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="382"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="363"/>
       <source>Edit</source>
       <translation>Змяніць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="393"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="374"/>
       <source>property</source>
       <translation>уласцівасць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="919"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="869"/>
       <source>Expand/Collapse Properties</source>
       <translation>Разгарнуць/згарнуць уласцівасці</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="921"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="871"/>
       <source>Expand to Default</source>
       <translation>Разгарнуць да першапачатковага</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="923"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="873"/>
       <source>Expand All</source>
       <translation>Разгарнуць усе</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="925"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="875"/>
       <source>Collapse All</source>
       <translation>Згарнуць усё</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="931"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="881"/>
       <source>Default Expand</source>
       <translation>Пашырыць першапачаткова</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="934"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="884"/>
       <source>Auto Expand</source>
       <translation>Разгарнуць аўтаматычна</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="937"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="887"/>
       <source>Auto Collapse</source>
       <translation>Згарнуць аўтаматычна</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1027"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="977"/>
       <source>object %1 (%2):
 </source>
       <translation>аб'ект %1 (%2):
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1034"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="984"/>
       <source>property %1
 </source>
       <translation>уласцівасць %1</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1046"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="996"/>
       <source>document %1:
 </source>
       <translation>дакумент %1:
 </translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1071"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1021"/>
       <source>The property %1 in object %2 (%3) in document %4 is referenced by:</source>
       <translation>Уласцівасць %1 у аб'екце %2 (%3) у дакуменце %4 спасылаецца:</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1087"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1037"/>
       <source>(No references found.)</source>
       <translation>(спасылкі не знойдзеныя)</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1105"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1193"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1055"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
       <source>Property Uses</source>
       <translation>Ужыванне ўласцівасці</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1135"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1085"/>
       <source>Copy</source>
       <translation>Скапіраваць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1143"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1093"/>
       <source>Add Property</source>
       <translation>Дадаць уласцівасць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1150"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1433"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1100"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1383"/>
       <source>Rename Property Group</source>
       <translation>Пераназваць суполку ўласцівасцяў</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1161"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1111"/>
       <source>Cannot rename group: one or more properties have names that start with the group name</source>
       <translation>Не атрымалася пераназваць суполку: адна ці некалькі ўласцівасцяў маюць назвы, якія пачынаюцца з назвы суполкі</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1170"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1403"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1120"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1353"/>
       <source>Rename Property</source>
       <translation>Пераназваць уласцівасць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1171"/>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1373"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1121"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1323"/>
       <source>Edit Property Tooltip</source>
       <translation>Змяніць уласцівасць парады</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1188"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1138"/>
       <source>Delete Property</source>
       <translation>Выдаліць уласцівасць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1203"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1153"/>
       <source>Move Property</source>
       <translation>Перамясціць уласцівасць</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1374"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1324"/>
       <source>Tooltip</source>
       <translation>Парада</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1213"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1163"/>
       <source>Show Hidden</source>
       <translation>Паказаць схаваныя</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1230"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1180"/>
       <source>Expression</source>
       <translation>Выраз</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1404"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1354"/>
       <source>Property name</source>
       <translation>Назва ўласцівасці</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyEditor.cpp" line="1434"/>
+      <location filename="../propertyeditor/PropertyEditor.cpp" line="1384"/>
       <source>Group name:</source>
       <translation>Назва суполкі:</translation>
     </message>
@@ -7277,6 +7277,7 @@ Specify another directory?</source>
     </message>
     <message>
       <location filename="Translator.cpp" line="241"/>
+      <location filename="Translator.cpp" line="279"/>
       <source>English</source>
       <translation>Англійская</translation>
     </message>
@@ -8158,7 +8159,7 @@ Check the report view for more details.</source>
       <translation> → Запускаецца нанова…</translation>
     </message>
     <message>
-      <location filename="../Command.cpp" line="548"/>
+      <location filename="../Command.cpp" line="550"/>
       <source>Exception</source>
       <translation>Выключэнне</translation>
     </message>
@@ -8798,12 +8799,12 @@ Choose 'Abort' to abort</source>
       <translation>Немагчыма запусціць сістэмны аглядальнік.</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3342"/>
+      <location filename="../View3DInventorViewer.cpp" line="3343"/>
       <source>Out of memory</source>
       <translation>Не хапае памяці</translation>
     </message>
     <message>
-      <location filename="../View3DInventorViewer.cpp" line="3343"/>
+      <location filename="../View3DInventorViewer.cpp" line="3344"/>
       <source>Not enough memory available to display the data.</source>
       <translation>Недастаткова памяці для адлюстравання дадзеных.</translation>
     </message>
@@ -8950,8 +8951,8 @@ Choose 'Abort' to abort</source>
       <translation>Не атрымалася перамясціць</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1010"/>
       <location filename="../ViewProviderLink.cpp" line="3055"/>
+      <location filename="../MainWindow.cpp" line="1010"/>
       <source>Apply to all</source>
       <translation>Ужыць да ўсіх</translation>
     </message>
@@ -9276,12 +9277,12 @@ the current copy will be lost.
   <context>
     <name>SelectionFilter</name>
     <message>
-      <location filename="../Selection/Selection.cpp" line="975"/>
+      <location filename="../Selection/Selection.cpp" line="978"/>
       <source>Not allowed:</source>
       <translation>Не дазволена:</translation>
     </message>
     <message>
-      <location filename="../Selection/Selection.cpp" line="1335"/>
+      <location filename="../Selection/Selection.cpp" line="1338"/>
       <source>Selection not allowed by filter</source>
       <translation>Выбар, які не дазволены фільтрам</translation>
     </message>
@@ -14673,7 +14674,7 @@ This makes the docked panel stay transparent at all times.</source>
   <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4700"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4698"/>
       <source>Changes the linked object</source>
       <translation>Змяняе звязаны аб'ект</translation>
     </message>
@@ -14681,12 +14682,12 @@ This makes the docked panel stay transparent at all times.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyItemDelegate</name>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>Yes</source>
       <translation>Так</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="143"/>
+      <location filename="../propertyeditor/PropertyItemDelegate.cpp" line="144"/>
       <source>No</source>
       <translation>Не</translation>
     </message>
@@ -14833,6 +14834,49 @@ This makes the docked panel stay transparent at all times.</source>
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::DlgDocumentObject</name>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="14"/>
+      <source>Object</source>
+      <translation>Аб'ект</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="46"/>
+      <source>Filter by type</source>
+      <translation>Фільтр па тыпу</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="53"/>
+      <source>Synchronizes the 3D view selection with the full object hierarchy</source>
+      <translation>Сінхранізуе выбар трохмернага прадстаўлення з усёй іерархіяй аб'ектаў</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="56"/>
+      <source>Sync sub-object selection</source>
+      <translation>Сінхранізаваць выбар укладзеных аб'ектаў</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="88"/>
+      <source>Search</source>
+      <translation>Пошук</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.ui" line="95"/>
+      <source>A search pattern to filter the results above</source>
+      <translation>Шаблон пошуку для фільтрацыі прыведзеных вышэй вынікаў</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.cpp" line="118"/>
+      <source>Reset</source>
+      <translation>Скінуць</translation>
+    </message>
+    <message>
+      <location filename="../Dialogs/DlgDocumentObject.cpp" line="119"/>
+      <source>Clear</source>
+      <translation>Ачысціць</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::DlgSettingsKeyboard</name>
     <message>
       <location filename="../Dialogs/DlgKeyboard.ui" line="14"/>
@@ -14935,95 +14979,17 @@ treated as shortcut key sequence 'F, F'.</source>
     </message>
   </context>
   <context>
-    <name>Gui::Dialog::DlgDocumentObject</name>
+    <name>FileDialog</name>
     <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="14"/>
-      <source>Object</source>
-      <translation>Аб'ект</translation>
+      <location filename="../FileDialog.cpp" line="579"/>
+      <source>Save As</source>
+      <translation>Захаваць як</translation>
     </message>
     <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="46"/>
-      <source>Filter by type</source>
-      <translation>Фільтр па тыпу</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="53"/>
-      <source>Synchronizes the 3D view selection with the full object hierarchy</source>
-      <translation>Сінхранізуе выбар трохмернага прадстаўлення з усёй іерархіяй аб'ектаў</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="56"/>
-      <source>Sync sub-object selection</source>
-      <translation>Сінхранізаваць выбар укладзеных аб'ектаў</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="88"/>
-      <source>Search</source>
-      <translation>Пошук</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.ui" line="95"/>
-      <source>A search pattern to filter the results above</source>
-      <translation>Шаблон пошуку для фільтрацыі прыведзеных вышэй вынікаў</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.cpp" line="118"/>
-      <source>Reset</source>
-      <translation>Скінуць</translation>
-    </message>
-    <message>
-      <location filename="../Dialogs/DlgDocumentObject.cpp" line="119"/>
-      <source>Clear</source>
-      <translation>Ачысціць</translation>
-    </message>
-  </context>
-  <context>
-    <name>Gui::Command</name>
-    <message>
-      <location filename="../Command.cpp" line="1063"/>
-      <source>Experimental</source>
-      <translation>Эксперыментальная</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1065"/>
-      <source>EXPERIMENTAL: this command may change.</source>
-      <translation>Эксперыментальна: каманда можа змяніцца.</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1069"/>
-      <source>Development preview</source>
-      <translation>Папярэдні прагляд распрацоўкі</translation>
-    </message>
-    <message>
-      <location filename="../Command.cpp" line="1070"/>
-      <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
-      <translation>Папярэдні прагляд распрацоўкі: каманда можа быць змененая ці выдаленая.</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdOpenGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="85"/>
-      <source>&amp;Open…</source>
-      <translation>&amp;Адчыніць…</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="86"/>
-      <source>Opens a document or imports files</source>
-      <translation>Адчыняе дакумент ці імпартуе файлы</translation>
-    </message>
-  </context>
-  <context>
-    <name>StdCmdSaveGroup</name>
-    <message>
-      <location filename="../CommandDoc.cpp" line="966"/>
-      <source>Save</source>
-      <translation>Захаваць</translation>
-    </message>
-    <message>
-      <location filename="../CommandDoc.cpp" line="967"/>
-      <source>Saves the active document</source>
-      <translation>Захоўвае бягучы дакумент</translation>
+      <location filename="../FileDialog.cpp" line="715"/>
+      <location filename="../FileDialog.cpp" line="811"/>
+      <source>Open</source>
+      <translation>Адчыніць</translation>
     </message>
   </context>
   <context>
@@ -15065,44 +15031,55 @@ treated as shortcut key sequence 'F, F'.</source>
     </message>
   </context>
   <context>
+    <name>StdCmdToggleBottomPanels</name>
+    <message>
+      <location filename="../CommandView.cpp" line="3858"/>
+      <source>Toggle Bottom Panels</source>
+      <translation>Пераключыць ніжнія панэлі</translation>
+    </message>
+    <message>
+      <location filename="../CommandView.cpp" line="3859"/>
+      <source>Toggles the bottom dock panels</source>
+      <translation>Пераключыць ніжнія прымацаваныя панэлі</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::PropertyMapEditor</name>
     <message>
-      <location filename="../Widgets.cpp" line="1913"/>
+      <location filename="../Widgets.cpp" line="1924"/>
       <source>Key</source>
       <translation>Ключ</translation>
     </message>
     <message>
-      <location filename="../Widgets.cpp" line="1913"/>
+      <location filename="../Widgets.cpp" line="1924"/>
       <source>Value</source>
       <translation>Значэнне</translation>
     </message>
   </context>
   <context>
-    <name>StdCmdToggleSuppress</name>
+    <name>StdCmdOpenGroup</name>
     <message>
-      <location filename="../CommandFeat.cpp" line="240"/>
-      <source>Toggle Suppressed</source>
-      <translation>Пераключыць рэжым душэння</translation>
+      <location filename="../CommandDoc.cpp" line="85"/>
+      <source>&amp;Open…</source>
+      <translation>&amp;Адчыніць…</translation>
     </message>
     <message>
-      <location filename="../CommandFeat.cpp" line="242"/>
-      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
-      <translation>Пераключае стан душэння абраных аб'ектаў.
-Душаны аб'ект паводзіць сябе так, як быццам ён быў выдалены.</translation>
+      <location filename="../CommandDoc.cpp" line="86"/>
+      <source>Opens a document or imports files</source>
+      <translation>Адчыняе дакумент ці імпартуе файлы</translation>
     </message>
   </context>
   <context>
-    <name>FileDialog</name>
+    <name>StdCmdSaveGroup</name>
     <message>
-      <location filename="../FileDialog.cpp" line="579"/>
-      <source>Save As</source>
-      <translation>Захаваць як</translation>
+      <location filename="../CommandDoc.cpp" line="966"/>
+      <source>Save</source>
+      <translation>Захаваць</translation>
     </message>
     <message>
-      <location filename="../FileDialog.cpp" line="715"/>
-      <location filename="../FileDialog.cpp" line="811"/>
-      <source>Open</source>
-      <translation>Адчыніць</translation>
+      <location filename="../CommandDoc.cpp" line="967"/>
+      <source>Saves the active document</source>
+      <translation>Захоўвае бягучы дакумент</translation>
     </message>
   </context>
   <context>
@@ -15137,16 +15114,40 @@ treated as shortcut key sequence 'F, F'.</source>
     </message>
   </context>
   <context>
-    <name>StdCmdToggleBottomPanels</name>
+    <name>StdCmdToggleSuppress</name>
     <message>
-      <location filename="../CommandView.cpp" line="3858"/>
-      <source>Toggle Bottom Panels</source>
-      <translation>Пераключыць ніжнія панэлі</translation>
+      <location filename="../CommandFeat.cpp" line="240"/>
+      <source>Toggle Suppressed</source>
+      <translation>Пераключыць рэжым душэння</translation>
     </message>
     <message>
-      <location filename="../CommandView.cpp" line="3859"/>
-      <source>Toggles the bottom dock panels</source>
-      <translation>Пераключыць ніжнія прымацаваныя панэлі</translation>
+      <location filename="../CommandFeat.cpp" line="242"/>
+      <source>Toggles suppressed state of the selected objects. A suppressed object behaves like it was deleted.</source>
+      <translation>Пераключае стан душэння абраных аб'ектаў.
+Душаны аб'ект паводзіць сябе так, як быццам ён быў выдалены.</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Command</name>
+    <message>
+      <location filename="../Command.cpp" line="1067"/>
+      <source>Experimental</source>
+      <translation>Эксперыментальная</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1069"/>
+      <source>EXPERIMENTAL: this command may change.</source>
+      <translation>Эксперыментальна: каманда можа змяніцца.</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1073"/>
+      <source>Development preview</source>
+      <translation>Папярэдні прагляд распрацоўкі</translation>
+    </message>
+    <message>
+      <location filename="../Command.cpp" line="1074"/>
+      <source>DEVELOPMENT PREVIEW: this command may change or be removed.</source>
+      <translation>Папярэдні прагляд распрацоўкі: каманда можа быць змененая ці выдаленая.</translation>
     </message>
   </context>
   <context>
@@ -15160,38 +15161,38 @@ treated as shortcut key sequence 'F, F'.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3588"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3586"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>Вызначае асноўны колер паверхні, на якую трапляе святло.
 Уласцівасць адлюстроўвае раўнамернае рассейванне святла аб'ектам па ўсіх напрамках, незалежна ад вугла агляду.
 Уласцівасць у найбольшай ступені ўплывае на колер матэрыялу.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3598"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3596"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>Вызначае колер паверхні пры непрамым раўнамерным асвятленні, прадстаўляючы, як яна выглядае пры асвятленні сцэны толькі безуважлівым святлом, без накіраванага асвятлення, зацянення ці блікаў</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3608"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3606"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>Вызначае колер і інтэнсіўнасць яркіх люстраных блікаў, якія з'яўляюцца на бліскучых ці паверхнях, якія адлюстроўваюць, пры прамым трапленні на іх святла.
 Задайце яркія колеры для бліскучых аб'ектаў.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3618"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3616"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>Вызначае колер паверхні, якая выпраменьвае святло, як калі б яна была крыніцай святла, незалежна ад знешняга асвятлення, у выніку чаго аб'ект выглядае самаасвятляючым.
 Задайце значэнне як чорны, каб не было колеру выпраменьвання.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3630"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3628"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>Вызначае памер і рэзкасць блікаў на паверхні.
 Больш высокія значэнні ствараюць невялікія рэзкія блікі, а больш нізкія значэнні ствараюць шырокія мяккія блікі.
 Звярніце ўвагу, што інтэнсіўнасць блікаў вызначаецца колерам блікаў.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3642"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3640"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>Вызначае, колькі святла праходзіць праз аб'ект, робячы яго часткова ці цалкам празрыстым</translation>
     </message>
@@ -15199,38 +15200,38 @@ treated as shortcut key sequence 'F, F'.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyMaterialListItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3954"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3952"/>
       <source>Defines the base color of a surface when illuminated by light. It represents how the object scatters light evenly in all directions, independent of the viewer’s angle. This property will influence the material color the most.</source>
       <translation>Вызначае асноўны колер паверхні, на якую трапляе святло.
 Уласцівасць адлюстроўвае раўнамернае рассейванне святла аб'ектам па ўсіх напрамках, незалежна ад вугла агляду.
 Уласцівасць у найбольшай ступені ўплывае на колер матэрыялу.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3964"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3962"/>
       <source>Defines the color of a surface under indirect, uniform lighting, representing how it appears when illuminated only by ambient light in a scene, without directional light, shading, or highlights</source>
       <translation>Вызначае колер паверхні пры непрамым раўнамерным асвятленні, прадстаўляючы, як яна выглядае пры асвятленні сцэны толькі безуважлівым святлом, без накіраванага асвятлення, зацянення ці блікаў</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3974"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3972"/>
       <source>Defines the color and intensity of the bright, mirror-like highlights that appear on shiny or reflective surfaces when light hits them directly. Set to bright colors for shiny objects.</source>
       <translation>Вызначае колер і інтэнсіўнасць яркіх люстраных блікаў, якія з'яўляюцца на бліскучых ці паверхнях, якія адлюстроўваюць, пры прамым трапленні на іх святла.
 Задайце яркія колеры для бліскучых аб'ектаў.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3984"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3982"/>
       <source>Defines the color of a surface that appears to emit as if it were a light source, independent of external lighting, making the object look self-illuminated. Set to black to have no emissive color.</source>
       <translation>Вызначае колер паверхні, якая выпраменьвае святло, як калі б яна была крыніцай святла, незалежна ад знешняга асвятлення, у выніку чаго аб'ект выглядае самаасвятляючым.
 Задайце значэнне як чорны, каб не было колеру выпраменьвання.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="3996"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="3994"/>
       <source>Defines the size and sharpness of specular highlights on a surface. Higher values produce small, sharp highlights, while lower values create broad, soft highlights. Note that the highlight intensity is defined by specular color.</source>
       <translation>Вызначае памер і рэзкасць блікаў на паверхні.
 Больш высокія значэнні ствараюць невялікія рэзкія блікі, а больш нізкія значэнні ствараюць шырокія мяккія блікі.
 Звярніце ўвагу, што інтэнсіўнасць блікаў вызначаецца колерам блікаў.</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4008"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4006"/>
       <source>Defines how much light passes through an object, making it partially or fully see-through</source>
       <translation>Вызначае, колькі святла праходзіць праз аб'ект, робячы яго часткова ці цалкам празрыстым</translation>
     </message>
@@ -15238,7 +15239,7 @@ treated as shortcut key sequence 'F, F'.</source>
   <context>
     <name>Gui::PropertyEditor::PropertyMapItem</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4930"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4928"/>
       <source>Map</source>
       <translation>Супаставіць</translation>
     </message>

@@ -1198,22 +1198,22 @@
   <context>
     <name>CmdBoxSelection</name>
     <message>
-      <location filename="../../Command.cpp" line="2398"/>
+      <location filename="../../Command.cpp" line="2390"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2399"/>
+      <location filename="../../Command.cpp" line="2391"/>
       <source>Box Selection</source>
       <translation>Выделить область</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2400"/>
+      <location filename="../../Command.cpp" line="2392"/>
       <source>Selects elements in the 3D view using a box selection</source>
       <translation>Выбирает элементы в 3D-виде с помощью выделения рамкой</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2402"/>
+      <location filename="../../Command.cpp" line="2394"/>
       <source>Box selection</source>
       <translation>Выделить область</translation>
     </message>
@@ -1221,17 +1221,17 @@
   <context>
     <name>CmdCheckGeometry</name>
     <message>
-      <location filename="../../Command.cpp" line="2320"/>
+      <location filename="../../Command.cpp" line="2312"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2321"/>
+      <location filename="../../Command.cpp" line="2313"/>
       <source>Check Geometry</source>
       <translation>Проверка геометрии</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2322"/>
+      <location filename="../../Command.cpp" line="2314"/>
       <source>Analyzes the selected shapes for errors</source>
       <translation>Анализ выбранных фигур на ошибки</translation>
     </message>
@@ -1239,17 +1239,17 @@
   <context>
     <name>CmdColorPerFace</name>
     <message>
-      <location filename="../../Command.cpp" line="2354"/>
+      <location filename="../../Command.cpp" line="2346"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2355"/>
+      <location filename="../../Command.cpp" line="2347"/>
       <source>Appearance per &amp;Face</source>
       <translation>Внешний вид грани</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2356"/>
+      <location filename="../../Command.cpp" line="2348"/>
       <source>Sets the appearance of individual faces of the selected object</source>
       <translation>Устанавливает внешний вид отдельных граней выбранного объекта</translation>
     </message>
@@ -1257,17 +1257,17 @@
   <context>
     <name>CmdPartBoolean</name>
     <message>
-      <location filename="../../Command.cpp" line="1407"/>
+      <location filename="../../Command.cpp" line="1401"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1408"/>
+      <location filename="../../Command.cpp" line="1402"/>
       <source>Boolean Operation</source>
       <translation>Булева операция</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1409"/>
+      <location filename="../../Command.cpp" line="1403"/>
       <source>Applies a boolean operation with the selected shapes</source>
       <translation>Применяет булеву операцию к выбранным фигурам</translation>
     </message>
@@ -1330,17 +1330,17 @@
   <context>
     <name>CmdPartBuilder</name>
     <message>
-      <location filename="../../Command.cpp" line="1706"/>
+      <location filename="../../Command.cpp" line="1700"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1707"/>
+      <location filename="../../Command.cpp" line="1701"/>
       <source>Shape Builder</source>
       <translation>Построитель фигур</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1709"/>
+      <location filename="../../Command.cpp" line="1703"/>
       <source>Advanced utility to create shapes</source>
       <translation>Продвинутый инструмент для создания фигур</translation>
     </message>
@@ -1348,17 +1348,17 @@
   <context>
     <name>CmdPartChamfer</name>
     <message>
-      <location filename="../../Command.cpp" line="1611"/>
+      <location filename="../../Command.cpp" line="1605"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1612"/>
+      <location filename="../../Command.cpp" line="1606"/>
       <source>Chamfer</source>
       <translation>Фаска</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1613"/>
+      <location filename="../../Command.cpp" line="1607"/>
       <source>Chamfers the selected edges of a shape</source>
       <translation>Формирует фаски на выбранных рёбрах фигуры</translation>
     </message>
@@ -1384,17 +1384,17 @@
   <context>
     <name>CmdPartCompCompoundTools</name>
     <message>
-      <location filename="../../Command.cpp" line="821"/>
+      <location filename="../../Command.cpp" line="817"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="822"/>
+      <location filename="../../Command.cpp" line="818"/>
       <source>Compound Tools</source>
       <translation>Инструменты составных объектов</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="823"/>
+      <location filename="../../Command.cpp" line="819"/>
       <source>Compound tools for working with multiple shapes</source>
       <translation>Инструменты для работы с составными объектами состоящими из множества фигур</translation>
     </message>
@@ -1420,17 +1420,17 @@
   <context>
     <name>CmdPartCompOffset</name>
     <message>
-      <location filename="../../Command.cpp" line="1927"/>
+      <location filename="../../Command.cpp" line="1921"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1928"/>
+      <location filename="../../Command.cpp" line="1922"/>
       <source>Offset</source>
       <translation>Смещение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1929"/>
+      <location filename="../../Command.cpp" line="1923"/>
       <source>Tools to offset shapes (construct parallel shapes)</source>
       <translation>Инструмент смещения фигур (конструирует параллельные фигуры)</translation>
     </message>
@@ -1456,17 +1456,17 @@
   <context>
     <name>CmdPartCompound</name>
     <message>
-      <location filename="../../Command.cpp" line="938"/>
+      <location filename="../../Command.cpp" line="932"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="939"/>
+      <location filename="../../Command.cpp" line="933"/>
       <source>Compound</source>
       <translation>Составной объект</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="940"/>
+      <location filename="../../Command.cpp" line="934"/>
       <source>Compounds the selected shapes</source>
       <translation>Объединяет выбранные фигуры в Составной объект</translation>
     </message>
@@ -1493,17 +1493,17 @@
   <context>
     <name>CmdPartCrossSections</name>
     <message>
-      <location filename="../../Command.cpp" line="1667"/>
+      <location filename="../../Command.cpp" line="1661"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1668"/>
+      <location filename="../../Command.cpp" line="1662"/>
       <source>Cross-Sections</source>
       <translation>Поперечные сечения</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1669"/>
+      <location filename="../../Command.cpp" line="1663"/>
       <source>Creates cross-sections</source>
       <translation>Создаёт поперечные сечения</translation>
     </message>
@@ -1584,17 +1584,17 @@
   <context>
     <name>CmdPartExport</name>
     <message>
-      <location filename="../../Command.cpp" line="1140"/>
+      <location filename="../../Command.cpp" line="1134"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1141"/>
+      <location filename="../../Command.cpp" line="1135"/>
       <source>Export CAD File</source>
       <translation>Экспорт CAD файла</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1143"/>
+      <location filename="../../Command.cpp" line="1137"/>
       <source>Exports to a CAD file</source>
       <translation>Экспорт в файл CAD</translation>
     </message>
@@ -1602,17 +1602,17 @@
   <context>
     <name>CmdPartExtrude</name>
     <message>
-      <location filename="../../Command.cpp" line="1439"/>
+      <location filename="../../Command.cpp" line="1433"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1440"/>
+      <location filename="../../Command.cpp" line="1434"/>
       <source>Extrude</source>
       <translation>Выдавить</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1441"/>
+      <location filename="../../Command.cpp" line="1435"/>
       <source>Extrudes the selected sketch or profile</source>
       <translation>Выдавливает выбранный эскиз или профиль</translation>
     </message>
@@ -1620,17 +1620,17 @@
   <context>
     <name>CmdPartFillet</name>
     <message>
-      <location filename="../../Command.cpp" line="1583"/>
+      <location filename="../../Command.cpp" line="1577"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1584"/>
+      <location filename="../../Command.cpp" line="1578"/>
       <source>Fillet</source>
       <translation>Скругление</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1585"/>
+      <location filename="../../Command.cpp" line="1579"/>
       <source>Fillets the selected edges of a shape</source>
       <translation>Скругляет выбранные рёбра фигуры</translation>
     </message>
@@ -1656,17 +1656,17 @@
   <context>
     <name>CmdPartImport</name>
     <message>
-      <location filename="../../Command.cpp" line="1070"/>
+      <location filename="../../Command.cpp" line="1064"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1071"/>
+      <location filename="../../Command.cpp" line="1065"/>
       <source>Import CAD File</source>
       <translation>Импорт CAD файла</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1073"/>
+      <location filename="../../Command.cpp" line="1067"/>
       <source>Imports a CAD file</source>
       <translation>Импортировать CAD-файл</translation>
     </message>
@@ -1674,17 +1674,17 @@
   <context>
     <name>CmdPartImportCurveNet</name>
     <message>
-      <location filename="../../Command.cpp" line="1192"/>
+      <location filename="../../Command.cpp" line="1186"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1193"/>
+      <location filename="../../Command.cpp" line="1187"/>
       <source>Import Curve Network</source>
       <translation>Импортировать сетку кривых</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1195"/>
+      <location filename="../../Command.cpp" line="1189"/>
       <source>Imports a curve network</source>
       <translation>Импортирует сетку кривых</translation>
     </message>
@@ -1692,17 +1692,17 @@
   <context>
     <name>CmdPartLoft</name>
     <message>
-      <location filename="../../Command.cpp" line="1736"/>
+      <location filename="../../Command.cpp" line="1730"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1737"/>
+      <location filename="../../Command.cpp" line="1731"/>
       <source>Loft</source>
       <translation>Профиль по сечениям</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1738"/>
+      <location filename="../../Command.cpp" line="1732"/>
       <source>Lofts the selected profiles</source>
       <translation>Сращивает выбранные профили</translation>
     </message>
@@ -1710,17 +1710,17 @@
   <context>
     <name>CmdPartMakeFace</name>
     <message>
-      <location filename="../../Command.cpp" line="1496"/>
+      <location filename="../../Command.cpp" line="1490"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1497"/>
+      <location filename="../../Command.cpp" line="1491"/>
       <source>Face From Wires</source>
       <translation>Грань из кривых</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1498"/>
+      <location filename="../../Command.cpp" line="1492"/>
       <source>Creates a face from the selected wires (e.g. from a sketch)</source>
       <translation>Создаёт грань из выбранных кривых (например из эскиза)</translation>
     </message>
@@ -1728,17 +1728,17 @@
   <context>
     <name>CmdPartMakeSolid</name>
     <message>
-      <location filename="../../Command.cpp" line="1245"/>
+      <location filename="../../Command.cpp" line="1239"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1246"/>
+      <location filename="../../Command.cpp" line="1240"/>
       <source>Convert to Solid</source>
       <translation>Преобразовать в твёрдое тело</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1247"/>
+      <location filename="../../Command.cpp" line="1241"/>
       <source>Converts the selected shell or compound to a solid</source>
       <translation>Преобразует выбранную оболочку или составной объект
  в твёрдое тело</translation>
@@ -1747,17 +1747,17 @@
   <context>
     <name>CmdPartMirror</name>
     <message>
-      <location filename="../../Command.cpp" line="1639"/>
+      <location filename="../../Command.cpp" line="1633"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1640"/>
+      <location filename="../../Command.cpp" line="1634"/>
       <source>Mirror</source>
       <translation>Зеркально отразить</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1641"/>
+      <location filename="../../Command.cpp" line="1635"/>
       <source>Mirrors the selected shape</source>
       <translation>Зеркальное отражение выбранной фигуры</translation>
     </message>
@@ -1765,17 +1765,17 @@
   <context>
     <name>CmdPartOffset</name>
     <message>
-      <location filename="../../Command.cpp" line="1794"/>
+      <location filename="../../Command.cpp" line="1788"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1795"/>
+      <location filename="../../Command.cpp" line="1789"/>
       <source>3D Offset</source>
       <translation>3-мерное Смещение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1796"/>
+      <location filename="../../Command.cpp" line="1790"/>
       <source>Offsets shapes in 3D</source>
       <translation>Создаёт трансформированную смещенную трёхмерную фигуру</translation>
     </message>
@@ -1783,17 +1783,17 @@
   <context>
     <name>CmdPartOffset2D</name>
     <message>
-      <location filename="../../Command.cpp" line="1861"/>
+      <location filename="../../Command.cpp" line="1855"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1862"/>
+      <location filename="../../Command.cpp" line="1856"/>
       <source>2D Offset</source>
       <translation>2-мерное смещение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1863"/>
+      <location filename="../../Command.cpp" line="1857"/>
       <source>Offsets planar shapes in 2D</source>
       <translation>Создаёт смещённые в двумерном пространстве плоские фигуры</translation>
     </message>
@@ -1855,17 +1855,17 @@
   <context>
     <name>CmdPartProjectionOnSurface</name>
     <message>
-      <location filename="../../Command.cpp" line="2428"/>
+      <location filename="../../Command.cpp" line="2420"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2429"/>
+      <location filename="../../Command.cpp" line="2421"/>
       <source>Project on Surface</source>
       <translation>Проецировать на поверхность</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2430"/>
+      <location filename="../../Command.cpp" line="2422"/>
       <source>Projects edges, wires, or faces of one shape
 onto a face of another shape.
 The camera view determines the direction
@@ -1897,17 +1897,17 @@ of the projection.</source>
   <context>
     <name>CmdPartReverseShape</name>
     <message>
-      <location filename="../../Command.cpp" line="1338"/>
+      <location filename="../../Command.cpp" line="1332"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1339"/>
+      <location filename="../../Command.cpp" line="1333"/>
       <source>Reverse Shapes</source>
       <translation>Обратить нормали формы</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1340"/>
+      <location filename="../../Command.cpp" line="1334"/>
       <source>Reverses the orientation of the selected shapes</source>
       <translation>Обращает ориентацию нормалей выбранных фигур</translation>
     </message>
@@ -1915,17 +1915,17 @@ of the projection.</source>
   <context>
     <name>CmdPartRevolve</name>
     <message>
-      <location filename="../../Command.cpp" line="1555"/>
+      <location filename="../../Command.cpp" line="1549"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1556"/>
+      <location filename="../../Command.cpp" line="1550"/>
       <source>Revolve</source>
       <translation>Вращение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1557"/>
+      <location filename="../../Command.cpp" line="1551"/>
       <source>Revolves the selected shape</source>
       <translation>Проворачивает выбранную фигуру</translation>
     </message>
@@ -1933,17 +1933,17 @@ of the projection.</source>
   <context>
     <name>CmdPartRuledSurface</name>
     <message>
-      <location filename="../../Command.cpp" line="2176"/>
+      <location filename="../../Command.cpp" line="2168"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2177"/>
+      <location filename="../../Command.cpp" line="2169"/>
       <source>Ruled Surface</source>
       <translation>Линейчатая поверхность</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2178"/>
+      <location filename="../../Command.cpp" line="2170"/>
       <source>Creates a ruled surface between 2 selected wires</source>
       <translation>Создаёт линейчатую поверхность между двумя выбранными кривыми</translation>
     </message>
@@ -1951,17 +1951,17 @@ of the projection.</source>
   <context>
     <name>CmdPartSection</name>
     <message>
-      <location filename="../../Command.cpp" line="1000"/>
+      <location filename="../../Command.cpp" line="994"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1001"/>
+      <location filename="../../Command.cpp" line="995"/>
       <source>Section</source>
       <translation>Сечение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1002"/>
+      <location filename="../../Command.cpp" line="996"/>
       <source>Sections 2 selected shapes</source>
       <translation>Создаёт геометрию пересечения двух выбранных фигур</translation>
     </message>
@@ -2042,17 +2042,17 @@ of the projection.</source>
   <context>
     <name>CmdPartSweep</name>
     <message>
-      <location filename="../../Command.cpp" line="1765"/>
+      <location filename="../../Command.cpp" line="1759"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1766"/>
+      <location filename="../../Command.cpp" line="1760"/>
       <source>Sweep</source>
       <translation>Профиль по траектории</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1767"/>
+      <location filename="../../Command.cpp" line="1761"/>
       <source>Sweeps profiles along a wire</source>
       <translation>Протягивает профили вдоль кривой</translation>
     </message>
@@ -2060,27 +2060,27 @@ of the projection.</source>
   <context>
     <name>CmdPartThickness</name>
     <message>
-      <location filename="../../Command.cpp" line="2029"/>
+      <location filename="../../Command.cpp" line="2021"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2030"/>
+      <location filename="../../Command.cpp" line="2022"/>
       <source>Thickness</source>
       <translation>Толщина</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2031"/>
+      <location filename="../../Command.cpp" line="2023"/>
       <source>Removes the selected faces and offsets the remaining shape outward to add thickness</source>
       <translation>Удаляет выбранные грани и смещает оставшуюся форму в стороны, чтобы придать ей толщину</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2090"/>
+      <location filename="../../Command.cpp" line="2082"/>
       <source>Wrong selection</source>
       <translation>Неправильный выбор</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2091"/>
+      <location filename="../../Command.cpp" line="2083"/>
       <source>Selected shape is not a solid</source>
       <translation>Выбранная фигура не является твердотельным объектом</translation>
     </message>
@@ -2146,97 +2146,97 @@ of the projection.</source>
       <translation>Слияние</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="978"/>
+      <location filename="../../Command.cpp" line="972"/>
       <source>Compound</source>
       <translation>Составной объект</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1029"/>
+      <location filename="../../Command.cpp" line="1023"/>
       <source>Section</source>
       <translation>Сечение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1101"/>
+      <location filename="../../Command.cpp" line="1095"/>
       <source>Import Part</source>
       <translation>Импорт детали</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1218"/>
+      <location filename="../../Command.cpp" line="1212"/>
       <source>Import Curve Net</source>
       <translation>Импортировать сетку кривых</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1352"/>
+      <location filename="../../Command.cpp" line="1346"/>
       <source>Reverse</source>
       <translation>Вывернуть</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1515"/>
+      <location filename="../../Command.cpp" line="1509"/>
       <source>Make face</source>
       <translation>Создать грань</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1821"/>
+      <location filename="../../Command.cpp" line="1815"/>
       <source>Make Offset</source>
       <translation>Создать Смещение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1889"/>
+      <location filename="../../Command.cpp" line="1883"/>
       <source>Make 2D Offset</source>
       <translation>Создать 2-мерное смещение</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2098"/>
+      <location filename="../../Command.cpp" line="2090"/>
       <source>Make Thickness</source>
       <translation>Создать Толщину</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2287"/>
+      <location filename="../../Command.cpp" line="2279"/>
       <source>Create ruled surface</source>
       <translation>Создать линейчатую ​​поверхность</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2651"/>
+      <location filename="../../Command.cpp" line="2643"/>
       <source>Circular Link Array</source>
-      <translation type="unfinished">Circular Link Array</translation>
+      <translation>Круговой массив ссылок</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2686"/>
+      <location filename="../../Command.cpp" line="2678"/>
       <source>Path Link Array</source>
       <translation>Массив ссылок траекторий инструмента</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2721"/>
+      <location filename="../../Command.cpp" line="2713"/>
       <source>Point Link Array</source>
       <translation>Массив ссылок по точкам</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2756"/>
+      <location filename="../../Command.cpp" line="2748"/>
       <source>Linear Link Array</source>
-      <translation type="unfinished">Linear Link Array</translation>
+      <translation>Линейный массив ссылок</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2791"/>
+      <location filename="../../Command.cpp" line="2783"/>
       <source>Polar Link Array</source>
-      <translation type="unfinished">Polar Link Array</translation>
+      <translation>Полярный массив ссылок</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2819"/>
+      <location filename="../../Command.cpp" line="2811"/>
       <source>Add coordinate system</source>
       <translation>Добавить систему координат</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2858"/>
+      <location filename="../../Command.cpp" line="2850"/>
       <source>Add datum plane</source>
       <translation>Добавить опорную плоскость</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2892"/>
+      <location filename="../../Command.cpp" line="2884"/>
       <source>Add datum line</source>
       <translation>Добавить опорную линию</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2926"/>
+      <location filename="../../Command.cpp" line="2918"/>
       <source>Add datum point</source>
       <translation>Добавить опорную точку</translation>
     </message>
@@ -2878,8 +2878,8 @@ If both lengths are zero, magnitude of direction is used.</source>
       <location filename="../../DlgExtrusion.cpp" line="598"/>
       <source>Creating extrusion failed.
 No shape could be extruded.</source>
-      <translation type="unfinished">Creating extrusion failed.
-No shape could be extruded.</translation>
+      <translation>Не удалось создать выдавливание.
+Нет формы для выдавливания.</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.cpp" line="627"/>
@@ -4381,22 +4381,32 @@ Check one or more edge entities first.</source>
       <translation>Максимальное угловое искривление</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="88"/>
+      <location filename="../../DlgSettings3DViewPart.ui" line="139"/>
+      <source>Applies these tessellation settings to all objects in currently open documents</source>
+      <translation type="unfinished">Applies these tessellation settings to all objects in currently open documents</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings3DViewPart.ui" line="142"/>
+      <source>Apply to Open Documents</source>
+      <translation type="unfinished">Apply to Open Documents</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="94"/>
       <source>Deviation</source>
       <translation>Отклонение</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="89"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="95"/>
       <source>Setting a too small deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
       <translation>Установка слишком малого отклонения приведет к увеличению времени тесселяции и, как следствие, к зависанию или замедлению работы графического интерфейса.</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="113"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="119"/>
       <source>Angle deflection</source>
       <translation>Угол искривления</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="114"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="120"/>
       <source>Setting a too small angle deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
       <translation>Установка слишком малого угла искривления приведет к увеличению времени тесселяции и, как следствие, к зависанию или замедлению работы графического интерфейса.</translation>
     </message>
@@ -4606,7 +4616,7 @@ Check one or more edge entities first.</source>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="55"/>
       <source>Automatic refinement of Part Boolean results</source>
-      <translation type="unfinished">Automatic refinement of Part Boolean results</translation>
+      <translation>Автоматическое улучшение результатов булевых операций верстака Деталь</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="58"/>
@@ -5068,7 +5078,7 @@ the sketch plane's normal vector will be used</source>
       <translation>Выберите фигуру для зеркального отображения.</translation>
     </message>
     <message>
-      <location filename="../../Mirroring.cpp" line="321"/>
+      <location filename="../../Mirroring.cpp" line="319"/>
       <source>No such document '%1'.</source>
       <translation>Нет такого документа '%1'.</translation>
     </message>
@@ -6137,8 +6147,8 @@ in the 3D view for the sweep path.</source>
     <message>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="51"/>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="59"/>
-      <location filename="../../ViewProviderPrimitive.cpp" line="55"/>
       <location filename="../../ViewProvider.cpp" line="53"/>
+      <location filename="../../ViewProviderPrimitive.cpp" line="55"/>
       <source>Edit %1</source>
       <translation>Редактировать %1</translation>
     </message>
@@ -6169,7 +6179,7 @@ in the 3D view for the sweep path.</source>
     </message>
     <message>
       <location filename="../../Command.cpp" line="338"/>
-      <location filename="../../Command.cpp" line="1020"/>
+      <location filename="../../Command.cpp" line="1014"/>
       <source>Select 2 shapes</source>
       <translation>Выберите 2 фигуры</translation>
     </message>
@@ -6177,11 +6187,11 @@ in the 3D view for the sweep path.</source>
       <location filename="../../Command.cpp" line="337"/>
       <location filename="../../Command.cpp" line="414"/>
       <location filename="../../Command.cpp" line="514"/>
-      <location filename="../../Command.cpp" line="956"/>
-      <location filename="../../Command.cpp" line="1019"/>
-      <location filename="../../Command.cpp" line="2281"/>
-      <location filename="../../Command.cpp" line="2552"/>
-      <location filename="../../Command.cpp" line="2562"/>
+      <location filename="../../Command.cpp" line="950"/>
+      <location filename="../../Command.cpp" line="1013"/>
+      <location filename="../../Command.cpp" line="2273"/>
+      <location filename="../../Command.cpp" line="2544"/>
+      <location filename="../../Command.cpp" line="2554"/>
       <source>Wrong Selection</source>
       <translation>Неправильный выбор</translation>
     </message>
@@ -6208,39 +6218,39 @@ Continue?</source>
 содержащий 2 или более фигур, которые необходимо объединить.</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="957"/>
+      <location filename="../../Command.cpp" line="951"/>
       <source>Select at least one shape</source>
       <translation>Выберите хотя бы одну фигуру</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1084"/>
-      <location filename="../../Command.cpp" line="1154"/>
+      <location filename="../../Command.cpp" line="1078"/>
+      <location filename="../../Command.cpp" line="1148"/>
       <source>STEP with colors</source>
       <translation>STEP с цветами</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1086"/>
-      <location filename="../../Command.cpp" line="1156"/>
+      <location filename="../../Command.cpp" line="1080"/>
+      <location filename="../../Command.cpp" line="1150"/>
       <source>IGES with colors</source>
       <translation>IGES с цветами</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1205"/>
+      <location filename="../../Command.cpp" line="1199"/>
       <source>All CAD Files</source>
       <translation>Все CAD файлы</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2553"/>
+      <location filename="../../Command.cpp" line="2545"/>
       <source>Select at most one object to array.</source>
       <translation type="unfinished">Select at most one object to array.</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2563"/>
+      <location filename="../../Command.cpp" line="2555"/>
       <source>Select one object from the active document.</source>
       <translation type="unfinished">Select one object from the active document.</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2282"/>
+      <location filename="../../Command.cpp" line="2274"/>
       <source>Select either 2 edges or 2 wires.</source>
       <translation>Выберите либо 2 ребра, либо 2 кривых.</translation>
     </message>
@@ -6581,7 +6591,7 @@ Continue?</source>
       <translation>Введите расстояние:</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderExt.cpp" line="1011"/>
+      <location filename="../../ViewProviderExt.cpp" line="1012"/>
       <source>Appearance per Face</source>
       <translation>Внешний вид грани</translation>
     </message>
@@ -7206,17 +7216,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartScale</name>
     <message>
-      <location filename="../../Command.cpp" line="1467"/>
+      <location filename="../../Command.cpp" line="1461"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1468"/>
+      <location filename="../../Command.cpp" line="1462"/>
       <source>Scale</source>
       <translation>Масштабировать</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1469"/>
+      <location filename="../../Command.cpp" line="1463"/>
       <source>Scales the selected shape</source>
       <translation>Масштабирует выбранную фигуру/форму</translation>
     </message>
@@ -7379,17 +7389,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartCoordinateSystem</name>
     <message>
-      <location filename="../../Command.cpp" line="2807"/>
+      <location filename="../../Command.cpp" line="2799"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2808"/>
+      <location filename="../../Command.cpp" line="2800"/>
       <source>Coordinate System</source>
       <translation>Система координат</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2809"/>
+      <location filename="../../Command.cpp" line="2801"/>
       <source>Creates a coordinate system that can be attached to other objects</source>
       <translation>Создаёт систему координат, которую можно присоединить к другим объектам</translation>
     </message>
@@ -7397,17 +7407,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartDatums</name>
     <message>
-      <location filename="../../Command.cpp" line="2985"/>
+      <location filename="../../Command.cpp" line="2977"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2986"/>
+      <location filename="../../Command.cpp" line="2978"/>
       <source>Datums</source>
       <translation>Опорные элементы</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2988"/>
+      <location filename="../../Command.cpp" line="2980"/>
       <source>Creates a datum object (coordinate system, plane, line, or point) that can be attached to other objects</source>
       <translation>Создаёт опорный объект (система координат, плоскость, линия или точка), который может быть присоединён к другим объектам</translation>
     </message>
@@ -7415,7 +7425,7 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>Exceptions</name>
     <message>
-      <location filename="../../../App/Geometry.cpp" line="6726"/>
+      <location filename="../../../App/Geometry.cpp" line="6730"/>
       <source>Unable to guess intersection of curves. Try adding a coincident constraint between the vertices of the curves you are intending to fillet.</source>
       <translation>Не удалось рассчитать пересечение кривых. Попробуйте добавить ограничение совпадения между вершинами кривых, которые вы намерены скруглить.</translation>
     </message>
@@ -7423,17 +7433,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartDatumPlane</name>
     <message>
-      <location filename="../../Command.cpp" line="2846"/>
+      <location filename="../../Command.cpp" line="2838"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2847"/>
+      <location filename="../../Command.cpp" line="2839"/>
       <source>Datum Plane</source>
       <translation>Опорная плоскость</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2848"/>
+      <location filename="../../Command.cpp" line="2840"/>
       <source>Creates a datum plane that can be attached to other objects</source>
       <translation>Создаёт опорную плоскость, которая может быть присоединена к другим объектам</translation>
     </message>
@@ -7441,17 +7451,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartDatumLine</name>
     <message>
-      <location filename="../../Command.cpp" line="2880"/>
+      <location filename="../../Command.cpp" line="2872"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2881"/>
+      <location filename="../../Command.cpp" line="2873"/>
       <source>Datum Line</source>
       <translation>Опорная линия</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2882"/>
+      <location filename="../../Command.cpp" line="2874"/>
       <source>Creates a datum line that can be attached to other objects</source>
       <translation>Создаёт опорную линию, которая может быть присоединена к другим объектам</translation>
     </message>
@@ -7459,17 +7469,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartDatumPoint</name>
     <message>
-      <location filename="../../Command.cpp" line="2914"/>
+      <location filename="../../Command.cpp" line="2906"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2915"/>
+      <location filename="../../Command.cpp" line="2907"/>
       <source>Datum Point</source>
       <translation>Опорная точка</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2916"/>
+      <location filename="../../Command.cpp" line="2908"/>
       <source>Creates a datum point that can be attached to other objects</source>
       <translation>Создаёт опорную точку, которая может быть присоединена к другим объектам</translation>
     </message>
@@ -7655,12 +7665,12 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartSectionCut</name>
     <message>
-      <location filename="../../Command.cpp" line="2464"/>
+      <location filename="../../Command.cpp" line="2456"/>
       <source>Persiste&amp;nt Section Cut</source>
       <translation>Постоянный секционный разрез</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2465"/>
+      <location filename="../../Command.cpp" line="2457"/>
       <source>Creates a new object as a boolean intersection of all visible shapes and the selected axis planes</source>
       <translation>Создаёт новый объект как булево пересечение всех видимых фигур и выбранных координатных плоскостей</translation>
     </message>
@@ -7681,12 +7691,12 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>PartCmdVertexSelection</name>
     <message>
-      <location filename="../../CommandFilter.cpp" line="193"/>
+      <location filename="../../CommandFilter.cpp" line="185"/>
       <source>Vertex Selection</source>
       <translation>Выбор вершин</translation>
     </message>
     <message>
-      <location filename="../../CommandFilter.cpp" line="194"/>
+      <location filename="../../CommandFilter.cpp" line="186"/>
       <source>Only allows the selection of vertices</source>
       <translation>Позволяет выбирать только вершины</translation>
     </message>
@@ -7694,12 +7704,12 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>PartCmdEdgeSelection</name>
     <message>
-      <location filename="../../CommandFilter.cpp" line="218"/>
+      <location filename="../../CommandFilter.cpp" line="210"/>
       <source>Edge Selection</source>
       <translation>Выбор рёбер</translation>
     </message>
     <message>
-      <location filename="../../CommandFilter.cpp" line="219"/>
+      <location filename="../../CommandFilter.cpp" line="211"/>
       <source>Only allows the selection of edges</source>
       <translation>Позволяет выбирать только рёбра</translation>
     </message>
@@ -7707,12 +7717,12 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>PartCmdFaceSelection</name>
     <message>
-      <location filename="../../CommandFilter.cpp" line="243"/>
+      <location filename="../../CommandFilter.cpp" line="235"/>
       <source>Face Selection</source>
       <translation>Выбор граней</translation>
     </message>
     <message>
-      <location filename="../../CommandFilter.cpp" line="244"/>
+      <location filename="../../CommandFilter.cpp" line="236"/>
       <source>Only allows the selection of faces</source>
       <translation>Позволяет выбирать только грани</translation>
     </message>
@@ -7720,12 +7730,12 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>PartCmdRemoveSelectionGate</name>
     <message>
-      <location filename="../../CommandFilter.cpp" line="273"/>
+      <location filename="../../CommandFilter.cpp" line="265"/>
       <source>No Selection Filters</source>
       <translation>Нет фильтров</translation>
     </message>
     <message>
-      <location filename="../../CommandFilter.cpp" line="274"/>
+      <location filename="../../CommandFilter.cpp" line="266"/>
       <source>Clears all selection filters</source>
       <translation>Очищает все фильтры выбора</translation>
     </message>
@@ -7813,7 +7823,7 @@ Overlapping volumes of the shapes will be removed.</source>
     </message>
     <message>
       <location filename="../../PatternParametersWidget.cpp" line="371"/>
-      <location filename="../../PatternParametersWidget.cpp" line="467"/>
+      <location filename="../../PatternParametersWidget.cpp" line="476"/>
       <source>Spacing %1</source>
       <translation>Интервал %1</translation>
     </message>
@@ -7823,7 +7833,7 @@ Overlapping volumes of the shapes will be removed.</source>
       <translation>Удалите это значение интервала.</translation>
     </message>
     <message>
-      <location filename="../../PatternParametersWidget.cpp" line="894"/>
+      <location filename="../../PatternParametersWidget.cpp" line="903"/>
       <source>Reset spacing</source>
       <translation>Сбросить шаг</translation>
     </message>
@@ -7856,16 +7866,107 @@ Overlapping volumes of the shapes will be removed.</source>
     </message>
   </context>
   <context>
-    <name>TaskLinkArrayParameters</name>
+    <name>PartGui::PatternPathParametersWidget</name>
     <message>
-      <location filename="../../TaskLinkArrayParameters.ui" line="17"/>
-      <source>Linked object</source>
-      <translation type="unfinished">Linked object</translation>
+      <location filename="../../PatternPathParametersWidget.ui" line="17"/>
+      <source>Path</source>
+      <translation>Траектория</translation>
     </message>
     <message>
-      <location filename="../../TaskLinkArrayParameters.ui" line="27"/>
-      <source>Select Object</source>
-      <translation type="unfinished">Select Object</translation>
+      <location filename="../../PatternPathParametersWidget.ui" line="24"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="240"/>
+      <source>Select Path</source>
+      <translation>Выбрать траекторию</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="31"/>
+      <source>Spacing mode</source>
+      <translation type="unfinished">Spacing mode</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="41"/>
+      <source>Occurrences</source>
+      <translation>События</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="51"/>
+      <source>Spacing</source>
+      <translation>Интервал</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="65"/>
+      <source>Start offset</source>
+      <translation type="unfinished">Start offset</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="79"/>
+      <source>End offset</source>
+      <translation type="unfinished">End offset</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="93"/>
+      <source>Reverse path</source>
+      <translation type="unfinished">Reverse path</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="100"/>
+      <source>Align to path</source>
+      <translation type="unfinished">Align to path</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="107"/>
+      <source>Tangent Axis</source>
+      <translation type="unfinished">Tangent Axis</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="117"/>
+      <source>Flip tangent axis</source>
+      <translation type="unfinished">Flip tangent axis</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="124"/>
+      <source>Vertical axis</source>
+      <translation type="unfinished">Vertical axis</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="134"/>
+      <source>Flip vertical axis</source>
+      <translation type="unfinished">Flip vertical axis</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="141"/>
+      <source>Origin point index</source>
+      <translation type="unfinished">Origin point index</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="151"/>
+      <source>Total offset</source>
+      <translation type="unfinished">Total offset</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="161"/>
+      <source>Relative to first</source>
+      <translation type="unfinished">Relative to first</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
+      <source>Fixed count</source>
+      <translation type="unfinished">Fixed count</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
+      <source>Fixed spacing</source>
+      <translation type="unfinished">Fixed spacing</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
+      <source>Fixed count and spacing</source>
+      <translation type="unfinished">Fixed count and spacing</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.cpp" line="252"/>
+      <source>(+%1)</source>
+      <translation>(+%1)</translation>
     </message>
   </context>
   <context>
@@ -7917,72 +8018,16 @@ Overlapping volumes of the shapes will be removed.</source>
     </message>
   </context>
   <context>
-    <name>PartGui::PatternPathParametersWidget</name>
+    <name>TaskLinkArrayParameters</name>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="6"/>
-      <source>Path</source>
-      <translation>Траектория</translation>
+      <location filename="../../TaskLinkArrayParameters.ui" line="17"/>
+      <source>Linked object</source>
+      <translation type="unfinished">Linked object</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="7"/>
-      <location filename="../../PatternPathParametersWidget.cpp" line="148"/>
-      <source>Select Path</source>
-      <translation>Выбрать траекторию</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="8"/>
-      <source>Spacing mode</source>
-      <translation type="unfinished">Spacing mode</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="10"/>
-      <source>Occurrences</source>
-      <translation>События</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="12"/>
-      <source>Spacing</source>
-      <translation>Интервал</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="14"/>
-      <source>Start offset</source>
-      <translation type="unfinished">Start offset</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="16"/>
-      <source>End offset</source>
-      <translation type="unfinished">End offset</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="18"/>
-      <source>Reverse path</source>
-      <translation type="unfinished">Reverse path</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="19"/>
-      <source>Align to path</source>
-      <translation type="unfinished">Align to path</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
-      <source>Fixed count</source>
-      <translation type="unfinished">Fixed count</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
-      <source>Fixed spacing</source>
-      <translation type="unfinished">Fixed spacing</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
-      <source>Fixed count and spacing</source>
-      <translation type="unfinished">Fixed count and spacing</translation>
-    </message>
-    <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="160"/>
-      <source>(+%1)</source>
-      <translation>(+%1)</translation>
+      <location filename="../../TaskLinkArrayParameters.ui" line="27"/>
+      <source>Select Object</source>
+      <translation type="unfinished">Select Object</translation>
     </message>
   </context>
   <context>
@@ -8010,19 +8055,45 @@ Overlapping volumes of the shapes will be removed.</source>
     </message>
   </context>
   <context>
+    <name>Part::FaceMakerUnified</name>
+    <message>
+      <location filename="../../../App/FaceMakerUnified.cpp" line="53"/>
+      <source>Unified facemaker</source>
+      <translation>Унифицированный построитель граней</translation>
+    </message>
+    <message>
+      <location filename="../../../App/FaceMakerUnified.cpp" line="58"/>
+      <source>Unified: handles nested holes, overlapping wires, and curved surfaces</source>
+      <translation>Унифицированный: обрабатывает вложенные отверстия, перекрывающиеся контуры и криволинейные поверхности</translation>
+    </message>
+  </context>
+  <context>
+    <name>Part::FaceMakerBuildFace</name>
+    <message>
+      <location filename="../../../App/FaceMakerBuildFace.cpp" line="60"/>
+      <source>BuildFace facemaker</source>
+      <translation>Построитель граней BuildFace</translation>
+    </message>
+    <message>
+      <location filename="../../../App/FaceMakerBuildFace.cpp" line="65"/>
+      <source>Splits edges at intersections and finds all bounded face regions. Handles arbitrary overlapping geometry.</source>
+      <translation>Разбивает ребра в точках пересечения и находит все ограниченные области граней. Обрабатывает произвольную перекрывающуюся геометрию.</translation>
+    </message>
+  </context>
+  <context>
     <name>CmdPartLinkArrayCircular</name>
     <message>
-      <location filename="../../Command.cpp" line="2636"/>
+      <location filename="../../Command.cpp" line="2628"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2637"/>
+      <location filename="../../Command.cpp" line="2629"/>
       <source>Circular Link Array</source>
-      <translation type="unfinished">Circular Link Array</translation>
+      <translation>Круговой массив ссылок</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2638"/>
+      <location filename="../../Command.cpp" line="2630"/>
       <source>Creates a concentric circular array of linked objects</source>
       <translation type="unfinished">Creates a concentric circular array of linked objects</translation>
     </message>
@@ -8030,17 +8101,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartLinkArrayPath</name>
     <message>
-      <location filename="../../Command.cpp" line="2671"/>
+      <location filename="../../Command.cpp" line="2663"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2672"/>
+      <location filename="../../Command.cpp" line="2664"/>
       <source>Path Link Array</source>
       <translation>Массив ссылок траекторий инструмента</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2673"/>
+      <location filename="../../Command.cpp" line="2665"/>
       <source>Creates an array of linked objects along a path</source>
       <translation type="unfinished">Creates an array of linked objects along a path</translation>
     </message>
@@ -8048,17 +8119,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartLinkArrayPoint</name>
     <message>
-      <location filename="../../Command.cpp" line="2706"/>
+      <location filename="../../Command.cpp" line="2698"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2707"/>
+      <location filename="../../Command.cpp" line="2699"/>
       <source>Point Link Array</source>
       <translation>Массив ссылок по точкам</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2708"/>
+      <location filename="../../Command.cpp" line="2700"/>
       <source>Creates an array of linked objects at each point of a sketch or shape</source>
       <translation type="unfinished">Creates an array of linked objects at each point of a sketch or shape</translation>
     </message>
@@ -8066,17 +8137,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartLinkArrayLinear</name>
     <message>
-      <location filename="../../Command.cpp" line="2741"/>
+      <location filename="../../Command.cpp" line="2733"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2742"/>
+      <location filename="../../Command.cpp" line="2734"/>
       <source>Linear Link Array</source>
-      <translation type="unfinished">Linear Link Array</translation>
+      <translation>Линейный массив ссылок</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2743"/>
+      <location filename="../../Command.cpp" line="2735"/>
       <source>Creates a linear array of linked objects</source>
       <translation type="unfinished">Creates a linear array of linked objects</translation>
     </message>
@@ -8084,17 +8155,17 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartLinkArrayPolar</name>
     <message>
-      <location filename="../../Command.cpp" line="2776"/>
+      <location filename="../../Command.cpp" line="2768"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2777"/>
+      <location filename="../../Command.cpp" line="2769"/>
       <source>Polar Link Array</source>
-      <translation type="unfinished">Polar Link Array</translation>
+      <translation>Полярный массив ссылок</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2778"/>
+      <location filename="../../Command.cpp" line="2770"/>
       <source>Creates a polar array of linked objects</source>
       <translation type="unfinished">Creates a polar array of linked objects</translation>
     </message>
@@ -8102,19 +8173,124 @@ Overlapping volumes of the shapes will be removed.</source>
   <context>
     <name>CmdPartLinkArrays</name>
     <message>
-      <location filename="../../Command.cpp" line="2949"/>
+      <location filename="../../Command.cpp" line="2941"/>
       <source>Part</source>
       <translation>Деталь</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2950"/>
+      <location filename="../../Command.cpp" line="2942"/>
       <source>Link Arrays</source>
       <translation type="unfinished">Link Arrays</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2951"/>
+      <location filename="../../Command.cpp" line="2943"/>
       <source>Creates link arrays</source>
       <translation type="unfinished">Creates link arrays</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::TaskLinkArrayParameters</name>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="165"/>
+      <source>Circular Link Array</source>
+      <translation>Круговой массив ссылок</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="168"/>
+      <source>Path Link Array</source>
+      <translation>Массив ссылок траекторий инструмента</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="171"/>
+      <source>Point Link Array</source>
+      <translation>Массив ссылок по точкам</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="175"/>
+      <source>Polar Link Array</source>
+      <translation>Полярный массив ссылок</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="178"/>
+      <source>Linear Link Array</source>
+      <translation>Линейный массив ссылок</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="321"/>
+      <source>Selecting…</source>
+      <translation>Выбор…</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="327"/>
+      <source>Select Object</source>
+      <translation type="unfinished">Select Object</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="345"/>
+      <source>Select an object to link</source>
+      <translation>Выберите объект для связывания</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="571"/>
+      <source>No reference</source>
+      <translation type="unfinished">No reference</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="577"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="595"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="610"/>
+      <source>Object X-axis</source>
+      <translation type="unfinished">Object X-axis</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="581"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="598"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="616"/>
+      <source>Object Y-axis</source>
+      <translation type="unfinished">Object Y-axis</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="587"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="602"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="619"/>
+      <source>Object Z-axis</source>
+      <translation type="unfinished">Object Z-axis</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="625"/>
+      <source>Select reference…</source>
+      <translation>Выберите ориентир…</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="754"/>
+      <source>Select connected path edges</source>
+      <translation type="unfinished">Select connected path edges</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="757"/>
+      <source>Select a sketch or shape containing points</source>
+      <translation type="unfinished">Select a sketch or shape containing points</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="761"/>
+      <source>Select a rotation axis</source>
+      <translation type="unfinished">Select a rotation axis</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="763"/>
+      <source>Select a direction reference</source>
+      <translation type="unfinished">Select a direction reference</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="913"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="930"/>
+      <source>Input Error</source>
+      <translation>Ошибка ввода</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="913"/>
+      <source>Select an object to link.</source>
+      <translation type="unfinished">Select an object to link.</translation>
     </message>
   </context>
   <context>
@@ -8136,132 +8312,6 @@ Overlapping volumes of the shapes will be removed.</source>
       <location filename="../../TaskPatternParameters.cpp" line="147"/>
       <source>Direction 2</source>
       <translation>Направление 2</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::TaskLinkArrayParameters</name>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="163"/>
-      <source>Circular Link Array</source>
-      <translation type="unfinished">Circular Link Array</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="166"/>
-      <source>Path Link Array</source>
-      <translation>Массив ссылок траекторий инструмента</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="169"/>
-      <source>Point Link Array</source>
-      <translation>Массив ссылок по точкам</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="173"/>
-      <source>Polar Link Array</source>
-      <translation type="unfinished">Polar Link Array</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="176"/>
-      <source>Linear Link Array</source>
-      <translation type="unfinished">Linear Link Array</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="312"/>
-      <source>Selecting…</source>
-      <translation>Выбор…</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="318"/>
-      <source>Select Object</source>
-      <translation type="unfinished">Select Object</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="336"/>
-      <source>Select an object to link</source>
-      <translation>Выберите объект для связывания</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="557"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="575"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="590"/>
-      <source>Object X-axis</source>
-      <translation type="unfinished">Object X-axis</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="561"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="578"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="596"/>
-      <source>Object Y-axis</source>
-      <translation type="unfinished">Object Y-axis</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="567"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="582"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="599"/>
-      <source>Object Z-axis</source>
-      <translation type="unfinished">Object Z-axis</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="605"/>
-      <source>Select reference…</source>
-      <translation>Выберите ориентир…</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="734"/>
-      <source>Select connected path edges</source>
-      <translation type="unfinished">Select connected path edges</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="737"/>
-      <source>Select a sketch or shape containing points</source>
-      <translation type="unfinished">Select a sketch or shape containing points</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="741"/>
-      <source>Select a rotation axis</source>
-      <translation type="unfinished">Select a rotation axis</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="743"/>
-      <source>Select a direction reference</source>
-      <translation type="unfinished">Select a direction reference</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="879"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="896"/>
-      <source>Input Error</source>
-      <translation>Ошибка ввода</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="879"/>
-      <source>Select an object to link.</source>
-      <translation type="unfinished">Select an object to link.</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part::FaceMakerBuildFace</name>
-    <message>
-      <location filename="../../../App/FaceMakerBuildFace.cpp" line="60"/>
-      <source>BuildFace facemaker</source>
-      <translation>Построитель граней BuildFace</translation>
-    </message>
-    <message>
-      <location filename="../../../App/FaceMakerBuildFace.cpp" line="65"/>
-      <source>Splits edges at intersections and finds all bounded face regions. Handles arbitrary overlapping geometry.</source>
-      <translation>Разбивает ребра в точках пересечения и находит все ограниченные области граней. Обрабатывает произвольную перекрывающуюся геометрию.</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part::FaceMakerUnified</name>
-    <message>
-      <location filename="../../../App/FaceMakerUnified.cpp" line="53"/>
-      <source>Unified facemaker</source>
-      <translation>Унифицированный построитель граней</translation>
-    </message>
-    <message>
-      <location filename="../../../App/FaceMakerUnified.cpp" line="58"/>
-      <source>Unified: handles nested holes, overlapping wires, and curved surfaces</source>
-      <translation>Унифицированный: обрабатывает вложенные отверстия, перекрывающиеся контуры и криволинейные поверхности</translation>
     </message>
   </context>
 </TS>

@@ -73,12 +73,12 @@
       <translation>உங்கள் துணை-அசெம்பிளி தற்போது நெகிழ்வானது. இது அதற்கு பதிலாக கடினமாக்கும்.</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="329"/>
+      <location filename="../../../App/BomObject.cpp" line="332"/>
       <source>N/A</source>
       <translation>இதற்கில்லை</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="353"/>
+      <location filename="../../../App/BomObject.cpp" line="356"/>
       <source>Not supported</source>
       <translation>ஆதரிக்கப்படவில்லை</translation>
     </message>
@@ -567,32 +567,32 @@ SLOPE ஆனது 0 மற்றும் H1 மற்றும் H2 இலி
       <translation>உருவகப்படுத்துதல்</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="394"/>
+      <location filename="../../../CommandCreateView.py" line="396"/>
       <source>Radial Translation</source>
       <translation type="unfinished">Radial Translation</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="397"/>
+      <location filename="../../../CommandCreateView.py" line="399"/>
       <source>Rotation</source>
       <translation>சுழற்சி</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="400"/>
+      <location filename="../../../CommandCreateView.py" line="402"/>
       <source>Translation</source>
       <translation>மொழிபெயர்ப்பு</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="988"/>
+      <location filename="../../../CommandCreateView.py" line="990"/>
       <source>Angle of this exploded-view move</source>
       <translation type="unfinished">Angle of this exploded-view move</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="998"/>
+      <location filename="../../../CommandCreateView.py" line="1000"/>
       <source>Distance of this exploded-view move</source>
       <translation type="unfinished">Distance of this exploded-view move</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="1038"/>
+      <location filename="../../../CommandCreateView.py" line="1040"/>
       <source>Edit placement</source>
       <translation type="unfinished">Edit placement</translation>
     </message>
@@ -727,18 +727,18 @@ SLOPE ஆனது 0 மற்றும் H1 மற்றும் H2 இலி
       <translation>தரைக்கு பொருள்</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="527"/>
-      <location filename="../../../CommandCreateView.py" line="564"/>
+      <location filename="../../../CommandCreateView.py" line="529"/>
+      <location filename="../../../CommandCreateView.py" line="566"/>
       <source>The objects moved by the move</source>
       <translation>நகர்வால் நகர்த்தப்பட்ட பொருள்கள்</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="539"/>
+      <location filename="../../../CommandCreateView.py" line="541"/>
       <source>This is the movement of the move. The end placement is the result of the start placement * this placement.</source>
       <translation>இதுவே அசைவின் இயக்கம். இறுதி வேலை வாய்ப்பு என்பது தொடக்க இடத்தின் விளைவாகும் * இந்த வேலை வாய்ப்பு.</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="548"/>
+      <location filename="../../../CommandCreateView.py" line="550"/>
       <source>The type of the move</source>
       <translation>நகர்த்தலின் வகை</translation>
     </message>

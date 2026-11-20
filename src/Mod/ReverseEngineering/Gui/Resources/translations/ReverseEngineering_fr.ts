@@ -377,7 +377,7 @@
     <message>
       <location filename="../../Poisson.ui" line="66"/>
       <source>Samples per node</source>
-      <translation>Samples par noeuds</translation>
+      <translation>Échantillons par nœuds</translation>
     </message>
     <message>
       <location filename="../../Poisson.cpp" line="94"/>

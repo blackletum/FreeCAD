@@ -447,6 +447,54 @@
     </message>
   </context>
   <context>
+    <name>TaskMeasure</name>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="121"/>
+      <source>Distance</source>
+      <translation>距離</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="129"/>
+      <source>Distance Free</source>
+      <translation>距離自由</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="137"/>
+      <source>Angle</source>
+      <translation>角度</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="145"/>
+      <source>Length</source>
+      <translation>長さ</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="153"/>
+      <source>Position</source>
+      <translation>位置</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="161"/>
+      <source>Area</source>
+      <translation>面積</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="169"/>
+      <source>Diameter</source>
+      <translation>直径</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="177"/>
+      <source>Radius</source>
+      <translation>半径</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="185"/>
+      <source>Geometric Center</source>
+      <translation>幾何的中心</translation>
+    </message>
+  </context>
+  <context>
     <name>StdCmdMassProperties</name>
     <message>
       <location filename="../../Command.cpp" line="97"/>
@@ -505,54 +553,6 @@
       <location filename="../../TaskMassProperties.cpp" line="1236"/>
       <source> (Average)</source>
       <translation> (平均)</translation>
-    </message>
-  </context>
-  <context>
-    <name>TaskMeasure</name>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="121"/>
-      <source>Distance</source>
-      <translation>距離</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="129"/>
-      <source>Distance Free</source>
-      <translation>距離自由</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="137"/>
-      <source>Angle</source>
-      <translation>角度</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="145"/>
-      <source>Length</source>
-      <translation>長さ</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="153"/>
-      <source>Position</source>
-      <translation>位置</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="161"/>
-      <source>Area</source>
-      <translation>面積</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="169"/>
-      <source>Diameter</source>
-      <translation>直径</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="177"/>
-      <source>Radius</source>
-      <translation>半径</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="185"/>
-      <source>Geometric Center</source>
-      <translation>幾何的中心</translation>
     </message>
   </context>
 </TS>

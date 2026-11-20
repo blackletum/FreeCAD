@@ -1160,7 +1160,7 @@ des plans vertical et horizontal avec un sommet ou le long d'une ligne.</transla
       <location filename="../../DlgBlock.ui" line="68"/>
       <location filename="../../DlgBlock.ui" line="229"/>
       <source>Up to face</source>
-      <translation>Jusqu'à la face</translation>
+      <translation>Jusqu'à une face</translation>
     </message>
     <message>
       <location filename="../../DlgBlock.ui" line="76"/>
@@ -4404,22 +4404,32 @@ transformations. Cela allonge la durée de l'importation, mais n'affecte ni la p
       <translation>Déflexion angulaire maximale</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="88"/>
+      <location filename="../../DlgSettings3DViewPart.ui" line="139"/>
+      <source>Applies these tessellation settings to all objects in currently open documents</source>
+      <translation>Applique ces paramètres de tessellation à tous les objets dans les documents actuellement ouverts.</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings3DViewPart.ui" line="142"/>
+      <source>Apply to Open Documents</source>
+      <translation>Appliquer aux documents ouverts</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="94"/>
       <source>Deviation</source>
       <translation>Déviation</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="89"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="95"/>
       <source>Setting a too small deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
       <translation>Si la déviation est trop faible, la tessellation prend plus de temps et l'interface graphique se fige ou ralentit.</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="113"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="119"/>
       <source>Angle deflection</source>
       <translation>Déflexion angulaire</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings3DViewPartImp.cpp" line="114"/>
+      <location filename="../../DlgSettings3DViewPartImp.cpp" line="120"/>
       <source>Setting a too small angle deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
       <translation>Si l'écart angulaire est trop faible, la tessellation prend plus de temps et l'interface graphique se fige ou se ralentit.</translation>
     </message>
@@ -5096,7 +5106,7 @@ sinon le vecteur normal du plan de l'esquisse sera utilisé.</translation>
       <translation>Sélectionner une forme à symétriser</translation>
     </message>
     <message>
-      <location filename="../../Mirroring.cpp" line="321"/>
+      <location filename="../../Mirroring.cpp" line="319"/>
       <source>No such document '%1'.</source>
       <translation>Le document « %1 » n'existe pas.</translation>
     </message>
@@ -6172,8 +6182,8 @@ in the 3D view for the sweep path.</source>
     <message>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="51"/>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="59"/>
-      <location filename="../../ViewProviderPrimitive.cpp" line="55"/>
       <location filename="../../ViewProvider.cpp" line="53"/>
+      <location filename="../../ViewProviderPrimitive.cpp" line="55"/>
       <source>Edit %1</source>
       <translation>Éditer %1</translation>
     </message>
@@ -6612,7 +6622,7 @@ Continue?</source>
       <translation>Entrer une distance :</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderExt.cpp" line="1011"/>
+      <location filename="../../ViewProviderExt.cpp" line="1012"/>
       <source>Appearance per Face</source>
       <translation>Apparence par face</translation>
     </message>
@@ -7437,7 +7447,7 @@ volumes se chevauchant seront supprimés.</translation>
   <context>
     <name>Exceptions</name>
     <message>
-      <location filename="../../../App/Geometry.cpp" line="6726"/>
+      <location filename="../../../App/Geometry.cpp" line="6730"/>
       <source>Unable to guess intersection of curves. Try adding a coincident constraint between the vertices of the curves you are intending to fillet.</source>
       <translation>Il n'est pas possible de déterminer l'intersection des courbes. Essayer d'ajouter une
 contrainte de coïncidence entre les sommets des courbes là où il est prévu des congés.</translation>
@@ -7833,7 +7843,7 @@ contrainte de coïncidence entre les sommets des courbes là où il est prévu d
     </message>
     <message>
       <location filename="../../PatternParametersWidget.cpp" line="371"/>
-      <location filename="../../PatternParametersWidget.cpp" line="467"/>
+      <location filename="../../PatternParametersWidget.cpp" line="476"/>
       <source>Spacing %1</source>
       <translation>Espacement %1</translation>
     </message>
@@ -7843,7 +7853,7 @@ contrainte de coïncidence entre les sommets des courbes là où il est prévu d
       <translation>Supprimer cette définition d'espacement</translation>
     </message>
     <message>
-      <location filename="../../PatternParametersWidget.cpp" line="894"/>
+      <location filename="../../PatternParametersWidget.cpp" line="903"/>
       <source>Reset spacing</source>
       <translation>Réinitialiser l'espacement</translation>
     </message>
@@ -7876,16 +7886,27 @@ contrainte de coïncidence entre les sommets des courbes là où il est prévu d
     </message>
   </context>
   <context>
-    <name>TaskLinkArrayParameters</name>
+    <name>PartGui::PatternPointParametersWidget</name>
     <message>
-      <location filename="../../TaskLinkArrayParameters.ui" line="17"/>
-      <source>Linked object</source>
-      <translation>Objet lié</translation>
+      <location filename="../../PatternPointParametersWidget.ui" line="19"/>
+      <source>Point object</source>
+      <translation>Objet point</translation>
     </message>
     <message>
-      <location filename="../../TaskLinkArrayParameters.ui" line="27"/>
-      <source>Select Object</source>
-      <translation>Sélectionner un objet</translation>
+      <location filename="../../PatternPointParametersWidget.ui" line="29"/>
+      <location filename="../../PatternPointParametersWidget.cpp" line="85"/>
+      <source>Select Point Object</source>
+      <translation>Sélectionner un objet point</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPointParametersWidget.ui" line="36"/>
+      <source>Relative to first</source>
+      <translation>Relatif au premier</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPointParametersWidget.ui" line="46"/>
+      <source>Origin point index</source>
+      <translation>Indice du point d'origine</translation>
     </message>
   </context>
   <context>
@@ -7939,94 +7960,244 @@ contrainte de coïncidence entre les sommets des courbes là où il est prévu d
   <context>
     <name>PartGui::PatternPathParametersWidget</name>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="6"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="17"/>
       <source>Path</source>
       <translation>Chemin d'accès</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="7"/>
-      <location filename="../../PatternPathParametersWidget.cpp" line="148"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="24"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="240"/>
       <source>Select Path</source>
       <translation>Sélectionner une courbe</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="8"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="31"/>
       <source>Spacing mode</source>
       <translation>Mode d'espacement</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="10"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="41"/>
       <source>Occurrences</source>
       <translation>Occurrences</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="12"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="51"/>
       <source>Spacing</source>
       <translation>Espacement</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="14"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="65"/>
       <source>Start offset</source>
       <translation>Décalage de départ</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="16"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="79"/>
       <source>End offset</source>
       <translation>Décalage de fin</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="18"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="93"/>
       <source>Reverse path</source>
       <translation>Inverser la courbe</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.ui" line="19"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="100"/>
       <source>Align to path</source>
       <translation>Aligner sur la courbe</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
+      <location filename="../../PatternPathParametersWidget.ui" line="107"/>
+      <source>Tangent Axis</source>
+      <translation>Axe tangent</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="117"/>
+      <source>Flip tangent axis</source>
+      <translation>Inverser l'axe tangent</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="124"/>
+      <source>Vertical axis</source>
+      <translation>Axe vertical</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="134"/>
+      <source>Flip vertical axis</source>
+      <translation>Inverser l'axe vertical</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="141"/>
+      <source>Origin point index</source>
+      <translation>Indice du point d'origine</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="151"/>
+      <source>Total offset</source>
+      <translation>Décalage total</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.ui" line="161"/>
+      <source>Relative to first</source>
+      <translation>Relatif au premier</translation>
+    </message>
+    <message>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
       <source>Fixed count</source>
       <translation>Nombre fixe</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
       <source>Fixed spacing</source>
       <translation>Espacement fixe</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="115"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="180"/>
       <source>Fixed count and spacing</source>
       <translation>Nombre et espacement fixes</translation>
     </message>
     <message>
-      <location filename="../../PatternPathParametersWidget.cpp" line="160"/>
+      <location filename="../../PatternPathParametersWidget.cpp" line="252"/>
       <source>(+%1)</source>
       <translation>(+%1)</translation>
     </message>
   </context>
   <context>
-    <name>PartGui::PatternPointParametersWidget</name>
+    <name>TaskLinkArrayParameters</name>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="19"/>
-      <source>Point object</source>
-      <translation>Objet point</translation>
+      <location filename="../../TaskLinkArrayParameters.ui" line="17"/>
+      <source>Linked object</source>
+      <translation>Objet lié</translation>
     </message>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="29"/>
-      <location filename="../../PatternPointParametersWidget.cpp" line="85"/>
-      <source>Select Point Object</source>
-      <translation>Sélectionner un objet point</translation>
+      <location filename="../../TaskLinkArrayParameters.ui" line="27"/>
+      <source>Select Object</source>
+      <translation>Sélectionner un objet</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::TaskPatternParameters</name>
+    <message>
+      <location filename="../../TaskPatternParameters.cpp" line="147"/>
+      <source>Direction 2</source>
+      <translation>Direction 2</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::PatternInstanceControls</name>
+    <message>
+      <location filename="../../PatternInstanceControls.cpp" line="226"/>
+      <source>Restores this instance</source>
+      <translation>Restaure cette instance.</translation>
     </message>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="36"/>
-      <source>Relative to first</source>
-      <translation>Relatif au premier</translation>
+      <location filename="../../PatternInstanceControls.cpp" line="231"/>
+      <source>Suppresses this instance</source>
+      <translation>Supprime cette instance.</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartGui::TaskLinkArrayParameters</name>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="165"/>
+      <source>Circular Link Array</source>
+      <translation>Réseau circulaire de liens</translation>
     </message>
     <message>
-      <location filename="../../PatternPointParametersWidget.ui" line="46"/>
-      <source>Origin point index</source>
-      <translation>Indice du point d'origine</translation>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="168"/>
+      <source>Path Link Array</source>
+      <translation>Réseau de copies liées selon une courbe</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="171"/>
+      <source>Point Link Array</source>
+      <translation>Réseau selon des points de liens</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="175"/>
+      <source>Polar Link Array</source>
+      <translation>Réseau polaire de liens</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="178"/>
+      <source>Linear Link Array</source>
+      <translation>Réseau de liens linéaires</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="321"/>
+      <source>Selecting…</source>
+      <translation>Sélectionner…</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="327"/>
+      <source>Select Object</source>
+      <translation>Sélectionner un objet</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="345"/>
+      <source>Select an object to link</source>
+      <translation>Sélectionner un objet à lier</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="571"/>
+      <source>No reference</source>
+      <translation>Aucune référence</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="577"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="595"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="610"/>
+      <source>Object X-axis</source>
+      <translation>Axe X de l'objet</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="581"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="598"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="616"/>
+      <source>Object Y-axis</source>
+      <translation>Axe Y de l'objet</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="587"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="602"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="619"/>
+      <source>Object Z-axis</source>
+      <translation>Axe Z de l'objet</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="625"/>
+      <source>Select reference…</source>
+      <translation>Sélectionner une référence…</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="754"/>
+      <source>Select connected path edges</source>
+      <translation>Sélectionner les arêtes de la trajectoire connectée</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="757"/>
+      <source>Select a sketch or shape containing points</source>
+      <translation>Sélectionner une esquisse ou une forme contenant des points</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="761"/>
+      <source>Select a rotation axis</source>
+      <translation>Sélectionner un axe de rotation</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="763"/>
+      <source>Select a direction reference</source>
+      <translation>Sélectionner une référence de direction</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="913"/>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="930"/>
+      <source>Input Error</source>
+      <translation>Erreur de saisie</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLinkArrayParameters.cpp" line="913"/>
+      <source>Select an object to link.</source>
+      <translation>Sélectionner un objet à lier</translation>
     </message>
   </context>
   <context>
@@ -8135,127 +8306,6 @@ contrainte de coïncidence entre les sommets des courbes là où il est prévu d
       <location filename="../../Command.cpp" line="2951"/>
       <source>Creates link arrays</source>
       <translation>Crée des réseaux de liens.</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::PatternInstanceControls</name>
-    <message>
-      <location filename="../../PatternInstanceControls.cpp" line="226"/>
-      <source>Restores this instance</source>
-      <translation>Restaure cette instance.</translation>
-    </message>
-    <message>
-      <location filename="../../PatternInstanceControls.cpp" line="231"/>
-      <source>Suppresses this instance</source>
-      <translation>Supprime cette instance.</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::TaskPatternParameters</name>
-    <message>
-      <location filename="../../TaskPatternParameters.cpp" line="147"/>
-      <source>Direction 2</source>
-      <translation>Direction 2</translation>
-    </message>
-  </context>
-  <context>
-    <name>PartGui::TaskLinkArrayParameters</name>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="163"/>
-      <source>Circular Link Array</source>
-      <translation>Réseau circulaire de liens</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="166"/>
-      <source>Path Link Array</source>
-      <translation>Réseau de copies liées selon une courbe</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="169"/>
-      <source>Point Link Array</source>
-      <translation>Réseau selon des points de liens</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="173"/>
-      <source>Polar Link Array</source>
-      <translation>Réseau polaire de liens</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="176"/>
-      <source>Linear Link Array</source>
-      <translation>Réseau de liens linéaires</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="312"/>
-      <source>Selecting…</source>
-      <translation>Sélectionner…</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="318"/>
-      <source>Select Object</source>
-      <translation>Sélectionner un objet</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="336"/>
-      <source>Select an object to link</source>
-      <translation>Sélectionner un objet à lier</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="557"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="575"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="590"/>
-      <source>Object X-axis</source>
-      <translation>Axe X de l'objet</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="561"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="578"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="596"/>
-      <source>Object Y-axis</source>
-      <translation>Axe Y de l'objet</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="567"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="582"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="599"/>
-      <source>Object Z-axis</source>
-      <translation>Axe Z de l'objet</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="605"/>
-      <source>Select reference…</source>
-      <translation>Sélectionner une référence…</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="734"/>
-      <source>Select connected path edges</source>
-      <translation>Sélectionner les arêtes de la trajectoire connectée</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="737"/>
-      <source>Select a sketch or shape containing points</source>
-      <translation>Sélectionner une esquisse ou une forme contenant des points</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="741"/>
-      <source>Select a rotation axis</source>
-      <translation>Sélectionner un axe de rotation</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="743"/>
-      <source>Select a direction reference</source>
-      <translation>Sélectionner une référence de direction</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="879"/>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="896"/>
-      <source>Input Error</source>
-      <translation>Erreur de saisie</translation>
-    </message>
-    <message>
-      <location filename="../../TaskLinkArrayParameters.cpp" line="879"/>
-      <source>Select an object to link.</source>
-      <translation>Sélectionner un objet à lier</translation>
     </message>
   </context>
   <context>

@@ -319,9 +319,9 @@
       <location filename="../../CommandTrajectory.cpp" line="181"/>
       <location filename="../../CommandTrajectory.cpp" line="202"/>
       <location filename="../../CommandTrajectory.cpp" line="489"/>
+      <location filename="../../CommandInsertRobot.cpp" line="70"/>
       <location filename="../../CommandExport.cpp" line="64"/>
       <location filename="../../CommandExport.cpp" line="147"/>
-      <location filename="../../CommandInsertRobot.cpp" line="70"/>
       <source>Wrong selection</source>
       <translation>Fel val</translation>
     </message>
@@ -801,7 +801,7 @@
     <message>
       <location filename="../../TaskTrajectoryDressUpParameter.ui" line="20"/>
       <source>Speed &amp; acceleration</source>
-      <translation>Hastighet &amp; acceleration</translation>
+      <translation>Hastighet och acceleration</translation>
     </message>
     <message>
       <location filename="../../TaskTrajectoryDressUpParameter.ui" line="29"/>

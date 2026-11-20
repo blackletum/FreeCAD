@@ -319,9 +319,9 @@
       <location filename="../../CommandTrajectory.cpp" line="181"/>
       <location filename="../../CommandTrajectory.cpp" line="202"/>
       <location filename="../../CommandTrajectory.cpp" line="489"/>
+      <location filename="../../CommandInsertRobot.cpp" line="70"/>
       <location filename="../../CommandExport.cpp" line="64"/>
       <location filename="../../CommandExport.cpp" line="147"/>
-      <location filename="../../CommandInsertRobot.cpp" line="70"/>
       <source>Wrong selection</source>
       <translation>Λάθος επιλογή</translation>
     </message>

@@ -413,16 +413,6 @@
       <translation>Очистка ячеек</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.cpp" line="228"/>
-      <source>Setup conf table</source>
-      <translation>Настроить таблицу конфигурации</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSheetConf.cpp" line="391"/>
-      <source>Unsetup conf table</source>
-      <translation>Отключить таблицу конфигурации</translation>
-    </message>
-    <message>
       <location filename="../../DlgBindSheet.cpp" line="243"/>
       <source>Bind cells</source>
       <translation>Связать ячейки</translation>
@@ -431,6 +421,16 @@
       <location filename="../../DlgBindSheet.cpp" line="297"/>
       <source>Unbind cells</source>
       <translation>Отвязать ячейки</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSheetConf.cpp" line="228"/>
+      <source>Setup conf table</source>
+      <translation>Настроить таблицу конфигурации</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSheetConf.cpp" line="391"/>
+      <source>Unsetup conf table</source>
+      <translation>Отключить таблицу конфигурации</translation>
     </message>
   </context>
   <context>

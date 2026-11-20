@@ -75,12 +75,12 @@ Dzięki temu będzie on teraz mógł swobodnie się poruszać.</translation>
 Dzięki temu będzie on teraz zakotwiony.</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="329"/>
+      <location filename="../../../App/BomObject.cpp" line="332"/>
       <source>N/A</source>
       <translation>Nie dotyczy</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="353"/>
+      <location filename="../../../App/BomObject.cpp" line="356"/>
       <source>Not supported</source>
       <translation>Niewspierane</translation>
     </message>
@@ -585,32 +585,32 @@ Wartości SLOPE = 1000 lub większe są odpowiednie.</translation>
       <translation>Symulacja</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="394"/>
+      <location filename="../../../CommandCreateView.py" line="396"/>
       <source>Radial Translation</source>
       <translation>Przemieszczenie promieniowe</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="397"/>
+      <location filename="../../../CommandCreateView.py" line="399"/>
       <source>Rotation</source>
       <translation>Obrót</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="400"/>
+      <location filename="../../../CommandCreateView.py" line="402"/>
       <source>Translation</source>
       <translation>Przesunięcie</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="988"/>
+      <location filename="../../../CommandCreateView.py" line="990"/>
       <source>Angle of this exploded-view move</source>
       <translation>Kąt tego przesunięcia widoku rozłożenia</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="998"/>
+      <location filename="../../../CommandCreateView.py" line="1000"/>
       <source>Distance of this exploded-view move</source>
       <translation>Odległość tego przesunięcia widoku rozłożenia</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="1038"/>
+      <location filename="../../../CommandCreateView.py" line="1040"/>
       <source>Edit placement</source>
       <translation>Edytuj umiejscowienie</translation>
     </message>
@@ -749,18 +749,18 @@ Jest on używany tylko przez połączenie zębate do przechowywania drugiego pro
       <translation>Obiekt do zakotwienia</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="527"/>
-      <location filename="../../../CommandCreateView.py" line="564"/>
+      <location filename="../../../CommandCreateView.py" line="529"/>
+      <location filename="../../../CommandCreateView.py" line="566"/>
       <source>The objects moved by the move</source>
       <translation>Obiekty przeniesione przez ruch</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="539"/>
+      <location filename="../../../CommandCreateView.py" line="541"/>
       <source>This is the movement of the move. The end placement is the result of the start placement * this placement.</source>
       <translation>Jest to ruch przesunięcia. Pozycja końcowa jest wynikiem pozycji początkowej * tej pozycji.</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="548"/>
+      <location filename="../../../CommandCreateView.py" line="550"/>
       <source>The type of the move</source>
       <translation>Typ ruchu</translation>
     </message>

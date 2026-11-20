@@ -314,27 +314,27 @@
     <message>
       <location filename="../../TaskMassProperties.ui" line="124"/>
       <source>Select…</source>
-      <translation type="unfinished">Select…</translation>
+      <translation>Επιλογή…</translation>
     </message>
     <message>
       <location filename="../../TaskMassProperties.ui" line="137"/>
       <source>mm, kg, kg*mm^2</source>
-      <translation type="unfinished">mm, kg, kg*mm^2</translation>
+      <translation>mm, kg, kg*mm^2</translation>
     </message>
     <message>
       <location filename="../../TaskMassProperties.ui" line="142"/>
       <source>m, kg, kg*m^2</source>
-      <translation type="unfinished">m, kg, kg*m^2</translation>
+      <translation>m, kg, kg*m^2</translation>
     </message>
     <message>
       <location filename="../../TaskMassProperties.ui" line="147"/>
       <source>in, lb, lb*in^2</source>
-      <translation type="unfinished">in, lb, lb*in^2</translation>
+      <translation>in, lb, lb*in^2</translation>
     </message>
     <message>
       <location filename="../../TaskMassProperties.ui" line="152"/>
       <source>ft, lb, lb*ft^2</source>
-      <translation type="unfinished">ft, lb, lb*ft^2</translation>
+      <translation>ft, lb, lb*ft^2</translation>
     </message>
     <message>
       <location filename="../../TaskMassProperties.ui" line="172"/>
@@ -447,6 +447,54 @@
     </message>
   </context>
   <context>
+    <name>TaskMeasure</name>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="121"/>
+      <source>Distance</source>
+      <translation>Απόσταση</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="129"/>
+      <source>Distance Free</source>
+      <translation>Ελεύθερη Απόσταση</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="137"/>
+      <source>Angle</source>
+      <translation>Γωνία</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="145"/>
+      <source>Length</source>
+      <translation>Μήκος</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="153"/>
+      <source>Position</source>
+      <translation>Θέση</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="161"/>
+      <source>Area</source>
+      <translation>Εμβαδόν</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="169"/>
+      <source>Diameter</source>
+      <translation>Διάμετρος</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="177"/>
+      <source>Radius</source>
+      <translation>Ακτίνα</translation>
+    </message>
+    <message>
+      <location filename="../../../App/AppMeasure.cpp" line="185"/>
+      <source>Geometric Center</source>
+      <translation type="unfinished">Geometric Center</translation>
+    </message>
+  </context>
+  <context>
     <name>StdCmdMassProperties</name>
     <message>
       <location filename="../../Command.cpp" line="97"/>
@@ -505,54 +553,6 @@
       <location filename="../../TaskMassProperties.cpp" line="1236"/>
       <source> (Average)</source>
       <translation type="unfinished"> (Average)</translation>
-    </message>
-  </context>
-  <context>
-    <name>TaskMeasure</name>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="121"/>
-      <source>Distance</source>
-      <translation>Απόσταση</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="129"/>
-      <source>Distance Free</source>
-      <translation>Ελεύθερη Απόσταση</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="137"/>
-      <source>Angle</source>
-      <translation>Γωνία</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="145"/>
-      <source>Length</source>
-      <translation>Μήκος</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="153"/>
-      <source>Position</source>
-      <translation>Θέση</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="161"/>
-      <source>Area</source>
-      <translation>Εμβαδόν</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="169"/>
-      <source>Diameter</source>
-      <translation>Διάμετρος</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="177"/>
-      <source>Radius</source>
-      <translation>Ακτίνα</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppMeasure.cpp" line="185"/>
-      <source>Geometric Center</source>
-      <translation type="unfinished">Geometric Center</translation>
     </message>
   </context>
 </TS>

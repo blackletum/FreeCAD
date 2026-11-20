@@ -73,12 +73,12 @@
       <translation>Die Unterbaugruppe ist derzeit beweglich. Dies macht sie zu einem starren Verbund.</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="329"/>
+      <location filename="../../../App/BomObject.cpp" line="332"/>
       <source>N/A</source>
       <translation>Keine Angaben</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="353"/>
+      <location filename="../../../App/BomObject.cpp" line="356"/>
       <source>Not supported</source>
       <translation>Nicht unterstützt</translation>
     </message>
@@ -567,32 +567,32 @@ SLOPE definiert die Steilheit des Übergangs zwischen 0 und H1 und H2 auf 0 übe
       <translation>Simulation</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="394"/>
+      <location filename="../../../CommandCreateView.py" line="396"/>
       <source>Radial Translation</source>
       <translation>Radiale Verschiebung</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="397"/>
+      <location filename="../../../CommandCreateView.py" line="399"/>
       <source>Rotation</source>
       <translation>Drehwinkel</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="400"/>
+      <location filename="../../../CommandCreateView.py" line="402"/>
       <source>Translation</source>
       <translation>Verschiebung</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="988"/>
+      <location filename="../../../CommandCreateView.py" line="990"/>
       <source>Angle of this exploded-view move</source>
       <translation>Winkel dieser Explosionsansichtsverschiebung</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="998"/>
+      <location filename="../../../CommandCreateView.py" line="1000"/>
       <source>Distance of this exploded-view move</source>
       <translation>Entfernung dieser Explosionsansichtsverschiebung</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="1038"/>
+      <location filename="../../../CommandCreateView.py" line="1040"/>
       <source>Edit placement</source>
       <translation>Positionierung bearbeiten</translation>
     </message>
@@ -727,18 +727,18 @@ SLOPE definiert die Steilheit des Übergangs zwischen 0 und H1 und H2 auf 0 übe
       <translation>Das verankerndes Objekt</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="527"/>
-      <location filename="../../../CommandCreateView.py" line="564"/>
+      <location filename="../../../CommandCreateView.py" line="529"/>
+      <location filename="../../../CommandCreateView.py" line="566"/>
       <source>The objects moved by the move</source>
       <translation>Die durch die Verschiebung bewegten Objekte</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="539"/>
+      <location filename="../../../CommandCreateView.py" line="541"/>
       <source>This is the movement of the move. The end placement is the result of the start placement * this placement.</source>
       <translation>Dies ist die Verschiebung der Bewegung. Die Endpositionierung ist das Ergebnis aus der Startpositionierung * dieser Positionierung.</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="548"/>
+      <location filename="../../../CommandCreateView.py" line="550"/>
       <source>The type of the move</source>
       <translation>Die Art der Bewegung</translation>
     </message>

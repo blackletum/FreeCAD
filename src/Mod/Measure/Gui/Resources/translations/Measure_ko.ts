@@ -185,7 +185,7 @@
       <location filename="../../Command.cpp" line="52"/>
       <location filename="../../Command.cpp" line="54"/>
       <source>Measures a feature</source>
-      <translation type="unfinished">Measures a feature</translation>
+      <translation>특징형상을 측정합니다</translation>
     </message>
   </context>
   <context>
@@ -447,19 +447,6 @@
     </message>
   </context>
   <context>
-    <name>StdCmdMassProperties</name>
-    <message>
-      <location filename="../../Command.cpp" line="97"/>
-      <source>Mass Properties</source>
-      <translation>질량 속성</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="98"/>
-      <source>Calculates mass properties of selected objects</source>
-      <translation>선택한 대상체들의 질량에 관련한 속성들을 계산합니다</translation>
-    </message>
-  </context>
-  <context>
     <name>MassPropertiesGui::TaskMassProperties</name>
     <message>
       <location filename="../../TaskMassProperties.cpp" line="355"/>
@@ -505,6 +492,19 @@
       <location filename="../../TaskMassProperties.cpp" line="1236"/>
       <source> (Average)</source>
       <translation> (평균)</translation>
+    </message>
+  </context>
+  <context>
+    <name>StdCmdMassProperties</name>
+    <message>
+      <location filename="../../Command.cpp" line="97"/>
+      <source>Mass Properties</source>
+      <translation>질량 속성</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="98"/>
+      <source>Calculates mass properties of selected objects</source>
+      <translation>선택한 대상체들의 질량에 관련한 속성들을 계산합니다</translation>
     </message>
   </context>
   <context>

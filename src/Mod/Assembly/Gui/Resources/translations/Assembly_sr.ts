@@ -73,12 +73,12 @@
       <translation>Подсклоп је тренутно флексибилан. Ово ће га направити крутим.</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="329"/>
+      <location filename="../../../App/BomObject.cpp" line="332"/>
       <source>N/A</source>
       <translation>Н/А</translation>
     </message>
     <message>
-      <location filename="../../../App/BomObject.cpp" line="353"/>
+      <location filename="../../../App/BomObject.cpp" line="356"/>
       <source>Not supported</source>
       <translation>Није подржано</translation>
     </message>
@@ -567,32 +567,32 @@ SLOPE дефинише нагиб прелаза између 0 и H1, и H2 д�
       <translation>Симулација</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="394"/>
+      <location filename="../../../CommandCreateView.py" line="396"/>
       <source>Radial Translation</source>
       <translation>Радијално померање</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="397"/>
+      <location filename="../../../CommandCreateView.py" line="399"/>
       <source>Rotation</source>
       <translation>Окретање</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="400"/>
+      <location filename="../../../CommandCreateView.py" line="402"/>
       <source>Translation</source>
       <translation>Транслација</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="988"/>
+      <location filename="../../../CommandCreateView.py" line="990"/>
       <source>Angle of this exploded-view move</source>
       <translation>Угао овог померања на растављеном склопу</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="998"/>
+      <location filename="../../../CommandCreateView.py" line="1000"/>
       <source>Distance of this exploded-view move</source>
       <translation>Растојање овог померања на растављеном склопу</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="1038"/>
+      <location filename="../../../CommandCreateView.py" line="1040"/>
       <source>Edit placement</source>
       <translation>Уреди положај</translation>
     </message>
@@ -727,18 +727,18 @@ SLOPE дефинише нагиб прелаза између 0 и H1, и H2 д�
       <translation>Објекат који треба направити непокретним</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="527"/>
-      <location filename="../../../CommandCreateView.py" line="564"/>
+      <location filename="../../../CommandCreateView.py" line="529"/>
+      <location filename="../../../CommandCreateView.py" line="566"/>
       <source>The objects moved by the move</source>
       <translation>Објекти који се померају приликом померања</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="539"/>
+      <location filename="../../../CommandCreateView.py" line="541"/>
       <source>This is the movement of the move. The end placement is the result of the start placement * this placement.</source>
       <translation>Померање током померања. Крајњи положај је резултат почетног положаја * овог положаја.</translation>
     </message>
     <message>
-      <location filename="../../../CommandCreateView.py" line="548"/>
+      <location filename="../../../CommandCreateView.py" line="550"/>
       <source>The type of the move</source>
       <translation>Врста померања</translation>
     </message>
@@ -1643,7 +1643,7 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
     <message>
       <location filename="../../../CommandCreateSnapshot.py" line="53"/>
       <source>Captures the current assembly state (placements and visibility). Double-clicking the Snapshot object restores the assembly to that state.</source>
-      <translation>Снима тренутно стање склопа (положаје и видљивост). Двоструки клик на објекат Снимак врац́а склоп у стање снимљено на том снимку.</translation>
+      <translation>Снима тренутно стање склопа (положаје и видљивост). Двоструки клик на објекат Снимак враћа склоп у стање снимљено на том снимку.</translation>
     </message>
   </context>
   <context>
@@ -1656,7 +1656,7 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
     <message>
       <location filename="../../../CommandCreateSnapshot.py" line="249"/>
       <source>Restore Snapshot</source>
-      <translation>Врати Снимак</translation>
+      <translation>Обнови Снимак</translation>
     </message>
   </context>
   <context>
