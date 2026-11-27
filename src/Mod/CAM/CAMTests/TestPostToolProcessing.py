@@ -28,6 +28,7 @@ import Path
 import unittest
 from Path.Post.Processor import PostProcessor
 from Machine.models.machine import Machine
+from CAMTests.PostTestMocks import MockJob
 import Path.Tool.Controller as PathToolController
 from Path.Tool.toolbit import ToolBit
 import Path.Main.Job as PathJob
@@ -170,18 +171,18 @@ class TestToolProcessing(unittest.TestCase):
     def _get_full_machine_config(self):
         """Get a full machine configuration for testing."""
         return {
-            "freecad_version": "1.0.0",
+            "freecad_version": "26.3.0",
             "machine": {
                 "name": "Test Machine",
                 "description": "Test machine for unit tests",
                 "manufacturer": "Test",
                 "units": "metric",
                 "axes": {
-                    "X": {"type": "linear", "max": 100, "min": 0, "max_velocity": 1000},
-                    "Y": {"type": "linear", "max": 100, "min": 0, "max_velocity": 1000},
-                    "Z": {"type": "linear", "max": 100, "min": 0, "max_velocity": 1000},
+                    "X": {"type": "linear", "joint": [[0, 0, 0], [1, 0, 0]], "max_velocity": 1000},
+                    "Y": {"type": "linear", "joint": [[0, 0, 0], [0, 1, 0]], "max_velocity": 1000},
+                    "Z": {"type": "linear", "joint": [[0, 0, 0], [0, 0, 1]], "max_velocity": 1000},
                 },
-                "spindles": [
+                "toolheads": [
                     {
                         "id": "spindle1",
                         "name": "Spindle 1",
@@ -195,8 +196,8 @@ class TestToolProcessing(unittest.TestCase):
             "output": {
                 "units": "metric",
                 "output_tool_length_offset": True,
-                "output_header": True,
                 "header": {
+                    "output_header": True,
                     "include_date": True,
                     "include_description": True,
                     "include_document_name": True,
@@ -588,7 +589,12 @@ class TestEmptyMoveSuppression(unittest.TestCase):
 
     def setUp(self):
         """Set up a PostProcessor with Z excluded from parameter_order."""
-        self.processor = PostProcessor(None, tooltip=None, tooltipargs=None, units=None)
+        self.processor = PostProcessor(MockJob(), tooltip=None, tooltipargs=None, units=None)
+        self.processor._machine = Machine.create_3axis_config()
+        self.processor.apply_configuration_bundle()
+        machine_state = self.processor.use_machine_state()
+        machine_state.__enter__()
+        self.addCleanup(machine_state.__exit__, None, None, None)
         # Exclude Z from parameter order (wire EDM scenario)
         self.processor.values["PARAMETER_ORDER"] = [
             "X",

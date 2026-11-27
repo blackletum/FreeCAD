@@ -178,8 +178,8 @@ def setup_project(proj, filename, shapemode, silent):
     if "Schema" not in proj.PropertiesList:
         proj.addProperty("App::PropertyEnumeration", "Schema", "Base", locked=True)
     # bug in FreeCAD - to avoid a crash, pre-populate the enum with one value
-    proj.Schema = [ifcfile.wrapped_data.schema_name()]
-    proj.Schema = ifcfile.wrapped_data.schema_name()
+    proj.Schema = [ifcfile.schema_identifier]
+    proj.Schema = ifcfile.schema_identifier
     proj.Schema = ifcopenshell.ifcopenshell_wrapper.schema_names()
     return ifcfile, project, full
 
@@ -348,7 +348,8 @@ def create_children(
         result.extend(create_child(obj, child))
     assign_groups(children)
     # TEST: mark new objects to recompute
-    QtCore.QTimer.singleShot(0, lambda: recompute([get_object(c) for c in children]))
+    objs = [get_object(c) for c in children]
+    QtCore.QTimer.singleShot(0, lambda: recompute(objs))
     return result
 
 
@@ -621,7 +622,8 @@ def add_properties(obj, ifcfile=None, ifcentity=None, links=False, shapemode=0, 
             obj.setPropertyStatus("ShapeMode", "Hidden")
     if ifcentity.is_a("IfcProduct"):
         obj.addProperty("App::PropertyLink", "Type", "IFC", locked=True)
-    attr_defs = ifcentity.wrapped_data.declaration().as_entity().all_attributes()
+    schema = ifcopenshell.ifcopenshell_wrapper.schema_by_name(ifcentity.is_a(True).split(".")[0])
+    attr_defs = schema.declaration_by_name(ifcentity.is_a()).as_entity().all_attributes()
     try:
         info_ifcentity = ifcentity.get_info()
     except:
@@ -961,7 +963,7 @@ def get_ifc_classes(obj, baseclass):
     if not ifcfile:
         return [baseclass]
     classes = []
-    schema = ifcfile.wrapped_data.schema_name()
+    schema = ifcfile.schema_identifier
     schema = ifcopenshell.ifcopenshell_wrapper.schema_by_name(schema)
     try:
         declaration = schema.declaration_by_name(baseclass)
@@ -1435,7 +1437,7 @@ def get_ifctype(obj):
     if hasattr(obj, "IfcType") and obj.IfcType != "Undefined":
         return "Ifc" + obj.IfcType.replace(" ", "")
     dtype = Draft.getType(obj)
-    if dtype in ["App::Part", "Part::Compound", "Array"]:
+    if dtype in ["App::Part", "Array"]:
         return "IfcElementAssembly"
     if dtype in ["App::DocumentObjectGroup"]:
         return "IfcGroup"
@@ -1804,7 +1806,10 @@ def recompute(children):
     doc = None
     for c in children:
         if c:
-            c.touch()
+            try:
+                c.touch()
+            except ReferenceError:
+                continue
             doc = c.Document
     if doc:
         doc.recompute()

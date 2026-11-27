@@ -235,7 +235,7 @@ void ExpressionSpinBox::updateExpression()
         }
     }
     catch (const Base::Exception& e) {
-        showInvalidExpression(QString::fromLatin1(e.what()));
+        showInvalidExpression(QString::fromUtf8(e.what()));
     }
 }
 
@@ -248,7 +248,7 @@ void ExpressionSpinBox::setExpression(std::shared_ptr<Expression> expr)
         validateInput();
     }
     catch (const Base::Exception& e) {
-        showInvalidExpression(QString::fromLatin1(e.what()));
+        showInvalidExpression(QString::fromUtf8(e.what()));
     }
 }
 
@@ -647,7 +647,7 @@ QString DoubleSpinBox::textFromValue(double value) const
 {
     // Qt's default formatting acts weird with floats (e.g. 6.7876564999999998)
     // Using 'g' + 16 sig digs to keeps it clean and readable
-    return QLocale().toString(value, 'g', 16);
+    return QLocale().toString(value, 'f', QLocale::FloatingPointShortest);
 }
 
 void DoubleSpinBox::resizeEvent(QResizeEvent* event)

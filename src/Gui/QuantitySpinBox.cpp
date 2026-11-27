@@ -83,7 +83,6 @@ public:
     App::QuantityInputResult interpretInput(
         const QString& input,
         const App::ObjectIdentifier& path,
-        const App::QuantityInputGrammar grammar,
         const App::InputPhase phase
     ) const
     {
@@ -94,29 +93,16 @@ public:
         }
         constraints.minimum = minimum;
         constraints.maximum = maximum;
-        const auto parse = [&](const App::QuantityInputGrammar selectedGrammar) {
-            return App::interpretQuantityInput(
-                input.toUtf8().toStdString(),
-                selectedGrammar,
-                path,
-                displayUnit,
-                Gui::numericLocaleContextFor(q->locale()),
-                phase,
-                constraints
-            );
-        };
 
-        auto result = parse(grammar);
-        // Preserve the quantity parser as the authority for quantity-only syntax, while keeping
-        // the established unbound-field support for arithmetic expressions. A parser failure is
-        // the only case that permits the expression grammar fallback; malformed numbers and
-        // incompatible units must retain their original diagnostics.
-        if (grammar == App::QuantityInputGrammar::Quantity
-            && result.status == App::InputStatus::Invalid && result.diagnostic
-            && result.diagnostic->kind == App::InputDiagnosticKind::ExpressionSyntax) {
-            result = parse(App::QuantityInputGrammar::Expression);
-        }
-        return result;
+        return App::interpretQuantityInput(
+            input.toUtf8().toStdString(),
+            App::QuantityInputGrammar::QuantityFirst,
+            path,
+            displayUnit,
+            Gui::numericLocaleContextFor(q->locale()),
+            phase,
+            constraints
+        );
     }
 
     QLocale locale;
@@ -190,7 +176,7 @@ void QuantitySpinBox::setBoundToByName(const QString& name)
         App::Document* doc = App::GetApplication().getActiveDocument();
         QStringList list = name.split(QLatin1Char('#'));
         if (list.size() > 1) {
-            doc = App::GetApplication().getDocument(list.front().toLatin1());
+            doc = App::GetApplication().getDocument(list.front().toUtf8());
             list.pop_front();
         }
 
@@ -203,7 +189,7 @@ void QuantitySpinBox::setBoundToByName(const QString& name)
         list = list.front().split(QLatin1Char('.'));
 
         // get object
-        App::DocumentObject* obj = doc->getObject(list.front().toLatin1());
+        App::DocumentObject* obj = doc->getObject(list.front().toUtf8());
         if (!obj) {
             qDebug() << "No object " << list.front() << " in document";
             return;
@@ -216,7 +202,7 @@ void QuantitySpinBox::setBoundToByName(const QString& name)
         path.setDocumentObjectName(std::string(obj->getNameInDocument()), true);
 
         for (const auto& it : list) {
-            path << App::ObjectIdentifier::Component::SimpleComponent(it.toLatin1().constData());
+            path << App::ObjectIdentifier::Component::SimpleComponent(it.toUtf8().constData());
         }
 
         if (path.getProperty()) {
@@ -250,7 +236,27 @@ void QuantitySpinBox::evaluateExpression()
 
 void Gui::QuantitySpinBox::setNumberExpression(App::NumberExpression* expr)
 {
-    commitQuantity(expr->getQuantity(), TextPolicy::ReformatEditor, false);
+    Q_D(QuantitySpinBox);
+    Base::Quantity quantity = expr->getQuantity();
+    // A dimensionless expression result inherits the widget's required unit
+    // without rescaling, matching expression/property assignment semantics.
+    // The displayed input unit may use a different scale.
+    // see: https://github.com/FreeCAD/FreeCAD/issues/32968
+    if (d->unit != Base::Unit::One) {
+        if (quantity.isDimensionless()) {
+            quantity.setUnit(d->unit);
+        }
+        else if (quantity.getUnit() != d->unit) {
+            const QString message = numericInputDiagnosticText(InputDiagnosticKind::IncompatibleUnit);
+            throw UnitsMismatchError(message.toStdString());
+        }
+    }
+    // An expression result is a semantic change: listeners (task panel previews, bound
+    // feature updates) must be notified, as they were before c152324 via validateInput().
+    // see: https://github.com/FreeCAD/FreeCAD/issues/33098
+    const bool changed = quantity.getValue() != d->quantity.getValue()
+        || quantity.getUnit() != d->quantity.getUnit();
+    commitQuantity(quantity, TextPolicy::ReformatEditor, changed);
 }
 
 bool QuantitySpinBox::apply(const std::string& propName)
@@ -422,9 +428,7 @@ void QuantitySpinBox::validateInput()
         return;
     }
     const App::ObjectIdentifier& path = getPath();
-    const auto grammar = isBound() ? App::QuantityInputGrammar::Expression
-                                   : App::QuantityInputGrammar::Quantity;
-    const auto result = d->interpretInput(text, path, grammar, App::InputPhase::Commit);
+    const auto result = d->interpretInput(text, path, App::InputPhase::Commit);
     if (result.status == App::InputStatus::Acceptable) {
         const bool needsEmit = !d->validInput || d->validStr != text || d->pendingEmit;
         commitQuantity(
@@ -648,9 +652,7 @@ void QuantitySpinBox::userInput(const QString& text)
     }
 
     const App::ObjectIdentifier& path = getPath();
-    const auto grammar = isBound() ? App::QuantityInputGrammar::Expression
-                                   : App::QuantityInputGrammar::Quantity;
-    const auto result = d->interpretInput(text, path, grammar, App::InputPhase::Editing);
+    const auto result = d->interpretInput(text, path, App::InputPhase::Editing);
     if (text.trimmed().isEmpty()) {
         Q_EMIT inputCleared();
     }
@@ -1095,9 +1097,7 @@ Base::Quantity QuantitySpinBox::valueFromText(const QString& text) const
     Q_D(const QuantitySpinBox);
 
     const App::ObjectIdentifier& path = getPath();
-    const auto grammar = isBound() ? App::QuantityInputGrammar::Expression
-                                   : App::QuantityInputGrammar::Quantity;
-    const auto result = d->interpretInput(text, path, grammar, App::InputPhase::Commit);
+    const auto result = d->interpretInput(text, path, App::InputPhase::Commit);
     return result.quantity.value_or(Base::Quantity());
 }
 
@@ -1107,9 +1107,7 @@ QValidator::State QuantitySpinBox::validate(QString& text, int& pos) const
     Q_UNUSED(pos)
 
     const App::ObjectIdentifier& path = getPath();
-    const auto grammar = isBound() ? App::QuantityInputGrammar::Expression
-                                   : App::QuantityInputGrammar::Quantity;
-    const auto result = d->interpretInput(text, path, grammar, App::InputPhase::Editing);
+    const auto result = d->interpretInput(text, path, App::InputPhase::Editing);
     return result.status == App::InputStatus::Acceptable ? QValidator::Acceptable
                                                          : QValidator::Intermediate;
 }

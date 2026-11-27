@@ -23,8 +23,11 @@
 
 #include <gtest/gtest.h>
 
+#include <string>
+
 #include <src/App/InitApplication.h>
 
+#include "Base/Quantity.h"
 #include "App/Document.h"
 #include "App/DocumentObject.h"
 #include "App/Expression.h"
@@ -313,6 +316,14 @@ TEST_F(Expression, toString)
     EXPECT_EQ(expr.toString(), "pi rad");
 }
 
+TEST_F(Expression, numberToStringUsesRoundTripPrecisionForPersistence)
+{
+    App::NumberExpression expr{nullptr, Base::Quantity{9030000.000000002}};
+
+    EXPECT_EQ(expr.toString(), "9030000");
+    EXPECT_EQ(std::stod(expr.toString(true)), expr.getValue());
+}
+
 TEST_F(Expression, test_pi_rad)
 {
     auto constant = std::make_unique<App::ConstantExpression>(nullptr, "pi");
@@ -330,6 +341,86 @@ TEST_F(Expression, test_e_rad)
     EXPECT_EQ(op->toString(), "e rad");
     op.release();
 }
+
+static std::string reserialize(const char* text)
+{
+    return App::ExpressionParser::parse(nullptr, text)->toString();
+}
+
+static Base::Quantity valueOf(const char* text)
+{
+    const auto expression = App::ExpressionParser::parse(nullptr, text);
+    return App::any_cast<Base::Quantity>(expression->getValueAsAny());
+}
+
+// "10 mm ^ 3" means 10 * mm^3, while "(10 mm) ^ 3"
+// means the whole quantity is cubed, so 1000 mm^3.
+TEST_F(Expression, serializeUnitPowerPrecedence)
+{
+    EXPECT_EQ(reserialize("10 mm ^ 3"), "10 mm ^ 3");
+    EXPECT_EQ(reserialize("10 mm ^ -3"), "10 mm ^ -3");
+
+    EXPECT_EQ(reserialize("10 (mm ^ 3)"), "10 mm ^ 3");
+    EXPECT_EQ(reserialize("(10 mm) ^ 3"), "(10 mm) ^ 3");
+
+    EXPECT_EQ(reserialize("pi rad ^ 2"), "pi rad ^ 2");
+    EXPECT_EQ(reserialize("10 (mm / s) ^ 2"), "10 (mm / s) ^ 2");
+
+    EXPECT_EQ(reserialize("10 (mm / s)"), "10 (mm / s)");
+    EXPECT_EQ(reserialize("10 mm / s"), "10 mm / s");
+
+    EXPECT_EQ(reserialize("(-5 mm) ^ 2"), "(-5 mm) ^ 2");
+    EXPECT_EQ(reserialize("(+5 mm) ^ 2"), "(+5 mm) ^ 2");
+    EXPECT_EQ(reserialize("(- -5 mm) ^ 2"), "(--5 mm) ^ 2");
+}
+
+TEST_F(Expression, serializeSignedQuantityWithoutParens)
+{
+    EXPECT_EQ(reserialize("-5 mm"), "-5 mm");
+    EXPECT_EQ(reserialize("+5 mm"), "+5 mm");
+    EXPECT_EQ(reserialize("-(5 mm)"), "-5 mm");
+    EXPECT_EQ(reserialize("-(5) mm"), "-5 mm");
+    EXPECT_EQ(reserialize("2 * -5 mm"), "2 * -5 mm");
+    EXPECT_EQ(reserialize("-10 mm ^ 3"), "-10 mm ^ 3");
+}
+
+TEST_F(Expression, serializeUnitPowerRoundTrip)
+{
+    const char* expressions[] = {
+        "10 mm ^ 3",
+        "10 mm ^ -3",
+        "10 (mm ^ 3)",
+        "(10 mm) ^ 3",
+        "(-5 mm) ^ 2",
+        "(+5 mm) ^ 2",
+        "(- -5 mm) ^ 2",
+        "-(-5 mm) ^ 2",
+        "-5 mm",
+        "2 * -5 mm",
+        "-10 mm ^ 3",
+        "10 (mm / s) ^ 2",
+        "10 (mm / s)",
+        "10 mm / s",
+    };
+
+    for (const char* text : expressions) {
+        const std::string once = reserialize(text);
+
+        EXPECT_EQ(reserialize(once.c_str()), once)
+            << "serialization is not idempotent: " << text;
+
+        EXPECT_EQ(valueOf(once.c_str()), valueOf(text))
+            << "serialization changed value: " << text;
+    }
+}
+
+
+TEST_F(Expression, unitPowerAppliesToUnitOnly)
+{
+    EXPECT_EQ(valueOf("10 mm ^ 3"), Base::Quantity(10, Base::Unit::Volume));
+    EXPECT_EQ(valueOf("(10 mm) ^ 3"), Base::Quantity(1000, Base::Unit::Volume));
+}
+
 
 class Evaluate: public ::testing::Test
 {

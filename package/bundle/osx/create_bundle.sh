@@ -61,14 +61,12 @@ cp ${conda_env}/bin_tmp/dot ${conda_env}/bin/
 cp ${conda_env}/bin_tmp/unflatten ${conda_env}/bin/
 rm -rf ${conda_env}/bin_tmp
 
+${conda_env}/bin/dot -c
+
 sed -i '1s|.*|#!/usr/bin/env python|' ${conda_env}/bin/pip
 
 # copy resources
 cp resources/* ${conda_env}
-
-# Remove __pycache__ folders and .pyc files
-find . -path "*/__pycache__/*" -delete
-find . -name "*.pyc" -type f -delete
 
 # fix problematic rpaths and reexport_dylibs for signing
 # see https://github.com/FreeCAD/FreeCAD/issues/10144#issuecomment-1836686775
@@ -124,6 +122,10 @@ if ! "${conda_env}/bin/freecadcmd" --safe-mode --console "import pivy; from pivy
     exit 1
 fi
 
+# Remove __pycache__ folders and .pyc files, including those written by the smoke tests
+find . -path "*/__pycache__/*" -delete
+find . -name "*.pyc" -type f -delete
+
 # move plugins into their final location (Library only exists for macOS < 15.0 builds)
 if [ -d "${conda_env}/Library" ]; then
     mv ${conda_env}/Library ${conda_env}/..
@@ -159,12 +161,9 @@ else
     dmgbuild -s dmg_settings.py "FreeCAD" "${version_name}.dmg"
 fi
 
-# create hash
-sha256sum ${version_name}.dmg > ${version_name}.dmg-SHA256.txt
-
 if [[ "${UPLOAD_RELEASE}" == "true" ]]; then
     for attempt in 1 2 3 4 5; do
-        if gh release upload --clobber ${BUILD_TAG} "${version_name}.dmg" "${version_name}.dmg-SHA256.txt"; then
+        if gh release upload --clobber ${BUILD_TAG} "${version_name}.dmg"; then
             break
         fi
         if [[ $attempt -eq 5 ]]; then

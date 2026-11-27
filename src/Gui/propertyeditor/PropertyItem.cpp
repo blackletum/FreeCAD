@@ -588,9 +588,7 @@ void PropertyItem::setPropertyName(const QString& name, const QString& realName)
         display += i;
     }
 
-    propName = display;
-
-    QString str = QApplication::translate("App::Property", propName.toUtf8());
+    QString str = QApplication::translate("App::Property", display.toUtf8());
     displayText = str;
 }
 
@@ -856,9 +854,9 @@ QWidget* PropertyStringItem::createEditor(
     FrameOption frameOption
 ) const
 {
-    Q_UNUSED(method);
     auto le = new ExpLineEdit(parent);
     le->setFrame(static_cast<bool>(frameOption));
+    QObject::connect(le, &ExpLineEdit::textChanged, method);
     if (isBound()) {
         le->bind(getPath());
         le->setAutoApply(autoApply());
@@ -1476,7 +1474,7 @@ public:
                     Gui::Command::Doc,
                     "%s = %s",
                     propName.c_str(),
-                    str.toLatin1().constData()
+                    str.toUtf8().constData()
                 );
                 return true;
             }

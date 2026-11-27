@@ -5,6 +5,8 @@
 #include <QtTest/QTest>
 
 #include <App/Application.h>
+#include <App/Document.h>
+#include <App/PropertyUnits.h>
 #include <Base/Quantity.h>
 
 #include "Gui/QuantitySpinBox.h"
@@ -73,43 +75,44 @@ private Q_SLOTS:
     void test_camelCaseSplitsTwoWords()  // NOLINT
     {
         item->setPropertyName(QLatin1String("CamelCase"));
-        QCOMPARE(item->propertyName(), QLatin1String("Camel Case"));
+        QCOMPARE(item->propertyName(), QLatin1String("CamelCase"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("Camel Case"));
     }
 
     void test_camelCaseSplitsThreeWords()  // NOLINT
     {
         item->setPropertyName(QLatin1String("ThreeWordProperty"));
-        QCOMPARE(item->propertyName(), QLatin1String("Three Word Property"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("Three Word Property"));
     }
 
     void test_digitBeforeUppercaseNotSplit()  // NOLINT
     {
         item->setPropertyName(QLatin1String("View3D"));
-        QCOMPARE(item->propertyName(), QLatin1String("View3D"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("View3D"));
     }
 
     void test_camelCaseSplitButNotDigit()  // NOLINT
     {
         item->setPropertyName(QLatin1String("MyView3D"));
-        QCOMPARE(item->propertyName(), QLatin1String("My View3D"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("My View3D"));
     }
 
     void test_consecutiveUppercaseNotSplit()  // NOLINT
     {
         item->setPropertyName(QLatin1String("MyABC"));
-        QCOMPARE(item->propertyName(), QLatin1String("My ABC"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("My ABC"));
     }
 
     void test_notCleverEnoughToSplitConsecutiveCaps()  // NOLINT
     {
         item->setPropertyName(QLatin1String("MyABCOfDoom"));
-        QCOMPARE(item->propertyName(), QLatin1String("My ABCOf Doom"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("My ABCOf Doom"));
     }
 
     void test_underscoresArentTheSameAsSpaces()  // NOLINT
     {
         item->setPropertyName(QLatin1String("Box_Length"));
-        QCOMPARE(item->propertyName(), QLatin1String("Box_Length"));
+        QCOMPARE(item->data(0, Qt::DisplayRole).toString(), QLatin1String("Box_Length"));
     }
 
     void test_quantityEditorUsesItsWidgetLocale()  // NOLINT
@@ -142,6 +145,57 @@ private Q_SLOTS:
 
         QCOMPARE(spinBox->rawValue(), 12345.67);
         QVERIFY(spinBox->hasValidInput());
+    }
+
+    /*
+     * Regression test for quantities that are validated as expressions.
+     * See https://github.com/FreeCAD/FreeCAD/issues/33388.
+     *
+     * PR https://github.com/FreeCAD/FreeCAD/pull/30139 introduced consolidated
+     * place to verify quantities and expressions.  However, it verified
+     * quantities as expressions which caused it to handle "10/2 mm" as inverse
+     * length.
+     */
+    void test_quantityDivide()  // NOLINT
+    {
+        std::string docName = App::GetApplication().getUniqueDocumentName("test");
+        App::Document* doc = App::GetApplication().newDocument(docName.c_str(), "testUser");
+        App::DocumentObject* obj = doc->addObject("App::VarSet", "VarSet");
+        const App::Property* prop = obj->addDynamicProperty("App::PropertyLength", "Length");
+
+        const auto close = [&]() {
+            App::GetApplication().closeDocument(docName.c_str());
+        };
+
+        TestPropertyUnitItem unitItem;
+        QWidget parent;
+        auto* editor = unitItem.createEditor(&parent, [] {});
+        auto* spinBox = qobject_cast<Gui::QuantitySpinBox*>(editor);
+        QVERIFY(spinBox != nullptr);
+        if (!spinBox) {
+            close();
+            return;
+        }
+        spinBox->bind(*prop);
+
+        spinBox->setLocale(QLocale(QStringLiteral("en_US")));
+        unitItem.setEditorData(spinBox, QVariant::fromValue<Base::Quantity>(Base::Quantity(10.0, "mm")));
+        spinBox->show();
+        spinBox->setFocus();
+
+        auto* lineEdit = spinBox->findChild<QLineEdit*>();
+        QVERIFY(lineEdit != nullptr);
+        if (!lineEdit) {
+            close();
+            return;
+        }
+        lineEdit->setText(QStringLiteral("10/2 mm"));
+        QTest::keyClick(spinBox, Qt::Key_Return);
+
+        QCOMPARE(spinBox->rawValue(), 5.00);
+        QVERIFY(spinBox->hasValidInput());
+
+        close();
     }
 
 private:
