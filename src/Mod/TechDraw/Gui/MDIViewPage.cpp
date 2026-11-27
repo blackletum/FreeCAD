@@ -85,6 +85,7 @@
 #include "ViewProviderPage.h"
 #include "PagePrinter.h"
 #include "PreferencesGui.h"
+#include "DrawGuiUtil.h"
 
 using namespace TechDrawGui;
 using namespace TechDraw;
@@ -730,9 +731,13 @@ void MDIViewPage::toggleKeepUpdated()
     m_vpPage->getDrawPage()->KeepUpdated.setValue(!state);
 }
 
+//! Zooms to full page view. This is not the full scene extent.  Objects outside the
+//! template will not be included.
 void MDIViewPage::viewAll()
 {
-    m_vpPage->getQGVPage()->fitInView(m_scene->itemsBoundingRect(), Qt::KeepAspectRatio);
+    auto pageAttr = PagePrinter::getPaperAttributes(getViewProviderPage());
+    auto paperRect = QRectF(0, -pageAttr.pageHeight(), pageAttr.pageWidth(), pageAttr.pageHeight());
+    m_vpPage->getQGVPage()->fitInView(Rez::guiRect(paperRect), Qt::KeepAspectRatio);
     m_scene->updateScreenScale();
 }
 
@@ -754,11 +759,6 @@ QString MDIViewPage::defaultFileName()
 
 void MDIViewPage::saveSVG(std::string filename)
 {
-    bool screenMode = PreferencesGui::screenMode();
-    PreferencesGui::setScreenMode(false);
-    Base::ScopeGuard restoreScreenMode([screenMode]() {
-        PreferencesGui::setScreenMode(screenMode);
-    });
     auto vpp = getViewProviderPage();
     if (!vpp) {
         return;
@@ -787,12 +787,6 @@ void MDIViewPage::saveSVG()
 
 void MDIViewPage::saveDXF(std::string filename)
 {
-    bool screenMode = PreferencesGui::screenMode();
-    PreferencesGui::setScreenMode(false);
-    Base::ScopeGuard restoreScreenMode([screenMode]() {
-        PreferencesGui::setScreenMode(screenMode);
-    });
-
     PagePrinter::saveDXF(getViewProviderPage(), filename);
 }
 
@@ -815,12 +809,6 @@ void MDIViewPage::saveDXF()
 
 void MDIViewPage::savePDF(const std::string& filename) const
 {
-    bool screenMode = PreferencesGui::screenMode();
-    PreferencesGui::setScreenMode(false);
-    Base::ScopeGuard restoreScreenMode([screenMode]() {
-        PreferencesGui::setScreenMode(screenMode);
-    });
-    
     auto vpp = getViewProviderPage();
     if (!vpp) {
         return;

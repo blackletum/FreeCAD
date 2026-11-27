@@ -106,9 +106,10 @@ static double get_clipper_scale()
     return CArea::get_clipper_scale();
 }
 
-static void set_clipper_scale(double scale)
+static void set_clipper_scale_and_point_tolerance(double scale)
 {
     CArea::set_clipper_scale(scale);
+    CArea::set_tolerance(1.0 / scale);
 }
 
 static CArea copy_area(const CArea& area)
@@ -297,14 +298,20 @@ void init_pyarea(py::module& m)
         .def("MinY", &CBox2D::MinY)
         .def("MaxY", &CBox2D::MaxY);
 
+    py::enum_<Clipper2Lib::FillRule>(m, "FillRule")
+        .value("EvenOdd", Clipper2Lib::FillRule::EvenOdd)
+        .value("NonZero", Clipper2Lib::FillRule::NonZero)
+        .value("Positive", Clipper2Lib::FillRule::Positive)
+        .value("Negative", Clipper2Lib::FillRule::Negative);
+
     py::class_<CArea>(m, "Area")
         .def(py::init<>())
         .def("getCurves", &getCurves)
         .def("append", &CArea::append)
         .def("ClipperNoop", &CArea::ClipperNoop)
-        .def("Subtract", &CArea::Subtract)
-        .def("Intersect", &CArea::Intersect)
-        .def("Union", &CArea::Union)
+        .def("Subtract", &CArea::Subtract, py::arg("other"), py::arg("fill") = py::none())
+        .def("Intersect", &CArea::Intersect, py::arg("other"), py::arg("fill") = py::none())
+        .def("Union", &CArea::Union, py::arg("other"), py::arg("fill") = py::none())
         .def("Offset", [](CArea& self, double offset) { self.Offset(offset); })
         .def("OpenOffset", [](CArea& self, double offset) { return self.OpenOffset(offset); })
         .def("text", &print_area)
@@ -323,7 +330,7 @@ void init_pyarea(py::module& m)
     m.def("get_fit_arcs", get_fit_arcs);
     m.def("set_fit_arcs", set_fit_arcs);
     m.def("get_clipper_scale", get_clipper_scale);
-    m.def("set_clipper_scale", set_clipper_scale);
+    m.def("set_clipper_scale_and_point_tolerance", set_clipper_scale_and_point_tolerance);
     m.def("copy_area", copy_area);
     m.def("holes_linked", holes_linked);
 

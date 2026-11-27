@@ -1,4 +1,6 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileNotice: Part of the FreeCAD project.
+
 from SketcherTests.TestConstraintPreselectionGui import SketcherGuiTestCases
 from SketcherTests.TestDistanceLabelExtensionGui import TestDistanceLabelExtensionGui
 from SketcherTests.TestConstraintCommandsGui import TestConstraintCommandsGui
@@ -6,6 +8,10 @@ from SketcherTests.TestCoincidentCommandGui import TestCoincidentCommandGui
 from SketcherTests.TestOnViewParameterGui import TestOnViewParameterGui
 from SketcherTests.TestPlacementUpdate import TestSketchPlacementUpdate
 from SketcherTests.TestExternalFacePreselection import TestExternalFacePreselection
+from SketcherTests.TestVisualLayerListGui import TestVisualLayerListGui
+from SketcherTests.TestCarbonCopyModelTreeDragging import TestCarbonCopyModelTreeDragging
+from SketcherTests.TestViewSectionGui import TestViewSectionGui
+from SketcherTests.TestConvertToNURBSGui import TestConvertToNURBSGui
 
 # Use the module so that code checkers don't complain (flake8)
 (
@@ -17,5 +23,9 @@ from SketcherTests.TestExternalFacePreselection import TestExternalFacePreselect
     and TestSketchPlacementUpdate
     and TestOnViewParameterGui
     and TestExternalFacePreselection
+    and TestVisualLayerListGui
+    and TestCarbonCopyModelTreeDragging
+    and TestViewSectionGui
+    and TestConvertToNURBSGui
     else False
 )

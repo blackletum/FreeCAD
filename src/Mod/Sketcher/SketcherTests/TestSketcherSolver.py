@@ -1,26 +1,23 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2011 Juergen Riegel
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# **************************************************************************
-#   Copyright (c) 2011 Juergen Riegel <FreeCAD@juergen-riegel.net>        *
-#                                                                         *
-#   This file is part of the FreeCAD CAx development system.              *
-#                                                                         *
-#   This program is free software; you can redistribute it and/or modify  *
-#   it under the terms of the GNU Lesser General Public License (LGPL)    *
-#   as published by the Free Software Foundation; either version 2 of     *
-#   the License, or (at your option) any later version.                   *
-#   for detail see the LICENCE text file.                                 *
-#                                                                         *
-#   FreeCAD is distributed in the hope that it will be useful,            *
-#   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-#   GNU Library General Public License for more details.                  *
-#                                                                         *
-#   You should have received a copy of the GNU Library General Public     *
-#   License along with FreeCAD; if not, write to the Free Software        *
-#   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-#   USA                                                                   *
-# **************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 
 import os, re, tempfile, unittest, zipfile
@@ -967,7 +964,7 @@ class TestSketcherSolver(unittest.TestCase):
         self.assertVectorAlmostEqual(sketch.Geometry[circle].Center, expected)
 
     def testRemovedExternalGeometryReference(self):
-        if "BUILD_PARTDESIGN" in FreeCAD.__cmake__:
+        if "BUILD_PART_DESIGN" in FreeCAD.__cmake__:
             body = self.Doc.addObject("PartDesign::Body", "Body")
             sketch = body.newObject("Sketcher::SketchObject", "Sketch")
             CreateRectangleSketch(sketch, (0, 0), (30, 30))
@@ -1012,7 +1009,12 @@ class TestSketcherSolver(unittest.TestCase):
             self.assertEqual(len(hole.Shape.Edges), 77)
 
             # Edges in the thread should disappear when we stop modeling thread
-            sketch2.addExternal("Hole", "Edge29")
+            thread_edge = next(
+                i
+                for i, edge in enumerate(hole.Shape.Edges, 1)
+                if isinstance(edge.Curve, Part.BSplineCurve)
+            )
+            sketch2.addExternal("Hole", f"Edge{thread_edge}")
             hole.ModelThread = 0
             hole.Refine = 1
             self.Doc.recompute()
@@ -1020,7 +1022,7 @@ class TestSketcherSolver(unittest.TestCase):
             self.assertEqual(len(sketch2.ExternalGeometry), 0)
 
     def testSaveLoadWithExternalGeometryReference(self):
-        if "BUILD_PARTDESIGN" in FreeCAD.__cmake__:
+        if "BUILD_PART_DESIGN" in FreeCAD.__cmake__:
             # Arrange
             body = self.Doc.addObject("PartDesign::Body", "Body")
             sketch = self.Doc.addObject("Sketcher::SketchObject", "Sketch")
@@ -1067,7 +1069,7 @@ class TestSketcherSolver(unittest.TestCase):
 
     def testTNPExternalGeometryStored(self):
         # Arrange
-        if "BUILD_PARTDESIGN" in FreeCAD.__cmake__:
+        if "BUILD_PART_DESIGN" in FreeCAD.__cmake__:
             import xml.etree.ElementTree as ET
 
             sketch = self.Doc.addObject("Sketcher::SketchObject", "Sketch")
@@ -1129,7 +1131,7 @@ class TestSketcherSolver(unittest.TestCase):
 
     def testConstructionToggleTNP(self):
         """Bug 15484"""
-        if "BUILD_PARTDESIGN" in FreeCAD.__cmake__:
+        if "BUILD_PART_DESIGN" in FreeCAD.__cmake__:
             # Arrange
             import xml.etree.ElementTree as ET
 

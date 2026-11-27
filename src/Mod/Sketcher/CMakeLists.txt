@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileNotice: Part of the FreeCAD project.
 
 disable_occt8_deprecation_warnings()
 
@@ -40,6 +41,10 @@ if(BUILD_GUI)
           SketcherTests/TestPlacementUpdate.py
           SketcherTests/TestOnViewParameterGui.py
           SketcherTests/TestExternalFacePreselection.py
+          SketcherTests/TestVisualLayerListGui.py
+          SketcherTests/TestCarbonCopyModelTreeDragging.py
+          SketcherTests/TestViewSectionGui.py
+          SketcherTests/TestConvertToNURBSGui.py
     )
 endif(BUILD_GUI)
 

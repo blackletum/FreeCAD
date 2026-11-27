@@ -124,6 +124,24 @@ class TestWorkplaneOnOperation(PathTestUtils.PathTestBase):
         self.doc.recompute()
         return op
 
+    def test_suggestedLabelIsUnused(self):
+        """The suggested label is the label the new plane gets."""
+        self.assertEqual(PathWorkplane.suggestLabel(self.job), "Workplane")
+        first = PathWorkplane.createWorkplane(self.job, label=PathWorkplane.suggestLabel(self.job))
+        self.assertEqual(first.Label, "Workplane")
+
+        suggested = PathWorkplane.suggestLabel(self.job)
+        self.assertEqual(suggested, "Workplane001")
+        second = PathWorkplane.createWorkplane(self.job, label=suggested)
+        self.assertEqual(second.Label, suggested)
+
+    def test_suggestedLabelNamesTheFace(self):
+        """A plane derived from a face is named after the face."""
+        model = self.job.Model.Group[0]
+        self.assertEqual(
+            PathWorkplane.suggestLabel(self.job, model, "Face6"), "%s.Face6" % model.Label
+        )
+
     def _attachMachine(self):
         """Attach a C-A table-table machine to the job via getMachine."""
         from Machine.models.machine import Machine, RotaryAxis, AxisRole
@@ -135,7 +153,7 @@ class TestWorkplaneOnOperation(PathTestUtils.PathTestBase):
             min_limit=-360,
             max_limit=360,
             role=AxisRole.TABLE_ROTARY,
-            parent=None,
+            parent="A",
             sequence=0,
         )
         machine.rotary_axes["A"] = RotaryAxis(
@@ -144,7 +162,7 @@ class TestWorkplaneOnOperation(PathTestUtils.PathTestBase):
             min_limit=-120,
             max_limit=120,
             role=AxisRole.TABLE_ROTARY,
-            parent="C",
+            parent=None,
             sequence=1,
         )
         self.job.Proxy.getMachine = lambda: machine
@@ -374,7 +392,11 @@ class TestDepthDefaultsAcrossWorkplaneChange(PathTestUtils.PathTestBase):
 
         machine = Machine(name="Test CA Machine")
         machine.rotary_axes["C"] = RotaryAxis(
-            name="C", rotation_vector=Vector(0, 0, 1), role=AxisRole.TABLE_ROTARY, sequence=0
+            name="C",
+            rotation_vector=Vector(0, 0, 1),
+            role=AxisRole.TABLE_ROTARY,
+            parent="A",
+            sequence=0,
         )
         machine.rotary_axes["A"] = RotaryAxis(
             name="A",
@@ -382,7 +404,7 @@ class TestDepthDefaultsAcrossWorkplaneChange(PathTestUtils.PathTestBase):
             min_limit=-120,
             max_limit=120,
             role=AxisRole.TABLE_ROTARY,
-            parent="C",
+            parent=None,
             sequence=1,
         )
         self.job.Proxy.getMachine = lambda: machine

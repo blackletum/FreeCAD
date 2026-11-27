@@ -545,7 +545,11 @@ void Command::_invoke(int id, bool disablelog)
     catch (Base::Exception& e) {
         e.reportException();
         // Pop-up a dialog for FreeCAD-specific exceptions
-        QMessageBox::critical(Gui::getMainWindow(), QObject::tr("Exception"), QLatin1String(e.what()));
+        QMessageBox::critical(
+            Gui::getMainWindow(),
+            QObject::tr("Exception"),
+            QString::fromUtf8(e.what())
+        );
     }
     catch (const XERCES_CPP_NAMESPACE::XMLException& e) {
         char* message = XERCES_CPP_NAMESPACE::XMLString::transcode(e.getMessage());
@@ -848,7 +852,11 @@ void Command::_runCommand(const char* file, int line, DoCmd_Type eType, const ch
         Gui::Application::Instance->macroManager()->addLine(MacroManager::Gui, sCmd);
     }
     else {
-        Gui::Application::Instance->macroManager()->addLine(MacroManager::App, sCmd);
+        Gui::MacroManager* macroManager = Gui::Application::Instance->macroManager();
+        if (macroManager) {
+            // in certain testing conditions, there may not be a macromanager
+            macroManager->addLine(MacroManager::App, sCmd);
+        }
     }
 
     try {
@@ -1235,7 +1243,7 @@ Action* GroupCommand::createAction()
     pcAction->setExclusive(isExclusive());
     pcAction->setCheckable(isCheckable());
     pcAction->setRememberLast(doesRememberLast());
-    pcAction->setWhatsThis(QString::fromLatin1(sWhatsThis));
+    pcAction->setWhatsThis(QString::fromUtf8(sWhatsThis));
 
     for (auto& v : cmds) {
         if (!v.first) {

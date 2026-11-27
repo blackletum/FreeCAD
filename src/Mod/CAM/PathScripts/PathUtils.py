@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
-# SPDX-FileCopyrightText: 2014 Dan Falck <ddfalck@gmail.com>
-# SPDX-FileCopyrightText: 2025 Billy Huddleston <billy@ivdc.com>
+# SPDX-FileCopyrightText: 2014 Dan Falck
+# SPDX-FileCopyrightText: 2025 Billy Huddleston
 # SPDX-FileNotice: Part of the FreeCAD project.
 
 ################################################################################
@@ -337,7 +337,17 @@ def makeWorkplane(shape):
     Creates a workplane circle at the ZMin level.
     """
     Path.Log.track()
-    loc = Vector(shape.BoundBox.Center.x, shape.BoundBox.Center.y, shape.BoundBox.ZMin)
+
+    # Use shape.optimalBoundingBox instead of shape.BoundingBox.
+    #
+    # shape.BoundBox uses the display triangulation when it is available to produce a precise
+    # bounding box, and can return a looser bounding box otherwise, producing different behavior
+    # when freecad is run in console/gui modes. shape.optimalBoundingBox always produces a tight
+    # bounding box. I am tentatively using parameters useTriangulation=False and
+    # useShapeTolerance=False, but I don't think it's important here.
+    bb = shape.optimalBoundingBox(False, False)
+
+    loc = Vector(bb.Center.x, bb.Center.y, bb.ZMin)
     c = Part.makeCircle(10, loc)
     return c
 
@@ -513,6 +523,7 @@ def findParentJob(obj):
     """retrieves a parent job object for an operation or other Path object"""
     Path.Log.track()
 
+    jobSubNames = ("Operations", "Model", "Stock", "SetupSheet", "Tools", "Workplanes")
     jobModule = "Path.Main.Job"
     if getattr(obj, "Proxy", None) and obj.Proxy.__module__ == jobModule:
         return obj
@@ -524,17 +535,24 @@ def findParentJob(obj):
     #        <- Stock <- Body
     #        <- SetupSheet
     #        <- Tools <- ToolController
+    #        <- Workplanes <- Workplane
 
     for i in obj.InList:
         if (
             getattr(i, "Proxy", None)
             and i.Proxy.__module__ == jobModule
-            and obj in [i.Operations, i.Model, i.Stock, i.SetupSheet, i.Tools]
+            and any(obj == getattr(i, prop, None) for prop in jobSubNames)
         ):
             return i
 
-        if (i.isDerivedFrom("App::DocumentObjectGroup") and obj in i.Group) or (
-            i.isDerivedFrom("Path::Feature") and obj == getattr(i, "Base", None)
+        if (
+            (i.isDerivedFrom("App::DocumentObjectGroup") and obj in i.Group)
+            or (i.isDerivedFrom("Path::Feature") and obj == getattr(i, "Base", None))
+            or (
+                i.isDerivedFrom("Path::Feature")
+                and getattr(i, "Proxy", None)
+                and "Path.Tool.Controller" in i.Proxy.__module__
+            )
         ):
             grandParent = findParentJob(i)
             if grandParent is not None:

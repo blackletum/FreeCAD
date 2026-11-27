@@ -108,7 +108,11 @@ class TestPlaneAngles(unittest.TestCase):
 def _machineCA(strategy):
     m = Machine(name="Test CA Machine")
     m.rotary_axes["C"] = RotaryAxis(
-        name="C", rotation_vector=Vector(0, 0, 1), role=AxisRole.TABLE_ROTARY, sequence=0
+        name="C",
+        rotation_vector=Vector(0, 0, 1),
+        role=AxisRole.TABLE_ROTARY,
+        parent="A",
+        sequence=0,
     )
     m.rotary_axes["A"] = RotaryAxis(
         name="A",
@@ -116,7 +120,7 @@ def _machineCA(strategy):
         min_limit=-120,
         max_limit=120,
         role=AxisRole.TABLE_ROTARY,
-        parent="C",
+        parent=None,
         sequence=1,
     )
     m.kinematics.rotation_strategy = strategy
@@ -154,7 +158,9 @@ def _mm(user_string):
     return quantity.getValueAs("mm").Value
 
 
-class TestTiltedWorkPlanePost(PathTestUtils.PathTestBase):
+class _PlaneFixture(PathTestUtils.PathTestBase):
+    """A job on a box, a C/A machine, and helpers to make planes and operations."""
+
     def setUp(self):
         self.doc = FreeCAD.newDocument("TestPathTiltedWorkPlane")
         self.box = self.doc.addObject("Part::Box", "Box")
@@ -164,6 +170,7 @@ class TestTiltedWorkPlanePost(PathTestUtils.PathTestBase):
         self.doc.recompute()
         self.machine = _machineCA(RotationStrategy.TWP)
         self.job.Proxy.getMachine = lambda: self.machine
+        self.job.PostProcessorArgs = "--no-show-editor"
 
     def tearDown(self):
         FreeCAD.closeDocument(self.doc.Name)
@@ -238,6 +245,8 @@ class TestTiltedWorkPlanePost(PathTestUtils.PathTestBase):
                 out.append(item.item_type)
         return out
 
+
+class TestTiltedWorkPlanePost(_PlaneFixture):
     # the dialects
 
     def test_fanucDeclaresThePlaneAndLeavesThePathInPlaneCoordinates(self):
@@ -251,7 +260,12 @@ class TestTiltedWorkPlanePost(PathTestUtils.PathTestBase):
         items = self._expand([self._item(op)], self._processor(plane_command=PlaneCommand.G268))
         self.assertEqual(
             self._shape(items),
-            ["G268 X30.000 Y10.000 Z5.000 I0.000 J45.000 K0.000", "G53.1", "operation", "G269"],
+            [
+                "G268 X30.000 Y10.000 Z5.000 I45.000 J0.000 K0.000 Q123",
+                "G253",
+                "operation",
+                "G269",
+            ],
         )
 
     def test_heidenhainDialect(self):
@@ -303,9 +317,57 @@ class TestTiltedWorkPlanePost(PathTestUtils.PathTestBase):
         self.assertTrue(shape[0].startswith("rotation:G0"), shape)
         self.assertEqual(shape[1:], [DECLARE, "operation", "G69"])
         positions = dict(rotation.solve_orientation(self.machine, _tiltedAboutX()).angles)
-        rotary = items[0].path.Commands[0]
+        moved = {k: v for c in items[0].path.Commands for k, v in c.Parameters.items()}
         for axis, angle in positions.items():
-            self.assertAlmostEqual(rotary.Parameters[axis], angle, places=6)
+            self.assertAlmostEqual(moved[axis], angle, places=6)
+
+    # the rotary sequence
+
+    def _rotary_moves(self, *ops):
+        items = self._expand([op if isinstance(op, Postable) else self._item(op) for op in ops])
+        return [
+            [sorted(c.Parameters) for c in item.path.Commands]
+            for item in items
+            if item.item_type == "rotation"
+        ]
+
+    def test_theRotariesMoveOneSequenceNumberAtATime(self):
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        moves = self._rotary_moves(self._op("Tilted", self._plane()))
+        self.assertEqual(moves, [[["C"], ["A"]]], "C is sequence 0, A is 1")
+
+    def test_rotariesThatShareASequenceNumberMoveTogether(self):
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        self.machine.rotary_axes["C"].sequence = 1
+        moves = self._rotary_moves(self._op("Tilted", self._plane()))
+        self.assertEqual(moves, [[["A", "C"]]])
+
+    def test_aRotaryAlreadyInPlaceIsLeftOut(self):
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        moves = self._rotary_moves(self._op("Tilted", self._plane()), self._op("Plain", None))
+        self.assertEqual(moves[1], [["A"]], "C stays at 0 on the way home")
+
+    def test_aRotaryWithoutASequenceNumberMovesFirst(self):
+        raw = self.machine.to_dict()
+        raw["machine"]["axes"]["A"]["sequence"] = None
+        self.machine = Machine.from_dict(raw)
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        moves = self._rotary_moves(self._op("Tilted", self._plane()))
+        self.assertEqual(moves, [[["A", "C"]]], "read as sequence 0, C's")
+
+    def test_aFixtureChangeAloneMovesNoRotary(self):
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        other = self._plane()
+        other.Fixture = "G55"
+        moves = self._rotary_moves(self._op("A", self._plane()), self._op("B", other))
+        self.assertEqual(moves, [[["C"], ["A"]]], "already in place under G55")
+
+    def test_aToolChangeCommandsEveryRotaryAgain(self):
+        """Where the rotaries are is not assumed after a tool change."""
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        plane = self._plane()
+        moves = self._rotary_moves(self._op("A", plane), self._tool_change(), self._op("B", plane))
+        self.assertEqual(moves, [[["C"], ["A"]], [["C"], ["A"]]])
 
     # the rotary blocks
 
@@ -813,6 +875,86 @@ class TestTiltedWorkPlanePost(PathTestUtils.PathTestBase):
         self.assertEqual(self._sanity_post("G53 G0 Z0").get_sanity_checks(self.job), [])
 
 
+class TestLinuxCNCTiltedWorkPlane(_PlaneFixture):
+    """The LinuxCNC post against the syntax of LinuxCNC pull request #4374."""
+
+    def _post(self, **properties):
+        from Path.Post.Processor import PostProcessorFactory
+
+        self.machine.output.comments.enabled = False
+        self.machine.output.output_header = False
+        self.machine.postprocessor_properties = dict(properties)
+        post = PostProcessorFactory.get_post_processor(self.job, "linuxcnc")
+        post.reinitialize()
+        post._machine = self.machine
+        return post
+
+    @staticmethod
+    def _lines(post):
+        sections = post.export2()
+        return [line.strip() for _, g in sections for line in g.splitlines()]
+
+    def test_theProgramDeclaresAlignsCutsAndCancels(self):
+        self._op("Tilted", self._plane())
+        lines = self._lines(self._post(pre_rotary_move="G53 G0 Z0"))
+        order = [
+            "G17 G54 G40 G49 G80 G90 G64",
+            "G53 G0 Z0",
+            DECLARE,
+            "G53.1",
+            "G1 X10.000 Y0.000 Z-2.000",
+            "G69",
+        ]
+        indexes = [lines.index(line) for line in order]
+        self.assertEqual(indexes, sorted(indexes), lines)
+        self.assertFalse(any(" A" in line and line.startswith("G0") for line in lines), lines)
+
+    def test_theAlignLineTakesTheControlsOptions(self):
+        self._op("Tilted", self._plane())
+        lines = self._lines(self._post(twp_align="G53.1 P1 Q1"))
+        self.assertIn("G53.1 P1 Q1", lines)
+        self.assertNotIn("G53.1", lines)
+
+    def test_theKinematicsSelectFollowsThePreambleOnlyWhenAPlaneNeedsIt(self):
+        self._op("Plain", None)
+        lines = self._lines(self._post(twp_kinematics_select="G12.1 P1"))
+        self.assertNotIn("G12.1 P1", lines)
+        self._op("Tilted", self._plane())
+        lines = self._lines(self._post(twp_kinematics_select="G12.1 P1"))
+        self.assertEqual(lines[lines.index("G17 G54 G40 G49 G80 G90 G64") + 1], "G12.1 P1")
+        self.assertLess(lines.index("G12.1 P1"), lines.index(DECLARE))
+
+    def test_thePlaneIsCancelledBeforeAFixtureChange(self):
+        """The control refuses G54-G59.3 while a plane is active."""
+        self.job.Fixtures = ["G54", "G55"]
+        self._op("Tilted", self._plane())
+        lines = self._lines(self._post())
+        declares = [i for i, line in enumerate(lines) if line == DECLARE]
+        cancels = [i for i, line in enumerate(lines) if line == "G69"]
+        self.assertEqual(len(declares), 2, lines)
+        self.assertEqual(len(cancels), 2, lines)
+        g55 = lines.index("G55")
+        self.assertTrue(any(c < g55 for c in cancels), "cancelled before G55")
+        self.assertTrue(any(d > g55 for d in declares), "declared again after G55")
+
+    def test_linuxcncHasNoDynamicWorkOffset(self):
+        self.machine.kinematics.rotation_strategy = RotationStrategy.DWO
+        self._op("Tilted", self._plane())
+        with self.assertRaises(CAMValueError) as raised:
+            self._post().export2()
+        self.assertIn("DWO", str(raised.exception))
+
+    def test_sanityWarnsThroughTheLinuxCNCPost(self):
+        self._op("A", self._plane(_tiltedAboutX(45)))
+        self._op("B", self._plane(_tiltedAboutX(-45)))
+        post = self._post()
+        post.apply_configuration_bundle()
+        notes = [
+            s["Note"] for s in post.get_sanity_checks(self.job) if s["squawkType"] == "WARNING"
+        ]
+        self.assertTrue(any("Pre-Rotary Move" in n for n in notes), notes)
+
+
 class TestMachineRotationStrategy(unittest.TestCase):
     def test_defaultsDeclareNothing(self):
         k = Machine().kinematics
@@ -822,19 +964,6 @@ class TestMachineRotationStrategy(unittest.TestCase):
     def test_roundTrip(self):
         k = Machine.from_dict(_machineCA(RotationStrategy.TWP).to_dict()).kinematics
         self.assertEqual(k.rotation_strategy, RotationStrategy.TWP)
-
-    def test_anOlderFileWithDwoSupportedSelectsDwo(self):
-        data = Machine(name="old").to_dict()
-        kin = data["machine"]["kinematics"]
-        del kin["rotation_strategy"]
-        kin["dwo_supported"] = True
-        k = Machine.from_dict(data).kinematics
-        self.assertEqual(k.rotation_strategy, RotationStrategy.DWO)
-        self.assertTrue(k.dwo_supported)
-        kin["dwo_supported"] = False
-        self.assertEqual(
-            Machine.from_dict(data).kinematics.rotation_strategy, RotationStrategy.NONE
-        )
 
     def test_dwoSupportedIsWrittenForOlderReaders(self):
         self.assertTrue(

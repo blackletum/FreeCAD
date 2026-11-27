@@ -1,26 +1,23 @@
 // SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-FileCopyrightText: 2009 Juergen Riegel
+// SPDX-FileNotice: Part of the FreeCAD project.
 
-/***************************************************************************
- *   Copyright (c) 2009 Juergen Riegel <juergen.riegel@web.de>             *
- *                                                                         *
- *   This file is part of the FreeCAD CAx development system.              *
- *                                                                         *
- *   This library is free software; you can redistribute it and/or         *
- *   modify it under the terms of the GNU Library General Public           *
- *   License as published by the Free Software Foundation; either          *
- *   version 2 of the License, or (at your option) any later version.      *
- *                                                                         *
- *   This library  is distributed in the hope that it will be useful,      *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU Library General Public License for more details.                  *
- *                                                                         *
- *   You should have received a copy of the GNU Library General Public     *
- *   License along with this library; see the file COPYING.LIB. If not,    *
- *   write to the Free Software Foundation, Inc., 59 Temple Place,         *
- *   Suite 330, Boston, MA  02111-1307, USA                                *
- *                                                                         *
- ***************************************************************************/
+/******************************************************************************
+ *                                                                            *
+ *   FreeCAD is free software: you can redistribute it and/or modify          *
+ *   it under the terms of the GNU Lesser General Public License as           *
+ *   published by the Free Software Foundation, either version 2.1            *
+ *   of the License, or (at your option) any later version.                   *
+ *                                                                            *
+ *   FreeCAD is distributed in the hope that it will be useful,               *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty              *
+ *   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                  *
+ *   See the GNU Lesser General Public License for more details.              *
+ *                                                                            *
+ *   You should have received a copy of the GNU Lesser General Public         *
+ *   License along with FreeCAD. If not, see https://www.gnu.org/licenses     *
+ *                                                                            *
+ ******************************************************************************/
 
 #include <boost/bind/bind.hpp>
 #include <boost/core/ignore_unused.hpp>
@@ -1330,6 +1327,13 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
             }
         }
         else {// Button 1 released
+            if (Mode == STATUS_SKETCH_Drag || Mode == STATUS_SKETCH_DragConstraint) {
+                // Use the actual cursor position instead of the picked geometry position.
+                if (!getCoordsOnSketchPlane(
+                        point, normal, snapHandle->cursorPos.x, snapHandle->cursorPos.y)) {
+                    return false;
+                }
+            }
             // Do things depending on the mode of the user interaction
             switch (Mode) {
                 case STATUS_SELECT_Point:
@@ -1516,7 +1520,7 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
                     sketchHandler->pressRightButton(Base::Vector2d(x, y));
                     return true;
                 case STATUS_NONE:
-                    generateContextMenu();
+                    generateContextMenu(viewer);
                     return true;
                 case STATUS_SELECT_Point:
                     if (hasSelectionPoint) {
@@ -1527,7 +1531,7 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
                         preselectToSelection(ss, selectionPoint, false);
                     }
                     setSketchMode(STATUS_NONE);
-                    generateContextMenu();
+                    generateContextMenu(viewer);
                     return true;
                 case STATUS_SELECT_Edge:
                     if (hasSelectionPoint) {
@@ -1542,7 +1546,7 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
                         preselectToSelection(ss, selectionPoint, false);
                     }
                     setSketchMode(STATUS_NONE);
-                    generateContextMenu();
+                    generateContextMenu(viewer);
                     return true;
                 case STATUS_SELECT_Cross:
                     if (hasSelectionPoint) {
@@ -1564,7 +1568,7 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
                         preselectToSelection(ss, selectionPoint, false);
                     }
                     setSketchMode(STATUS_NONE);
-                    generateContextMenu();
+                    generateContextMenu(viewer);
                     return true;
                 case STATUS_SELECT_Constraint: {
                     if (hasSelectionPoint) {
@@ -1577,7 +1581,7 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
                         }
                     }
                     setSketchMode(STATUS_NONE);
-                    generateContextMenu();
+                    generateContextMenu(viewer);
                     return true;
                 }
                 case STATUS_SKETCH_Drag:
@@ -1629,7 +1633,7 @@ void ViewProviderSketch::editDoubleClicked()
         }
 
         if (textConstrId != -1) {
-            EditTextDialog editTextDialog(this, textConstrId);
+            EditTextDialog editTextDialog(this, textConstrId, Gui::getMainWindow());
             editTextDialog.exec();
             setSketchMode(STATUS_NONE);
         }
@@ -1661,7 +1665,7 @@ void ViewProviderSketch::editDoubleClicked()
                 editDatumDialog.exec();
             }
             else if (Constr->Type == Sketcher::Text) {
-                EditTextDialog editTextDialog(this, id);
+                EditTextDialog editTextDialog(this, id, Gui::getMainWindow());
                 editTextDialog.exec();
             }
         }
@@ -2846,7 +2850,7 @@ void ViewProviderSketch::onSelectionChanged(const Gui::SelectionChanges& msg)
             //        temp += ".";
             //        temp += it->SubName;
             //    }
-            //    new QListWidgetItem(QString::fromLatin1(temp.c_str()), selectionView);
+            //    new QListWidgetItem(QString::fromStdString(temp), selectionView);
             //}
         }
         else if (msg.Type == Gui::SelectionChanges::SetPreselect) {
@@ -4262,11 +4266,11 @@ bool ViewProviderSketch::setEdit(int ModNum)
                     "tv.hide(ActiveSketch)\n"
                     "del(tv)\n"
                     "del(ActiveSketch)\n")
-                    .arg(QString::fromLatin1(getDocument()->getDocument()->getName()),
-                         QString::fromLatin1(getSketchObject()->getNameInDocument()),
-                         QString::fromLatin1(Gui::Command::getObjectCmd(editObj).c_str()),
-                         QString::fromLatin1(editSubName.c_str()));
-            QByteArray cmdstr_bytearray = cmdstr.toLatin1();
+                    .arg(QString::fromUtf8(getDocument()->getDocument()->getName()),
+                         QString::fromUtf8(getSketchObject()->getNameInDocument()),
+                         QString::fromStdString(Gui::Command::getObjectCmd(editObj)),
+                         QString::fromStdString(editSubName));
+            QByteArray cmdstr_bytearray = cmdstr.toUtf8();
             Gui::Command::runCommand(Gui::Command::Gui, cmdstr_bytearray);
         }
         catch (Base::PyException& e) {
@@ -4337,24 +4341,19 @@ bool ViewProviderSketch::setEdit(int ModNum)
         Base::Console().error("ViewProviderSketch::setEdit: {}\n", e.GetMessageString());
     }
 
-    // intercept del key press from main app
-    listener = std::make_unique<ShortcutListener>(this);
-
-    Gui::getMainWindow()->installEventFilter(listener.get());
-    if (editDoc && editDoc->isActive()) {
-        setupActiveAndInEdit();
-    }
+    setupActiveAndInEdit();
 
     return true;
 }
 void ViewProviderSketch::setupActiveAndInEdit()
 {
-    if (!listener) {
-        // intercept del key press from main app
-        listener = std::make_unique<ShortcutListener>(this);
-
-        Gui::getMainWindow()->installEventFilter(listener.get());
+    if (listener) {
+        return;
     }
+
+    // intercept del key press from main app
+    listener = std::make_unique<ShortcutListener>(this);
+    Gui::getMainWindow()->installEventFilter(listener.get());
     attachSelection();
 
     Workbench::enterEditMode();
@@ -4365,10 +4364,12 @@ void ViewProviderSketch::setupActiveAndInEdit()
 }
 void ViewProviderSketch::unsetupActiveAndInEdit()
 {
-    if (listener) {
-        Gui::getMainWindow()->removeEventFilter(listener.get());
-        listener.reset();
+    if (!listener) {
+        return;
     }
+
+    Gui::getMainWindow()->removeEventFilter(listener.get());
+    listener.reset();
     detachSelection();
 
     Workbench::leaveEditMode();
@@ -4528,11 +4529,6 @@ void ViewProviderSketch::unsetEdit(int ModNum)
     auto gridnode = getGridNode();
     pcRoot->removeChild(gridnode);
 
-    if (listener) {
-        Gui::getMainWindow()->removeEventFilter(listener.get());
-        listener.reset();
-    }
-
     if (isInEditMode()) {
         if (sketchHandler) {
             deactivateHandler();
@@ -4582,9 +4578,9 @@ void ViewProviderSketch::unsetEdit(int ModNum)
                                 "ActiveSketch.ViewObject.TempoVis = None\n"
                                 "del(tv)\n"
                                 "del(ActiveSketch)\n")
-                .arg(QString::fromLatin1(getDocument()->getDocument()->getName()),
-                     QString::fromLatin1(getSketchObject()->getNameInDocument()));
-        QByteArray cmdstr_bytearray = cmdstr.toLatin1();
+                .arg(QString::fromUtf8(getDocument()->getDocument()->getName()),
+                     QString::fromUtf8(getSketchObject()->getNameInDocument()));
+        QByteArray cmdstr_bytearray = cmdstr.toUtf8();
         Gui::Command::runCommand(Gui::Command::Gui, cmdstr_bytearray);
     }
     catch (Base::PyException& e) {
@@ -4613,9 +4609,9 @@ void ViewProviderSketch::setEditViewer(Gui::View3DInventorViewer* viewer, int Mo
                     "  if ActiveSketch.ViewObject.ForceOrtho:\n"
                     "    "
                     "ActiveSketch.ViewObject.Document.ActiveView.setCameraType('Orthographic')\n")
-                    .arg(QString::fromLatin1(getDocument()->getDocument()->getName()),
-                         QString::fromLatin1(getSketchObject()->getNameInDocument()));
-            QByteArray cmdstr_bytearray = cmdstr.toLatin1();
+                    .arg(QString::fromUtf8(getDocument()->getDocument()->getName()),
+                         QString::fromUtf8(getSketchObject()->getNameInDocument()));
+            QByteArray cmdstr_bytearray = cmdstr.toUtf8();
             Gui::Command::runCommand(Gui::Command::Gui, cmdstr_bytearray);
         }
         catch (Base::PyException& e) {
@@ -4768,7 +4764,7 @@ void ViewProviderSketch::onCameraChanged(SoCamera* cam)
         QString cmdStr = QStringLiteral("ActiveSketch.ViewObject.TempoVis.sketchClipPlane("
                                         "ActiveSketch, Gui.ActiveDocument, ActiveSketch.ViewObject.SectionView, %1)\n")
                              .arg(tmpFactor < 0 ? QLatin1String("True") : QLatin1String("False"));
-        Base::Interpreter().runStringObject(cmdStr.toLatin1());
+        Base::Interpreter().runStringObject(cmdStr.toUtf8());
     }
 
     // Stretch the axes to cover the whole viewport.
@@ -5377,7 +5373,7 @@ bool ViewProviderSketch::isInEditMode() const
 {
     return editCoinManager != nullptr;
 }
-void ViewProviderSketch::generateContextMenu()
+void ViewProviderSketch::generateContextMenu(const Gui::View3DInventorViewer* viewer)
 {
     if (blockContextMenu) return;
 
@@ -5638,8 +5634,7 @@ void ViewProviderSketch::generateContextMenu()
     }
     // create context menu
     Gui::Application::Instance->setupContextMenu("Sketch", &menu);
-    QMenu contextMenu(
-        qobject_cast<Gui::View3DInventor*>(this->getActiveView())->getViewer()->getGLWidget());
+    QMenu contextMenu(viewer->getGLWidget());
     Gui::MenuManager::getInstance()->setupContextMenu(&menu, contextMenu);
     contextMenu.exec(QCursor::pos());
 }

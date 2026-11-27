@@ -1,26 +1,23 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2017 Yorik van Havre
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2017 Yorik van Havre <yorik@uncreated.net>              *
-# *                                                                         *
-# *   This file is part of FreeCAD.                                         *
-# *                                                                         *
-# *   FreeCAD is free software: you can redistribute it and/or modify it    *
-# *   under the terms of the GNU Lesser General Public License as           *
-# *   published by the Free Software Foundation, either version 2.1 of the  *
-# *   License, or (at your option) any later version.                       *
-# *                                                                         *
-# *   FreeCAD is distributed in the hope that it will be useful, but        *
-# *   WITHOUT ANY WARRANTY; without even the implied warranty of            *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      *
-# *   Lesser General Public License for more details.                       *
-# *                                                                         *
-# *   You should have received a copy of the GNU Lesser General Public      *
-# *   License along with FreeCAD. If not, see                               *
-# *   <https://www.gnu.org/licenses/>.                                      *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 """The BIM workbench"""
 
@@ -156,8 +153,7 @@ class BIMWorkbench(Workbench):
         self.modify_3d = [
             "BIM_ArrayTools",
             "Arch_CutPlane",
-            "BIM_Extrude",
-            "BIM_ExtrudeFace",
+            "BIM_ExtrudeTools",
             "BIM_BooleanTools",
         ]
 
@@ -311,6 +307,19 @@ class BIMWorkbench(Workbench):
             def IsActive(self):
                 return hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
 
+        class BIM_ExtrudeTools:
+            def GetCommands(self):
+                # default: face extrusion (BIM_ExtrudeFace)
+                return ("BIM_ExtrudeFace", "BIM_Extrude")
+
+            def GetResources(self):
+                label = QT_TRANSLATE_NOOP("BIM_ExtrudeTools", "Extrude Tools")
+                tooltip = label
+                return {"MenuText": label, "ToolTip": tooltip, "Icon": "BIM_ExtrudeFace"}
+
+            def IsActive(self):
+                return hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
+
         class BIM_IfcManageTools:
             def GetCommands(self):
                 return (
@@ -398,6 +407,7 @@ class BIMWorkbench(Workbench):
         FreeCADGui.addCommand("BIM_OffsetTools", BIM_OffsetTools())
         FreeCADGui.addCommand("BIM_ArrayTools", BIM_ArrayTools())
         FreeCADGui.addCommand("BIM_BooleanTools", BIM_BooleanTools())
+        FreeCADGui.addCommand("BIM_ExtrudeTools", BIM_ExtrudeTools())
         FreeCADGui.addCommand("BIM_IfcManageTools", BIM_IfcManageTools())
         FreeCADGui.addCommand("BIM_ReportTools", BIM_ReportTools())
         FreeCADGui.addCommand("BIM_GenericTools", BIM_GenericTools())
@@ -434,82 +444,10 @@ class BIMWorkbench(Workbench):
                 RebarTools.updateLocale()
             # self.rebar = RebarTools.RebarCommands + ["Arch_Rebar"]
 
-        # load webtools
-
-        try:
-            import BIMServer
-            import Git
-            import Sketchfab
-        except ImportError:
-            pass
-        else:
-            self.utils.extend(
-                [
-                    "WebTools_Git",
-                    "WebTools_BimServer",
-                    "WebTools_Sketchfab",
-                ]
-            )
-
-        # load flamingo
-
-        try:
-            import CommandsPolar
-            import CommandsFrame
-            import CommandsPipe
-        except ImportError:
-            flamingo = None
-        else:
-            flamingo = [
-                "frameIt",
-                "fillFrame",
-                "insertPath",
-                "insertSection",
-                "FrameLineManager",
-                "spinSect",
-                "reverseBeam",
-                "shiftBeam",
-                "pivotBeam",
-                "levelBeam",
-                "alignEdge",
-                "rotJoin",
-                "alignFlange",
-                "stretchBeam",
-                "extend",
-                "adjustFrameAngle",
-                "insertPipe",
-                "insertElbow",
-                "insertReduct",
-                "insertCap",
-                "insertFlange",
-                "insertUbolt",
-                "insertPypeLine",
-                "breakPipe",
-                "mateEdges",
-                "extend2intersection",
-                "extend1intersection",
-                "laydown",
-                "raiseup",
-            ]
-
-        # load fasteners
-
-        try:
-            import FastenerBase
-            import FastenersCmd
-        except ImportError:
-            fasteners = None
-        else:
-            fasteners = [
-                c for c in FastenerBase.FSGetCommands("screws") if not isinstance(c, tuple)
-            ]
-
         # load nativeifc tools
-
         ifctools = ifc_commands.get_commands()
 
         # create toolbars
-
         t1 = QT_TRANSLATE_NOOP("Workbench", "Drafting Tools")
         t2 = QT_TRANSLATE_NOOP("Workbench", "Draft Snap")
         t3 = QT_TRANSLATE_NOOP("Workbench", "3D/BIM Tools")
@@ -530,39 +468,22 @@ class BIMWorkbench(Workbench):
         self.appendToolbar(t6, self.manage)
 
         # create menus
-
         t1 = QT_TRANSLATE_NOOP("Workbench", "&2D Drafting")
         t2 = QT_TRANSLATE_NOOP("Workbench", "&3D/BIM")
-        t3 = QT_TRANSLATE_NOOP("Workbench", "&Reinforcement Tools")
-        t4 = QT_TRANSLATE_NOOP("Workbench", "&Annotation")
-        t5 = QT_TRANSLATE_NOOP("Workbench", "&Snapping")
-        t6 = QT_TRANSLATE_NOOP("Workbench", "M&odify")
-        t7 = QT_TRANSLATE_NOOP("Workbench", "Ma&nage")
-        # t8 =  QT_TRANSLATE_NOOP("Workbench", "&IFC")
-        t9 = QT_TRANSLATE_NOOP("Workbench", "&Flamingo")
-        t10 = QT_TRANSLATE_NOOP("Workbench", "Fas&teners")
-        t11 = QT_TRANSLATE_NOOP("Workbench", "&Utils")
-        t12 = QT_TRANSLATE_NOOP("Workbench", "Nudge")
-
-        # self.bimtools_menu = list(self.bimtools)
-        # if "Arch_RebarTools" in self.bimtools_menu:
-        #    self.bimtools_menu.remove("Arch_RebarTools")
+        t3 = QT_TRANSLATE_NOOP("Workbench", "&Annotation")
+        t4 = QT_TRANSLATE_NOOP("Workbench", "&Snapping")
+        t5 = QT_TRANSLATE_NOOP("Workbench", "M&odify")
+        t6 = QT_TRANSLATE_NOOP("Workbench", "Ma&nage")
+        t7 = QT_TRANSLATE_NOOP("Workbench", "&Utils")
+        t8 = QT_TRANSLATE_NOOP("Workbench", "Nudge")
         self.appendMenu(t1, self.draftingtools)
         self.appendMenu(t2, self.bimtools)
-        # if self.rebar:
-        #    self.appendMenu([t2, t3], self.rebar)
-        self.appendMenu(t4, self.annotationtools)
-        self.appendMenu(t5, self.snapmenu)
-        self.appendMenu(t6, self.modify)
-        self.appendMenu(t7, self.manage)
-        # if ifctools:
-        #    self.appendMenu(t8, ifctools)
-        if flamingo:
-            self.appendMenu(t9, flamingo)
-        if fasteners:
-            self.appendMenu(t10, fasteners)
-        self.appendMenu(t11, self.utils + ifctools)
-        self.appendMenu([t11, t12], nudge)
+        self.appendMenu(t3, self.annotationtools)
+        self.appendMenu(t4, self.snapmenu)
+        self.appendMenu(t5, self.modify)
+        self.appendMenu(t6, self.manage)
+        self.appendMenu(t7, self.utils + ifctools)
+        self.appendMenu([t7, t8], nudge)
 
         # workaround for issue #26539 and #27984:
         # create tool lists without grouped commands for TaskWatcher
@@ -576,6 +497,7 @@ class BIMWorkbench(Workbench):
             ("BIM_BooleanTools", BIM_BooleanTools),
             ("BIM_CloneTools", BIM_CloneTools),
             ("BIM_Create2DViews", BIM_Create2DViews),
+            ("BIM_ExtrudeTools", BIM_ExtrudeTools),
             ("BIM_GenericTools", BIM_GenericTools),
             ("BIM_IfcManageTools", BIM_IfcManageTools),
             ("BIM_OffsetTools", BIM_OffsetTools),
@@ -868,5 +790,3 @@ FreeCADGui.addPreferencePage(":/ui/preferences-webgl.ui", t)
 
 # Add unit tests
 FreeCAD.__unit_test__ += ["TestArchGui"]
-# The NativeIFC tests require internet connection and file download
-# FreeCAD.__unit_test__ += ["nativeifc.ifc_selftest"]

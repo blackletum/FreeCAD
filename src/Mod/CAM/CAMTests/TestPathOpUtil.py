@@ -136,10 +136,10 @@ class TestPathOpUtil(PathTestUtils.PathTestBase):
 
     def setUp(self):
         self.clipper_scale_orig = area.get_clipper_scale()
-        area.set_clipper_scale(1e7)
+        area.set_clipper_scale_and_point_tolerance(1e7)
 
     def tearDown(self):
-        area.set_clipper_scale(self.clipper_scale_orig)
+        area.set_clipper_scale_and_point_tolerance(self.clipper_scale_orig)
 
     def _offsetWire(self, wire, base, offset, pos_compat, compat_flipped, tolerance=None):
         tolerance = tolerance if tolerance is not None else self.tolerance
@@ -977,13 +977,17 @@ class TestGetClearedAreasWorkplane(PathTestUtils.PathTestBase):
 
         machine = Machine(name="Test CA Machine")
         machine.rotary_axes["C"] = RotaryAxis(
-            name="C", rotation_vector=Vector(0, 0, 1), role=AxisRole.TABLE_ROTARY, sequence=0
+            name="C",
+            rotation_vector=Vector(0, 0, 1),
+            role=AxisRole.TABLE_ROTARY,
+            parent="A",
+            sequence=0,
         )
         machine.rotary_axes["A"] = RotaryAxis(
             name="A",
             rotation_vector=Vector(1, 0, 0),
             role=AxisRole.TABLE_ROTARY,
-            parent="C",
+            parent=None,
             sequence=1,
         )
         self.job.Proxy.getMachine = lambda: machine
@@ -1107,7 +1111,7 @@ class TestWorkplaneRotationCommands(PathTestUtils.PathTestBase):
             min_limit=-360,
             max_limit=360,
             role=AxisRole.TABLE_ROTARY,
-            parent=None,
+            parent="A",
             sequence=0,
         )
         machine.rotary_axes["A"] = RotaryAxis(
@@ -1116,7 +1120,7 @@ class TestWorkplaneRotationCommands(PathTestUtils.PathTestBase):
             min_limit=-120,
             max_limit=120,
             role=AxisRole.TABLE_ROTARY,
-            parent="C",
+            parent=None,
             sequence=1,
         )
         self.job.Proxy.getMachine = lambda: machine

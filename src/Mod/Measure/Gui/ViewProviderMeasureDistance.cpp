@@ -1,27 +1,25 @@
 // SPDX-License-Identifier: LGPL-2.1-or-later
+// SPDX-FileCopyrightText: 2023 David Friedli
+// SPDX-FileCopyrightText: 2013 Thomas Anderson
+// SPDX-FileCopyrightText: 2008 Werner Mayer
+// SPDX-FileNotice: Part of the FreeCAD project.
 
-/***************************************************************************
- *   Copyright (c) 2023 David Friedli <david[at]friedli-be.ch>             *
- *   Copyright (c) 2013 Thomas Anderson <blobfish[at]gmx.com>              *
- *   Copyright (c) 2008 Werner Mayer <wmayer[at]users.sourceforge.net>     *
- *                                                                         *
- *   This file is part of FreeCAD.                                         *
- *                                                                         *
- *   FreeCAD is free software: you can redistribute it and/or modify it    *
- *   under the terms of the GNU Lesser General Public License as           *
- *   published by the Free Software Foundation, either version 2.1 of the  *
- *   License, or (at your option) any later version.                       *
- *                                                                         *
- *   FreeCAD is distributed in the hope that it will be useful, but        *
- *   WITHOUT ANY WARRANTY; without even the implied warranty of            *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      *
- *   Lesser General Public License for more details.                       *
- *                                                                         *
- *   You should have received a copy of the GNU Lesser General Public      *
- *   License along with FreeCAD. If not, see                               *
- *   <https://www.gnu.org/licenses/>.                                      *
- *                                                                         *
- **************************************************************************/
+/******************************************************************************
+ *                                                                            *
+ *   FreeCAD is free software: you can redistribute it and/or modify          *
+ *   it under the terms of the GNU Lesser General Public License as           *
+ *   published by the Free Software Foundation, either version 2.1            *
+ *   of the License, or (at your option) any later version.                   *
+ *                                                                            *
+ *   FreeCAD is distributed in the hope that it will be useful,               *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty              *
+ *   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                  *
+ *   See the GNU Lesser General Public License for more details.              *
+ *                                                                            *
+ *   You should have received a copy of the GNU Lesser General Public         *
+ *   License along with FreeCAD. If not, see https://www.gnu.org/licenses     *
+ *                                                                            *
+ ******************************************************************************/
 
 
 #include <sstream>
@@ -482,27 +480,33 @@ void ViewProviderMeasureDistance::redrawAnnotation()
     // Set the distance
     fieldDistance = (vec2 - vec1).Length();
 
-    auto propDistance = dynamic_cast<App::PropertyDistance*>(pcObject->getPropertyByName("Distance"));
-    setLabelValue(propDistance->getQuantityValue().getUserString());
+    auto* measureObject = getMeasureObject();
+    setLabelValue(measureObject->getResultString());
 
     // Set delta distance
     auto propDistanceX = static_cast<App::PropertyDistance*>(
-        getMeasureObject()->getPropertyByName("DistanceX")
+        measureObject->getPropertyByName("DistanceX")
     );
     static_cast<DimensionLinear*>(pDeltaDimensionSwitch->getChild(0))
-        ->text.setValue(("Δx: " + propDistanceX->getQuantityValue().getUserString()).c_str());
+        ->text.setValue(
+            ("Δx: " + measureObject->formatQuantity(propDistanceX->getQuantityValue())).c_str()
+        );
 
     auto propDistanceY = static_cast<App::PropertyDistance*>(
-        getMeasureObject()->getPropertyByName("DistanceY")
+        measureObject->getPropertyByName("DistanceY")
     );
     static_cast<DimensionLinear*>(pDeltaDimensionSwitch->getChild(1))
-        ->text.setValue(("Δy: " + propDistanceY->getQuantityValue().getUserString()).c_str());
+        ->text.setValue(
+            ("Δy: " + measureObject->formatQuantity(propDistanceY->getQuantityValue())).c_str()
+        );
 
     auto propDistanceZ = static_cast<App::PropertyDistance*>(
-        getMeasureObject()->getPropertyByName("DistanceZ")
+        measureObject->getPropertyByName("DistanceZ")
     );
     static_cast<DimensionLinear*>(pDeltaDimensionSwitch->getChild(2))
-        ->text.setValue(("Δz: " + propDistanceZ->getQuantityValue().getUserString()).c_str());
+        ->text.setValue(
+            ("Δz: " + measureObject->formatQuantity(propDistanceZ->getQuantityValue())).c_str()
+        );
 
     // Set matrix
     SbMatrix matrix = getMatrix();
